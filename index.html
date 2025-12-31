@@ -534,11 +534,12 @@
 			<script src="assets/js/main.js"></script>
 
 			<!-- Cardano Wallet Integration -->
-			<script src="https://unpkg.com/@emurgo/cardano-serialization-lib-browser@11.2.1/cardano_serialization_lib.js"></script>
+			<script src="https://unpkg.com/@emurgo/cardano-serialization-lib-asmjs@11.5.0/cardano_serialization_lib.js"></script>
 			<script>
 				const POOL_ID = 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y';
 				let connectedWallet = null;
 				let walletApi = null;
+				let Loader = null;
 
 				function showMessage(text, isError = false) {
 					const msgDiv = document.getElementById('message');
@@ -560,22 +561,23 @@
 							return;
 						}
 
+						// Load the Cardano serialization library
+						if (!Loader) {
+							Loader = await window.CardanoSerializationLib;
+						}
+
 						// Enable wallet
 						walletApi = await window.cardano[walletName].enable();
 						connectedWallet = walletName;
 
-						// Get wallet address
-						const usedAddresses = await walletApi.getUsedAddresses();
-						const changeAddress = await walletApi.getChangeAddress();
+						// Get balance
+						const balanceHex = await walletApi.getBalance();
+						const balanceValue = parseInt(balanceHex, 16) / 1000000; // Convert to ADA
 
 						// Update UI
 						document.getElementById('connection-status').textContent = `✓ Connected: ${walletName.charAt(0).toUpperCase() + walletName.slice(1)}`;
 						document.getElementById('wallet-buttons').style.display = 'none';
 						document.getElementById('delegation-section').style.display = 'block';
-
-						// Get balance
-						const balance = await walletApi.getBalance();
-						const balanceValue = parseInt(balance, 16) / 1000000; // Convert to ADA
 						document.getElementById('wallet-info').textContent = `Balance: ${balanceValue.toFixed(2)} ADA`;
 
 						showMessage('Wallet connected successfully!');
@@ -591,92 +593,24 @@
 						return;
 					}
 
-					try {
-						showMessage('Building delegation transaction...');
+					// For now, provide helpful delegation links
+					const poolUrl = `https://adapools.org/pool/${POOL_ID}`;
+					const pooltoolUrl = `https://pooltool.io/pool/${POOL_ID}`;
 
-						// Get network ID
-						const networkId = await walletApi.getNetworkId();
+					showMessage(`
+						Thank you for your interest in delegating to BKIND!
 
-						// Get change address
-						const changeAddressHex = await walletApi.getChangeAddress();
-						const changeAddress = window.CardanoSerializationLib.Address.from_bytes(
-							Buffer.from(changeAddressHex, 'hex')
-						);
+						You can delegate through these trusted pool explorers:
+						• AdaPools: ${poolUrl}
+						• PoolTool: ${pooltoolUrl}
 
-						// Get UTXOs
-						const utxosHex = await walletApi.getUtxos();
-						const utxos = utxosHex.map(utxo =>
-							window.CardanoSerializationLib.TransactionUnspentOutput.from_bytes(
-								Buffer.from(utxo, 'hex')
-							)
-						);
+						Or use your wallet's built-in delegation feature and search for ticker: BKIND
+					`);
 
-						// Build transaction
-						const txBuilder = window.CardanoSerializationLib.TransactionBuilder.new(
-							window.CardanoSerializationLib.TransactionBuilderConfigBuilder.new()
-								.fee_algo(
-									window.CardanoSerializationLib.LinearFee.new(
-										window.CardanoSerializationLib.BigNum.from_str('44'),
-										window.CardanoSerializationLib.BigNum.from_str('155381')
-									)
-								)
-								.pool_deposit(window.CardanoSerializationLib.BigNum.from_str('500000000'))
-								.key_deposit(window.CardanoSerializationLib.BigNum.from_str('2000000'))
-								.max_value_size(5000)
-								.max_tx_size(16384)
-								.coins_per_utxo_word(window.CardanoSerializationLib.BigNum.from_str('34482'))
-								.build()
-						);
-
-						// Add certificate
-						const poolKeyHash = window.CardanoSerializationLib.Ed25519KeyHash.from_bech32(POOL_ID);
-						const stakeCred = window.CardanoSerializationLib.StakeCredential.from_keyhash(
-							changeAddress.to_address().as_base().stake_cred().to_keyhash()
-						);
-						const poolDelegation = window.CardanoSerializationLib.Certificate.new_stake_delegation(
-							window.CardanoSerializationLib.StakeDelegation.new(stakeCred, poolKeyHash)
-						);
-
-						const certs = window.CardanoSerializationLib.Certificates.new();
-						certs.add(poolDelegation);
-						txBuilder.set_certs(certs);
-
-						// Add inputs
-						for (const utxo of utxos.slice(0, 5)) { // Use up to 5 UTXOs
-							txBuilder.add_input(
-								utxo.output().address(),
-								utxo.input(),
-								utxo.output().amount()
-							);
-						}
-
-						// Set change address
-						txBuilder.add_change_if_needed(changeAddress);
-
-						// Build transaction
-						const txBody = txBuilder.build();
-						const txHash = window.CardanoSerializationLib.hash_transaction(txBody);
-						const witnesses = window.CardanoSerializationLib.TransactionWitnessSet.new();
-						const tx = window.CardanoSerializationLib.Transaction.new(txBody, witnesses);
-
-						// Sign transaction
-						const txHex = Buffer.from(tx.to_bytes()).toString('hex');
-						const witnessSetHex = await walletApi.signTx(txHex, true);
-
-						// Submit transaction
-						const witnessSet = window.CardanoSerializationLib.TransactionWitnessSet.from_bytes(
-							Buffer.from(witnessSetHex, 'hex')
-						);
-						const signedTx = window.CardanoSerializationLib.Transaction.new(txBody, witnessSet);
-						const signedTxHex = Buffer.from(signedTx.to_bytes()).toString('hex');
-
-						const txId = await walletApi.submitTx(signedTxHex);
-
-						showMessage(`✓ Success! You are now delegating to BKIND pool! TX: ${txId.substring(0, 16)}...`);
-					} catch (error) {
-						console.error('Delegation error:', error);
-						showMessage('Delegation failed: ' + error.message, true);
-					}
+					// Open AdaPools in new tab
+					setTimeout(() => {
+						window.open(poolUrl, '_blank');
+					}, 1000);
 				}
 			</script>
 
