@@ -45,7 +45,7 @@ This guide will help you deploy your website with the secure Cloudflare Worker s
    - Under "Environment Variables", click "Add variable"
    - Add the following:
      - **Variable name**: `BLOCKFROST_API_KEY`
-     - **Value**: `mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt`
+     - **Value**: `[YOUR_BLOCKFROST_API_KEY_HERE]`
      - **Type**: Select "Encrypt" checkbox ✅ IMPORTANT!
    - Click "Deploy"
 
