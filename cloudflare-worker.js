@@ -117,18 +117,28 @@ function handleCORS(request) {
     return new Response('Forbidden', { status: 403 });
   }
 
+  const headers = {
+    ...getCORSHeaders(origin),
+    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+
+  // Only set max-age if we have CORS headers
+  if (origin) {
+    headers['Access-Control-Max-Age'] = '86400';
+  }
+
   return new Response(null, {
     status: 204,
-    headers: {
-      ...getCORSHeaders(origin),
-      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-      'Access-Control-Max-Age': '86400',
-    },
+    headers,
   });
 }
 
 function getCORSHeaders(origin) {
+  // Only return CORS headers if origin is present
+  if (!origin) {
+    return {};
+  }
   return {
     'Access-Control-Allow-Origin': origin,
     'Access-Control-Allow-Credentials': 'true',
