@@ -575,11 +575,8 @@
 			// ============================================
 			const POOL_ID = 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y';
 
-			// TODO: After deploying Cloudflare Worker, set this to your Worker URL
-			// Example: 'https://blockfrost-proxy.YOUR-SUBDOMAIN.workers.dev'
-			const WORKER_URL = null;
-			// INSECURE: This key is visible in source code - remove after deploying Worker
-			const BLOCKFROST_API_KEY = 'mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt';
+			// Secure Worker URL - API key is hidden in the Worker
+			const WORKER_URL = 'https://blockfrost-proxy.smitblockchainops.workers.dev';
 				let connectedWallet = null;
 				let walletApi = null;
 				let lucid = null;
@@ -596,6 +593,33 @@
 						msgDiv.style.display = 'none';
 					}, 5000);
 				}
+
+
+			// ============================================
+			// SECURE API HELPER
+			// ============================================
+			/**
+			 * Makes a secure API call to Blockfrost via Worker proxy
+			 * @param {string} endpoint - The Blockfrost API endpoint (e.g., 'accounts/stake1...')
+			 * @returns {Promise<Object>} - The API response
+			 */
+			async function secureBlockfrostFetch(endpoint) {
+				// Input validation
+				if (!endpoint || typeof endpoint !== 'string') {
+					throw new Error('Invalid endpoint');
+				}
+
+				// Sanitize endpoint - prevent injection
+				const sanitizedEndpoint = endpoint.replace(/[^a-zA-Z0-9/_-]/g, '');
+
+				// Use secure Worker proxy
+				const response = await fetch(`${WORKER_URL}/api/${sanitizedEndpoint}`);
+				if (!response.ok) {
+					throw new Error(`API error: ${response.status}`);
+				}
+				return response.json();
+			}
+
 
 				async function connectWallet(walletName) {
 					try {
@@ -640,22 +664,13 @@
 						let delegationInfo = '';
 						let isAlreadyDelegatedToBKIND = false;
 
-						try {
-						// Query Blockfrost for delegation info
-							const response = await fetch(
-								`https://cardano-mainnet.blockfrost.io/api/v0/accounts/${rewardAddress}`,
-								{
-									headers: {
-										'project_id': BLOCKFROST_API_KEY
-									}
-								}
-							);
-
-							if (response.ok) {
-								const accountInfo = await response.json();
-								if (accountInfo.pool_id) {
-									const currentPool = accountInfo.pool_id;
-									isAlreadyDelegatedToBKIND = (currentPool === POOL_ID);
+					try {
+						// Query Blockfrost for delegation info via secure Worker proxy
+						const accountInfo = await secureBlockfrostFetch(`accounts/${rewardAddress}`);
+						
+						if (accountInfo && accountInfo.pool_id) {
+							const currentPool = accountInfo.pool_id;
+							isAlreadyDelegatedToBKIND = (currentPool === POOL_ID);
 
 									if (isAlreadyDelegatedToBKIND) {
 										delegationInfo = `✓ Already delegating to BKIND pool!`;
