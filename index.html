@@ -542,6 +542,7 @@
 				let connectedWallet = null;
 				let walletApi = null;
 				let lucid = null;
+				let isDelegating = false; // Prevent multiple simultaneous delegations
 
 				function showMessage(text, isError = false) {
 					const msgDiv = document.getElementById('message');
@@ -606,71 +607,106 @@
 						return;
 					}
 
+					// Prevent multiple simultaneous delegations
+					if (isDelegating) {
+						showMessage('Delegation already in progress. Please wait...', true);
+						return;
+					}
+
+					isDelegating = true;
+
 					try {
-						showMessage('Building delegation transaction...');
+						showMessage('Preparing delegation transaction...');
+
+						// Re-initialize Lucid with fresh connection to ensure latest UTxOs
+						lucid = await Lucid.new(
+							new Blockfrost(
+								"https://cardano-mainnet.blockfrost.io/api/v0",
+								BLOCKFROST_API_KEY
+							),
+							"Mainnet"
+						);
+						lucid.selectWallet(walletApi);
 
 						// Get reward address
 						const rewardAddress = await lucid.wallet.rewardAddress();
 
 						if (!rewardAddress) {
 							showMessage('No reward address found. Please ensure your wallet is properly set up.', true);
+							isDelegating = false;
 							return;
 						}
 
-						// Build delegation transaction
-						const tx = await lucid
-							.newTx()
-							.registerStake(rewardAddress)
-							.delegateTo(rewardAddress, POOL_ID)
-							.complete();
+						showMessage('Building transaction... This may take a moment.');
 
-						// Sign transaction
-						const signedTx = await tx.sign().complete();
+						// Try delegation only first (most common case)
+						try {
+							const tx = await lucid
+								.newTx()
+								.delegateTo(rewardAddress, POOL_ID)
+								.complete();
 
-						// Submit transaction
-						const txHash = await signedTx.submit();
+							showMessage('Please sign the transaction in your wallet...');
 
-						showMessage(`✓ Success! Delegation transaction submitted!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
+							const signedTx = await tx.sign().complete();
+							const txHash = await signedTx.submit();
 
-						// Update UI to show success
-						document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
-						document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
+							showMessage(`✓ Success! Delegation transaction submitted!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
 
-					} catch (error) {
-						console.error('Delegation error:', error);
+							document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
+							document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
 
-						// Provide helpful error messages
-						let errorMsg = error.message || error.toString();
+							isDelegating = false;
+							return;
 
-						if (errorMsg.includes('already registered') || errorMsg.includes('StakeKeyRegisteredDELEGS')) {
-							// Stake key already registered, try delegation only
-							try {
-								showMessage('Stake key already registered. Delegating...');
+						} catch (firstError) {
+							console.log('First attempt (delegation only) failed, trying with registration:', firstError);
 
-								const rewardAddress = await lucid.wallet.rewardAddress();
+							// If delegation-only failed, try with stake key registration
+							if (firstError.message && (firstError.message.includes('not registered') || firstError.message.includes('StakeKeyNotRegistered'))) {
+								showMessage('Registering stake key and delegating...');
+
 								const tx = await lucid
 									.newTx()
+									.registerStake(rewardAddress)
 									.delegateTo(rewardAddress, POOL_ID)
 									.complete();
+
+								showMessage('Please sign the transaction in your wallet...');
 
 								const signedTx = await tx.sign().complete();
 								const txHash = await signedTx.submit();
 
-								showMessage(`✓ Success! Delegation updated!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
+								showMessage(`✓ Success! Stake key registered and delegated!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
 
 								document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
 								document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
 
-							} catch (retryError) {
-								console.error('Retry delegation error:', retryError);
-								showMessage('Delegation failed: ' + (retryError.message || retryError.toString()), true);
+								isDelegating = false;
+								return;
 							}
+
+							// Re-throw if it's not a registration issue
+							throw firstError;
+						}
+
+					} catch (error) {
+						console.error('Delegation error:', error);
+						isDelegating = false;
+
+						// Provide helpful error messages
+						let errorMsg = error.message || error.toString();
+
+						if (errorMsg.includes('already spent') || errorMsg.includes('BadInputsUTxO')) {
+							showMessage('Transaction error: Your wallet has a pending transaction. Please wait a few moments for it to complete, then try again.', true);
 						} else if (errorMsg.includes('insufficient')) {
 							showMessage('Insufficient funds. You need at least 2-3 ADA to cover transaction fee and deposit.', true);
 						} else if (errorMsg.includes('UTxO Balance Insufficient')) {
 							showMessage('Insufficient balance for transaction. Please ensure you have enough ADA.', true);
+						} else if (errorMsg.includes('User declined')) {
+							showMessage('Transaction cancelled by user.', true);
 						} else {
-							showMessage('Delegation failed: ' + errorMsg, true);
+							showMessage('Delegation failed: ' + errorMsg + '\n\nPlease try again in a few moments.', true);
 						}
 					}
 				}
