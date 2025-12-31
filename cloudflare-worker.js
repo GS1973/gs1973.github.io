@@ -7,9 +7,6 @@
  * Deploy this to Cloudflare Workers at: workers.cloudflare.com
  */
 
-// ⚠️ IMPORTANT: Set this as an environment variable in Cloudflare Dashboard
-// DO NOT commit your actual API key here
-const BLOCKFROST_API_KEY = 'YOUR_BLOCKFROST_API_KEY_HERE';
 const BLOCKFROST_BASE_URL = 'https://cardano-mainnet.blockfrost.io/api/v0';
 
 // Allowed origins - UPDATE THIS to match your website domain
@@ -29,10 +26,16 @@ const RATE_LIMIT = {
 const rateLimitStore = new Map();
 
 addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request));
+  event.respondWith(handleRequest(event.request, event.env));
 });
 
-async function handleRequest(request) {
+async function handleRequest(request, env) {
+  // ⚠️ IMPORTANT: BLOCKFROST_API_KEY must be set as environment variable in Cloudflare Dashboard
+  const BLOCKFROST_API_KEY = env.BLOCKFROST_API_KEY;
+
+  if (!BLOCKFROST_API_KEY) {
+    return new Response('Configuration error: API key not set', { status: 500 });
+  }
   // Handle CORS preflight
   if (request.method === 'OPTIONS') {
     return handleCORS(request);
@@ -71,13 +74,21 @@ async function handleRequest(request) {
     // Forward request to Blockfrost
     const blockfrostUrl = `${BLOCKFROST_BASE_URL}/${endpoint}`;
 
-    const response = await fetch(blockfrostUrl, {
+    // Build fetch options
+    const fetchOptions = {
       method: request.method,
       headers: {
         'project_id': BLOCKFROST_API_KEY,
         'Content-Type': 'application/json',
       },
-    });
+    };
+
+    // Include body for POST/PUT requests
+    if (request.method === 'POST' || request.method === 'PUT') {
+      fetchOptions.body = await request.text();
+    }
+
+    const response = await fetch(blockfrostUrl, fetchOptions);
 
     // Return response with CORS headers
     const data = await response.text();
@@ -141,12 +152,21 @@ function checkRateLimit(clientIP) {
 }
 
 function isAllowedEndpoint(endpoint) {
-  // Whitelist of allowed Blockfrost endpoints
+  // Whitelist of allowed Blockfrost endpoints for delegation functionality
   const allowedPatterns = [
+    // Account & Delegation Info
     /^accounts\/stake[0-9a-z]+$/, // Account info for delegation checking
-    /^txs\/[0-9a-f]+$/, // Transaction submission
+
+    // Transaction Building & Submission
+    /^txs$/, // Transaction submission (POST)
+    /^txs\/[0-9a-f]{64}$/, // Transaction status lookup
+    /^addresses\/addr[0-9a-z]+\/utxos$/, // Address UTXOs (needed by Lucid)
+    /^epochs\/latest\/parameters$/, // Protocol parameters (needed for fees)
     /^epochs\/latest$/, // Latest epoch info
+
+    // Pool Information
     /^pools\/pool[0-9a-z]+$/, // Pool information
+    /^pools\/pool[0-9a-z]+\/metadata$/, // Pool metadata
   ];
 
   return allowedPatterns.some(pattern => pattern.test(endpoint));

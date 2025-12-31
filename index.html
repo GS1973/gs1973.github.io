@@ -578,9 +578,44 @@
 			// Secure Worker URL - API key is hidden in the Worker
 			const WORKER_URL = 'https://blockfrost-proxy.smitblockchainops.workers.dev';
 
-			// API key needed for Lucid transaction submission (write operations)
-			// Worker handles all read operations (delegation status checks)
-			const BLOCKFROST_API_KEY = 'mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt';
+			// SECURITY NOTE: API key secured in Cloudflare Worker
+			// All Blockfrost API calls are routed through the Worker proxy
+
+			// ============================================
+			// CUSTOM SECURE BLOCKFROST PROVIDER
+			// ============================================
+			/**
+			 * Custom Blockfrost provider that routes all API calls through Worker proxy
+			 * This keeps the API key secure on the server side
+			 */
+			class SecureBlockfrostProvider extends Blockfrost {
+				constructor(workerUrl) {
+					// Initialize parent with dummy values (won't be used)
+					super("https://cardano-mainnet.blockfrost.io/api/v0", "dummy");
+					this.workerUrl = workerUrl;
+				}
+
+				async get(endpoint) {
+					const response = await fetch(`${this.workerUrl}/api/${endpoint}`);
+					if (!response.ok) {
+						throw new Error(`Blockfrost error: ${response.status}`);
+					}
+					return response.json();
+				}
+
+				async post(endpoint, body) {
+					const response = await fetch(`${this.workerUrl}/api/${endpoint}`, {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: typeof body === 'string' ? body : JSON.stringify(body)
+					});
+					if (!response.ok) {
+						throw new Error(`Blockfrost error: ${response.status}`);
+					}
+					return response.json();
+				}
+			}
+
 				let connectedWallet = null;
 				let walletApi = null;
 				let lucid = null;
@@ -616,29 +651,13 @@
 				// Sanitize endpoint - prevent injection
 				const sanitizedEndpoint = endpoint.replace(/[^a-zA-Z0-9/_-]/g, '');
 
-				try {
-					// Try Worker proxy first (preferred - hides API key for reads)
-					const response = await fetch(`${WORKER_URL}/api/${sanitizedEndpoint}`);
-					if (response.ok) {
-						return response.json();
-					}
-					console.warn('Worker proxy failed, falling back to direct API');
-				} catch (workerError) {
-					console.warn('Worker proxy error:', workerError);
+				// Use Worker proxy - API key is secured on the Worker
+				const response = await fetch(`${WORKER_URL}/api/${sanitizedEndpoint}`);
+
+				if (!response.ok) {
+					throw new Error(`Worker API error: ${response.status}. Ensure Worker is properly configured.`);
 				}
 
-				// Fallback to direct Blockfrost API
-				const response = await fetch(
-					`https://cardano-mainnet.blockfrost.io/api/v0/${sanitizedEndpoint}`,
-					{
-						headers: {
-							'project_id': BLOCKFROST_API_KEY
-						}
-					}
-				);
-				if (!response.ok) {
-					throw new Error(`API error: ${response.status}`);
-				}
 				return response.json();
 			}
 
@@ -655,12 +674,9 @@
 						walletApi = await window.cardano[walletName].enable();
 						connectedWallet = walletName;
 
-						// Initialize Lucid with Blockfrost
+						// Initialize Lucid with Secure Blockfrost Provider (routes through Worker)
 						lucid = await Lucid.new(
-							new Blockfrost(
-								"https://cardano-mainnet.blockfrost.io/api/v0",
-								BLOCKFROST_API_KEY
-							),
+							new SecureBlockfrostProvider(WORKER_URL),
 							"Mainnet"
 						);
 
@@ -794,10 +810,7 @@
 
 						// Re-initialize Lucid with fresh connection to ensure latest UTxOs
 						lucid = await Lucid.new(
-							new Blockfrost(
-								"https://cardano-mainnet.blockfrost.io/api/v0",
-								BLOCKFROST_API_KEY
-							),
+							new SecureBlockfrostProvider(WORKER_URL),
 							"Mainnet"
 						);
 						lucid.selectWallet(walletApi);
