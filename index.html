@@ -287,6 +287,7 @@
 						</button>
 					</div>
 					<div id="delegation-section" style="display: none; margin-top: 1.5em;">
+						<div id="delegation-status-box" style="margin-bottom: 1em; padding: 1em; background: rgba(255,255,255,0.1); border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);"></div>
 						<button id="delegate-btn" onclick="delegateToPool()" style="background: linear-gradient(90deg, #ff6b6b, #ffd93d); border: none; padding: 1em 2em; font-size: 1.1em; font-weight: bold; color: white; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
 							🎉 Delegate to BKIND Pool
 						</button>
@@ -588,6 +589,12 @@
 						});
 						const balanceAda = Number(totalLovelace) / 1000000;
 
+					// Update UI elements - show delegation section immediately
+					document.getElementById('connection-status').textContent = `✓ Connected: ${walletName.charAt(0).toUpperCase() + walletName.slice(1)}`;
+					document.getElementById('wallet-buttons').style.display = 'none';
+					document.getElementById('delegation-section').style.display = 'block';
+					document.getElementById('delegation-status-box').innerHTML = '<div style="text-align: center; padding: 0.5em;">⏳ Checking delegation status...</div>';
+
 						// Check current delegation status
 						const rewardAddress = await lucid.wallet.rewardAddress();
 						let delegationInfo = '';
@@ -613,6 +620,18 @@
 
 									if (isAlreadyDelegatedToBKIND) {
 										delegationInfo = `✓ Already delegating to BKIND pool!`;
+							// Update status box with prominent success message
+							document.getElementById('delegation-status-box').innerHTML = `
+								<div style="text-align: center; padding: 1em;">
+									<div style="font-size: 3em; margin-bottom: 0.3em;">✓</div>
+									<div style="font-size: 1.3em; font-weight: bold; color: #6bcf7f; margin-bottom: 0.5em;">
+										Already Delegating to BKIND!
+									</div>
+									<div style="font-size: 0.95em; opacity: 0.9;">
+										Thank you for your support! 🙏
+									</div>
+								</div>
+							`;
 										document.getElementById('delegate-btn').textContent = '✓ Delegating to BKIND!';
 										document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
 										document.getElementById('delegate-btn').disabled = true;
@@ -620,27 +639,55 @@
 										document.getElementById('delegate-btn').style.cursor = 'not-allowed';
 									} else {
 										delegationInfo = `Currently delegating to: ${currentPool.substring(0, 20)}...`;
+										// Update status box for other pool
+										document.getElementById('delegation-status-box').innerHTML = `
+											<div style="text-align: center; padding: 1em;">
+												<div style="font-size: 2.5em; margin-bottom: 0.3em;">🔄</div>
+												<div style="font-size: 1.1em; font-weight: bold; margin-bottom: 0.5em;">
+													Currently Delegating to Another Pool
+												</div>
+												<div style="font-size: 0.85em; opacity: 0.8; word-break: break-all;">
+													Pool ID: ${currentPool.substring(0, 30)}...
+												</div>
+												<div style="font-size: 0.9em; margin-top: 0.5em; opacity: 0.9;">
+													You can switch to BKIND below
+												</div>
+											</div>
+										`;
 										document.getElementById('delegate-btn').textContent = '🔄 Switch to BKIND Pool';
 									}
 								} else {
 									delegationInfo = 'Not currently delegating';
+									// Update status box for no delegation
+									document.getElementById('delegation-status-box').innerHTML = `
+										<div style="text-align: center; padding: 1em;">
+											<div style="font-size: 2.5em; margin-bottom: 0.3em;">⚠️</div>
+											<div style="font-size: 1.1em; font-weight: bold; margin-bottom: 0.3em;">
+												Not Currently Delegating
+											</div>
+											<div style="font-size: 0.9em; opacity: 0.9;">
+												Your ADA is not earning rewards yet
+											</div>
+										</div>
+									`;
 								}
 							}
 						} catch (delegationError) {
 							console.log('Could not fetch delegation info:', delegationError);
 							delegationInfo = '';
+						// Update status box for error
+						document.getElementById('delegation-status-box').innerHTML = `
+							<div style="text-align: center; padding: 1em;">
+								<div style="font-size: 1em; opacity: 0.8;">
+									Unable to check delegation status
+								</div>
+							</div>
+						`;
 						}
 
-						// Update UI
-						document.getElementById('connection-status').textContent = `✓ Connected: ${walletName.charAt(0).toUpperCase() + walletName.slice(1)}`;
-						document.getElementById('wallet-buttons').style.display = 'none';
-						document.getElementById('delegation-section').style.display = 'block';
 
-						let walletInfoText = `Balance: ${balanceAda.toFixed(2)} ADA`;
-						if (delegationInfo) {
-							walletInfoText += `\n${delegationInfo}`;
-						}
-						document.getElementById('wallet-info').textContent = walletInfoText;
+					// Update wallet balance info
+					document.getElementById('wallet-info').textContent = `Balance: ${balanceAda.toFixed(2)} ADA`;
 
 						if (isAlreadyDelegatedToBKIND) {
 							showMessage('✓ You are already delegating to BKIND pool! Thank you for your support!');
