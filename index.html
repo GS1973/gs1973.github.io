@@ -206,6 +206,40 @@
 					transform: scale(2) rotate(270deg);
 				}
 			}
+
+			/* Wallet Button Styling */
+			.wallet-btn {
+				background: rgba(255, 255, 255, 0.1);
+				border: 2px solid rgba(255, 255, 255, 0.3);
+				color: white;
+				padding: 0.8em 1.5em;
+				font-size: 1em;
+				font-weight: bold;
+				cursor: pointer;
+				border-radius: 8px;
+				transition: all 0.3s ease;
+				backdrop-filter: blur(10px);
+			}
+
+			.wallet-btn:hover {
+				background: rgba(255, 255, 255, 0.2);
+				border-color: rgba(255, 255, 255, 0.5);
+				transform: translateY(-2px);
+				box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+			}
+
+			.wallet-btn:active {
+				transform: translateY(0);
+			}
+
+			#delegate-btn:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4);
+			}
+
+			#delegate-btn:active {
+				transform: translateY(0);
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -232,6 +266,31 @@
 				Active since 29th of July 2020
 				<br />
 				Ticker: BKIND</p>
+
+				<!-- Wallet Connection Section -->
+				<div id="wallet-section" style="margin-top: 2em;">
+					<div id="wallet-status" style="margin-bottom: 1em; font-size: 0.9em; opacity: 0.9;">
+						<span id="connection-status">No wallet connected</span>
+					</div>
+					<div id="wallet-buttons">
+						<button class="wallet-btn" onclick="connectWallet('nami')" style="margin: 0.5em;">
+							Connect Nami
+						</button>
+						<button class="wallet-btn" onclick="connectWallet('eternl')" style="margin: 0.5em;">
+							Connect Eternl
+						</button>
+						<button class="wallet-btn" onclick="connectWallet('flint')" style="margin: 0.5em;">
+							Connect Flint
+						</button>
+					</div>
+					<div id="delegation-section" style="display: none; margin-top: 1.5em;">
+						<button id="delegate-btn" onclick="delegateToPool()" style="background: linear-gradient(90deg, #ff6b6b, #ffd93d); border: none; padding: 1em 2em; font-size: 1.1em; font-weight: bold; color: white; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+							🎉 Delegate to BKIND Pool
+						</button>
+						<div id="wallet-info" style="margin-top: 1em; font-size: 0.85em; opacity: 0.8;"></div>
+					</div>
+					<div id="message" style="margin-top: 1em; padding: 1em; border-radius: 5px; display: none;"></div>
+				</div>
 			</div>
 
 		<!-- Main -->
@@ -470,6 +529,153 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Cardano Wallet Integration -->
+			<script src="https://unpkg.com/@emurgo/cardano-serialization-lib-browser@11.2.1/cardano_serialization_lib.js"></script>
+			<script>
+				const POOL_ID = 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y';
+				let connectedWallet = null;
+				let walletApi = null;
+
+				function showMessage(text, isError = false) {
+					const msgDiv = document.getElementById('message');
+					msgDiv.textContent = text;
+					msgDiv.style.display = 'block';
+					msgDiv.style.background = isError ? 'rgba(255, 100, 100, 0.2)' : 'rgba(100, 255, 100, 0.2)';
+					msgDiv.style.border = isError ? '1px solid #ff6b6b' : '1px solid #6bcf7f';
+					msgDiv.style.color = 'white';
+					setTimeout(() => {
+						msgDiv.style.display = 'none';
+					}, 5000);
+				}
+
+				async function connectWallet(walletName) {
+					try {
+						// Check if wallet extension is installed
+						if (!window.cardano || !window.cardano[walletName]) {
+							showMessage(`${walletName.charAt(0).toUpperCase() + walletName.slice(1)} wallet not found. Please install the extension.`, true);
+							return;
+						}
+
+						// Enable wallet
+						walletApi = await window.cardano[walletName].enable();
+						connectedWallet = walletName;
+
+						// Get wallet address
+						const usedAddresses = await walletApi.getUsedAddresses();
+						const changeAddress = await walletApi.getChangeAddress();
+
+						// Update UI
+						document.getElementById('connection-status').textContent = `✓ Connected: ${walletName.charAt(0).toUpperCase() + walletName.slice(1)}`;
+						document.getElementById('wallet-buttons').style.display = 'none';
+						document.getElementById('delegation-section').style.display = 'block';
+
+						// Get balance
+						const balance = await walletApi.getBalance();
+						const balanceValue = parseInt(balance, 16) / 1000000; // Convert to ADA
+						document.getElementById('wallet-info').textContent = `Balance: ${balanceValue.toFixed(2)} ADA`;
+
+						showMessage('Wallet connected successfully!');
+					} catch (error) {
+						console.error('Error connecting wallet:', error);
+						showMessage('Failed to connect wallet: ' + error.message, true);
+					}
+				}
+
+				async function delegateToPool() {
+					if (!walletApi) {
+						showMessage('Please connect your wallet first', true);
+						return;
+					}
+
+					try {
+						showMessage('Building delegation transaction...');
+
+						// Get network ID
+						const networkId = await walletApi.getNetworkId();
+
+						// Get change address
+						const changeAddressHex = await walletApi.getChangeAddress();
+						const changeAddress = window.CardanoSerializationLib.Address.from_bytes(
+							Buffer.from(changeAddressHex, 'hex')
+						);
+
+						// Get UTXOs
+						const utxosHex = await walletApi.getUtxos();
+						const utxos = utxosHex.map(utxo =>
+							window.CardanoSerializationLib.TransactionUnspentOutput.from_bytes(
+								Buffer.from(utxo, 'hex')
+							)
+						);
+
+						// Build transaction
+						const txBuilder = window.CardanoSerializationLib.TransactionBuilder.new(
+							window.CardanoSerializationLib.TransactionBuilderConfigBuilder.new()
+								.fee_algo(
+									window.CardanoSerializationLib.LinearFee.new(
+										window.CardanoSerializationLib.BigNum.from_str('44'),
+										window.CardanoSerializationLib.BigNum.from_str('155381')
+									)
+								)
+								.pool_deposit(window.CardanoSerializationLib.BigNum.from_str('500000000'))
+								.key_deposit(window.CardanoSerializationLib.BigNum.from_str('2000000'))
+								.max_value_size(5000)
+								.max_tx_size(16384)
+								.coins_per_utxo_word(window.CardanoSerializationLib.BigNum.from_str('34482'))
+								.build()
+						);
+
+						// Add certificate
+						const poolKeyHash = window.CardanoSerializationLib.Ed25519KeyHash.from_bech32(POOL_ID);
+						const stakeCred = window.CardanoSerializationLib.StakeCredential.from_keyhash(
+							changeAddress.to_address().as_base().stake_cred().to_keyhash()
+						);
+						const poolDelegation = window.CardanoSerializationLib.Certificate.new_stake_delegation(
+							window.CardanoSerializationLib.StakeDelegation.new(stakeCred, poolKeyHash)
+						);
+
+						const certs = window.CardanoSerializationLib.Certificates.new();
+						certs.add(poolDelegation);
+						txBuilder.set_certs(certs);
+
+						// Add inputs
+						for (const utxo of utxos.slice(0, 5)) { // Use up to 5 UTXOs
+							txBuilder.add_input(
+								utxo.output().address(),
+								utxo.input(),
+								utxo.output().amount()
+							);
+						}
+
+						// Set change address
+						txBuilder.add_change_if_needed(changeAddress);
+
+						// Build transaction
+						const txBody = txBuilder.build();
+						const txHash = window.CardanoSerializationLib.hash_transaction(txBody);
+						const witnesses = window.CardanoSerializationLib.TransactionWitnessSet.new();
+						const tx = window.CardanoSerializationLib.Transaction.new(txBody, witnesses);
+
+						// Sign transaction
+						const txHex = Buffer.from(tx.to_bytes()).toString('hex');
+						const witnessSetHex = await walletApi.signTx(txHex, true);
+
+						// Submit transaction
+						const witnessSet = window.CardanoSerializationLib.TransactionWitnessSet.from_bytes(
+							Buffer.from(witnessSetHex, 'hex')
+						);
+						const signedTx = window.CardanoSerializationLib.Transaction.new(txBody, witnessSet);
+						const signedTxHex = Buffer.from(signedTx.to_bytes()).toString('hex');
+
+						const txId = await walletApi.submitTx(signedTxHex);
+
+						showMessage(`✓ Success! You are now delegating to BKIND pool! TX: ${txId.substring(0, 16)}...`);
+					} catch (error) {
+						console.error('Delegation error:', error);
+						showMessage('Delegation failed: ' + error.message, true);
+					}
+				}
+			</script>
 
 	</body>
 	
