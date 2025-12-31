@@ -113,18 +113,22 @@ async function handleRequest(request, env) {
 
 function handleCORS(request) {
   const origin = request.headers.get('Origin');
+
+  // Reject unauthorized origins
   if (origin && !ALLOWED_ORIGINS.includes(origin)) {
     return new Response('Forbidden', { status: 403 });
   }
 
+  // Build headers object
   const headers = {
-    ...getCORSHeaders(origin),
     'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
   };
 
-  // Only set max-age if we have CORS headers
+  // Add origin-specific headers only if origin is present and allowed
   if (origin) {
+    headers['Access-Control-Allow-Origin'] = origin;
+    headers['Access-Control-Allow-Credentials'] = 'true';
     headers['Access-Control-Max-Age'] = '86400';
   }
 
@@ -135,14 +139,15 @@ function handleCORS(request) {
 }
 
 function getCORSHeaders(origin) {
-  // Only return CORS headers if origin is present
-  if (!origin) {
-    return {};
+  const headers = {};
+
+  // Only add CORS headers if origin is present and valid
+  if (origin) {
+    headers['Access-Control-Allow-Origin'] = origin;
+    headers['Access-Control-Allow-Credentials'] = 'true';
   }
-  return {
-    'Access-Control-Allow-Origin': origin,
-    'Access-Control-Allow-Credentials': 'true',
-  };
+
+  return headers;
 }
 
 function checkRateLimit(clientIP) {
