@@ -35,7 +35,7 @@ This guide will help you deploy the Blockfrost API proxy to Cloudflare Workers t
 4. Under "Environment Variables", click "Add variable"
 5. Add:
    - **Variable name**: `BLOCKFROST_API_KEY`
-   - **Value**: Your actual Blockfrost API key (e.g., `mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt`)
+   - **Value**: Your actual Blockfrost API key
    - **Type**: Select "Encrypt" for security
 6. Click "Save"
 
@@ -105,7 +105,7 @@ const response = await fetch(
 ### 9. Remove the API Key from Your Website
 Delete or comment out this line from `index.html`:
 ```javascript
-const BLOCKFROST_API_KEY = 'mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt';
+const BLOCKFROST_API_KEY = 'YOUR_API_KEY_HERE'; // [REDACTED FOR SECURITY]
 ```
 
 ## Security Benefits

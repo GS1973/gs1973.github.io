@@ -106,7 +106,7 @@ if (accountInfo) {
 
 After confirming the Worker is working, remove this line (around line 582):
 ```javascript
-const BLOCKFROST_API_KEY = 'mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt';
+const BLOCKFROST_API_KEY = 'YOUR_API_KEY_HERE'; // [REDACTED FOR SECURITY]
 ```
 
 And update the secure fetch function to remove the fallback code.
