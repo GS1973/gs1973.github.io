@@ -601,8 +601,7 @@
 						let isAlreadyDelegatedToBKIND = false;
 
 						try {
-							const delegation = await lucid.datumOf(rewardAddress);
-							// Query Blockfrost for delegation info
+						// Query Blockfrost for delegation info
 							const response = await fetch(
 								`https://cardano-mainnet.blockfrost.io/api/v0/accounts/${rewardAddress}`,
 								{
