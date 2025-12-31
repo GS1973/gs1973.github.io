@@ -616,8 +616,26 @@
 				// Sanitize endpoint - prevent injection
 				const sanitizedEndpoint = endpoint.replace(/[^a-zA-Z0-9/_-]/g, '');
 
-				// Use secure Worker proxy
-				const response = await fetch(`${WORKER_URL}/api/${sanitizedEndpoint}`);
+				try {
+					// Try Worker proxy first (preferred - hides API key for reads)
+					const response = await fetch(`${WORKER_URL}/api/${sanitizedEndpoint}`);
+					if (response.ok) {
+						return response.json();
+					}
+					console.warn('Worker proxy failed, falling back to direct API');
+				} catch (workerError) {
+					console.warn('Worker proxy error:', workerError);
+				}
+
+				// Fallback to direct Blockfrost API
+				const response = await fetch(
+					`https://cardano-mainnet.blockfrost.io/api/v0/${sanitizedEndpoint}`,
+					{
+						headers: {
+							'project_id': BLOCKFROST_API_KEY
+						}
+					}
+				);
 				if (!response.ok) {
 					throw new Error(`API error: ${response.status}`);
 				}
