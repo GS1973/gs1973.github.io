@@ -15,6 +15,7 @@ const BLOCKFROST_BASE_URL = 'https://cardano-mainnet.blockfrost.io/api/v0';
 // Allowed origins - UPDATE THIS to match your website domain
 const ALLOWED_ORIGINS = [
   'https://gs1973.github.io',
+  'https://smitblockchainops.nl',
   'http://localhost:3000', // For local testing
 ];
 
