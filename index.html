@@ -570,8 +570,16 @@
 			<script type="module">
 				import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mod.js";
 
-				const POOL_ID = 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y';
-				const BLOCKFROST_API_KEY = 'mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt';
+				// ============================================
+			// SECURITY CONFIGURATION
+			// ============================================
+			const POOL_ID = 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y';
+
+			// TODO: After deploying Cloudflare Worker, set this to your Worker URL
+			// Example: 'https://blockfrost-proxy.YOUR-SUBDOMAIN.workers.dev'
+			const WORKER_URL = null;
+			// INSECURE: This key is visible in source code - remove after deploying Worker
+			const BLOCKFROST_API_KEY = 'mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt';
 				let connectedWallet = null;
 				let walletApi = null;
 				let lucid = null;
