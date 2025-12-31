@@ -534,12 +534,14 @@
 			<script src="assets/js/main.js"></script>
 
 			<!-- Cardano Wallet Integration -->
-			<script src="https://unpkg.com/@emurgo/cardano-serialization-lib-asmjs@11.5.0/cardano_serialization_lib.js"></script>
-			<script>
+			<script type="module">
+				import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mod.js";
+
 				const POOL_ID = 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y';
+				const BLOCKFROST_API_KEY = 'mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt';
 				let connectedWallet = null;
 				let walletApi = null;
-				let Loader = null;
+				let lucid = null;
 
 				function showMessage(text, isError = false) {
 					const msgDiv = document.getElementById('message');
@@ -561,24 +563,35 @@
 							return;
 						}
 
-						// Load the Cardano serialization library
-						if (!Loader) {
-							Loader = await window.CardanoSerializationLib;
-						}
-
 						// Enable wallet
 						walletApi = await window.cardano[walletName].enable();
 						connectedWallet = walletName;
 
-						// Get balance
-						const balanceHex = await walletApi.getBalance();
-						const balanceValue = parseInt(balanceHex, 16) / 1000000; // Convert to ADA
+						// Initialize Lucid with Blockfrost
+						lucid = await Lucid.new(
+							new Blockfrost(
+								"https://cardano-mainnet.blockfrost.io/api/v0",
+								BLOCKFROST_API_KEY
+							),
+							"Mainnet"
+						);
+
+						// Select wallet
+						lucid.selectWallet(walletApi);
+
+						// Get wallet info
+						const utxos = await lucid.wallet.getUtxos();
+						let totalLovelace = 0n;
+						utxos.forEach(utxo => {
+							totalLovelace += utxo.assets.lovelace;
+						});
+						const balanceAda = Number(totalLovelace) / 1000000;
 
 						// Update UI
 						document.getElementById('connection-status').textContent = `✓ Connected: ${walletName.charAt(0).toUpperCase() + walletName.slice(1)}`;
 						document.getElementById('wallet-buttons').style.display = 'none';
 						document.getElementById('delegation-section').style.display = 'block';
-						document.getElementById('wallet-info').textContent = `Balance: ${balanceValue.toFixed(2)} ADA`;
+						document.getElementById('wallet-info').textContent = `Balance: ${balanceAda.toFixed(2)} ADA`;
 
 						showMessage('Wallet connected successfully!');
 					} catch (error) {
@@ -588,30 +601,83 @@
 				}
 
 				async function delegateToPool() {
-					if (!walletApi) {
+					if (!lucid || !walletApi) {
 						showMessage('Please connect your wallet first', true);
 						return;
 					}
 
-					// For now, provide helpful delegation links
-					const poolUrl = `https://adapools.org/pool/${POOL_ID}`;
-					const pooltoolUrl = `https://pooltool.io/pool/${POOL_ID}`;
+					try {
+						showMessage('Building delegation transaction...');
 
-					showMessage(`
-						Thank you for your interest in delegating to BKIND!
+						// Get reward address
+						const rewardAddress = await lucid.wallet.rewardAddress();
 
-						You can delegate through these trusted pool explorers:
-						• AdaPools: ${poolUrl}
-						• PoolTool: ${pooltoolUrl}
+						if (!rewardAddress) {
+							showMessage('No reward address found. Please ensure your wallet is properly set up.', true);
+							return;
+						}
 
-						Or use your wallet's built-in delegation feature and search for ticker: BKIND
-					`);
+						// Build delegation transaction
+						const tx = await lucid
+							.newTx()
+							.registerStake(rewardAddress)
+							.delegateTo(rewardAddress, POOL_ID)
+							.complete();
 
-					// Open AdaPools in new tab
-					setTimeout(() => {
-						window.open(poolUrl, '_blank');
-					}, 1000);
+						// Sign transaction
+						const signedTx = await tx.sign().complete();
+
+						// Submit transaction
+						const txHash = await signedTx.submit();
+
+						showMessage(`✓ Success! Delegation transaction submitted!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
+
+						// Update UI to show success
+						document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
+						document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
+
+					} catch (error) {
+						console.error('Delegation error:', error);
+
+						// Provide helpful error messages
+						let errorMsg = error.message || error.toString();
+
+						if (errorMsg.includes('already registered') || errorMsg.includes('StakeKeyRegisteredDELEGS')) {
+							// Stake key already registered, try delegation only
+							try {
+								showMessage('Stake key already registered. Delegating...');
+
+								const rewardAddress = await lucid.wallet.rewardAddress();
+								const tx = await lucid
+									.newTx()
+									.delegateTo(rewardAddress, POOL_ID)
+									.complete();
+
+								const signedTx = await tx.sign().complete();
+								const txHash = await signedTx.submit();
+
+								showMessage(`✓ Success! Delegation updated!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
+
+								document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
+								document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
+
+							} catch (retryError) {
+								console.error('Retry delegation error:', retryError);
+								showMessage('Delegation failed: ' + (retryError.message || retryError.toString()), true);
+							}
+						} else if (errorMsg.includes('insufficient')) {
+							showMessage('Insufficient funds. You need at least 2-3 ADA to cover transaction fee and deposit.', true);
+						} else if (errorMsg.includes('UTxO Balance Insufficient')) {
+							showMessage('Insufficient balance for transaction. Please ensure you have enough ADA.', true);
+						} else {
+							showMessage('Delegation failed: ' + errorMsg, true);
+						}
+					}
 				}
+
+				// Make functions globally available
+				window.connectWallet = connectWallet;
+				window.delegateToPool = delegateToPool;
 			</script>
 
 	</body>
