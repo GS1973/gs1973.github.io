@@ -240,6 +240,35 @@
 			#delegate-btn:active {
 				transform: translateY(0);
 			}
+
+		/* Top Right Delegate Button */
+		#top-delegate-btn {
+			position: fixed;
+			top: 70px;
+			right: 20px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			border: 2px solid rgba(255, 255, 255, 0.3);
+			color: white;
+			padding: 0.9em 1.8em;
+			font-size: 1.05em;
+			font-weight: bold;
+			cursor: pointer;
+			border-radius: 10px;
+			transition: all 0.3s ease;
+			backdrop-filter: blur(10px);
+			box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+			z-index: 9998;
+		}
+
+		#top-delegate-btn:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+			background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+		}
+
+		#top-delegate-btn:active {
+			transform: translateY(0);
+		}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -258,6 +287,9 @@
 				</div>
 			</div>
 
+		<!-- Top Right Delegate Button -->
+		<button id="top-delegate-btn" onclick="showWalletSelection()">Delegate</button>
+
 		<!-- Header -->
 			<div id="header">
 				<h1>Smit Blockchain Operations</h1>
@@ -268,7 +300,7 @@
 				Ticker: BKIND</p>
 
 				<!-- Wallet Connection Section -->
-				<div id="wallet-section" style="margin-top: 2em;">
+				<div id="wallet-section" style="margin-top: 2em; display: none;">
 					<div id="wallet-status" style="margin-bottom: 1em; font-size: 0.9em; opacity: 0.9;">
 						<span id="connection-status">No wallet connected</span>
 					</div>
@@ -809,9 +841,19 @@
 					}
 				}
 
+
+				// Function to show wallet selection
+				function showWalletSelection() {
+					document.getElementById('wallet-section').style.display = 'block';
+					document.getElementById('top-delegate-btn').style.display = 'none';
+					// Scroll to wallet section
+					document.getElementById('wallet-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
+				}
+
 				// Make functions globally available
 				window.connectWallet = connectWallet;
 				window.delegateToPool = delegateToPool;
+				window.showWalletSelection = showWalletSelection;
 			</script>
 
 	</body>
