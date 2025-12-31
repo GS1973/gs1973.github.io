@@ -41,9 +41,9 @@ async function handleRequest(request, env) {
     return handleCORS(request);
   }
 
-  // Check origin
+  // Check origin - only reject if origin is present but not in allowed list
   const origin = request.headers.get('Origin');
-  if (!ALLOWED_ORIGINS.includes(origin)) {
+  if (origin && !ALLOWED_ORIGINS.includes(origin)) {
     return new Response('Forbidden', {
       status: 403,
       headers: { 'Content-Type': 'text/plain' }
@@ -113,7 +113,7 @@ async function handleRequest(request, env) {
 
 function handleCORS(request) {
   const origin = request.headers.get('Origin');
-  if (!ALLOWED_ORIGINS.includes(origin)) {
+  if (origin && !ALLOWED_ORIGINS.includes(origin)) {
     return new Response('Forbidden', { status: 403 });
   }
 
