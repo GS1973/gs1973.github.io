@@ -82,7 +82,7 @@
 				}
 			}
 
-			/* Fireworks Animation */
+			/* Realistic Fireworks Animation */
 			.fireworks {
 				position: absolute;
 				top: 0;
@@ -95,91 +95,115 @@
 
 			.firework {
 				position: absolute;
-				width: 4px;
-				height: 4px;
+				width: 2px;
+				height: 2px;
 				border-radius: 50%;
-				animation: fireworkBurst 3s ease-out infinite;
 			}
 
 			.firework:nth-child(1) {
-				left: 20%;
+				left: 15%;
+				animation: launch 3s ease-out infinite;
 				animation-delay: 0s;
 			}
 
 			.firework:nth-child(2) {
-				left: 40%;
-				animation-delay: 0.6s;
+				left: 35%;
+				animation: launch 3s ease-out infinite;
+				animation-delay: 0.8s;
 			}
 
 			.firework:nth-child(3) {
-				left: 60%;
-				animation-delay: 1.2s;
+				left: 55%;
+				animation: launch 3s ease-out infinite;
+				animation-delay: 1.6s;
 			}
 
 			.firework:nth-child(4) {
-				left: 80%;
-				animation-delay: 1.8s;
-			}
-
-			.firework:nth-child(5) {
-				left: 50%;
+				left: 75%;
+				animation: launch 3s ease-out infinite;
 				animation-delay: 2.4s;
 			}
 
-			.firework:before, .firework:after {
+			.firework:nth-child(5) {
+				left: 90%;
+				animation: launch 3s ease-out infinite;
+				animation-delay: 1.2s;
+			}
+
+			.firework:before {
 				content: '';
 				position: absolute;
+				top: 0;
+				left: 0;
 				width: 4px;
 				height: 4px;
 				border-radius: 50%;
 				box-shadow:
-					0 0 10px 2px #ff6b6b,
-					20px 20px 10px 2px #ffd93d,
-					-20px 20px 10px 2px #6bcf7f,
-					20px -20px 10px 2px #4d96ff,
-					-20px -20px 10px 2px #ff6bff,
-					40px 0 10px 2px #ffaa00,
-					-40px 0 10px 2px #00ffaa,
-					0 40px 10px 2px #aa00ff,
-					0 -40px 10px 2px #00aaff;
-				animation: fireworkParticles 1s ease-out infinite;
+					/* Inner ring - bright particles */
+					0 0 15px 3px #fff,
+					0 -25px 8px 2px #ff1744,
+					17px -17px 8px 2px #ffd700,
+					25px 0 8px 2px #00ff00,
+					17px 17px 8px 2px #00bfff,
+					0 25px 8px 2px #ff1744,
+					-17px 17px 8px 2px #ff00ff,
+					-25px 0 8px 2px #ffd700,
+					-17px -17px 8px 2px #00ff00,
+					/* Middle ring */
+					0 -40px 6px 1px #ff4444,
+					28px -28px 6px 1px #ffee00,
+					40px 0 6px 1px #44ff44,
+					28px 28px 6px 1px #44eeff,
+					0 40px 6px 1px #ff44ff,
+					-28px 28px 6px 1px #ff4444,
+					-40px 0 6px 1px #ffee00,
+					-28px -28px 6px 1px #44ff44,
+					/* Outer ring - sparkles */
+					0 -55px 4px 1px rgba(255, 255, 100, 0.8),
+					39px -39px 4px 1px rgba(255, 100, 100, 0.8),
+					55px 0 4px 1px rgba(100, 255, 100, 0.8),
+					39px 39px 4px 1px rgba(100, 100, 255, 0.8),
+					0 55px 4px 1px rgba(255, 100, 255, 0.8),
+					-39px 39px 4px 1px rgba(255, 255, 100, 0.8),
+					-55px 0 4px 1px rgba(255, 100, 100, 0.8),
+					-39px -39px 4px 1px rgba(100, 255, 100, 0.8);
+				animation: explode 1.5s ease-out infinite;
 			}
 
-			.firework:after {
-				animation-delay: 0.1s;
-				transform: rotate(45deg);
-			}
-
-			@keyframes fireworkBurst {
+			@keyframes launch {
 				0% {
+					top: 100%;
 					opacity: 0;
-					top: 80%;
-				}
-				10% {
-					opacity: 1;
-					top: 50%;
 				}
 				30% {
+					top: 30%;
 					opacity: 1;
 				}
-				100% {
+				40%, 100% {
+					top: 30%;
 					opacity: 0;
-					top: 50%;
 				}
 			}
 
-			@keyframes fireworkParticles {
+			@keyframes explode {
 				0% {
 					opacity: 0;
-					transform: scale(0);
+					transform: scale(0) rotate(0deg);
+				}
+				5% {
+					opacity: 1;
 				}
 				20% {
 					opacity: 1;
-					transform: scale(1);
+					transform: scale(1) rotate(90deg);
+				}
+				80% {
+					opacity: 0.6;
+					transform: scale(1.5) rotate(180deg);
 				}
 				100% {
 					opacity: 0;
-					transform: scale(0.5);
+					transform: scale(2) rotate(270deg);
 				}
 			}
 		</style>
