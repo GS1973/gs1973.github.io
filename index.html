@@ -577,6 +577,10 @@
 
 			// Secure Worker URL - API key is hidden in the Worker
 			const WORKER_URL = 'https://blockfrost-proxy.smitblockchainops.workers.dev';
+
+			// API key needed for Lucid transaction submission (write operations)
+			// Worker handles all read operations (delegation status checks)
+			const BLOCKFROST_API_KEY = 'mainneteMYn6z4pUWYigfJTAHiDb0kPBmC6SMNt';
 				let connectedWallet = null;
 				let walletApi = null;
 				let lucid = null;
