@@ -590,29 +590,40 @@
 			 */
 			class SecureBlockfrostProvider extends Blockfrost {
 				constructor(workerUrl) {
-					// Initialize parent with dummy values (won't be used)
-					super("https://cardano-mainnet.blockfrost.io/api/v0", "dummy");
+					// Initialize parent with Worker URL and dummy project ID
+					super(`${workerUrl}/api`, "secure");
 					this.workerUrl = workerUrl;
+					this.url = `${workerUrl}/api`;
 				}
 
-				async get(endpoint) {
-					const response = await fetch(`${this.workerUrl}/api/${endpoint}`);
-					if (!response.ok) {
-						throw new Error(`Blockfrost error: ${response.status}`);
-					}
-					return response.json();
-				}
+				async request(endpoint, headers = {}, body) {
+					const url = `${this.url}/${endpoint}`;
 
-				async post(endpoint, body) {
-					const response = await fetch(`${this.workerUrl}/api/${endpoint}`, {
-						method: 'POST',
-						headers: { 'Content-Type': 'application/json' },
-						body: typeof body === 'string' ? body : JSON.stringify(body)
-					});
-					if (!response.ok) {
-						throw new Error(`Blockfrost error: ${response.status}`);
+					try {
+						const options = {
+							headers: {
+								'Content-Type': 'application/json',
+								...headers
+							}
+						};
+
+						if (body !== undefined) {
+							options.method = 'POST';
+							options.body = typeof body === 'string' ? body : JSON.stringify(body);
+						}
+
+						const response = await fetch(url, options);
+
+						if (!response.ok) {
+							const errorText = await response.text();
+							throw new Error(`Blockfrost API error (${response.status}): ${errorText}`);
+						}
+
+						return await response.json();
+					} catch (error) {
+						console.error('SecureBlockfrostProvider error:', error);
+						throw error;
 					}
-					return response.json();
 				}
 			}
 
