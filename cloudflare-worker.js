@@ -10,6 +10,37 @@
 
 const BLOCKFROST_BASE_URL = 'https://cardano-mainnet.blockfrost.io/api/v0';
 
+// Rate limiting configuration
+const RATE_LIMIT = {
+  MAX_REQUESTS: 30,      // Maximum requests per window
+  WINDOW_MS: 60000,      // Time window in milliseconds (1 minute)
+};
+
+// In-memory rate limit store (resets on worker restart)
+const rateLimitStore = new Map();
+
+function getRateLimitKey(request) {
+  return request.headers.get('CF-Connecting-IP') || 'unknown';
+}
+
+function isRateLimited(key) {
+  const now = Date.now();
+  const record = rateLimitStore.get(key);
+
+  if (!record || now - record.windowStart > RATE_LIMIT.WINDOW_MS) {
+    // New window
+    rateLimitStore.set(key, { windowStart: now, count: 1 });
+    return false;
+  }
+
+  if (record.count >= RATE_LIMIT.MAX_REQUESTS) {
+    return true;
+  }
+
+  record.count++;
+  return false;
+}
+
 const ALLOWED_ORIGINS = [
   'https://gs1973.github.io',
   'https://smitblockchainops.nl',
@@ -54,6 +85,19 @@ async function handleRequest(request, env) {
   // Check origin
   if (!corsHeaders['Access-Control-Allow-Origin']) {
     return new Response('Forbidden', { status: 403 });
+  }
+
+  // Check rate limit
+  const rateLimitKey = getRateLimitKey(request);
+  if (isRateLimited(rateLimitKey)) {
+    return new Response(JSON.stringify({ error: 'Too many requests. Please try again later.' }), {
+      status: 429,
+      headers: {
+        'Content-Type': 'application/json',
+        'Retry-After': '60',
+        ...corsHeaders,
+      },
+    });
   }
 
   // Only allow specific endpoints
@@ -107,7 +151,8 @@ async function handleRequest(request, env) {
       },
     });
   } catch (error) {
-    return new Response(JSON.stringify({ error: 'Proxy error', message: error.message }), {
+    console.error('Proxy error:', error);
+    return new Response(JSON.stringify({ error: 'An error occurred while processing your request.' }), {
       status: 500,
       headers: {
         'Content-Type': 'application/json',

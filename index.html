@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Smit Blockchain Operations - BKIND Cardano Stake Pool. The trustworthy Cardano stake pool active since July 2020.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://blockfrost-proxy.smitblockchainops.workers.dev; img-src 'self' data:;">
     <title>Smit Blockchain Operations - BKIND Cardano Stake Pool</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -388,9 +389,16 @@
             // Utility Functions
             function showMessage(text, type = 'info', loading = false) {
                 messageBox.className = `message-box visible ${type}`;
-                messageBox.innerHTML = loading
-                    ? `<span class="loading"></span>${text}`
-                    : text;
+                // Clear previous content safely
+                messageBox.textContent = '';
+                if (loading) {
+                    const spinner = document.createElement('span');
+                    spinner.className = 'loading';
+                    messageBox.appendChild(spinner);
+                    messageBox.appendChild(document.createTextNode(text));
+                } else {
+                    messageBox.textContent = text;
+                }
             }
 
             function hideMessage() {
@@ -534,10 +542,11 @@
 
                     return true;
                 } catch (error) {
+                    console.error('Wallet connection error:', error);
                     if (error.code === -3 || error.message?.includes('declined')) {
                         showMessage('Connection declined. Please approve the connection in your wallet.', 'warning');
                     } else {
-                        showMessage(`Failed to connect: ${error.message}`, 'error');
+                        showMessage('Failed to connect to wallet. Please try again.', 'error');
                     }
                     return false;
                 }
@@ -667,7 +676,7 @@
 
                 } catch (error) {
                     console.error('Connection error:', error);
-                    showMessage(`Error: ${error.message}`, 'error');
+                    showMessage('An error occurred while checking delegation status. Please try again.', 'error');
                 }
             }
 
@@ -683,7 +692,7 @@
                     await buildAndSignDelegation(currentStakeAddress, currentDelegationStatus.delegated);
                 } catch (error) {
                     console.error('Delegation error:', error);
-                    showMessage(`Error: ${error.message}`, 'error');
+                    showMessage('An error occurred during delegation. Please try again.', 'error');
                 }
             }
 
@@ -796,7 +805,7 @@
                     if (error.code === 2 || error.message?.includes('refused') || error.message?.includes('declined') || error.message?.includes('User')) {
                         showMessage('Transaction signing was declined.', 'warning');
                     } else {
-                        showMessage(`Delegation failed: ${error.message || 'Unknown error'}`, 'error');
+                        showMessage('Delegation failed. Please try again or contact support if the issue persists.', 'error');
                     }
                 }
             }
