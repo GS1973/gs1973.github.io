@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Smit Blockchain Operations - BKIND Cardano Stake Pool. The trustworthy Cardano stake pool active since July 2020.">
     <title>Smit Blockchain Operations - BKIND Cardano Stake Pool</title>
+    <script src="https://unpkg.com/@emurgo/cardano-serialization-lib-browser@11.5.0/cardano_serialization_lib.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
@@ -682,52 +683,127 @@
 
             async function buildAndSignDelegation(stakeAddress, alreadyRegistered) {
                 try {
+                    // Check if CSL is loaded
+                    if (typeof CardanoWasm === 'undefined') {
+                        showMessage('Loading transaction library, please wait...', 'info', true);
+                        await new Promise(resolve => setTimeout(resolve, 1000));
+                        if (typeof CardanoWasm === 'undefined') {
+                            showMessage('Failed to load transaction library. Please refresh and try again.', 'error');
+                            return;
+                        }
+                    }
+
+                    const CSL = CardanoWasm;
+
                     // Get UTXOs for transaction building
-                    const utxos = await walletApi.getUtxos();
-                    if (!utxos || utxos.length === 0) {
+                    const utxosHex = await walletApi.getUtxos();
+                    if (!utxosHex || utxosHex.length === 0) {
                         showMessage('No UTXOs available. Please ensure your wallet has ADA.', 'error');
                         return;
                     }
 
-                    const changeAddress = await walletApi.getChangeAddress();
+                    const changeAddressHex = await walletApi.getChangeAddress();
+                    const rewardAddressesHex = await walletApi.getRewardAddresses();
 
-                    showMessage('Please sign the transaction in your wallet...', 'info', true);
-
-                    // Build the delegation transaction
-                    // Note: In production, you would use @emurgo/cardano-serialization-lib-browser
-                    // This is a simplified version that relies on the wallet's signTx to handle
-                    // the transaction building with delegation certificate
-
-                    // For wallets that support building transactions internally:
-                    // We need to use the experimental API or build the tx ourselves
-                    // Most modern wallets handle this through their own APIs
-
-                    // Check if wallet supports experimental features
-                    if (walletApi.experimental && walletApi.experimental.buildDelegationTx) {
-                        const tx = await walletApi.experimental.buildDelegationTx(CONFIG.POOL_ID);
-                        const signedTx = await walletApi.signTx(tx, true);
-                        const txHash = await walletApi.submitTx(signedTx);
-
-                        showMessage(
-                            `Delegation successful! Transaction: ${txHash.slice(0, 20)}...`,
-                            'success'
-                        );
+                    if (!rewardAddressesHex || rewardAddressesHex.length === 0) {
+                        showMessage('No reward address found in wallet.', 'error');
                         return;
                     }
 
-                    // For standard CIP-30 wallets, we need to build the transaction ourselves
-                    // This requires the cardano-serialization-lib
-                    showMessage(
-                        'To complete delegation, please use your wallet\'s built-in delegation feature or a dApp like pool.pm. ' +
-                        'Search for pool ticker: BKIND',
-                        'warning'
+                    showMessage('Building delegation transaction...', 'info', true);
+
+                    // Parse addresses
+                    const changeAddress = CSL.Address.from_hex(changeAddressHex);
+                    const rewardAddress = CSL.RewardAddress.from_address(
+                        CSL.Address.from_hex(rewardAddressesHex[0])
                     );
 
+                    if (!rewardAddress) {
+                        showMessage('Invalid reward address format.', 'error');
+                        return;
+                    }
+
+                    const stakeCredential = rewardAddress.payment_cred();
+
+                    // Decode pool ID from bech32
+                    const poolIdBytes = bech32Decode(CONFIG.POOL_ID);
+                    const poolKeyHash = CSL.Ed25519KeyHash.from_bytes(poolIdBytes);
+
+                    // Build transaction
+                    const txBuilder = CSL.TransactionBuilder.new(
+                        CSL.TransactionBuilderConfigBuilder.new()
+                            .fee_algo(CSL.LinearFee.new(
+                                CSL.BigNum.from_str('44'),
+                                CSL.BigNum.from_str('155381')
+                            ))
+                            .pool_deposit(CSL.BigNum.from_str('500000000'))
+                            .key_deposit(CSL.BigNum.from_str('2000000'))
+                            .max_tx_size(16384)
+                            .max_value_size(5000)
+                            .coins_per_utxo_byte(CSL.BigNum.from_str('4310'))
+                            .build()
+                    );
+
+                    // Add UTXOs as inputs
+                    const utxos = CSL.TransactionUnspentOutputs.new();
+                    for (const utxoHex of utxosHex) {
+                        const utxo = CSL.TransactionUnspentOutput.from_hex(utxoHex);
+                        utxos.add(utxo);
+                    }
+
+                    // Create certificates
+                    const certificates = CSL.Certificates.new();
+
+                    // Add stake registration if not already registered
+                    if (!alreadyRegistered) {
+                        const stakeRegistration = CSL.Certificate.new_stake_registration(
+                            CSL.StakeRegistration.new(stakeCredential)
+                        );
+                        certificates.add(stakeRegistration);
+                    }
+
+                    // Add delegation certificate
+                    const stakeDelegation = CSL.Certificate.new_stake_delegation(
+                        CSL.StakeDelegation.new(stakeCredential, poolKeyHash)
+                    );
+                    certificates.add(stakeDelegation);
+
+                    txBuilder.set_certs(certificates);
+
+                    // Add inputs and build transaction
+                    txBuilder.add_inputs_from(utxos, CSL.CoinSelectionStrategyCIP2.LargestFirstMultiAsset);
+                    txBuilder.add_change_if_needed(changeAddress);
+
+                    const txBody = txBuilder.build();
+                    const tx = CSL.Transaction.new(
+                        txBody,
+                        CSL.TransactionWitnessSet.new()
+                    );
+
+                    const txHex = bytesToHex(tx.to_bytes());
+
+                    showMessage('Please sign the transaction in your wallet...', 'info', true);
+
+                    // Sign transaction
+                    const signedTxHex = await walletApi.signTx(txHex, true);
+
+                    showMessage('Submitting transaction...', 'info', true);
+
+                    // Submit transaction
+                    const txHash = await walletApi.submitTx(signedTxHex);
+
+                    showMessage(
+                        `Delegation successful! Transaction: ${txHash.slice(0, 16)}...`,
+                        'success'
+                    );
+                    hideDelegateAction();
+
                 } catch (error) {
-                    if (error.code === 2 || error.message?.includes('refused') || error.message?.includes('declined')) {
+                    console.error('Delegation error:', error);
+                    if (error.code === 2 || error.message?.includes('refused') || error.message?.includes('declined') || error.message?.includes('User')) {
                         showMessage('Transaction signing was declined.', 'warning');
                     } else {
-                        throw error;
+                        showMessage(`Delegation failed: ${error.message || 'Unknown error'}`, 'error');
                     }
                 }
             }
