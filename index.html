@@ -4,7 +4,7 @@
 		<title>Smit Blockchain Operations</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://blockfrost-proxy.smitblockchainops.workers.dev; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://blockfrost-proxy.smitblockchainops.workers.dev; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
 		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
 		<meta http-equiv="X-Frame-Options" content="DENY" />
 		<meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -28,7 +28,7 @@
 			</div>
 
 		<!-- Top Right Delegate Button -->
-		<button id="top-delegate-btn">Delegate</button>
+		<button id="top-delegate-btn" onclick="showWalletSelection()">Delegate</button>
 
 		<!-- Header -->
 			<div id="header">
@@ -45,22 +45,22 @@
 						<span id="connection-status">No wallet connected</span>
 					</div>
 					<div id="wallet-buttons">
-						<button class="wallet-btn" data-wallet="nami" style="margin: 0.5em;">
+						<button class="wallet-btn" onclick="connectWallet('nami')" style="margin: 0.5em;">
 							Connect Nami
 						</button>
-						<button class="wallet-btn" data-wallet="eternl" style="margin: 0.5em;">
+						<button class="wallet-btn" onclick="connectWallet('eternl')" style="margin: 0.5em;">
 							Connect Eternl
 						</button>
-						<button class="wallet-btn" data-wallet="flint" style="margin: 0.5em;">
+						<button class="wallet-btn" onclick="connectWallet('flint')" style="margin: 0.5em;">
 							Connect Flint
 						</button>
-						<button class="wallet-btn" data-wallet="yoroi" style="margin: 0.5em;">
+						<button class="wallet-btn" onclick="connectWallet('yoroi')" style="margin: 0.5em;">
 							Connect Yoroi
 						</button>
 					</div>
 					<div id="delegation-section" style="display: none; margin-top: 1.5em;">
 						<div id="delegation-status-box" style="margin-bottom: 1em; padding: 1em; background: rgba(255,255,255,0.1); border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);"></div>
-						<button id="delegate-btn" style="background: linear-gradient(90deg, #ff6b6b, #ffd93d); border: none; padding: 1em 2em; font-size: 1.1em; font-weight: bold; color: white; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+						<button id="delegate-btn" onclick="delegateToPool()" style="background: linear-gradient(90deg, #ff6b6b, #ffd93d); border: none; padding: 1em 2em; font-size: 1.1em; font-weight: bold; color: white; cursor: pointer; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
 							🎉 Delegate to BKIND Pool
 						</button>
 						<div id="wallet-info" style="margin-top: 1em; font-size: 0.85em; opacity: 0.8;"></div>
@@ -97,7 +97,7 @@
 		<!-- Cardano Wallet Integration -->
 		<script type="module"
 		        src="assets/js/cardano-delegation.js"
-		        integrity="sha384-yzH96KMESNGS5V8AIG+90lZToqKThPjbvw3FLwXm1XBeYsWfUJ+M4VEQhPxQyjp3"
+		        integrity="sha384-Qle95uCsGHDPNy/U02GfwZsTZBbBPBTNUAHmd5riX8UkBqDdx2mu1Cx6sIaAZESY"
 		        crossorigin="anonymous"></script>
 
 	</body>
