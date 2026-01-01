@@ -216,9 +216,8 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 			// Update status box with prominent success message
 			setDelegationStatusBox('✓', 'Already Delegating to BKIND!', 'Thank you for your support! 🙏', 'success');
 						document.getElementById('delegate-btn').textContent = '✓ Delegating to BKIND!';
-						document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
 						document.getElementById('delegate-btn').disabled = true;
-						document.getElementById('delegate-btn').style.opacity = '0.7';
+						document.getElementById('delegate-btn').style.opacity = '0.5';
 						document.getElementById('delegate-btn').style.cursor = 'not-allowed';
 					} else {
 						delegationInfo = `Currently delegating to: ${currentPool.substring(0, 20)}...`;
@@ -303,7 +302,6 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 			showMessage(`✓ Success! Delegation transaction submitted!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
 
 			document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
-			document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
 
 			isDelegating = false;
 			return;
@@ -329,7 +327,6 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 				showMessage(`✓ Success! Stake key registered and delegated!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
 
 				document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
-				document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
 
 				isDelegating = false;
 				return;
