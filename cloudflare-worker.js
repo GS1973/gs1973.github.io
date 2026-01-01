@@ -126,7 +126,7 @@ function handleCORS(request) {
   // Build headers object
   const headers = {
     'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Headers': 'Content-Type, project_id',
   };
 
   // Add origin-specific headers only if origin is present and allowed
