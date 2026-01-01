@@ -82,6 +82,58 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 		}, 5000);
 	}
 
+	/**
+	 * Safely updates the delegation status box without using innerHTML
+	 * @param {string} icon - The icon/emoji to display
+	 * @param {string} title - The main title text
+	 * @param {string|null} subtitle - Optional subtitle text
+	 * @param {string} type - 'success', 'warning', 'info', 'pending', or 'error'
+	 * @param {string|null} poolId - Optional pool ID to display (will be sanitized)
+	 */
+	function setDelegationStatusBox(icon, title, subtitle, type, poolId = null) {
+		const statusBox = document.getElementById('delegation-status-box');
+		// Clear existing content safely
+		while (statusBox.firstChild) {
+			statusBox.removeChild(statusBox.firstChild);
+		}
+
+		const container = document.createElement('div');
+		container.style.cssText = 'text-align: center; padding: 1em;';
+
+		// Icon
+		const iconDiv = document.createElement('div');
+		iconDiv.style.cssText = type === 'pending' ? 'font-size: 1em; margin-bottom: 0.3em;' : 'font-size: 2.5em; margin-bottom: 0.3em;';
+		iconDiv.textContent = icon;
+		container.appendChild(iconDiv);
+
+		// Title
+		const titleDiv = document.createElement('div');
+		const titleColor = type === 'success' ? '#6bcf7f' : 'inherit';
+		titleDiv.style.cssText = `font-size: 1.1em; font-weight: bold; color: ${titleColor}; margin-bottom: 0.3em;`;
+		titleDiv.textContent = title;
+		container.appendChild(titleDiv);
+
+		// Pool ID (sanitized)
+		if (poolId) {
+			const poolDiv = document.createElement('div');
+			poolDiv.style.cssText = 'font-size: 0.85em; opacity: 0.8; word-break: break-all;';
+			// Sanitize pool ID - only allow alphanumeric characters
+			const sanitizedPoolId = poolId.replace(/[^a-zA-Z0-9]/g, '');
+			poolDiv.textContent = `Pool ID: ${sanitizedPoolId.substring(0, 30)}...`;
+			container.appendChild(poolDiv);
+		}
+
+		// Subtitle
+		if (subtitle) {
+			const subtitleDiv = document.createElement('div');
+			subtitleDiv.style.cssText = 'font-size: 0.9em; margin-top: 0.5em; opacity: 0.9;';
+			subtitleDiv.textContent = subtitle;
+			container.appendChild(subtitleDiv);
+		}
+
+		statusBox.appendChild(container);
+	}
+
 
 	// ============================================
 	// SECURE API HELPER
@@ -144,7 +196,7 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 	document.getElementById('connection-status').textContent = `✓ Connected: ${walletName.charAt(0).toUpperCase() + walletName.slice(1)}`;
 	document.getElementById('wallet-buttons').style.display = 'none';
 	document.getElementById('delegation-section').style.display = 'block';
-	document.getElementById('delegation-status-box').innerHTML = '<div style="text-align: center; padding: 0.5em;">⏳ Checking delegation status...</div>';
+	setDelegationStatusBox('⏳', 'Checking delegation status...', null, 'pending');
 
 		// Check current delegation status
 		const rewardAddress = await lucid.wallet.rewardAddress();
@@ -162,17 +214,7 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 					if (isAlreadyDelegatedToBKIND) {
 						delegationInfo = `✓ Already delegating to BKIND pool!`;
 			// Update status box with prominent success message
-			document.getElementById('delegation-status-box').innerHTML = `
-				<div style="text-align: center; padding: 1em;">
-					<div style="font-size: 3em; margin-bottom: 0.3em;">✓</div>
-					<div style="font-size: 1.3em; font-weight: bold; color: #6bcf7f; margin-bottom: 0.5em;">
-						Already Delegating to BKIND!
-					</div>
-					<div style="font-size: 0.95em; opacity: 0.9;">
-						Thank you for your support! 🙏
-					</div>
-				</div>
-			`;
+			setDelegationStatusBox('✓', 'Already Delegating to BKIND!', 'Thank you for your support! 🙏', 'success');
 						document.getElementById('delegate-btn').textContent = '✓ Delegating to BKIND!';
 						document.getElementById('delegate-btn').style.background = 'linear-gradient(90deg, #6bcf7f, #00ff00)';
 						document.getElementById('delegate-btn').disabled = true;
@@ -181,48 +223,19 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 					} else {
 						delegationInfo = `Currently delegating to: ${currentPool.substring(0, 20)}...`;
 						// Update status box for other pool
-						document.getElementById('delegation-status-box').innerHTML = `
-							<div style="text-align: center; padding: 1em;">
-								<div style="font-size: 2.5em; margin-bottom: 0.3em;">🔄</div>
-								<div style="font-size: 1.1em; font-weight: bold; margin-bottom: 0.5em;">
-									Currently Delegating to Another Pool
-								</div>
-								<div style="font-size: 0.85em; opacity: 0.8; word-break: break-all;">
-									Pool ID: ${currentPool.substring(0, 30)}...
-								</div>
-								<div style="font-size: 0.9em; margin-top: 0.5em; opacity: 0.9;">
-									You can switch to BKIND below
-								</div>
-							</div>
-						`;
+						setDelegationStatusBox('🔄', 'Currently Delegating to Another Pool', 'You can switch to BKIND below', 'info', currentPool);
 						document.getElementById('delegate-btn').textContent = '🔄 Switch to BKIND Pool';
 					}
 				} else {
 					delegationInfo = 'Not currently delegating';
 					// Update status box for no delegation
-					document.getElementById('delegation-status-box').innerHTML = `
-						<div style="text-align: center; padding: 1em;">
-							<div style="font-size: 2.5em; margin-bottom: 0.3em;">⚠️</div>
-							<div style="font-size: 1.1em; font-weight: bold; margin-bottom: 0.3em;">
-								Not Currently Delegating
-							</div>
-							<div style="font-size: 0.9em; opacity: 0.9;">
-								Your ADA is not earning rewards yet
-							</div>
-						</div>
-					`;
+					setDelegationStatusBox('⚠️', 'Not Currently Delegating', 'Your ADA is not earning rewards yet', 'warning');
 				}
 		} catch (delegationError) {
 			console.log('Could not fetch delegation info:', delegationError);
 			delegationInfo = '';
 		// Update status box for error
-		document.getElementById('delegation-status-box').innerHTML = `
-			<div style="text-align: center; padding: 1em;">
-				<div style="font-size: 1em; opacity: 0.8;">
-					Unable to check delegation status
-				</div>
-			</div>
-		`;
+		setDelegationStatusBox('', 'Unable to check delegation status', null, 'error');
 		}
 
 
@@ -356,9 +369,39 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 		document.getElementById('wallet-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
 	}
 
-	// Make functions globally available for onclick handlers
-	window.connectWallet = connectWallet;
-	window.delegateToPool = delegateToPool;
-	window.showWalletSelection = showWalletSelection;
+	// ============================================
+	// EVENT LISTENERS (CSP-compliant, no inline handlers)
+	// ============================================
+	function initEventListeners() {
+		// Top delegate button
+		const topDelegateBtn = document.getElementById('top-delegate-btn');
+		if (topDelegateBtn) {
+			topDelegateBtn.addEventListener('click', showWalletSelection);
+		}
+
+		// Wallet connection buttons
+		const walletButtons = document.querySelectorAll('.wallet-btn[data-wallet]');
+		walletButtons.forEach(button => {
+			button.addEventListener('click', () => {
+				const walletName = button.getAttribute('data-wallet');
+				if (walletName) {
+					connectWallet(walletName);
+				}
+			});
+		});
+
+		// Delegate to pool button
+		const delegateBtn = document.getElementById('delegate-btn');
+		if (delegateBtn) {
+			delegateBtn.addEventListener('click', delegateToPool);
+		}
+	}
+
+	// Initialize event listeners when DOM is ready
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initEventListeners);
+	} else {
+		initEventListeners();
+	}
 
 })(); // End of IIFE module
