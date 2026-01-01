@@ -45,7 +45,7 @@ html, body {
 
 .header {
     position: absolute;
-    top: 0;
+    top: 46px;
     left: 0;
     right: 0;
     padding: 20px 40px;
@@ -356,4 +356,31 @@ html, body {
 
 .footer p {
     margin: 0;
+}
+
+/* Top Banner */
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.35);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: 15;
+}
+
+.top-banner p {
+    margin: 0;
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
 }
