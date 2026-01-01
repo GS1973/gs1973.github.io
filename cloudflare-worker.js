@@ -13,7 +13,6 @@ const BLOCKFROST_BASE_URL = 'https://cardano-mainnet.blockfrost.io/api/v0';
 const ALLOWED_ORIGINS = [
   'https://gs1973.github.io',
   'https://smitblockchainops.nl',
-  'http://localhost:3000', // For local testing
 ];
 
 // Rate limiting configuration
@@ -152,7 +151,7 @@ function getCORSHeaders(origin) {
   }
 
   // Add Content Security Policy headers for XSS protection
-  headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://blockfrost-proxy.smitblockchainops.workers.dev https://cardano-mainnet.blockfrost.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self'";
+  headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://blockfrost-proxy.smitblockchainops.workers.dev https://cardano-mainnet.blockfrost.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self'";
 
   // Additional security headers
   headers['X-Content-Type-Options'] = 'nosniff';
@@ -160,6 +159,7 @@ function getCORSHeaders(origin) {
   headers['X-XSS-Protection'] = '1; mode=block';
   headers['Referrer-Policy'] = 'strict-origin-when-cross-origin';
   headers['Permissions-Policy'] = 'geolocation=(), microphone=(), camera=()';
+  headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains; preload';
 
   return headers;
 }
