@@ -188,7 +188,9 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 		const utxos = await lucid.wallet.getUtxos();
 		let totalLovelace = 0n;
 		utxos.forEach(utxo => {
-			totalLovelace += utxo.assets.lovelace;
+			if (utxo.assets && utxo.assets.lovelace) {
+				totalLovelace += utxo.assets.lovelace;
+			}
 		});
 		const balanceAda = Number(totalLovelace) / LOVELACE_PER_ADA;
 
