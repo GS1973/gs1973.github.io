@@ -1,9 +1,19 @@
-import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mod.js";
+// ============================================
+// SIMPLE UI FUNCTIONS (no dependencies - always available)
+// ============================================
+function showWalletSelection() {
+	document.getElementById('wallet-section').style.display = 'block';
+	document.getElementById('top-delegate-btn').style.display = 'none';
+	document.getElementById('wallet-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// Export immediately so button works even if Lucid fails to load
+window.showWalletSelection = showWalletSelection;
 
 // ============================================
-// CARDANO DELEGATION MODULE (Self-executing to avoid global pollution)
+// CARDANO DELEGATION MODULE (loaded dynamically)
 // ============================================
-(function() {
+(async function() {
 	'use strict';
 
 	// ============================================
@@ -17,6 +27,25 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 
 	// SECURITY NOTE: API key secured in Cloudflare Worker
 	// All Blockfrost API calls are routed through the Worker proxy
+
+	// ============================================
+	// DYNAMIC IMPORT OF LUCID
+	// ============================================
+	let Lucid, Blockfrost;
+	try {
+		const lucidModule = await import("https://unpkg.com/lucid-cardano@0.10.7/web/mod.js");
+		Lucid = lucidModule.Lucid;
+		Blockfrost = lucidModule.Blockfrost;
+	} catch (error) {
+		console.error('Failed to load Lucid library:', error);
+		window.connectWallet = function() {
+			showMessage('Wallet library failed to load. Please refresh the page.', true);
+		};
+		window.delegateToPool = function() {
+			showMessage('Wallet library failed to load. Please refresh the page.', true);
+		};
+		return;
+	}
 
 	// ============================================
 	// CUSTOM SECURE BLOCKFROST PROVIDER
@@ -144,79 +173,79 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 	 * @returns {Promise<Object>} - The API response
 	 */
 	async function secureBlockfrostFetch(endpoint) {
-	// Input validation
-	if (!endpoint || typeof endpoint !== 'string') {
-		throw new Error('Invalid endpoint');
+		// Input validation
+		if (!endpoint || typeof endpoint !== 'string') {
+			throw new Error('Invalid endpoint');
+		}
+
+		// Sanitize endpoint - prevent injection
+		const sanitizedEndpoint = endpoint.replace(/[^a-zA-Z0-9/_-]/g, '');
+
+		// Use Worker proxy - API key is secured on the Worker
+		const response = await fetch(`${WORKER_URL}/api/${sanitizedEndpoint}`);
+
+		if (!response.ok) {
+			throw new Error(`Worker API error: ${response.status}. Ensure Worker is properly configured.`);
+		}
+
+		return response.json();
 	}
-
-	// Sanitize endpoint - prevent injection
-	const sanitizedEndpoint = endpoint.replace(/[^a-zA-Z0-9/_-]/g, '');
-
-	// Use Worker proxy - API key is secured on the Worker
-	const response = await fetch(`${WORKER_URL}/api/${sanitizedEndpoint}`);
-
-	if (!response.ok) {
-		throw new Error(`Worker API error: ${response.status}. Ensure Worker is properly configured.`);
-	}
-
-	return response.json();
-}
 
 
 	async function connectWallet(walletName) {
-	try {
-		// Check if wallet extension is installed
-		if (!window.cardano || !window.cardano[walletName]) {
-			showMessage(`${walletName.charAt(0).toUpperCase() + walletName.slice(1)} wallet not found. Please install the extension.`, true);
-			return;
-		}
-
-		// Enable wallet
-		walletApi = await window.cardano[walletName].enable();
-		connectedWallet = walletName;
-
-		// Initialize Lucid with Secure Blockfrost Provider (routes through Worker)
-		lucid = await Lucid.new(
-			new SecureBlockfrostProvider(WORKER_URL),
-			"Mainnet"
-		);
-
-		// Select wallet
-		lucid.selectWallet(walletApi);
-
-		// Get wallet info
-		const utxos = await lucid.wallet.getUtxos();
-		let totalLovelace = 0n;
-		utxos.forEach(utxo => {
-			if (utxo.assets && utxo.assets.lovelace) {
-				totalLovelace += utxo.assets.lovelace;
+		try {
+			// Check if wallet extension is installed
+			if (!window.cardano || !window.cardano[walletName]) {
+				showMessage(`${walletName.charAt(0).toUpperCase() + walletName.slice(1)} wallet not found. Please install the extension.`, true);
+				return;
 			}
-		});
-		const balanceAda = Number(totalLovelace) / LOVELACE_PER_ADA;
 
-	// Update UI elements - show delegation section immediately
-	document.getElementById('connection-status').textContent = `✓ Connected: ${walletName.charAt(0).toUpperCase() + walletName.slice(1)}`;
-	document.getElementById('wallet-buttons').style.display = 'none';
-	document.getElementById('delegation-section').style.display = 'block';
-	setDelegationStatusBox('⏳', 'Checking delegation status...', null, 'pending');
+			// Enable wallet
+			walletApi = await window.cardano[walletName].enable();
+			connectedWallet = walletName;
 
-		// Check current delegation status
-		const rewardAddress = await lucid.wallet.rewardAddress();
-		let delegationInfo = '';
-		let isAlreadyDelegatedToBKIND = false;
+			// Initialize Lucid with Secure Blockfrost Provider (routes through Worker)
+			lucid = await Lucid.new(
+				new SecureBlockfrostProvider(WORKER_URL),
+				"Mainnet"
+			);
 
-	try {
-		// Query Blockfrost for delegation info via secure Worker proxy
-		const accountInfo = await secureBlockfrostFetch(`accounts/${rewardAddress}`);
+			// Select wallet
+			lucid.selectWallet(walletApi);
 
-		if (accountInfo && accountInfo.pool_id) {
-			const currentPool = accountInfo.pool_id;
-			isAlreadyDelegatedToBKIND = (currentPool === POOL_ID);
+			// Get wallet info
+			const utxos = await lucid.wallet.getUtxos();
+			let totalLovelace = 0n;
+			utxos.forEach(utxo => {
+				if (utxo.assets && utxo.assets.lovelace) {
+					totalLovelace += utxo.assets.lovelace;
+				}
+			});
+			const balanceAda = Number(totalLovelace) / LOVELACE_PER_ADA;
+
+			// Update UI elements - show delegation section immediately
+			document.getElementById('connection-status').textContent = `✓ Connected: ${walletName.charAt(0).toUpperCase() + walletName.slice(1)}`;
+			document.getElementById('wallet-buttons').style.display = 'none';
+			document.getElementById('delegation-section').style.display = 'block';
+			setDelegationStatusBox('⏳', 'Checking delegation status...', null, 'pending');
+
+			// Check current delegation status
+			const rewardAddress = await lucid.wallet.rewardAddress();
+			let delegationInfo = '';
+			let isAlreadyDelegatedToBKIND = false;
+
+			try {
+				// Query Blockfrost for delegation info via secure Worker proxy
+				const accountInfo = await secureBlockfrostFetch(`accounts/${rewardAddress}`);
+
+				if (accountInfo && accountInfo.pool_id) {
+					const currentPool = accountInfo.pool_id;
+					isAlreadyDelegatedToBKIND = (currentPool === POOL_ID);
 
 					if (isAlreadyDelegatedToBKIND) {
 						delegationInfo = `✓ Already delegating to BKIND pool!`;
-			// Update status box with prominent success message
-			setDelegationStatusBox('✓', 'Already Delegating to BKIND!', 'Thank you for your support! 🙏', 'success');
+						// Update status box with prominent success message
+						setDelegationStatusBox('✓', 'Already Delegating to BKIND!', 'Thank you for your support! 🙏', 'success');
 						document.getElementById('delegate-btn').textContent = '✓ Delegating to BKIND!';
 						document.getElementById('delegate-btn').disabled = true;
 						document.getElementById('delegate-btn').style.opacity = '0.5';
@@ -232,92 +261,66 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 					// Update status box for no delegation
 					setDelegationStatusBox('⚠️', 'Not Currently Delegating', 'Your ADA is not earning rewards yet', 'warning');
 				}
-		} catch (delegationError) {
-			console.log('Could not fetch delegation info:', delegationError);
-			delegationInfo = '';
-		// Update status box for error
-		setDelegationStatusBox('', 'Unable to check delegation status', null, 'error');
+			} catch (delegationError) {
+				console.log('Could not fetch delegation info:', delegationError);
+				delegationInfo = '';
+				// Update status box for error
+				setDelegationStatusBox('', 'Unable to check delegation status', null, 'error');
+			}
+
+			// Update wallet balance info
+			document.getElementById('wallet-info').textContent = `Balance: ${balanceAda.toFixed(2)} ADA`;
+
+			if (isAlreadyDelegatedToBKIND) {
+				showMessage('✓ You are already delegating to BKIND pool! Thank you for your support!');
+			} else {
+				showMessage('Wallet connected successfully!');
+			}
+		} catch (error) {
+			console.error('Error connecting wallet:', error);
+			showMessage('Failed to connect wallet: ' + error.message, true);
 		}
-
-
-	// Update wallet balance info
-	document.getElementById('wallet-info').textContent = `Balance: ${balanceAda.toFixed(2)} ADA`;
-
-		if (isAlreadyDelegatedToBKIND) {
-			showMessage('✓ You are already delegating to BKIND pool! Thank you for your support!');
-		} else {
-			showMessage('Wallet connected successfully!');
-		}
-	} catch (error) {
-		console.error('Error connecting wallet:', error);
-		showMessage('Failed to connect wallet: ' + error.message, true);
 	}
-}
 
 	async function delegateToPool() {
-	if (!lucid || !walletApi) {
-		showMessage('Please connect your wallet first', true);
-		return;
-	}
-
-	// Prevent multiple simultaneous delegations
-	if (isDelegating) {
-		showMessage('Delegation already in progress. Please wait...', true);
-		return;
-	}
-
-	isDelegating = true;
-
-	try {
-		showMessage('Preparing delegation transaction...');
-
-		// Re-initialize Lucid with fresh connection to ensure latest UTxOs
-		lucid = await Lucid.new(
-			new SecureBlockfrostProvider(WORKER_URL),
-			"Mainnet"
-		);
-		lucid.selectWallet(walletApi);
-
-		// Get reward address
-		const rewardAddress = await lucid.wallet.rewardAddress();
-
-		if (!rewardAddress) {
-			showMessage('No reward address found. Please ensure your wallet is properly set up.', true);
-			isDelegating = false;
+		if (!lucid || !walletApi) {
+			showMessage('Please connect your wallet first', true);
 			return;
 		}
 
-		showMessage('Building transaction... This may take a moment.');
-
-		// Try delegation only first (most common case)
-		try {
-			const tx = await lucid
-				.newTx()
-				.delegateTo(rewardAddress, POOL_ID)
-				.complete();
-
-			showMessage('Please sign the transaction in your wallet...');
-
-			const signedTx = await tx.sign().complete();
-			const txHash = await signedTx.submit();
-
-			showMessage(`✓ Success! Delegation transaction submitted!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
-
-			document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
-
-			isDelegating = false;
+		// Prevent multiple simultaneous delegations
+		if (isDelegating) {
+			showMessage('Delegation already in progress. Please wait...', true);
 			return;
+		}
 
-		} catch (firstError) {
-			console.log('First attempt (delegation only) failed, trying with registration:', firstError);
+		isDelegating = true;
 
-			// If delegation-only failed, try with stake key registration
-			if (firstError.message && (firstError.message.includes('not registered') || firstError.message.includes('StakeKeyNotRegistered'))) {
-				showMessage('Registering stake key and delegating...');
+		try {
+			showMessage('Preparing delegation transaction...');
 
+			// Re-initialize Lucid with fresh connection to ensure latest UTxOs
+			lucid = await Lucid.new(
+				new SecureBlockfrostProvider(WORKER_URL),
+				"Mainnet"
+			);
+			lucid.selectWallet(walletApi);
+
+			// Get reward address
+			const rewardAddress = await lucid.wallet.rewardAddress();
+
+			if (!rewardAddress) {
+				showMessage('No reward address found. Please ensure your wallet is properly set up.', true);
+				isDelegating = false;
+				return;
+			}
+
+			showMessage('Building transaction... This may take a moment.');
+
+			// Try delegation only first (most common case)
+			try {
 				const tx = await lucid
 					.newTx()
-					.registerStake(rewardAddress)
 					.delegateTo(rewardAddress, POOL_ID)
 					.complete();
 
@@ -326,51 +329,66 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 				const signedTx = await tx.sign().complete();
 				const txHash = await signedTx.submit();
 
-				showMessage(`✓ Success! Stake key registered and delegated!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
+				showMessage(`✓ Success! Delegation transaction submitted!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
 
 				document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
 
 				isDelegating = false;
 				return;
+
+			} catch (firstError) {
+				console.log('First attempt (delegation only) failed, trying with registration:', firstError);
+
+				// If delegation-only failed, try with stake key registration
+				if (firstError.message && (firstError.message.includes('not registered') || firstError.message.includes('StakeKeyNotRegistered'))) {
+					showMessage('Registering stake key and delegating...');
+
+					const tx = await lucid
+						.newTx()
+						.registerStake(rewardAddress)
+						.delegateTo(rewardAddress, POOL_ID)
+						.complete();
+
+					showMessage('Please sign the transaction in your wallet...');
+
+					const signedTx = await tx.sign().complete();
+					const txHash = await signedTx.submit();
+
+					showMessage(`✓ Success! Stake key registered and delegated!\n\nTransaction Hash: ${txHash}\n\nYou are now delegating to BKIND pool!`);
+
+					document.getElementById('delegate-btn').textContent = '✓ Delegated to BKIND!';
+
+					isDelegating = false;
+					return;
+				}
+
+				// Re-throw if it's not a registration issue
+				throw firstError;
 			}
 
-			// Re-throw if it's not a registration issue
-			throw firstError;
+		} catch (error) {
+			console.error('Delegation error:', error);
+			isDelegating = false;
+
+			// Provide helpful error messages
+			let errorMsg = error.message || error.toString();
+
+			if (errorMsg.includes('already spent') || errorMsg.includes('BadInputsUTxO')) {
+				showMessage('Transaction error: Your wallet has a pending transaction. Please wait a few moments for it to complete, then try again.', true);
+			} else if (errorMsg.includes('insufficient')) {
+				showMessage('Insufficient funds. You need at least 2-3 ADA to cover transaction fee and deposit.', true);
+			} else if (errorMsg.includes('UTxO Balance Insufficient')) {
+				showMessage('Insufficient balance for transaction. Please ensure you have enough ADA.', true);
+			} else if (errorMsg.includes('User declined')) {
+				showMessage('Transaction cancelled by user.', true);
+			} else {
+				showMessage('Delegation failed: ' + errorMsg + '\n\nPlease try again in a few moments.', true);
+			}
 		}
-
-	} catch (error) {
-		console.error('Delegation error:', error);
-		isDelegating = false;
-
-		// Provide helpful error messages
-		let errorMsg = error.message || error.toString();
-
-		if (errorMsg.includes('already spent') || errorMsg.includes('BadInputsUTxO')) {
-			showMessage('Transaction error: Your wallet has a pending transaction. Please wait a few moments for it to complete, then try again.', true);
-		} else if (errorMsg.includes('insufficient')) {
-			showMessage('Insufficient funds. You need at least 2-3 ADA to cover transaction fee and deposit.', true);
-		} else if (errorMsg.includes('UTxO Balance Insufficient')) {
-			showMessage('Insufficient balance for transaction. Please ensure you have enough ADA.', true);
-		} else if (errorMsg.includes('User declined')) {
-			showMessage('Transaction cancelled by user.', true);
-		} else {
-			showMessage('Delegation failed: ' + errorMsg + '\n\nPlease try again in a few moments.', true);
-		}
-	}
-}
-
-
-	// Function to show wallet selection
-	function showWalletSelection() {
-		document.getElementById('wallet-section').style.display = 'block';
-		document.getElementById('top-delegate-btn').style.display = 'none';
-		// Scroll to wallet section
-		document.getElementById('wallet-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
 	}
 
 	// Make functions globally available for onclick handlers
 	window.connectWallet = connectWallet;
 	window.delegateToPool = delegateToPool;
-	window.showWalletSelection = showWalletSelection;
 
-})(); // End of IIFE module
+})(); // End of async IIFE module
