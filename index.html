@@ -353,10 +353,10 @@
     </main>
 
     <script type="module">
-        import * as CSL from 'https://esm.sh/@emurgo/cardano-serialization-lib-browser@11.5.0';
+        import { Lucid, Blockfrost } from 'https://unpkg.com/lucid-cardano@0.10.7/web/mod.js';
 
-        // Make CSL available globally for the delegation function
-        window.CardanoSerializationLib = CSL;
+        // Make Lucid available globally
+        window.LucidCardano = { Lucid, Blockfrost };
 
         (function() {
             'use strict';
@@ -687,110 +687,60 @@
 
             async function buildAndSignDelegation(stakeAddress, alreadyRegistered) {
                 try {
-                    // Check if CSL is loaded
-                    if (!window.CardanoSerializationLib) {
+                    // Check if Lucid is loaded
+                    if (!window.LucidCardano) {
                         showMessage('Transaction library not loaded. Please refresh and try again.', 'error');
                         return;
                     }
 
-                    const CSL = window.CardanoSerializationLib;
+                    showMessage('Initializing delegation...', 'info', true);
 
-                    // Get UTXOs for transaction building
-                    const utxosHex = await walletApi.getUtxos();
-                    if (!utxosHex || utxosHex.length === 0) {
-                        showMessage('No UTXOs available. Please ensure your wallet has ADA.', 'error');
-                        return;
-                    }
+                    const { Lucid } = window.LucidCardano;
 
-                    const changeAddressHex = await walletApi.getChangeAddress();
-                    const rewardAddressesHex = await walletApi.getRewardAddresses();
+                    // Initialize Lucid with the connected wallet
+                    const lucid = await Lucid.new(undefined, 'Mainnet');
 
-                    if (!rewardAddressesHex || rewardAddressesHex.length === 0) {
-                        showMessage('No reward address found in wallet.', 'error');
-                        return;
-                    }
+                    // Use the wallet API from CIP-30
+                    lucid.selectWallet({
+                        getNetworkId: async () => await walletApi.getNetworkId(),
+                        getUtxos: async () => await walletApi.getUtxos(),
+                        getCollateral: async () => [],
+                        getBalance: async () => await walletApi.getBalance(),
+                        getUsedAddresses: async () => await walletApi.getUsedAddresses(),
+                        getUnusedAddresses: async () => await walletApi.getUnusedAddresses(),
+                        getChangeAddress: async () => await walletApi.getChangeAddress(),
+                        getRewardAddresses: async () => await walletApi.getRewardAddresses(),
+                        signTx: async (tx) => await walletApi.signTx(tx, true),
+                        signData: async (addr, payload) => await walletApi.signData(addr, payload),
+                        submitTx: async (tx) => await walletApi.submitTx(tx),
+                    });
 
                     showMessage('Building delegation transaction...', 'info', true);
 
-                    // Parse addresses
-                    const changeAddress = CSL.Address.from_hex(changeAddressHex);
-                    const rewardAddress = CSL.RewardAddress.from_address(
-                        CSL.Address.from_hex(rewardAddressesHex[0])
-                    );
-
-                    if (!rewardAddress) {
-                        showMessage('Invalid reward address format.', 'error');
-                        return;
-                    }
-
-                    const stakeCredential = rewardAddress.payment_cred();
-
-                    // Decode pool ID from bech32
-                    const poolIdBytes = bech32Decode(CONFIG.POOL_ID);
-                    const poolKeyHash = CSL.Ed25519KeyHash.from_bytes(poolIdBytes);
-
-                    // Build transaction
-                    const txBuilder = CSL.TransactionBuilder.new(
-                        CSL.TransactionBuilderConfigBuilder.new()
-                            .fee_algo(CSL.LinearFee.new(
-                                CSL.BigNum.from_str('44'),
-                                CSL.BigNum.from_str('155381')
-                            ))
-                            .pool_deposit(CSL.BigNum.from_str('500000000'))
-                            .key_deposit(CSL.BigNum.from_str('2000000'))
-                            .max_tx_size(16384)
-                            .max_value_size(5000)
-                            .coins_per_utxo_byte(CSL.BigNum.from_str('4310'))
-                            .build()
-                    );
-
-                    // Add UTXOs as inputs
-                    const utxos = CSL.TransactionUnspentOutputs.new();
-                    for (const utxoHex of utxosHex) {
-                        const utxo = CSL.TransactionUnspentOutput.from_hex(utxoHex);
-                        utxos.add(utxo);
-                    }
-
-                    // Create certificates
-                    const certificates = CSL.Certificates.new();
-
-                    // Add stake registration if not already registered
+                    // Build the delegation transaction
+                    let tx;
                     if (!alreadyRegistered) {
-                        const stakeRegistration = CSL.Certificate.new_stake_registration(
-                            CSL.StakeRegistration.new(stakeCredential)
-                        );
-                        certificates.add(stakeRegistration);
+                        // Register stake key and delegate
+                        tx = await lucid
+                            .newTx()
+                            .registerStake(stakeAddress)
+                            .delegateTo(stakeAddress, CONFIG.POOL_ID)
+                            .complete();
+                    } else {
+                        // Just delegate (already registered)
+                        tx = await lucid
+                            .newTx()
+                            .delegateTo(stakeAddress, CONFIG.POOL_ID)
+                            .complete();
                     }
-
-                    // Add delegation certificate
-                    const stakeDelegation = CSL.Certificate.new_stake_delegation(
-                        CSL.StakeDelegation.new(stakeCredential, poolKeyHash)
-                    );
-                    certificates.add(stakeDelegation);
-
-                    txBuilder.set_certs(certificates);
-
-                    // Add inputs and build transaction
-                    txBuilder.add_inputs_from(utxos, CSL.CoinSelectionStrategyCIP2.LargestFirstMultiAsset);
-                    txBuilder.add_change_if_needed(changeAddress);
-
-                    const txBody = txBuilder.build();
-                    const tx = CSL.Transaction.new(
-                        txBody,
-                        CSL.TransactionWitnessSet.new()
-                    );
-
-                    const txHex = bytesToHex(tx.to_bytes());
 
                     showMessage('Please sign the transaction in your wallet...', 'info', true);
 
-                    // Sign transaction
-                    const signedTxHex = await walletApi.signTx(txHex, true);
+                    const signedTx = await tx.sign().complete();
 
                     showMessage('Submitting transaction...', 'info', true);
 
-                    // Submit transaction
-                    const txHash = await walletApi.submitTx(signedTxHex);
+                    const txHash = await signedTx.submit();
 
                     showMessage(
                         `Delegation successful! Transaction: ${txHash.slice(0, 16)}...`,
