@@ -1,6 +1,0 @@
-name = "blockfrost-proxy"
-main = "cloudflare-worker.js"
-compatibility_date = "2024-01-01"
-
-# The BLOCKFROST_API_KEY should be set as a secret:
-# wrangler secret put BLOCKFROST_API_KEY
