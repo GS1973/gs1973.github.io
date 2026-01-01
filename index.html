@@ -1,105 +1,675 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Smit Blockchain Operations</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://blockfrost-proxy.smitblockchainops.workers.dev; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
-		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
-		<meta http-equiv="X-Frame-Options" content="DENY" />
-		<meta name="referrer" content="strict-origin-when-cross-origin" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smit Blockchain Operations - BKIND Cardano Stake Pool. The trustworthy Cardano stake pool active since July 2020.">
+    <title>Smit Blockchain Operations - BKIND Cardano Stake Pool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!-- Moving Banner -->
-			<div id="new-year-banner">
-				<div class="banner-content">
-					<span>A happy 2026!</span>
-				</div>
-				<div class="fireworks">
-					<div class="firework"></div>
-					<div class="firework"></div>
-					<div class="firework"></div>
-					<div class="firework"></div>
-					<div class="firework"></div>
-				</div>
-			</div>
+        html, body {
+            height: 100%;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
 
-		<!-- Top Right Delegate Button -->
-		<button id="top-delegate-btn" class="wallet-btn" onclick="showWalletSelection()">Delegate</button>
+        .hero {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
 
-		<!-- Header -->
-			<div id="header">
-				<h1>Smit Blockchain Operations</h1>
-				<p>The trustworthy Cardano Stake pool
-				<br />
-				Active since 29th of July 2020
-				<br />
-				Ticker: BKIND</p>
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/header.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -2;
+        }
 
-				<!-- Wallet Connection Section -->
-				<div id="wallet-section" style="margin-top: 2em; display: none;">
-					<div id="wallet-status" style="margin-bottom: 1em; font-size: 0.9em; opacity: 0.9;">
-						<span id="connection-status">No wallet connected</span>
-					</div>
-					<div id="wallet-buttons">
-						<button class="wallet-btn" onclick="connectWallet('eternl')" style="margin: 0.5em;">
-							Connect Eternl
-						</button>
-						<button class="wallet-btn" onclick="connectWallet('lace')" style="margin: 0.5em;">
-							Connect Lace
-						</button>
-						<button class="wallet-btn" onclick="connectWallet('typhoncip30')" style="margin: 0.5em;">
-							Connect Typhon
-						</button>
-						<button class="wallet-btn" onclick="connectWallet('yoroi')" style="margin: 0.5em;">
-							Connect Yoroi
-						</button>
-					</div>
-					<div id="delegation-section" style="display: none; margin-top: 1.5em;">
-						<div id="delegation-status-box" style="margin-bottom: 1em; padding: 1em; background: rgba(255,255,255,0.1); border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);"></div>
-						<button id="delegate-btn" class="wallet-btn" onclick="delegateToPool()">
-							Delegate to BKIND Pool
-						</button>
-						<div id="wallet-info" style="margin-top: 1em; font-size: 0.85em; opacity: 0.8;"></div>
-					</div>
-					<div id="message" style="margin-top: 1em; padding: 1em; border-radius: 5px; display: none;"></div>
-				</div>
-			</div>
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
 
-		<!-- Main -->
-			<div id="main">
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: flex-end;
+            z-index: 10;
+        }
 
-				<header class="major container medium">
-					<h2>Decentralize & harmonize</h2>
-				</header>
-			</div>
+        .delegate-btn {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"
-			        integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
-			        crossorigin="anonymous"></script>
-			<script src="assets/js/browser.min.js"
-			        integrity="sha384-dUuilYcctLZPBfAF/NVbWFgFIiLl1oBzFgEkES17P1gM2j2LK/8H08s+WWwKQVoA"
-			        crossorigin="anonymous"></script>
-			<script src="assets/js/breakpoints.min.js"
-			        integrity="sha384-yFmduTIePVpne+u+kDsQrxoNKaFwGfDXFYc5iDE7HtNo9M0BkDlHTtibyI04uqyi"
-			        crossorigin="anonymous"></script>
-			<script src="assets/js/util.js"
-			        integrity="sha384-T7+Bh4gymiiZPuzMHowTazIJt9T3j+Ma7z6diEkQc1hP7n1TjhUnDwxfvH6SQxCE"
-			        crossorigin="anonymous"></script>
-			<script src="assets/js/main.js"
-			        integrity="sha384-0LElZ7BLGG4Kxn3Ju7KT9VtClyHR8R/Yw939gSKmWjdl8f1dHbMGN+naERTL7qXd"
-			        crossorigin="anonymous"></script>
+        .delegate-btn:hover {
+            background-color: #0052a3;
+            transform: translateY(-2px);
+        }
 
-		<!-- Cardano Wallet Integration -->
-		<script type="module"
-		        src="assets/js/cardano-delegation.js"
-		        integrity="sha384-Bs7q1n9TxwIE9v/QL2AplM8ZgDK+1OHZrFw8S8hIoL02TPCcGhYQ5vw3MP+xluLi"
-		        crossorigin="anonymous"></script>
+        .delegate-btn:active {
+            transform: translateY(0);
+        }
 
-	</body>
-	
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-info {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-ticker {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .wallet-container {
+            display: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .wallet-container.visible {
+            display: flex;
+        }
+
+        .wallet-btn {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            padding: 12px 24px;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .wallet-btn:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .wallet-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .wallet-btn.not-installed {
+            opacity: 0.4;
+        }
+
+        .message-box {
+            display: none;
+            margin-top: 30px;
+            padding: 15px 25px;
+            border-radius: 4px;
+            font-size: 1rem;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .message-box.visible {
+            display: block;
+        }
+
+        .message-box.info {
+            background-color: rgba(0, 102, 204, 0.8);
+            color: white;
+        }
+
+        .message-box.success {
+            background-color: rgba(40, 167, 69, 0.8);
+            color: white;
+        }
+
+        .message-box.error {
+            background-color: rgba(220, 53, 69, 0.8);
+            color: white;
+        }
+
+        .message-box.warning {
+            background-color: rgba(255, 193, 7, 0.9);
+            color: #333;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .hero-info {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px 20px;
+            }
+
+            .delegate-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .hero-title {
+                font-size: 1.8rem;
+                letter-spacing: 2px;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-info {
+                font-size: 1rem;
+            }
+
+            .hero-ticker {
+                font-size: 1.2rem;
+            }
+
+            .wallet-btn {
+                padding: 10px 18px;
+                font-size: 13px;
+                min-width: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.5rem;
+            }
+
+            .wallet-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .wallet-btn {
+                width: 80%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+
+        <header class="header">
+            <button id="delegateBtn" class="delegate-btn">Delegate</button>
+        </header>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Smit Blockchain Operations</h1>
+            <p class="hero-subtitle">The trustworthy Cardano Stake Pool</p>
+            <p class="hero-info">Active since 29th of July 2020</p>
+            <p class="hero-ticker">Ticker: BKIND</p>
+
+            <div id="walletContainer" class="wallet-container">
+                <button class="wallet-btn" data-wallet="eternl">Eternl</button>
+                <button class="wallet-btn" data-wallet="lace">Lace</button>
+                <button class="wallet-btn" data-wallet="yoroi">Yoroi</button>
+                <button class="wallet-btn" data-wallet="typhon">Typhon</button>
+            </div>
+
+            <div id="messageBox" class="message-box"></div>
+        </div>
+    </main>
+
+    <script>
+        (function() {
+            'use strict';
+
+            // Configuration
+            const CONFIG = {
+                POOL_ID: 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y',
+                POOL_BECH32: 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y',
+                PROXY_URL: 'https://blockfrost-proxy.smitblockchainops.workers.dev',
+                WALLETS: ['eternl', 'lace', 'yoroi', 'typhon']
+            };
+
+            // DOM Elements
+            const delegateBtn = document.getElementById('delegateBtn');
+            const walletContainer = document.getElementById('walletContainer');
+            const messageBox = document.getElementById('messageBox');
+            const walletButtons = document.querySelectorAll('.wallet-btn');
+
+            // State
+            let connectedWallet = null;
+            let walletApi = null;
+
+            // Utility Functions
+            function showMessage(text, type = 'info', loading = false) {
+                messageBox.className = `message-box visible ${type}`;
+                messageBox.innerHTML = loading
+                    ? `<span class="loading"></span>${text}`
+                    : text;
+            }
+
+            function hideMessage() {
+                messageBox.className = 'message-box';
+            }
+
+            function isWalletInstalled(walletName) {
+                return window.cardano && window.cardano[walletName];
+            }
+
+            function updateWalletButtons() {
+                walletButtons.forEach(btn => {
+                    const walletName = btn.dataset.wallet;
+                    if (!isWalletInstalled(walletName)) {
+                        btn.classList.add('not-installed');
+                        btn.title = `${walletName} is not installed`;
+                    }
+                });
+            }
+
+            // Hex encoding/decoding utilities
+            function hexToBytes(hex) {
+                const bytes = new Uint8Array(hex.length / 2);
+                for (let i = 0; i < hex.length; i += 2) {
+                    bytes[i / 2] = parseInt(hex.substr(i, 2), 16);
+                }
+                return bytes;
+            }
+
+            function bytesToHex(bytes) {
+                return Array.from(bytes)
+                    .map(b => b.toString(16).padStart(2, '0'))
+                    .join('');
+            }
+
+            // Bech32 decoding for stake addresses
+            function bech32Decode(str) {
+                const ALPHABET = 'qpzry9x8gf2tvdw0s3jn54khce6mua7l';
+                const hrpEnd = str.lastIndexOf('1');
+                const data = [];
+                for (let i = hrpEnd + 1; i < str.length; i++) {
+                    const idx = ALPHABET.indexOf(str[i]);
+                    if (idx === -1) return null;
+                    data.push(idx);
+                }
+                // Remove checksum (last 6 chars)
+                const dataWithoutChecksum = data.slice(0, -6);
+                // Convert from 5-bit to 8-bit
+                let acc = 0;
+                let bits = 0;
+                const result = [];
+                for (const value of dataWithoutChecksum) {
+                    acc = (acc << 5) | value;
+                    bits += 5;
+                    while (bits >= 8) {
+                        bits -= 8;
+                        result.push((acc >> bits) & 0xff);
+                    }
+                }
+                return new Uint8Array(result);
+            }
+
+            // API Functions
+            async function fetchFromProxy(endpoint) {
+                const response = await fetch(`${CONFIG.PROXY_URL}${endpoint}`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json().catch(() => ({}));
+                    throw new Error(errorData.message || `API error: ${response.status}`);
+                }
+
+                return response.json();
+            }
+
+            async function submitTransaction(txCbor) {
+                const txBytes = hexToBytes(txCbor);
+
+                const response = await fetch(`${CONFIG.PROXY_URL}/tx/submit`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/cbor'
+                    },
+                    body: txBytes
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json().catch(() => ({}));
+                    throw new Error(errorData.message || `Submit error: ${response.status}`);
+                }
+
+                return response.json();
+            }
+
+            async function checkDelegationStatus(stakeAddress) {
+                try {
+                    const accountInfo = await fetchFromProxy(`/accounts/${stakeAddress}`);
+
+                    if (accountInfo.pool_id === CONFIG.POOL_ID) {
+                        return { delegated: true, toOurPool: true };
+                    } else if (accountInfo.pool_id) {
+                        return { delegated: true, toOurPool: false, currentPool: accountInfo.pool_id };
+                    }
+
+                    return { delegated: false, toOurPool: false };
+                } catch (error) {
+                    // Account might not exist yet (no transactions)
+                    if (error.message.includes('404')) {
+                        return { delegated: false, toOurPool: false, newAccount: true };
+                    }
+                    throw error;
+                }
+            }
+
+            // Wallet Connection
+            async function connectWallet(walletName) {
+                if (!isWalletInstalled(walletName)) {
+                    showMessage(`${walletName} wallet is not installed. Please install it first.`, 'error');
+                    return false;
+                }
+
+                try {
+                    showMessage(`Connecting to ${walletName}...`, 'info', true);
+
+                    walletApi = await window.cardano[walletName].enable();
+                    connectedWallet = walletName;
+
+                    showMessage(`Connected to ${walletName}. Checking delegation status...`, 'info', true);
+
+                    return true;
+                } catch (error) {
+                    if (error.code === -3 || error.message?.includes('declined')) {
+                        showMessage('Connection declined. Please approve the connection in your wallet.', 'warning');
+                    } else {
+                        showMessage(`Failed to connect: ${error.message}`, 'error');
+                    }
+                    return false;
+                }
+            }
+
+            async function getStakeAddress() {
+                if (!walletApi) throw new Error('Wallet not connected');
+
+                const rewardAddresses = await walletApi.getRewardAddresses();
+                if (!rewardAddresses || rewardAddresses.length === 0) {
+                    throw new Error('No stake address found');
+                }
+
+                // The address is returned as hex, we need to convert to bech32
+                const hexAddr = rewardAddresses[0];
+                return hexToBech32StakeAddress(hexAddr);
+            }
+
+            function hexToBech32StakeAddress(hex) {
+                // Convert hex to stake address (simplified - assumes mainnet stake address)
+                // Stake address starts with 'stake1' for mainnet
+                const bytes = hexToBytes(hex);
+                return bech32Encode('stake', bytes);
+            }
+
+            // Bech32 encoding
+            function bech32Encode(hrp, data) {
+                const ALPHABET = 'qpzry9x8gf2tvdw0s3jn54khce6mua7l';
+
+                // Convert 8-bit to 5-bit
+                const converted = [];
+                let acc = 0;
+                let bits = 0;
+                for (const byte of data) {
+                    acc = (acc << 8) | byte;
+                    bits += 8;
+                    while (bits >= 5) {
+                        bits -= 5;
+                        converted.push((acc >> bits) & 31);
+                    }
+                }
+                if (bits > 0) {
+                    converted.push((acc << (5 - bits)) & 31);
+                }
+
+                // Calculate checksum
+                function polymod(values) {
+                    const GEN = [0x3b6a57b2, 0x26508e6d, 0x1ea119fa, 0x3d4233dd, 0x2a1462b3];
+                    let chk = 1;
+                    for (const v of values) {
+                        const top = chk >> 25;
+                        chk = ((chk & 0x1ffffff) << 5) ^ v;
+                        for (let i = 0; i < 5; i++) {
+                            if ((top >> i) & 1) chk ^= GEN[i];
+                        }
+                    }
+                    return chk;
+                }
+
+                function hrpExpand(h) {
+                    const ret = [];
+                    for (let i = 0; i < h.length; i++) {
+                        ret.push(h.charCodeAt(i) >> 5);
+                    }
+                    ret.push(0);
+                    for (let i = 0; i < h.length; i++) {
+                        ret.push(h.charCodeAt(i) & 31);
+                    }
+                    return ret;
+                }
+
+                const checksumInput = hrpExpand(hrp).concat(converted).concat([0, 0, 0, 0, 0, 0]);
+                const mod = polymod(checksumInput) ^ 1;
+                const checksum = [];
+                for (let i = 0; i < 6; i++) {
+                    checksum.push((mod >> (5 * (5 - i))) & 31);
+                }
+
+                const combined = converted.concat(checksum);
+                let result = hrp + '1';
+                for (const c of combined) {
+                    result += ALPHABET[c];
+                }
+
+                return result;
+            }
+
+            // Delegation Process
+            async function handleDelegation(walletName) {
+                const connected = await connectWallet(walletName);
+                if (!connected) return;
+
+                try {
+                    const stakeAddress = await getStakeAddress();
+                    const status = await checkDelegationStatus(stakeAddress);
+
+                    if (status.toOurPool) {
+                        showMessage('You are already delegating to BKIND. Thank you for your support!', 'success');
+                        return;
+                    }
+
+                    if (status.newAccount) {
+                        showMessage(
+                            'Your wallet has no transaction history yet. Please make at least one transaction first, then return to delegate.',
+                            'warning'
+                        );
+                        return;
+                    }
+
+                    // Proceed with delegation
+                    showMessage('Preparing delegation transaction...', 'info', true);
+                    await buildAndSignDelegation(stakeAddress, status.delegated);
+
+                } catch (error) {
+                    console.error('Delegation error:', error);
+                    showMessage(`Error: ${error.message}`, 'error');
+                }
+            }
+
+            async function buildAndSignDelegation(stakeAddress, alreadyRegistered) {
+                try {
+                    // Get UTXOs for transaction building
+                    const utxos = await walletApi.getUtxos();
+                    if (!utxos || utxos.length === 0) {
+                        showMessage('No UTXOs available. Please ensure your wallet has ADA.', 'error');
+                        return;
+                    }
+
+                    const changeAddress = await walletApi.getChangeAddress();
+
+                    showMessage('Please sign the transaction in your wallet...', 'info', true);
+
+                    // Build the delegation transaction
+                    // Note: In production, you would use @emurgo/cardano-serialization-lib-browser
+                    // This is a simplified version that relies on the wallet's signTx to handle
+                    // the transaction building with delegation certificate
+
+                    // For wallets that support building transactions internally:
+                    // We need to use the experimental API or build the tx ourselves
+                    // Most modern wallets handle this through their own APIs
+
+                    // Check if wallet supports experimental features
+                    if (walletApi.experimental && walletApi.experimental.buildDelegationTx) {
+                        const tx = await walletApi.experimental.buildDelegationTx(CONFIG.POOL_ID);
+                        const signedTx = await walletApi.signTx(tx, true);
+                        const txHash = await walletApi.submitTx(signedTx);
+
+                        showMessage(
+                            `Delegation successful! Transaction: ${txHash.slice(0, 20)}...`,
+                            'success'
+                        );
+                        return;
+                    }
+
+                    // For standard CIP-30 wallets, we need to build the transaction ourselves
+                    // This requires the cardano-serialization-lib
+                    showMessage(
+                        'To complete delegation, please use your wallet\'s built-in delegation feature or a dApp like pool.pm. ' +
+                        'Search for pool ticker: BKIND',
+                        'warning'
+                    );
+
+                } catch (error) {
+                    if (error.code === 2 || error.message?.includes('refused') || error.message?.includes('declined')) {
+                        showMessage('Transaction signing was declined.', 'warning');
+                    } else {
+                        throw error;
+                    }
+                }
+            }
+
+            // Event Handlers
+            delegateBtn.addEventListener('click', function() {
+                walletContainer.classList.toggle('visible');
+                hideMessage();
+                updateWalletButtons();
+            });
+
+            walletButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const walletName = this.dataset.wallet;
+                    handleDelegation(walletName);
+                });
+            });
+
+            // Initialize
+            document.addEventListener('DOMContentLoaded', function() {
+                // Check if any wallets are available
+                if (!window.cardano) {
+                    console.log('No Cardano wallets detected');
+                }
+            });
+
+        })();
+    </script>
+</body>
 </html>
