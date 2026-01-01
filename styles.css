@@ -291,8 +291,8 @@ html, body {
     }
 
     .hero-title {
-        font-size: 1.4rem;
-        letter-spacing: 1px;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
     }
 
     .hero-subtitle {
@@ -325,7 +325,7 @@ html, body {
     }
 
     .hero-title {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .wallet-container {
