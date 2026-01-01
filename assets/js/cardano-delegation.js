@@ -194,33 +194,48 @@ window.showWalletSelection = showWalletSelection;
 
 	async function connectWallet(walletName) {
 		try {
+			console.log('Step 1: Checking wallet extension...');
 			// Check if wallet extension is installed
 			if (!window.cardano || !window.cardano[walletName]) {
 				showMessage(`${walletName.charAt(0).toUpperCase() + walletName.slice(1)} wallet not found. Please install the extension.`, true);
 				return;
 			}
 
+			console.log('Step 2: Enabling wallet...');
 			// Enable wallet
 			walletApi = await window.cardano[walletName].enable();
+			console.log('Step 2 complete, walletApi:', walletApi);
 			connectedWallet = walletName;
 
+			console.log('Step 3: Initializing Lucid...');
 			// Initialize Lucid with Secure Blockfrost Provider (routes through Worker)
 			lucid = await Lucid.new(
 				new SecureBlockfrostProvider(WORKER_URL),
 				"Mainnet"
 			);
+			console.log('Step 3 complete, lucid:', lucid);
 
+			console.log('Step 4: Selecting wallet...');
 			// Select wallet
 			lucid.selectWallet(walletApi);
+			console.log('Step 4 complete, lucid.wallet:', lucid.wallet);
+
+			// Verify wallet was selected properly
+			if (!lucid.wallet) {
+				showMessage('Failed to initialize wallet. Please try again.', true);
+				return;
+			}
 
 			// Get wallet info
 			const utxos = await lucid.wallet.getUtxos();
 			let totalLovelace = 0n;
-			utxos.forEach(utxo => {
-				if (utxo.assets && utxo.assets.lovelace) {
-					totalLovelace += utxo.assets.lovelace;
-				}
-			});
+			if (utxos && Array.isArray(utxos)) {
+				utxos.forEach(utxo => {
+					if (utxo && utxo.assets && utxo.assets.lovelace) {
+						totalLovelace += utxo.assets.lovelace;
+					}
+				});
+			}
 			const balanceAda = Number(totalLovelace) / LOVELACE_PER_ADA;
 
 			// Update UI elements - show delegation section immediately
