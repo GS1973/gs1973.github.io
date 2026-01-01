@@ -140,7 +140,7 @@
         }
 
         .wallet-btn {
-            background-color: rgba(255, 255, 255, 0.15);
+            background-color: rgba(255, 255, 255, 0.25);
             color: white;
             border: 2px solid rgba(255, 255, 255, 0.4);
             padding: 12px 24px;
@@ -151,6 +151,7 @@
             border-radius: 4px;
             transition: all 0.3s ease;
             min-width: 120px;
+            opacity: 0.7;
         }
 
         .wallet-btn:hover {
@@ -199,6 +200,39 @@
         .message-box.warning {
             background-color: rgba(255, 193, 7, 0.9);
             color: #333;
+        }
+
+        .delegate-action-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .delegate-action-container.visible {
+            display: block;
+        }
+
+        .delegate-to-pool-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .delegate-to-pool-btn:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        .delegate-to-pool-btn:active {
+            transform: translateY(0);
         }
 
         .loading {
@@ -264,6 +298,11 @@
                 font-size: 13px;
                 min-width: 100px;
             }
+
+            .delegate-to-pool-btn {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -306,6 +345,10 @@
             </div>
 
             <div id="messageBox" class="message-box"></div>
+
+            <div id="delegateActionContainer" class="delegate-action-container">
+                <button id="delegateToPoolBtn" class="delegate-to-pool-btn">Delegate to BKIND</button>
+            </div>
         </div>
     </main>
 
@@ -326,10 +369,14 @@
             const walletContainer = document.getElementById('walletContainer');
             const messageBox = document.getElementById('messageBox');
             const walletButtons = document.querySelectorAll('.wallet-btn');
+            const delegateActionContainer = document.getElementById('delegateActionContainer');
+            const delegateToPoolBtn = document.getElementById('delegateToPoolBtn');
 
             // State
             let connectedWallet = null;
             let walletApi = null;
+            let currentStakeAddress = null;
+            let currentDelegationStatus = null;
 
             // Utility Functions
             function showMessage(text, type = 'info', loading = false) {
@@ -341,6 +388,14 @@
 
             function hideMessage() {
                 messageBox.className = 'message-box';
+            }
+
+            function showDelegateAction() {
+                delegateActionContainer.classList.add('visible');
+            }
+
+            function hideDelegateAction() {
+                delegateActionContainer.classList.remove('visible');
             }
 
             function isWalletInstalled(walletName) {
@@ -563,21 +618,25 @@
                 return result;
             }
 
-            // Delegation Process
-            async function handleDelegation(walletName) {
+            // Wallet Connection and Status Check
+            async function handleWalletConnect(walletName) {
+                hideDelegateAction();
                 const connected = await connectWallet(walletName);
                 if (!connected) return;
 
                 try {
-                    const stakeAddress = await getStakeAddress();
-                    const status = await checkDelegationStatus(stakeAddress);
+                    currentStakeAddress = await getStakeAddress();
+                    currentDelegationStatus = await checkDelegationStatus(currentStakeAddress);
 
-                    if (status.toOurPool) {
+                    // Hide wallet buttons after successful connection
+                    walletContainer.classList.remove('visible');
+
+                    if (currentDelegationStatus.toOurPool) {
                         showMessage('You are already delegating to BKIND. Thank you for your support!', 'success');
                         return;
                     }
 
-                    if (status.newAccount) {
+                    if (currentDelegationStatus.newAccount) {
                         showMessage(
                             'Your wallet has no transaction history yet. Please make at least one transaction first, then return to delegate.',
                             'warning'
@@ -585,10 +644,36 @@
                         return;
                     }
 
-                    // Proceed with delegation
-                    showMessage('Preparing delegation transaction...', 'info', true);
-                    await buildAndSignDelegation(stakeAddress, status.delegated);
+                    // Wallet is connected but not delegated to BKIND - show delegate option
+                    if (currentDelegationStatus.currentPool) {
+                        showMessage(
+                            `Connected! You are currently delegating to another pool. Click below to switch to BKIND.`,
+                            'info'
+                        );
+                    } else {
+                        showMessage(
+                            'Connected! Your wallet is not delegating to any pool. Click below to delegate to BKIND.',
+                            'info'
+                        );
+                    }
+                    showDelegateAction();
 
+                } catch (error) {
+                    console.error('Connection error:', error);
+                    showMessage(`Error: ${error.message}`, 'error');
+                }
+            }
+
+            // Delegation Process (triggered by Delegate to BKIND button)
+            async function handleDelegation() {
+                if (!walletApi || !currentStakeAddress) {
+                    showMessage('Please connect your wallet first.', 'warning');
+                    return;
+                }
+
+                try {
+                    showMessage('Preparing delegation transaction...', 'info', true);
+                    await buildAndSignDelegation(currentStakeAddress, currentDelegationStatus.delegated);
                 } catch (error) {
                     console.error('Delegation error:', error);
                     showMessage(`Error: ${error.message}`, 'error');
@@ -651,14 +736,19 @@
             delegateBtn.addEventListener('click', function() {
                 walletContainer.classList.toggle('visible');
                 hideMessage();
+                hideDelegateAction();
                 updateWalletButtons();
             });
 
             walletButtons.forEach(btn => {
                 btn.addEventListener('click', function() {
                     const walletName = this.dataset.wallet;
-                    handleDelegation(walletName);
+                    handleWalletConnect(walletName);
                 });
+            });
+
+            delegateToPoolBtn.addEventListener('click', function() {
+                handleDelegation();
             });
 
             // Initialize
