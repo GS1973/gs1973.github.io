@@ -72,23 +72,23 @@ html, body {
 }
 
 .delegate-btn {
-    background-color: #0066cc;
-    color: white;
-    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: 2px solid rgba(255, 255, 255, 0.95);
     padding: 12px 28px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .delegate-btn:hover {
-    background-color: #0052a3;
-    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-color: rgba(255, 255, 255, 1);
 }
 
 .delegate-btn:active {
@@ -285,6 +285,8 @@ html, body {
     .delegate-btn {
         padding: 10px 20px;
         font-size: 14px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 2px solid rgba(255, 255, 255, 0.95);
     }
 
     .hero-title {
