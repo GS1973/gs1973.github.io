@@ -693,14 +693,59 @@
                         return;
                     }
 
-                    showMessage('Initializing delegation...', 'info', true);
+                    showMessage('Fetching protocol parameters...', 'info', true);
 
                     const { Lucid } = window.LucidCardano;
 
-                    // Initialize Lucid with the connected wallet
-                    const lucid = await Lucid.new(undefined, 'Mainnet');
+                    // Fetch protocol parameters from our proxy
+                    const protocolParams = await fetchFromProxy('/epochs/latest/parameters');
 
-                    // Use the wallet API from CIP-30
+                    // Create a custom provider
+                    const customProvider = {
+                        getProtocolParameters: async () => ({
+                            minFeeA: parseInt(protocolParams.min_fee_a),
+                            minFeeB: parseInt(protocolParams.min_fee_b),
+                            maxTxSize: parseInt(protocolParams.max_tx_size),
+                            maxValSize: parseInt(protocolParams.max_val_size),
+                            keyDeposit: BigInt(protocolParams.key_deposit),
+                            poolDeposit: BigInt(protocolParams.pool_deposit),
+                            priceMem: parseFloat(protocolParams.price_mem),
+                            priceStep: parseFloat(protocolParams.price_step),
+                            maxTxExMem: BigInt(protocolParams.max_tx_ex_mem),
+                            maxTxExSteps: BigInt(protocolParams.max_tx_ex_steps),
+                            coinsPerUtxoByte: BigInt(protocolParams.coins_per_utxo_size),
+                            collateralPercentage: parseInt(protocolParams.collateral_percent),
+                            maxCollateralInputs: parseInt(protocolParams.max_collateral_inputs),
+                            costModels: protocolParams.cost_models,
+                        }),
+                        getUtxos: async () => [],
+                        getUtxosWithUnit: async () => [],
+                        getUtxoByUnit: async () => undefined,
+                        getUtxosByOutRef: async () => [],
+                        getDelegation: async () => ({ poolId: null, rewards: 0n }),
+                        getDatum: async () => undefined,
+                        awaitTx: async () => true,
+                        submitTx: async (tx) => {
+                            const txBytes = hexToBytes(tx);
+                            const response = await fetch(`${CONFIG.PROXY_URL}/tx/submit`, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/cbor' },
+                                body: txBytes
+                            });
+                            if (!response.ok) {
+                                const error = await response.json().catch(() => ({}));
+                                throw new Error(error.message || 'Transaction submission failed');
+                            }
+                            return await response.text();
+                        },
+                    };
+
+                    showMessage('Initializing...', 'info', true);
+
+                    // Initialize Lucid with custom provider
+                    const lucid = await Lucid.new(customProvider, 'Mainnet');
+
+                    // Connect wallet using CIP-30 API
                     lucid.selectWallet({
                         getNetworkId: async () => await walletApi.getNetworkId(),
                         getUtxos: async () => await walletApi.getUtxos(),
@@ -720,16 +765,12 @@
                     // Build the delegation transaction
                     let tx;
                     if (!alreadyRegistered) {
-                        // Register stake key and delegate
-                        tx = await lucid
-                            .newTx()
+                        tx = await lucid.newTx()
                             .registerStake(stakeAddress)
                             .delegateTo(stakeAddress, CONFIG.POOL_ID)
                             .complete();
                     } else {
-                        // Just delegate (already registered)
-                        tx = await lucid
-                            .newTx()
+                        tx = await lucid.newTx()
                             .delegateTo(stakeAddress, CONFIG.POOL_ID)
                             .complete();
                     }
