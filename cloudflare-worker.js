@@ -53,6 +53,13 @@ const CORS_HEADERS = {
   'Access-Control-Max-Age': '86400',
 };
 
+const SECURITY_HEADERS = {
+  'X-Content-Type-Options': 'nosniff',
+  'X-Frame-Options': 'DENY',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Permissions-Policy': 'geolocation=(), microphone=(), camera=()',
+};
+
 function getCorsHeaders(request) {
   const origin = request.headers.get('Origin');
   const headers = { ...CORS_HEADERS };
@@ -70,11 +77,17 @@ function handleOptions(request) {
   if (corsHeaders['Access-Control-Allow-Origin']) {
     return new Response(null, {
       status: 204,
-      headers: corsHeaders,
+      headers: {
+        ...corsHeaders,
+        ...SECURITY_HEADERS,
+      },
     });
   }
 
-  return new Response('Forbidden', { status: 403 });
+  return new Response('Forbidden', {
+    status: 403,
+    headers: SECURITY_HEADERS,
+  });
 }
 
 async function handleRequest(request, env) {
@@ -84,7 +97,25 @@ async function handleRequest(request, env) {
 
   // Check origin
   if (!corsHeaders['Access-Control-Allow-Origin']) {
-    return new Response('Forbidden', { status: 403 });
+    return new Response('Forbidden', {
+      status: 403,
+      headers: SECURITY_HEADERS,
+    });
+  }
+
+  // Check request size for POST requests
+  if (request.method === 'POST') {
+    const contentLength = request.headers.get('content-length');
+    if (!contentLength || parseInt(contentLength) > 20000) {
+      return new Response(JSON.stringify({ error: 'Request too large' }), {
+        status: 413,
+        headers: {
+          'Content-Type': 'application/json',
+          ...corsHeaders,
+          ...SECURITY_HEADERS,
+        },
+      });
+    }
   }
 
   // Check rate limit
@@ -96,6 +127,7 @@ async function handleRequest(request, env) {
         'Content-Type': 'application/json',
         'Retry-After': '60',
         ...corsHeaders,
+        ...SECURITY_HEADERS,
       },
     });
   }
@@ -117,6 +149,7 @@ async function handleRequest(request, env) {
       headers: {
         'Content-Type': 'application/json',
         ...corsHeaders,
+        ...SECURITY_HEADERS,
       },
     });
   }
@@ -148,6 +181,7 @@ async function handleRequest(request, env) {
       headers: {
         'Content-Type': blockfrostResponse.headers.get('Content-Type') || 'application/json',
         ...corsHeaders,
+        ...SECURITY_HEADERS,
       },
     });
   } catch (error) {
@@ -157,6 +191,7 @@ async function handleRequest(request, env) {
       headers: {
         'Content-Type': 'application/json',
         ...corsHeaders,
+        ...SECURITY_HEADERS,
       },
     });
   }
