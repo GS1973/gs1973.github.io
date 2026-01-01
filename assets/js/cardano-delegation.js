@@ -369,39 +369,9 @@ import { Lucid, Blockfrost } from "https://unpkg.com/lucid-cardano@0.10.7/web/mo
 		document.getElementById('wallet-section').scrollIntoView({ behavior: 'smooth', block: 'center' });
 	}
 
-	// ============================================
-	// EVENT LISTENERS (CSP-compliant, no inline handlers)
-	// ============================================
-	function initEventListeners() {
-		// Top delegate button
-		const topDelegateBtn = document.getElementById('top-delegate-btn');
-		if (topDelegateBtn) {
-			topDelegateBtn.addEventListener('click', showWalletSelection);
-		}
-
-		// Wallet connection buttons
-		const walletButtons = document.querySelectorAll('.wallet-btn[data-wallet]');
-		walletButtons.forEach(button => {
-			button.addEventListener('click', () => {
-				const walletName = button.getAttribute('data-wallet');
-				if (walletName) {
-					connectWallet(walletName);
-				}
-			});
-		});
-
-		// Delegate to pool button
-		const delegateBtn = document.getElementById('delegate-btn');
-		if (delegateBtn) {
-			delegateBtn.addEventListener('click', delegateToPool);
-		}
-	}
-
-	// Initialize event listeners when DOM is ready
-	if (document.readyState === 'loading') {
-		document.addEventListener('DOMContentLoaded', initEventListeners);
-	} else {
-		initEventListeners();
-	}
+	// Make functions globally available for onclick handlers
+	window.connectWallet = connectWallet;
+	window.delegateToPool = delegateToPool;
+	window.showWalletSelection = showWalletSelection;
 
 })(); // End of IIFE module
