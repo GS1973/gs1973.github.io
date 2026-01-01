@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Smit Blockchain Operations - BKIND Cardano Stake Pool. The trustworthy Cardano stake pool active since July 2020.">
     <title>Smit Blockchain Operations - BKIND Cardano Stake Pool</title>
-    <script src="https://unpkg.com/@emurgo/cardano-serialization-lib-browser@11.5.0/cardano_serialization_lib.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
@@ -353,7 +352,12 @@
         </div>
     </main>
 
-    <script>
+    <script type="module">
+        import * as CSL from 'https://esm.sh/@emurgo/cardano-serialization-lib-browser@11.5.0';
+
+        // Make CSL available globally for the delegation function
+        window.CardanoSerializationLib = CSL;
+
         (function() {
             'use strict';
 
@@ -684,16 +688,12 @@
             async function buildAndSignDelegation(stakeAddress, alreadyRegistered) {
                 try {
                     // Check if CSL is loaded
-                    if (typeof CardanoWasm === 'undefined') {
-                        showMessage('Loading transaction library, please wait...', 'info', true);
-                        await new Promise(resolve => setTimeout(resolve, 1000));
-                        if (typeof CardanoWasm === 'undefined') {
-                            showMessage('Failed to load transaction library. Please refresh and try again.', 'error');
-                            return;
-                        }
+                    if (!window.CardanoSerializationLib) {
+                        showMessage('Transaction library not loaded. Please refresh and try again.', 'error');
+                        return;
                     }
 
-                    const CSL = CardanoWasm;
+                    const CSL = window.CardanoSerializationLib;
 
                     // Get UTXOs for transaction building
                     const utxosHex = await walletApi.getUtxos();
