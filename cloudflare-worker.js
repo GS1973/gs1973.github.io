@@ -26,19 +26,23 @@ const RATE_LIMIT = {
 const rateLimitStore = new Map();
 
 addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request, event.env));
+  event.respondWith(handleRequest(event.request));
 });
 
-async function handleRequest(request, env) {
-  // ⚠️ IMPORTANT: BLOCKFROST_API_KEY must be set as environment variable in Cloudflare Dashboard
-  const BLOCKFROST_API_KEY = env.BLOCKFROST_API_KEY;
-
-  if (!BLOCKFROST_API_KEY) {
-    return new Response('Configuration error: API key not set', { status: 500 });
-  }
-  // Handle CORS preflight
+async function handleRequest(request) {
+  // Handle CORS preflight FIRST, before any other checks
   if (request.method === 'OPTIONS') {
     return handleCORS(request);
+  }
+
+  // ⚠️ IMPORTANT: BLOCKFROST_API_KEY must be set as environment variable in Cloudflare Dashboard
+  // In Service Worker format, env vars are available as global variables
+  if (typeof BLOCKFROST_API_KEY === 'undefined') {
+    const origin = request.headers.get('Origin');
+    return new Response('Configuration error: API key not set', {
+      status: 500,
+      headers: getCORSHeaders(origin)
+    });
   }
 
   // Check origin - only reject if origin is present but not in allowed list
