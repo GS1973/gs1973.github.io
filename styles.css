@@ -338,3 +338,22 @@ html, body {
         max-width: 200px;
     }
 }
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.35);
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: 5;
+}
+
+.footer p {
+    margin: 0;
+}
