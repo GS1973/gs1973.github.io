@@ -1,6 +1,37 @@
 import { Lucid, Blockfrost } from 'https://cdn.jsdelivr.net/npm/lucid-cardano@0.10.7/web/mod.js';
 import { bech32 } from 'https://cdn.jsdelivr.net/npm/@scure/base@1.1.5/+esm';
 
+// Bech32 conversion utilities
+function convertBits(data, fromBits, toBits, pad = true) {
+    let acc = 0;
+    let bits = 0;
+    const result = [];
+    const maxv = (1 << toBits) - 1;
+
+    for (let i = 0; i < data.length; i++) {
+        const value = data[i];
+        if (value < 0 || value >> fromBits !== 0) {
+            throw new Error('Invalid data');
+        }
+        acc = (acc << fromBits) | value;
+        bits += fromBits;
+        while (bits >= toBits) {
+            bits -= toBits;
+            result.push((acc >> bits) & maxv);
+        }
+    }
+
+    if (pad) {
+        if (bits > 0) {
+            result.push((acc << (toBits - bits)) & maxv);
+        }
+    } else if (bits >= fromBits || ((acc << (toBits - bits)) & maxv)) {
+        throw new Error('Invalid padding');
+    }
+
+    return result;
+}
+
 // Make Lucid available globally
 window.LucidCardano = { Lucid, Blockfrost };
 
@@ -89,7 +120,9 @@ window.LucidCardano = { Lucid, Blockfrost };
     function bech32Decode(str) {
         try {
             const decoded = bech32.decode(str);
-            return decoded.bytes;
+            const words = decoded.words;
+            const bytes = convertBits(words, 5, 8, false);
+            return new Uint8Array(bytes);
         } catch (error) {
             console.error('Bech32 decode error:', error);
             return null;
@@ -98,7 +131,12 @@ window.LucidCardano = { Lucid, Blockfrost };
 
     function bech32Encode(hrp, data) {
         try {
-            return bech32.encode(hrp, data);
+            // Convert Uint8Array to regular array if needed
+            const byteArray = Array.from(data);
+            // Convert from 8-bit bytes to 5-bit words
+            const words = convertBits(byteArray, 8, 5, true);
+            // Encode with bech32
+            return bech32.encode(hrp, words);
         } catch (error) {
             console.error('Bech32 encode error:', error);
             return null;
