@@ -1,202 +1,126 @@
 /**
  * Cloudflare Worker - Blockfrost API Proxy
  *
- * This worker acts as a secure proxy between your website and Blockfrost API,
- * keeping your API key hidden from client-side code.
+ * This worker proxies requests to Blockfrost API and handles CORS.
+ * Deploy to: blockfrost-proxy.smitblockchainops.workers.dev
  *
- * Deploy this to Cloudflare Workers at: workers.cloudflare.com
+ * Environment variables required:
+ * - BLOCKFROST_API_KEY: Your Blockfrost project ID
  */
 
 const BLOCKFROST_BASE_URL = 'https://cardano-mainnet.blockfrost.io/api/v0';
 
-// Allowed origins - UPDATE THIS to match your website domain
 const ALLOWED_ORIGINS = [
   'https://gs1973.github.io',
   'https://smitblockchainops.nl',
+  'https://www.smitblockchainops.nl'
 ];
 
-// Rate limiting configuration
-const RATE_LIMIT = {
-  maxRequests: 100,
-  windowMs: 60000, // 1 minute
+const CORS_HEADERS = {
+  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type, project_id',
+  'Access-Control-Max-Age': '86400',
 };
 
-// In-memory rate limiting (resets on worker restart)
-const rateLimitStore = new Map();
-
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request));
-});
-
-async function handleRequest(request) {
-  // Handle CORS preflight FIRST, before any other checks
-  if (request.method === 'OPTIONS') {
-    return handleCORS(request);
-  }
-
-  // ⚠️ IMPORTANT: BLOCKFROST_API_KEY must be set as environment variable in Cloudflare Dashboard
-  // In Service Worker format, env vars are available as global variables
-  if (typeof BLOCKFROST_API_KEY === 'undefined') {
-    const origin = request.headers.get('Origin');
-    return new Response('Configuration error: API key not set', {
-      status: 500,
-      headers: getCORSHeaders(origin)
-    });
-  }
-
-  // Check origin - only reject if origin is present but not in allowed list
+function getCorsHeaders(request) {
   const origin = request.headers.get('Origin');
-  if (origin && !ALLOWED_ORIGINS.includes(origin)) {
-    return new Response('Forbidden', {
-      status: 403,
-      headers: { 'Content-Type': 'text/plain' }
-    });
-  }
+  const headers = { ...CORS_HEADERS };
 
-  // Rate limiting
-  const clientIP = request.headers.get('CF-Connecting-IP');
-  if (!checkRateLimit(clientIP)) {
-    return new Response('Rate limit exceeded', {
-      status: 429,
-      headers: getCORSHeaders(origin)
-    });
-  }
-
-  try {
-    const url = new URL(request.url);
-    const endpoint = url.pathname.replace('/api/', '');
-
-    // Validate endpoint - only allow specific safe endpoints
-    if (!isAllowedEndpoint(endpoint)) {
-      return new Response('Endpoint not allowed', {
-        status: 403,
-        headers: getCORSHeaders(origin)
-      });
-    }
-
-    // Forward request to Blockfrost
-    const blockfrostUrl = `${BLOCKFROST_BASE_URL}/${endpoint}`;
-
-    // Build fetch options
-    const fetchOptions = {
-      method: request.method,
-      headers: {
-        'project_id': BLOCKFROST_API_KEY,
-        'Content-Type': 'application/json',
-      },
-    };
-
-    // Include body for POST/PUT requests
-    if (request.method === 'POST' || request.method === 'PUT') {
-      fetchOptions.body = await request.text();
-    }
-
-    const response = await fetch(blockfrostUrl, fetchOptions);
-
-    // Return response with CORS headers
-    const data = await response.text();
-    return new Response(data, {
-      status: response.status,
-      headers: {
-        ...getCORSHeaders(origin),
-        'Content-Type': 'application/json',
-      },
-    });
-
-  } catch (error) {
-    return new Response(JSON.stringify({ error: error.message }), {
-      status: 500,
-      headers: {
-        ...getCORSHeaders(origin),
-        'Content-Type': 'application/json',
-      },
-    });
-  }
-}
-
-function handleCORS(request) {
-  const origin = request.headers.get('Origin');
-
-  // Reject unauthorized origins
-  if (origin && !ALLOWED_ORIGINS.includes(origin)) {
-    return new Response('Forbidden', { status: 403 });
-  }
-
-  // Build headers object
-  const headers = {
-    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, project_id, lucid, authorization, x-requested-with',
-  };
-
-  // Add origin-specific headers only if origin is present and allowed
-  if (origin) {
+  if (origin && ALLOWED_ORIGINS.includes(origin)) {
     headers['Access-Control-Allow-Origin'] = origin;
-    headers['Access-Control-Allow-Credentials'] = 'true';
-    headers['Access-Control-Max-Age'] = '86400';
   }
-
-  return new Response(null, {
-    status: 204,
-    headers,
-  });
-}
-
-function getCORSHeaders(origin) {
-  const headers = {};
-
-  // Only add CORS headers if origin is present and valid
-  if (origin) {
-    headers['Access-Control-Allow-Origin'] = origin;
-    headers['Access-Control-Allow-Credentials'] = 'true';
-  }
-
-  // Add Content Security Policy headers for XSS protection
-  headers['Content-Security-Policy'] = "default-src 'self'; script-src 'self' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://blockfrost-proxy.smitblockchainops.workers.dev https://cardano-mainnet.blockfrost.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self'";
-
-  // Additional security headers
-  headers['X-Content-Type-Options'] = 'nosniff';
-  headers['X-Frame-Options'] = 'DENY';
-  headers['X-XSS-Protection'] = '1; mode=block';
-  headers['Referrer-Policy'] = 'strict-origin-when-cross-origin';
-  headers['Permissions-Policy'] = 'geolocation=(), microphone=(), camera=()';
-  headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains; preload';
 
   return headers;
 }
 
-function checkRateLimit(clientIP) {
-  const now = Date.now();
-  const clientData = rateLimitStore.get(clientIP) || { count: 0, resetTime: now + RATE_LIMIT.windowMs };
+function handleOptions(request) {
+  const corsHeaders = getCorsHeaders(request);
 
-  // Reset if window expired
-  if (now > clientData.resetTime) {
-    clientData.count = 0;
-    clientData.resetTime = now + RATE_LIMIT.windowMs;
+  if (corsHeaders['Access-Control-Allow-Origin']) {
+    return new Response(null, {
+      status: 204,
+      headers: corsHeaders,
+    });
   }
 
-  clientData.count++;
-  rateLimitStore.set(clientIP, clientData);
-
-  return clientData.count <= RATE_LIMIT.maxRequests;
+  return new Response('Forbidden', { status: 403 });
 }
 
-function isAllowedEndpoint(endpoint) {
-  // Whitelist of allowed Blockfrost endpoints for delegation functionality
-  const allowedPatterns = [
-    // Account & Delegation Info
-    /^accounts\/stake[0-9a-z]+$/, // Account info for delegation checking
+async function handleRequest(request, env) {
+  const url = new URL(request.url);
+  const path = url.pathname;
+  const corsHeaders = getCorsHeaders(request);
 
-    // Transaction Building & Submission
-    /^txs$/, // Transaction submission (POST)
-    /^txs\/[0-9a-f]{64}$/, // Transaction status lookup
-    /^addresses\/addr[0-9a-z]+\/utxos$/, // Address UTXOs (needed by Lucid)
-    /^epochs\/latest\/parameters$/, // Protocol parameters (needed for fees)
-    /^epochs\/latest$/, // Latest epoch info
+  // Check origin
+  if (!corsHeaders['Access-Control-Allow-Origin']) {
+    return new Response('Forbidden', { status: 403 });
+  }
 
-    // Pool Information
-    /^pools\/pool[0-9a-z]+$/, // Pool information
-    /^pools\/pool[0-9a-z]+\/metadata$/, // Pool metadata
+  // Only allow specific endpoints
+  const allowedPaths = [
+    /^\/accounts\/stake[a-z0-9]+$/,
+    /^\/pools\/pool[a-z0-9]+$/,
+    /^\/tx\/submit$/,
   ];
 
-  return allowedPatterns.some(pattern => pattern.test(endpoint));
+  const isAllowed = allowedPaths.some(pattern => pattern.test(path));
+
+  if (!isAllowed) {
+    return new Response(JSON.stringify({ error: 'Endpoint not allowed' }), {
+      status: 403,
+      headers: {
+        'Content-Type': 'application/json',
+        ...corsHeaders,
+      },
+    });
+  }
+
+  // Build Blockfrost request
+  const blockfrostUrl = BLOCKFROST_BASE_URL + path;
+
+  const blockfrostHeaders = {
+    'project_id': env.BLOCKFROST_API_KEY,
+    'Content-Type': 'application/json',
+  };
+
+  // For tx/submit, we need to handle CBOR data
+  if (path === '/tx/submit' && request.method === 'POST') {
+    blockfrostHeaders['Content-Type'] = 'application/cbor';
+  }
+
+  try {
+    const blockfrostResponse = await fetch(blockfrostUrl, {
+      method: request.method,
+      headers: blockfrostHeaders,
+      body: request.method === 'POST' ? await request.arrayBuffer() : undefined,
+    });
+
+    const responseData = await blockfrostResponse.text();
+
+    return new Response(responseData, {
+      status: blockfrostResponse.status,
+      headers: {
+        'Content-Type': blockfrostResponse.headers.get('Content-Type') || 'application/json',
+        ...corsHeaders,
+      },
+    });
+  } catch (error) {
+    return new Response(JSON.stringify({ error: 'Proxy error', message: error.message }), {
+      status: 500,
+      headers: {
+        'Content-Type': 'application/json',
+        ...corsHeaders,
+      },
+    });
+  }
 }
+
+export default {
+  async fetch(request, env) {
+    if (request.method === 'OPTIONS') {
+      return handleOptions(request);
+    }
+
+    return handleRequest(request, env);
+  },
+};
