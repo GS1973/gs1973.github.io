@@ -69,6 +69,10 @@ window.LucidCardano = { Lucid, Blockfrost };
         });
     }
 
+    function hasAnyWalletInstalled() {
+        return CONFIG.WALLETS.some(walletName => isWalletInstalled(walletName));
+    }
+
     // Hex encoding/decoding utilities
     function hexToBytes(hex) {
         const bytes = new Uint8Array(hex.length / 2);
@@ -425,6 +429,15 @@ window.LucidCardano = { Lucid, Blockfrost };
 
     // Event Handlers
     delegateBtn.addEventListener('click', function() {
+        // Check if any supported wallet is installed
+        if (!hasAnyWalletInstalled()) {
+            showMessage(
+                'You have none of the supported wallets by Smit Blockchain Operations installed. Please install one of the supported wallets (Eternl, Lace, Yoroi, or Typhon).',
+                'warning'
+            );
+            return;
+        }
+
         walletContainer.classList.toggle('visible');
         hideMessage();
         hideDelegateAction();
