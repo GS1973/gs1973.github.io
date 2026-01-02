@@ -137,6 +137,7 @@ async function handleRequest(request, env) {
     /^\/accounts\/stake[a-z0-9]+$/,
     /^\/pools\/pool[a-z0-9]+$/,
     /^\/tx\/submit$/,
+    /^\/txs\/[a-f0-9]{64}$/,
     /^\/epochs\/latest\/parameters$/,
     /^\/addresses\/[a-z0-9]+\/utxos$/,
   ];

@@ -312,7 +312,37 @@ window.LucidCardano = { Lucid, Blockfrost };
                 getUtxosByOutRef: async () => [],
                 getDelegation: async () => ({ poolId: null, rewards: 0n }),
                 getDatum: async () => undefined,
-                awaitTx: async () => true,
+                awaitTx: async (txHash) => {
+                    // Poll for transaction confirmation with exponential backoff
+                    const maxAttempts = 60; // ~5 minutes max wait
+                    const initialDelay = 2000; // Start with 2 seconds
+
+                    for (let attempt = 0; attempt < maxAttempts; attempt++) {
+                        try {
+                            const response = await fetch(`${CONFIG.PROXY_URL}/txs/${txHash}`);
+                            if (response.ok) {
+                                // Transaction found and confirmed
+                                return true;
+                            }
+                            if (response.status === 404) {
+                                // Transaction not yet confirmed, wait and retry
+                                const delay = Math.min(initialDelay * Math.pow(1.2, attempt), 10000);
+                                await new Promise(resolve => setTimeout(resolve, delay));
+                                continue;
+                            }
+                            // Other error
+                            throw new Error('Failed to check transaction status');
+                        } catch (error) {
+                            if (attempt === maxAttempts - 1) {
+                                throw new Error('Transaction confirmation timeout');
+                            }
+                            // Wait before retrying
+                            const delay = Math.min(initialDelay * Math.pow(1.2, attempt), 10000);
+                            await new Promise(resolve => setTimeout(resolve, delay));
+                        }
+                    }
+                    throw new Error('Transaction confirmation timeout');
+                },
                 submitTx: async (tx) => {
                     const txBytes = hexToBytes(tx);
                     const response = await fetch(`${CONFIG.PROXY_URL}/tx/submit`, {
@@ -371,8 +401,12 @@ window.LucidCardano = { Lucid, Blockfrost };
 
             const txHash = await signedTx.submit();
 
+            showMessage('Waiting for blockchain confirmation...', 'info', true);
+
+            await lucid.awaitTx(txHash);
+
             showMessage(
-                `Delegation successful! Transaction: ${txHash.slice(0, 16)}...`,
+                `Delegation successful! Transaction confirmed: ${txHash.slice(0, 16)}...`,
                 'success'
             );
             hideDelegateAction();
@@ -381,6 +415,8 @@ window.LucidCardano = { Lucid, Blockfrost };
             console.error('Delegation error:', error);
             if (error.code === 2 || error.message?.includes('refused') || error.message?.includes('declined') || error.message?.includes('User')) {
                 showMessage('Transaction signing was declined.', 'warning');
+            } else if (error.message?.includes('timeout')) {
+                showMessage('Transaction submitted but confirmation timed out. Check your wallet for delegation status.', 'warning');
             } else {
                 showMessage('Delegation failed. Please try again or contact support if the issue persists.', 'error');
             }
