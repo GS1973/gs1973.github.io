@@ -432,7 +432,7 @@ window.LucidCardano = { Lucid, Blockfrost };
         // Check if any supported wallet is installed
         if (!hasAnyWalletInstalled()) {
             showMessage(
-                'You have none of the supported wallets by Smit Blockchain Operations installed. Please install one of the supported wallets (Eternl, Lace, Yoroi, or Typhon).',
+                'You have none of the supported wallets by Smit Blockchain Operations installed. Install one of the supported wallets (Eternl, Lace, Yoroi, or Typhon) to delegate to BKIND.',
                 'warning'
             );
             return;
