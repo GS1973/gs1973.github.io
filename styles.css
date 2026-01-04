@@ -317,6 +317,12 @@ html, body {
         padding: 12px 25px;
         font-size: 16px;
     }
+
+    .motto-section {
+        font-size: 16px;
+        padding: 15px 10px;
+        letter-spacing: 1.5px;
+    }
 }
 
 @media (max-width: 480px) {
