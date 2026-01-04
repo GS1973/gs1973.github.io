@@ -259,6 +259,27 @@ html, body {
     to { transform: rotate(360deg); }
 }
 
+/* Motto Section */
+.motto-section {
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    z-index: 5;
+}
+
+.motto-section p {
+    margin: 0;
+}
+
 /* Responsive styles */
 @media (max-width: 1024px) {
     .hero-title {
@@ -363,27 +384,6 @@ html, body {
     .footer-link {
         font-size: 12px;
     }
-}
-
-/* Motto Section */
-.motto-section {
-    position: fixed;
-    bottom: 45px;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    z-index: 5;
-}
-
-.motto-section p {
-    margin: 0;
 }
 
 /* Footer */
