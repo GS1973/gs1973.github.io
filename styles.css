@@ -171,10 +171,6 @@ html, body {
     cursor: not-allowed;
 }
 
-.wallet-btn.not-installed {
-    opacity: 0.4;
-}
-
 .message-box {
     display: none;
     margin: 30px auto 0 auto;
