@@ -63,8 +63,9 @@ window.LucidCardano = { Lucid, Blockfrost };
         walletButtons.forEach(btn => {
             const walletName = btn.dataset.wallet;
             if (!isWalletInstalled(walletName)) {
-                btn.classList.add('not-installed');
-                btn.title = `${walletName} is not installed`;
+                btn.style.display = 'none';
+            } else {
+                btn.style.display = '';
             }
         });
     }
