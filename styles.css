@@ -394,8 +394,8 @@ html, body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 1);
-    color: #333;
+    background-color: #666;
+    color: white;
     padding: 15px 20px;
     font-size: 14px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -410,14 +410,14 @@ html, body {
 }
 
 .footer-link {
-    color: #333;
+    color: white;
     text-decoration: underline;
     font-weight: 400;
     transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #28a745;
+    color: #90ee90;
     text-decoration: underline;
 }
 
@@ -427,8 +427,8 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 1);
-    color: #333;
+    background-color: #666;
+    color: white;
     text-align: center;
     padding: 10px 20px;
     font-size: 16px;
