@@ -343,6 +343,7 @@ html, body {
         font-size: 16px;
         padding: 15px 10px;
         letter-spacing: 1.5px;
+        bottom: 70px;
     }
 }
 
@@ -369,6 +370,7 @@ html, body {
         font-size: 14px;
         padding: 15px 10px;
         letter-spacing: 1px;
+        bottom: 80px;
     }
 
     .footer {
