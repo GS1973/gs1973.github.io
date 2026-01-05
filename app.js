@@ -19,7 +19,7 @@ window.LucidCardano = { Lucid, Blockfrost };
         'eternl': 'eternl',
         'lace': 'lace',
         'yoroi': 'yoroi',
-        'typhon': 'typohoncip30'
+        'typhon': 'typhoncip30'
     };
 
     // DOM Elements
