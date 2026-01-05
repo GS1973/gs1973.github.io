@@ -14,6 +14,14 @@ window.LucidCardano = { Lucid, Blockfrost };
         WALLETS: ['eternl', 'lace', 'yoroi', 'typhon']
     };
 
+    // Wallet API name mapping (some wallets use different names in window.cardano)
+    const WALLET_API_NAMES = {
+        'eternl': 'eternl',
+        'lace': 'lace',
+        'yoroi': 'yoroi',
+        'typhon': 'typhonwallet'
+    };
+
     // DOM Elements
     const delegateBtn = document.getElementById('delegateBtn');
     const walletContainer = document.getElementById('walletContainer');
@@ -56,7 +64,8 @@ window.LucidCardano = { Lucid, Blockfrost };
     }
 
     function isWalletInstalled(walletName) {
-        return window.cardano && window.cardano[walletName];
+        const apiName = WALLET_API_NAMES[walletName] || walletName;
+        return window.cardano && window.cardano[apiName];
     }
 
     function updateWalletButtons() {
@@ -179,7 +188,8 @@ window.LucidCardano = { Lucid, Blockfrost };
         try {
             showMessage(`Connecting to ${walletName}...`, 'info', true);
 
-            walletApi = await window.cardano[walletName].enable();
+            const apiName = WALLET_API_NAMES[walletName] || walletName;
+            walletApi = await window.cardano[apiName].enable();
             connectedWallet = walletName;
 
             showMessage(`Connected to ${walletName}. Checking delegation status...`, 'info', true);
