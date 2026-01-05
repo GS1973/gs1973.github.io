@@ -209,15 +209,31 @@ window.LucidCardano = { Lucid, Blockfrost };
     async function getStakeAddress() {
         if (!walletApi) throw new Error('Wallet not connected');
 
-        const rewardAddresses = await walletApi.getRewardAddresses();
-        console.log('Reward addresses:', rewardAddresses);
-        if (!rewardAddresses || rewardAddresses.length === 0) {
-            throw new Error('No stake address found. Wallet may not be fully initialized.');
+        // Retry logic for wallets that need time to initialize (especially Eternl)
+        const maxAttempts = 5;
+        const delayMs = 500;
+
+        for (let attempt = 0; attempt < maxAttempts; attempt++) {
+            try {
+                const rewardAddresses = await walletApi.getRewardAddresses();
+                console.log(`Attempt ${attempt + 1}: Reward addresses:`, rewardAddresses);
+
+                if (rewardAddresses && rewardAddresses.length > 0) {
+                    // Success - convert and return
+                    const hexAddr = rewardAddresses[0];
+                    return hexToBech32StakeAddress(hexAddr);
+                }
+            } catch (error) {
+                console.log(`Attempt ${attempt + 1} failed:`, error);
+            }
+
+            // Wait before next attempt (except on last attempt)
+            if (attempt < maxAttempts - 1) {
+                await new Promise(resolve => setTimeout(resolve, delayMs));
+            }
         }
 
-        // The address is returned as hex, we need to convert to bech32
-        const hexAddr = rewardAddresses[0];
-        return hexToBech32StakeAddress(hexAddr);
+        throw new Error('Could not retrieve stake address. Please try again.');
     }
 
     function hexToBech32StakeAddress(hex) {
@@ -234,9 +250,6 @@ window.LucidCardano = { Lucid, Blockfrost };
         if (!connected) return;
 
         try {
-            // Small delay to allow wallet API to fully initialize (especially for Eternl)
-            await new Promise(resolve => setTimeout(resolve, 500));
-
             currentStakeAddress = await getStakeAddress();
             currentDelegationStatus = await checkDelegationStatus(currentStakeAddress);
 
