@@ -210,8 +210,9 @@ window.LucidCardano = { Lucid, Blockfrost };
         if (!walletApi) throw new Error('Wallet not connected');
 
         const rewardAddresses = await walletApi.getRewardAddresses();
+        console.log('Reward addresses:', rewardAddresses);
         if (!rewardAddresses || rewardAddresses.length === 0) {
-            throw new Error('No stake address found');
+            throw new Error('No stake address found. Wallet may not be fully initialized.');
         }
 
         // The address is returned as hex, we need to convert to bech32
@@ -233,6 +234,9 @@ window.LucidCardano = { Lucid, Blockfrost };
         if (!connected) return;
 
         try {
+            // Small delay to allow wallet API to fully initialize (especially for Eternl)
+            await new Promise(resolve => setTimeout(resolve, 500));
+
             currentStakeAddress = await getStakeAddress();
             currentDelegationStatus = await checkDelegationStatus(currentStakeAddress);
 
@@ -268,6 +272,8 @@ window.LucidCardano = { Lucid, Blockfrost };
 
         } catch (error) {
             console.error('Connection error:', error);
+            // Show wallet buttons again so user can retry
+            walletContainer.classList.add('visible');
             showMessage('An error occurred while checking delegation status. Please try again.', 'error');
         }
     }
