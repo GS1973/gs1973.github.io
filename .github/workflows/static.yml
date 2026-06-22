@@ -40,6 +40,7 @@ jobs:
           cp app.js _site/
           cp favicon.svg _site/
           cp -r images _site/
+          cp -r governance _site/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
