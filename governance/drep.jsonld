@@ -1,0 +1,57 @@
+{
+    "@context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+            "@id": "CIP119:body",
+            "@context": {
+                "references": {
+                    "@id": "CIP119:references",
+                    "@container": "@set",
+                    "@context": {
+                        "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                        "Other": "CIP100:OtherReference",
+                        "label": "CIP100:reference-label",
+                        "uri": "CIP100:reference-uri"
+                    }
+                },
+                "paymentAddress": "CIP119:paymentAddress",
+                "givenName": "CIP119:givenName",
+                "image": {
+                    "@id": "CIP119:image",
+                    "@context": {
+                        "ImageObject": "https://schema.org/ImageObject"
+                    }
+                },
+                "objectives": "CIP119:objectives",
+                "motivations": "CIP119:motivations",
+                "qualifications": "CIP119:qualifications"
+            }
+        }
+    },
+    "hashAlgorithm": "blake2b-256",
+    "body": {
+        "givenName": "BKIND",
+        "image": {
+            "@type": "ImageObject",
+            "contentUrl": "https://smitblockchainops.nl/images/logo.png",
+            "sha256": "352005a05aebaac2ca7110947f295d6807eda27e9ae25aabd77f0f294b17dd76"
+        },
+        "objectives": "To strengthen Cardano's decentralization and the integrity of its treasury and governance through fact-based, verifiable decision-making. I judge every governance action on its merits, weighed against the chain and the data themselves rather than narrative or authority, and I vote to keep power dispersed and to hold proposals — including treasury withdrawals and protocol changes — to evidence rather than promises.",
+        "motivations": "I run the BKIND stake pool and have operated on Cardano since its early days (participated in Shelley ITN), where I saw how concentrated or undisclosed stake can shape a network from the start. That convinced me governance must be transparent and verifiable, so I verify everything against the chain myself rather than take claims on faith. I register as a DRep to turn that verify-don't-trust stance into a governance vote.\n\nMy belief is that a sustainable, expanding Cardano needs real diversity — decentralization of both stake and governance power — alongside high-quality, innovative, value-adding solutions for its stakeholders. That balance is the lens I bring to every proposal.",
+        "qualifications": "Stake pool operator (BKIND) and builder of independent Cardano infrastructure: a pure, from-scratch on-chain block decoder and ledger auditor that reconstruct chain state directly from the Ouroboros protocol without third-party indexers, plus audit systems for financial and metering data. Background in IT process and governance frameworks. I read CBOR, ledger rules, and on-chain evidence directly, and assess proposals on what the chain and the data actually show.",
+        "references": [
+            {
+                "@type": "Link",
+                "label": "Smit Blockchain Operations (BKIND)",
+                "uri": "https://smitblockchainops.nl"
+            },
+            {
+                "@type": "Link",
+                "label": "GitHub — GS1973",
+                "uri": "https://github.com/GS1973"
+            }
+        ]
+    }
+}
