@@ -20,16 +20,15 @@
 
 ---
 
-## 🔴 Pending (external — not in this repo)
+## 📌 Kept by decision
 
-### Decommission the Cloudflare Worker
-**Status:** Pending (manual, Cloudflare dashboard)
-**Description:** The site no longer calls `blockfrost-proxy.smitblockchainops.workers.dev`.
-The worker source has been removed from this repo; the deployed worker is now
-unused and can be deleted.
-**Action Required:**
-- Cloudflare dashboard → Workers & Pages → `blockfrost-proxy` → Delete
-**Impact:** Removes an unused public endpoint; no effect on the site.
+### Cloudflare Worker — kept deployed
+**Status:** Intentionally retained
+**Description:** The website code no longer references the worker
+(`blockfrost-proxy.smitblockchainops.workers.dev`) — it was removed together
+with the in-browser delegation flow. The worker itself is kept deployed on
+purpose, in case future website functionality needs an on-chain data source.
+Source and deploy notes are archived outside this repo (`~/SBO`).
 
 ---
 
