@@ -10,9 +10,12 @@
 - [x] Remove all in-browser delegation machinery from `app.js` — wallet
       connection, lucid-cardano, @scure/base, Blockfrost proxy calls (2026-06-26)
 - [x] Tighten CSP: drop `cdn.jsdelivr.net`, the Blockfrost proxy origin and
-      `wasm-unsafe-eval`; `script-src`/`connect-src` are now `'self'` (2026-06-26)
+      `wasm-unsafe-eval`; `script-src`/`connect-src` are now `self` (2026-06-26)
 - [x] Remove the dead `cloudflare-worker.js` from the repo; it is no longer
       referenced by the site (kept in git history) (2026-06-26)
+- [x] Turn the top banner into a static DRep link to Cexplorer, replacing the
+      hardcoded seasonal message and dropping the `fadeInOut` animation
+      (resolves the former hardcoded-year and banner-animation items) (2026-06-26)
 - [x] Refactor Bech32 logic to use @scure/base library (2026-01-02, since removed with the wallet flow)
 - [x] Fix deprecated substr() to use slice() (2026-01-02)
 - [x] Remove duplicate POOL_BECH32 constant (2026-01-02)
@@ -42,27 +45,13 @@ Source and deploy notes are archived outside this repo (`~/SBO`).
 - Replace hardcoded values with `var(--...)`
 **Impact:** Easier theming and maintenance
 
-### 2. Fix Hardcoded Year in Banner
-**File:** `index.html`
-**Description:** "A happy and innovative 2026!" needs manual updates each year.
-**Options:**
-- Make dynamic with JavaScript: `new Date().getFullYear()`
-- Remove the year entirely
-- Change to a generic message
-
 ---
 
 ## 🟢 Low Priority (Nice to Have)
 
-### 3. Image Optimization
+### 2. Image Optimization
 **Files:** `images/header.jpg`, `images/logo.png`
 **Description:** Convert to WebP with `<picture>` fallback for faster loads.
-
-### 4. Review Banner Animation
-**File:** `styles.css`
-**Description:** The `fadeInOut` animation on the top banner may annoy repeat
-visitors. Consider reducing frequency, removing it, or hiding the banner after
-the first visit (localStorage).
 
 ---
 
