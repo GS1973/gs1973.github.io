@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Smit Blockchain Operations - BKIND Cardano Stake Pool. The trustworthy Cardano stake pool active since July 2020.">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self' https://cdn.jsdelivr.net https://blockfrost-proxy.smitblockchainops.workers.dev; img-src 'self' data:; upgrade-insecure-requests; base-uri 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; connect-src 'self'; img-src 'self' data:; upgrade-insecure-requests; base-uri 'self';">
     <title>Smit Blockchain Operations - BKIND Cardano Stake Pool</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
             <a href="/" class="logo-link" aria-label="Smit Blockchain Operations Home">
                 <img src="images/logo.png" alt="SBO Logo" class="logo">
             </a>
-            <button id="delegateBtn" class="delegate-btn" aria-label="Open wallet selection for delegation">Delegate</button>
+            <button id="delegateBtn" class="delegate-btn" aria-haspopup="dialog" aria-controls="delegateModal" aria-label="How to delegate to BKIND">Delegate</button>
         </header>
 
         <div class="hero-content">
@@ -33,19 +33,6 @@
             <p class="hero-subtitle">The trustworthy Cardano Stake Pool</p>
             <p class="hero-info">Active since 29th of July 2020</p>
             <p class="hero-ticker">Ticker: <strong>BKIND</strong></p>
-
-            <div id="walletContainer" class="wallet-container">
-                <button class="wallet-btn" data-wallet="eternl">Eternl</button>
-                <button class="wallet-btn" data-wallet="lace">Lace</button>
-                <button class="wallet-btn" data-wallet="yoroi">Yoroi</button>
-                <button class="wallet-btn" data-wallet="typhon">Typhon</button>
-            </div>
-
-            <div id="messageBox" class="message-box" role="alert" aria-live="polite"></div>
-
-            <div id="delegateActionContainer" class="delegate-action-container">
-                <button id="delegateToPoolBtn" class="delegate-to-pool-btn">Delegate to BKIND</button>
-            </div>
         </div>
     </main>
 
@@ -55,8 +42,21 @@
 
     <footer class="footer">
         <p>This website does NOT use any cookies.</p>
-        <a href="terms.html" class="footer-link">Terms & Disclaimer</a>
+        <a href="terms.html" class="footer-link">Terms &amp; Disclaimer</a>
     </footer>
+
+    <div id="delegateModal" class="modal-overlay" hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalBody">
+            <button id="modalClose" class="modal-close" aria-label="Close">&times;</button>
+            <h2 id="modalTitle" class="modal-title">We no longer support third-party wallet connections</h2>
+            <div id="modalBody" class="modal-body">
+                <p>The safety of your funds should never depend on software we don't control. Even well-known third-party wallets have suffered flaws that exposed private keys and drained user funds. Connecting your wallet to any website only widens that attack surface &mdash; and it is not needed to delegate.</p>
+                <p>If you wish to delegate to BKIND, use the wallet of your choice and select pool <strong>BKIND</strong>:</p>
+                <button type="button" id="poolId" class="pool-id" aria-label="Copy pool ID to clipboard">pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y</button>
+                <span id="copyHint" class="copy-hint" aria-live="polite">click to copy</span>
+            </div>
+        </div>
+    </div>
 
     <script type="module" src="app.js"></script>
 </body>

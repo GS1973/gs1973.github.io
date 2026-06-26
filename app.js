@@ -1,496 +1,83 @@
-import { Lucid, Blockfrost } from 'https://cdn.jsdelivr.net/npm/lucid-cardano@0.10.7/web/mod.js';
-import { bech32 } from 'https://cdn.jsdelivr.net/npm/@scure/base@1.1.5/+esm';
-
-// Make Lucid available globally
-window.LucidCardano = { Lucid, Blockfrost };
-
-(function() {
+(function () {
     'use strict';
 
-    // Configuration
-    const CONFIG = {
-        POOL_ID: 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y',
-        PROXY_URL: 'https://blockfrost-proxy.smitblockchainops.workers.dev',
-        WALLETS: ['eternl', 'lace', 'yoroi', 'typhon']
-    };
-
-    // Wallet API name mapping (some wallets use different names in window.cardano)
-    const WALLET_API_NAMES = {
-        'eternl': 'eternl',
-        'lace': 'lace',
-        'yoroi': 'yoroi',
-        'typhon': 'typhoncip30'
-    };
-
-    // DOM Elements
     const delegateBtn = document.getElementById('delegateBtn');
-    const walletContainer = document.getElementById('walletContainer');
-    const messageBox = document.getElementById('messageBox');
-    const walletButtons = document.querySelectorAll('.wallet-btn');
-    const delegateActionContainer = document.getElementById('delegateActionContainer');
-    const delegateToPoolBtn = document.getElementById('delegateToPoolBtn');
+    const modal = document.getElementById('delegateModal');
+    const modalClose = document.getElementById('modalClose');
+    const poolId = document.getElementById('poolId');
+    const copyHint = document.getElementById('copyHint');
 
-    // State
-    let connectedWallet = null;
-    let walletApi = null;
-    let currentStakeAddress = null;
-    let currentDelegationStatus = null;
+    let lastFocused = null;
 
-    // Utility Functions
-    function showMessage(text, type = 'info', loading = false) {
-        messageBox.className = `message-box visible ${type}`;
-        // Clear previous content safely
-        messageBox.textContent = '';
-        if (loading) {
-            const spinner = document.createElement('span');
-            spinner.className = 'loading';
-            messageBox.appendChild(spinner);
-            messageBox.appendChild(document.createTextNode(text));
-        } else {
-            messageBox.textContent = text;
+    function openModal() {
+        lastFocused = document.activeElement;
+        modal.hidden = false;
+        document.addEventListener('keydown', onKeydown);
+        modalClose.focus();
+    }
+
+    function closeModal() {
+        modal.hidden = true;
+        document.removeEventListener('keydown', onKeydown);
+        resetCopyHint();
+        if (lastFocused && typeof lastFocused.focus === 'function') {
+            lastFocused.focus();
         }
     }
 
-    function hideMessage() {
-        messageBox.className = 'message-box';
-    }
-
-    function showDelegateAction() {
-        delegateActionContainer.classList.add('visible');
-    }
-
-    function hideDelegateAction() {
-        delegateActionContainer.classList.remove('visible');
-    }
-
-    function isWalletInstalled(walletName) {
-        const apiName = WALLET_API_NAMES[walletName] || walletName;
-        return window.cardano && window.cardano[apiName];
-    }
-
-    function updateWalletButtons() {
-        walletButtons.forEach(btn => {
-            const walletName = btn.dataset.wallet;
-            if (!isWalletInstalled(walletName)) {
-                btn.style.display = 'none';
-            } else {
-                btn.style.display = '';
-            }
-        });
-    }
-
-    function hasAnyWalletInstalled() {
-        return CONFIG.WALLETS.some(walletName => isWalletInstalled(walletName));
-    }
-
-    // Hex encoding/decoding utilities
-    function hexToBytes(hex) {
-        const bytes = new Uint8Array(hex.length / 2);
-        for (let i = 0; i < hex.length; i += 2) {
-            bytes[i / 2] = parseInt(hex.slice(i, i + 2), 16);
+    function onKeydown(event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        } else if (event.key === 'Tab') {
+            trapFocus(event);
         }
-        return bytes;
     }
 
-    function bytesToHex(bytes) {
-        return Array.from(bytes)
-            .map(b => b.toString(16).padStart(2, '0'))
-            .join('');
+    // Keep keyboard focus inside the dialog while it is open.
+    function trapFocus(event) {
+        const focusable = [modalClose, poolId];
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first.focus();
+        }
     }
 
-    // Bech32 encoding/decoding using @scure/base library
-    function bech32Decode(str) {
+    function resetCopyHint() {
+        copyHint.textContent = 'click to copy';
+        copyHint.classList.remove('copied');
+    }
+
+    async function copyPoolId() {
+        const value = poolId.textContent.trim();
         try {
-            const decoded = bech32.decode(str);
-            const bytes = bech32.fromWords(decoded.words);
-            return new Uint8Array(bytes);
+            await navigator.clipboard.writeText(value);
+            copyHint.textContent = 'copied';
+            copyHint.classList.add('copied');
         } catch (error) {
-            console.error('Bech32 decode error:', error);
-            return null;
+            // Clipboard API unavailable or denied: select the text so the user can copy it manually.
+            const range = document.createRange();
+            range.selectNodeContents(poolId);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            copyHint.textContent = 'press Ctrl+C to copy';
         }
     }
 
-    function bech32Encode(hrp, data) {
-        try {
-            // Convert from 8-bit bytes to 5-bit words using library function
-            const words = bech32.toWords(data);
-            // Encode with bech32
-            return bech32.encode(hrp, words);
-        } catch (error) {
-            console.error('Bech32 encode error:', error);
-            return null;
-        }
-    }
+    delegateBtn.addEventListener('click', openModal);
+    modalClose.addEventListener('click', closeModal);
+    poolId.addEventListener('click', copyPoolId);
 
-    // API Functions
-    async function fetchFromProxy(endpoint) {
-        const response = await fetch(`${CONFIG.PROXY_URL}${endpoint}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-
-        if (!response.ok) {
-            const errorData = await response.json().catch(() => ({}));
-            throw new Error(errorData.message || `API error: ${response.status}`);
-        }
-
-        return response.json();
-    }
-
-    async function submitTransaction(txCbor) {
-        const txBytes = hexToBytes(txCbor);
-
-        const response = await fetch(`${CONFIG.PROXY_URL}/tx/submit`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/cbor'
-            },
-            body: txBytes
-        });
-
-        if (!response.ok) {
-            const errorData = await response.json().catch(() => ({}));
-            throw new Error(errorData.message || `Submit error: ${response.status}`);
-        }
-
-        return response.json();
-    }
-
-    async function checkDelegationStatus(stakeAddress) {
-        try {
-            const accountInfo = await fetchFromProxy(`/accounts/${stakeAddress}`);
-
-            if (accountInfo.pool_id === CONFIG.POOL_ID) {
-                return { delegated: true, toOurPool: true };
-            } else if (accountInfo.pool_id) {
-                return { delegated: true, toOurPool: false, currentPool: accountInfo.pool_id };
-            }
-
-            return { delegated: false, toOurPool: false };
-        } catch (error) {
-            // Account might not exist yet (no transactions)
-            if (error.message.includes('404')) {
-                return { delegated: false, toOurPool: false, newAccount: true };
-            }
-            throw error;
-        }
-    }
-
-    // Wallet Connection
-    async function connectWallet(walletName) {
-        if (!isWalletInstalled(walletName)) {
-            showMessage(`${walletName} wallet is not installed. Please install it first.`, 'error');
-            return false;
-        }
-
-        try {
-            showMessage(`Connecting to ${walletName}...`, 'info', true);
-
-            const apiName = WALLET_API_NAMES[walletName] || walletName;
-            walletApi = await window.cardano[apiName].enable();
-            connectedWallet = walletName;
-
-            showMessage(`Connected to ${walletName}. Checking delegation status...`, 'info', true);
-
-            return true;
-        } catch (error) {
-            console.error('Wallet connection error:', error);
-            if (error.code === -3 || error.message?.includes('declined')) {
-                showMessage('Connection declined. Please approve the connection in your wallet.', 'warning');
-            } else {
-                showMessage('Failed to connect to wallet. Please try again.', 'error');
-            }
-            return false;
-        }
-    }
-
-    async function getStakeAddress() {
-        if (!walletApi) throw new Error('Wallet not connected');
-
-        // Retry logic for wallets that need time to initialize (especially Eternl)
-        const maxAttempts = 5;
-        const delayMs = 500;
-
-        for (let attempt = 0; attempt < maxAttempts; attempt++) {
-            try {
-                const rewardAddresses = await walletApi.getRewardAddresses();
-                console.log(`Attempt ${attempt + 1}: Reward addresses:`, rewardAddresses);
-
-                if (rewardAddresses && rewardAddresses.length > 0) {
-                    // Success - convert and return
-                    const hexAddr = rewardAddresses[0];
-                    return hexToBech32StakeAddress(hexAddr);
-                }
-            } catch (error) {
-                console.log(`Attempt ${attempt + 1} failed:`, error);
-            }
-
-            // Wait before next attempt (except on last attempt)
-            if (attempt < maxAttempts - 1) {
-                await new Promise(resolve => setTimeout(resolve, delayMs));
-            }
-        }
-
-        throw new Error('Could not retrieve stake address. Please try again.');
-    }
-
-    function hexToBech32StakeAddress(hex) {
-        // Convert hex to stake address (simplified - assumes mainnet stake address)
-        // Stake address starts with 'stake1' for mainnet
-        const bytes = hexToBytes(hex);
-        return bech32Encode('stake', bytes);
-    }
-
-    // Wallet Connection and Status Check
-    async function handleWalletConnect(walletName) {
-        hideDelegateAction();
-        const connected = await connectWallet(walletName);
-        if (!connected) return;
-
-        try {
-            currentStakeAddress = await getStakeAddress();
-            currentDelegationStatus = await checkDelegationStatus(currentStakeAddress);
-
-            // Hide wallet buttons after successful connection
-            walletContainer.classList.remove('visible');
-
-            if (currentDelegationStatus.toOurPool) {
-                showMessage('You are already delegating to BKIND. Thank you for your support!', 'success');
-                return;
-            }
-
-            if (currentDelegationStatus.newAccount) {
-                showMessage(
-                    'Your wallet has no transaction history yet. Please make at least one transaction first, then return to delegate.',
-                    'warning'
-                );
-                return;
-            }
-
-            // Wallet is connected but not delegated to BKIND - show delegate option
-            if (currentDelegationStatus.currentPool) {
-                showMessage(
-                    `Connected! You are currently delegating to another pool. Click below to switch to BKIND.`,
-                    'info'
-                );
-            } else {
-                showMessage(
-                    'Connected! Your wallet is not delegating to any pool. Click below to delegate to BKIND.',
-                    'info'
-                );
-            }
-            showDelegateAction();
-
-        } catch (error) {
-            console.error('Connection error:', error);
-            // Show wallet buttons again so user can retry
-            walletContainer.classList.add('visible');
-            showMessage('An error occurred while checking delegation status. Please try again.', 'error');
-        }
-    }
-
-    // Delegation Process (triggered by Delegate to BKIND button)
-    async function handleDelegation() {
-        if (!walletApi || !currentStakeAddress) {
-            showMessage('Please connect your wallet first.', 'warning');
-            return;
-        }
-
-        try {
-            showMessage('Preparing delegation transaction...', 'info', true);
-            await buildAndSignDelegation(currentStakeAddress, currentDelegationStatus.delegated);
-        } catch (error) {
-            console.error('Delegation error:', error);
-            showMessage('An error occurred during delegation. Please try again.', 'error');
-        }
-    }
-
-    async function buildAndSignDelegation(stakeAddress, alreadyRegistered) {
-        try {
-            // Check if Lucid is loaded
-            if (!window.LucidCardano) {
-                showMessage('Transaction library not loaded. Please refresh and try again.', 'error');
-                return;
-            }
-
-            showMessage('Fetching protocol parameters...', 'info', true);
-
-            const { Lucid } = window.LucidCardano;
-
-            // Fetch protocol parameters from our proxy
-            const protocolParams = await fetchFromProxy('/epochs/latest/parameters');
-
-            // Create a custom provider
-            const customProvider = {
-                getProtocolParameters: async () => ({
-                    minFeeA: parseInt(protocolParams.min_fee_a),
-                    minFeeB: parseInt(protocolParams.min_fee_b),
-                    maxTxSize: parseInt(protocolParams.max_tx_size),
-                    maxValSize: parseInt(protocolParams.max_val_size),
-                    keyDeposit: BigInt(protocolParams.key_deposit),
-                    poolDeposit: BigInt(protocolParams.pool_deposit),
-                    priceMem: parseFloat(protocolParams.price_mem),
-                    priceStep: parseFloat(protocolParams.price_step),
-                    maxTxExMem: BigInt(protocolParams.max_tx_ex_mem),
-                    maxTxExSteps: BigInt(protocolParams.max_tx_ex_steps),
-                    coinsPerUtxoByte: BigInt(protocolParams.coins_per_utxo_size),
-                    collateralPercentage: parseInt(protocolParams.collateral_percent),
-                    maxCollateralInputs: parseInt(protocolParams.max_collateral_inputs),
-                    costModels: protocolParams.cost_models,
-                }),
-                getUtxos: async () => [],
-                getUtxosWithUnit: async () => [],
-                getUtxoByUnit: async () => undefined,
-                getUtxosByOutRef: async () => [],
-                getDelegation: async () => ({ poolId: null, rewards: 0n }),
-                getDatum: async () => undefined,
-                awaitTx: async (txHash) => {
-                    // Poll for transaction confirmation with exponential backoff
-                    const maxAttempts = 60; // ~5 minutes max wait
-                    const initialDelay = 2000; // Start with 2 seconds
-
-                    for (let attempt = 0; attempt < maxAttempts; attempt++) {
-                        try {
-                            const response = await fetch(`${CONFIG.PROXY_URL}/txs/${txHash}`);
-                            if (response.ok) {
-                                // Transaction found and confirmed
-                                return true;
-                            }
-                            if (response.status === 404) {
-                                // Transaction not yet confirmed, wait and retry
-                                const delay = Math.min(initialDelay * Math.pow(1.2, attempt), 10000);
-                                await new Promise(resolve => setTimeout(resolve, delay));
-                                continue;
-                            }
-                            // Other error
-                            throw new Error('Failed to check transaction status');
-                        } catch (error) {
-                            if (attempt === maxAttempts - 1) {
-                                throw new Error('Transaction confirmation timeout');
-                            }
-                            // Wait before retrying
-                            const delay = Math.min(initialDelay * Math.pow(1.2, attempt), 10000);
-                            await new Promise(resolve => setTimeout(resolve, delay));
-                        }
-                    }
-                    throw new Error('Transaction confirmation timeout');
-                },
-                submitTx: async (tx) => {
-                    const txBytes = hexToBytes(tx);
-                    const response = await fetch(`${CONFIG.PROXY_URL}/tx/submit`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/cbor' },
-                        body: txBytes
-                    });
-                    if (!response.ok) {
-                        const error = await response.json().catch(() => ({}));
-                        throw new Error(error.message || 'Transaction submission failed');
-                    }
-                    return await response.text();
-                },
-            };
-
-            showMessage('Initializing...', 'info', true);
-
-            // Initialize Lucid with custom provider
-            const lucid = await Lucid.new(customProvider, 'Mainnet');
-
-            // Connect wallet using CIP-30 API
-            lucid.selectWallet({
-                getNetworkId: async () => await walletApi.getNetworkId(),
-                getUtxos: async () => await walletApi.getUtxos(),
-                getCollateral: async () => [],
-                getBalance: async () => await walletApi.getBalance(),
-                getUsedAddresses: async () => await walletApi.getUsedAddresses(),
-                getUnusedAddresses: async () => await walletApi.getUnusedAddresses(),
-                getChangeAddress: async () => await walletApi.getChangeAddress(),
-                getRewardAddresses: async () => await walletApi.getRewardAddresses(),
-                signTx: async (tx) => await walletApi.signTx(tx, true),
-                signData: async (addr, payload) => await walletApi.signData(addr, payload),
-                submitTx: async (tx) => await walletApi.submitTx(tx),
-            });
-
-            showMessage('Building delegation transaction...', 'info', true);
-
-            // Build the delegation transaction
-            let tx;
-            if (!alreadyRegistered) {
-                tx = await lucid.newTx()
-                    .registerStake(stakeAddress)
-                    .delegateTo(stakeAddress, CONFIG.POOL_ID)
-                    .complete();
-            } else {
-                tx = await lucid.newTx()
-                    .delegateTo(stakeAddress, CONFIG.POOL_ID)
-                    .complete();
-            }
-
-            showMessage('Please sign the transaction in your wallet...', 'info', true);
-
-            const signedTx = await tx.sign().complete();
-
-            showMessage('Submitting transaction...', 'info', true);
-
-            const txHash = await signedTx.submit();
-
-            showMessage('Waiting for blockchain confirmation...', 'info', true);
-
-            await lucid.awaitTx(txHash);
-
-            showMessage(
-                `Delegation successful! Transaction confirmed: ${txHash.slice(0, 16)}...`,
-                'success'
-            );
-            hideDelegateAction();
-
-        } catch (error) {
-            console.error('Delegation error:', error);
-            if (error.code === 2 || error.message?.includes('refused') || error.message?.includes('declined') || error.message?.includes('User')) {
-                showMessage('Transaction signing was declined.', 'warning');
-            } else if (error.message?.includes('timeout')) {
-                showMessage('Transaction submitted but confirmation timed out. Check your wallet for delegation status.', 'warning');
-            } else {
-                showMessage('Delegation failed. Please try again or contact support if the issue persists.', 'error');
-            }
-        }
-    }
-
-    // Event Handlers
-    delegateBtn.addEventListener('click', function() {
-        // Check if any supported wallet is installed
-        if (!hasAnyWalletInstalled()) {
-            showMessage(
-                'You have none of the supported wallets by Smit Blockchain Operations installed. Install one of the supported wallets (Eternl, Lace, Yoroi, or Typhon) to delegate to BKIND.',
-                'warning'
-            );
-            return;
-        }
-
-        walletContainer.classList.toggle('visible');
-        hideMessage();
-        hideDelegateAction();
-        updateWalletButtons();
-    });
-
-    walletButtons.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const walletName = this.dataset.wallet;
-            handleWalletConnect(walletName);
-        });
-    });
-
-    delegateToPoolBtn.addEventListener('click', function() {
-        handleDelegation();
-    });
-
-    // Initialize
-    document.addEventListener('DOMContentLoaded', function() {
-        // Check if any wallets are available
-        if (!window.cardano) {
-            console.log('No Cardano wallets detected');
+    // Close when the backdrop (not the dialog itself) is clicked.
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            closeModal();
         }
     });
-
 })();

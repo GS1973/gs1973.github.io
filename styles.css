@@ -133,126 +133,98 @@ html, body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.wallet-container {
-    display: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 40px;
-    padding: 20px;
-}
-
-.wallet-container.visible {
+/* Delegate Modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 20;
 }
 
-.wallet-btn {
-    background-color: rgba(255, 255, 255, 0.25);
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    padding: 12px 24px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    min-width: 120px;
-    opacity: 0.7;
-}
-
-.wallet-btn:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.7);
-}
-
-.wallet-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.message-box {
+.modal-overlay[hidden] {
     display: none;
-    margin: 30px auto 0 auto;
-    padding: 15px 25px;
-    border-radius: 4px;
-    font-size: 1rem;
-    max-width: 500px;
+}
+
+.modal {
+    position: relative;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    max-width: 560px;
+    padding: 40px;
+    border-radius: 8px;
+    border-top: 4px solid #FFD700;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     text-align: center;
-    width: fit-content;
 }
 
-.message-box.visible {
-    display: block;
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.3s ease;
 }
 
-.message-box.info {
-    background-color: rgba(0, 102, 204, 0.8);
-    color: white;
-}
-
-.message-box.success {
-    background-color: rgba(40, 167, 69, 0.8);
-    color: white;
-}
-
-.message-box.error {
-    background-color: rgba(220, 53, 69, 0.8);
-    color: white;
-}
-
-.message-box.warning {
-    background-color: rgba(255, 193, 7, 0.9);
+.modal-close:hover {
     color: #333;
 }
 
-.delegate-action-container {
-    display: none;
-    margin-top: 20px;
-}
-
-.delegate-action-container.visible {
-    display: block;
-}
-
-.delegate-to-pool-btn {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 15px 35px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 18px;
+.modal-title {
+    font-size: 1.5rem;
     font-weight: 700;
-    cursor: pointer;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-body p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.pool-id {
+    display: block;
+    width: 100%;
+    margin: 8px 0 6px 0;
+    padding: 14px 16px;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: #333;
+    word-break: break-all;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.pool-id:hover {
+    border-color: #FFD700;
+    background-color: #fffdf0;
+}
+
+.copy-hint {
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.delegate-to-pool-btn:hover {
-    background-color: #218838;
-    transform: translateY(-2px);
-}
-
-.delegate-to-pool-btn:active {
-    transform: translateY(0);
-}
-
-.loading {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    border-top-color: white;
-    animation: spin 1s linear infinite;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-@keyframes spin {
-    to { transform: rotate(360deg); }
+.copy-hint.copied {
+    color: #28a745;
 }
 
 /* Motto Section */
@@ -324,15 +296,12 @@ html, body {
         font-size: 1.2rem;
     }
 
-    .wallet-btn {
-        padding: 10px 18px;
-        font-size: 13px;
-        min-width: 100px;
+    .modal {
+        padding: 32px 22px;
     }
 
-    .delegate-to-pool-btn {
-        padding: 12px 25px;
-        font-size: 16px;
+    .modal-title {
+        font-size: 1.25rem;
     }
 
     .motto-section {
@@ -352,14 +321,8 @@ html, body {
         font-size: 1.1rem;
     }
 
-    .wallet-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .wallet-btn {
-        width: 80%;
-        max-width: 200px;
+    .pool-id {
+        font-size: 0.75rem;
     }
 
     .motto-section {
