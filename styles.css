@@ -395,16 +395,16 @@ html, body {
     z-index: 15;
 }
 
-.top-banner p {
-    margin: 0;
-    animation: fadeInOut 3s ease-in-out infinite;
+.top-banner a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-@keyframes fadeInOut {
-    0% { opacity: 0; }
-    25% { opacity: 1; }
-    75% { opacity: 1; }
-    100% { opacity: 0; }
+.top-banner a:hover,
+.top-banner a:focus-visible {
+    color: #FFD700;
+    text-decoration: underline;
 }
 
 /* Terms Page Styles */
