@@ -11,29 +11,31 @@
       connection, lucid-cardano, @scure/base, Blockfrost proxy calls (2026-06-26)
 - [x] Tighten CSP: drop `cdn.jsdelivr.net`, the Blockfrost proxy origin and
       `wasm-unsafe-eval`; `script-src`/`connect-src` are now `'self'` (2026-06-26)
-- [x] Refactor Bech32 logic to use @scure/base library (2026-01-02, now removed with the wallet flow)
+- [x] Remove the dead `cloudflare-worker.js` from the repo; it is no longer
+      referenced by the site (kept in git history) (2026-06-26)
+- [x] Refactor Bech32 logic to use @scure/base library (2026-01-02, since removed with the wallet flow)
 - [x] Fix deprecated substr() to use slice() (2026-01-02)
 - [x] Remove duplicate POOL_BECH32 constant (2026-01-02)
-- [x] Add transaction confirmation waiting for better UX (2026-01-02, now removed with the wallet flow)
+- [x] Add transaction confirmation waiting for better UX (2026-01-02, since removed with the wallet flow)
 
 ---
 
-## 🔴 High Priority
+## 🔴 Pending (external — not in this repo)
 
-### 1. Decommission the Cloudflare Worker
-**Status:** Pending (manual)
+### Decommission the Cloudflare Worker
+**Status:** Pending (manual, Cloudflare dashboard)
 **Description:** The site no longer calls `blockfrost-proxy.smitblockchainops.workers.dev`.
-`cloudflare-worker.js` is kept in the repo as a record of what is still deployed.
+The worker source has been removed from this repo; the deployed worker is now
+unused and can be deleted.
 **Action Required:**
-- Undeploy the worker in the Cloudflare dashboard (Workers & Pages → blockfrost-proxy → Delete)
-- After undeploy, remove `cloudflare-worker.js` from the repo
-**Impact:** Removes an unused public endpoint; no effect on the site until then.
+- Cloudflare dashboard → Workers & Pages → `blockfrost-proxy` → Delete
+**Impact:** Removes an unused public endpoint; no effect on the site.
 
 ---
 
 ## 🟡 Medium Priority
 
-### 2. Implement CSS Variables
+### 1. Implement CSS Variables
 **File:** `styles.css`
 **Description:** Colors like `#28a745`, `#FFD700`, `rgba(...)` are hardcoded throughout CSS.
 **Action Required:**
@@ -41,7 +43,7 @@
 - Replace hardcoded values with `var(--...)`
 **Impact:** Easier theming and maintenance
 
-### 3. Fix Hardcoded Year in Banner
+### 2. Fix Hardcoded Year in Banner
 **File:** `index.html`
 **Description:** "A happy and innovative 2026!" needs manual updates each year.
 **Options:**
@@ -53,11 +55,11 @@
 
 ## 🟢 Low Priority (Nice to Have)
 
-### 4. Image Optimization
+### 3. Image Optimization
 **Files:** `images/header.jpg`, `images/logo.png`
 **Description:** Convert to WebP with `<picture>` fallback for faster loads.
 
-### 5. Review Banner Animation
+### 4. Review Banner Animation
 **File:** `styles.css`
 **Description:** The `fadeInOut` animation on the top banner may annoy repeat
 visitors. Consider reducing frequency, removing it, or hiding the banner after
