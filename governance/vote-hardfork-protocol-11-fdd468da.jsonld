@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)"
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes Yes on the protocol-11 hard fork. The upgrade is ready by every measure I can verify myself on-chain: a rising supermajority of block production already signals protocol 11, measured by my own independent indexer and bit-exact verified against db-sync. I judge it on that evidence.",
+    "rationaleStatement": "Action: HardForkInitiation fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0 — upgrade to protocol version 11.0.\n\nI vote Yes because the protocol-11 upgrade is ready by every measure I can verify myself on-chain. I judge this action on that evidence, not on advocacy or authority — consistent with how I registered as a DRep.\n\nI do not take readiness claims on faith. The figures below were produced by my own independent indexer — software that reconstructs chain state from the network genesis and the live Ouroboros node-to-node protocol, decoding raw blocks itself, with no third-party indexer, API, or pre-built dump, and accepting each (slot, hash) only when a quorum of independent relays agrees. I then cross-checked every figure, bit-for-bit, against an independent db-sync instance.\n\n1. Network readiness. The share of blocks signalling protocol 11 has risen monotonically from 49.9% (epoch 632) to 85.7% in the last complete epoch (638) and 86.7% in the current epoch (639). For all seven completed epochs, my independent indexer and db-sync report identical block counts — zero divergence. A rising supermajority of block production already runs protocol-11-capable software; enacting will not strand the network.\n\n2. My own pool. BKIND has signalled protocol 11 since 10 May 2026 (epoch 630), on every block it has produced since, with no reverts. I do not ask the network to adopt what I have not already run myself.\n\n3. Tooling built on protocol 11. Smit Blockchain Operations has built three air-gapped toolkits — SPO Tools, DRep Tools, and Wallet Tools — on the protocol-11 source, and exercised them live on Cardano mainnet (governance votes, DRep registration, delegations, payments). We encountered no issues attributable to the protocol-11 code. Their source and binaries will be released as open source for the community shortly.\n\nOn this evidence the upgrade meets my bar — verifiable readiness, not promises.\n\nA constructive note to the protocol developers. Building an independent implementation is the most honest test of how completely a protocol is documented. We hit a meaningful number of edge cases with the same root cause: behaviour that is correct in the reference code but carries no inline documentation — for example SSC proof handling, reward-calculation timing, ledger-state diff APIs, value bounds, and hard-fork-combinator era boundaries. These are documentation gaps, not protocol defects. Because independent verifiability is itself a pillar of decentralisation, better inline documentation lowers the barrier to independent implementations and auditors — and is, in that sense, a decentralisation measure. Developers with questions are welcome to email developmentbkind@gmail.com.",
+    "conclusion": "I vote Yes on the protocol-11 hard fork (govActionId fdd468da5cc4ac8431dcd7e2b3211666c73bc229f85879469f67f1d9d51d344d#0).",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Smit Blockchain Operations (BKIND)",
+        "uri": "https://smitblockchainops.nl"
+      },
+      {
+        "@type": "Link",
+        "label": "GitHub — GS1973",
+        "uri": "https://github.com/GS1973"
+      }
+    ]
+  }
+}
