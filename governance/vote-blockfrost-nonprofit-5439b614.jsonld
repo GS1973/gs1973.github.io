@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)"
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes Yes on Blockfrost's transformation to a community owned nonprofit. I judge it on what I can verify on chain: a single treasury transfer of the code, trademarks and domains into community ownership under an elected board. Usage figures I cannot independently confirm are left out.",
+    "rationaleStatement": "Action: TreasuryWithdrawal 5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0, Blockfrost's transformation to not-for-profit, requesting the withdrawal of a total of 9,832,979 ada from the treasury.\n\nI vote Yes. This treasury withdrawal is not a subsidy to a private company. It funds a single transfer of Blockfrost into community ownership, and for a DRep whose measure is decentralisation as mutual enablement, that is what the treasury exists for.\n\nI judge this action only on what I can verify. The facts below come from the action's own data recorded on the chain and from the proposal metadata whose hash is anchored on the chain, both of which anyone can reproduce independently. I have deliberately left out the project's usage statistics, its request volumes, traffic share and free tier proportion, because I cannot independently confirm them. A rationale should rest on what can be checked, not on the proposer's own numbers.\n\nWhat earns my Yes is the structure of the action itself. Blockfrost's source code, trademarks, and domains are committed to an independent nonprofit, governed by the community. It is to be directed by a board the community elects, with four seats for open source infrastructure teams and one open community seat, while Input Output steps back to a purely advisory role with no vote during the transition. The proposal also commits to publishing operating costs on a public dashboard under that board's approval. Its proposed path to sustainability has any future commercial tier run by the nonprofit, with profits returned to the Cardano treasury, turning this withdrawal from a gift into an investment the ecosystem can be repaid on.\n\nCritics argue that an incumbent with prior ecosystem funding should not receive more, and that the treasury should not pick winners. Those are fair questions, and they argue for exactly this design rather than against it. Open accounting, community control, and an irreversible handover are the conditions I want attached to public money before it is spent, and this action attaches them. The alternative is to let this infrastructure quietly turn commercial again or decay.\n\nA public good placed under community ownership, with its costs made open and its upside returned to the treasury. On that verifiable basis, I vote Yes.",
+    "conclusion": "I vote Yes on Blockfrost's transformation to not-for-profit (govActionId 5439b6141625436ccf600f910bb0b3301b6288933a2cdf7939758848ae8b9997#0).",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Smit Blockchain Operations (BKIND)",
+        "uri": "https://smitblockchainops.nl"
+      },
+      {
+        "@type": "Link",
+        "label": "GitHub GS1973",
+        "uri": "https://github.com/GS1973"
+      }
+    ]
+  }
+}
