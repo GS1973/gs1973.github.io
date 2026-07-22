@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "179f7fcb76adfd21200c26b549a661f815f3fed43ed7577ee8008176d1f72b3f",
+        "signature": "542f2f7baa70021eb5ebbfe431504407df647820c1f812a82aa1a1ef53d17dd077619595f544fd82062f84d6f5f17436b3559a0849d9199225d452ea9252520e"
+      }
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes Yes on the treasury withdrawal that funds Intersect's governance coordination and technical stewardship for June 2026 to June 2027. Most of the ask, 18.8 million of the 25.4 million ada, funds the technical stewardship, incident response and release coordination that keep Cardano secure, the function that houses Intersect's Security Council and the Intersect Bug Bounty Program. As an independent Cardano auditor I judge that this security capability must continue, and that it should be strengthened to reach the third-party code now built across the ecosystem.",
+    "rationaleStatement": "Action: treasury withdrawal b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#4, withdraw 25,400,000 ada to fund Intersect's governance coordination and technical stewardship for the Cardano ecosystem from June 2026 to June 2027.\n\nI vote Yes. I judge this action as an independent Cardano auditor who reconstructs and checks chain state with my own software rather than taking it on authority, weighing both what the withdrawal funds and what this ecosystem needs.\n\nMost of the ask, 18.8 million of the 25.4 million ada, is allocated to technical stewardship, incident response and release coordination, the work package that also carries the core Cardano repositories. That is the ecosystem's security and incident-response function. It houses Intersect's Security Council, the group facilitated by Intersect under its Technical Steering Committee that validates, triages and remediates vulnerabilities, and it operates the Intersect Bug Bounty Program that opened in November 2025. Funding this action keeps that capability standing. Of everything in this budget, the security function is the part I would least want left unfunded.\n\nThe reason is not abstract. In my own work as an auditor the security surface of this ecosystem is widening, not narrowing, as more value and more third-party code build on Cardano, and attackers grow more capable. The November 2025 chain partition made it concrete. A single malformed delegation transaction woke a deserialization bug that had lain dormant in the code since 2022 and briefly split the network into two chains. No user funds were lost and the network stayed online, but it was resolved in roughly fourteen and a half hours only because a coordinated incident response, spanning Input Output Global, the Cardano Foundation, EMURGO, Intersect, exchanges and hundreds of stake pool operators, shipped patched node versions and let Ouroboros settle the canonical chain. That coordination layer is exactly what this action funds. Without it, the next incident response has to be assembled only after the incident has already begun.\n\nI vote Yes to keep this function, and I would go further: it should be strengthened. Early detection and safe, coordinated remediation of vulnerabilities should reach beyond the core node to the third-party code being built across the ecosystem, where a growing share of user value now sits. The Intersect Bug Bounty Program today scopes to the Cardano Core Node and Intersect-maintained repositories, with third-party contracts out of scope. Extending that reach, so that a flaw in a third-party contract is found early and closed safely rather than discovered by an attacker, invests in the resilience of the whole ecosystem and not only its core. Strengthening the security function is in that sense a decentralisation measure: it protects the many builders and users who now depend on this chain.\n\nThe ask is also proportionate. This 25.4 million ada withdrawal corresponds to a reduced annual budget, cut year over year from 7.875 million to 6.35 million dollars while preserving the critical functions, and it cleared Intersect's 2026 community budget process before it reached the chain. Funding a leaner request that protects the ecosystem's security is an easy Yes.\n\nOperators and developers who want to compare notes on ecosystem security are welcome to email developmentbkind@gmail.com.",
+    "conclusion": "I vote Yes on the treasury withdrawal funding Intersect's governance coordination and technical stewardship (govActionId b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#4). The ecosystem's security and incident-response function must continue, and it should be strengthened to reach the third-party code built across Cardano.",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Smit Blockchain Operations (BKIND)",
+        "uri": "https://smitblockchainops.nl"
+      },
+      {
+        "@type": "Other",
+        "label": "GitHub (GS1973)",
+        "uri": "https://github.com/GS1973"
+      },
+      {
+        "@type": "Other",
+        "label": "Intersect Security Council",
+        "uri": "https://committees.docs.intersectmbo.org/intersect-technical-steering-committee/about/security-council"
+      },
+      {
+        "@type": "Other",
+        "label": "Intersect Bug Bounty Program",
+        "uri": "https://intersectmbo.org/news/introducing-the-intersect-bug-bounty-program-strengthening-open-source-security"
+      },
+      {
+        "@type": "Other",
+        "label": "November 2025 Cardano network incident report",
+        "uri": "https://intersectmbo.org/news/incident-report-network-partition-analysis-and-resolution-strategy"
+      }
+    ]
+  }
+}
