@@ -37,7 +37,10 @@ jobs:
           cp index.html _site/
           cp terms.html _site/
           cp styles.css _site/
+          cp votes.css _site/
           cp app.js _site/
+          cp votes.js _site/
+          cp votes.json _site/
           cp favicon.svg _site/
           cp -r images _site/
           cp -r governance _site/
