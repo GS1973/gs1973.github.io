@@ -1,0 +1,232 @@
+/* Votes component - governance votes overview + inline rationales.
+   Uses the site palette: grey #666, gold #FFD700, green #28a745, Roboto Condensed. */
+
+/* Stack the header buttons (Delegate + Votes) top-right */
+.header-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.votes-btn {
+    background-color: #666;
+    color: white;
+    border: 2px solid #FFD700;
+    padding: 12px 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.votes-btn:hover {
+    background-color: #777;
+    border-color: #FFD700;
+}
+
+/* Votes modal: reuses .modal-overlay + .modal, sized for a scrollable list */
+.modal-votes {
+    max-width: 720px;
+    max-height: 85vh;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.votes-intro {
+    text-align: center;
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: -6px 0 24px 0;
+}
+
+.votes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vote-item {
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.vote-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: #fafafa;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: background-color 0.2s ease;
+}
+
+.vote-head:hover {
+    background: #fffdf0;
+}
+
+.vote-badge {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+.vote-badge.role-spo {
+    color: #7a6200;
+    background: #fffbe6;
+    border: 1px solid #FFD700;
+}
+
+.vote-badge.role-drep {
+    color: #555;
+    background: #f2f2f2;
+    border: 1px solid #cccccc;
+}
+
+.vote-title {
+    flex: 1;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.vote-result {
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vote-yes { color: #28a745; }
+.vote-no { color: #c0392b; }
+.vote-abstain { color: #999; }
+
+.vote-epoch {
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.vote-chevron {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+    margin-left: 2px;
+}
+
+.vote-head[aria-expanded="true"] .vote-chevron {
+    transform: rotate(-135deg);
+}
+
+.vote-panel {
+    padding: 4px 18px 18px 18px;
+    border-top: 1px solid #eee;
+    background: #fff;
+}
+
+.rationale-summary {
+    font-size: 1rem;
+    font-style: italic;
+    color: #444;
+    line-height: 1.6;
+    margin: 16px 0 18px 0;
+    padding-left: 14px;
+    border-left: 3px solid #FFD700;
+}
+
+.rationale-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.rationale-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 18px 0 10px 0;
+}
+
+.signed-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 999px;
+    padding: 3px 10px;
+}
+
+.gov-id {
+    font-family: monospace;
+    font-size: 0.72rem;
+    color: #999;
+    word-break: break-all;
+}
+
+.rationale-refs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.rationale-refs a {
+    font-size: 0.85rem;
+    color: #666;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.rationale-refs a:hover {
+    color: #b8860b;
+}
+
+.votes-empty {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .votes-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .modal-votes {
+        padding: 32px 20px;
+    }
+
+    .vote-head {
+        flex-wrap: wrap;
+        gap: 8px 10px;
+    }
+
+    .vote-title {
+        flex-basis: 100%;
+        order: 3;
+    }
+}

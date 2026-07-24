@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="votes.css">
 </head>
 <body>
     <div class="top-banner">
@@ -25,7 +26,10 @@
             <a href="/" class="logo-link" aria-label="Smit Blockchain Operations Home">
                 <img src="images/logo.png" alt="SBO Logo" class="logo">
             </a>
-            <button id="delegateBtn" class="delegate-btn" aria-haspopup="dialog" aria-controls="delegateModal" aria-label="How to delegate to BKIND">Delegate</button>
+            <div class="header-actions">
+                <button id="delegateBtn" class="delegate-btn" aria-haspopup="dialog" aria-controls="delegateModal" aria-label="How to delegate to BKIND">Delegate</button>
+                <button id="votesBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="votesModal" aria-label="View BKIND governance votes">Votes</button>
+            </div>
         </header>
 
         <div class="hero-content">
@@ -58,6 +62,16 @@
         </div>
     </div>
 
+    <div id="votesModal" class="modal-overlay" hidden>
+        <div class="modal modal-votes" role="dialog" aria-modal="true" aria-labelledby="votesTitle">
+            <button id="votesClose" class="modal-close" aria-label="Close">&times;</button>
+            <h2 id="votesTitle" class="modal-title">Governance Votes</h2>
+            <p class="votes-intro">Every vote BKIND has cast on-chain, as stake pool and as DRep. Click a vote to read the rationale behind it.</p>
+            <div id="votesList" class="votes-list"></div>
+        </div>
+    </div>
+
     <script type="module" src="app.js"></script>
+    <script type="module" src="votes.js"></script>
 </body>
 </html>
