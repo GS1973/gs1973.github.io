@@ -38,15 +38,25 @@
 }
 
 /* Pin the close button to the top while the list scrolls */
-.modal-votes .modal-close {
+.votes-header {
     position: sticky;
-    float: right;
-    top: 8px;
+    top: 0;
+    z-index: 5;
     background: #fff;
-    border-radius: 6px;
-    padding: 2px 8px;
-    box-shadow: 0 0 8px 6px #fff;
-    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: -40px -40px 12px;
+    padding: 40px 40px 12px;
+}
+
+.votes-header .modal-title {
+    margin: 0;
+}
+
+.modal-votes .modal-close {
+    position: static;
 }
 
 .votes-intro {
@@ -230,6 +240,11 @@
 
     .modal-votes {
         padding: 32px 20px;
+    }
+
+    .votes-header {
+        margin: -32px -20px 12px;
+        padding: 32px 20px 12px;
     }
 
     .vote-head {

@@ -64,8 +64,10 @@
 
     <div id="votesModal" class="modal-overlay" hidden>
         <div class="modal modal-votes" role="dialog" aria-modal="true" aria-labelledby="votesTitle">
-            <button id="votesClose" class="modal-close" aria-label="Close">&times;</button>
-            <h2 id="votesTitle" class="modal-title">Governance Votes</h2>
+            <div class="votes-header">
+                <h2 id="votesTitle" class="modal-title">Governance Votes</h2>
+                <button id="votesClose" class="modal-close" aria-label="Close">&times;</button>
+            </div>
             <p class="votes-intro">Every vote BKIND has cast on-chain, as stake pool and as DRep. Click a vote to read the rationale behind it.</p>
             <div id="votesList" class="votes-list"></div>
         </div>
