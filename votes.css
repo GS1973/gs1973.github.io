@@ -33,9 +33,15 @@
 .modal-votes {
     max-width: 720px;
     max-height: 85vh;
-    display: flex;
-    flex-direction: column;
+    overflow-y: auto;
     text-align: left;
+}
+
+/* Pin the close button to the top while the list scrolls */
+.modal-votes .modal-close {
+    position: sticky;
+    float: right;
+    top: 8px;
 }
 
 .votes-intro {
@@ -50,8 +56,6 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    min-height: 0;
-    overflow-y: auto;
 }
 
 .vote-item {
