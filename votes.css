@@ -40,7 +40,7 @@
 /* Pin the close button to the top while the list scrolls */
 .votes-header {
     position: sticky;
-    top: 0;
+    top: -40px;
     z-index: 5;
     background: #fff;
     display: flex;
@@ -243,6 +243,7 @@
     }
 
     .votes-header {
+        top: -32px;
         margin: -32px -20px 12px;
         padding: 32px 20px 12px;
     }
