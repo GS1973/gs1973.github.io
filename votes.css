@@ -42,6 +42,11 @@
     position: sticky;
     float: right;
     top: 8px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 2px 8px;
+    box-shadow: 0 0 8px 6px #fff;
+    z-index: 3;
 }
 
 .votes-intro {
