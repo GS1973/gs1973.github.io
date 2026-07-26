@@ -36,6 +36,7 @@
                 <button id="votesBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="votesModal" aria-label="View BKIND governance votes">Votes</button>
                 <a id="toolsBtn" class="tools-btn" href="https://github.com/GS1973/Cardano-Tools" target="_blank" rel="noopener noreferrer" aria-label="Cardano Tools on GitHub (opens in a new tab)">Tools</a>
                 <button id="aboutBtn" class="about-btn" aria-haspopup="dialog" aria-controls="aboutModal" aria-label="About Smit Blockchain Operations">About</button>
+                <button id="contactBtn" class="contact-btn" aria-haspopup="dialog" aria-controls="contactModal" aria-label="Contact Smit Blockchain Operations">Contact</button>
             </div>
         </header>
 
@@ -92,6 +93,17 @@
                 <p>Security runs through everything we do. We build and open-source air-gapped tools for stake pool operators, DReps and wallet holders, so the safety of your keys never depends on software you are forced to trust blindly.</p>
                 <p>We also audit the Cardano ledger directly, with our own tooling written in Haskell. With it we do hands-on on-chain forensics: we trace how value really moves and check claims against what the ledger itself records, so a genuine problem can be told apart from a false alarm.</p>
                 <p>One idea ties it together: decentralize and harmonize. Blockchain is at its best when it helps people rely on one another instead of on a handful of gatekeepers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactModal" class="modal-overlay" hidden>
+        <div class="modal modal-contact" role="dialog" aria-modal="true" aria-labelledby="contactTitle" aria-describedby="contactBody">
+            <button id="contactClose" class="modal-close" aria-label="Close">&times;</button>
+            <h2 id="contactTitle" class="modal-title">Contact</h2>
+            <div id="contactBody" class="modal-body">
+                <p>For questions or requests, feel free to contact us:</p>
+                <a id="contactEmail" class="contact-email" href="mailto:developmentbkind@gmail.com">developmentbkind@gmail.com</a>
             </div>
         </div>
     </div>

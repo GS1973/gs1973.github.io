@@ -181,3 +181,61 @@
         }
     });
 })();
+
+// Contact: modal with the address to reach Smit Blockchain Operations.
+(function () {
+    'use strict';
+
+    const btn = document.getElementById('contactBtn');
+    const modal = document.getElementById('contactModal');
+    const closeBtn = document.getElementById('contactClose');
+    const email = document.getElementById('contactEmail');
+    if (!btn || !modal || !closeBtn) return;
+
+    let lastFocused = null;
+
+    function openModal() {
+        lastFocused = document.activeElement;
+        modal.hidden = false;
+        document.addEventListener('keydown', onKeydown);
+        closeBtn.focus();
+    }
+
+    function closeModal() {
+        modal.hidden = true;
+        document.removeEventListener('keydown', onKeydown);
+        if (lastFocused && typeof lastFocused.focus === 'function') {
+            lastFocused.focus();
+        }
+    }
+
+    function onKeydown(event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        } else if (event.key === 'Tab') {
+            trapFocus(event);
+        }
+    }
+
+    // Keep keyboard focus within the dialog (close button and email link).
+    function trapFocus(event) {
+        const focusable = email ? [closeBtn, email] : [closeBtn];
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first.focus();
+        }
+    }
+
+    btn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+})();
