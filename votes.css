@@ -1,14 +1,6 @@
 /* Votes component - governance votes overview + inline rationales.
    Uses the site palette: grey #666, gold #FFD700, green #28a745, Roboto Condensed. */
 
-/* Stack the header buttons (Delegate + Votes) top-right */
-.header-actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    align-items: center;
-}
-
 .votes-btn {
     background-color: #666;
     color: white;
