@@ -71,7 +71,8 @@ html, body {
     width: auto;
 }
 
-.delegate-btn {
+.delegate-btn,
+.about-btn {
     background-color: #666;
     color: white;
     border: 2px solid #FFD700;
@@ -86,12 +87,14 @@ html, body {
     letter-spacing: 1px;
 }
 
-.delegate-btn:hover {
+.delegate-btn:hover,
+.about-btn:hover {
     background-color: #777;
     border-color: #FFD700;
 }
 
-.delegate-btn:active {
+.delegate-btn:active,
+.about-btn:active {
     transform: translateY(0);
 }
 
@@ -265,6 +268,15 @@ html, body {
     margin-bottom: 16px;
 }
 
+/* About modal: left-aligned prose for comfortable reading */
+.modal-about {
+    text-align: left;
+}
+
+.about-body p:last-child {
+    margin-bottom: 0;
+}
+
 .pool-id {
     display: block;
     width: 100%;
@@ -377,7 +389,8 @@ html, body {
 
     .header-actions .delegate-btn,
     .header-actions .votes-btn,
-    .header-actions .tools-btn {
+    .header-actions .tools-btn,
+    .header-actions .about-btn {
         width: 100%;
         padding: 12px 20px;
         font-size: 15px;
