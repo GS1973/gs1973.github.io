@@ -95,6 +95,73 @@ html, body {
     transform: translateY(0);
 }
 
+/* Header actions: Delegate + Votes + Tools, aligned top-right on desktop */
+.header-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Tools: external link to the Cardano-Tools repository, styled like the buttons */
+.tools-btn {
+    display: inline-block;
+    background-color: #666;
+    color: white;
+    border: 2px solid #FFD700;
+    padding: 12px 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.tools-btn:hover {
+    background-color: #777;
+    border-color: #FFD700;
+}
+
+/* Hamburger toggle: hidden on desktop, revealed on mobile */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-color: #666;
+    border: 2px solid #FFD700;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-toggle-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Bars morph into an X while the menu is open */
+.menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 .hero-content {
     text-align: center;
     color: white;
@@ -277,6 +344,39 @@ html, body {
         font-size: 14px;
         background-color: #666;
         border: 2px solid #FFD700;
+    }
+
+    /* Show the hamburger and turn the actions into a dropdown menu */
+    .menu-toggle {
+        display: flex;
+    }
+
+    .header-actions {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        min-width: 190px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid #FFD700;
+        border-radius: 6px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+        display: none;
+    }
+
+    .header-actions.open {
+        display: flex;
+    }
+
+    .header-actions .delegate-btn,
+    .header-actions .votes-btn,
+    .header-actions .tools-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
     }
 
     .hero-title {

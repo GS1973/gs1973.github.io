@@ -81,3 +81,58 @@
         }
     });
 })();
+
+// Mobile navigation: the hamburger toggles the header actions into a dropdown.
+(function () {
+    'use strict';
+
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('headerActions');
+    if (!toggle || !menu) return;
+
+    function openMenu() {
+        menu.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'Close menu');
+        document.addEventListener('keydown', onKeydown);
+        document.addEventListener('click', onDocumentClick, true);
+    }
+
+    function closeMenu() {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
+        document.removeEventListener('keydown', onKeydown);
+        document.removeEventListener('click', onDocumentClick, true);
+    }
+
+    function onKeydown(event) {
+        if (event.key === 'Escape') {
+            closeMenu();
+            toggle.focus();
+        }
+    }
+
+    // Close when a click lands outside both the menu and the toggle.
+    function onDocumentClick(event) {
+        if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+            closeMenu();
+        }
+    }
+
+    toggle.addEventListener('click', function (event) {
+        event.stopPropagation();
+        if (menu.classList.contains('open')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    // Selecting an item closes the menu; the item's own handler still fires.
+    menu.addEventListener('click', function (event) {
+        if (event.target.closest('a, button')) {
+            closeMenu();
+        }
+    });
+})();
