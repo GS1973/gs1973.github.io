@@ -268,9 +268,33 @@ html, body {
     margin-bottom: 16px;
 }
 
-/* About modal: left-aligned prose for comfortable reading */
+/* About modal: left-aligned prose, scrollable so all text stays reachable */
 .modal-about {
     text-align: left;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+/* Keep the title and close button visible while the text scrolls */
+.about-header {
+    position: sticky;
+    top: -40px;
+    z-index: 5;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: -40px -40px 12px;
+    padding: 40px 40px 12px;
+}
+
+.about-header .modal-title {
+    margin: 0;
+}
+
+.modal-about .modal-close {
+    position: static;
 }
 
 .about-body p:last-child {
@@ -419,6 +443,12 @@ html, body {
 
     .modal-title {
         font-size: 1.25rem;
+    }
+
+    .about-header {
+        top: -32px;
+        margin: -32px -22px 12px;
+        padding: 32px 22px 12px;
     }
 
     .motto-section {
