@@ -136,3 +136,48 @@
         }
     });
 })();
+
+// About: modal describing what Smit Blockchain Operations does.
+(function () {
+    'use strict';
+
+    const btn = document.getElementById('aboutBtn');
+    const modal = document.getElementById('aboutModal');
+    const closeBtn = document.getElementById('aboutClose');
+    if (!btn || !modal || !closeBtn) return;
+
+    let lastFocused = null;
+
+    function openModal() {
+        lastFocused = document.activeElement;
+        modal.hidden = false;
+        document.addEventListener('keydown', onKeydown);
+        closeBtn.focus();
+    }
+
+    function closeModal() {
+        modal.hidden = true;
+        document.removeEventListener('keydown', onKeydown);
+        if (lastFocused && typeof lastFocused.focus === 'function') {
+            lastFocused.focus();
+        }
+    }
+
+    function onKeydown(event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        } else if (event.key === 'Tab') {
+            // Only the close button is focusable; keep focus on it.
+            event.preventDefault();
+            closeBtn.focus();
+        }
+    }
+
+    btn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+})();
