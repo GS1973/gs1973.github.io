@@ -95,9 +95,12 @@ html, body {
     transform: translateY(0);
 }
 
-/* Header actions: Delegate + Votes + Tools, aligned top-right on desktop */
+/* Header actions: Delegate + Votes + Tools, aligned top-right on desktop.
+   Equal-width columns keep every button the same size, for any count. */
 .header-actions {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
     gap: 10px;
     align-items: center;
 }
@@ -118,6 +121,7 @@ html, body {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
+    text-align: center;
 }
 
 .tools-btn:hover {
