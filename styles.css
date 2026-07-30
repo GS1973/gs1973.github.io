@@ -213,7 +213,7 @@ html, body {
 .hero-video {
     display: block;
     width: 100%;
-    max-width: 360px;
+    max-width: 600px;
     height: auto;
     margin: 28px auto 0;
     border-radius: 10px;
