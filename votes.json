@@ -1,6 +1,24 @@
 [
   {
     "role": "DRep",
+    "title": "Reduce minPoolCost, raise Plutus memory (Part 2)",
+    "action": "Parameter Change",
+    "vote": "No",
+    "epoch": 652,
+    "govActionId": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+    "rationale": "governance/vote-minpoolcost-part2-ab474223.jsonld"
+  },
+  {
+    "role": "SPO",
+    "title": "Reduce minPoolCost, raise Plutus memory (Part 2)",
+    "action": "Parameter Change",
+    "vote": "No",
+    "epoch": 652,
+    "govActionId": "ab474223d40e2e3540555364be27e161a809c33651408f43d84acff10c0ba306#0",
+    "rationale": "governance/vote-minpoolcost-part2-ab474223.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "Intersect: Governance & Technical Stewardship",
     "action": "Treasury Withdrawal",
     "vote": "Yes",
