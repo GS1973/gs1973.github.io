@@ -1,6 +1,24 @@
 [
   {
     "role": "DRep",
+    "title": "Update Constitutional Committee 2026",
+    "action": "Update Committee",
+    "vote": "No",
+    "epoch": 652,
+    "govActionId": "729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0",
+    "rationale": "governance/vote-committee2026-729daaf2.jsonld"
+  },
+  {
+    "role": "SPO",
+    "title": "Update Constitutional Committee 2026",
+    "action": "Update Committee",
+    "vote": "No",
+    "epoch": 652,
+    "govActionId": "729daaf2f9f89f842a61f6e3ebf7e57d16d6fa4116e29c13114780cb39090850#0",
+    "rationale": "governance/vote-committee2026-729daaf2.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "Reduce minPoolCost, raise Plutus memory (Part 2)",
     "action": "Parameter Change",
     "vote": "No",
