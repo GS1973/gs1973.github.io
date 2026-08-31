@@ -148,8 +148,15 @@
             wrap.appendChild(summary);
         }
 
-        if (body.rationaleStatement) {
-            String(body.rationaleStatement).split('\n').forEach(function (paragraph) {
+        function appendSection(field, heading) {
+            if (!field) return;
+            if (heading) {
+                const h = document.createElement('p');
+                h.className = 'rationale-heading';
+                h.textContent = heading;
+                wrap.appendChild(h);
+            }
+            String(field).split('\n').forEach(function (paragraph) {
                 const text = paragraph.trim();
                 if (!text) return;
                 const p = document.createElement('p');
@@ -158,6 +165,11 @@
                 wrap.appendChild(p);
             });
         }
+
+        appendSection(body.rationaleStatement, null);
+        appendSection(body.precedentDiscussion, 'Precedent discussion');
+        appendSection(body.counterargumentDiscussion, 'Counterargument discussion');
+        appendSection(body.conclusion, 'Conclusion');
 
         const meta = document.createElement('div');
         meta.className = 'rationale-meta';
