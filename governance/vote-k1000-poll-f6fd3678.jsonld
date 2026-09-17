@@ -1,0 +1,111 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "179f7fcb76adfd21200c26b549a661f815f3fed43ed7577ee8008176d1f72b3f",
+        "signature": "7f65b0b69d46fec99b63493e18e2fb103560321692becf4c486283bed9bd74c152dd29d8f75a676ff85a7eeec12474a8bff813de6f4b594b65acf81b64c6690f"
+      }
+    },
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "a06c4df29d2d74a14943b696a344e4f55d1da71eec0cc71de1bb9aa03aab0349",
+        "signature": "1b98fc4267840be9db3a16023ae2e1a8e60e119bbe052ab69bf02828cb9b97bfe624bc08b7219d0216ba23d0b3e50f2637f9b1caf972495101e9599dcdc7760f"
+      }
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes Yes, as SPO and as DRep. Concentration is measured rising, the change is reward-neutral against a lovelace-validated formula, redelegation is proven cheap, and the active network holds six times the capacity needed. I vote to keep power dispersed.",
+    "rationaleStatement": "Action: info action f6fd3678f12edc58dd8739560149fcdb0b8b6fc77a5f303d49c87c74d1fccb4c#0, Should stakePoolTargetNum (k) be raised from 500 to 1000? (SPO poll).\n\nWhat is being decided. This is an Info Action: it changes no parameter and has no on-chain effect. It asks whether sufficient SPO support exists to proceed with a later Parameter Change action raising stakePoolTargetNum from 500 to 1000. The document declares its own standard for reading the result, and how that standard should be interpreted is disputed in the community. That dispute does not touch this vote: an explicit Yes, cast with the pool's full stake, counts identically under every reading on the table.\n\nI verified the document I am voting on. The blake2b-256 digest of the bytes retrieved from https://gateway.pinata.cloud/ipfs/bafkreia3u74dgyvg5v3u7wxwip44wwqzyhynqqm4wzyhkkwevaiynlihnm equals the anchor hash recorded on chain, ab85aad06200d7d7ec79181b68d0651083ffdd9b9bcd15c54212d4d681a9b680.\n\nI take part in Cardano governance in two roles, as operator of the BKIND stake pool and as DRep. My registered DRep rationale commits me to two things: keeping power on this network dispersed, and holding every proposal to evidence rather than narrative (drep17x37hhwtekakdnx7fh3ge0d3pz370pulruvjvfhp207wkl2slp4, smitblockchainops.nl/governance/drep.jsonld). This vote applies both, and my position is unchanged since I registered: the Cardano ledger should be carried by a broad network of independently owned pools.\n\nThe evidence below is reproducible from cardano-db-sync and verified against my own independently built indexer.\n\n1. Concentration is rising. The top-50 pools' share of active stake grew from 14.1% at epoch 400 to 18.2% at epoch 653, monotonically. 158 pools now control half of all delegated stake, down from roughly 198 at epoch 300. While k sits still, concentration has only one direction: up.\n\n2. The pool register overstates the real network. 2,896 pools are registered (epoch 655), but only 1,339 produced a block in 2026. 1,495 registered pools produced nothing this year and none of their registered relay addresses answers as a Cardano node: I probed all 2,449 registered relay endpoints, with node-to-node handshakes on everything that accepted TCP; a handful of addresses still respond, but with a refused connection, a web server, or silence. Together these pools hold 0.21% of active stake. Claims about the size of the pool network should therefore be based on the 1,339 pools that actually produce, not on the register.",
+    "precedentDiscussion": "The 2020 change of stakePoolTargetNum from 150 to 500 is the direct precedent, and it teaches two lessons. First, the lever works and is cheap: 93 percent of affected stake moved within 5 epochs, at about 0.17 ada per redelegation. Second, it has a limit: of the 3.6 billion ada that moved, at least 2.1 billion went to new pools split off by the same operators. The saturation cap reliably spreads stake across more pools; spreading it across more owners additionally requires the pledge mechanism, which is a separate discussion. Both lessons inform this vote.\n\nThere is also my own precedent. At action 154 I voted No, with a full rationale on chain, against a measure that competed on the income floor of small independent operators. Consistency between a DRep's registration, their past rationales, and their votes is what makes a voting record worth reading, and this Yes applies the same principle through the other lever: 154 was about not weakening the operators the network has, this poll is about making room for more of them.",
+    "counterargumentDiscussion": "On rewards, the most common objection: raising k does not harm them. I reimplemented the ledger reward formula and validated it lovelace-exact against every individually paid reward of epochs 645 to 651, 8.4 million reward lines with zero mismatches. Recomputing epoch 651 at k=1000, total payout changes by minus 0.7 percent after redelegation. Neither delegators nor operators are structurally worse off.\n\nOn room for the displaced stake: at k=1000 (epoch 652, new saturation point 38.8M ada), 214 pools sit above the new cap with 4,843M ada of stake to move, while the 993 block-producing pools below the new cap have 30,355M ada of free capacity, more than six times what needs a new home.\n\nOn endangering thousands of small pools: the pools said to be endangered largely do not exist, as the register measurement above shows, and the newly affected band (38.8M to 76M ada) sits well above small-pool territory.\n\nWhat would change my vote. Measurements showing the opposite of the above: that displaced stake could not be absorbed, that payouts would materially fall, or that the concentration trend had reversed on its own. The chain currently shows none of these.",
+    "conclusion": "BKIND votes Yes. stakePoolTargetNum sets the number of pools the reward scheme steers the network toward, and it is the one lever with a measured track record of moving stake. It cannot by itself guarantee independent ownership, but a higher pool count is the precondition for a broader owner base, and while k sits still, concentration has only one direction: up. The measurements say the network needs this step. I vote to keep power dispersed, and this Yes is that vote (govActionId f6fd3678f12edc58dd8739560149fcdb0b8b6fc77a5f303d49c87c74d1fccb4c#0).",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Governance action 160, proposal document",
+        "uri": "ipfs://bafkreia3u74dgyvg5v3u7wxwip44wwqzyhynqqm4wzyhkkwevaiynlihnm"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND DRep registration (CIP-119)",
+        "uri": "https://smitblockchainops.nl/governance/drep.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "Reward Sharing Schemes for Stake Pools (Bruenjes, Kiayias, Koutsoupias, Stouka)",
+        "uri": "https://arxiv.org/abs/1807.11218"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-1694, on-chain governance",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-1694"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-136, DRep vote rationale",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0136"
+      },
+      {
+        "@type": "Other",
+        "label": "Smit Blockchain Operations (BKIND)",
+        "uri": "https://smitblockchainops.nl"
+      }
+    ]
+  }
+}
