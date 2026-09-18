@@ -1,6 +1,15 @@
 [
   {
     "role": "DRep",
+    "title": "Reduce minPoolCost to 75 ada",
+    "action": "Parameter Change",
+    "vote": "No",
+    "epoch": 656,
+    "govActionId": "75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0",
+    "rationale": "governance/vote-minpoolcost75-75e7882a.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "Raise stakePoolTargetNum to 1000? (SPO poll)",
     "action": "Info Action",
     "vote": "Yes",

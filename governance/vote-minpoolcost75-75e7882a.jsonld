@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "179f7fcb76adfd21200c26b549a661f815f3fed43ed7577ee8008176d1f72b3f",
+        "signature": "e12a5694e04a967a9e0b2ac32846df11066c692bafe0621234507a1bbfb5323e31824dd0e62a1c1ea3e24997e03558d6a356c74b9911e0e0e502daeb6a599d0e"
+      }
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes No. At action 154 I opposed both the bundling and the cut. This resubmission resolves the bundling objection; the objection to the cut stands: it acts on the income of the operators it is meant to help, and repeats a 2023 reduction that left no trace. Re-measured at epoch 653.",
+    "rationaleStatement": "Action: parameter change 75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0, Reduce minPoolCost to 75 ada.\n\nWhat is being decided. One parameter moves: minPoolCost from 170 to 75 ada. I verified the on-chain payload: only that change, with the correct predecessor reference and guardrails script. Without the bundled security parameter of action 154, SPOs cannot vote on this action; DReps and the Constitutional Committee decide alone.\n\nI verified the document I am voting on. The blake2b-256 digest of the bytes retrieved from https://gateway.pinata.cloud/ipfs/bafkreidy6ftyudcx6lwkualmjbgkurhlqo35s6jarq3phxendcr5el6n34 equals the anchor hash recorded on chain, e32f6117912d810c82f0f153e7bf787024870ddb82601113e580c7d86bd8f384.\n\nAt action 154 I voted No with a full rationale on chain: I supported the Plutus memory increase, opposed this cut, and objected that one vote could not record both. The proposer has now unbundled the two, which is the form my rationale asked for, and I credit that. This vote is therefore about the cut alone.\n\nThe mechanism is unchanged since I analysed it at 154. The fixed fee recovers an operator's fixed costs, which do not scale with stake, and discloses those costs on chain; minPoolCost is read in exactly one place in the ledger, the validation that refuses a certificate priced below it. It stops underpricing and enables nothing else. The proposal expects market pressure to push declared fees down to the new floor: pressure to declare a fee other than what the pool costs to run, the behaviour the minimum exists to prevent. I do not object to revisiting the level. I object to converting a disclosure of costs into an instrument of price competition.\n\nThe measurement, re-run at epoch 653 across the 765 public operators (margin below 100%) whose pool earned a reward: removing 95 ada costs the median operator 21.2% of take-home income; the 233 operators declaring exactly 170 lose 39.2%; the lowest income class (88 operators) 52.1%, the highest (97 operators) 6.3%. The 98 pools at 100% margin are untouched, collected 66.1% of all operator income that epoch, and paid their delegators 1.8 ada in total. At 154 (epoch 645) these figures were 21.3, 38.7, 51.5, 6.2 and 67.8 percent: materially unchanged, on both of my independent data sources.\n\nA small operator has two options and no third: match the lower fee and lose that income while the servers cost what they cost, or hold it and advertise a lower return to delegators who compare precisely that number. Competition on a fixed fee is competition in who can best afford to give up fixed income, and that is by construction the party who needs it least.",
+    "precedentDiscussion": "This mechanism has been tried before. minPoolCost was halved from 340 to 170 ada at epoch 445, October 2023, the one place where its promise can be checked against outcome. As I documented at 154: around the change, nothing happens. The ten-epoch means of producing pools run 1,127 and 1,111 before the new floor, 1,088 with it in force, 1,084 sixty epochs later: flat. And most pools never followed: re-checked at epoch 656, of the 1,287 pools producing in the last twenty epochs, 59.2% still declare 340 ada and 30.0% declare 170, unchanged since epoch 650. I make no causal claim, and said so then; what remains needs none: the first reduction produced no visible improvement in the population it was aimed at, on any measure available.\n\nThe change also carries an asymmetry: minPoolCost is checked only when a certificate is submitted. Operators who lower their declared cost below 170 while the floor is 75 cannot be compelled back if the parameter is later reverted. A vote for this change is a vote for its permanent effects.",
+    "counterargumentDiscussion": "On helping small pools compete, the stated purpose: the incidence measured above answers it, and the only operators the fee cannot touch, the 100% margin pools holding two thirds of operator income, are the ones the proposal leaves whole.\n\nOn \"the threshold was met at 154 and only the bundling failed\": my No was recorded against the cut as well, in those words.\n\nWhat would change my vote: a case for a different floor grounded in what this parameter is for, the honest disclosure of real operating costs, rather than in price competition. The evidence question is already answered: the mechanism was tried in 2023, and it left no trace.",
+    "conclusion": "BKIND votes No. The form of this action is right; the mechanism inside it is unchanged, measured twice now, eight epochs apart, with the same result. I vote to keep power dispersed, and keeping the operators we have is part of that (govActionId 75e7882a8ef2bc39517bffbfb654e89f525def5a8364d81e11fc5facafc6dd9b#0).",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Governance action 159, proposal document",
+        "uri": "ipfs://bafkreidy6ftyudcx6lwkualmjbgkurhlqo35s6jarq3phxendcr5el6n34"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 154 rationale (DRep and SPO No)",
+        "uri": "https://smitblockchainops.nl/governance/vote-minpoolcost-part2-ab474223.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND DRep registration (CIP-119)",
+        "uri": "https://smitblockchainops.nl/governance/drep.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "cardano-ledger, Conway 1.22.1.0",
+        "uri": "https://github.com/IntersectMBO/cardano-ledger"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-1694, on-chain governance",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-1694"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-136, DRep vote rationale",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0136"
+      }
+    ]
+  }
+}
