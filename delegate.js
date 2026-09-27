@@ -348,7 +348,9 @@
         step('submit');
         try { await api.submitTx(bytesToHex(tx)); } catch (e) {
             console.error('signed transaction the wallet could not send:', bytesToHex(tx));
-            throw new DelegateError('submitFailed', e);
+            const err = new DelegateError('submitFailed', e);
+            err.txId = bytesToHex(blake(body, 32));
+            throw err;
         }
         return { txId: bytesToHex(blake(body, 32)), fee: built.fee, deposit };
     }
@@ -450,9 +452,22 @@
                             'The first rewards arrive about 15 to 20 days from now.'));
                 } catch (e) {
                     console.error(e, e.detail);
-                    const detail = e.detail && (e.detail.info || e.detail.message) ? String(e.detail.info || e.detail.message) : '';
-                    const retry = !register && (e.key === 'submitFailed' || e.key === 'signFailed');
-                    if (retry) {
+                    const full = e.detail && (e.detail.info || e.detail.message) ? String(e.detail.info || e.detail.message) : '';
+                    const detail = full.length > 160 ? full.slice(0, 160) + '\u2026' : full;   // the whole text is in the console
+                    // Inputs already spent: the node has this transaction already, or the
+                    // wallet has not caught up with an earlier one. Registering would not help.
+                    const spent = e.key === 'submitFailed' && /inputs are spent|already been included|BadInputsUTxO/i.test(full);
+                    const retry = !register && !spent && (e.key === 'submitFailed' || e.key === 'signFailed');
+                    if (spent) {
+                        const link = el('a', {
+                            href: 'https://cardanoscan.io/transaction/' + e.txId, target: '_blank', rel: 'noopener noreferrer',
+                            textContent: e.txId.slice(0, 16) + '\u2026',
+                        });
+                        say(poolLine(),
+                            p(walletName + ' says the funds this transaction uses are already spent. Either the delegation has gone ' +
+                                'through already, or the wallet has not yet caught up with an earlier transaction.'),
+                            el('p', {}, ['Check transaction ', link, ' on Cardanoscan in a minute. If it is not there, wait a minute and delegate again.']));
+                    } else if (retry) {
                         const again = el('button', { type: 'button', className: 'delegate-go', textContent: 'Register and delegate' });
                         again.addEventListener('click', () => run(walletKey, walletName, params, true));
                         say(poolLine(),
