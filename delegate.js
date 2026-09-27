@@ -432,7 +432,7 @@
         ]);
         const disclaimer = () => el('p', { className: 'delegate-fine' }, [
             'You sign in your own wallet; your ADA stays in it. By continuing you accept the ',
-            el('a', { href: 'terms.html', target: '_blank', rel: 'noopener noreferrer', textContent: 'disclaimer' }), '.',
+            el('a', { href: '/terms', target: '_blank', rel: 'noopener noreferrer', textContent: 'disclaimer' }), '.',
         ]);
 
         function run(walletKey, walletName, params, register) {
