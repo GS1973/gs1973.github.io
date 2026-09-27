@@ -47,6 +47,7 @@ jobs:
           cp delegate.css _site/
           cp -r vendor _site/
           cp -r fonts _site/
+          cp -r .well-known _site/
           if [ -f pools.json ]; then cp pools.json _site/; fi
           if [ -f pools.csv ]; then cp pools.csv _site/; fi
           cp favicon.svg _site/
