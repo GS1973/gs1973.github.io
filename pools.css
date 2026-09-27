@@ -98,23 +98,6 @@
     text-decoration: none;
 }
 
-.pools-copy {
-    font: inherit;
-    font-size: 0.8rem;
-    color: #555;
-    background: #f5f5f5;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 2px 8px;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.pools-copy:hover {
-    border-color: #28a745;
-    color: #28a745;
-}
-
 .pools-table th.pools-nosort {
     cursor: default;
 }
@@ -147,7 +130,7 @@
     font-size: 0.9rem;
 }
 
-/* Copy ID and Delegate side by side */
+/* The Delegate button, at the end of the row */
 .pools-buttons {
     display: flex;
     gap: 6px;
@@ -155,7 +138,7 @@
 }
 
 /* On a phone each pool is a card: ticker and name, the figures with their
-   label, then the buttons. The headings stay as a row to sort by. */
+   label, then the Delegate button. The headings stay as a row to sort by. */
 @media (max-width: 600px) {
     .pools-table {
         font-size: 0.85rem;
@@ -216,7 +199,6 @@
         justify-content: flex-start;
     }
 
-    .pools-copy,
     .pools-delegate {
         font-size: 0.9rem;
         padding: 6px 14px;

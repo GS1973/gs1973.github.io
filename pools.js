@@ -81,23 +81,10 @@
                 td.dataset.label = label;
                 tr.appendChild(td);
             }
-            const copyTd = document.createElement('td');
-            copyTd.className = 'pools-actions';
+            const actionTd = document.createElement('td');
+            actionTd.className = 'pools-actions';
             const buttons = document.createElement('div');
             buttons.className = 'pools-buttons';
-            const copy = document.createElement('button');
-            copy.type = 'button';
-            copy.className = 'pools-copy';
-            copy.textContent = 'Copy ID';
-            copy.title = p.pool_id;
-            copy.addEventListener('click', () => {
-                if (!navigator.clipboard) return;
-                navigator.clipboard.writeText(p.pool_id).then(() => {
-                    copy.textContent = 'Copied';
-                    setTimeout(() => { copy.textContent = 'Copy ID'; }, 1200);
-                });
-            });
-            buttons.appendChild(copy);
             const del = document.createElement('button');
             del.type = 'button';
             del.className = 'pools-delegate';
@@ -107,8 +94,8 @@
                 if (window.sboDelegate) window.sboDelegate.open(p);
             });
             buttons.appendChild(del);
-            copyTd.appendChild(buttons);
-            tr.appendChild(copyTd);
+            actionTd.appendChild(buttons);
+            tr.appendChild(actionTd);
             frag.appendChild(tr);
         }
         rowsEl.replaceChildren(frag);
