@@ -489,7 +489,8 @@
             return b;
         });
         say(poolLine(),
-            p('Choose your wallet. It will show a delegation to this pool and a fee of about 0.18 ADA for you to sign.'),
+            p('Choose your wallet. It will show a delegation to this pool and a fee of about 0.18 ADA for you to sign. ' +
+                'If your wallet already delegates to this pool, there is nothing to do: signing again only costs the fee.'),
             el('div', { className: 'delegate-wallets' }, buttons),
             disclaimer());
         buttons[0].focus();
