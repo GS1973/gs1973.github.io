@@ -1,11 +1,13 @@
+// Delegate: a window with two ways on, delegating to BKIND through the wallet
+// dialog of delegate.js, or choosing another pool from the Pools window.
 (function () {
     'use strict';
+
+    const BKIND = { ticker: 'BKIND', name: 'Smit Blockchain Operations', pool_id: 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y' };
 
     const delegateBtn = document.getElementById('delegateBtn');
     const modal = document.getElementById('delegateModal');
     const modalClose = document.getElementById('modalClose');
-    const poolId = document.getElementById('poolId');
-    const copyHint = document.getElementById('copyHint');
     const walletBtn = document.getElementById('delegateWalletBtn');
     const toPools = document.getElementById('delegateToPools');
 
@@ -21,7 +23,6 @@
     function closeModal() {
         modal.hidden = true;
         document.removeEventListener('keydown', onKeydown);
-        resetCopyHint();
         if (lastFocused && typeof lastFocused.focus === 'function') {
             lastFocused.focus();
         }
@@ -37,7 +38,7 @@
 
     // Keep keyboard focus inside the dialog while it is open.
     function trapFocus(event) {
-        const focusable = [modalClose, walletBtn, poolId, toPools].filter(Boolean);
+        const focusable = [modalClose, walletBtn, toPools];
         const first = focusable[0];
         const last = focusable[focusable.length - 1];
 
@@ -50,50 +51,21 @@
         }
     }
 
-    function resetCopyHint() {
-        copyHint.textContent = 'click to copy';
-        copyHint.classList.remove('copied');
-    }
-
-    async function copyPoolId() {
-        const value = poolId.textContent.trim();
-        try {
-            await navigator.clipboard.writeText(value);
-            copyHint.textContent = 'copied';
-            copyHint.classList.add('copied');
-        } catch (error) {
-            // Clipboard API unavailable or denied: select the text so the user can copy it manually.
-            const range = document.createRange();
-            range.selectNodeContents(poolId);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            copyHint.textContent = 'press Ctrl+C to copy';
-        }
-    }
-
     delegateBtn.addEventListener('click', openModal);
     modalClose.addEventListener('click', closeModal);
-    poolId.addEventListener('click', copyPoolId);
 
-    // Delegating with the wallet opens the dialog of delegate.js, for BKIND.
-    if (walletBtn) {
-        walletBtn.addEventListener('click', function () {
-            closeModal();
-            if (window.sboDelegate) {
-                window.sboDelegate.open({ ticker: 'BKIND', name: 'Smit Blockchain Operations', pool_id: poolId.textContent.trim() });
-            }
-        });
-    }
-    // The link to the pool list closes this dialog and opens the Pools window.
-    if (toPools) {
-        toPools.addEventListener('click', function (event) {
-            event.preventDefault();
-            closeModal();
-            const poolsBtn = document.getElementById('poolsBtn');
-            if (poolsBtn) poolsBtn.click();
-        });
-    }
+    walletBtn.addEventListener('click', function () {
+        closeModal();
+        if (window.sboDelegate) {
+            window.sboDelegate.open(BKIND);
+        }
+    });
+
+    toPools.addEventListener('click', function () {
+        closeModal();
+        const poolsBtn = document.getElementById('poolsBtn');
+        if (poolsBtn) poolsBtn.click();
+    });
 
     // Close when the backdrop (not the dialog itself) is clicked.
     modal.addEventListener('click', function (event) {

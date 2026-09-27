@@ -77,6 +77,11 @@
     background: #fff5bf;
 }
 
-.delegate-smaller a {
-    color: #7a6200;
+/* The Delegate window: two ways on */
+.delegate-choice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
 }

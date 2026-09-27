@@ -34,7 +34,7 @@
                 <span class="menu-toggle-bar"></span>
             </button>
             <div class="header-actions" id="headerActions">
-                <button id="delegateBtn" class="delegate-btn" aria-haspopup="dialog" aria-controls="delegateModal" aria-label="How to delegate to BKIND">Delegate</button>
+                <button id="delegateBtn" class="delegate-btn" aria-haspopup="dialog" aria-controls="delegateModal" aria-label="Delegate to BKIND or another pool">Delegate</button>
                 <button id="votesBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="votesModal" aria-label="View BKIND governance votes">Votes</button>
                 <a id="toolsBtn" class="tools-btn" href="https://github.com/GS1973/Cardano-Tools" target="_blank" rel="noopener noreferrer" aria-label="Cardano Tools on GitHub (opens in a new tab)">Tools</a>
                 <button id="poolsBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="poolsModal" aria-label="Live pools under the saturation point">Pools</button>
@@ -63,14 +63,14 @@
     <div id="delegateModal" class="modal-overlay" hidden>
         <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalBody">
             <button id="modalClose" class="modal-close" aria-label="Close">&times;</button>
-            <h2 id="modalTitle" class="modal-title">Delegate to BKIND</h2>
+            <h2 id="modalTitle" class="modal-title">Delegate</h2>
             <div id="modalBody" class="modal-body">
-                <p>Delegating does not move your ADA: it stays in your wallet. You can delegate here with your wallet, which shows you the transaction before you sign it. Or select pool <strong>BKIND</strong> in your wallet itself.</p>
-                <button type="button" id="delegateWalletBtn" class="delegate-go">Delegate with your wallet</button>
-                <p class="delegate-or">Pool ID:</p>
-                <button type="button" id="poolId" class="pool-id" aria-label="Copy pool ID to clipboard">pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y</button>
-                <span id="copyHint" class="copy-hint" aria-live="polite">click to copy</span>
-                <p class="delegate-smaller">Would you rather support a small pool? The <a href="#pools" id="delegateToPools">Pools</a> list has a Delegate button for every pool on it.</p>
+                <p>Delegate to BKIND or to another pool below the saturation point at <code>k</code>&nbsp;=&nbsp;1000.</p>
+                <div class="delegate-choice">
+                    <button type="button" id="delegateWalletBtn" class="delegate-go">Delegate to BKIND</button>
+                    <button type="button" id="delegateToPools" class="delegate-go">Choose another pool</button>
+                </div>
+                <p class="delegate-fine">Your wallet shows the transaction before you sign it; your ADA stays in your wallet.</p>
             </div>
         </div>
     </div>
