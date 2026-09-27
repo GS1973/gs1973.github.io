@@ -22,6 +22,8 @@
 
             <p>If <code>k</code> (the protocol parameter <code>stakePoolTargetNum</code>) goes from 500 to 1000, a stake pool saturates at <strong id="saturation">about 38.9 million</strong> ADA. Above that point the rewards per ADA go down. The pools below are alive and have less stake than that.</p>
 
+            <p>We are strongly in favour of decentralization. That is why we support raising <code>k</code> to 1000, and why this list starts from the saturation point at <code>k</code> = 1000. The pools that need more delegation the most are at the top: the list starts with the smallest pools.</p>
+
             <p class="pools-meta" id="meta">Loading the list…</p>
 
             <h2>How the list is made</h2>
@@ -33,7 +35,7 @@
                 <li>answers on at least one of its registered relays;</li>
                 <li>has less stake than the saturation point at <code>k</code> = 1000: the ADA outside the reserves, divided by 1000.</li>
             </ul>
-            <p>A relay that does not answer from here is not proof that a pool is down: some pools only accept known peers. Those pools are not on this list. The list is made by Smit Blockchain Operations, operator of pool BKIND, which is on it by the same rules as every other pool.</p>
+            <p>A relay that does not answer from here is not proof that a pool is down: some pools only accept known peers. Still, a pool whose relays do not answer is not on this list: keeping its relays reachable is the responsibility of the pool operator. The list is made by Smit Blockchain Operations, operator of pool BKIND, which is on it by the same rules as every other pool.</p>
 
             <h2>The pools</h2>
             <div class="pools-tools">
