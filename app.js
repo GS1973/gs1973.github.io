@@ -6,6 +6,8 @@
     const modalClose = document.getElementById('modalClose');
     const poolId = document.getElementById('poolId');
     const copyHint = document.getElementById('copyHint');
+    const walletBtn = document.getElementById('delegateWalletBtn');
+    const toPools = document.getElementById('delegateToPools');
 
     let lastFocused = null;
 
@@ -35,7 +37,7 @@
 
     // Keep keyboard focus inside the dialog while it is open.
     function trapFocus(event) {
-        const focusable = [modalClose, poolId];
+        const focusable = [modalClose, walletBtn, poolId, toPools].filter(Boolean);
         const first = focusable[0];
         const last = focusable[focusable.length - 1];
 
@@ -73,6 +75,25 @@
     delegateBtn.addEventListener('click', openModal);
     modalClose.addEventListener('click', closeModal);
     poolId.addEventListener('click', copyPoolId);
+
+    // Delegating with the wallet opens the dialog of delegate.js, for BKIND.
+    if (walletBtn) {
+        walletBtn.addEventListener('click', function () {
+            closeModal();
+            if (window.sboDelegate) {
+                window.sboDelegate.open({ ticker: 'BKIND', name: 'Smit Blockchain Operations', pool_id: poolId.textContent.trim() });
+            }
+        });
+    }
+    // The link to the pool list closes this dialog and opens the Pools window.
+    if (toPools) {
+        toPools.addEventListener('click', function (event) {
+            event.preventDefault();
+            closeModal();
+            const poolsBtn = document.getElementById('poolsBtn');
+            if (poolsBtn) poolsBtn.click();
+        });
+    }
 
     // Close when the backdrop (not the dialog itself) is clicked.
     modal.addEventListener('click', function (event) {

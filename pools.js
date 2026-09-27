@@ -92,6 +92,15 @@
                 });
             });
             copyTd.appendChild(copy);
+            const del = document.createElement('button');
+            del.type = 'button';
+            del.className = 'pools-delegate';
+            del.textContent = 'Delegate';
+            del.title = 'Delegate to ' + p.ticker + ' with your wallet';
+            del.addEventListener('click', () => {
+                if (window.sboDelegate) window.sboDelegate.open(p);
+            });
+            copyTd.appendChild(del);
             tr.appendChild(copyTd);
             frag.appendChild(tr);
         }

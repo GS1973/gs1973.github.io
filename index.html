@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="votes.css">
     <link rel="stylesheet" href="pools.css">
+    <link rel="stylesheet" href="delegate.css">
 </head>
 <body>
     <div class="top-banner">
@@ -62,12 +63,14 @@
     <div id="delegateModal" class="modal-overlay" hidden>
         <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalBody">
             <button id="modalClose" class="modal-close" aria-label="Close">&times;</button>
-            <h2 id="modalTitle" class="modal-title">We no longer support third-party wallet connections</h2>
+            <h2 id="modalTitle" class="modal-title">Delegate to BKIND</h2>
             <div id="modalBody" class="modal-body">
-                <p>The safety of your funds should never depend on software we don't control. Even well-known third-party wallets have suffered flaws that exposed private keys and drained user funds. Connecting your wallet to any website only widens that attack surface &mdash; and it is not needed to delegate.</p>
-                <p>If you wish to delegate to BKIND, use the wallet of your choice and select pool <strong>BKIND</strong>:</p>
+                <p>Delegating does not move your ADA: it stays in your wallet. You can delegate here with your wallet, which shows you the transaction before you sign it. Or select pool <strong>BKIND</strong> in your wallet itself.</p>
+                <button type="button" id="delegateWalletBtn" class="delegate-go">Delegate with your wallet</button>
+                <p class="delegate-or">Pool ID:</p>
                 <button type="button" id="poolId" class="pool-id" aria-label="Copy pool ID to clipboard">pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y</button>
                 <span id="copyHint" class="copy-hint" aria-live="polite">click to copy</span>
+                <p class="delegate-smaller">Would you rather support a small pool? The <a href="#pools" id="delegateToPools">Pools</a> list has a Delegate button for every pool on it.</p>
             </div>
         </div>
     </div>
@@ -106,7 +109,7 @@
                 <p>Pools of exchanges and of the founding entities are left out on purpose: this list is meant to spread stake over independent pool operators. The pools of ADA Labo are left out because there is no transparency about the takeover of the EMURGO pools. All of these are recognised by pool ID, so a pool that changes its name stays off the list.</p>
                 <p>A relay that does not answer from here is not proof that a pool is down: some pools only accept known peers. Still, a pool whose relays do not answer is not on this list: keeping its relays reachable is the responsibility of the pool operator. The list is made by Smit Blockchain Operations, operator of pool BKIND, which is on it by the same rules as every other pool.</p>
                 <h3>The pools</h3>
-                <p class="pools-note">Click a heading to sort. Click a ticker or a name to open the pool on Cardanoscan in a new window to view the pool’s details.</p>
+                <p class="pools-note">Click a heading to sort. Click a ticker or a name to open the pool on Cardanoscan in a new window to view the pool’s details. Click Delegate to delegate to the pool with your wallet.</p>
                 <div class="pools-tools">
                     <input type="search" id="poolsFilter" placeholder="Search ticker or name" aria-label="Search ticker or name">
                     <a href="pools.csv" class="pools-csv" download>Download CSV</a>
@@ -120,7 +123,7 @@
                                 <th data-key="stake_ada" class="num">Stake (ADA)</th>
                                 <th data-key="blocks_2026" class="num">Blocks 2026</th>
                                 <th data-key="blocks_last_10_epochs" class="num">Blocks, last 10 epochs</th>
-                                <th class="pools-nosort"><span class="visually-hidden">Pool ID</span></th>
+                                <th class="pools-nosort"><span class="visually-hidden">Pool ID and delegation</span></th>
                             </tr>
                         </thead>
                         <tbody id="poolsRows"></tbody>
@@ -157,6 +160,8 @@
         </div>
     </div>
 
+    <script src="vendor/blake2b.js"></script>
+    <script type="module" src="delegate.js"></script>
     <script type="module" src="app.js"></script>
     <script type="module" src="votes.js"></script>
     <script type="module" src="pools.js"></script>
