@@ -1,3 +1,11 @@
+// Not inside another site's frame: GitHub Pages cannot send a header that
+// forbids it, so a page framed elsewhere hides itself and takes the whole
+// window instead (a click meant for the framing site must not land on Delegate).
+if (window.top !== window.self) {
+    document.documentElement.hidden = true;
+    try { window.top.location = window.location.href; } catch (e) { /* the frame stays hidden */ }
+}
+
 // Delegate: a window with two ways on, delegating to BKIND through the wallet
 // dialog of delegate.js, or choosing another pool from the Pools window.
 (function () {

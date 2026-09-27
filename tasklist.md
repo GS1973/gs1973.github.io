@@ -3,6 +3,21 @@
 
 ## ✅ Completed Tasks
 
+- [x] Delegation from the site, without third-party libraries: `delegate.js`
+      builds the delegation transaction in the browser (its CBOR written out),
+      the holder signs it in their own wallet over CIP-30, and the signatures
+      and fee are checked before it is sent. Only Eternl, Gero, Lace, Typhon and
+      VESPR, each tested with a real transaction. A Delegate button for every
+      pool in the pool list, BKIND included by the same rules (2026-09-27)
+- [x] Self-host Roboto Condensed: no request to Google on any page; CSP
+      `style-src`/`font-src` are `self` (2026-09-27)
+- [x] The page refuses to run inside another site's frame (2026-09-27)
+- [x] Deploy actions pinned to commit hashes (2026-09-27)
+
+The entries of 2026-06-26 below describe the wallet flow of that time (with
+third-party libraries and a proxy), which was removed then; the delegation of
+2026-09-27 above replaces it.
+
 - [x] Drop third-party wallet support: the Delegate button now opens an
       informational modal explaining why connecting a wallet to a website is
       not supported, and instructs visitors to delegate to pool BKIND directly

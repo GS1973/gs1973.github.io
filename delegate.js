@@ -397,7 +397,7 @@
     }
 
     function openDialog(pool) {
-        if (open) return;
+        if (open || window.top !== window.self) return;   // never inside another site's frame
         const lastFocused = document.activeElement;
         const closeBtn = el('button', { type: 'button', className: 'modal-close', textContent: '×' });
         closeBtn.setAttribute('aria-label', 'Close');

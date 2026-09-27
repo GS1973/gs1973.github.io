@@ -193,7 +193,7 @@
             const refs = document.createElement('div');
             refs.className = 'rationale-refs';
             body.references.forEach(function (ref) {
-                if (!ref || !ref.uri) return;
+                if (!ref || !ref.uri || !/^https:\/\//i.test(ref.uri)) return;
                 const a = document.createElement('a');
                 a.href = ref.uri;
                 a.target = '_blank';
