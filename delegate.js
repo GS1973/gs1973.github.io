@@ -247,31 +247,22 @@
 
     class DelegateError extends Error { constructor(key, detail) { super(key); this.key = key; this.detail = detail; } }
 
-    // NuFi is left out, as on The Voice of ADA Holders (decided 24-09-2026): it
-    // gave no outputs through getUtxos() while reporting a balance.
-    const LEFT_OUT = /nufi/i;
+    // Only the wallets tested with a real transaction are offered, the same as
+    // on The Voice of ADA Holders (decided 27-09-2026), by the key each
+    // registers under window.cardano. Any other wallet is not. The icon is the
+    // wallet's own, only when it is an image data URI.
+    const SUPPORTED = { eternl: 'Eternl', gerowallet: 'Gero', lace: 'Lace', typhoncip30: 'Typhon', vespr: 'VESPR' };
 
-    // One button per wallet: some announce themselves under two keys (Eternl
-    // also as ccvault), so a name is shown once, preferring the key that is the
-    // name itself. Names start with a capital (some come as 'lace', 'eternl').
-    // The icon is the wallet's own, only when it is an image data URI.
     function wallets() {
         const c = window.cardano || {};
-        const byName = new Map();
-        for (const k of Object.keys(c)) {
-            if (!c[k] || typeof c[k].enable !== 'function' || !c[k].name) continue;
-            const name = String(c[k].name).trim();
-            if (LEFT_OUT.test(k) || LEFT_OUT.test(name)) continue;
-            const id = name.toLowerCase();
-            if (byName.has(id) && byName.get(id).key.toLowerCase() === id) continue;
-            if (byName.has(id) && k.toLowerCase() !== id) continue;
-            const icon = typeof c[k].icon === 'string' && /^data:image\/(png|svg\+xml|jpeg|webp)[;,]/.test(c[k].icon) ? c[k].icon : '';
-            byName.set(id, { key: k, name: name.charAt(0).toUpperCase() + name.slice(1), icon });
-        }
-        return [...byName.values()].sort((a, b) => a.name.localeCompare(b.name));
+        return Object.keys(SUPPORTED).filter(k => c[k] && typeof c[k].enable === 'function').map(k => ({
+            key: k, name: SUPPORTED[k],
+            icon: typeof c[k].icon === 'string' && /^data:image\/(png|svg\+xml|jpeg|webp)[;,]/.test(c[k].icon) ? c[k].icon : '',
+        }));
     }
 
     async function enableWallet(walletKey) {
+        if (!SUPPORTED[walletKey]) throw new DelegateError('failed');
         let api;
         try { api = await window.cardano[walletKey].enable(); } catch (e) { throw new DelegateError('declined', e); }
         if (Number(await api.getNetworkId()) !== 1) throw new DelegateError('wrongNet');
@@ -487,7 +478,8 @@
         const list = wallets();
         if (!list.length) {
             say(poolLine(),
-                p('No Cardano wallet was found in this browser. You can also copy the pool ID above and select the pool in your wallet itself.'),
+                p('No supported Cardano wallet was found in this browser. This site works with Eternl, Gero, Lace, Typhon and VESPR. ' +
+                    'You can also copy the pool ID above and select the pool in your wallet itself.'),
                 disclaimer());
             closeBtn.focus();
             return;
