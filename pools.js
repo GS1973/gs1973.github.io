@@ -108,7 +108,9 @@
             metaEl.textContent =
                 `${fmt(pools.length)} pools, updated ${d.generated.slice(0, 10)} (epoch ${d.epoch}). ` +
                 `Of ${fmt(d.pools_with_stake)} pools with stake, ${fmt(d.alive_named)} are alive and named; ` +
-                `${fmt(d.above_saturation)} of those are above the saturation point.`;
+                `${fmt(d.above_saturation)} of those are above the saturation point.` +
+                (d.excluded ? ` Left out: ${fmt(d.excluded_exchanges)} pools of exchanges and ` +
+                    `${fmt(d.excluded_founders)} of the founding entities.` : '');
             render();
         } catch (error) {
             metaEl.textContent = 'Could not load the list. Please try again later.';
