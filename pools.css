@@ -102,6 +102,16 @@
     cursor: pointer;
 }
 
+.pools-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.pools-link:hover {
+    color: #28a745;
+    text-decoration: underline;
+}
+
 .pools-ticker:hover {
     text-decoration: underline;
 }

@@ -74,7 +74,17 @@
             });
             tick.appendChild(b);
             tr.appendChild(tick);
-            for (const [v, cls] of [[p.name, ''], [fmt(p.stake_ada), 'num'], [fmt(p.blocks_2026), 'num'], [fmt(p.blocks_last_10_epochs), 'num']]) {
+            const nameTd = document.createElement('td');
+            const link = document.createElement('a');
+            link.href = 'https://cardanoscan.io/pool/' + encodeURIComponent(p.pool_id);
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.className = 'pools-link';
+            link.textContent = p.name;
+            link.title = 'Open ' + p.ticker + ' on Cardanoscan (new window)';
+            nameTd.appendChild(link);
+            tr.appendChild(nameTd);
+            for (const [v, cls] of [[fmt(p.stake_ada), 'num'], [fmt(p.blocks_2026), 'num'], [fmt(p.blocks_last_10_epochs), 'num']]) {
                 const td = document.createElement('td');
                 td.textContent = v;
                 if (cls) td.className = cls;
