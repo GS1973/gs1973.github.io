@@ -1,0 +1,21 @@
+.pools-container { max-width: 960px; width: 100%; }
+.terms-content code { font-size: 0.9em; background: #f0f0f0; padding: 1px 4px; border-radius: 3px; }
+.pools-meta { color: #555; }
+.pools-rules { margin: 0 0 15px 22px; }
+.pools-tools { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+.pools-tools input { flex: 1 1 220px; padding: 8px 10px; font: inherit; border: 1px solid #ccc; border-radius: 4px; }
+.pools-csv { color: #28a745; font-weight: 700; text-decoration: none; }
+.pools-csv:hover { text-decoration: underline; }
+.pools-scroll { overflow-x: auto; }
+.pools-table { width: 100%; border-collapse: collapse; line-height: 1.4; font-size: 0.95rem; }
+.pools-table th { text-align: left; cursor: pointer; border-bottom: 2px solid #28a745; padding: 6px 8px; white-space: nowrap; user-select: none; }
+.pools-table td { border-bottom: 1px solid #eee; padding: 5px 8px; }
+.pools-table .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pools-ticker { font: inherit; font-weight: 700; color: #28a745; background: none; border: 0; padding: 0; cursor: pointer; }
+.pools-ticker:hover { text-decoration: underline; }
+.pools-note { color: #777; font-size: 0.9rem; margin-top: 8px; }
+@media (max-width: 600px) {
+    body.terms-page { padding: 16px; }
+    .pools-container { padding: 20px 16px; }
+    .pools-table { font-size: 0.85rem; }
+}

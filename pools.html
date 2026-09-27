@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Live Cardano stake pools under the saturation point at k = 1000, updated daily from the chain - Smit Blockchain Operations">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'self'; upgrade-insecure-requests; base-uri 'self';">
+    <title>Live pools under the saturation point - Smit Blockchain Operations</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pools.css">
+</head>
+<body class="terms-page">
+    <div class="terms-container pools-container">
+        <a href="/" class="back-link">Return to homepage</a>
+
+        <div class="terms-content">
+            <h1>Live pools under the saturation point</h1>
+
+            <p>If <code>k</code> (the protocol parameter <code>stakePoolTargetNum</code>) goes from 500 to 1000, a stake pool saturates at <strong id="saturation">about 38.9 million</strong> ADA. Above that point the rewards per ADA go down. The pools below are alive and have less stake than that.</p>
+
+            <p class="pools-meta" id="meta">Loading the list…</p>
+
+            <h2>How the list is made</h2>
+            <p>Every day, from the Cardano chain, a pool is listed when it:</p>
+            <ul class="pools-rules">
+                <li>has stake in the current epoch and is not retired;</li>
+                <li>has a name and a ticker in its registered metadata;</li>
+                <li>made at least one block since 1 January 2026, so a pool that lost stake but still runs is not left out;</li>
+                <li>answers on at least one of its registered relays;</li>
+                <li>has less stake than the saturation point at <code>k</code> = 1000: the ADA outside the reserves, divided by 1000.</li>
+            </ul>
+            <p>A relay that does not answer from here is not proof that a pool is down: some pools only accept known peers. Those pools are not on this list. The list is made by Smit Blockchain Operations, operator of pool BKIND, which is on it by the same rules as every other pool.</p>
+
+            <h2>The pools</h2>
+            <div class="pools-tools">
+                <input type="search" id="filter" placeholder="Search ticker or name" aria-label="Search ticker or name">
+                <a href="pools.csv" class="pools-csv" download>Download CSV</a>
+            </div>
+            <div class="pools-scroll">
+                <table class="pools-table">
+                    <thead>
+                        <tr>
+                            <th data-key="ticker">Ticker</th>
+                            <th data-key="name">Name</th>
+                            <th data-key="stake_ada" class="num">Stake (ADA)</th>
+                            <th data-key="blocks_2026" class="num">Blocks 2026</th>
+                            <th data-key="blocks_last_10_epochs" class="num">Blocks, last 10 epochs</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rows"></tbody>
+                </table>
+            </div>
+            <p class="pools-note">Click a heading to sort. Click a ticker to copy the pool ID.</p>
+        </div>
+
+        <a href="/" class="back-link">Return to homepage</a>
+    </div>
+    <script src="pools.js"></script>
+</body>
+</html>
