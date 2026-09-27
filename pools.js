@@ -72,13 +72,19 @@
                 td.appendChild(a);
                 tr.appendChild(td);
             }
-            for (const [v, cls] of [[fmt(p.stake_ada), 'num'], [fmt(p.blocks_2026), 'num'], [fmt(p.blocks_last_10_epochs), 'num']]) {
+            // The label shows on a phone, where each pool is a card (pools.css).
+            for (const [v, label] of [[fmt(p.stake_ada), 'Stake (ADA)'], [fmt(p.blocks_2026), 'Blocks 2026'],
+                [fmt(p.blocks_last_10_epochs), 'Blocks, last 10 epochs']]) {
                 const td = document.createElement('td');
                 td.textContent = v;
-                if (cls) td.className = cls;
+                td.className = 'num';
+                td.dataset.label = label;
                 tr.appendChild(td);
             }
             const copyTd = document.createElement('td');
+            copyTd.className = 'pools-actions';
+            const buttons = document.createElement('div');
+            buttons.className = 'pools-buttons';
             const copy = document.createElement('button');
             copy.type = 'button';
             copy.className = 'pools-copy';
@@ -91,7 +97,7 @@
                     setTimeout(() => { copy.textContent = 'Copy ID'; }, 1200);
                 });
             });
-            copyTd.appendChild(copy);
+            buttons.appendChild(copy);
             const del = document.createElement('button');
             del.type = 'button';
             del.className = 'pools-delegate';
@@ -100,7 +106,8 @@
             del.addEventListener('click', () => {
                 if (window.sboDelegate) window.sboDelegate.open(p);
             });
-            copyTd.appendChild(del);
+            buttons.appendChild(del);
+            copyTd.appendChild(buttons);
             tr.appendChild(copyTd);
             frag.appendChild(tr);
         }

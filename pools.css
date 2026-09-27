@@ -147,8 +147,78 @@
     font-size: 0.9rem;
 }
 
+/* Copy ID and Delegate side by side */
+.pools-buttons {
+    display: flex;
+    gap: 6px;
+    justify-content: flex-end;
+}
+
+/* On a phone each pool is a card: ticker and name, the figures with their
+   label, then the buttons. The headings stay as a row to sort by. */
 @media (max-width: 600px) {
     .pools-table {
         font-size: 0.85rem;
+    }
+
+    .pools-table,
+    .pools-table thead,
+    .pools-table tbody {
+        display: block;
+    }
+
+    .pools-table thead tr {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px 14px;
+        border-bottom: 2px solid #FFD700;
+        padding-bottom: 4px;
+    }
+
+    .pools-table th {
+        border-bottom: none;
+        padding: 4px 0;
+    }
+
+    .pools-table th.pools-nosort {
+        display: none;
+    }
+
+    .pools-table tbody tr {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 10px;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .pools-table td {
+        border-bottom: none;
+        padding: 1px 0;
+    }
+
+    .pools-table td.num {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+
+    .pools-table td.num::before {
+        content: attr(data-label) ": ";
+        color: #777;
+    }
+
+    .pools-table td.pools-actions {
+        grid-column: 1 / -1;
+        padding-top: 6px;
+    }
+
+    .pools-buttons {
+        justify-content: flex-start;
+    }
+
+    .pools-copy,
+    .pools-delegate {
+        font-size: 0.9rem;
+        padding: 6px 14px;
     }
 }
