@@ -25,10 +25,31 @@
 }
 
 .delegate-wallets {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
     gap: 10px;
     margin-bottom: 16px;
+}
+
+.delegate-wallet {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    padding: 10px 12px;
+    white-space: nowrap;
+}
+
+.delegate-wallet span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delegate-wallet img {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    border-radius: 4px;
 }
 
 .delegate-wallet,

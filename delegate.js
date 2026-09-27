@@ -251,11 +251,24 @@
     // gave no outputs through getUtxos() while reporting a balance.
     const LEFT_OUT = /nufi/i;
 
+    // One button per wallet: some announce themselves under two keys (Eternl
+    // also as ccvault), so a name is shown once, preferring the key that is the
+    // name itself. Names start with a capital (some come as 'lace', 'eternl').
+    // The icon is the wallet's own, only when it is an image data URI.
     function wallets() {
         const c = window.cardano || {};
-        return Object.keys(c).filter(k => c[k] && typeof c[k].enable === 'function' && c[k].name)
-            .filter(k => !LEFT_OUT.test(k) && !LEFT_OUT.test(String(c[k].name)))
-            .map(k => ({ key: k, name: String(c[k].name) }));
+        const byName = new Map();
+        for (const k of Object.keys(c)) {
+            if (!c[k] || typeof c[k].enable !== 'function' || !c[k].name) continue;
+            const name = String(c[k].name).trim();
+            if (LEFT_OUT.test(k) || LEFT_OUT.test(name)) continue;
+            const id = name.toLowerCase();
+            if (byName.has(id) && byName.get(id).key.toLowerCase() === id) continue;
+            if (byName.has(id) && k.toLowerCase() !== id) continue;
+            const icon = typeof c[k].icon === 'string' && /^data:image\/(png|svg\+xml|jpeg|webp)[;,]/.test(c[k].icon) ? c[k].icon : '';
+            byName.set(id, { key: k, name: name.charAt(0).toUpperCase() + name.slice(1), icon });
+        }
+        return [...byName.values()].sort((a, b) => a.name.localeCompare(b.name));
     }
 
     async function enableWallet(walletKey) {
@@ -480,7 +493,8 @@
             return;
         }
         const buttons = list.map(w => {
-            const b = el('button', { type: 'button', className: 'delegate-wallet', textContent: w.name });
+            const b = el('button', { type: 'button', className: 'delegate-wallet' }, [el('span', { textContent: w.name })]);
+            if (w.icon) b.prepend(el('img', { src: w.icon, alt: '', width: 24, height: 24 }));
             b.addEventListener('click', async () => {
                 let params;
                 try { params = await loadParams(); } catch (err) { say(poolLine(), p(ERR.params)); return; }
