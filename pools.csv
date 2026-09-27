@@ -39,7 +39,6 @@ KOBE,🏆Kobe Stake Pool by Kaizen Crypto,pool14w9tn4w30dwd2lfv4cwjg2a2e3ukfd0nq
 NOCAR,NobodyCardanos,pool1rk28hp58ptwapha9nc944ast32gln8a7hx6eue0gzuj7sndzrhk,74289,4,1
 SHOP,SHOP Pool,pool1wm89xjqp96t3mlun3pa5suxa3t4s5lluq239en0nxl7pcm5tprc,77822,4,0
 YYC,cardanoYYC,pool1z724xxqgzf9a30eejsa4edznmv8hgy27ssxqfcpqz42sc6lfqwu,81369,21,0
-1PCT4,1 Percent Pool #4 (v3),pool15a04yc72q4tfkwaweu86l0764urswee8c3zxperyrdq4kx8nvua,82313,2,1
 KAYA,0 % fees. Cardano Singapore Pool,pool1vfayajkdc0gw876lax5va6ygpfpsd8kz73k4y977emm3clnxlm5,84377,5,0
 XRAY7,XRAY | Network,pool1e6rjpsl42hsc52zc9s2awhv2df50yzw43xtc7d0vranpc9ej8uj,85584,5,1
 BPP,Block Producer - Fluid Tokens Ambassador $FLDT,pool1k2yfr7tapqzfgdn7vq2u44225rtqxctelr6dp0xjqggrwnx9hnw,85696,5,1
@@ -147,7 +146,6 @@ ARRK,ARRK POOL,pool18mgmqghey8az6duffc6e9tpzwxsquf00wpkl0jr8gvqxumkg4m0,292549,1
 OLEUM,The OLEUM Stakepool,pool1gqf605yxhmyfasdjhf8yxcesztgzuek9gfuvy2dnyj5cyp8zga3,295608,13,1
 HASH,Hash Valley,pool1kjd9ff9u5ytq4atavv2dfsg3pvxqw8d50642pzmpn386zel0ka8,296089,27,3
 MIDFI,MiDeFi,pool1yuq5ck8d6fssa3ju004wn9nap3ll06hd60a6tau4ptj8sqhtgsn,296471,7,0
-DAPP,Dapp Central Stake Pool,pool12m0v0myprg2nfvlymzaghvjrzhnlzkh2psn3sur2nhkj5wpkdmh,299539,19,6
 FALCO,Falcon Cardano Stakepool,pool12r08n33avu33ncstukwxyr440mgaazmuclay38v0yt34xytu2dq,301430,14,1
 PASTA,Pasta Pool,pool1442wwr8zzdpcu8uwnglackzr3u5ggrmfxsjja0s7aef66hk2fuc,301453,12,2
 FLUX,flux,pool1sghwg652uwe7ksmk5laxxft58j6km6prahvnddk3s6zgxek5qen,301697,13,1
@@ -159,6 +157,7 @@ LBP,Lao Bai Pool(LBP)老白-0% fee,pool1hlu9mdmcf0m9mqkq7apxsyalhd2nr07rqyhh8mgr
 NIANO,Cardaniano - Criptoniano Stakepool,pool1ywwtv7clgpjs88ysgpcntc6gemlrsy4037eulquswmtlv55cuzx,318094,20,3
 BRIAN,BRI₳N,pool1qn77pnnf6cf22qjjfd2kadudmdc77rw0uxked3m2arnn2ea2f9v,320216,17,4
 AFCH1,African Charity Pool #1,pool16fa03u6u85ek2q8lryqprngpahglssj5qqh66pfaxf34vgu5rhl,326540,22,5
+1PCT9,1 Percent Pool #9 (v2),pool1yl76e0fhq0kcfy2jqs2mt6hl9xeyrnesehqp0p4s896lwv7hrta,333634,26,1
 0BoB,BankOnBlocks,pool13wtywenpwvg5snncx5zvxevvry85cp3c9nq0xlxlck9l7qh2spx,335046,12,2
 BANC,banC StakePool,pool1umflj8hjq873fs9r6aq2zvgs88zrs5xjswn2znkdaehlz2eqy59,335621,20,2
 TOSHZ,Toshz Stake Pool,pool1huyzkfxwnttj7r4530hv7gc5v6mzk75vuzysc75aemu85mae9vd,340461,19,2
@@ -180,6 +179,7 @@ WOLV,WolverinePool,pool1p2ldp00jsl5l9xpg9m77zavhqmw7amtg5nlf0jwudlu2zaq389s,3787
 MAYZ,MAYZ,pool1r8lmsrdure385hz647kl2qjhyyxkdle4au5krjcsqed4x8227k3,380030,25,3
 CHG,Change,pool1h40xjqda9wmw9cff5jss3ww9npujkhlvg6xjy9l5ujsu5rqlw28,380503,21,6
 PEACE,PEACEpool Cardano ecosystem developers,pool1h5jtxde8j86qrnqzj32ugn480u7gw5xw8wqy5d227rl3vfg58qz,387102,3,0
+OCEA6,ADA Ocean Six,pool1ffrre548h22n68ln29xph3qezrag3z8ad0kg8yzu6epds3qr58k,396358,32,3
 JOKER,JOKER,pool1fr8ug253hlv0pt4sxu3w20r03pnpkh2wpedegp55t8nsx28rkma,397625,18,2
 ADAR,ADA Rewards,pool17r3u34ywld6sehe9dd5t40ygq7rmc6yfw2k0h0hpllznwlmwsnn,407437,13,1
 CSPHD,Premium ADA Stake Pool,pool1fcgm2ae0j3rmvghwa2064rfxcvugwa2qt89cc4jwtj0ecgh8na8,407533,25,2
@@ -193,6 +193,7 @@ STEAK,Steak Pool,pool1sks9qwpygf9vmgeuh4n4a3s36k35c3qnz7pd4qqvw5825x62y3y,424989
 COFFR,Jolly Roger's COFFR,pool1v5g4rmkk0394q6swgfusgzjjzrv9ajy8qntgpuumegka5xhpgam,429297,26,1
 TDOT,TDOT Staking,pool13qe6ycacqjg3gpvjewg8734d6hs6rhduuenjtnnkwh327hmtyz5,429976,15,2
 XORN,XOR NAND,pool1dgmuwu0txducah4pes4e2avlcv98wedml33kdz7ujtrrxk8xv9y,431053,11,1
+1PCT2,1 Percent Pool #2 (v2),pool1w4am4s9w4gkt8r0245km62vtnnv9hhq6j68exzh2pyaxxfaq0gc,431365,26,6
 AND,Andamio Pool,pool143nv3macakarny2hvg67gg00q5j2kdg6yfvcmefqmea3vnj0nex,442765,9,2
 FLUID,FLUID pool,pool18rpw5dwfywfrzjuy7uzn2cetrw9v85aan8a80p3fdvtqcxykkqu,450413,22,2
 4WARD,ADA for Warriors,pool1kcrr7re05pwesye0zh00a4xxnsrw5c29rd82fn4qecdcqu5rue3,453368,29,5
@@ -210,7 +211,6 @@ JUST,JustStaking.com,pool1dcjycc5mvj9svh9ys482078mnqutu48k3zj7uqzswj7m54a7hzr,51
 OYAJI,Oyaji Stake Pool,pool1ralkckmup253k79hap4chku450qyshezh4sasjqh0ltxu2gytlq,518223,22,3
 SABAI,SABAI 😎 Relaxing Stakepool,pool1s0kkragd8r2xyyms680l9eed443v3eufmarykpjfh2r6cpksm2j,523959,37,4
 CHAIN,ChainIndexChat,pool1aawkmkg7vg0x0vxaqh4gr0lwp4fekwsqrjduylx0et3tuz9hfn4,528056,24,2
-1PCT5,1 Percent Pool #5 (v2),pool1ayfjmnrv5vg6tfducvysn360re6qfwuv2rhc4ph6jk33ztuxlhq,530227,24,4
 XPPX,Prophet,pool126f65lklaqw39jgx9wl8klqtx99evewxk0x5yc2jzzp5wfs8fde,538157,29,3
 LIX,Felix Pham,pool1jqw9cv37w0eewvdr36w2kacd2w9wh5uwm2y3vmc0fmdfc0ax26l,540203,27,7
 SAMON,SAMON Pool,pool12ndf7w5f4fdn746s5zlay4aexvcsjncnnmjwfp8falascjqav3y,542203,32,3
@@ -255,7 +255,7 @@ ADD,ADA doch_doch,pool1a44zldps27avv82mamm2lj33mrrkqdzt39nyrgn5dkk3jtm0wrp,74589
 GOOF,Goofinator Pool,pool1gslrt6mmljsqkzft6nd0q7w7g2fyhxpxx6sj4ff68x22kwx6unm,752257,66,7
 FUND3,Cardanode: 0.00% Margin Fee Staking,pool17wsk3ww9asev7kfk9ktfw2cxcq865jq2l796aue66xldwx6cy82,754898,7,1
 ZPCT,Midnight! ✅ · 0% Fees! ✅,pool16p8y0pzx8yx7vz6eqksw9xjhh3tzeymvxcstrgtk8ncw75356yw,757482,40,8
-CHIEN,Charly&Aliens Alliance,pool180fejev4xgwe2y53ky0pxvgxr3wcvkweu6feq5mdljfzcsmtg6u,758985,65,8
+CHIEN,Charly&Aliens Alliance,pool180fejev4xgwe2y53ky0pxvgxr3wcvkweu6feq5mdljfzcsmtg6u,758985,66,9
 PREEB,PREEB,pool19peeq2czwunkwe3s70yuvwpsrqcyndlqnxvt67usz98px57z7fk,759052,62,15
 CHEAP,CheapStaking #2 - PublicPrivate,pool1uu35qfkmjyxwpm3pgptfgr0qga9j2fzkc0tsjplcx840x295xj9,761715,58,13
 SVRN,Commercial Sovereignty Restoration,pool12pvaxxcv3sgad5jqgfnggn337y76kp02uauptkufjjjes7nxwfm,765851,34,2
@@ -296,7 +296,7 @@ FGMTF,Figment 16,pool12582dmkl7xanxlmfnwd4fepmx4tt5kkw327mmklcjdxngwaxvh2,100255
 DEV,Development Stake Pool,pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv,1005405,57,14
 AZTEC,Aztec Staking,pool1yyv7vx5zhhsd60jp4tl72vpznwvpvjp35m4z7jr42ugkxmndyv5,1015684,42,5
 FGMTC,Figment 12,pool1kf0c6a38vy9t7muc2jpfefdc0y6ey8386ujtn6rtly25y5yxwqf,1038889,40,5
-NIGHT,Midnight,pool1lx7hdfz430vmrwhkrdgxu8c0xclffltavmkejpqzzz4ax0lnfvd,1041163,76,7
+NIGHT,Midnight,pool1lx7hdfz430vmrwhkrdgxu8c0xclffltavmkejpqzzz4ax0lnfvd,1041163,77,8
 DYNO,Dyno Pool,pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct,1045509,102,12
 XRAY5,XRAY | Network,pool1szy2tdjj8a4av365wk3q2fqg9srllmt0383e6v9p664ng076x9e,1049772,59,7
 CAFE3,CardanoCafe Three,pool18ljuhhw27t85zddz0pvsmsjsz5k0mlz03pzsxgh8qarcsw5wycc,1086286,53,7
@@ -347,7 +347,7 @@ CHRTY,Charity pool,pool1qqenhz258k5k9nyjull6gkzg7s4f3ae8v7qxwpegeef9v0nsy3e,1431
 TYGAR,Tygar,pool1lrnyqdlrj97d0ju5j6d9xa8prw0xeyumfd53rz5wk3gf7czqzjz,1434874,101,14
 KYBK,KayabukiStakePool,pool1etfxpqw7456eh337p7x5jsvxxa67fsduvnmucevrqweckex3nhl,1436793,149,0
 BTCAO,Bitcão Stake Pool,pool128r8qqgl9zgy3ff4759a2qslyauu5takaec3nxx4a6mvj3ys8da,1443630,86,15
-POOLS,cexplorer.io,pool1cduc7ut6grhqyavrmm3gzcdf4qfdsjk7vdwcxy9c0r5fyaxh2sq,1450483,76,12
+POOLS,cexplorer.io,pool1cduc7ut6grhqyavrmm3gzcdf4qfdsjk7vdwcxy9c0r5fyaxh2sq,1450483,77,13
 MBCG,MBCG,pool19rjjay24ez2ezgqkyqvna6uwc5ur9lt489gwvrv7ve5exlcld3x,1461377,46,0
 ADOPT,ADOPTion Stake Pool,pool1l5kwfudnqrhw3k4lwzcppu36nun9puvvr7xnanuz8a2zx4jaek5,1479548,97,17
 PEPE,Cafe Pepe,pool1n4fq4gw6snzqjep3pylj8dc6aaa4xgn78gl58k360dqdw6a58g8,1486548,57,0
@@ -362,16 +362,16 @@ MONKY,consensusMonky Stakepool Germany,pool150hft90uw7tzr9uvj7tqkjp4u98a9hl20llj
 APP,ADA Point Pool,pool1rj6apcqxcvavaxp22f75zs9upphena7ntsnut2efvq98g4404up,1558775,76,11
 SOLCY,Solar Cyprus,pool13r4e7tttcxp4qfs4gqtv0hz5k48qdhhxrskz8pjrj6fqy5qmee0,1565574,85,0
 AUSST,Aus Staker,pool1egunxfppwtglyu3t864uq76y0zu05s7pjda3e9g95nwlwc5ye2h,1593347,129,19
-AID1,AIDpool1,pool1peayemzlkmcwn64c455mx8sxdaztq0xuv9hdxlp0kcsxz57up3z,1593775,186,10
+AID1,AIDpool1,pool1peayemzlkmcwn64c455mx8sxdaztq0xuv9hdxlp0kcsxz57up3z,1593775,187,11
 LTES,Let Them Eat Stake,pool1sm2kmdn4f9rat3kl67y9drqcnnqc34zg4f4ufmnrfaj45gcv89d,1593869,37,0
 MANGO,MANGO FARM,pool1ntwurms3f0j4kqe5wfpg9chlasylp0lmuw72m4fn66vnuyrvs8v,1594483,90,15
 CAR,CarPool,pool1zwqrrwpr5zx7c3f4ukpu4r4fz5c2hkwx9vwqka5068urgqvpjzr,1599611,73,13
 SAPIO,SAPIO Pool,pool1c0xj2fa97zuz4phld87atg6yphz3hju409fm5xgnwuuvqww25qj,1613170,98,18
+1PCT3,1 Percent Pool #3 (v3),pool1dww6s8stvm7dl2n8740s3v5rnxmsuqcl8jcnu64g7cds5w29pft,1638924,112,15
 KIWI,KIWI¹ by 🥝Kiwipool Staking,pool1jgwu8lq3dqddnnx7prymcgcyrqy0fdlghg33he2hmw9t2gma3zd,1639137,109,25
 BONE,BONE pool,pool1j742gcsul7u8c05rsqmkgpkvj5qadj0pew69nctu6crqy9wjjn4,1645679,64,13
 FIALA,Fialka,pool1sdvrd0sxh2mprqc3m9zmvrfccavzpz9r2uancg866hpec7nnt0s,1656276,72,6
 FIXA,PoolFixAda,pool1nt65pu06tlggjeaer8862fdju98ddrrxa9wnw3k4lhfvgrrgt85,1692019,145,14
-1PCT8,1 Percent Pool #8 (v2),pool1e4tjrl3ve7dcqwa70pexds6f8llk0txx09gm3r4m472ej4p6473,1697727,142,15
 VENUS,Fresco Pool,pool1r8938r4ts8f4t8nsp9xl9dktzapt7f67jgpsp4wrju39xrdnaye,1708333,120,15
 CSP,Capital Stake Pool - live long and prosper.,pool1dy7tz7eyf2qal2jcns4qwm4xqn34gc4rj9dz34kfs6zuju477k7,1718037,39,0
 SAGAN,Sagan Stake Pool,pool18p7p752cjnf9z8g70ygkre5cstwmgfatzuqm0tm3n2xf739j8k8,1733636,93,14
@@ -390,7 +390,7 @@ WHITE,The WHITE Project,pool137j9xuzycq4jxfpsmjnc75w2wnpz68khlwvsh69kt5negg6ldhg
 ALTZ,ALTZ,pool1gm4mcrf8mytfetsj6ykulrmv4j70y7fhceawgdg2h09t5rtt7cf,1894337,111,19
 ASTCH,AssurancePool,pool1q2fh3cl6rx0wv5gry4qx5l4h65qpjf7x99xmq66nqj2fj5g6u9z,1895086,118,19
 RADAR,RADAR Stake Pool,pool1l54qvzlg2jfalkcram9kxsa8vcmgy0fz845q5gptjq8k20kzg2r,1902082,81,17
-SHARE,SHARE - For a good cause & ADA rewards,pool1af7dmzgcyp9kc5lyrtrtpsce58l6j5cjvc8wavkwmzlr53ym50v,1935880,112,21
+SHARE,SHARE - For a good cause & ADA rewards,pool1af7dmzgcyp9kc5lyrtrtpsce58l6j5cjvc8wavkwmzlr53ym50v,1935880,113,22
 ALLEY,Alleycat Stake Pool,pool193rdch53x9c53rmftlqgzj22vmz6w8z8hhut2ckzd2zej45zpap,1964007,119,17
 ADAJP,ADA JAPAN POOL,pool1suvska2n58hqxqzzqwpw3558072vkmng0jezzgtlsj625yk7gt8,1964334,32,8
 ALDIA,Cardano Al dia,pool185ev4czpm5hc9xud25xlcz5lhpnl2jztqas6mgxujqke7j5mdzc,1972300,132,19
@@ -405,14 +405,13 @@ MERIA,Meria,pool13nn6lk6dx5ww95h5qqeeazyp074j7en8e6qszq62rtj9wcx522z,2087069,41,
 WEED,CardanoWeed,pool1jv4yvr5edp7qp690hk3qfudwmw28n2wygjxyhaecqkzeqh0wlem,2089228,58,9
 VIVID,Vivid Cardano,pool1nw42xqnaplxsx3fq4ytl4x4qqvhs7g5uymnm906pfvx5636fglw,2098540,37,12
 AIR,ADABreathes,pool1sr953s548fudyhmfm082xp0mensv2gxzt4qpe466ykw0z3jjzvv,2135460,121,17
-ALAB,ADA Labo,pool1nffpy6r7l4ueeedzvvzsta2vty9g6mtet6huuhfzyvndkwd35dl,2143651,170,23
 YKSP,YOKOHAMA stake pool,pool1n6z7rf722heq35v2dxvstfwezgdt8cv0mftpv4r9jay3wjk2kkt,2181028,125,25
 KRONO,🔱Kronos Stake Pool by Kaizen Crypto,pool1efxh54fk0dj5uu2e4eu08klxl5ys3saphv3kec33kw3xv8738sc,2181100,120,26
 KYSN2,KysenPool Thunder 2,pool1d76p7zfn2ydq577z4wsvmnl2lx4cxa3s5vplfuhvr8qfw8hd05j,2186295,148,20
 NMKR,NMKR,pool1aq2kqdp9xf9w47vttvmqnahwd4scz2qyddsr9l4mfru4qddg3kr,2191832,134,26
 ECP,Earn Coin Pool,pool16cdtqyk0fvxzfkhjg3esjcuty4tnlpds5lj0lkmqmwdjyzaj7p8,2219924,72,25
 SALT,Salt Pool - Hosky ISPO,pool1a2gt2mvuf5zvtqlvw2xgks2efze3p4r985ft62q64lua7gx7lal,2225896,145,18
-SION,ANGEL stake pool #2,pool1qqq9tqyj69j9kygpxza3h82ynh8d0xlueucnu2yqum8nse8hj7y,2268505,109,17
+SION,ANGEL stake pool #2,pool1qqq9tqyj69j9kygpxza3h82ynh8d0xlueucnu2yqum8nse8hj7y,2268505,110,18
 KOR,Korea Pool,pool1gntlh2yq89tpsd7kgaeuremj3s60rscqahyl52qzv0x87mt22rq,2273447,163,28
 ULTRA,ULTRA Pool,pool1m3gg43uhtetn4hmw79u8836dyq8qe4cex8qnn6mks5egza7n6tp,2286593,107,9
 CAKE,STAKE for CAKE,pool1kvd03hq8kp0hnxq9lq598a5amrvauj9m386rwx7ydawvjdskwnh,2313875,121,20
@@ -434,18 +433,16 @@ LATIN,Latino_Staking_Pool,pool1arsqn9w87wpqlm0sre66gs79dcs0jmwulytgke3vut7u62ltt
 WAAUS,WAAUS,pool10qmnswfc22zm0fscg80gkwqz65ujwjkqmctv8g9l9l58wqtelgg,2625126,144,24
 OBS,Ouroboros-暗号通貨革命,pool1qu48wpwwarmkewhlwge9xs87sgt8gdnqq26nnre2v6c8up4fxwr,2629159,310,29
 CAPEX,CArdano Pools EXplained,pool1gppqnqfguctp6gu0q8l5wjhye0ny28yzfx93hkr384cfsezru0f,2660201,133,22
-CRFN,Crypto Functional,pool1r2g9wv7jyt7haygrmrc2tst2m8m9ssrr3c690ffp49uhywhvmdl,2703049,135,19
+CRFN,Crypto Functional,pool1r2g9wv7jyt7haygrmrc2tst2m8m9ssrr3c690ffp49uhywhvmdl,2703049,136,20
 RX78,RX-78,pool18heqrjtge2emf2hes4mdxkr76y99zztkqk4qtjr9dul0vuur0yu,2724007,102,17
 THANK,Socious THANK Pool,pool1w3xys99a8xmwcwse4tqpqmyqqzykryfc4w7cvvjusej0vnxdlrf,2724137,129,19
 JORGE,JORGE,pool10mf43thtl3keag50mrlvqa78xkwg7harmu4w5yzr3k7jvw0ap43,2734042,134,27
-RDB,ADA Labo,pool10pd44d65586rldtdzuu88e7mn4sxjctvdksmt05nnqfzqu7g7hd,2738065,176,28
 HOT,House Of Titans,pool167qekemyleju9g7eugaguqxh5telvmmmrs3a7sp897f6za308hg,2784646,154,44
 CAPO,CardaPool.com - 0% Fees - ¡Midnight Token!,pool1t847w2hfv33qrra7q33nzq8epvcxv6ydshcq7w7j23c87xv2c2k,2857277,145,24
 FGMTM,Figment 23,pool1anxttanf5g4cjgagns6cf084wq6x9k2pfygjdjyk3swf77wj2ax,2865236,101,21
 CDN,Codanar,pool16e2x06wk8ufyakgrzq0c9p5tmfhl6w0c80raxr0xtg5g7aakhgh,2891759,134,27
 LUNA9,Luna 9,pool1gdgjzmp96kk0d0sj482655wqlq8jtc4t9xw8xzfwfx4tjyq73hw,2907880,172,26
 LOOT,Loot Pool,pool1s6x6kltycpxq82hyqhlqllqj3q5l2m8w499gvtu4xrfv29c0q2q,2945961,161,38
-LGC,Late Game Crypto,pool13xzckaj3srgldr67dksx874jxe3c9xnc245xyr44p7cdxh07hft,2950420,219,41
 SAND,Sandstone,pool1gqvrgg7zycvf65ydkjeph72t0yx0f5ykzd9f477zh4f3smwk997,2960347,159,26
 NVL,Nuvola Digital,pool1uu65k00dp467qsszmqwl6udwnet3zszgx8n3kmn2aq84sae8ha9,2980449,149,26
 ANET,AdaNet.io,pool1xwqye6mlftwjg706acz5fjqz7gmf4qdye99zsjl03a4ru68ghee,2983116,151,22
@@ -460,14 +457,14 @@ OKYM,OKAYAMA,pool14hhs6ruwnuaf4fzsmx89mvmjl2qhyy5jnzyk2le03886kj6z9yp,3240001,17
 UKADA,UKADA,pool1wwzctexlp70mj00vv65mlhwhwresn58s9x7jl4tswvkg77eu7n7,3310301,167,20
 VINCI,Da VINCI pool,pool1j8grqucdwwcr0cwzxrtw30vqcptg0jdlrmauq5w7ytvqx6nf5np,3312203,168,33
 KYSN,KysenPool Thunder,pool1fyp482ntshhm9zfz4nv7pmsaeakscf5mnuzcxuvtqf6t56fc7l0,3312421,219,43
-ISPJ,Infinia Stake Pool Japan,pool1vce30junxx06g2ha8ww02cqgy644yj69ehhg2x95qe7323zfznp,3330931,181,22
+ISPJ,Infinia Stake Pool Japan,pool1vce30junxx06g2ha8ww02cqgy644yj69ehhg2x95qe7323zfznp,3330931,182,23
 COOL5,COOL5,pool1vdcu0y6ujrwmnv4u50j6upxkjug7cx7zsaynjvgkcm2ycmajelc,3351330,230,41
 BANK,BankFi Pool,pool1m3h5p82m6v99nda37rmed8vrkqt43e2a8d89k76gw5ets0gdyag,3352876,164,29
 4GOOD,4GOOD Stake Pool,pool19ht066hngsjfnv3mfsc8u9fgzl4w5qcrmh8l6zppwph6s2t7jn4,3377845,194,39
 8964,A Cardano Pool Named 8964,pool1agwy5atgc4ptg3whplaxyz28g4dgvsna8auktszctkq8xmtl7dh,3380224,180,35
 QCPOL,EN/FR community from Québec⚜️ Canada🍁 HOSKY ISPO,pool1c2utlagkpht4zj0jetsf245c258geuxnjqp9kf4f2z9rutx9dz4,3405406,152,28
 FEEL,FEEL,pool1g4th3pqfzh4zajzrhlh8y6wpuztrkzxwt5wd7q578894j06gwfc,3441467,154,28
-POP4,POP4,pool12lsfsh2s8yt8dvrt9m8kgrgr6ktntngvn2vad60xlqz7kxz9fxr,3463827,255,35
+POP4,POP4,pool12lsfsh2s8yt8dvrt9m8kgrgr6ktntngvn2vad60xlqz7kxz9fxr,3463827,256,36
 NASEC,NASEC pool,pool1429egqgv60r3nxlp6cvs08qcffv7duddjvyjd0pt6wzhj7akda8,3514717,196,42
 1112,KOG 01,pool1522rtve5zlgnlh3zm5a4mcy3u7gpndg3kkac3xyzxmp6x6weca3,3515724,264,36
 DAN,Cardano Dan's Stake Pool,pool1nhls8e9swnyshldgjknku4npreax075nw0ltrkmrarh4w3skxt9,3581644,213,27
@@ -477,7 +474,7 @@ ASKP,💡 ADA Skepsis 💡,pool15j6hdfel6c6zcr8gu39qgp5xkrs264yn9hm8ynhaydjtxvmz
 SEAL,adaseal.eu,pool104v7kzpq86r0wnfsz8r7jeld2raap92qq84trjcqk62zyh9akqt,3637945,146,45
 ADA,Cardano24,pool1heks0vmxkfka2amg9c8yn8qdsxvgmzelfx6jhpfkj8ht5mn0r2m,3671083,406,39
 LSSP,LoneStar Staking Pool,pool1q8a7ym63gurl72wr32je0tv0lp4p2uh8vzzc6rn6un7ryslvqmu,3680518,275,33
-OCEA1,ADA Ocean One,pool1zk6uxgptztrxxamzd0ugrtu84xg8mjymd2xcdvxqazpruqt9r3x,3680775,201,21
+OCEA1,ADA Ocean One,pool1zk6uxgptztrxxamzd0ugrtu84xg8mjymd2xcdvxqazpruqt9r3x,3680775,202,22
 GURU,Cardano GURU Pool,pool1j6zqawj6f58lp4p00t26eqe58gxx4pa3cudlzpkv23y92nlxjzd,3681405,326,41
 BEAST,BEAST Pool,pool1h3aejp7fln74mwaraqjn65ve3j5zwqr7wk0pasct87wpkv0aspm,3699086,220,39
 SMILE,SMILES ON AFRICA,pool1ea34czsr90yc63fmv4gj4tetp7ds7c4jhpj6vqg4yw40wvygdl3,3710405,318,36
@@ -516,8 +513,8 @@ CBH,Cardano Blockhouse,pool1cspe7naf0mtntwyysqxk6czah3jlh6v4cja8pdfju932yxsehnm,
 MASTR,Masterstake,pool1qqqq4md2rfdt75qvh3x9cgmkrgkl74ctcj3fnxpu3ylcudl22ex,4582200,300,53
 ARRA,Arrakis,pool1cew2q6pge250exctkq26lyl0w95923xxa54thd79nv8xy9j3xe6,4592261,159,36
 DDOS,Cardano Media Taiwan,pool15k0zeppza4qzgf6z7wmwsgvl5rz9f6489zxhrxqa8dj6jzju6ct,4658660,261,28
-VEGAS,VEGASPool,pool1df9rj4n0t3zlpak7xnh4ue6t3yh9zlw7a02w4l8askp77up25rt,4678172,214,38
-RPSP,RIPI Stake Pool,pool1tj3u8pz6732uy2ut3s90e0j880jyu9j0ve9vtu9zj5xzglhdlqy,4680708,283,34
+VEGAS,VEGASPool,pool1df9rj4n0t3zlpak7xnh4ue6t3yh9zlw7a02w4l8askp77up25rt,4678172,215,39
+RPSP,RIPI Stake Pool,pool1tj3u8pz6732uy2ut3s90e0j880jyu9j0ve9vtu9zj5xzglhdlqy,4680708,284,35
 AKYO,AKYO🥁,pool1jsxk3ymqv2gdc6mhqk52544g2aun4zhq5wgx6n32l5s3jlne70n,4769689,135,21
 PLNGT,PlanningT,pool16cerhwlk8nq7rpuerr4g08tpgeq7awnhgxzkyalc8n8xjwzxqm3,4793059,257,41
 LEGA,LegaSystems,pool1ytszp582dm9u5un6mevt9czgcnuqhflwfr9ly4ukpeqcughryqh,4912858,166,0
@@ -535,7 +532,7 @@ lSPF0,🟣 Spectrum Finance | LBSP x2.25,pool1072lq3k32sfxs96s9qhrx3s9la2t68vrqw
 LBA,LifeStake,pool1h59405hmvnxz2kyjpll3f65lnqhm7we3u96cws9vzzxzzws9gjc,5365973,346,49
 PXLZ,PXLZ Staking Pool,pool1enul577he3e0s500lv8z98m6k936uecz2rpckxxmmk8c7k0n2rd,5404043,350,44
 CCJ4,CCJ4,pool168t0xlm0dtdgf7d5w2mrm7ulsw4czpw297yvrpke9pmjcc9hz7k,5417563,238,37
-TAM,TAM Stake Pool,pool18xjkr4xpscwxsatewj9lqc6z74vw90qycjd0wrypeqej673j5u8,5465065,293,53
+TAM,TAM Stake Pool,pool18xjkr4xpscwxsatewj9lqc6z74vw90qycjd0wrypeqej673j5u8,5465065,294,54
 CCJ,CCJ,pool189j5mz6wa0gfrakwvn2tar7qt309qxrmsgde5v6qwm892n6re3v,5495742,176,19
 GG63,無双63 ADA POOL,pool1hjpax8lf2hmct63xxrspe9zzmmywcrzw89yg3nacu0axzy0latu,5532067,289,46
 HOPE2,HOPE2,pool1x89ssjp53eczthatft9w74749558nsz3pq5jn056634pgt5m58s,5675192,234,59
@@ -546,7 +543,7 @@ WRFGS,"Stakepool for UNHCR, the UN Refugee Agency",pool1dmnyhw9uthknzcq4q6pwdc4v
 RKD,RAKUDA,pool1rxgxstg6t7azlsrk4vuuwp0jgl9e776dg86zqzaa0qt6vz43n9r,5819448,310,51
 XRAY2,XRAY | Network,pool1ntfxj2jgvhzen8e86ed679ctukar3vj538ywyyq8ryld66jj4sx,5849568,564,70
 PSYA,PsyADA,pool1zytydvyy3qztrs8l2xyggvkfcjctp23m2hc3aj7sudnzgny79cg,5876874,424,56
-ADAAP,ADA ALPHA POOL,pool1djg8jsygtculv3q2qdrxtnpxfq003pdxcvlw2pvfupq7jm5xpgp,5902521,300,55
+ADAAP,ADA ALPHA POOL,pool1djg8jsygtculv3q2qdrxtnpxfq003pdxcvlw2pvfupq7jm5xpgp,5902521,302,57
 VINCE,VINCE pool,pool1lqpymyzg9glc88r7urptuv0d8t2tu9ty7xtshvxmgpu0j4lp8p3,5959559,337,60
 SOCIO,Socious StakePool,pool1g2y0j7rsv7dpu8p6jt2dva3rxfqjl2zu0ag9dd0cfm8guzg0lh0,6089962,294,79
 JOY,JOY,pool1lkpj6fa4l0sy39qfvyl4pcsnnd22y8np8j98vzwula2kuxgers4,6110816,409,69
@@ -572,7 +569,7 @@ KILN9,Kiln,pool1k3nkfa5ugavrpd9nwd3s6yyx454qxnquxwmux4rzfunl7q0z38t,7186493,3090
 SA8,SMAN8,pool1a3ekt9me035qgju0en2w39vjns9ggtewnc9fugsmpgczvgtl6u9,7233246,393,60
 SQQQ,SQQQ Stake Pool,pool1jvknf3dwtnqln5hcjrh5m7s979revuj5dlxr0337nwmm6p7250q,7270569,380,58
 TAPSY,TapTap Vienna,pool16tcjctesjnks0p8sfrlf8f3d3vrp2fdn2msy80sgg3cdjtayu3z,7306180,400,62
-NERD,Nerd Stake Pool,pool1u0mc9ywfxl529atxyajuz3pgqnwgnk6w7lejjmjg22ucvn7z9vh,7419545,479,76
+NERD,Nerd Stake Pool,pool1u0mc9ywfxl529atxyajuz3pgqnwgnk6w7lejjmjg22ucvn7z9vh,7419545,481,78
 CTEC2,CTEC2 Stake Pool,pool12ktz62g9d32nq0cdk9jyyqg6kquj7lnmx776at5h598supql0t2,7476266,397,66
 NUFI0,Nu.Fi & AdaLite 0,pool15r7xg0vrrv2yu8wj3866eap8ftkuxvdk5rjz2lh4xajjq5v3p5d,7496321,444,71
 QXT,Quixote Dream Pool,pool1x5dfpgp987e4jhxvgczr3wv50nv2pwd873tlx3uthvcasm422q6,7500496,528,57
@@ -583,14 +580,14 @@ NAHA,Kaze-Wa-Minamikara,pool1c3kxs76qj58284f923cx7ed8vw25en3nfghyurv0z9m2g3x9c4j
 CFLOW,CashFlow,pool1u7mqtde27swkarngjsn5mmw3sy20zavlafgqkmg8qv2n2nwga0l,7870480,877,137
 21ADA,21ADA,pool170hmssk80z2ameg7jhj5m8psnkjejcc77vfpd0875yggxhhntd0,7918430,472,73
 CLAY,CLAY,pool1qgmwcxs8d8qmr0vtvsqd9u8gugrventh5dcqukmu79e2sgfuu8t,7921032,409,68
-BBHMM,Blockchain Better Have My Money 💰,pool10p6wd9k0fwk2zqkqnqr8efyr7gms627ujk9dxgk6majskhawr6r,8034001,364,63
+BBHMM,Blockchain Better Have My Money 💰,pool10p6wd9k0fwk2zqkqnqr8efyr7gms627ujk9dxgk6majskhawr6r,8034001,366,65
 NINI,Nielsen-Nielsen,pool1rcd7qslz3xnpnk9u6tcwegy5r2574uf8suqu24ptg637jha3sr5,8099277,419,73
 FARM,ADA Farm,pool1dpu6kslgxlg3ccrwxldl8e6r7ylnq0yalafmucp0yc7k6qegtt0,8187399,445,62
 SGTRS,Sagittarius Pool,pool1les50pm26wpf8gym7cda470xgfswukzhyykvhyfsfl4dcu2ezj4,8210371,381,87
 TERA2,⭐ TERA2 ⭐,pool12rs385dd534g8gtdtmnvlhq63whdvc6vnuzxa5cpx843zdy73qy,8256777,598,63
 DCONE,DCOne Crypto Pool,pool1xvaagsvl9prlr20hvg2qv434yss5c88r2ml6n43wcpepxmw85lj,8260939,249,89
-COOL3,COOL3,pool1ppqdq5yfkkllrcj0u47pakg9e4ha568pz3a9kkrr6w2kyw8gxv7,8330965,464,76
-4KOMA,4KOMA-StakePool,pool16rahfu936wdfq34wf6t8rqxvdjxayra5f7y80xq0udnqglrqel9,8339589,484,83
+COOL3,COOL3,pool1ppqdq5yfkkllrcj0u47pakg9e4ha568pz3a9kkrr6w2kyw8gxv7,8330965,465,77
+4KOMA,4KOMA-StakePool,pool16rahfu936wdfq34wf6t8rqxvdjxayra5f7y80xq0udnqglrqel9,8339589,485,84
 WAV7,wavepool.digital,pool1u99x2rr6trfznwakv0959llmxmtgc2nvanc067uugl3ejuvvnc8,8351431,517,83
 XRAY3,XRAY | Network,pool1yt868wrp9s2x5pehe96del9m3nwasme62yw02vww3kg6zwzspcz,8561396,589,90
 SCAR,SCARdano,pool1u4sxd6x0qsy7evljt24vtnyhpxd098n609sfcmly6c096mr3jgq,8635210,430,30
@@ -599,8 +596,8 @@ CDNTH,Cardano Thailand,pool10scv5quxduhrcc26wpurhk743dngspe8dc3zpkkam0svyx6ejx3,
 JP4,JAPAN4,pool1llxh8l0h8g9ghz3nrzh7ndvev4x43vnk72nsemzm795vxqs6dp8,8669242,536,78
 000,Switzerland Investment,pool1q80jjs53w0fx836n8g38gtdwr8ck5zre3da90peuxn84sj3cu0r,8721996,339,76
 OTG,🌟 Star Forge ⚡,pool1eqj3dzpkcklc2r0v8pt8adrhrshq8m4zsev072ga7a52uj5wv5c,8750278,597,87
-YOON,Your ADA Moon,pool1lxqewhueg4hzyad766zhdwsjet5348ww8mzejf6fprxaw8wfq5s,8789410,460,85
-OSAKA,OSAKA-Pool,pool1lhvpgr8lhsf6h03v9zqxm74pa63rdxx4yuvkqfw4tv9fua8t37a,9072537,646,91
+YOON,Your ADA Moon,pool1lxqewhueg4hzyad766zhdwsjet5348ww8mzejf6fprxaw8wfq5s,8789410,462,87
+OSAKA,OSAKA-Pool,pool1lhvpgr8lhsf6h03v9zqxm74pa63rdxx4yuvkqfw4tv9fua8t37a,9072537,647,92
 SNEK,Snek,pool1q9049mstrv5czwyylpf3xen08pmvsfsgtru4wf3zvc9uxat2sm0,9325274,485,72
 AACC,AACC,pool1mwp8ewtzmun0426v9z0h9um2amswgfzn78rckfl2fc3t5sy0m5g,9347566,443,91
 HOPE,HOPE,pool1vh4y864hcq2r66ak37w4dsnkhnsfxaaacs0p5s4vj5676m6txwm,9481093,539,92
@@ -609,7 +606,7 @@ HOPE,HOPE,pool1vh4y864hcq2r66ak37w4dsnkhnsfxaaacs0p5s4vj5676m6txwm,9481093,539,9
 BEAVR,Beaver Pool!,pool1ty7lh3nvtwxlcpqg2x30fkr3j9ys6nprztr9m4zp3aajxyjk2vz,9601249,550,103
 CRDN,CARDANIANS.io #1,pool1a5jd3x2udlvpm9mt4gpau4jlags6qtth6jdsguryh2zy27f5ttj,9636529,259,95
 SPS,StakePool Service,pool155cu3s06js3llfh07vnzepatfuvt3s5s7uwldt9rzz55wz7pugt,9675319,650,89
-STACK,ADASTACK,pool1jjry6f6q0swaq457ft9eclaxaskvrxnpj0v3w8edsyfryml3vj6,9806757,617,75
+STACK,ADASTACK,pool1jjry6f6q0swaq457ft9eclaxaskvrxnpj0v3w8edsyfryml3vj6,9806757,618,76
 MUEN,"MUEN-StakePool,",pool15z87p296y3m7eq8pwuu8qs6h2v4d2ctnx3yd2vqpl6txkkdvl5h,9835828,484,79
 ZZZ4,ZZZ4,pool1spus7k8cy5qcs82xhw60dwwk2d4vrfs0m5vr2zst04gtq700gjn,9842722,568,88
 RGDL,Ragdoll,pool1rw29y8c5md2rm4ynkrqhpm9saatd0a0xzyyc6xudelgkww5junh,10055002,535,99
@@ -617,8 +614,9 @@ BRAVO,Bravo pool Two,pool1pfdd8d8n7jx0xnk4uev3x36se87c747w6l2d5x7fanh5w9evhw2,10
 KOPI,KOPI 咖啡 Singapore,pool1ld9hkah2dkzh73pvh9tf6xr0x28us34msv3zcv2sase5vhvq962,10200380,720,115
 SKY,wavepool.digital,pool1g5gmej3cj67td4pmvmacnls8nuq0gjld2pwfeg3jwpxujdx6lmu,10266218,598,92
 MIMSA,mimosa,pool1pj5jnehwjtt4esfl0325hr338n98v3kcww3sggce59ugyf2f883,10306239,416,98
-FGMT5,Figment 5,pool1mvtxupzcgdtslv2sw0l3f4zlhd3a69fue6gu0vhqz47w7j5zryx,10483687,532,81
+FGMT5,Figment 5,pool1mvtxupzcgdtslv2sw0l3f4zlhd3a69fue6gu0vhqz47w7j5zryx,10483687,533,82
 1PCT8,1 Percent Pool #8 (v1),pool1ddgcpgjcyawxw95se9x8qnc8gxgwjr4fqrk4vk6v9x47s0ggpjp,10485507,320,87
+1PCT3,1 Percent Pool #3 (v2),pool1g0nq3m3fnvd245k4favcvutn09vce0yshg535f68d2xa54vy0cc,10569027,576,90
 BCSH4,Blue Cheese Stakehouse,pool1qzlw7den2mlj0fmm65g0fnf46vyhzkhmdaf0f8v3s6skuue6rlk,10655239,564,101
 ONYX,ONYX Stake Pool #1,pool17xextu09ghdfcmsq83whq0a45geg83jxe4qt94sevu087tzdzkl,10655520,703,111
 TREFI,TreFi_Capital,pool1k7zrx5rw6cvef9m5qtp9sy4e53u93kwqx73ykz7md9gmwgf56yk,10693509,559,78
@@ -631,16 +629,16 @@ JAZZ4,JAZZ4,pool1fmcv9p7vv754rwc0p6ud2mgm76vnn0gq0gngrk7rq400vsvhsvs,10966404,61
 DIGI6,Digital Fortress,pool13pt7us94nw782t5v4d89sz8zqn8hcn8r8r7hhph5mvxvvp3c76v,10975385,606,104
 CAMP,CampFireStakePool,pool1qmsck80ldwm23t4t5elxc857r82ph3urkt7tpyq65ntn2dv2ust,11022285,545,92
 CHIL,Chile_Stake_po,pool10eltx2wej46e62ulmwzm35xfu0azu47yvpjper7gwhncqe74vg6,11157898,575,108
-SPS3,StakePool Service No.3,pool1lqucyxuvjktfmpf7fd28j54cfgamyrxed344vnwlm9wqkwjeqwk,11165505,723,101
+SPS3,StakePool Service No.3,pool1lqucyxuvjktfmpf7fd28j54cfgamyrxed344vnwlm9wqkwjeqwk,11165505,724,102
 CTEC,CTEC Stake Pool,pool154hq0j6u6ydz62mtlu7xaj78mhreyp0zsv2kq7f0qmne2fu4t7y,11166321,792,110
 1PCT9,1 Percent Pool #9 (v1),pool1kkfkdces5mdcyc9dn2hgg3463jggjvw3h89nejjarkz25uavaqu,11238378,876,140
 SODM,shiodome47,pool18vj02k4taarxxsdr36jxftcc5x270vsysp078j0n3v0njh0dt9x,11267521,182,69
-STP,StakePools Cardano Pool,pool1ue4ngerz28nkpstsr5p53qvl5ulq3jtmllj4my0d0n28yyrn4l4,11318864,567,111
+STP,StakePools Cardano Pool,pool1ue4ngerz28nkpstsr5p53qvl5ulq3jtmllj4my0d0n28yyrn4l4,11318864,568,112
 ISP,Ikinari Stake Pool,pool1hkpgddlnya3pgktj3sxdraa8x8400vhaphcudvym9ye22esak43,11452961,671,109
 POP,POP,pool19ejln2jcpg5dphc8m5nh8sya49sycsqj0v2cjxw6nku966cc8nu,11495907,701,113
 LQWD,Liqwid,pool16r6g7plyuh4cqs9f3qy97l4rh5edwx3w9xvd205mhj2e58cpp28,11565145,1077,170
 F4ADA,Friends4ADA,pool10efuydxjnasr0309lqklmj9xahupdnzqd59r5dqjeh4twz06tr0,11626437,585,102
-LQWD,Liqwid,pool1gecx8vya3f8lyre2gn9w53547p0rhkmq0x78zrw956lkcvn8uyp,11629203,996,161
+LQWD,Liqwid,pool1gecx8vya3f8lyre2gn9w53547p0rhkmq0x78zrw956lkcvn8uyp,11629203,997,162
 CARDs,Cardanistas StakePool,pool1jt7d6ak3m8gnjyxtuxfswe258xzwda80ndl0a57vv5m2zv8h6at,11708662,646,93
 APEX,Apex Stake Pool,pool12wpfng6cu7dz38yduaul3ngfm44xhv5xmech68m5fwe4wu77udd,11745736,225,62
 ALPS,ALPS - The Alpine Stake Pool,pool1zmfpd5r5vfwjmwm4cgy53exe58h7plnecny3t4948yw7zumzp4c,11881206,891,116
@@ -649,7 +647,7 @@ SWIM,The Swimming Pool,pool1xxhs2zw5xa4g54d5p62j46nlqzwp8jklqvuv2agjlapwjx9qkg9,
 FGMT4,Figment 4,pool1mdzxt5rl2sgnehedgnl0jwk8vumsglequrap26qgg0uwg4cuq52,11979532,522,75
 AHL,AHLNET,pool1qqq6qqa0hpzvumv5p87ynczfmdj557xuwlc3289ke42g72z7f74,12061728,622,102
 NUFI6,Nu.Fi & AdaLite 6,pool1ea568m9q882n0tx5d4vxff2dmz2n7rq5h62hx5ystq625m4tcfu,12184044,644,114
-NUFI2,Nu.Fi & AdaLite 2,pool1ecvcst7k9eul4ggnljh0jw2s5nc2tyfmyzsx3xg3kmmz6ptgfwj,12187490,710,115
+NUFI2,Nu.Fi & AdaLite 2,pool1ecvcst7k9eul4ggnljh0jw2s5nc2tyfmyzsx3xg3kmmz6ptgfwj,12187490,711,116
 ADAGE,ADAGE,pool1swe9nsv8lzugakjkfv04dn38scmq48wzynmn0lxasupuzmqcgjm,12266777,786,106
 ARM1,ArmADA StakePool,pool15txd36fltfgc63qq0yxtpqt88eu76s0yhugn9a6q7f4zspq6k5f,12282914,638,111
 BLOOM,Bloom Four,pool1uyvyxt9k9g038h567x8halej4x87j7m4r4zyz9lhv4dcv83husk,12312816,811,140
@@ -667,26 +665,25 @@ NUFIA,Nu.Fi & AdaLite A,pool1uhy50u9y76nd6z2xmzt3mta0yc7g3gdssef8lheyyg7zzymgzm8
 YYG,YOYOGI POOL,pool1lp9wmr8dkcceta5we999nvlfh9um06cd6sggtt5523eawf7mtg4,12870801,768,127
 BANDA,banderini,pool1fm57fshvdlrgs5pnpk78tnxha0me28equyy96vj0xm85gy5chv0,13070329,850,114
 POWER,POWER Stake Pool 1,pool1uk2f28awascuhrhuwrp7x6y87x8ch33vwx8jtmrysp7l5ngq78j,13139787,769,137
-FUND,Cardanode: 0.00% Fee & 100% Rewards Guaranteed,pool1jufp9k6gmyusvch65ra8yk2s7wu6cx5fsgnltl83p93ejg6h3xg,13203585,755,112
+FUND,Cardanode: 0.00% Fee & 100% Rewards Guaranteed,pool1jufp9k6gmyusvch65ra8yk2s7wu6cx5fsgnltl83p93ejg6h3xg,13203585,756,113
 COSD,Centre for Open Systems Deployment,pool1e98xlcgj80c3rdmm27v5hnvrdtut52e65uk0ema7ctfag596vr2,13281146,725,112
-THOR,THOR - The Viking Pool,pool1grgycym8cf0xmgjjr7gx7udmkpu93hqaygysy5myx6ghx8dvl5r,13498357,763,153
+THOR,THOR - The Viking Pool,pool1grgycym8cf0xmgjjr7gx7udmkpu93hqaygysy5myx6ghx8dvl5r,13498357,764,154
 TERA,⭐ TERA ⭐,pool1wyfau3rlkckr3clr4mkyxn9vdlrkup0fj7uyyflfccmms24gm3a,13509024,868,140
 CSN1,Cardanoscan Pool 1,pool10hex9l4wjgqarvhr94xgyh9frv5lhtajhrj4dah0kl65jtws30k,13544132,775,134
-CEX,CEX.IO Validator,pool18jqumjfevywycjj54m62g74ghds4mmuyqynpwfkaem0xktazlqw,13676013,729,129
+CEX,CEX.IO Validator,pool18jqumjfevywycjj54m62g74ghds4mmuyqynpwfkaem0xktazlqw,13676013,730,130
 PILOT,Pilot Pool 2,pool104gtn3hvp9lz5l6wevhjj98e45s7rfaa4zzvk9pex7nn786qncr,13852890,916,145
 PUDIM,Pudim's pool,pool1ujcu3myfg9wwvdyh2ks653954lamtufy3lefjs73jrr327q53j4,13931413,716,114
 STI2,stakit.io Pool 2 by TOBG,pool147en6w8f9cplnn5x7qt4ese7fpacmmcwuffrtu0yqxpaz4agppr,13962064,858,135
 BITA,BITA,pool1850xvydng5mkjzkwqw6566y7e6hsrgakc3y87jrnqrkrwdjua2p,14029384,763,148
 CASP,Cardaspians,pool10tqeu6d03p6rnalqlvdshmpsljxaq2c0ww6draq6xm8lgyl2a3p,14160340,597,98
 EDEN,Garden Pool Five,pool142xwjhpcvtp7tahpmn8tlnek7smefp9wn66z67j8vjpmjxqdg56,14466619,814,136
-ACL,A CardanoLand pool ACL,pool1pemnlylem2e94xguhd3fytj90848kpv4agvr6rthx2tp58z79ek,14554442,904,127
-Pier2,Pier Two,pool1m4njkh73pdj90xxkgaz9dnh7gffweeupft8nfurlntg6cgqfmy8,14828171,566,80
+ACL,A CardanoLand pool ACL,pool1pemnlylem2e94xguhd3fytj90848kpv4agvr6rthx2tp58z79ek,14554442,905,128
+Pier2,Pier Two,pool1m4njkh73pdj90xxkgaz9dnh7gffweeupft8nfurlntg6cgqfmy8,14828171,567,81
 MANA,MANA,pool1tpy5yawzpetcverves0h6xdycxgrstehfvrkygydt9jcqxwpw3j,14971205,887,120
 WA1,Watashitachi1,pool1whk6lawmfz4zq5fw8zghglp23452gnm9zgs59nqafhpexwcvute,15005671,1087,152
 CRDN3,CARDANIANS.io #4,pool1kmsr376syqkluhxvv8k2axugqw7unjmlkwhfxjxtj7cw7qcn0jn,15295036,870,138
 SARGA,SargatxetPool,pool1aqg6fvhcaulvss2ruvpx6ur9vj7pejvdcxv6xp0qlwuwx94evf0,15430632,924,143
 SKY3,wavepool.digital,pool1xn4kqt45xh3udf87kmtkdfz8xh9qn6trlqsf39eusk23ufmxhgr,15454518,997,62
-AZUR3,AzureADA3,pool1hkklrx9ac7w57d79mnv76rxlgq4acg5ecwhyep7k3zn0u5cz2k9,15586281,1012,153
 PSB,PSILOBLOX,pool17taqml487n9t4r9a6ppvf9qv0qlw2lu4zcrzwfdsfcv6xp7uqym,15604438,895,119
 NUFI1,Nu.Fi & AdaLite 1,pool1caulv7s08g0jnptzdc69qycptacu7fzahny2epzh7sh9vhqz6xz,15697161,866,129
 VAMP,Vampyre Fund,pool1vs689gkmqtrljtmcwd2690nzqm2yyq23wk2zzx5g0v0gs5ug64a,15825376,825,147
@@ -694,11 +691,11 @@ XRAY1,XRAY | Network,pool1rjxdqghfjw5rv6lxg8qhedkechvfgnsqhl8rrzwck9g45n43yql,15
 FGMTJ,Figment 20,pool1dzdglfergm9km74055n6c9xsp8n78ec8ztsklgxg5c5gyrfz9zc,15934973,632,141
 BLOOM,Bloom Five,pool19r8kcmqpajlm6h5q0lv8jye0q7evdur39wfsgs4z98fcqpz9lct,16120519,878,175
 ADI,Cardanesia,pool1pfprlfz0ywcnewjegazz05ghgcfkvu40v6edsz6yn8w362sdjr8,16299584,1487,213
-SPS4,StakePool Service No.4,pool1mqy259k253xryf4hvdq0n72n2uvadcgp34r0fxwpqzm0z5n0qp6,16313285,934,146
-ACL,A CardanoLand pool ACL,pool1hht4pctn70tqdsd0zwuxv8d8cz6l5scjzaquty7vamyzy78eqvc,16539709,946,152
+SPS4,StakePool Service No.4,pool1mqy259k253xryf4hvdq0n72n2uvadcgp34r0fxwpqzm0z5n0qp6,16313285,935,147
+ACL,A CardanoLand pool ACL,pool1hht4pctn70tqdsd0zwuxv8d8cz6l5scjzaquty7vamyzy78eqvc,16539709,947,153
 STSH3,Stake Shark #3,pool13annzt9hjfc822f0ejvxjf7fsmxd6cc28whpk5kagec6ggfmm7u,16543840,916,139
 U0001,U0001,pool1flkcdxj7cq6sfgl4fujx50p20ylqgj02kgwvfj4g5w24s6th8vz,16706318,984,162
-SPS5,StakePool Service No.5,pool1xftlxx9slpz59thcgtwgdj3k9e0ntn3p4qnmzs3r84dkx0hccjc,17051362,1263,192
+SPS5,StakePool Service No.5,pool1xftlxx9slpz59thcgtwgdj3k9e0ntn3p4qnmzs3r84dkx0hccjc,17051362,1264,193
 ZZZ5,ZZZ5,pool1jx4ss2zjage3cw0wht3450328y82yeprmq4fr3e2qtac2rhezkv,17410581,1105,170
 CERO,Cero Stake Pool,pool1lskcfz80qg2kr2p6776kl9emjn8ulkqsqse7um7skz4y2lwa0cu,17521328,1038,159
 TOIRO,TOIRO Pool,pool130c3kgpkjctag540j7sxqfrlhsmpc6d8u0n7j6crm9ayy75mkpt,17571426,956,165
@@ -706,17 +703,16 @@ BURN,BURN Pool,pool1r0sxz0hygfc0266lhdclve6j3cwcwlth6dya6uey65yxjnwm7qc,17591949
 NEDS2,NEDSCAVE.IO,pool1cn0dqtplwf67fds40hgkf0u5rm4q4azev5qutmgkw5hdyvue2ue,17811426,1233,172
 RANMA,RANMA Pool,pool1qvkdjemewy8phhrkdhscjcnh3947f5ae42rdfjkv6gkgkjtlfsg,18220383,1006,157
 MORH,MORH,pool1slwxj0t3575lx0rfw2x3z7dqf26jpls566pdwydvlk0jgw96lre,18287978,1004,175
-AZUR2,AzureADA2,pool1m4enp55hp80tf6xl7k6f6593wnyu3pr83xfvef9x3ktdw9m0em5,18641504,1138,182
 MIMIC,MIMICPool,pool1w4g7j8u97pvu2q7gsdaupnng0a2vmyllygfewhc29m2j5cehysn,18862148,1017,166
-RSNG,Infinity Rising 1,pool1mkjtce8r8yeku0mmc9vpwl0scuwuwc8lz89ckpj3k0kwgvlunv5,19002297,675,227
-MUEN2,MUEN2 CharityPrivatePool,pool1l6vtae673eltsx86sk4xxr3fnn9tk8e99jkrdvcmjqlc6cca4nk,19082993,962,174
+RSNG,Infinity Rising 1,pool1mkjtce8r8yeku0mmc9vpwl0scuwuwc8lz89ckpj3k0kwgvlunv5,19002297,676,228
+MUEN2,MUEN2 CharityPrivatePool,pool1l6vtae673eltsx86sk4xxr3fnn9tk8e99jkrdvcmjqlc6cca4nk,19082993,963,175
 STSH1,Stake Shark #1,pool15wkxegrfflzcyhurrjxsm9ljqtz09xr5rtnqsarnp7hmsz5um3t,19109241,921,168
 NUFI5,Nu.Fi & AdaLite 5,pool1jdhjfcu34lq88rypdtslzwyf27uh0h3apcr9mjd68zhc69r29fy,19417995,1054,196
 KTOP,KTOP_ADA SPO and WMT ENO,pool135h773klt7djljmyawkh88e8qc457wxqfhc6j9h6y9n4y3sgh7t,19497796,990,158
-COOL,COOL,pool1vxvdypctdecvc2j7xu9y8h2fdxvkpjy2pp8luwg2h6dx5jlv0nk,19596751,967,173
-FGMT7,Figment 7,pool1u8f87frd3k6cy9lp4uk5faj53wfzh8smxjdpt8ua45f0x8s5v58,19647203,788,178
+COOL,COOL,pool1vxvdypctdecvc2j7xu9y8h2fdxvkpjy2pp8luwg2h6dx5jlv0nk,19596751,968,174
+FGMT7,Figment 7,pool1u8f87frd3k6cy9lp4uk5faj53wfzh8smxjdpt8ua45f0x8s5v58,19647203,790,180
 SPS2,StakePool Service No.2,pool10quq4wlghwrvmhdzc7geq22pyhzegccwj56ax2g8hx0cjfahufs,19687006,1680,239
-JAZZ2,JAZZ2,pool1gwnu7f7qgaruxph8gn3u28qphvquvnj63elyd3r0nndacj9g9pa,19957550,1147,148
+JAZZ2,JAZZ2,pool1gwnu7f7qgaruxph8gn3u28qphvquvnj63elyd3r0nndacj9g9pa,19957550,1148,149
 ASPEN,Aspen Pool by Woodland Pools,pool1qku2yhky7sv4dfjfv42uyvauhehuqevk25aw952d7ulzqzx3jcu,19993669,974,194
 AUTO,AutoStake II,pool1ljywsch33t7gaf02aeeqkqpuku0ngpwl9fm04t7u5sl5xyunmgp,20137541,1119,202
 POP2,POP2,pool1etfar35l4tf6vam3gvqf5dnaq7levz32vgw4p00jzk7q7twg2te,20173597,1118,167
@@ -724,99 +720,99 @@ BSP,The Brothership Pool,pool13846y7q7tng3endxhet9qdcz5w0fjs09ytcye4dm5g54wmyqeq
 SPIR2,Spire Staking | 🏆 Top 10 Operator,pool1yj9xduuwzvdkcwm2mc9x893zq684x7pyah4ja8zmzplgvxz6wgk,20799656,822,169
 MS9,Moonstake 9,pool1s04pdfl3sv5gzuc80322rc4ne0xs7gekux7gtckvvwt7qutjy6w,20887372,1002,147
 QQQ,QQQ,pool12udshcl3ycj4qpxes28n0ugsye23h89rj8z2a5ast4482m08xe7,20932951,1293,175
-WBFL,Well-being Financial Lounge,pool1lu0gwsvugl2cgx6gzk9zqdjwutd5szp293wpvwj4fvq4jleg8ww,21051179,1135,200
+WBFL,Well-being Financial Lounge,pool1lu0gwsvugl2cgx6gzk9zqdjwutd5szp293wpvwj4fvq4jleg8ww,21051179,1136,201
 DIGI3,Digital Fortress,pool1ppznyu6qrvlw9uuqa3tslryjd40nh56jyvmaqw6kdf4kzq3y8kh,21335599,1331,181
 ANGEL,ANGEL stake pool,pool1qqqyv9pn9typyqwcxqk5ewpxy5p27g5j2ms58hpp2c2kuzs5z77,21663568,1358,226
 KAIZN,Kaizen Crypto Stake Pool,pool1jeu74g86ys4fekhykqcww99kdsq3nlym8a6kfw8s8ff3vskad70,21826990,1233,209
 BCSH,Blue Cheese Stakehouse,pool1qzlw7z5mutmd39ldyjnp8n650weqe55z5p8dl3fagac3ge0nx8l,22167026,1092,193
 OYSTR,Oyster Pool | Midnight | Mithril | Rosen Bridge,pool1l6aeyn35nkqkn9lqqlwqnpraakdzuukjrqprcrj3sctk6hhe32k,22233003,1350,210
-4ADA,Staking4ADA.org,pool15ccmgcc4k9t8auxw9v4dfjmrl2kqnuevawn8z6n7xv09utw9hh3,22293005,1377,216
+4ADA,Staking4ADA.org,pool15ccmgcc4k9t8auxw9v4dfjmrl2kqnuevawn8z6n7xv09utw9hh3,22293005,1378,217
 BIRD,Early Bird Pool,pool1fs2m5rmlx66crcwwrrsf2pcxjhvk7kzdurcqusd3v5gm65cufnj,22408974,1047,221
 TERA3,⭐ TERA3 ⭐,pool149d5lzg7m6susau4f4yfdztgkty34qrcdpvd3ygsetmljgxxf8g,22457775,1120,218
 ADV4,ADAvault Stake Pool 4,pool19k9grwq9cdswn4k7vxzmwcls24jj3466g4s4xr5vucehcqpslfy,22576501,2063,234
-STAKE,🌍 PLANETSTAKE 1,pool1qqvukkkfr3ux4qylfkrky23f6trl2l6xjluv36z90ax7gfa8yxt,22628905,1222,188
+STAKE,🌍 PLANETSTAKE 1,pool1qqvukkkfr3ux4qylfkrky23f6trl2l6xjluv36z90ax7gfa8yxt,22628905,1223,189
 HYPER,Hyperlink Pool,pool1yc6f3cqsc7jfh07hcns64v5cp8720mve870pgxf2wkr3u8l7tse,22686877,1542,251
 BASHO,BASHO,pool1asfgkqtmjuusclgx72xpzvpw336gkulchtstsx9lsj9uqzjckv0,22946337,1295,221
 NUFI9,Nu.Fi & AdaLite 9,pool1fqwnqk3phwa2s5thgym8dw34pv0z67m526uqprnjh93cvzxymef,23122746,1290,218
-ZZZ3,ZZZ3,pool1smy2r8jdvgna5ykhe8rrch7h4qalyfafyzyh0rmanmq0jxptww7,23293690,1240,216
+ZZZ3,ZZZ3,pool1smy2r8jdvgna5ykhe8rrch7h4qalyfafyzyh0rmanmq0jxptww7,23293690,1241,217
 JAZZ,JAZZ,pool1h0524mtazrjnzqh5e4u060jsfk8lpsqqjfpa5gygjwuhqu34wvt,23704987,1180,162
-WEP,world economic pool,pool189vq6ay0gku9tkqc2t3nfjk3n88mm23grmfas852jruw6fjlkaf,23725972,1130,250
+WEP,world economic pool,pool189vq6ay0gku9tkqc2t3nfjk3n88mm23grmfas852jruw6fjlkaf,23725972,1131,251
 JAZZ3,JAZZ3,pool1hsq2jrulgj97tna2femdhsfn2wurkkwt8uk9uvs42h9zs0a783p,23782589,1215,226
 ALFA,Alfa Pool,pool18qddv82sx8p22uxzdrf0qx9lkewxadlr9ef45kpcf7dzz3n56qv,23802867,1085,224
 RIZIN,RIZIN,pool1pjmqlsyny06w0x60rfd3seul5xc9pluh3t08y55ylhks28jeh7c,23897321,1297,195
 NUFIB,Nu.Fi & AdaLite B,pool104avq7309gjm0fxms69yqusxy8zf888k4mamngg5vnc6vculpzq,24378427,1356,236
 MS5,Moonstake 5,pool19lz8nyz0jjpdrdtnjaar4untk4th23gpg5s7aegn7480zff4vgq,24430580,1664,277
-VIPER,🐍Viper Stake Pool #2,pool1qvvn2l690zm3v2p0f3vd66ly6cfs2wjqx34zpqcx5pwsx3eprtp,24459255,1131,204
-CRFA,Cardano Fans,pool1d3gckjrphwytzw2uavgkxskwe08msumzsfj4lxnpcnpks3zjml3,24680983,1306,242
+VIPER,🐍Viper Stake Pool #2,pool1qvvn2l690zm3v2p0f3vd66ly6cfs2wjqx34zpqcx5pwsx3eprtp,24459255,1132,205
+CRFA,Cardano Fans,pool1d3gckjrphwytzw2uavgkxskwe08msumzsfj4lxnpcnpks3zjml3,24680983,1308,244
 NKR,NKR ADA POOL,pool10ya6hxrssmyhl560gqyalhqxudkgfjdlc0e4krww6wweyaeajs8,24703420,1662,211
 CCJ2,CCJ2,pool13pclvkwxee4znt7qc55k8ny89zvdkvfrt04dtd99zjm5vs2tws5,24818998,1466,219
 PRIDE,Stake with Pride - Hosky ISPO,pool1j099ctc7kcc9fa78dz5qwsy2g0n96lrgletwxvxmyzh4zd7ck0j,24851142,1495,227
 SIPO3,SITION POOL3,pool1p5ja48uqc7pjnuqvwu7cgmspvx938qpnf4zqm0x2k0ngkh4lkjx,24866558,1570,255
-XSP,X-StakePool,pool10zyf32q3w3n9x940j6yqgkwuegzn77p94wcmpku6gvmrqw8a97d,25105053,1411,217
-BCSH0,Blue Cheese Stakehouse,pool1qzlwlpcsgflr9z3f24fg836tyq45p0kf5cnrp20s8v0psp6tdkx,25285576,1174,210
+XSP,X-StakePool,pool10zyf32q3w3n9x940j6yqgkwuegzn77p94wcmpku6gvmrqw8a97d,25105053,1412,218
+BCSH0,Blue Cheese Stakehouse,pool1qzlwlpcsgflr9z3f24fg836tyq45p0kf5cnrp20s8v0psp6tdkx,25285576,1175,211
 HISAI,Hisa~i🌺Okinawa,pool1lfnlxfxxwvjadesxzm4c7grgs3elj70vfdnpjwjmg0ufsqnq52t,25298610,1397,216
-WORLD,Cardano World,pool107rsdzswa5s3y8wk5z62tgh5lhm790dsyqjp4lq66fht7qnaq9d,25302143,957,220
-NAP,NAP-Nekota ADA Pool,pool126mkma8nv5axltmz7mmg8qz9e70nmhnf58hwx5772fhwgkhk6ag,25311355,1050,187
+WORLD,Cardano World,pool107rsdzswa5s3y8wk5z62tgh5lhm790dsyqjp4lq66fht7qnaq9d,25302143,958,221
+NAP,NAP-Nekota ADA Pool,pool126mkma8nv5axltmz7mmg8qz9e70nmhnf58hwx5772fhwgkhk6ag,25311355,1051,188
 SIPO2,SITION POOL2,pool18rhzlrv83a7ygj7cp5uv8dx07qkn5drhe8nh6f3qvhv66xcyj2m,25378746,1739,274
 NUFI7,Nu.Fi & AdaLite 7,pool16hs0jxw7h6pwg3ru7rcq3yvg4csj7lhmcpj68kqem2sh5nt8mwk,25406795,1402,220
 SAKE,SAKE🍶,pool1xlfty06hg6q23qvcaxwv3p9ke7ff9n34qpr8tpxt2zflyq20ceh,25692338,1863,278
-BLC3,BigLazyCat3,pool139gdv4lxw53enk4rms0ryr4ey07k56jufmfrclqqehjdzglheu6,26015652,722,199
+BLC3,BigLazyCat3,pool139gdv4lxw53enk4rms0ryr4ey07k56jufmfrclqqehjdzglheu6,26015652,723,200
 NUFI,Nu.Fi & AdaLite,pool1qnrqc7zpwye2r9wtkayh2dryvfqs7unp99f2039duljrsaffq5c,26406161,1598,266
 CTAX,COINTAX,pool1xlra52x2es7dmsvpmcp2922h89h346awe7yuu664e50yvrzaaqe,26512926,1470,250
 COSMC,Cosmic Asset Stake Pool,pool1c3ecg6h4m73a2mftmdm9mz3gxklxmnzuwzl9e38lzd4y26qcm8a,26548731,1465,251
-NEDS4,NEDSCAVE.IO,pool1vdh6kxcqt9mxavyv80ggnec6jjwms44ms30rhle3lt266aj8jgh,26812073,1390,206
+NEDS4,NEDSCAVE.IO,pool1vdh6kxcqt9mxavyv80ggnec6jjwms44ms30rhle3lt266aj8jgh,26812073,1391,207
 EDEN,Garden Pool Three,pool1c7jrfce3zxkk9s9enzpvwj8fuayvx3pdzc2k2es6mrw6gsfcjep,27050141,1542,255
 FORTE,The independent,pool1gqgyta9sku3crjzfl9kj7kxsgfkt98y98yeu09kx22zscrezuj7,27154390,1549,218
-RANKT,RANKT,pool1zdtqtsu3l3ytatzyvrq48d4mpnll9c5evwfq6taxkmn9vvdz839,27684666,862,187
-RED,CrimsonPool,pool1mn6relcs7dn2fqzfq5yjlwxa49d900p5sdpw62jlx45k2djgwe4,27709351,1218,239
-CAFE2,CardanoCafe Two,pool1ufp38a9zwlvvrzcyxaxdrvav50nd7az5lyuzh4t0h3qp2gqamsx,27807393,820,252
+RANKT,RANKT,pool1zdtqtsu3l3ytatzyvrq48d4mpnll9c5evwfq6taxkmn9vvdz839,27684666,864,189
+RED,CrimsonPool,pool1mn6relcs7dn2fqzfq5yjlwxa49d900p5sdpw62jlx45k2djgwe4,27709351,1219,240
+CAFE2,CardanoCafe Two,pool1ufp38a9zwlvvrzcyxaxdrvav50nd7az5lyuzh4t0h3qp2gqamsx,27807393,821,253
 LOVE,StakeLove,pool1jhzf2mm6zdlhl6w89uhgx8nq8p6ykcc86qq58vjy0ejyxrrksfj,27990110,1220,257
 DINO,Cardino Stake Pool,pool1rvjj8cp3urh7de07pm0ceqha2x4lxws69lhd4429dm6djfjsy4l,28209860,1484,237
-BERRY,Berry,pool19f6guwy97mmnxg9dz65rxyj8hq07qxud886hamyu4fgfz7dj9gl,28293982,1714,287
-OCEAN,ADA Ocean,pool1a2nh3ktswllhwf07fjahpdg5mpqyq7j950pyftq9765r6t4cefl,28541565,2000,319
+BERRY,Berry,pool19f6guwy97mmnxg9dz65rxyj8hq07qxud886hamyu4fgfz7dj9gl,28293982,1715,288
+OCEAN,ADA Ocean,pool1a2nh3ktswllhwf07fjahpdg5mpqyq7j950pyftq9765r6t4cefl,28541565,2001,320
 SUNNY,Sunshine Stake Pool,pool195gdnmj6smzuakm4etxsxw3fgh8asqc4awtcskpyfnkpcvh2v8t,28645869,1891,250
-SASA2,SASA Stake Pool2,pool153sc4fct34a680nyfj4084w8dpax6c0zt0js8zqvg3sj7wtk486,28794646,1231,234
+SASA2,SASA Stake Pool2,pool153sc4fct34a680nyfj4084w8dpax6c0zt0js8zqvg3sj7wtk486,28794646,1233,236
 ELITE,01  ▫  Elite Stake Pool,pool1qwa8x4u4a2pff0xdv0haxpgk3tyrvl5adl2lpf3ztcftqruhea0,28855895,1443,269
 DIGI4,Digital Fortress,pool1jz5ljsnj4fzmk84j0wcw9ldy866dn07nzqg2ktyuyjvfvr3jgtq,29006839,1718,290
 HRMS,Hermes Stakepool Germany #1,pool16fyda57p3c8gp5r6gmcq5tvqsp6mnzwvkxswgznkuh8wztrp6vv,29278576,2104,256
-SMAUG,竜SM₳UG,pool14wk2m2af7y4gk5uzlsmsunn7d9ppldvcxxa5an9r5ywek8330fg,29656131,1797,297
+SMAUG,竜SM₳UG,pool14wk2m2af7y4gk5uzlsmsunn7d9ppldvcxxa5an9r5ywek8330fg,29656131,1798,298
 MIN,Minswap,pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk,29779413,2067,285
-COFFE,CoffeePool☕️,pool1r55hyfrd3tw6nzpkvf4rfceh2f04yph92fc462phnd0akp2s5r6,29918471,1635,236
+COFFE,CoffeePool☕️,pool1r55hyfrd3tw6nzpkvf4rfceh2f04yph92fc462phnd0akp2s5r6,29918471,1637,238
 MOMO,MOMO ADA POOL,pool1cmdq8atcy8x7lfhh09vdumveuh0ywsx0269ur774nvzkyhma37d,30231092,1818,309
-KTN3,KTN3,pool1pvu2zdexh8wr4ggmuz90jvqrua6an43qj9m9urs785p8kwjzqwl,30310120,1887,284
+KTN3,KTN3,pool1pvu2zdexh8wr4ggmuz90jvqrua6an43qj9m9urs785p8kwjzqwl,30310120,1888,285
 ZZZ,ZZZ,pool1vxz0deezj5c2950e7arpzfqxzq8zd9kawsullrzjw5rsq0yhxgr,30740194,1684,291
 CRDN1,CARDANIANS.io #2,pool1ukeqarukv9gxwy9pt8jkr4qvad2yf87758g3xzemmvmtk8lrynp,31081983,2009,299
-BLOOM,Bloom,pool12vs4c3cm0tr49c7alrevfs0xa5g3s4al4fn46h33e69uusat04v,31152565,1949,301
-DAPP,Dapp Central Stake Pool,pool1qakys0fxx5p2fxcnsc2tyjpqa88q7qgtdh5t3a32hplv6fg25r9,31423089,2278,321
+BLOOM,Bloom,pool12vs4c3cm0tr49c7alrevfs0xa5g3s4al4fn46h33e69uusat04v,31152565,1950,302
 ZZZ2,ZZZ2,pool14mm59ntjqzphjr6chrww639cdr3yjce4qcwzc5jkk38y22u7uc6,31621869,1924,328
-KIWI,KIWI by 🥝Kiwipool Staking,pool1vquhv3kh6xkklckaenl8alyuhfsld57ef5573aqauueyqacx4ak,31665180,1778,299
-EVE3,Everstake,pool1xmsdhync6k6grkkj7tuycskjpseykpr24luhlazl5nsngsy87gm,31914484,1861,290
+KIWI,KIWI by 🥝Kiwipool Staking,pool1vquhv3kh6xkklckaenl8alyuhfsld57ef5573aqauueyqacx4ak,31665180,1780,301
+OCEA4,ADA Ocean Four,pool1ell3xjtspzzz4vtsatscan6rheltf7j3hh2s8qsam2h3jvcxzm9,31901570,2327,282
+EVE3,Everstake,pool1xmsdhync6k6grkkj7tuycskjpseykpr24luhlazl5nsngsy87gm,31914484,1863,292
 1PCT7,1 Percent Pool #7 (v1),pool1w8ham64lthvzzxzn5hknq4yrj8xt2nark409s2xmntlwvt4ag3r,32348198,1723,298
 0AAAA,AAAA pool,pool193uec04jldvah7r52q86wl033g4v42x0aste8jfg9999qepaxfp,32407577,2509,413
-STI,stakit.io Pool by TOBG,pool1nudasuv0lljpe0tswcverqvlh0v4226vgnpsuxn0e9nkvnvcvne,32456169,1902,323
+STI,stakit.io Pool by TOBG,pool1nudasuv0lljpe0tswcverqvlh0v4226vgnpsuxn0e9nkvnvcvne,32456169,1903,324
 qzsbu,qzsbu,pool13h08lf24fjmxxg0mmuattjv8dvy0r6fc4hrqg4qmj38xsweexrv,32492415,1736,271
-COOL2,COOL2,pool1myvgx4ef424e6nw2strqq7dxcepav52plyyhxrk0avaw7y098l2,32529011,2425,328
+COOL2,COOL2,pool1myvgx4ef424e6nw2strqq7dxcepav52plyyhxrk0avaw7y098l2,32529011,2426,329
 HODLR,Midnight ▫ 0% fee,pool1eaeynp2hs06v4x8q65jfm2xqcd3dc80rv220gmxvwg8m5sd6e7a,32599526,1197,243
-OCEA2,ADA Ocean Two,pool1ctzja2cdwyeqnvehmrlclc5wrn9w9acwklk3acn73jrx56d66vs,32600439,2034,316
-A4G,ADA4Good ❤️ ADA + Save the Children ❤️,pool1ewrm7y47s9hv6hxku9n5gfnsuspymp0qqpwgvgm9rvm37cek2h6,33200782,1851,300
+OCEA2,ADA Ocean Two,pool1ctzja2cdwyeqnvehmrlclc5wrn9w9acwklk3acn73jrx56d66vs,32600439,2037,319
+A4G,ADA4Good ❤️ ADA + Save the Children ❤️,pool1ewrm7y47s9hv6hxku9n5gfnsuspymp0qqpwgvgm9rvm37cek2h6,33200782,1852,301
 XSP2,X-StakePool2,pool14fjmlppz76667ws3jl5luejf2wgztuhpsftulvh3ucc65anqgve,33531929,2122,335
-FGMTO,Figment 25,pool1umukx8qjyjuatw0zznvhc7ma06wl6pdc2ly50d7uv3svkkefjml,33938034,438,318
+FGMTO,Figment 25,pool1umukx8qjyjuatw0zznvhc7ma06wl6pdc2ly50d7uv3svkkefjml,33938034,440,320
 ESTK,Everstake,pool1jst7rrhucnp93hepezv5yqy6fx982xs2v0udwfc5ea6my3kfak7,34136278,1808,319
 FGMT9,Figment 9,pool159s558a4ffhp9nqjp9dx048lphdlxjc8xmy5pcmfe4jhuxe4a2u,34447503,1700,325
-EDEN,Garden Pool,pool16kus5xvdysgmtjp0hhlwt72tsm0yn2zcn0a8wg9emc6c75lxvmc,34698423,1743,309
-DIGI2,Digital Fortress,pool1lvsa8e0dw6z8g2fkw7prnfa7627wuy5jjexaadck6w5sxw5xkvm,34944901,1860,297
+EDEN,Garden Pool,pool16kus5xvdysgmtjp0hhlwt72tsm0yn2zcn0a8wg9emc6c75lxvmc,34698423,1744,310
+DIGI2,Digital Fortress,pool1lvsa8e0dw6z8g2fkw7prnfa7627wuy5jjexaadck6w5sxw5xkvm,34944901,1862,299
 GCD,Gleaming Cyan Davinci,pool18gsrasdghtjsnzlf20pht85l4epwag74w9pfx5qvdvcpxw68sl6,35006253,1817,276
 FCS,Futuristic Cadet Swartz,pool1hyqdlnuff3rnvg9lx70ccca2xqxcezzz4998tp6chhxnx2st257,35009761,1885,315
 CVM,Curly Viridian Moore,pool19zz6frugmvm82ecgl5hh5vq3093d4kzr4h2r5vfmt6la7trk929,35012136,1903,342
 N/A,n/a,pool1fxra32qureulvqrhrdpnrl5yechhqreg2khrghv3tkl4z66t0rm,35015664,1921,314
 TIA,Thoughtful Iris Albattani,pool15kek228mhvnsncdjn77u8qtrn8hjh5wfzmh6g942xf0353yc77j,35020442,1953,357
 FGMTD,Figment 13,pool1da9msyhpfmt58vrdkk7lpzgwldvc0t7q46kvpcyvvpff7347lsp,35159921,598,271
-ZETE,Zetetic,pool15zrkyr0f80hxlt4scv72tej8l8zwrcphmrega9wutqchjekceal,35576131,1978,340
+ZETE,Zetetic,pool15zrkyr0f80hxlt4scv72tej8l8zwrcphmrega9wutqchjekceal,35576131,1980,342
 BTCS,BitcoinSuisse01,pool1m06dl8dfcy6d0475fanf0mtnnp2tzhw8rarums042q3jux23q0j,35803495,1514,353
 JP2,JAPAN2,pool1k0xrqp03mn9u3q3sadndd6vu9udl5v38xpzyw0shm8sskuxw2av,35973502,1935,323
-NUFIE,Nu.Fi & AdaLite E,pool1f8erepj5w5nth5xfxgxnwpz59jzywt6zdwfr50jzjwfwksmg9ek,36767856,2008,329
-BLOOM,Bloom Six,pool13crd2ljx87988umk22er6ynwadfwdqupdpcq6prc6v59z62kxse,36882407,2122,332
+NUFIE,Nu.Fi & AdaLite E,pool1f8erepj5w5nth5xfxgxnwpz59jzywt6zdwfr50jzjwfwksmg9ek,36767856,2009,330
+BLOOM,Bloom Six,pool13crd2ljx87988umk22er6ynwadfwdqupdpcq6prc6v59z62kxse,36882407,2123,333
 ECO,ECO Pool,pool1wt0pf4u2xktp0f7apveu242w6nkm4ltk3m8g039lvuhwq4zdtf3,37277937,2470,360
 ADAST,AdaStrong,pool1uthdnav2zc2hxpg2hyeyy545lnxtl8lqdcdqxjm0j8t5srmyvzj,37950821,1926,318
-CLIO1,CLIO1,pool1c89d4drtwn0048mekkdkzllz559ahnntxelyw2mppxnmc36hjlx,38546576,1837,378
+CLIO1,CLIO1,pool1c89d4drtwn0048mekkdkzllz559ahnntxelyw2mppxnmc36hjlx,38546576,1838,379
 MOKSH,Moksh Stake Pool,pool1v5u6wzakuc25q3zpx04t8gjz3rgu60wuxkv2mh5nga23xjkc86s,38722761,1976,237
