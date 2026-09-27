@@ -59,37 +59,40 @@
         const frag = document.createDocumentFragment();
         for (const p of shown) {
             const tr = document.createElement('tr');
-            const tick = document.createElement('td');
-            const b = document.createElement('button');
-            b.type = 'button';
-            b.className = 'pools-ticker';
-            b.textContent = p.ticker;
-            b.title = p.pool_id;
-            b.addEventListener('click', () => {
-                if (!navigator.clipboard) return;
-                navigator.clipboard.writeText(p.pool_id).then(() => {
-                    b.textContent = 'copied';
-                    setTimeout(() => { b.textContent = p.ticker; }, 1200);
-                });
-            });
-            tick.appendChild(b);
-            tr.appendChild(tick);
-            const nameTd = document.createElement('td');
-            const link = document.createElement('a');
-            link.href = 'https://cardanoscan.io/pool/' + encodeURIComponent(p.pool_id);
-            link.target = '_blank';
-            link.rel = 'noopener noreferrer';
-            link.className = 'pools-link';
-            link.textContent = p.name;
-            link.title = 'Open ' + p.ticker + ' on Cardanoscan (new window)';
-            nameTd.appendChild(link);
-            tr.appendChild(nameTd);
+            const scan = 'https://cardanoscan.io/pool/' + encodeURIComponent(p.pool_id);
+            for (const [text, cls] of [[p.ticker, 'pools-ticker'], [p.name, 'pools-link']]) {
+                const td = document.createElement('td');
+                const a = document.createElement('a');
+                a.href = scan;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                a.className = cls;
+                a.textContent = text;
+                a.title = 'Open ' + p.ticker + ' on Cardanoscan (new window)';
+                td.appendChild(a);
+                tr.appendChild(td);
+            }
             for (const [v, cls] of [[fmt(p.stake_ada), 'num'], [fmt(p.blocks_2026), 'num'], [fmt(p.blocks_last_10_epochs), 'num']]) {
                 const td = document.createElement('td');
                 td.textContent = v;
                 if (cls) td.className = cls;
                 tr.appendChild(td);
             }
+            const copyTd = document.createElement('td');
+            const copy = document.createElement('button');
+            copy.type = 'button';
+            copy.className = 'pools-copy';
+            copy.textContent = 'Copy ID';
+            copy.title = p.pool_id;
+            copy.addEventListener('click', () => {
+                if (!navigator.clipboard) return;
+                navigator.clipboard.writeText(p.pool_id).then(() => {
+                    copy.textContent = 'Copied';
+                    setTimeout(() => { copy.textContent = 'Copy ID'; }, 1200);
+                });
+            });
+            copyTd.appendChild(copy);
+            tr.appendChild(copyTd);
             frag.appendChild(tr);
         }
         rowsEl.replaceChildren(frag);
@@ -115,6 +118,7 @@
     modal.querySelectorAll('.pools-table th').forEach(th => {
         th.addEventListener('click', () => {
             const k = th.dataset.key;
+            if (!k) return;
             sortDesc = sortKey === k ? !sortDesc : false;
             sortKey = k;
             render();
