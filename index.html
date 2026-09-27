@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="votes.css">
+    <link rel="stylesheet" href="pools.css">
 </head>
 <body>
     <div class="top-banner">
@@ -35,7 +36,7 @@
                 <button id="delegateBtn" class="delegate-btn" aria-haspopup="dialog" aria-controls="delegateModal" aria-label="How to delegate to BKIND">Delegate</button>
                 <button id="votesBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="votesModal" aria-label="View BKIND governance votes">Votes</button>
                 <a id="toolsBtn" class="tools-btn" href="https://github.com/GS1973/Cardano-Tools" target="_blank" rel="noopener noreferrer" aria-label="Cardano Tools on GitHub (opens in a new tab)">Tools</a>
-                <a id="poolsBtn" class="tools-btn" href="pools.html" aria-label="Live pools under the saturation point">Pools</a>
+                <button id="poolsBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="poolsModal" aria-label="Live pools under the saturation point">Pools</button>
                 <button id="aboutBtn" class="about-btn" aria-haspopup="dialog" aria-controls="aboutModal" aria-label="About Smit Blockchain Operations">About</button>
                 <button id="contactBtn" class="contact-btn" aria-haspopup="dialog" aria-controls="contactModal" aria-label="Contact Smit Blockchain Operations">Contact</button>
             </div>
@@ -82,6 +83,50 @@
         </div>
     </div>
 
+    <div id="poolsModal" class="modal-overlay" hidden>
+        <div class="modal modal-votes modal-pools" role="dialog" aria-modal="true" aria-labelledby="poolsTitle">
+            <div class="votes-header">
+                <h2 id="poolsTitle" class="modal-title">Live Pools under the Saturation Point</h2>
+                <button id="poolsClose" class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="pools-body">
+                <p>If <code>k</code> (the protocol parameter <code>stakePoolTargetNum</code>) goes from 500 to 1000, a stake pool saturates at <strong id="poolsSaturation">about 38.9 million</strong> ADA. Above that point the rewards per ADA go down. The pools below are alive and have less stake than that.</p>
+                <p>We are strongly in favour of decentralization. That is why we support raising <code>k</code> to 1000, and why this list starts from the saturation point at <code>k</code> = 1000. The pools that need more delegation the most are at the top: the list starts with the smallest pools.</p>
+                <p class="pools-meta" id="poolsMeta">Loading the list…</p>
+                <h3>How the list is made</h3>
+                <p>Every day, from the Cardano chain, a pool is listed when it:</p>
+                <ul class="pools-rules">
+                <li>has stake in the current epoch and is not retired;</li>
+                <li>has a name and a ticker in its registered metadata;</li>
+                <li>made at least one block since 1 January 2026, so a pool that lost stake but still runs is not left out;</li>
+                <li>answers on at least one of its registered relays;</li>
+                <li>has less stake than the saturation point at <code>k</code> = 1000: the ADA outside the reserves, divided by 1000.</li>
+            </ul>
+                <p>A relay that does not answer from here is not proof that a pool is down: some pools only accept known peers. Still, a pool whose relays do not answer is not on this list: keeping its relays reachable is the responsibility of the pool operator. The list is made by Smit Blockchain Operations, operator of pool BKIND, which is on it by the same rules as every other pool.</p>
+                <h3>The pools</h3>
+                <div class="pools-tools">
+                    <input type="search" id="poolsFilter" placeholder="Search ticker or name" aria-label="Search ticker or name">
+                    <a href="pools.csv" class="pools-csv" download>Download CSV</a>
+                </div>
+                <div class="pools-scroll">
+                    <table class="pools-table">
+                        <thead>
+                            <tr>
+                                <th data-key="ticker">Ticker</th>
+                                <th data-key="name">Name</th>
+                                <th data-key="stake_ada" class="num">Stake (ADA)</th>
+                                <th data-key="blocks_2026" class="num">Blocks 2026</th>
+                                <th data-key="blocks_last_10_epochs" class="num">Blocks, last 10 epochs</th>
+                            </tr>
+                        </thead>
+                        <tbody id="poolsRows"></tbody>
+                    </table>
+                </div>
+                <p class="pools-note">Click a heading to sort. Click a ticker to copy the pool ID.</p>
+            </div>
+        </div>
+    </div>
+
     <div id="aboutModal" class="modal-overlay" hidden>
         <div class="modal modal-about" role="dialog" aria-modal="true" aria-labelledby="aboutTitle" aria-describedby="aboutBody">
             <div class="about-header">
@@ -111,5 +156,6 @@
 
     <script type="module" src="app.js"></script>
     <script type="module" src="votes.js"></script>
+    <script type="module" src="pools.js"></script>
 </body>
 </html>

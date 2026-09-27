@@ -41,7 +41,6 @@ jobs:
           cp app.js _site/
           cp votes.js _site/
           cp votes.json _site/
-          cp pools.html _site/
           cp pools.js _site/
           cp pools.css _site/
           if [ -f pools.json ]; then cp pools.json _site/; fi
