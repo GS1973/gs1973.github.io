@@ -70,6 +70,15 @@
                 a.textContent = text;
                 a.title = 'Open ' + p.ticker + ' on Cardanoscan (new window)';
                 td.appendChild(a);
+                // A pool that announced its retirement stays listed until it
+                // takes effect, with the epoch in which it retires.
+                if (cls === 'pools-link' && p.retiring_epoch) {
+                    const tag = document.createElement('span');
+                    tag.className = 'pools-retiring';
+                    tag.textContent = 'retiring in epoch ' + p.retiring_epoch;
+                    tag.title = p.ticker + ' has announced its retirement; it stops at the start of epoch ' + p.retiring_epoch + '.';
+                    td.appendChild(tag);
+                }
                 tr.appendChild(td);
             }
             // The label shows on a phone, where each pool is a card (pools.css).
