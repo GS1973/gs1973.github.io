@@ -120,7 +120,7 @@
         rowsEl.replaceChildren(frag);
     }
 
-    function fill(f, options) {
+    function fill(f) {
         const set = (key, text) => modal.querySelectorAll('[data-fig="' + key + '"]').forEach(e => { e.textContent = text; });
         set('circulating', big(f.circulating_ada));
         set('voting', big(f.voting_ada));
@@ -138,8 +138,6 @@
         set('rationale_pct', pct(f.votes_with_rationale, f.votes));
         set('never_rationale', fmt(f.dreps_never_rationale));
         set('never_rationale_pct', pct(f.dreps_never_rationale_ada, f.active_ada));
-        set('abstain_option', '(' + fmt(options.abstain_ada) + ' ADA)');
-        set('no_confidence_option', '(' + fmt(options.no_confidence_ada) + ' ADA)');
     }
 
     async function load() {
@@ -153,7 +151,7 @@
                 rationale_ratio: d.voted ? d.rationale / d.voted : -1,
                 last_vote: d.last_vote || '',
             }));
-            fill(doc.figures, doc.options);
+            fill(doc.figures);
             metaEl.textContent =
                 `${fmt(dreps.length)} active DReps, updated ${doc.generated.slice(0, 10)} (epoch ${doc.epoch}).`;
             render();
@@ -170,9 +168,6 @@
             sortKey = k;
             render();
         });
-    });
-    modal.querySelectorAll('[data-option]').forEach(b => {
-        b.addEventListener('click', () => delegateTo({ kind: 'drep', option: b.dataset.option }));
     });
     filterEl.addEventListener('input', render);
     btn.addEventListener('click', openModal);

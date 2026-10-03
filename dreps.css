@@ -1,5 +1,5 @@
 /* DReps modal: the same table and modal as the pools (pools.css), plus the
-   DRep ID under a name and the two predefined options. */
+   DRep ID under a name. */
 
 .dreps-id {
     display: block;
@@ -8,41 +8,7 @@
     font-family: monospace;
 }
 
-.dreps-options {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin: 8px 0 4px;
-}
-
-.dreps-option {
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 10px 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.dreps-option p {
-    margin: 0;
-}
-
-.dreps-option .pools-delegate {
-    align-self: flex-start;
-    margin-top: auto;
-}
-
-.dreps-option-ada {
-    color: #777;
-    font-size: 0.9em;
-}
-
 @media (max-width: 600px) {
-    .dreps-options {
-        grid-template-columns: 1fr;
-    }
-
     .dreps-table td.dreps-name {
         grid-column: 1 / -1;
     }
