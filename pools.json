@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-03T11:26:21Z",
+"generated": "2026-10-03T13:27:20Z",
 "epoch": 659,
 "k": 1000,
 "saturation_ada": 38912290,
@@ -11,8 +11,8 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2672,
-"alive_named": 1062,
-"above_saturation": 175,
+"alive_named": 1063,
+"above_saturation": 176,
 "excluded_exchanges": 50,
 "excluded_founders": 7,
 "excluded": [
@@ -1495,6 +1495,15 @@
 "retiring_epoch": null
 },
 {
+"ticker": "ANZ",
+"name": "Australia New Zealand Pool",
+"pool_id": "pool154sjkrwdu80wp6mnjvkwk55aj53l4v37z4zwulfak74vcxg60x0",
+"stake_ada": 237631,
+"blocks_2026": 14,
+"blocks_last_10_epochs": 0,
+"retiring_epoch": null
+},
+{
 "ticker": "RISE",
 "name": "RISE",
 "pool_id": "pool1re8cmjt895tpx8dx2veg0cew5yqtxnt82sll03e433a4ugnh9w7",
@@ -1600,15 +1609,6 @@
 "stake_ada": 278407,
 "blocks_2026": 15,
 "blocks_last_10_epochs": 2,
-"retiring_epoch": null
-},
-{
-"ticker": "DAPP",
-"name": "Dapp Central Stake Pool",
-"pool_id": "pool12m0v0myprg2nfvlymzaghvjrzhnlzkh2psn3sur2nhkj5wpkdmh",
-"stake_ada": 279208,
-"blocks_2026": 19,
-"blocks_last_10_epochs": 6,
 "retiring_epoch": null
 },
 {
@@ -2075,8 +2075,8 @@
 "name": "Jolly Roger's COFFR",
 "pool_id": "pool1v5g4rmkk0394q6swgfusgzjjzrv9ajy8qntgpuumegka5xhpgam",
 "stake_ada": 429297,
-"blocks_2026": 27,
-"blocks_last_10_epochs": 2,
+"blocks_2026": 28,
+"blocks_last_10_epochs": 3,
 "retiring_epoch": null
 },
 {
@@ -2390,8 +2390,8 @@
 "name": "ADACZECH",
 "pool_id": "pool1ytyw34lckr8k9dhn59h287wqry5lk6waqtfhxe6v94v4gsaa7vx",
 "stake_ada": 561724,
-"blocks_2026": 34,
-"blocks_last_10_epochs": 5,
+"blocks_2026": 35,
+"blocks_last_10_epochs": 6,
 "retiring_epoch": null
 },
 {
@@ -2545,6 +2545,15 @@
 "stake_ada": 668991,
 "blocks_2026": 37,
 "blocks_last_10_epochs": 3,
+"retiring_epoch": null
+},
+{
+"ticker": "YKSB",
+"name": "YakisobaPool",
+"pool_id": "pool1pn36hexudnjg6uwvxc5tld3ay2g6ty99ardzhn7crhkhzshjpte",
+"stake_ada": 674167,
+"blocks_2026": 35,
+"blocks_last_10_epochs": 7,
 "retiring_epoch": null
 },
 {
@@ -3142,15 +3151,6 @@
 "retiring_epoch": null
 },
 {
-"ticker": "TAVN",
-"name": "TAVN Viet Nam Stake Pool",
-"pool_id": "pool1pf6yhzdr9vpct5rc3dtwersl4lyuglp80l4jc67kf2qj29xjg2u",
-"stake_ada": 1119393,
-"blocks_2026": 84,
-"blocks_last_10_epochs": 14,
-"retiring_epoch": null
-},
-{
 "ticker": "AMINT",
 "name": "MaximumMint",
 "pool_id": "pool1hfn7yuwfyhmmqe4qpaxfewuly7cnemc6kqkv5npytj9vcrskh6j",
@@ -3182,8 +3182,8 @@
 "name": "AquaPoolADA",
 "pool_id": "pool170028ak8q37qf4e5lf7z8eyuscgcrqgzn9lh58a4g9ngzd83a0h",
 "stake_ada": 1143315,
-"blocks_2026": 70,
-"blocks_last_10_epochs": 10,
+"blocks_2026": 71,
+"blocks_last_10_epochs": 11,
 "retiring_epoch": null
 },
 {
@@ -3326,8 +3326,8 @@
 "name": "VICE 💚 CardanoWall.com",
 "pool_id": "pool1pzqdfptvl5f8vh28az37jag2wkfmqz9x8d6eufl8y0z9q34hlr7",
 "stake_ada": 1242422,
-"blocks_2026": 60,
-"blocks_last_10_epochs": 12,
+"blocks_2026": 61,
+"blocks_last_10_epochs": 13,
 "retiring_epoch": null
 },
 {
@@ -3875,8 +3875,8 @@
 "name": "TCSP1",
 "pool_id": "pool1j3kzujz0m07detlksr26sx7smft8xn280695zgu60zjhge9566f",
 "stake_ada": 1785492,
-"blocks_2026": 97,
-"blocks_last_10_epochs": 24,
+"blocks_2026": 98,
+"blocks_last_10_epochs": 25,
 "retiring_epoch": null
 },
 {
@@ -3913,6 +3913,15 @@
 "stake_ada": 1842761,
 "blocks_2026": 122,
 "blocks_last_10_epochs": 19,
+"retiring_epoch": null
+},
+{
+"ticker": "KURIS",
+"name": "KURIS JAPAN",
+"pool_id": "pool10q2fhzwe4f5k2llny65z5z2fuhrpk3x56fdc0782djdq58p9uee",
+"stake_ada": 1844888,
+"blocks_2026": 114,
+"blocks_last_10_epochs": 14,
 "retiring_epoch": null
 },
 {
@@ -4172,8 +4181,8 @@
 "name": "Nerd Stake Pool",
 "pool_id": "pool1xtrwqwu6jn896szjwsyxxjczl6hc9sq4lh5ax68f7dt3gc0y9rx",
 "stake_ada": 2272467,
-"blocks_2026": 170,
-"blocks_last_10_epochs": 24,
+"blocks_2026": 171,
+"blocks_last_10_epochs": 25,
 "retiring_epoch": null
 },
 {
@@ -4272,15 +4281,6 @@
 "pool_id": "pool1chfk2749hyrwqqpj9fapredjsgw3fdauyxw3hn82kavqva6nv3w",
 "stake_ada": 2558994,
 "blocks_2026": 143,
-"blocks_last_10_epochs": 30,
-"retiring_epoch": null
-},
-{
-"ticker": "AZDFM",
-"name": "AZDFM stake pool",
-"pool_id": "pool1hnnfvsq3xlln6vz7d2xmk6kqekd5z4ctmfpdad8g8kr0yk8kdfd",
-"stake_ada": 2589945,
-"blocks_2026": 249,
 "blocks_last_10_epochs": 30,
 "retiring_epoch": null
 },
@@ -4429,15 +4429,6 @@
 "retiring_epoch": null
 },
 {
-"ticker": "LGC",
-"name": "Late Game Crypto",
-"pool_id": "pool13xzckaj3srgldr67dksx874jxe3c9xnc245xyr44p7cdxh07hft",
-"stake_ada": 2924789,
-"blocks_2026": 225,
-"blocks_last_10_epochs": 44,
-"retiring_epoch": null
-},
-{
 "ticker": "LOOT",
 "name": "Loot Pool",
 "pool_id": "pool1s6x6kltycpxq82hyqhlqllqj3q5l2m8w499gvtu4xrfv29c0q2q",
@@ -4505,8 +4496,8 @@
 "name": "Blue Cheese Stakehouse",
 "pool_id": "pool1qzlw72zfwhhc0ptvzdpld06szu39x9mlm6782efy6sluz932fx6",
 "stake_ada": 3125830,
-"blocks_2026": 191,
-"blocks_last_10_epochs": 28,
+"blocks_2026": 192,
+"blocks_last_10_epochs": 29,
 "retiring_epoch": null
 },
 {
@@ -4568,8 +4559,8 @@
 "name": "UKADA",
 "pool_id": "pool1wwzctexlp70mj00vv65mlhwhwresn58s9x7jl4tswvkg77eu7n7",
 "stake_ada": 3290482,
-"blocks_2026": 169,
-"blocks_last_10_epochs": 21,
+"blocks_2026": 171,
+"blocks_last_10_epochs": 23,
 "retiring_epoch": null
 },
 {
@@ -4739,8 +4730,8 @@
 "name": "LoneStar Staking Pool",
 "pool_id": "pool1q8a7ym63gurl72wr32je0tv0lp4p2uh8vzzc6rn6un7ryslvqmu",
 "stake_ada": 3677804,
-"blocks_2026": 278,
-"blocks_last_10_epochs": 30,
+"blocks_2026": 279,
+"blocks_last_10_epochs": 31,
 "retiring_epoch": null
 },
 {
@@ -4811,8 +4802,8 @@
 "name": "Hedges Stake Pool",
 "pool_id": "pool19q034g07ka2ltwc3wwjeu79w29nlafc0w2ppne5ppu5wud60rgq",
 "stake_ada": 3798369,
-"blocks_2026": 198,
-"blocks_last_10_epochs": 29,
+"blocks_2026": 200,
+"blocks_last_10_epochs": 31,
 "retiring_epoch": null
 },
 {
@@ -4838,8 +4829,8 @@
 "name": "Nimuë Lady of the Lake Pool",
 "pool_id": "pool1drv9qkh2tgqqucc0jp8cwswpmmkfzdd898ja7ac0uwm9j5d44tq",
 "stake_ada": 3838491,
-"blocks_2026": 251,
-"blocks_last_10_epochs": 35,
+"blocks_2026": 252,
+"blocks_last_10_epochs": 36,
 "retiring_epoch": null
 },
 {
@@ -4964,8 +4955,8 @@
 "name": "Cardanoscan Pool 2",
 "pool_id": "pool1mfgqn8n658vjdcvg3xgtr3qyet64fht0dzsukqeznxw36z8g2k6",
 "stake_ada": 4095793,
-"blocks_2026": 205,
-"blocks_last_10_epochs": 43,
+"blocks_2026": 206,
+"blocks_last_10_epochs": 44,
 "retiring_epoch": null
 },
 {
@@ -5027,8 +5018,8 @@
 "name": "HADA.VN.COM",
 "pool_id": "pool1rqgf6qd0p3wyf9dxf2w7qcddvgg4vu56l35ez2xqemhqun2gn7y",
 "stake_ada": 4406599,
-"blocks_2026": 77,
-"blocks_last_10_epochs": 27,
+"blocks_2026": 78,
+"blocks_last_10_epochs": 28,
 "retiring_epoch": null
 },
 {
@@ -5279,8 +5270,8 @@
 "name": "無双63 ADA POOL",
 "pool_id": "pool1hjpax8lf2hmct63xxrspe9zzmmywcrzw89yg3nacu0axzy0latu",
 "stake_ada": 5532641,
-"blocks_2026": 293,
-"blocks_last_10_epochs": 45,
+"blocks_2026": 294,
+"blocks_last_10_epochs": 46,
 "retiring_epoch": null
 },
 {
@@ -5387,8 +5378,8 @@
 "name": "Socious StakePool",
 "pool_id": "pool1g2y0j7rsv7dpu8p6jt2dva3rxfqjl2zu0ag9dd0cfm8guzg0lh0",
 "stake_ada": 6091396,
-"blocks_2026": 302,
-"blocks_last_10_epochs": 82,
+"blocks_2026": 303,
+"blocks_last_10_epochs": 83,
 "retiring_epoch": null
 },
 {
@@ -5423,8 +5414,8 @@
 "name": "JOY2",
 "pool_id": "pool1udkx9rmgzf08z7zz4p7ykpdqsdv5nf0w8uf38wrsdn5dzk9nq4g",
 "stake_ada": 6202175,
-"blocks_2026": 321,
-"blocks_last_10_epochs": 53,
+"blocks_2026": 322,
+"blocks_last_10_epochs": 54,
 "retiring_epoch": null
 },
 {
@@ -5558,8 +5549,8 @@
 "name": "SMAN8",
 "pool_id": "pool1a3ekt9me035qgju0en2w39vjns9ggtewnc9fugsmpgczvgtl6u9",
 "stake_ada": 7235254,
-"blocks_2026": 403,
-"blocks_last_10_epochs": 63,
+"blocks_2026": 404,
+"blocks_last_10_epochs": 64,
 "retiring_epoch": null
 },
 {
@@ -5594,8 +5585,8 @@
 "name": "Nerd Stake Pool",
 "pool_id": "pool1u0mc9ywfxl529atxyajuz3pgqnwgnk6w7lejjmjg22ucvn7z9vh",
 "stake_ada": 7355497,
-"blocks_2026": 485,
-"blocks_last_10_epochs": 76,
+"blocks_2026": 486,
+"blocks_last_10_epochs": 77,
 "retiring_epoch": null
 },
 {
@@ -5639,8 +5630,8 @@
 "name": "LEAD Stake Pool",
 "pool_id": "pool1a3kdettzvvlqvkl9m9hwe63ggeq5fgvz0twqew5c62dzx99vsed",
 "stake_ada": 7604896,
-"blocks_2026": 434,
-"blocks_last_10_epochs": 94,
+"blocks_2026": 435,
+"blocks_last_10_epochs": 95,
 "retiring_epoch": null
 },
 {
@@ -5657,8 +5648,8 @@
 "name": "Kaze-Wa-Minamikara",
 "pool_id": "pool1c3kxs76qj58284f923cx7ed8vw25en3nfghyurv0z9m2g3x9c4j",
 "stake_ada": 7816545,
-"blocks_2026": 431,
-"blocks_last_10_epochs": 69,
+"blocks_2026": 432,
+"blocks_last_10_epochs": 70,
 "retiring_epoch": null
 },
 {
@@ -5828,8 +5819,8 @@
 "name": "🌟 Star Forge ⚡",
 "pool_id": "pool1eqj3dzpkcklc2r0v8pt8adrhrshq8m4zsev072ga7a52uj5wv5c",
 "stake_ada": 9060147,
-"blocks_2026": 609,
-"blocks_last_10_epochs": 85,
+"blocks_2026": 610,
+"blocks_last_10_epochs": 86,
 "retiring_epoch": null
 },
 {
@@ -5846,8 +5837,8 @@
 "name": "Snek",
 "pool_id": "pool1q9049mstrv5czwyylpf3xen08pmvsfsgtru4wf3zvc9uxat2sm0",
 "stake_ada": 9293945,
-"blocks_2026": 497,
-"blocks_last_10_epochs": 75,
+"blocks_2026": 498,
+"blocks_last_10_epochs": 76,
 "retiring_epoch": null
 },
 {
@@ -5909,8 +5900,8 @@
 "name": "StakePool Service",
 "pool_id": "pool155cu3s06js3llfh07vnzepatfuvt3s5s7uwldt9rzz55wz7pugt",
 "stake_ada": 9676672,
-"blocks_2026": 662,
-"blocks_last_10_epochs": 91,
+"blocks_2026": 663,
+"blocks_last_10_epochs": 92,
 "retiring_epoch": null
 },
 {
@@ -5918,8 +5909,8 @@
 "name": "ADASTACK",
 "pool_id": "pool1jjry6f6q0swaq457ft9eclaxaskvrxnpj0v3w8edsyfryml3vj6",
 "stake_ada": 9682156,
-"blocks_2026": 631,
-"blocks_last_10_epochs": 82,
+"blocks_2026": 632,
+"blocks_last_10_epochs": 83,
 "retiring_epoch": null
 },
 {
@@ -6026,8 +6017,8 @@
 "name": "Figment 5",
 "pool_id": "pool1mvtxupzcgdtslv2sw0l3f4zlhd3a69fue6gu0vhqz47w7j5zryx",
 "stake_ada": 10484680,
-"blocks_2026": 545,
-"blocks_last_10_epochs": 86,
+"blocks_2026": 547,
+"blocks_last_10_epochs": 88,
 "retiring_epoch": null
 },
 {
@@ -6062,8 +6053,8 @@
 "name": "stakefish",
 "pool_id": "pool1xlphlhnjvfeh40vcqf9fdewztsj6kyxq6604kaccpv00umjfu0d",
 "stake_ada": 10793578,
-"blocks_2026": 659,
-"blocks_last_10_epochs": 96,
+"blocks_2026": 660,
+"blocks_last_10_epochs": 97,
 "retiring_epoch": null
 },
 {
@@ -6143,8 +6134,8 @@
 "name": "Chile_Stake_po",
 "pool_id": "pool10eltx2wej46e62ulmwzm35xfu0azu47yvpjper7gwhncqe74vg6",
 "stake_ada": 11147321,
-"blocks_2026": 583,
-"blocks_last_10_epochs": 108,
+"blocks_2026": 584,
+"blocks_last_10_epochs": 109,
 "retiring_epoch": null
 },
 {
@@ -6206,8 +6197,8 @@
 "name": "Liqwid",
 "pool_id": "pool1gecx8vya3f8lyre2gn9w53547p0rhkmq0x78zrw956lkcvn8uyp",
 "stake_ada": 11537230,
-"blocks_2026": 1014,
-"blocks_last_10_epochs": 165,
+"blocks_2026": 1015,
+"blocks_last_10_epochs": 166,
 "retiring_epoch": null
 },
 {
@@ -6224,8 +6215,8 @@
 "name": "Cardanistas StakePool",
 "pool_id": "pool1jt7d6ak3m8gnjyxtuxfswe258xzwda80ndl0a57vv5m2zv8h6at",
 "stake_ada": 11694422,
-"blocks_2026": 659,
-"blocks_last_10_epochs": 93,
+"blocks_2026": 661,
+"blocks_last_10_epochs": 95,
 "retiring_epoch": null
 },
 {
@@ -6233,8 +6224,8 @@
 "name": "The Swimming Pool",
 "pool_id": "pool1xxhs2zw5xa4g54d5p62j46nlqzwp8jklqvuv2agjlapwjx9qkg9",
 "stake_ada": 11790208,
-"blocks_2026": 765,
-"blocks_last_10_epochs": 134,
+"blocks_2026": 767,
+"blocks_last_10_epochs": 136,
 "retiring_epoch": null
 },
 {
@@ -6260,8 +6251,8 @@
 "name": "Figment 4",
 "pool_id": "pool1mdzxt5rl2sgnehedgnl0jwk8vumsglequrap26qgg0uwg4cuq52",
 "stake_ada": 11982016,
-"blocks_2026": 535,
-"blocks_last_10_epochs": 79,
+"blocks_2026": 536,
+"blocks_last_10_epochs": 80,
 "retiring_epoch": null
 },
 {
@@ -6278,8 +6269,8 @@
 "name": "AHLNET",
 "pool_id": "pool1qqq6qqa0hpzvumv5p87ynczfmdj557xuwlc3289ke42g72z7f74",
 "stake_ada": 12054365,
-"blocks_2026": 630,
-"blocks_last_10_epochs": 102,
+"blocks_2026": 631,
+"blocks_last_10_epochs": 103,
 "retiring_epoch": null
 },
 {
@@ -6314,8 +6305,8 @@
 "name": "Nu.Fi & AdaLite 6",
 "pool_id": "pool1ea568m9q882n0tx5d4vxff2dmz2n7rq5h62hx5ystq625m4tcfu",
 "stake_ada": 12189158,
-"blocks_2026": 654,
-"blocks_last_10_epochs": 114,
+"blocks_2026": 655,
+"blocks_last_10_epochs": 115,
 "retiring_epoch": null
 },
 {
@@ -6332,8 +6323,8 @@
 "name": "ADAGE",
 "pool_id": "pool1swe9nsv8lzugakjkfv04dn38scmq48wzynmn0lxasupuzmqcgjm",
 "stake_ada": 12275368,
-"blocks_2026": 802,
-"blocks_last_10_epochs": 115,
+"blocks_2026": 803,
+"blocks_last_10_epochs": 116,
 "retiring_epoch": null
 },
 {
@@ -6377,8 +6368,8 @@
 "name": "Kiln",
 "pool_id": "pool1mtxmk0skqkr5y0wxnxps4n35j6wn9q8dfr82y423vvlp53vccux",
 "stake_ada": 12545971,
-"blocks_2026": 1513,
-"blocks_last_10_epochs": 122,
+"blocks_2026": 1514,
+"blocks_last_10_epochs": 123,
 "retiring_epoch": null
 },
 {
@@ -6476,8 +6467,8 @@
 "name": "Centre for Open Systems Deployment",
 "pool_id": "pool1e98xlcgj80c3rdmm27v5hnvrdtut52e65uk0ema7ctfag596vr2",
 "stake_ada": 13285795,
-"blocks_2026": 738,
-"blocks_last_10_epochs": 112,
+"blocks_2026": 739,
+"blocks_last_10_epochs": 113,
 "retiring_epoch": null
 },
 {
@@ -6494,8 +6485,8 @@
 "name": "Pilot Pool 2",
 "pool_id": "pool104gtn3hvp9lz5l6wevhjj98e45s7rfaa4zzvk9pex7nn786qncr",
 "stake_ada": 13494096,
-"blocks_2026": 934,
-"blocks_last_10_epochs": 142,
+"blocks_2026": 935,
+"blocks_last_10_epochs": 143,
 "retiring_epoch": null
 },
 {
@@ -6557,8 +6548,8 @@
 "name": "Cardaspians",
 "pool_id": "pool10tqeu6d03p6rnalqlvdshmpsljxaq2c0ww6draq6xm8lgyl2a3p",
 "stake_ada": 14132777,
-"blocks_2026": 607,
-"blocks_last_10_epochs": 93,
+"blocks_2026": 609,
+"blocks_last_10_epochs": 95,
 "retiring_epoch": null
 },
 {
@@ -6566,8 +6557,8 @@
 "name": "PSILOBLOX",
 "pool_id": "pool17taqml487n9t4r9a6ppvf9qv0qlw2lu4zcrzwfdsfcv6xp7uqym",
 "stake_ada": 14413906,
-"blocks_2026": 911,
-"blocks_last_10_epochs": 121,
+"blocks_2026": 912,
+"blocks_last_10_epochs": 122,
 "retiring_epoch": null
 },
 {
@@ -6602,8 +6593,8 @@
 "name": "Watashitachi1",
 "pool_id": "pool1whk6lawmfz4zq5fw8zghglp23452gnm9zgs59nqafhpexwcvute",
 "stake_ada": 15015577,
-"blocks_2026": 1100,
-"blocks_last_10_epochs": 137,
+"blocks_2026": 1101,
+"blocks_last_10_epochs": 138,
 "retiring_epoch": null
 },
 {
@@ -6620,8 +6611,8 @@
 "name": "CARDANIANS.io #4",
 "pool_id": "pool1kmsr376syqkluhxvv8k2axugqw7unjmlkwhfxjxtj7cw7qcn0jn",
 "stake_ada": 15220912,
-"blocks_2026": 887,
-"blocks_last_10_epochs": 146,
+"blocks_2026": 888,
+"blocks_last_10_epochs": 147,
 "retiring_epoch": null
 },
 {
@@ -6631,6 +6622,15 @@
 "stake_ada": 15421766,
 "blocks_2026": 940,
 "blocks_last_10_epochs": 139,
+"retiring_epoch": null
+},
+{
+"ticker": "AZUR3",
+"name": "AzureADA3",
+"pool_id": "pool1hkklrx9ac7w57d79mnv76rxlgq4acg5ecwhyep7k3zn0u5cz2k9",
+"stake_ada": 15454240,
+"blocks_2026": 1032,
+"blocks_last_10_epochs": 161,
 "retiring_epoch": null
 },
 {
@@ -6710,8 +6710,8 @@
 "name": "Cardanesia",
 "pool_id": "pool1pfprlfz0ywcnewjegazz05ghgcfkvu40v6edsz6yn8w362sdjr8",
 "stake_ada": 16230609,
-"blocks_2026": 1504,
-"blocks_last_10_epochs": 202,
+"blocks_2026": 1505,
+"blocks_last_10_epochs": 203,
 "retiring_epoch": null
 },
 {
@@ -6814,6 +6814,15 @@
 "retiring_epoch": null
 },
 {
+"ticker": "AZUR2",
+"name": "AzureADA2",
+"pool_id": "pool1m4enp55hp80tf6xl7k6f6593wnyu3pr83xfvef9x3ktdw9m0em5",
+"stake_ada": 18580557,
+"blocks_2026": 1157,
+"blocks_last_10_epochs": 180,
+"retiring_epoch": null
+},
+{
 "ticker": "JAZZ2",
 "name": "JAZZ2",
 "pool_id": "pool1gwnu7f7qgaruxph8gn3u28qphvquvnj63elyd3r0nndacj9g9pa",
@@ -6836,8 +6845,8 @@
 "name": "MUEN2 CharityPrivatePool",
 "pool_id": "pool1l6vtae673eltsx86sk4xxr3fnn9tk8e99jkrdvcmjqlc6cca4nk",
 "stake_ada": 19084414,
-"blocks_2026": 984,
-"blocks_last_10_epochs": 179,
+"blocks_2026": 985,
+"blocks_last_10_epochs": 180,
 "retiring_epoch": null
 },
 {
@@ -6863,8 +6872,8 @@
 "name": "Nu.Fi & AdaLite 5",
 "pool_id": "pool1jdhjfcu34lq88rypdtslzwyf27uh0h3apcr9mjd68zhc69r29fy",
 "stake_ada": 19331056,
-"blocks_2026": 1074,
-"blocks_last_10_epochs": 191,
+"blocks_2026": 1075,
+"blocks_last_10_epochs": 192,
 "retiring_epoch": null
 },
 {
@@ -6881,8 +6890,8 @@
 "name": "StakePool Service No.2",
 "pool_id": "pool10quq4wlghwrvmhdzc7geq22pyhzegccwj56ax2g8hx0cjfahufs",
 "stake_ada": 19600754,
-"blocks_2026": 1704,
-"blocks_last_10_epochs": 227,
+"blocks_2026": 1705,
+"blocks_last_10_epochs": 228,
 "retiring_epoch": null
 },
 {
@@ -6890,8 +6899,8 @@
 "name": "Figment 7",
 "pool_id": "pool1u8f87frd3k6cy9lp4uk5faj53wfzh8smxjdpt8ua45f0x8s5v58",
 "stake_ada": 19652295,
-"blocks_2026": 811,
-"blocks_last_10_epochs": 187,
+"blocks_2026": 812,
+"blocks_last_10_epochs": 188,
 "retiring_epoch": null
 },
 {
@@ -6926,8 +6935,8 @@
 "name": "The Brothership Pool",
 "pool_id": "pool13846y7q7tng3endxhet9qdcz5w0fjs09ytcye4dm5g54wmyqeqr",
 "stake_ada": 20609074,
-"blocks_2026": 1235,
-"blocks_last_10_epochs": 202,
+"blocks_2026": 1236,
+"blocks_last_10_epochs": 203,
 "retiring_epoch": null
 },
 {
@@ -6935,8 +6944,8 @@
 "name": "Moonstake 9",
 "pool_id": "pool1s04pdfl3sv5gzuc80322rc4ne0xs7gekux7gtckvvwt7qutjy6w",
 "stake_ada": 20872117,
-"blocks_2026": 1030,
-"blocks_last_10_epochs": 160,
+"blocks_2026": 1031,
+"blocks_last_10_epochs": 161,
 "retiring_epoch": null
 },
 {
@@ -6998,8 +7007,8 @@
 "name": "Kaizen Crypto Stake Pool",
 "pool_id": "pool1jeu74g86ys4fekhykqcww99kdsq3nlym8a6kfw8s8ff3vskad70",
 "stake_ada": 22000505,
-"blocks_2026": 1271,
-"blocks_last_10_epochs": 225,
+"blocks_2026": 1272,
+"blocks_last_10_epochs": 226,
 "retiring_epoch": null
 },
 {
@@ -7007,8 +7016,8 @@
 "name": "Blue Cheese Stakehouse",
 "pool_id": "pool1qzlw7z5mutmd39ldyjnp8n650weqe55z5p8dl3fagac3ge0nx8l",
 "stake_ada": 22143409,
-"blocks_2026": 1111,
-"blocks_last_10_epochs": 191,
+"blocks_2026": 1112,
+"blocks_last_10_epochs": 192,
 "retiring_epoch": null
 },
 {
@@ -7016,8 +7025,8 @@
 "name": "Oyster Pool | Midnight | Mithril | Rosen Bridge",
 "pool_id": "pool1l6aeyn35nkqkn9lqqlwqnpraakdzuukjrqprcrj3sctk6hhe32k",
 "stake_ada": 22239493,
-"blocks_2026": 1380,
-"blocks_last_10_epochs": 223,
+"blocks_2026": 1381,
+"blocks_last_10_epochs": 224,
 "retiring_epoch": null
 },
 {
@@ -7043,8 +7052,8 @@
 "name": "ADAvault Stake Pool 4",
 "pool_id": "pool19k9grwq9cdswn4k7vxzmwcls24jj3466g4s4xr5vucehcqpslfy",
 "stake_ada": 22495796,
-"blocks_2026": 2099,
-"blocks_last_10_epochs": 245,
+"blocks_2026": 2101,
+"blocks_last_10_epochs": 247,
 "retiring_epoch": null
 },
 {
@@ -7052,8 +7061,8 @@
 "name": "⭐ TERA3 ⭐",
 "pool_id": "pool149d5lzg7m6susau4f4yfdztgkty34qrcdpvd3ygsetmljgxxf8g",
 "stake_ada": 22560840,
-"blocks_2026": 1150,
-"blocks_last_10_epochs": 223,
+"blocks_2026": 1151,
+"blocks_last_10_epochs": 224,
 "retiring_epoch": null
 },
 {
@@ -7070,8 +7079,8 @@
 "name": "🌍 PLANETSTAKE 1",
 "pool_id": "pool1qqvukkkfr3ux4qylfkrky23f6trl2l6xjluv36z90ax7gfa8yxt",
 "stake_ada": 22641072,
-"blocks_2026": 1246,
-"blocks_last_10_epochs": 191,
+"blocks_2026": 1247,
+"blocks_last_10_epochs": 192,
 "retiring_epoch": null
 },
 {
@@ -7079,8 +7088,8 @@
 "name": "JAZZ",
 "pool_id": "pool1h0524mtazrjnzqh5e4u060jsfk8lpsqqjfpa5gygjwuhqu34wvt",
 "stake_ada": 22950404,
-"blocks_2026": 1204,
-"blocks_last_10_epochs": 164,
+"blocks_2026": 1206,
+"blocks_last_10_epochs": 166,
 "retiring_epoch": null
 },
 {
@@ -7169,8 +7178,8 @@
 "name": "Moonstake 5",
 "pool_id": "pool19lz8nyz0jjpdrdtnjaar4untk4th23gpg5s7aegn7480zff4vgq",
 "stake_ada": 24437464,
-"blocks_2026": 1689,
-"blocks_last_10_epochs": 276,
+"blocks_2026": 1690,
+"blocks_last_10_epochs": 277,
 "retiring_epoch": null
 },
 {
@@ -7178,8 +7187,8 @@
 "name": "SITION POOL3",
 "pool_id": "pool1p5ja48uqc7pjnuqvwu7cgmspvx938qpnf4zqm0x2k0ngkh4lkjx",
 "stake_ada": 24583294,
-"blocks_2026": 1604,
-"blocks_last_10_epochs": 257,
+"blocks_2026": 1606,
+"blocks_last_10_epochs": 259,
 "retiring_epoch": null
 },
 {
@@ -7187,8 +7196,8 @@
 "name": "Cardano Fans",
 "pool_id": "pool1d3gckjrphwytzw2uavgkxskwe08msumzsfj4lxnpcnpks3zjml3",
 "stake_ada": 24663660,
-"blocks_2026": 1330,
-"blocks_last_10_epochs": 243,
+"blocks_2026": 1331,
+"blocks_last_10_epochs": 244,
 "retiring_epoch": null
 },
 {
@@ -7205,8 +7214,8 @@
 "name": "Stake with Pride - Hosky ISPO",
 "pool_id": "pool1j099ctc7kcc9fa78dz5qwsy2g0n96lrgletwxvxmyzh4zd7ck0j",
 "stake_ada": 24779491,
-"blocks_2026": 1520,
-"blocks_last_10_epochs": 224,
+"blocks_2026": 1522,
+"blocks_last_10_epochs": 226,
 "retiring_epoch": null
 },
 {
@@ -7259,8 +7268,8 @@
 "name": "SITION POOL2",
 "pool_id": "pool18rhzlrv83a7ygj7cp5uv8dx07qkn5drhe8nh6f3qvhv66xcyj2m",
 "stake_ada": 25387647,
-"blocks_2026": 1771,
-"blocks_last_10_epochs": 268,
+"blocks_2026": 1772,
+"blocks_last_10_epochs": 269,
 "retiring_epoch": null
 },
 {
@@ -7295,8 +7304,8 @@
 "name": "BigLazyCat3",
 "pool_id": "pool139gdv4lxw53enk4rms0ryr4ey07k56jufmfrclqqehjdzglheu6",
 "stake_ada": 26335121,
-"blocks_2026": 749,
-"blocks_last_10_epochs": 206,
+"blocks_2026": 750,
+"blocks_last_10_epochs": 207,
 "retiring_epoch": null
 },
 {
@@ -7304,8 +7313,8 @@
 "name": "COINTAX",
 "pool_id": "pool1xlra52x2es7dmsvpmcp2922h89h346awe7yuu664e50yvrzaaqe",
 "stake_ada": 26519732,
-"blocks_2026": 1500,
-"blocks_last_10_epochs": 250,
+"blocks_2026": 1501,
+"blocks_last_10_epochs": 251,
 "retiring_epoch": null
 },
 {
@@ -7313,8 +7322,8 @@
 "name": "Cosmic Asset Stake Pool",
 "pool_id": "pool1c3ecg6h4m73a2mftmdm9mz3gxklxmnzuwzl9e38lzd4y26qcm8a",
 "stake_ada": 26556408,
-"blocks_2026": 1503,
-"blocks_last_10_epochs": 249,
+"blocks_2026": 1504,
+"blocks_last_10_epochs": 250,
 "retiring_epoch": null
 },
 {
@@ -7331,8 +7340,8 @@
 "name": "NEDSCAVE.IO",
 "pool_id": "pool1vdh6kxcqt9mxavyv80ggnec6jjwms44ms30rhle3lt266aj8jgh",
 "stake_ada": 26819848,
-"blocks_2026": 1419,
-"blocks_last_10_epochs": 212,
+"blocks_2026": 1420,
+"blocks_last_10_epochs": 213,
 "retiring_epoch": null
 },
 {
@@ -7349,8 +7358,8 @@
 "name": "Minswap",
 "pool_id": "pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk",
 "stake_ada": 27031404,
-"blocks_2026": 2097,
-"blocks_last_10_epochs": 281,
+"blocks_2026": 2099,
+"blocks_last_10_epochs": 283,
 "retiring_epoch": null
 },
 {
@@ -7358,8 +7367,8 @@
 "name": "Garden Pool Three",
 "pool_id": "pool1c7jrfce3zxkk9s9enzpvwj8fuayvx3pdzc2k2es6mrw6gsfcjep",
 "stake_ada": 27035426,
-"blocks_2026": 1570,
-"blocks_last_10_epochs": 260,
+"blocks_2026": 1571,
+"blocks_last_10_epochs": 261,
 "retiring_epoch": null
 },
 {
@@ -7367,8 +7376,8 @@
 "name": "CrimsonPool",
 "pool_id": "pool1mn6relcs7dn2fqzfq5yjlwxa49d900p5sdpw62jlx45k2djgwe4",
 "stake_ada": 27281898,
-"blocks_2026": 1251,
-"blocks_last_10_epochs": 241,
+"blocks_2026": 1252,
+"blocks_last_10_epochs": 242,
 "retiring_epoch": null
 },
 {
@@ -7466,8 +7475,8 @@
 "name": "1 Percent Pool #7 (v1)",
 "pool_id": "pool1w8ham64lthvzzxzn5hknq4yrj8xt2nark409s2xmntlwvt4ag3r",
 "stake_ada": 29482748,
-"blocks_2026": 1764,
-"blocks_last_10_epochs": 310,
+"blocks_2026": 1765,
+"blocks_last_10_epochs": 311,
 "retiring_epoch": null
 },
 {
@@ -7475,8 +7484,8 @@
 "name": "SASA Stake Pool2",
 "pool_id": "pool153sc4fct34a680nyfj4084w8dpax6c0zt0js8zqvg3sj7wtk486",
 "stake_ada": 29807967,
-"blocks_2026": 1266,
-"blocks_last_10_epochs": 243,
+"blocks_2026": 1267,
+"blocks_last_10_epochs": 244,
 "retiring_epoch": null
 },
 {
@@ -7534,15 +7543,6 @@
 "retiring_epoch": null
 },
 {
-"ticker": "DAPP",
-"name": "Dapp Central Stake Pool",
-"pool_id": "pool1qakys0fxx5p2fxcnsc2tyjpqa88q7qgtdh5t3a32hplv6fg25r9",
-"stake_ada": 31156954,
-"blocks_2026": 2313,
-"blocks_last_10_epochs": 319,
-"retiring_epoch": null
-},
-{
 "ticker": "KIWI",
 "name": "KIWI by 🥝Kiwipool Staking",
 "pool_id": "pool1vquhv3kh6xkklckaenl8alyuhfsld57ef5573aqauueyqacx4ak",
@@ -7565,8 +7565,8 @@
 "name": "ZZZ2",
 "pool_id": "pool14mm59ntjqzphjr6chrww639cdr3yjce4qcwzc5jkk38y22u7uc6",
 "stake_ada": 31630821,
-"blocks_2026": 1956,
-"blocks_last_10_epochs": 321,
+"blocks_2026": 1958,
+"blocks_last_10_epochs": 323,
 "retiring_epoch": null
 },
 {
@@ -7601,8 +7601,8 @@
 "name": "ADA Ocean Two",
 "pool_id": "pool1ctzja2cdwyeqnvehmrlclc5wrn9w9acwklk3acn73jrx56d66vs",
 "stake_ada": 32077320,
-"blocks_2026": 2076,
-"blocks_last_10_epochs": 317,
+"blocks_2026": 2077,
+"blocks_last_10_epochs": 318,
 "retiring_epoch": null
 },
 {
@@ -7610,8 +7610,8 @@
 "name": "stakit.io Pool by TOBG",
 "pool_id": "pool1nudasuv0lljpe0tswcverqvlh0v4226vgnpsuxn0e9nkvnvcvne",
 "stake_ada": 32335230,
-"blocks_2026": 1945,
-"blocks_last_10_epochs": 322,
+"blocks_2026": 1946,
+"blocks_last_10_epochs": 323,
 "retiring_epoch": null
 },
 {
@@ -7619,8 +7619,8 @@
 "name": "COOL2",
 "pool_id": "pool1myvgx4ef424e6nw2strqq7dxcepav52plyyhxrk0avaw7y098l2",
 "stake_ada": 32546726,
-"blocks_2026": 2470,
-"blocks_last_10_epochs": 336,
+"blocks_2026": 2471,
+"blocks_last_10_epochs": 337,
 "retiring_epoch": null
 },
 {
@@ -7682,8 +7682,8 @@
 "name": "Garden Pool",
 "pool_id": "pool16kus5xvdysgmtjp0hhlwt72tsm0yn2zcn0a8wg9emc6c75lxvmc",
 "stake_ada": 34738840,
-"blocks_2026": 1783,
-"blocks_last_10_epochs": 317,
+"blocks_2026": 1786,
+"blocks_last_10_epochs": 320,
 "retiring_epoch": null
 },
 {
@@ -7709,8 +7709,8 @@
 "name": "Gleaming Cyan Davinci",
 "pool_id": "pool18gsrasdghtjsnzlf20pht85l4epwag74w9pfx5qvdvcpxw68sl6",
 "stake_ada": 35007871,
-"blocks_2026": 1860,
-"blocks_last_10_epochs": 291,
+"blocks_2026": 1861,
+"blocks_last_10_epochs": 292,
 "retiring_epoch": null
 },
 {
@@ -7763,8 +7763,8 @@
 "name": "Bloom Six",
 "pool_id": "pool13crd2ljx87988umk22er6ynwadfwdqupdpcq6prc6v59z62kxse",
 "stake_ada": 36379935,
-"blocks_2026": 2172,
-"blocks_last_10_epochs": 350,
+"blocks_2026": 2174,
+"blocks_last_10_epochs": 352,
 "retiring_epoch": null
 },
 {
@@ -7772,8 +7772,8 @@
 "name": "wavepool.digital",
 "pool_id": "pool1cyq3v3v43hu7spwlfxdm6vq9djpsjjueerhlu5qr2rvd57vqk84",
 "stake_ada": 36428395,
-"blocks_2026": 2738,
-"blocks_last_10_epochs": 627,
+"blocks_2026": 2740,
+"blocks_last_10_epochs": 629,
 "retiring_epoch": null
 },
 {
@@ -7781,8 +7781,8 @@
 "name": "Figment 13",
 "pool_id": "pool1da9msyhpfmt58vrdkk7lpzgwldvc0t7q46kvpcyvvpff7347lsp",
 "stake_ada": 36551185,
-"blocks_2026": 639,
-"blocks_last_10_epochs": 285,
+"blocks_2026": 643,
+"blocks_last_10_epochs": 289,
 "retiring_epoch": null
 },
 {
@@ -7790,8 +7790,8 @@
 "name": "Nu.Fi & AdaLite E",
 "pool_id": "pool1f8erepj5w5nth5xfxgxnwpz59jzywt6zdwfr50jzjwfwksmg9ek",
 "stake_ada": 36778044,
-"blocks_2026": 2053,
-"blocks_last_10_epochs": 332,
+"blocks_2026": 2055,
+"blocks_last_10_epochs": 334,
 "retiring_epoch": null
 },
 {
@@ -7799,8 +7799,8 @@
 "name": "ECO Pool",
 "pool_id": "pool1wt0pf4u2xktp0f7apveu242w6nkm4ltk3m8g039lvuhwq4zdtf3",
 "stake_ada": 37059334,
-"blocks_2026": 2529,
-"blocks_last_10_epochs": 387,
+"blocks_2026": 2530,
+"blocks_last_10_epochs": 388,
 "retiring_epoch": null
 },
 {
@@ -7808,8 +7808,8 @@
 "name": "CLIO1",
 "pool_id": "pool1c89d4drtwn0048mekkdkzllz559ahnntxelyw2mppxnmc36hjlx",
 "stake_ada": 37667999,
-"blocks_2026": 1892,
-"blocks_last_10_epochs": 402,
+"blocks_2026": 1893,
+"blocks_last_10_epochs": 403,
 "retiring_epoch": null
 },
 {

@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-03T11:26:32Z",
+"generated": "2026-10-03T13:27:22Z",
 "epoch": 659,
 "figures": {
 "circulating_ada": 37536044256,
@@ -17,7 +17,7 @@
 "carry_treasury": 20,
 "window_epochs": 36,
 "drep_activity_epochs": 20,
-"votes": 10344,
+"votes": 10345,
 "votes_with_rationale": 4111,
 "dreps_never_rationale": 142,
 "dreps_never_rationale_ada": 1199705818,
@@ -31,6 +31,29 @@
 "hard_fork": 0.6
 }
 },
+"excluded": [
+{
+"name": "Yoroi W₳llet",
+"drep_id": "drep1ygr9tuapcanc3kpeyy4dc3vmrz9cfe5q7v9wj3x9j0ap3tswtre9j",
+"organization": "EMURGO (Yoroi Wallet)",
+"reason": "founder",
+"voting_power_ada": 418172441
+},
+{
+"name": "EMURGO",
+"drep_id": "drep1ytvlwvyjmzfyn56n0zz4f6lj94wxhmsl5zky6knnzrf4jygpyahug",
+"organization": "EMURGO",
+"reason": "founder",
+"voting_power_ada": 299505926
+},
+{
+"name": "Cardano Foundation",
+"drep_id": "drep1ydpfkyjxzeqvalf6fgvj7lznrk8kcmfnvy9hyl6gr6ez6wgsjaelx",
+"organization": "Cardano Foundation",
+"reason": "founder",
+"voting_power_ada": 136597540
+}
+],
 "options": {
 "abstain_ada": 10370727363,
 "no_confidence_ada": 136104748
@@ -1642,7 +1665,7 @@
 "script": false,
 "voting_power_ada": 422558,
 "share": 0.008,
-"delegators": 24,
+"delegators": 23,
 "eligible": 69,
 "voted": 3,
 "rationale": 0,
@@ -2086,9 +2109,9 @@
 "share": 0.017,
 "delegators": 16,
 "eligible": 69,
-"voted": 64,
+"voted": 65,
 "rationale": 0,
-"last_vote": "2026-09-15"
+"last_vote": "2026-10-03"
 },
 {
 "name": null,
@@ -2123,7 +2146,7 @@
 "script": false,
 "voting_power_ada": 890469,
 "share": 0.017,
-"delegators": 90,
+"delegators": 92,
 "eligible": 69,
 "voted": 66,
 "rationale": 0,
@@ -2474,7 +2497,7 @@
 "script": false,
 "voting_power_ada": 1319838,
 "share": 0.025,
-"delegators": 1192,
+"delegators": 1191,
 "eligible": 10,
 "voted": 4,
 "rationale": 1,
@@ -3462,7 +3485,7 @@
 "script": false,
 "voting_power_ada": 21913721,
 "share": 0.422,
-"delegators": 194,
+"delegators": 195,
 "eligible": 69,
 "voted": 69,
 "rationale": 68,
@@ -3976,26 +3999,13 @@
 "last_vote": "2026-09-30"
 },
 {
-"name": "Cardano Foundation",
-"drep_id": "drep1ydpfkyjxzeqvalf6fgvj7lznrk8kcmfnvy9hyl6gr6ez6wgsjaelx",
-"hash": "429b12461640cefd3a4a192f7c531d8f6c6d33610b727f481eb22d39",
-"script": true,
-"voting_power_ada": 136597540,
-"share": 2.631,
-"delegators": 1333,
-"eligible": 69,
-"voted": 69,
-"rationale": 69,
-"last_vote": "2026-10-01"
-},
-{
 "name": "Sebastien Guillemot セバ",
 "drep_id": "drep1y2csyxt7u2hl4674pl9cef5lknafaw5nraxvyx033kmd0es3awuv0",
 "hash": "b102197ee2affaebd50fcb8ca69fb4fa9eba931f4cc219f18db6d7e6",
 "script": false,
 "voting_power_ada": 177388436,
 "share": 3.417,
-"delegators": 1514,
+"delegators": 1515,
 "eligible": 69,
 "voted": 56,
 "rationale": 20,
@@ -4008,7 +4018,7 @@
 "script": false,
 "voting_power_ada": 191529821,
 "share": 3.689,
-"delegators": 9948,
+"delegators": 9949,
 "eligible": 69,
 "voted": 63,
 "rationale": 0,
@@ -4021,7 +4031,7 @@
 "script": false,
 "voting_power_ada": 224996749,
 "share": 4.334,
-"delegators": 9980,
+"delegators": 9979,
 "eligible": 69,
 "voted": 60,
 "rationale": 59,
@@ -4041,19 +4051,6 @@
 "last_vote": "2026-10-03"
 },
 {
-"name": "EMURGO",
-"drep_id": "drep1ytvlwvyjmzfyn56n0zz4f6lj94wxhmsl5zky6knnzrf4jygpyahug",
-"hash": "d9f73092d89249d353788554ebf22d5c6bee1fa0ac4d5a7310d35911",
-"script": false,
-"voting_power_ada": 299505926,
-"share": 5.769,
-"delegators": 793,
-"eligible": 69,
-"voted": 67,
-"rationale": 67,
-"last_vote": "2026-09-30"
-},
-{
 "name": "Blockdaemon",
 "drep_id": "drep1y2nvdau7g7xt6dlh9wydy9c4fvve24rr67twf5w63axu56q4rypfz",
 "hash": "a6c6f79e478cbd37f72b88d217154b19955463d796e4d1da8f4dca68",
@@ -4065,19 +4062,6 @@
 "voted": 51,
 "rationale": 0,
 "last_vote": "2026-07-29"
-},
-{
-"name": "Yoroi W₳llet",
-"drep_id": "drep1ygr9tuapcanc3kpeyy4dc3vmrz9cfe5q7v9wj3x9j0ap3tswtre9j",
-"hash": "0655f3a1c76788d839212adc459b188b84e680f30ae944c593fa18ae",
-"script": false,
-"voting_power_ada": 418172441,
-"share": 8.055,
-"delegators": 15767,
-"eligible": 69,
-"voted": 67,
-"rationale": 67,
-"last_vote": "2026-09-30"
 },
 {
 "name": "YUTA",
