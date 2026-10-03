@@ -153,7 +153,8 @@
             for (const d of dreps) if (d.name) sameName.set(d.name.toLowerCase(), (sameName.get(d.name.toLowerCase()) || 0) + 1);
             fill(doc.figures);
             metaEl.textContent =
-                `${fmt(dreps.length)} active DReps, updated ${doc.generated.slice(0, 10)} (epoch ${doc.epoch}).`;
+                `${fmt(dreps.length)} active DReps, updated ${doc.generated.slice(0, 10)} (epoch ${doc.epoch}).` +
+                (doc.excluded && doc.excluded.length ? ` Left out: ${fmt(doc.excluded.length)} DReps of the founding entities.` : '');
             render();
         } catch (error) {
             metaEl.textContent = 'Could not load the list. Please try again later.';
