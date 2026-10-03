@@ -152,7 +152,7 @@
                     <li>Of the ADA that votes, <span data-fig="block_treasury_params">5</span> DReps together can block any treasury withdrawal or protocol parameter change. <span data-fig="block_constitution">4</span> can block a change to the constitution. <span data-fig="carry_treasury">20</span> together carry the DRep vote on a treasury withdrawal.</li>
                     <li>In the last six months only <span data-fig="rationale_pct">39.7%</span> of DRep votes came with a rationale (a public explanation of the vote). <span data-fig="never_rationale">142</span> active DReps, holding <span data-fig="never_rationale_pct">23.7%</span> of the voting power, did not explain a single vote.</li>
                 </ul>
-                <p>Choose a DRep who votes in line with your views and explains why. If several DReps fit, a smaller one helps spread the vote. The list below is sorted from small to large.</p>
+                <p>Choose a DRep who votes in line with your views and explains why. If several DReps fit, a smaller one helps spread the vote. The list starts with the DReps that voted and explained their vote most often; among equals, the smallest comes first.</p>
                 <p>BKIND is in this list on the same terms as every other DRep. BKIND is both a stake pool operator and a DRep.</p>
                 <p class="pools-meta" id="drepsMeta">Loading the list…</p>
                 <h3>How the list is made</h3>
@@ -161,7 +161,7 @@
                     <li>Every DRep that the Cardano node reports as registered and active is listed, except the DReps of the founding entities of Cardano (IOG, EMURGO, Cardano Foundation).</li>
                     <li><em>Voting power</em> is the ADA delegated to the DRep in the current epoch, and its share of all ADA that votes.</li>
                     <li><em>Voted</em> counts the governance actions open for voting in the last six months that the DRep voted on, out of all it could vote on: for a DRep that registered later, only the actions open since then.</li>
-                    <li><em>Rationale</em> is the share of those votes that came with a rationale.</li>
+                    <li><em>Explained</em> counts the actions on which the DRep voted with a rationale, out of all it could vote on. The list is ordered by this share, then by the share voted, then from small to large.</li>
                     <li>The name is the DRep's own registered metadata, shown only when it matches the hash recorded on the chain; otherwise the DRep shows with its ID.</li>
                     <li>A name is chosen by the DRep itself. It is not proof of who is behind it: the DRep ID is what you delegate to.</li>
                 </ul>
@@ -180,7 +180,7 @@
                                 <th data-key="share" class="num">Share</th>
                                 <th data-key="delegators" class="num">Delegators</th>
                                 <th data-key="voted_ratio" class="num">Voted</th>
-                                <th data-key="rationale_ratio" class="num">Rationale</th>
+                                <th data-key="rank" class="num">Explained</th>
                                 <th data-key="last_vote" class="num">Last vote</th>
                                 <th class="pools-nosort"><span class="visually-hidden">Delegate</span></th>
                             </tr>

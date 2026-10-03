@@ -23,8 +23,8 @@
     let loaded = false;
     let dreps = [];
     let sameName = new Map();
-    let sortKey = 'voting_power_ada';
-    let sortDesc = false;   // smallest first: a smaller DRep helps spread the vote
+    let sortKey = 'rank';   // voted and explained most often first (see rankOrder)
+    let sortDesc = false;
 
     function openModal() {
         lastFocused = document.activeElement;
@@ -52,6 +52,16 @@
         if (event.key === 'Escape') {
             closeModal();
         }
+    }
+
+    // The order of the list: the DReps that voted with a rationale on the
+    // largest share of what they could vote on come first; then the larger share
+    // voted; then the smallest, which helps spread the vote. Shares are compared
+    // as fractions, without rounding.
+    function rankOrder(a, b) {
+        const share = (x, y, n) => x[n] * y.eligible - y[n] * x.eligible;   // > 0 when x has the larger share
+        if (!a.eligible || !b.eligible) return (b.eligible ? 1 : 0) - (a.eligible ? 1 : 0) || a.voting_power_ada - b.voting_power_ada;
+        return share(b, a, 'rationale') || share(b, a, 'voted') || a.voting_power_ada - b.voting_power_ada;
     }
 
     function delegateTo(target) {
@@ -90,7 +100,7 @@
                 [d.share.toFixed(2) + '%', 'Share'],
                 [fmt(d.delegators), 'Delegators'],
                 [d.eligible ? d.voted + ' of ' + d.eligible : '–', 'Voted'],
-                [d.voted ? pct(d.rationale, d.voted) : '–', 'Rationale'],
+                [d.eligible ? d.rationale + ' of ' + d.eligible : '–', 'Explained'],
                 [d.last_vote || '–', 'Last vote']]) {
                 const cell = document.createElement('td');
                 cell.textContent = v;
@@ -146,11 +156,11 @@
             dreps = doc.dreps.map(d => Object.assign({}, d, {
                 label: d.name || d.drep_id,
                 voted_ratio: d.eligible ? d.voted / d.eligible : -1,
-                rationale_ratio: d.voted ? d.rationale / d.voted : -1,
                 last_vote: d.last_vote || '',
             }));
             sameName = new Map();
             for (const d of dreps) if (d.name) sameName.set(d.name.toLowerCase(), (sameName.get(d.name.toLowerCase()) || 0) + 1);
+            dreps.slice().sort(rankOrder).forEach((d, i) => { d.rank = i; });
             fill(doc.figures);
             metaEl.textContent =
                 `${fmt(dreps.length)} active DReps, updated ${doc.generated.slice(0, 10)} (epoch ${doc.epoch}).` +
