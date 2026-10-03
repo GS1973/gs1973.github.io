@@ -37,6 +37,11 @@
     const TTL_SECONDS = 2 * 3600;
     const MAX_INPUTS = 30;
     const FEE_MARGIN_BYTES = 110;                 // about 0.005 ADA: one extra witness (101) fits
+    // The fee rules come from pools.json. A wrong number there must not become a
+    // transaction: the rules are held to a band, and no fee above MAX_FEE is
+    // built (the largest transaction the chain allows costs 0.88 ADA today).
+    const MAX_FEE = 1000000n;
+    const PARAM_MAX = { min_fee_a: 1000, min_fee_b: 2000000, key_deposit: 10000000, coins_per_utxo_byte: 100000, max_tx_size: 65536 };
 
     // ---------- bytes ----------
 
@@ -359,6 +364,7 @@
         const ttl = Math.floor(Date.now() / 1000) - SHELLEY_UNIX_MINUS_SLOT + TTL_SECONDS;
         const built = buildTx({ utxos, changeAddr, cert, deposit, ttl, params });
         if (!built) throw new DelegateError('noFunds');
+        if (built.fee > MAX_FEE) throw new DelegateError('feeHigh');
         const { body } = built;
         const unsigned = concatBytes([Uint8Array.of(0x84), body, Uint8Array.of(0xa0, 0xf5, 0xf6)]);
 
@@ -409,6 +415,7 @@
         noStakeSig: 'The wallet did not sign with its stake key, so the chain would refuse the delegation. Nothing was sent.',
         missingSig: 'The wallet did not sign for all the funds used. Nothing was sent.',
         feeShort: 'The signed transaction came out larger than its fee allows. Nothing was sent.',
+        feeHigh: 'The fee for this transaction came out above 1 ADA, which cannot be right. Nothing was built or sent.',
         params: 'The fee rules could not be loaded. Please try again later.',
         failed: 'Something went wrong. Nothing was sent.',
     };
@@ -427,7 +434,10 @@
         if (!res.ok) throw new Error('pools.json ' + res.status);
         const d = await res.json();
         const p = d.params;
-        if (!p || !p.min_fee_a || !p.key_deposit) throw new Error('no params');
+        if (!p) throw new Error('no params');
+        for (const k of Object.keys(PARAM_MAX)) {
+            if (!Number.isInteger(p[k]) || p[k] <= 0 || p[k] > PARAM_MAX[k]) throw new Error('params out of range: ' + k);
+        }
         return p;
     }
 

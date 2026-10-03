@@ -75,10 +75,10 @@ Source and deploy notes are archived outside this repo (`~/SBO`).
 ### Security Posture
 ✅ **Current Status:** Strong
 - No third-party scripts: `script-src 'self'`, `connect-src 'self'`
-- No wallet connection / no client-side transaction building
+- Delegation transactions (stake to a pool, vote to a DRep) are built in the page (`delegate.js`, no library) and signed in the visitor's own wallet over CIP-30; the fee is capped at 1 ADA
 - Strict CSP, no cookies
 - No client-side dependency on external CDNs
 
 ---
 
-**Last Updated:** 2026-06-26
+**Last Updated:** 2026-10-03

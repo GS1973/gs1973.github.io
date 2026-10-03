@@ -22,6 +22,7 @@
     let lastFocused = null;
     let loaded = false;
     let dreps = [];
+    let sameName = new Map();
     let sortKey = 'voting_power_ada';
     let sortDesc = false;   // smallest first: a smaller DRep helps spread the vote
 
@@ -79,6 +80,9 @@
             a.textContent = d.name || shortId(d.drep_id);
             a.title = 'Open ' + (d.name || 'this DRep') + ' on Cardanoscan (new window)';
             td.appendChild(a);
+            // A name is the DRep's own choice and two DReps can carry the same
+            // one: then the short ID tells them apart.
+            if (d.name && sameName.get(d.name.toLowerCase()) > 1) td.append(' ' + shortId(d.drep_id));
             tr.appendChild(td);
             // The label shows on a phone, where each DRep is a card (pools.css).
             for (const [v, label] of [
@@ -145,6 +149,8 @@
                 rationale_ratio: d.voted ? d.rationale / d.voted : -1,
                 last_vote: d.last_vote || '',
             }));
+            sameName = new Map();
+            for (const d of dreps) if (d.name) sameName.set(d.name.toLowerCase(), (sameName.get(d.name.toLowerCase()) || 0) + 1);
             fill(doc.figures);
             metaEl.textContent =
                 `${fmt(dreps.length)} active DReps, updated ${doc.generated.slice(0, 10)} (epoch ${doc.epoch}).`;
