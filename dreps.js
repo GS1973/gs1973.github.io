@@ -75,16 +75,10 @@
             a.href = 'https://cardanoscan.io/drep/' + encodeURIComponent(d.drep_id);
             a.target = '_blank';
             a.rel = 'noopener noreferrer';
-            a.className = 'pools-link';
+            a.className = 'pools-ticker';
             a.textContent = d.name || shortId(d.drep_id);
             a.title = 'Open ' + (d.name || 'this DRep') + ' on Cardanoscan (new window)';
             td.appendChild(a);
-            if (d.name) {
-                const id = document.createElement('span');
-                id.className = 'dreps-id';
-                id.textContent = shortId(d.drep_id);
-                td.appendChild(id);
-            }
             tr.appendChild(td);
             // The label shows on a phone, where each DRep is a card (pools.css).
             for (const [v, label] of [

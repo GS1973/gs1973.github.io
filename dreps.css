@@ -1,12 +1,5 @@
-/* DReps modal: the same table and modal as the pools (pools.css), plus the
-   DRep ID under a name. */
-
-.dreps-id {
-    display: block;
-    color: #777;
-    font-size: 0.75em;
-    font-family: monospace;
-}
+/* DReps modal: the same table and modal as the pools (pools.css). On a phone
+   the name takes the whole first line of a card. */
 
 @media (max-width: 600px) {
     .dreps-table td.dreps-name {
