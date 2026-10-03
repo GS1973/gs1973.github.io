@@ -99,12 +99,12 @@
                 <h3>How the list is made</h3>
                 <p>Every day, from the Cardano chain, a pool is listed when it:</p>
                 <ul class="pools-rules">
-                <li>has stake in the current epoch and is not retired;</li>
-                <li>has a name and a ticker in its registered metadata;</li>
-                <li>made at least one block since 1 January 2026, so a pool that lost stake but still runs is not left out;</li>
-                <li>answers on at least one of its registered relays;</li>
-                <li>has less stake than the saturation point at <code>k</code> = 1000: the ADA outside the reserves, divided by 1000;</li>
-                <li>is not run by an exchange or by one of the founding entities of Cardano (IOG, EMURGO, Cardano Foundation).</li>
+                <li>Has stake in the current epoch and is not retired.</li>
+                <li>Has a name and a ticker in its registered metadata.</li>
+                <li>Made at least one block since 1 January 2026, so a pool that lost stake but still runs is not left out.</li>
+                <li>Answers on at least one of its registered relays.</li>
+                <li>Has less stake than the saturation point at <code>k</code> = 1000: the ADA outside the reserves, divided by 1000.</li>
+                <li>Is not run by an exchange or by one of the founding entities of Cardano (IOG, EMURGO, Cardano Foundation).</li>
             </ul>
                 <p>Pools of exchanges and of the founding entities are left out on purpose: this list is meant to spread stake over independent pool operators. The seven EMURGO pools that were handed over in September 2026 (now MURA1 to MURA7) stay off the list, because there is no transparency about the takeover. All of these are recognized by pool ID, so a pool that changes its name stays off the list.</p>
                 <p>A relay that does not answer from here is not proof that a pool is down: some pools only accept known peers. Still, a pool whose relays do not answer is not on this list: keeping its relays reachable is the responsibility of the pool operator. The list is made by Smit Blockchain Operations, operator of pool BKIND, which is on it by the same rules as every other pool.</p>
@@ -158,11 +158,11 @@
                 <h3>How the list is made</h3>
                 <p>Every day, from the Cardano chain:</p>
                 <ul class="pools-rules">
-                    <li>every DRep that the Cardano node reports as registered and active is listed; nobody is left out;</li>
-                    <li><em>Voting power</em> is the ADA delegated to the DRep in the current epoch, and its share of all ADA that votes;</li>
-                    <li><em>Voted</em> counts the governance actions open for voting in the last six months that the DRep voted on, out of all it could vote on: for a DRep that registered later, only the actions open since then;</li>
-                    <li><em>Rationale</em> is the share of those votes that came with a rationale;</li>
-                    <li>the name is the DRep's own registered metadata, shown only when it matches the hash recorded on the chain; otherwise the DRep shows with its ID.</li>
+                    <li>Every DRep that the Cardano node reports as registered and active is listed. Nobody is left out.</li>
+                    <li><em>Voting power</em> is the ADA delegated to the DRep in the current epoch, and its share of all ADA that votes.</li>
+                    <li><em>Voted</em> counts the governance actions open for voting in the last six months that the DRep voted on, out of all it could vote on: for a DRep that registered later, only the actions open since then.</li>
+                    <li><em>Rationale</em> is the share of those votes that came with a rationale.</li>
+                    <li>The name is the DRep's own registered metadata, shown only when it matches the hash recorded on the chain; otherwise the DRep shows with its ID.</li>
                 </ul>
                 <h3>The DReps</h3>
                 <p class="pools-note">Click a heading to sort. Click a name to open the DRep on Cardanoscan in a new window. Click Delegate to give your vote to the DRep with your wallet.</p>
