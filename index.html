@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="votes.css">
     <link rel="stylesheet" href="pools.css">
     <link rel="stylesheet" href="delegate.css">
+    <link rel="stylesheet" href="dreps.css">
 </head>
 <body>
     <div class="top-banner">
@@ -35,6 +36,7 @@
                 <button id="votesBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="votesModal" aria-label="View BKIND governance votes">Votes</button>
                 <a id="toolsBtn" class="tools-btn" href="https://github.com/GS1973/Cardano-Tools" target="_blank" rel="noopener noreferrer" aria-label="Cardano Tools on GitHub (opens in a new tab)">Tools</a>
                 <button id="poolsBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="poolsModal" aria-label="Live pools under the saturation point">Pools</button>
+                <button id="drepsBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="drepsModal" aria-label="Active DReps: who speaks for your ADA">DReps</button>
                 <button id="aboutBtn" class="about-btn" aria-haspopup="dialog" aria-controls="aboutModal" aria-label="About Smit Blockchain Operations">About</button>
                 <button id="contactBtn" class="contact-btn" aria-haspopup="dialog" aria-controls="contactModal" aria-label="Contact Smit Blockchain Operations">Contact</button>
             </div>
@@ -62,10 +64,11 @@
             <button id="modalClose" class="modal-close" aria-label="Close">&times;</button>
             <h2 id="modalTitle" class="modal-title">Delegate</h2>
             <div id="modalBody" class="modal-body">
-                <p>Delegate to BKIND or to another pool below the saturation point at <code>k</code>&nbsp;=&nbsp;1000.</p>
+                <p>Delegate to BKIND or to another pool below the saturation point at <code>k</code>&nbsp;=&nbsp;1000, or give your vote to a DRep.</p>
                 <div class="delegate-choice">
                     <button type="button" id="delegateWalletBtn" class="delegate-go">Delegate to BKIND</button>
                     <button type="button" id="delegateToPools" class="delegate-go">Choose another pool</button>
+                    <button type="button" id="delegateToDreps" class="delegate-go">Choose a DRep</button>
                 </div>
                 <p class="delegate-fine">Your wallet shows the transaction before you sign it; your ADA stays in your wallet.</p>
             </div>
@@ -130,6 +133,76 @@
         </div>
     </div>
 
+    <div id="drepsModal" class="modal-overlay" hidden>
+        <div class="modal modal-votes modal-pools" role="dialog" aria-modal="true" aria-labelledby="drepsTitle">
+            <div class="votes-header">
+                <h2 id="drepsTitle" class="modal-title">Who speaks for your ADA?</h2>
+                <button id="drepsClose" class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="pools-body">
+                <p>Who decides about Cardano? Until recently, mainly the companies that founded it. Since early 2025 that is the people who hold ADA: together they decide how the network changes and how the money in its treasury is spent. Cardano's constitution says the community governs itself, in a process that is open, transparent and protected from undue influence.</p>
+                <p>You take part through a representative, a DRep. Your DRep votes on your behalf, with the weight of your ADA. You choose who that is, you can switch at any time, and your ADA never leaves your wallet.</p>
+                <p>Your voice only counts if your DRep votes the way you would. A DRep represents you, not themselves. So choose someone whose views you share, check how they vote and why, and switch when they no longer speak for you.</p>
+                <p>Why does it matter who holds the vote? Because power that sits with a few can be used by a few. A small group can be pressured, bought, or simply share the same interests, and then it decides for everyone: about the treasury, the rules, even the constitution itself. Spread over many independent voices, that power is hard to capture. Decentralization is not only about who runs the network, but also about who decides over it.</p>
+                <p>Today very few hold that power.</p>
+                <ul class="pools-rules dreps-figures">
+                    <li>Of <span data-fig="circulating">37.5 billion</span> ADA in circulation, <span data-fig="voting">5.2 billion</span> (<span data-fig="voting_pct">13.8%</span>) takes part in the vote.</li>
+                    <li><span data-fig="no_drep">21.8 billion</span> ADA (<span data-fig="no_drep_pct">58.1%</span>) has no DRep at all. <span data-fig="abstain">10.4 billion</span> (<span data-fig="abstain_pct">27.6%</span>) is set to Always Abstain and never votes.</li>
+                    <li><span data-fig="inactive_dreps">545</span> DReps are inactive: they have not voted for at least <span data-fig="inactive_days">100</span> days. The <span data-fig="inactive_ada">183 million</span> ADA delegated to them counts for nothing.</li>
+                    <li>Of the ADA that votes, <span data-fig="block_treasury_params">5</span> DReps together can block any treasury withdrawal or protocol parameter change. <span data-fig="block_constitution">4</span> can block a change to the constitution. <span data-fig="carry_treasury">20</span> together carry the DRep vote on a treasury withdrawal.</li>
+                    <li>In the last six months only <span data-fig="rationale_pct">39.7%</span> of DRep votes came with a rationale (a public explanation of the vote). <span data-fig="never_rationale">142</span> active DReps, holding <span data-fig="never_rationale_pct">23.7%</span> of the voting power, did not explain a single vote.</li>
+                </ul>
+                <p>Choose a DRep who votes in line with your views and explains why. If several DReps fit, a smaller one helps spread the vote. The list below is sorted from small to large.</p>
+                <p>BKIND is in this list on the same terms as every other DRep. BKIND is both a stake pool operator and a DRep.</p>
+                <p class="pools-meta" id="drepsMeta">Loading the list…</p>
+                <h3>How the list is made</h3>
+                <p>Every day, from the Cardano chain:</p>
+                <ul class="pools-rules">
+                    <li>every DRep that the Cardano node reports as registered and active is listed; nobody is left out;</li>
+                    <li><em>Voting power</em> is the ADA delegated to the DRep in the current epoch, and its share of all ADA that votes;</li>
+                    <li><em>Voted</em> counts the governance actions open for voting in the last six months that the DRep voted on, out of all it could vote on: for a DRep that registered later, only the actions open since then;</li>
+                    <li><em>Rationale</em> is the share of those votes that came with a rationale;</li>
+                    <li>the name is the DRep's own registered metadata, shown only when it matches the hash recorded on the chain; otherwise the DRep shows with its ID.</li>
+                </ul>
+                <h3>Without a DRep of your own</h3>
+                <div class="dreps-options" id="drepsOptions">
+                    <div class="dreps-option">
+                        <p><strong>Always Abstain</strong> <span class="dreps-option-ada" data-fig="abstain_option"></span></p>
+                        <p>Your ADA takes no part in any vote.</p>
+                        <button type="button" class="pools-delegate" data-option="abstain">Delegate</button>
+                    </div>
+                    <div class="dreps-option">
+                        <p><strong>Always No Confidence</strong> <span class="dreps-option-ada" data-fig="no_confidence_option"></span></p>
+                        <p>Your ADA votes for every motion of no confidence in the Constitutional Committee, and against every other governance action.</p>
+                        <button type="button" class="pools-delegate" data-option="no_confidence">Delegate</button>
+                    </div>
+                </div>
+                <h3>The DReps</h3>
+                <p class="pools-note">Click a heading to sort. Click a name to open the DRep on Cardanoscan in a new window. Click Delegate to give your vote to the DRep with your wallet.</p>
+                <div class="pools-tools">
+                    <input type="search" id="drepsFilter" placeholder="Search name or DRep ID" aria-label="Search name or DRep ID">
+                </div>
+                <div class="pools-scroll">
+                    <table class="pools-table dreps-table">
+                        <thead>
+                            <tr>
+                                <th data-key="label">DRep</th>
+                                <th data-key="voting_power_ada" class="num">Voting power (ADA)</th>
+                                <th data-key="share" class="num">Share</th>
+                                <th data-key="delegators" class="num">Delegators</th>
+                                <th data-key="voted_ratio" class="num">Voted</th>
+                                <th data-key="rationale_ratio" class="num">Rationale</th>
+                                <th data-key="last_vote" class="num">Last vote</th>
+                                <th class="pools-nosort"><span class="visually-hidden">Delegate</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="drepsRows"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="aboutModal" class="modal-overlay" hidden>
         <div class="modal modal-about" role="dialog" aria-modal="true" aria-labelledby="aboutTitle" aria-describedby="aboutBody">
             <div class="about-header">
@@ -162,5 +235,6 @@
     <script type="module" src="app.js"></script>
     <script type="module" src="votes.js"></script>
     <script type="module" src="pools.js"></script>
+    <script type="module" src="dreps.js"></script>
 </body>
 </html>

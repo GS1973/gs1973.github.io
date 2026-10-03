@@ -1,5 +1,7 @@
 // Delegating from this site: builds one delegation transaction, asks the
 // wallet to sign it over CIP-30, and hands it back to the wallet to submit.
+// Stake goes to a pool, the vote to a DRep (or one of the two predefined
+// options, Always Abstain and Always No Confidence).
 // No library: the transaction is a handful of CBOR fields, written here so
 // that anyone can read what is signed. blake2b comes from vendor/blake2b.js.
 //
@@ -8,6 +10,11 @@
 //            [2, stake credential, pool]                   delegation
 //            [11, stake credential, pool, deposit]         registration and
 //                                                          delegation in one
+//            [9, stake credential, drep]                   vote delegation
+//            [12, stake credential, drep, deposit]         registration and
+//                                                          vote delegation
+//          drep = [0, key hash] | [1, script hash] | [2] (Always Abstain)
+//                 | [3] (Always No Confidence)
 //
 // The first try is a delegation only: most wallets have delegated before, so
 // their stake address is registered. When the wallet cannot sign or send it,
@@ -20,7 +27,9 @@
 // list, same origin). Before sending, the wallet's signatures and the real size
 // against the fee are checked.
 //
-// Opens with window.sboDelegate.open({ ticker, name, pool_id }).
+// Opens with window.sboDelegate.open({ ticker, name, pool_id }) for a pool,
+// { kind: 'drep', name, drep_id, hash, script } for a DRep, or
+// { kind: 'drep', option: 'abstain' | 'no_confidence' }.
 (function () {
     'use strict';
 
@@ -117,9 +126,9 @@
     }
     const untag = v => (v instanceof Tagged ? v.value : v);
 
-    // ---------- the pool ID ----------
+    // ---------- the pool ID and the DRep ID ----------
 
-    // bech32 (BIP-173), checksum checked: a pool1… ID to its 28-byte key hash.
+    // bech32 (BIP-173), checksum checked: the bytes of an ID with this prefix.
     const BECH32 = 'qpzry9x8gf2tvdw0s3jn54khce6mua7l';
     function polymod(values) {
         const GEN = [0x3b6a57b2, 0x26508e6d, 0x1ea119fa, 0x3d4233dd, 0x2a1462b3];
@@ -131,22 +140,42 @@
         }
         return chk;
     }
-    function poolKeyHash(poolId) {
-        const s = String(poolId).toLowerCase();
+    function bech32Bytes(id, wantHrp) {
+        const s = String(id).toLowerCase();
         const sep = s.lastIndexOf('1');
         const hrp = s.slice(0, sep);
         const data = Array.from(s.slice(sep + 1), c => BECH32.indexOf(c));
-        if (hrp !== 'pool' || data.length < 7 || data.some(d => d < 0)) throw new Error('not a pool ID');
+        if (hrp !== wantHrp || data.length < 7 || data.some(d => d < 0)) throw new Error('not a ' + wantHrp + ' ID');
         const expanded = [...Array.from(hrp, c => c.charCodeAt(0) >> 5), 0, ...Array.from(hrp, c => c.charCodeAt(0) & 31)];
-        if (polymod(expanded.concat(data)) !== 1) throw new Error('pool ID checksum');
+        if (polymod(expanded.concat(data)) !== 1) throw new Error(wantHrp + ' ID checksum');
         let acc = 0, bits = 0;
         const out = [];
         for (const d of data.slice(0, -6)) {
             acc = ((acc << 5) | d) & 0xffff; bits += 5;
             if (bits >= 8) { bits -= 8; out.push((acc >> bits) & 0xff); }
         }
-        if (out.length !== 28) throw new Error('pool ID length');
         return Uint8Array.from(out);
+    }
+
+    function poolKeyHash(poolId) {
+        const out = bech32Bytes(poolId, 'pool');
+        if (out.length !== 28) throw new Error('pool ID length');
+        return out;
+    }
+
+    // The DRep in a certificate. A DRep's hash is taken from its CIP-129 ID
+    // (header 0x22 key, 0x23 script, then the 28-byte hash) and must equal the
+    // hash in the list, so what is signed is the DRep that is shown.
+    function drepField(target) {
+        if (target.option === 'abstain') return [2];
+        if (target.option === 'no_confidence') return [3];
+        const b = bech32Bytes(target.drep_id, 'drep');
+        if (b.length !== 29 || (b[0] !== 0x22 && b[0] !== 0x23)) throw new Error('DRep ID form');
+        const script = b[0] === 0x23, hash = b.slice(1);
+        if (bytesToHex(hash) !== String(target.hash).toLowerCase() || script !== Boolean(target.script)) {
+            throw new Error('DRep ID and hash differ');
+        }
+        return [script ? 1 : 0, hash];
     }
 
     // ---------- addresses and values ----------
@@ -310,15 +339,21 @@
     // CIP-30 TxSignError code 2: the user declined.
     const userDeclined = e => e && (e.code === 2 || /declin|reject|cancel/i.test(String(e.info || e.message || '')));
 
-    async function delegate(walletKey, pool, params, register, step) {
+    async function delegate(walletKey, target, params, register, step) {
         step('connect');
         const { api, stakeKeyHash } = await enableWallet(walletKey);
 
         step('build');
-        const poolHash = poolKeyHash(pool.pool_id);
         const deposit = register ? BigInt(params.key_deposit) : 0n;
         const cred = [0, stakeKeyHash];
-        const cert = register ? [11, cred, poolHash, deposit] : [2, cred, poolHash];
+        let cert;
+        if (target.kind === 'drep') {
+            const drep = drepField(target);
+            cert = register ? [12, cred, drep, deposit] : [9, cred, drep];
+        } else {
+            const poolHash = poolKeyHash(target.pool_id);
+            cert = register ? [11, cred, poolHash, deposit] : [2, cred, poolHash];
+        }
         const changeAddr = hexToBytes(await api.getChangeAddress());
         const utxos = await walletUtxos(api);
         const ttl = Math.floor(Date.now() / 1000) - SHELLEY_UNIX_MINUS_SLOT + TTL_SECONDS;
@@ -398,10 +433,15 @@
 
     function openDialog(pool) {
         if (open || window.top !== window.self) return;   // never inside another site's frame
+        const isDrep = pool.kind === 'drep';
+        const OPTION = { abstain: 'Always Abstain', no_confidence: 'Always No Confidence' };
+        const label = isDrep ? (OPTION[pool.option] || pool.name || String(pool.drep_id).slice(0, 12) + '…' + String(pool.drep_id).slice(-6))
+            : pool.ticker;
         const lastFocused = document.activeElement;
         const closeBtn = el('button', { type: 'button', className: 'modal-close', textContent: '×' });
         closeBtn.setAttribute('aria-label', 'Close');
-        const title = el('h2', { className: 'modal-title', id: 'delegateTxTitle', textContent: 'Delegate to ' + pool.ticker });
+        const title = el('h2', { className: 'modal-title', id: 'delegateTxTitle',
+            textContent: isDrep ? 'Give your vote to ' + label : 'Delegate to ' + pool.ticker });
         const body = el('div', { className: 'modal-body delegate-body' });
         const box = el('div', { className: 'modal modal-delegate' }, [closeBtn, title, body]);
         box.setAttribute('role', 'dialog');
@@ -426,10 +466,13 @@
 
         const say = (...nodes) => body.replaceChildren(...nodes);
         const p = (text, cls) => el('p', { textContent: text, className: cls || '' });
-        const poolLine = () => el('p', { className: 'delegate-pool' }, [
-            el('strong', { textContent: pool.ticker }), ' — ' + pool.name,
-            el('br'), el('span', { className: 'delegate-id', textContent: pool.pool_id }),
-        ]);
+        const poolLine = () => isDrep
+            ? el('p', { className: 'delegate-pool' }, [el('strong', { textContent: label })].concat(pool.drep_id
+                ? [el('br'), el('span', { className: 'delegate-id', textContent: pool.drep_id })] : []))
+            : el('p', { className: 'delegate-pool' }, [
+                el('strong', { textContent: pool.ticker }), ' — ' + pool.name,
+                el('br'), el('span', { className: 'delegate-id', textContent: pool.pool_id }),
+            ]);
         const disclaimer = () => el('p', { className: 'delegate-fine' }, [
             'You sign in your own wallet; your ADA stays in it. By continuing you accept the ',
             el('a', { href: '/terms', target: '_blank', rel: 'noopener noreferrer', textContent: 'disclaimer' }), '.',
@@ -448,8 +491,10 @@
                     say(poolLine(),
                         el('p', {}, ['Sent. Transaction ', link, ' (fee ' + ada(r.fee) + ' ADA' +
                             (r.deposit ? ', deposit ' + ada(r.deposit) + ' ADA' : '') + ').']),
-                        p('Once it is in a block, the delegation to ' + pool.ticker + ' takes effect at the end of this epoch. ' +
-                            'The first rewards arrive about 15 to 20 days from now.'));
+                        isDrep
+                            ? p('Once it is in a block, your vote goes to ' + label + '. It counts from the next epoch.')
+                            : p('Once it is in a block, the delegation to ' + pool.ticker + ' takes effect at the end of this epoch. ' +
+                                'The first rewards arrive about 15 to 20 days from now.'));
                 } catch (e) {
                     console.error(e, e.detail);
                     const full = e.detail && (e.detail.info || e.detail.message) ? String(e.detail.info || e.detail.message) : '';
@@ -494,7 +539,9 @@
         if (!list.length) {
             say(poolLine(),
                 p('No supported Cardano wallet was found in this browser. This site works with Eternl, Gero, Lace, Typhon and VESPR. ' +
-                    'You can also copy the pool ID above and select the pool in your wallet itself.'),
+                    (!isDrep ? 'You can also copy the pool ID above and select the pool in your wallet itself.'
+                        : pool.drep_id ? 'You can also copy the DRep ID above and choose the DRep in your wallet itself.'
+                            : 'You can also choose ' + label + ' in your wallet itself.')),
                 disclaimer());
             closeBtn.focus();
             return;
@@ -510,8 +557,12 @@
             return b;
         });
         say(poolLine(),
-            p('Choose your wallet. It will show a delegation to this pool and a fee of about 0.18 ADA for you to sign. ' +
-                'If your wallet already delegates to this pool, there is nothing to do: signing again only costs the fee.'),
+            isDrep
+                ? p('Choose your wallet. It will show a vote delegation to ' + (pool.option ? label : 'this DRep') +
+                    ' and a fee of about 0.18 ADA for you to sign. If your wallet already gives its vote to ' +
+                    (pool.option ? label : 'this DRep') + ', there is nothing to do: signing again only costs the fee.')
+                : p('Choose your wallet. It will show a delegation to this pool and a fee of about 0.18 ADA for you to sign. ' +
+                    'If your wallet already delegates to this pool, there is nothing to do: signing again only costs the fee.'),
             el('div', { className: 'delegate-wallets' }, buttons),
             disclaimer());
         buttons[0].focus();

@@ -374,9 +374,11 @@ html, body {
     .hero-info {
         font-size: 1.1rem;
     }
+}
 
-    /* Five actions crowd the bar below desktop width, so collapse them
-       into the hamburger dropdown from tablet width down. */
+@media (max-width: 1180px) {
+    /* Seven actions crowd the bar below this width (they reach the logo at
+       about 1100 px), so collapse them into the hamburger dropdown. */
     .menu-toggle {
         display: flex;
     }

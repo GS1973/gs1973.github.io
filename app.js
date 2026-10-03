@@ -18,6 +18,7 @@ if (window.top !== window.self) {
     const modalClose = document.getElementById('modalClose');
     const walletBtn = document.getElementById('delegateWalletBtn');
     const toPools = document.getElementById('delegateToPools');
+    const toDreps = document.getElementById('delegateToDreps');
 
     let lastFocused = null;
 
@@ -46,7 +47,7 @@ if (window.top !== window.self) {
 
     // Keep keyboard focus inside the dialog while it is open.
     function trapFocus(event) {
-        const focusable = [modalClose, walletBtn, toPools];
+        const focusable = [modalClose, walletBtn, toPools, toDreps];
         const first = focusable[0];
         const last = focusable[focusable.length - 1];
 
@@ -73,6 +74,12 @@ if (window.top !== window.self) {
         closeModal();
         const poolsBtn = document.getElementById('poolsBtn');
         if (poolsBtn) poolsBtn.click();
+    });
+
+    toDreps.addEventListener('click', function () {
+        closeModal();
+        const drepsBtn = document.getElementById('drepsBtn');
+        if (drepsBtn) drepsBtn.click();
     });
 
     // Close when the backdrop (not the dialog itself) is clicked.
