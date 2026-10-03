@@ -28,6 +28,8 @@ third-party libraries and a proxy), which was removed then; the delegation of
       `wasm-unsafe-eval`; `script-src`/`connect-src` are now `self` (2026-06-26)
 - [x] Remove the dead `cloudflare-worker.js` from the repo; it is no longer
       referenced by the site (kept in git history) (2026-06-26)
+- [x] Delete the Cloudflare Worker that proxied Blockfrost: nothing used it
+      any more (2026-10-03)
 - [x] Turn the top banner into a static DRep link to Cexplorer, replacing the
       hardcoded seasonal message and dropping the `fadeInOut` animation
       (resolves the former hardcoded-year and banner-animation items) (2026-06-26)
@@ -35,18 +37,6 @@ third-party libraries and a proxy), which was removed then; the delegation of
 - [x] Fix deprecated substr() to use slice() (2026-01-02)
 - [x] Remove duplicate POOL_BECH32 constant (2026-01-02)
 - [x] Add transaction confirmation waiting for better UX (2026-01-02, since removed with the wallet flow)
-
----
-
-## 📌 Kept by decision
-
-### Cloudflare Worker — kept deployed
-**Status:** Intentionally retained
-**Description:** The website code no longer references the worker
-(`blockfrost-proxy.smitblockchainops.workers.dev`) — it was removed together
-with the in-browser delegation flow. The worker itself is kept deployed on
-purpose, in case future website functionality needs an on-chain data source.
-Source and deploy notes are archived outside this repo (`~/SBO`).
 
 ---
 
