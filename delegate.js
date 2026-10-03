@@ -366,7 +366,7 @@
         submit: 'Sending the transaction…',
     };
     const ERR = {
-        declined: 'Nothing was signed: the wallet declined or the request was cancelled.',
+        declined: 'Nothing was signed: the wallet declined or the request was canceled.',
         wrongNet: 'Your wallet is not on the Cardano main network.',
         noStake: 'This wallet has no stake address to delegate with.',
         script: 'This wallet\'s stake address is a script; this site can only delegate with a key.',
