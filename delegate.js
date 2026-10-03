@@ -484,7 +484,7 @@
                 el('br'), el('span', { className: 'delegate-id', textContent: pool.pool_id }),
             ]);
         const disclaimer = () => el('p', { className: 'delegate-fine' }, [
-            'You sign in your own wallet; your ADA stays in it. By continuing you accept the ',
+            'You sign in your own wallet. Delegating does not move your ADA: you pay only the transaction fee, and a refundable deposit the first time your wallet delegates. By continuing you accept the ',
             el('a', { href: '/terms', target: '_blank', rel: 'noopener noreferrer', textContent: 'disclaimer' }), '.',
         ]);
 
