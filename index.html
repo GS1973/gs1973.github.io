@@ -102,6 +102,7 @@
                 <li>Has stake in the current epoch and is not retired.</li>
                 <li>Makes itself known to the public: it has a name, a ticker and a homepage (a web address) in its registered metadata.</li>
                 <li>Answers on at least one of its registered relays. A block is not asked: a pool that is waiting for stake cannot make one.</li>
+                <li>Meets the pledge it declared: its owners hold at least that much stake in the pool this epoch. A pool that does not meet its pledge earns no rewards in that epoch, and neither do its delegators.</li>
                 <li>Has less stake than the saturation point at <code>k</code> = 1000: the ADA outside the reserves, divided by 1000.</li>
                 <li>Is not run by an exchange or by one of the founding entities of Cardano (IOG, EMURGO, Cardano Foundation).</li>
             </ul>
