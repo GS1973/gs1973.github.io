@@ -101,8 +101,7 @@
                 <ul class="pools-rules">
                 <li>Has stake in the current epoch and is not retired.</li>
                 <li>Makes itself known to the public: it has a name, a ticker and a homepage (a web address) in its registered metadata.</li>
-                <li>Made at least one block since 1 January 2026, so a pool that lost stake but still runs is not left out.</li>
-                <li>Answers on at least one of its registered relays.</li>
+                <li>Answers on at least one of its registered relays. A block is not asked: a pool that is waiting for stake cannot make one.</li>
                 <li>Has less stake than the saturation point at <code>k</code> = 1000: the ADA outside the reserves, divided by 1000.</li>
                 <li>Is not run by an exchange or by one of the founding entities of Cardano (IOG, EMURGO, Cardano Foundation).</li>
             </ul>
