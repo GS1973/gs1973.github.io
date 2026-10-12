@@ -93,21 +93,23 @@
                 <button id="poolsClose" class="modal-close" aria-label="Close">&times;</button>
             </div>
             <div class="pools-body">
-                <p>If <code>k</code> (the protocol parameter <code>stakePoolTargetNum</code>) goes from 500 to 1000, a stake pool saturates at <strong id="poolsSaturation">about 38.9 million</strong> ADA. Above that point the rewards per ADA go down. The pools below are alive and have less stake than that.</p>
+                <p>If <code>k</code> (the protocol parameter <code>stakePoolTargetNum</code>) goes from 500 to 1000, a stake pool saturates at <strong id="poolsSaturation">about 38.9 million</strong> ADA. Above that point the rewards per ADA go down. The pools below are alive, make themselves known to the public and have less stake than that.</p>
                 <p>We are strongly in favor of decentralization. That is why we support raising <code>k</code> to 1000, and why this list starts from the saturation point at <code>k</code> = 1000. The pools that need more delegation the most are at the top: the list starts with the smallest pools.</p>
                 <p class="pools-meta" id="poolsMeta">Loading the list…</p>
                 <h3>How the list is made</h3>
                 <p>Every day, from the Cardano chain, a pool is listed when it:</p>
                 <ul class="pools-rules">
                 <li>Has stake in the current epoch and is not retired.</li>
-                <li>Has a name and a ticker in its registered metadata.</li>
+                <li>Makes itself known to the public: it has a name, a ticker and a homepage (a web address) in its registered metadata.</li>
                 <li>Made at least one block since 1 January 2026, so a pool that lost stake but still runs is not left out.</li>
                 <li>Answers on at least one of its registered relays.</li>
                 <li>Has less stake than the saturation point at <code>k</code> = 1000: the ADA outside the reserves, divided by 1000.</li>
                 <li>Is not run by an exchange or by one of the founding entities of Cardano (IOG, EMURGO, Cardano Foundation).</li>
             </ul>
                 <p>Pools of exchanges and of the founding entities are left out on purpose: this list is meant to spread stake over independent pool operators. The seven EMURGO pools that were handed over in September 2026 (now MURA1 to MURA7) stay off the list, because there is no transparency about the takeover. All of these are recognized by pool ID, so a pool that changes its name stays off the list.</p>
-                <p>A relay that does not answer from here is not proof that a pool is down: some pools only accept known peers. Still, a pool whose relays do not answer is not on this list: keeping its relays reachable is the responsibility of the pool operator. The list is made by Smit Blockchain Operations, operator of pool BKIND, which is on it by the same rules as every other pool.</p>
+                <p>A relay that does not answer from here is not proof that a pool is down: some pools only accept known peers. Still, a pool whose relays do not answer is not on this list: keeping its relays reachable is the responsibility of the pool operator.</p>
+                <p>A pool's name, ticker and homepage are its own registered metadata. They are read from the address the pool recorded on the chain, and used only when what is found there matches the hash the pool recorded with it. A pool without a homepage, or whose metadata cannot be read or no longer matches that hash, is not on this list: keeping its metadata in order is the responsibility of the pool operator too. A name is chosen by the pool itself. It is not proof of who is behind it.</p>
+                <p>The list is made by Smit Blockchain Operations, operator of pool BKIND, which is on it by the same rules as every other pool.</p>
                 <h3>The pools</h3>
                 <p class="pools-note">Click a heading to sort. Click a ticker or a name to open the pool on Cardanoscan in a new window to view the pool’s details. Click Delegate to delegate to the pool with your wallet.</p>
                 <div class="pools-tools">
@@ -146,11 +148,11 @@
                 <p>Why does it matter who holds the vote? Because power that sits with a few can be used by a few. A small group can be pressured, bought, or simply share the same interests, and then it decides for everyone: about the treasury, the rules, even the constitution itself. Spread over many independent voices, that power is hard to capture. Decentralization is not only about who runs the network, but also about who decides over it.</p>
                 <p>Today very few hold that power.</p>
                 <ul class="pools-rules dreps-figures">
-                    <li>Of <span data-fig="circulating">37.5 billion</span> ADA in circulation, <span data-fig="voting">5.2 billion</span> (<span data-fig="voting_pct">13.8%</span>) takes part in the vote.</li>
-                    <li><span data-fig="no_drep">21.8 billion</span> ADA (<span data-fig="no_drep_pct">58.1%</span>) has no DRep at all. <span data-fig="abstain">10.4 billion</span> (<span data-fig="abstain_pct">27.6%</span>) is set to Always Abstain and never votes.</li>
-                    <li><span data-fig="inactive_dreps">545</span> DReps are inactive: they have not voted for at least <span data-fig="inactive_days">100</span> days. The <span data-fig="inactive_ada">183 million</span> ADA delegated to them counts for nothing.</li>
+                    <li>Of <span data-fig="circulating">37.5 billion</span> ADA in circulation, <span data-fig="voting">5.2 billion</span> (<span data-fig="voting_pct">13.9%</span>) takes part in the vote.</li>
+                    <li><span data-fig="no_drep">21.6 billion</span> ADA (<span data-fig="no_drep_pct">57.6%</span>) has no DRep at all. <span data-fig="abstain">10.5 billion</span> (<span data-fig="abstain_pct">28.0%</span>) is set to Always Abstain and never votes.</li>
+                    <li><span data-fig="inactive_dreps">547</span> DReps are inactive: they have not voted for at least <span data-fig="inactive_days">100</span> days. The <span data-fig="inactive_ada">186 million</span> ADA delegated to them counts for nothing.</li>
                     <li>Of the ADA that votes, <span data-fig="block_treasury_params">5</span> DReps together can block any treasury withdrawal or protocol parameter change. <span data-fig="block_constitution">4</span> can block a change to the constitution. <span data-fig="carry_treasury">20</span> together carry the DRep vote on a treasury withdrawal.</li>
-                    <li>In the last six months only <span data-fig="rationale_pct">39.7%</span> of DRep votes came with a rationale (a public explanation of the vote). <span data-fig="never_rationale">142</span> active DReps, holding <span data-fig="never_rationale_pct">23.7%</span> of the voting power, did not explain a single vote.</li>
+                    <li>In the last six months only <span data-fig="rationale_pct">39.6%</span> of DRep votes came with a rationale (a public explanation of the vote). <span data-fig="never_rationale">139</span> active DReps, holding <span data-fig="never_rationale_pct">23.9%</span> of the voting power, did not explain a single vote.</li>
                 </ul>
                 <p>Choose a DRep who votes in line with your views and explains why. If several DReps fit, a smaller one helps spread the vote. The list starts with the DReps that voted and explained their vote most often; among equals, the smallest comes first.</p>
                 <p>BKIND is in this list on the same terms as every other DRep. BKIND is both a stake pool operator and a DRep.</p>

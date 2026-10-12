@@ -119,7 +119,7 @@
             document.getElementById('poolsSaturation').textContent = fmt(d.saturation_ada);
             metaEl.textContent =
                 `${fmt(pools.length)} pools, updated ${d.generated.slice(0, 10)} (epoch ${d.epoch}). ` +
-                `Of ${fmt(d.pools_with_stake)} pools with stake, ${fmt(d.alive_named)} are alive and named; ` +
+                `Of ${fmt(d.pools_with_stake)} pools with stake, ${fmt(d.alive_named)} are alive and known to the public; ` +
                 `${fmt(d.above_saturation)} of those are above the saturation point.` +
                 (d.excluded ? ` Left out: ${fmt(d.excluded_exchanges)} pools of exchanges and ` +
                     `${fmt(d.excluded_founders)} of the founding entities.` : '');
