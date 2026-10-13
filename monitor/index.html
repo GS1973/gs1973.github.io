@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="The Cardano Decentralization Monitor: how the figures are determined">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; upgrade-insecure-requests; object-src 'none'; form-action 'none'; base-uri 'none';">
+    <title>The Cardano Decentralization Monitor - how the figures are determined</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="terms-page">
+    <div class="terms-container">
+        <div class="terms-content">
+            <h1>The Cardano Decentralization Monitor: how the figures are determined</h1>
+            <p>The Monitor reports the same figures after every epoch change, each beside the epoch before and, where it says so, the same point a year (73 epochs) earlier. This document says how each figure is counted. We count only what we can substantiate; where a figure rests on an inference, it says so here.</p>
+            <h2>Sources</h2>
+            <ul>
+                <li>The chain, read twice: by our own decoding engine and by db-sync. Every figure both hold is read from both and must be equal. While the decoding engine does not hold the newest epoch in full yet, a figure comes from db-sync alone until the second reading follows.</li>
+                <li>Names (a pool&#x27;s name, ticker, homepage, description; a DRep&#x27;s name and metadata) are not on the chain. We fetch them from the address registered on the chain and keep them only when their hash equals the hash on the chain. The registration that counts is the latest one before the epoch.</li>
+                <li>A year ago is measured with the criteria and lists of today.</li>
+            </ul>
+            <h2>1. Are pools coming or going</h2>
+            <ul>
+                <li>Registered: a registration before the epoch and no retirement that had taken effect when the epoch began.</li>
+                <li>New: first registration ever in the epoch before. Retired: retirement that took effect at the end of it.</li>
+                <li>ADA with a retired pool: stake keys whose latest delegation names a pool that has retired, and that have not been registered or deregistered since. The ledger removes a delegation when the pool retires (confirmed at the node), so this ADA is not delegated and earns nothing. The amount is what sits on the addresses of those keys; rewards not yet withdrawn are not in it.</li>
+            </ul>
+            <h2>2. Half of all stake sits in N pools</h2>
+            <p>The stake distribution that makes the blocks of the epoch (the delegation as it stood two epochs earlier; the node calls it the &quot;set&quot; snapshot). N is the smallest number of pools that together hold at least half of it. Other sites can count a later distribution, or count pools differently, and show a slightly different number of pools with stake. In epoch 661 this distribution holds 2,671 pools; 4 of them had retired when the epoch began, which leaves the 2,667 registered pools with stake of the scoreboard.</p>
+            <h2>3. Counted by owner</h2>
+            <p>A pool is a registration, not an owner. Two pools are of one owner when</p>
+            <ol>
+                <li>they share an owner key in their registration;</li>
+                <li>they share a reward account;</li>
+                <li>they carry the same name once a trailing number is taken off;</li>
+                <li>their tickers are of one family (the ticker without trailing digits);</li>
+                <li>they are of the same organization on our list of exchanges and founding entities.</li>
+            </ol>
+            <p>1, 2 and 5 link on their own. 3 and 4 are the operator&#x27;s own text and not unique: they link only when two of name, ticker family and own website (the homepage&#x27;s domain) agree. That is an inference. The same relays, the same metadata address or the same hosting do not count: they say who runs a pool, not whose it is.</p>
+            <p>Links we cannot prove are not counted. The true number of owners that hold half of the stake can therefore be lower than the figure, not higher: concentration by owner is a lower bound. For epoch 661: 38 owners with all five criteria; 74 with keys and the list only; 137 with keys only.</p>
+            <h2>4. Where the stake sits</h2>
+            <p>Every registered pool with stake is in one group.</p>
+            <ul>
+                <li>Exchanges and founding entities (IOG, EMURGO, Cardano Foundation): pools on our list, pinned by pool id. A pool comes on the list after a decision, with the reason per organization. That a pool is of an exchange is our attribution, on the grounds given per organization; not every organization has confirmed it. A pool stays in this group whether it is living or not: in epoch 661, 23 pools of exchanges and founding entities are neither answering nor making blocks, and are counted with their organization, not with the silent pools.</li>
+                <li>Living: a registered relay of the pool answers, or the pool made a block in the epoch before.</li>
+                <li>Public pool: living, with a name, a ticker and a homepage (http:// or https:// on a domain name) in its metadata.</li>
+                <li>Private pool: living and not public.</li>
+                <li>Silent: registered, no relay answers and no block in the epoch before.</li>
+            </ul>
+            <p>Public, private and silent rest on the relay test, whose date is at the foot of the scoreboard. The relay test opens a TCP connection to the address and port the pool registered, public addresses only, and sends nothing. It is one measurement from one place at one moment, taken once per epoch. Figures that hang on it have no value for a year ago.</p>
+            <h2>5. DReps that can block together</h2>
+            <p>Per kind of action the threshold of the protocol parameters, counted as the ledger does: the stake on Always No Confidence is in the denominator and is never a yes on these actions, so it is on the blocking side before any DRep joins it. The figure is the smallest number of the largest active DReps that together can block. A DRep is active by its state when the epoch began: it becomes inactive after 20 epochs (100 days) without a vote or an update. The website measures every day, so its number of active DReps can differ by a DRep that became active or inactive since the epoch began.</p>
+            <h2>6. DReps linked to a stake pool</h2>
+            <p>An own key of the pool (an owner key or the reward account of its registration) has delegated its vote to the DRep: that is on the chain. And one of these confirms it:</p>
+            <ul>
+                <li>on the chain: the payment address the DRep gives belongs to a key of the pool, or the DRep&#x27;s transactions were paid from the pool&#x27;s wallet;</li>
+                <li>by a matching name or metadata: the DRep carries the pool&#x27;s name or ticker, the pool names the DRep in its metadata, or the DRep names the pool in its metadata. This is an inference.</li>
+            </ul>
+            <p>All pools of the same owner (point 3) then count. Active DReps and pools with stake only. For epoch 661: 62.6% of the DRep voting power, of which 8.2% is confirmed on the chain and 54.4% by a matching name or metadata.</p>
+            <h2>7. Voting without an explanation</h2>
+            <p>Active DReps that voted on a governance action that was open in the 36 epochs (180 days) before, and attached a rationale to none of those votes. Per action the DRep&#x27;s last vote counts. Whether a rationale says anything is not measured. This is the count of the DRep list on the website. The website measures every day and the Monitor when the epoch begins, so the two can differ by a DRep that became active or voted since.</p>
+            <h2>8. Does the holder take part</h2>
+            <ul>
+                <li>ADA in circulation: 45 billion minus the reserves and the treasury.</li>
+                <li>With a vote delegation: all ADA in the DRep distribution, as a share of the circulation. Always Abstain and active DReps: as a share of the ADA with a vote delegation.</li>
+                <li>Staked: the stake with pools, as a share of the circulation.</li>
+            </ul>
+            <h2>9. Stake that changed pool</h2>
+            <p>Stake keys that are in the distribution of this epoch and of the one before with a different pool: what delegators did two epochs earlier. Larger or smaller is by the stake of both pools in the earlier distribution. A few large keys can carry most of the ADA, so the number of keys stands first.</p>
+            <h2>What moved most</h2>
+            <p>The shares of the scoreboard by their change in percentage points, and the counts by their relative change, against the epoch before and a year ago.</p>
+        </div>
+    </div>
+</body>
+</html>
