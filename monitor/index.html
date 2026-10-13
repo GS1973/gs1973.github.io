@@ -75,13 +75,22 @@
             <p>All pools of the same owner (point 3) then count. Active DReps and pools with stake only. For epoch 661: 62.6% of the DRep voting power, of which 8.2% is confirmed on the chain and 54.4% by a matching name or metadata.</p>
             <h2>7. Voting without an explanation</h2>
             <p>Active DReps that voted on a governance action that was open in the 36 epochs (180 days) before, and attached a rationale to none of those votes. Per action the DRep&#x27;s last vote counts. Whether a rationale says anything is not measured. This is the count of the DRep list on the website. The website measures every day and the Monitor when the epoch begins, so the two can differ by a DRep that became active or voted since.</p>
-            <h2>8. Does the holder take part</h2>
+            <h2>8. The SPO room</h2>
+            <p>Pools vote on a hard fork, a motion of no confidence, a committee change and a change of a security parameter; each needs 51% of the pool stake that counts. The ledger counts pool votes on the newest stake distribution, the one taken as the epoch began (not the one that makes the blocks of the epoch).</p>
+            <p>A pool that does not vote counts by the vote delegation of the reward account of its registration, as the ledger does: set to Always Abstain it is an abstention and leaves the count; anything else is a no. On a hard fork a pool that does not vote is always a no, so there all stake counts.</p>
+            <ul>
+                <li>Set to Always Abstain: the pools whose reward account has that delegation when the epoch began, and their share of the pool stake. They count only when they vote themselves.</li>
+                <li>Pools that can block together: the smallest number of the largest pools that together stop an action when every other pool votes yes and the pools on Always Abstain stay out. A pool on Always Abstain that votes no joins the count with its stake. For a hard fork: the smallest number of pools with more than 49% of all pool stake.</li>
+                <li>Owners: the same count with all pools of one owner taken together (point 3).</li>
+            </ul>
+            <p>For epoch 661: 9.2 of the 21.4 billion ADA with pools counts when the pools on Always Abstain stay out.</p>
+            <h2>9. Does the holder take part</h2>
             <ul>
                 <li>ADA in circulation: 45 billion minus the reserves and the treasury.</li>
                 <li>With a vote delegation: all ADA in the DRep distribution, as a share of the circulation. Always Abstain and active DReps: as a share of the ADA with a vote delegation.</li>
                 <li>Staked: the stake with pools, as a share of the circulation.</li>
             </ul>
-            <h2>9. Stake that changed pool</h2>
+            <h2>10. Stake that changed pool</h2>
             <p>Stake keys that are in the distribution of this epoch and of the one before with a different pool: what delegators did two epochs earlier. Larger or smaller is by the stake of both pools in the earlier distribution. A few large keys can carry most of the ADA, so the number of keys stands first.</p>
             <h2>What moved most</h2>
             <p>The shares of the scoreboard by their change in percentage points, and the counts by their relative change, against the epoch before and a year ago.</p>
