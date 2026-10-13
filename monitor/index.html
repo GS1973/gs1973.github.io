@@ -15,6 +15,7 @@
         <div class="terms-content">
             <h1>The Cardano Decentralization Monitor: how the figures are determined</h1>
             <p>The Monitor reports the same figures after every epoch change, each beside the epoch before and, where it says so, the same point a year (73 epochs) earlier. This document says how each figure is counted. We count only what we can substantiate; where a figure rests on an inference, it says so here.</p>
+            <p>Made by Smit Blockchain Operations, operator of stake pool BKIND and a DRep. Version of 13 October 2026.</p>
             <h2>Sources</h2>
             <ul>
                 <li>The chain, read twice: by our own decoding engine and by db-sync. Every figure both hold is read from both and must be equal. While the decoding engine does not hold the newest epoch in full yet, a figure comes from db-sync alone until the second reading follows.</li>
@@ -50,6 +51,19 @@
                 <li>Silent: registered, no relay answers and no block in the epoch before.</li>
             </ul>
             <p>Public, private and silent rest on the relay test, whose date is at the foot of the scoreboard. The relay test opens a TCP connection to the address and port the pool registered, public addresses only, and sends nothing. It is one measurement from one place at one moment, taken once per epoch. Figures that hang on it have no value for a year ago.</p>
+            <p>The organizations on the list in epoch 661, with their pools with stake, their share of the stake, and what the attribution rests on:</p>
+            <ul>
+                <li>Coinbase: 48 pools, 12.1%. Their metadata is on bison.run or herd.run, the system of Coinbase Cloud. Coinbase has not confirmed it.</li>
+                <li>Upbit: 20 pools, 3.1%. The pool&#x27;s own name (Upbit Staking).</li>
+                <li>eToro: 15 pools, 2.4%. The pool&#x27;s own name (eToro Pool).</li>
+                <li>Binance: 36 pools, 1.9%. The pool&#x27;s own name (Binance Node, Binance Staking).</li>
+                <li>Cardano Foundation: 5 pools, 1.2%. The pool&#x27;s own name.</li>
+                <li>EMURGO: 8 pools, 0.9%. The pool&#x27;s own name when it was put on the list (EMURGO, Yoroi); seven of these pools now carry the name MURA.</li>
+                <li>GMO Coin: 3 pools, 0.7%. Its own name and metadata: operated for the GMO Coin exchange.</li>
+                <li>Bitvavo: 4 pools, 0.7%. Its own name, or a registered relay named after Bitvavo.</li>
+                <li>IOG: 10 pools, less than 0.1%. The pool&#x27;s own name and homepage.</li>
+            </ul>
+            <p>The list holds 191 pools; 149 of them have stake in epoch 661.</p>
             <h2>5. DReps that can block together</h2>
             <p>Per kind of action the threshold of the protocol parameters, counted as the ledger does: the stake on Always No Confidence is in the denominator and is never a yes on these actions, so it is on the blocking side before any DRep joins it. The figure is the smallest number of the largest active DReps that together can block. A DRep is active by its state when the epoch began: it becomes inactive after 20 epochs (100 days) without a vote or an update. The website measures every day, so its number of active DReps can differ by a DRep that became active or inactive since the epoch began.</p>
             <h2>6. DReps linked to a stake pool</h2>
