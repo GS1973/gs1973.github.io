@@ -1,6 +1,15 @@
 [
   {
     "role": "DRep",
+    "title": "Cardano Strategic Copper Reserve (Toto Finance)",
+    "action": "Treasury Withdrawal",
+    "vote": "No",
+    "epoch": 661,
+    "govActionId": "6eddf4f1dbad06f329aa69743559c4930b7b689f16c073061d228d9c6613d19c#0",
+    "rationale": "governance/vote-copper-reserve-6eddf4f1.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "OpenZeppelin Stack (Intersect-administered)",
     "action": "Treasury Withdrawal",
     "vote": "No",

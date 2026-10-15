@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "179f7fcb76adfd21200c26b549a661f815f3fed43ed7577ee8008176d1f72b3f",
+        "signature": "b0bb6ef69534e92d1972712fd9526193869b1f3efb10afd90940898cbe89c5d3a89d55b95575e318155f7b76edbf8b865e8489910e23194fac06d65d3acb9004"
+      }
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes No. This action takes 22 million ada from the treasury, two thirds of it for copper held by one company, sends it to an address one key controls, issues the token on Ethereum, and by the proposer's own figures needs copper to rise about 49 percent to return what it takes.",
+    "rationaleStatement": "Action: treasury withdrawal 6eddf4f1dbad06f329aa69743559c4930b7b689f16c073061d228d9c6613d19c#0, 22,000,000 ada to the reward address stake1uxmfznssgltfuakxlluxdecmu9wwd48kw0pz0qhugaxyjyguc0tax of Toto Finance Inc. I verified on chain that the action withdraws exactly this amount to that address under the current constitution's guardrails script, fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64, and that the proposal document hashes to the on-chain anchor, b2bdccb6d772bae43613612a745ed19f80ba4692c0e1616a2e61606d379953c0.\n\nWhat I support. Tokenized real-world assets can bring real economic activity to Cardano. My No is to this way of paying for it, not to that aim.\n\nA bet, by the proposer's own numbers. Only 14,724,409 ada, 66.93 percent, buys copper. If every fee budget is spent and ADA/USD does not change, the proposal itself computes that copper must rise \"approximately 49.41%, to about $10.06/lb, to recover ₳22M of value in ADA\". It adds that even the bullish Deutsche Bank scenario of $10/lb \"would still be marginally below full original ADA recovery\", and that this call is for the second quarter of 2027 while the sale may fall in 2028 or 2029, a \"temporal mismatch\" it names itself. On the same assumptions an unchanged copper price returns 66.9 percent, and $5/lb returns 49.7 percent. In its own words: \"No original ADA principal, copper appreciation, token adoption or profit is guaranteed\". The treasury is not a fund for commodity positions.\n\nOne company, one key. The withdrawal goes to a reward address controlled by a single key, not to a contract. The proposal states that \"no independent administrator currently controls the receiving wallet\" and that \"Until independent controls are actually established, Toto Finance is the on-chain fund controller\". The independent oversight provider is preferred, not engaged. The warehouse is not named, and \"No warehouse agreement or stock ownership is represented as existing at submission.\" Independent legal sign-off is a condition before the purchase, not before the vote, and on insolvency \"Warehouse metal does not automatically transfer to a blockchain Treasury solely by reason of insolvency.\"\n\nWhat Cardano gets. The canonical token is \"one canonical ERC-20 CuTT per verified pound on Ethereum\". Cardano holds a bridged copy, and Toto Finance \"is free to expand separately funded CuTT supply on Ethereum and other supported networks\". The treasury of Cardano pays to issue a token whose home is another chain, and the proposal guarantees no adoption, listing or liquidity on Cardano.\n\nTreasury ada through the proposer's own token. Warehouse and insurance fees are to be paid by exchanging treasury ada for TOTO, Toto Finance's own token, and then into USD, although \"Warehouse operators remain paid in USD under their commercial contracts.\" The treasury does not need that route. The proposal itself calls it a \"related-party token conversion\".\n\nThe cost. 7,275,591 ada, 33.07 percent, is budgeted for costs whatever happens to copper, of which 2,640,000 ada for Toto Finance itself for development and project management. What is not spent is to be returned.",
+    "precedentDiscussion": "My Yes votes on Intersect's governance and technical stewardship and on the Blockfrost transformation funded work that Cardano itself runs on. My No on action 158 named promises in place of specification. My DRep registration commits me to hold treasury withdrawals to evidence rather than promises. This vote follows that line.",
+    "counterargumentDiscussion": "\"The proceeds return to the treasury.\" The proposal calls it \"a return-of-proceeds undertaking, not a guaranteed repayment of ₳22M or a contractual interest rate.\" By its own table, with every fee budget spent, an unchanged copper price returns two thirds.\n\nWhat would change my vote: tokenization infrastructure on Cardano funded on its own, without a commodity position paid from the treasury, paid by milestones through an on-chain contract with an independent administrator in place before the vote, and without treasury ada passing through a related-party token.",
+    "conclusion": "BKIND votes No: the treasury is not a commodity fund, and 22 million ada should not leave it on promises (govActionId 6eddf4f1dbad06f329aa69743559c4930b7b689f16c073061d228d9c6613d19c#0).",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Governance action 161, proposal document",
+        "uri": "https://totofinance.com/cardano-treasury-proposal-strategic-tokenized-copper-reserve/data.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "Cardano Strategic Copper Reserve, full treasury proposal (PDF)",
+        "uri": "https://totofinance.com/cardano-treasury-proposal-strategic-tokenized-copper-reserve/Cardano_Toto-Finance_Tokenized_Copper_CuTT_Treasury_Proposal.pdf"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 158 rationale (No, promises in place of specification)",
+        "uri": "https://smitblockchainops.nl/governance/vote-openzeppelin-stack-418df598.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND DRep registration (CIP-119)",
+        "uri": "https://smitblockchainops.nl/governance/drep.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-136, DRep vote rationale",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0136"
+      }
+    ]
+  }
+}
