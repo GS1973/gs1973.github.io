@@ -15,7 +15,7 @@
         <div class="terms-content">
             <h1>The Cardano Decentralization Monitor: how the figures are determined</h1>
             <p>The Monitor reports the same eight points after every epoch change. Every figure stands beside the same figure one epoch earlier, six months (37 epochs) earlier and a year (73 epochs) earlier. This document says how each figure is counted. We count only what we can substantiate, and where a figure rests on an inference, it says so here.</p>
-            <p>Made by Smit Blockchain Operations, operator of stake pool BKIND and a DRep. Version of 14 October 2026.</p>
+            <p>Made by Smit Blockchain Operations, operator of stake pool BKIND and a DRep. Version of 15 October 2026.</p>
             <h2>Sources</h2>
             <ul>
                 <li>The chain, read twice: by our own decoding engine and by db-sync. Every figure both hold is read from both and must be equal. While the decoding engine does not hold the newest epoch in full yet, a figure comes from db-sync alone until the second reading follows.</li>
@@ -83,6 +83,7 @@
             <ul>
                 <li>Pool stake on Always Abstain: the share of the pool stake whose reward account has that delegation, split by the groups of point 3. The groups and the owners are taken from the same distribution the room counts on.</li>
                 <li>Owners that together can block: the smallest number of the largest owners that together stop an action when every other pool votes yes and the pools on Always Abstain stay out. An owner on Always Abstain that votes no joins the count with its stake. For a hard fork: the smallest number of owners with more than 49% of all pool stake.</li>
+                <li>Owners that together carry: the smallest number of the largest owners whose yes passes an action when no other pool votes and the pools on Always Abstain stay out. An owner on Always Abstain that votes yes joins the count with its stake. For a hard fork: the smallest number of owners with at least 51% of all pool stake.</li>
             </ul>
             <h2>8. Does the holder take part</h2>
             <ul>
