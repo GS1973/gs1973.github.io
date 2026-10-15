@@ -73,7 +73,14 @@
                 <li>on the chain: the payment address the DRep gives belongs to a key of the pool, or the DRep&#x27;s transactions were paid from the pool&#x27;s wallet,</li>
                 <li>by a matching name or metadata: the DRep carries the pool&#x27;s name or ticker, the pool names the DRep in its metadata, or the DRep names the pool in its metadata. This is an inference.</li>
             </ul>
+            <p>The own keys of a pool can be on Always Abstain while its owner runs a DRep. So two links count without the vote delegation:</p>
+            <ul>
+                <li>the same organization: our list of exchanges and founding entities puts the DRep and the pool under one organization, each with the evidence for it,</li>
+                <li>the same name: the DRep&#x27;s given name is the name or the ticker of the pool without its number, and only pools of one owner carry that name.</li>
+            </ul>
+            <p>Each link that these two rules added was checked by hand against what the DRep and the pool publish. A pair that turned out not to be in one hand is kept out, with the evidence, in the file not_linked.tsv of the monitor. On 15 October 2026 that is one pair: the DRep Cash and the pool CASH (Cash and Kindness), which share only a name.</p>
             <p>All pools of the same owner (point 2) then count. Active DReps and pools with stake only. The share is of the voting power of the active DReps.</p>
+            <p>Of which a large pool owner: the DReps linked to a pool of one of the owners whose pools together hold half of all stake (point 2), at that point in time.</p>
             <h2>6. Votes without an explanation</h2>
             <p>Active DReps that voted on a governance action that was open in the 36 epochs (180 days) before, and explained none of those votes, as a share of the DReps that voted in that time, and their share of the voting power. Per action the DRep&#x27;s last vote counts.</p>
             <p>A vote is explained when the rationale it names can be read: our metadata store fetched it, its hash is the hash on the chain, it is a JSON document, and it holds text in summary or rationaleStatement (CIP-136), comment (CIP-100) or rationale. A dead link, a wrong hash or an empty document is no explanation. How long or how good the text is, is not judged. A rationale that could not be fetched yet is tried again every day, so a past point in time can count a link as dead that worked at the time. The DRep list on our website counts with the same rule.</p>
