@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-18T10:52:35Z",
+"generated": "2026-10-18T11:43:22Z",
 "epoch": 662,
 "figures": {
 "circulating_ada": 37554261152,
@@ -66,7 +66,7 @@
 "script": false,
 "voting_power_ada": 94829766,
 "share": 1.796,
-"delegators": 1924,
+"delegators": 1925,
 "eligible": 65,
 "voted": 65,
 "rationale": 63,
@@ -1327,7 +1327,7 @@
 "script": false,
 "voting_power_ada": 71516119,
 "share": 1.354,
-"delegators": 660,
+"delegators": 661,
 "eligible": 65,
 "voted": 46,
 "rationale": 3,
@@ -1977,7 +1977,7 @@
 "script": false,
 "voting_power_ada": 208429863,
 "share": 3.948,
-"delegators": 10191,
+"delegators": 10192,
 "eligible": 65,
 "voted": 60,
 "rationale": 0,
