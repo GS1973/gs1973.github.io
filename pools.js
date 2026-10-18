@@ -121,8 +121,9 @@
                 `${fmt(pools.length)} pools, updated ${d.generated.slice(0, 10)} (epoch ${d.epoch}). ` +
                 `Of ${fmt(d.pools_with_stake)} pools with stake, ${fmt(d.alive_named)} are alive and known to the public; ` +
                 `${fmt(d.above_saturation)} of those are above the saturation point.` +
-                (d.excluded ? ` Left out: ${fmt(d.excluded_exchanges)} pools of exchanges and ` +
-                    `${fmt(d.excluded_founders)} of the founding entities.` : '');
+                (d.excluded ? ` Left out: ${fmt(d.excluded_exchanges)} pools of exchanges, ` +
+                    `${fmt(d.excluded_founders)} of the founding entities and ` +
+                    `${fmt(d.excluded_several || 0)} of owners with more than one pool.` : '');
             render();
         } catch (error) {
             metaEl.textContent = 'Could not load the list. Please try again later.';
