@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-19T05:35:43Z",
+"generated": "2026-10-19T14:26:47Z",
 "epoch": 662,
 "figures": {
 "circulating_ada": 37554261152,
@@ -17,7 +17,7 @@
 "carry_treasury": 20,
 "window_epochs": 36,
 "drep_activity_epochs": 20,
-"votes": 9799,
+"votes": 9807,
 "votes_with_rationale": 2783,
 "dreps_never_rationale": 163,
 "dreps_never_rationale_ada": 1321153745,
@@ -68,9 +68,9 @@
 "share": 1.796,
 "delegators": 1925,
 "eligible": 66,
-"voted": 65,
+"voted": 66,
 "rationale": 64,
-"last_vote": "2026-10-15"
+"last_vote": "2026-10-19"
 },
 {
 "name": "Chris [STR8] - Straightpool",
@@ -105,7 +105,7 @@
 "script": false,
 "voting_power_ada": 127319506,
 "share": 2.411,
-"delegators": 466,
+"delegators": 467,
 "eligible": 66,
 "voted": 64,
 "rationale": 62,
@@ -133,9 +133,9 @@
 "share": 8.968,
 "delegators": 2051,
 "eligible": 66,
-"voted": 64,
+"voted": 66,
 "rationale": 61,
-"last_vote": "2026-09-18"
+"last_vote": "2026-10-19"
 },
 {
 "name": "AdaStat",
@@ -144,7 +144,7 @@
 "script": false,
 "voting_power_ada": 52951630,
 "share": 1.003,
-"delegators": 181,
+"delegators": 180,
 "eligible": 66,
 "voted": 61,
 "rationale": 61,
@@ -235,7 +235,7 @@
 "script": false,
 "voting_power_ada": 30805587,
 "share": 0.583,
-"delegators": 140,
+"delegators": 141,
 "eligible": 66,
 "voted": 61,
 "rationale": 55,
@@ -261,11 +261,24 @@
 "script": false,
 "voting_power_ada": 86777622,
 "share": 1.644,
-"delegators": 1530,
+"delegators": 1531,
 "eligible": 66,
 "voted": 57,
 "rationale": 55,
 "last_vote": "2026-09-15"
+},
+{
+"name": "wolf31o2 (Chris Gianelloni)",
+"drep_id": "drep1yfa8r8r36x7x05htftce7qhafrn5nzzr6vazy95pzy6y5dqac0ss7",
+"hash": "7a719c71d1bc67d2eb4af19f02fd48e7498843d33a22168111344a34",
+"script": false,
+"voting_power_ada": 23971335,
+"share": 0.454,
+"delegators": 123,
+"eligible": 66,
+"voted": 61,
+"rationale": 54,
+"last_vote": "2026-10-19"
 },
 {
 "name": "Agora | Cardano (by Rodrigo Pacini)",
@@ -281,17 +294,17 @@
 "last_vote": "2026-10-10"
 },
 {
-"name": "wolf31o2 (Chris Gianelloni)",
-"drep_id": "drep1yfa8r8r36x7x05htftce7qhafrn5nzzr6vazy95pzy6y5dqac0ss7",
-"hash": "7a719c71d1bc67d2eb4af19f02fd48e7498843d33a22168111344a34",
+"name": "Pallamus",
+"drep_id": "drep1ytsj5tchu9qh32zml24ctuvam90tygx8p286uw3n78nlypc2fqmyr",
+"hash": "e12a2f17e14178a85bfaab85f19dd95eb220c70a8fae3a33f1e7f207",
 "script": false,
-"voting_power_ada": 23971335,
-"share": 0.454,
-"delegators": 122,
-"eligible": 66,
-"voted": 60,
-"rationale": 54,
-"last_vote": "2026-10-04"
+"voting_power_ada": 155185,
+"share": 0.003,
+"delegators": 5,
+"eligible": 11,
+"voted": 10,
+"rationale": 9,
+"last_vote": "2026-10-15"
 },
 {
 "name": "Dan",
@@ -302,9 +315,22 @@
 "share": 0.03,
 "delegators": 71,
 "eligible": 66,
-"voted": 58,
+"voted": 60,
 "rationale": 54,
-"last_vote": "2026-10-08"
+"last_vote": "2026-10-19"
+},
+{
+"name": "CardanoLeo",
+"drep_id": "drep1y28xhrjxe496rnle8ln3slpggnp8leu3mn244ujrhwet0cc2vmte4",
+"hash": "8e6b8e46cd4ba1cff93fe7187c2844c27fe791dcd55af243bbb2b7e3",
+"script": false,
+"voting_power_ada": 654394,
+"share": 0.012,
+"delegators": 26,
+"eligible": 11,
+"voted": 9,
+"rationale": 9,
+"last_vote": "2026-09-23"
 },
 {
 "name": "hix_coffeepool☕️",
@@ -359,19 +385,6 @@
 "last_vote": "2026-08-22"
 },
 {
-"name": "Pallamus",
-"drep_id": "drep1ytsj5tchu9qh32zml24ctuvam90tygx8p286uw3n78nlypc2fqmyr",
-"hash": "e12a2f17e14178a85bfaab85f19dd95eb220c70a8fae3a33f1e7f207",
-"script": false,
-"voting_power_ada": 155185,
-"share": 0.003,
-"delegators": 5,
-"eligible": 12,
-"voted": 10,
-"rationale": 9,
-"last_vote": "2026-10-15"
-},
-{
 "name": "iFly",
 "drep_id": "drep1yg228a8u4jc5qnqmerhs4e29jyyjac3g39z399kt8gr8vfc0ylw7s",
 "hash": "14a3f4fcacb1404c1bc8ef0ae54591092ee22889451296cb3a067627",
@@ -409,6 +422,19 @@
 "voted": 62,
 "rationale": 45,
 "last_vote": "2026-10-07"
+},
+{
+"name": "Styg",
+"drep_id": "drep1yfaq8dsam7nusdccey2x2p684f6ulhr42pv24tslv0terqs3nq50q",
+"hash": "7a03b61ddfa7c83718c914650747aa75cfdc755058aaae1f63d79182",
+"script": false,
+"voting_power_ada": 142473,
+"share": 0.003,
+"delegators": 3,
+"eligible": 15,
+"voted": 14,
+"rationale": 10,
+"last_vote": "2026-10-19"
 },
 {
 "name": "Cardanians",
@@ -487,19 +513,6 @@
 "voted": 58,
 "rationale": 39,
 "last_vote": "2026-08-21"
-},
-{
-"name": "CardanoLeo",
-"drep_id": "drep1y28xhrjxe496rnle8ln3slpggnp8leu3mn244ujrhwet0cc2vmte4",
-"hash": "8e6b8e46cd4ba1cff93fe7187c2844c27fe791dcd55af243bbb2b7e3",
-"script": false,
-"voting_power_ada": 654394,
-"share": 0.012,
-"delegators": 26,
-"eligible": 16,
-"voted": 9,
-"rationale": 9,
-"last_vote": "2026-09-23"
 },
 {
 "name": "Krypto Labs",
@@ -638,7 +651,7 @@
 "script": false,
 "voting_power_ada": 5122257,
 "share": 0.097,
-"delegators": 79,
+"delegators": 80,
 "eligible": 66,
 "voted": 35,
 "rationale": 30,
@@ -703,7 +716,7 @@
 "script": false,
 "voting_power_ada": 43469212,
 "share": 0.823,
-"delegators": 154,
+"delegators": 155,
 "eligible": 66,
 "voted": 65,
 "rationale": 24,
@@ -734,19 +747,6 @@
 "voted": 38,
 "rationale": 22,
 "last_vote": "2026-09-18"
-},
-{
-"name": "Styg",
-"drep_id": "drep1yfaq8dsam7nusdccey2x2p684f6ulhr42pv24tslv0terqs3nq50q",
-"hash": "7a03b61ddfa7c83718c914650747aa75cfdc755058aaae1f63d79182",
-"script": false,
-"voting_power_ada": 142473,
-"share": 0.003,
-"delegators": 3,
-"eligible": 34,
-"voted": 14,
-"rationale": 10,
-"last_vote": "2026-10-19"
 },
 {
 "name": "Patrick_Tobler",
@@ -801,6 +801,19 @@
 "last_vote": "2026-10-11"
 },
 {
+"name": "BKIND",
+"drep_id": "drep1ytc6867ae0xmkekvmex79r9akyy28eu8nu03jf3xu9fle6c82l4eq",
+"hash": "f1a3ebddcbcdbb66ccde4de28cbdb108a3e7879f1f192626e153fceb",
+"script": false,
+"voting_power_ada": 1826026,
+"share": 0.035,
+"delegators": 15,
+"eligible": 33,
+"voted": 10,
+"rationale": 9,
+"last_vote": "2026-10-19"
+},
+{
 "name": "ADAtainment",
 "drep_id": "drep1ygnw2fxf00pqwd3dmnluhf3vd06lrmmvxpmx8chjup4x3pcafs46n",
 "hash": "26e524c97bc207362ddcffcba62c6bf5f1ef6c307663e2f2e06a6887",
@@ -808,10 +821,36 @@
 "voting_power_ada": 93849,
 "share": 0.002,
 "delegators": 14,
-"eligible": 44,
+"eligible": 41,
 "voted": 35,
 "rationale": 11,
 "last_vote": "2026-10-15"
+},
+{
+"name": "Wolfoden",
+"drep_id": "drep1y293f6495fvld5zqv0uqsjpjt25zzdkjglys7ykc678jtkghet05n",
+"hash": "8b14eaa5a259f6d04063f80848325aa82136d247c90f12d8d78f25d9",
+"script": false,
+"voting_power_ada": 1242619,
+"share": 0.024,
+"delegators": 29,
+"eligible": 39,
+"voted": 20,
+"rationale": 10,
+"last_vote": "2026-10-15"
+},
+{
+"name": "JohnM",
+"drep_id": "drep1y2hky8fgx58luuuz5at5dr4xw0jzlre87wwyw3agra9f8js5eu9hp",
+"hash": "af621d28350ffe7382a757468ea673e42f8f27f39c4747a81f4a93ca",
+"script": false,
+"voting_power_ada": 25846,
+"share": 0.0,
+"delegators": 2,
+"eligible": 8,
+"voted": 3,
+"rationale": 2,
+"last_vote": "2026-10-09"
 },
 {
 "name": "SIPO",
@@ -820,7 +859,7 @@
 "script": false,
 "voting_power_ada": 93844687,
 "share": 1.777,
-"delegators": 408,
+"delegators": 410,
 "eligible": 66,
 "voted": 64,
 "rationale": 16,
@@ -853,19 +892,6 @@
 "last_vote": "2026-10-08"
 },
 {
-"name": "Wolfoden",
-"drep_id": "drep1y293f6495fvld5zqv0uqsjpjt25zzdkjglys7ykc678jtkghet05n",
-"hash": "8b14eaa5a259f6d04063f80848325aa82136d247c90f12d8d78f25d9",
-"script": false,
-"voting_power_ada": 1242619,
-"share": 0.024,
-"delegators": 29,
-"eligible": 42,
-"voted": 20,
-"rationale": 10,
-"last_vote": "2026-10-15"
-},
-{
 "name": "Florian Volery",
 "drep_id": "drep1yguh6dsgx0g58v8pqmxgfrkq0x8vfv6tcp92uzzjrykwy8cjmelsy",
 "hash": "397d360833d143b0e106cc848ec0798ec4b34bc04aae0852192ce21f",
@@ -892,19 +918,6 @@
 "last_vote": "2026-07-21"
 },
 {
-"name": "BKIND",
-"drep_id": "drep1ytc6867ae0xmkekvmex79r9akyy28eu8nu03jf3xu9fle6c82l4eq",
-"hash": "f1a3ebddcbcdbb66ccde4de28cbdb108a3e7879f1f192626e153fceb",
-"script": false,
-"voting_power_ada": 1826026,
-"share": 0.035,
-"delegators": 15,
-"eligible": 42,
-"voted": 9,
-"rationale": 9,
-"last_vote": "2026-10-15"
-},
-{
 "name": "Rod G.",
 "drep_id": "drep1ygwscks2yt0na4fqpcdyqn0fare5v48y0mjgn2g478lnx8gue393e",
 "hash": "1d0c5a0a22df3ed5200e1a404de9e8f34654e47ee489a915f1ff331d",
@@ -913,9 +926,22 @@
 "share": 0.002,
 "delegators": 32,
 "eligible": 66,
-"voted": 23,
+"voted": 24,
 "rationale": 14,
-"last_vote": "2026-08-11"
+"last_vote": "2026-10-19"
+},
+{
+"name": "Meria",
+"drep_id": "drep1yf5swlr6jwjpx9m8cunjr5v8khfcd642wrvmgq3dedmle8g8lrfgp",
+"hash": "69077c7a93a4131767c72721d187b5d386eaaa70d9b4022dcb77fc9d",
+"script": false,
+"voting_power_ada": 5,
+"share": 0.0,
+"delegators": 2,
+"eligible": 10,
+"voted": 6,
+"rationale": 2,
+"last_vote": "2026-10-16"
 },
 {
 "name": "This Corrosion",
@@ -968,19 +994,6 @@
 "voted": 60,
 "rationale": 11,
 "last_vote": "2026-09-12"
-},
-{
-"name": "JohnM",
-"drep_id": "drep1y2hky8fgx58luuuz5at5dr4xw0jzlre87wwyw3agra9f8js5eu9hp",
-"hash": "af621d28350ffe7382a757468ea673e42f8f27f39c4747a81f4a93ca",
-"script": false,
-"voting_power_ada": 25846,
-"share": 0.0,
-"delegators": 2,
-"eligible": 12,
-"voted": 3,
-"rationale": 2,
-"last_vote": "2026-10-09"
 },
 {
 "name": "Dave",
@@ -1230,19 +1243,6 @@
 "last_vote": "2026-07-13"
 },
 {
-"name": "Meria",
-"drep_id": "drep1yf5swlr6jwjpx9m8cunjr5v8khfcd642wrvmgq3dedmle8g8lrfgp",
-"hash": "69077c7a93a4131767c72721d187b5d386eaaa70d9b4022dcb77fc9d",
-"script": false,
-"voting_power_ada": 5,
-"share": 0.0,
-"delegators": 2,
-"eligible": 27,
-"voted": 6,
-"rationale": 2,
-"last_vote": "2026-10-16"
-},
-{
 "name": "No Treasury Withdrawals until ADA > $3",
 "drep_id": "drep1ytpkv5fdc3cutccr5mp2leqrv2q5gt0uhka3gnrggcgrynsr4hxfp",
 "hash": "c366512dc471c5e303a6c2afe4036281442dfcbdbb144c684610324e",
@@ -1293,6 +1293,19 @@
 "voted": 14,
 "rationale": 4,
 "last_vote": "2026-09-15"
+},
+{
+"name": "Luc₳s @ 45B.io (Direct Voter)",
+"drep_id": "drep1ygltkznfvhpf722s50kan2pnsskpxz3vccdtvmcmx5mw4lssz7w7t",
+"hash": "3ebb0a6965c29f2950a3edd9a833842c130a2cc61ab66f1b3536eafe",
+"script": false,
+"voting_power_ada": 17407,
+"share": 0.0,
+"delegators": 8,
+"eligible": 57,
+"voted": 15,
+"rationale": 3,
+"last_vote": "2026-10-11"
 },
 {
 "name": "heo.keo",
@@ -1386,19 +1399,6 @@
 "last_vote": "2026-07-23"
 },
 {
-"name": "Luc₳s @ 45B.io (Direct Voter)",
-"drep_id": "drep1ygltkznfvhpf722s50kan2pnsskpxz3vccdtvmcmx5mw4lssz7w7t",
-"hash": "3ebb0a6965c29f2950a3edd9a833842c130a2cc61ab66f1b3536eafe",
-"script": false,
-"voting_power_ada": 17407,
-"share": 0.0,
-"delegators": 8,
-"eligible": 66,
-"voted": 15,
-"rationale": 3,
-"last_vote": "2026-10-11"
-},
-{
 "name": "Atlanter",
 "drep_id": "drep1y26k7hpkj26dnp8yznnsgpwu8l6pkgcdey4zd23dk655qcse26y3g",
 "hash": "b56f5c3692b4d984e414e70405dc3ff41b230dc92a26aa2db6a94062",
@@ -1419,7 +1419,7 @@
 "voting_power_ada": 879461,
 "share": 0.017,
 "delegators": 10,
-"eligible": 64,
+"eligible": 46,
 "voted": 12,
 "rationale": 2,
 "last_vote": "2026-09-04"
@@ -1444,7 +1444,7 @@
 "script": false,
 "voting_power_ada": 218319568,
 "share": 4.135,
-"delegators": 10016,
+"delegators": 10015,
 "eligible": 66,
 "voted": 55,
 "rationale": 2,
@@ -1549,10 +1549,23 @@
 "voting_power_ada": 10,
 "share": 0.0,
 "delegators": 1,
-"eligible": 64,
+"eligible": 53,
 "voted": 18,
 "rationale": 1,
 "last_vote": "2026-08-24"
+},
+{
+"name": null,
+"drep_id": "drep1y2x9n3y7mj92klgq6klnkrvwdawhwcsl8kfc3sctff5a86cxvnagh",
+"hash": "8c59c49edc8aab7d00d5bf3b0d8e6f5d77621f3d9388c30b4a69d3eb",
+"script": false,
+"voting_power_ada": 17904,
+"share": 0.0,
+"delegators": 2,
+"eligible": 65,
+"voted": 4,
+"rationale": 1,
+"last_vote": "2026-07-09"
 },
 {
 "name": "YOADA",
@@ -1709,19 +1722,6 @@
 "voted": 5,
 "rationale": 1,
 "last_vote": "2026-08-14"
-},
-{
-"name": null,
-"drep_id": "drep1y2x9n3y7mj92klgq6klnkrvwdawhwcsl8kfc3sctff5a86cxvnagh",
-"hash": "8c59c49edc8aab7d00d5bf3b0d8e6f5d77621f3d9388c30b4a69d3eb",
-"script": false,
-"voting_power_ada": 17904,
-"share": 0.0,
-"delegators": 2,
-"eligible": 66,
-"voted": 4,
-"rationale": 1,
-"last_vote": "2026-07-09"
 },
 {
 "name": "Captain Crypto",
@@ -1881,6 +1881,19 @@
 },
 {
 "name": null,
+"drep_id": "drep1yt05vsgtruppuej5jzmswd7tj86ujanydq27qxc2nksrt8szgtg0g",
+"hash": "df46410b1f021e665490b70737cb91f5c976646815e01b0a9da0359e",
+"script": false,
+"voting_power_ada": 1341640,
+"share": 0.025,
+"delegators": 5,
+"eligible": 41,
+"voted": 39,
+"rationale": 0,
+"last_vote": "2026-10-03"
+},
+{
+"name": null,
 "drep_id": "drep1y2cnrwkyg6wtsw9jm3tx7hj39nmnhwnmffup6v2sunjqvus4tlua9",
 "hash": "b131bac4469cb838b2dc566f5e512cf73bba7b4a781d3150e4e40672",
 "script": false,
@@ -1920,16 +1933,16 @@
 },
 {
 "name": null,
-"drep_id": "drep1yt05vsgtruppuej5jzmswd7tj86ujanydq27qxc2nksrt8szgtg0g",
-"hash": "df46410b1f021e665490b70737cb91f5c976646815e01b0a9da0359e",
+"drep_id": "drep1yfpj9e6k9q2et7nsutu0e7ymqt0v00aj57chnltjvn0lu0s28xakv",
+"hash": "4322e756281595fa70e2f8fcf89b02dec7bfb2a7b179fd7264dffe3e",
 "script": false,
-"voting_power_ada": 1341640,
-"share": 0.025,
-"delegators": 5,
-"eligible": 42,
-"voted": 39,
+"voting_power_ada": 6806533,
+"share": 0.129,
+"delegators": 33,
+"eligible": 65,
+"voted": 61,
 "rationale": 0,
-"last_vote": "2026-10-03"
+"last_vote": "2026-10-15"
 },
 {
 "name": "Javi M.",
@@ -1971,19 +1984,6 @@
 "last_vote": "2026-09-29"
 },
 {
-"name": null,
-"drep_id": "drep1yfpj9e6k9q2et7nsutu0e7ymqt0v00aj57chnltjvn0lu0s28xakv",
-"hash": "4322e756281595fa70e2f8fcf89b02dec7bfb2a7b179fd7264dffe3e",
-"script": false,
-"voting_power_ada": 6806533,
-"share": 0.129,
-"delegators": 33,
-"eligible": 66,
-"voted": 61,
-"rationale": 0,
-"last_vote": "2026-10-15"
-},
-{
 "name": "TERA DRep",
 "drep_id": "drep1ygtxcscvznhs2nqap9u8gtxa0dx0l6q5zhsqqlw46enwh8cttd07h",
 "hash": "166c430c14ef054c1d0978742cdd7b4cffe81415e0007dd5d666eb9f",
@@ -2003,7 +2003,7 @@
 "script": false,
 "voting_power_ada": 208429863,
 "share": 3.948,
-"delegators": 10199,
+"delegators": 10200,
 "eligible": 66,
 "voted": 60,
 "rationale": 0,
@@ -2055,11 +2055,24 @@
 "script": false,
 "voting_power_ada": 21830601,
 "share": 0.413,
-"delegators": 27,
+"delegators": 28,
 "eligible": 64,
 "voted": 55,
 "rationale": 0,
 "last_vote": "2026-08-24"
+},
+{
+"name": "damiondutch",
+"drep_id": "drep1yg5gkkyxwwr7d6qflf2qqp6drkp9432h6cvtmun0dqthusqlkz8hj",
+"hash": "288b58867387e6e809fa5400074d1d825ac557d618bdf26f68177e40",
+"script": false,
+"voting_power_ada": 71069,
+"share": 0.001,
+"delegators": 7,
+"eligible": 21,
+"voted": 18,
+"rationale": 0,
+"last_vote": "2026-09-16"
 },
 {
 "name": null,
@@ -2296,19 +2309,6 @@
 "last_vote": "2026-07-25"
 },
 {
-"name": "damiondutch",
-"drep_id": "drep1yg5gkkyxwwr7d6qflf2qqp6drkp9432h6cvtmun0dqthusqlkz8hj",
-"hash": "288b58867387e6e809fa5400074d1d825ac557d618bdf26f68177e40",
-"script": false,
-"voting_power_ada": 71069,
-"share": 0.001,
-"delegators": 7,
-"eligible": 27,
-"voted": 18,
-"rationale": 0,
-"last_vote": "2026-09-16"
-},
-{
 "name": "RobertJTokay",
 "drep_id": "drep1y2m0putteu5wcdf3dtww7p9tvfupqut5tplscdkd9q65uqcrx4p8e",
 "hash": "b6f0f16bcf28ec35316adcef04ab6278107174587f0c36cd28354e03",
@@ -2543,6 +2543,19 @@
 "last_vote": "2026-10-04"
 },
 {
+"name": null,
+"drep_id": "drep1yfa3rl2g4t5tv6xys4huqz3ljghcn56w2zpgspveftwc3tczprscj",
+"hash": "7b11fd48aae8b668c4856fc00a3f922f89d34e50828805994add88af",
+"script": false,
+"voting_power_ada": 2635,
+"share": 0.0,
+"delegators": 2,
+"eligible": 12,
+"voted": 6,
+"rationale": 0,
+"last_vote": "2026-08-22"
+},
+{
 "name": "BreadAndRoses",
 "drep_id": "drep1yff7cs985wzeu2jjx48sld002rleqsrz8qtt3hp8whk9vnc5vq23n",
 "hash": "53ec40a7a3859e2a52354f0fb5ef50ff9040623816b8dc2775ec564f",
@@ -2593,6 +2606,19 @@
 "voted": 31,
 "rationale": 0,
 "last_vote": "2026-09-16"
+},
+{
+"name": null,
+"drep_id": "drep1ytghtnjnet6dyhfgsucu9fyqhdxmph2z3e967ufduh9ypwq94cxus",
+"hash": "d175ce53caf4d25d288731c2a480bb4db0dd428e4baf712de5ca40b8",
+"script": false,
+"voting_power_ada": 106434,
+"share": 0.002,
+"delegators": 1,
+"eligible": 57,
+"voted": 26,
+"rationale": 0,
+"last_vote": "2026-08-10"
 },
 {
 "name": "Jonathan Adjei",
@@ -2674,19 +2700,6 @@
 },
 {
 "name": null,
-"drep_id": "drep1ytghtnjnet6dyhfgsucu9fyqhdxmph2z3e967ufduh9ypwq94cxus",
-"hash": "d175ce53caf4d25d288731c2a480bb4db0dd428e4baf712de5ca40b8",
-"script": false,
-"voting_power_ada": 106434,
-"share": 0.002,
-"delegators": 1,
-"eligible": 64,
-"voted": 26,
-"rationale": 0,
-"last_vote": "2026-08-10"
-},
-{
-"name": null,
 "drep_id": "drep1yfd9slgg7pc94xudyfsrzqnc73u9l4qa2vj5tamh23gyengkw39cu",
 "hash": "5a587d08f0705a9b8d2260310278f4785fd41d532545f77754504ccd",
 "script": false,
@@ -2723,6 +2736,19 @@
 "voted": 25,
 "rationale": 0,
 "last_vote": "2026-07-22"
+},
+{
+"name": null,
+"drep_id": "drep1y2q96n4hf0d8jnf6cf7h84z0tr0fn35wh7uv0q4w4hpzckqr8a70c",
+"hash": "805d4eb74bda794d3ac27d73d44f58de99c68ebfb8c782aeadc22c58",
+"script": false,
+"voting_power_ada": 31835,
+"share": 0.001,
+"delegators": 1,
+"eligible": 57,
+"voted": 21,
+"rationale": 0,
+"last_vote": "2026-09-20"
 },
 {
 "name": "CoinCeylon",
@@ -2804,16 +2830,16 @@
 },
 {
 "name": null,
-"drep_id": "drep1y2q96n4hf0d8jnf6cf7h84z0tr0fn35wh7uv0q4w4hpzckqr8a70c",
-"hash": "805d4eb74bda794d3ac27d73d44f58de99c68ebfb8c782aeadc22c58",
+"drep_id": "drep1y29ve34972rw3a8yzlrqpw2240h5rzahr603s062wnd72eg399ugk",
+"hash": "8accc6a5f286e8f4e417c600b94aabef418bb71e9f183f4a74dbe565",
 "script": false,
-"voting_power_ada": 31835,
-"share": 0.001,
+"voting_power_ada": 9011,
+"share": 0.0,
 "delegators": 1,
-"eligible": 65,
-"voted": 21,
+"eligible": 52,
+"voted": 17,
 "rationale": 0,
-"last_vote": "2026-09-20"
+"last_vote": "2026-08-28"
 },
 {
 "name": "Seidu Ziblim",
@@ -2894,6 +2920,19 @@
 "last_vote": "2026-10-12"
 },
 {
+"name": null,
+"drep_id": "drep1yg5myctyh4amewxt4585npfynpk98erc9e76d9tyhc2hhfcrvfggd",
+"hash": "29b26164bd7bbcb8cbad0f498524986c53e4782e7da69564be157ba7",
+"script": false,
+"voting_power_ada": 144852,
+"share": 0.003,
+"delegators": 1,
+"eligible": 11,
+"voted": 3,
+"rationale": 0,
+"last_vote": "2026-10-08"
+},
+{
 "name": "SIDAN Lab",
 "drep_id": "drep1yfjez5zup0gystdvc933w2mn8k64hcy3krvc2namluwjxdcfhm8wd",
 "hash": "6591505c0bd0482dacc163172b733db55be091b0d9854fbbff1d2337",
@@ -2939,24 +2978,11 @@
 "script": false,
 "voting_power_ada": 58692478,
 "share": 1.112,
-"delegators": 926,
+"delegators": 927,
 "eligible": 66,
 "voted": 18,
 "rationale": 0,
 "last_vote": "2026-07-17"
-},
-{
-"name": null,
-"drep_id": "drep1y29ve34972rw3a8yzlrqpw2240h5rzahr603s062wnd72eg399ugk",
-"hash": "8accc6a5f286e8f4e417c600b94aabef418bb71e9f183f4a74dbe565",
-"script": false,
-"voting_power_ada": 9011,
-"share": 0.0,
-"delegators": 1,
-"eligible": 64,
-"voted": 17,
-"rationale": 0,
-"last_vote": "2026-08-28"
 },
 {
 "name": "Yosh",
@@ -2970,6 +2996,19 @@
 "voted": 16,
 "rationale": 0,
 "last_vote": "2026-09-06"
+},
+{
+"name": null,
+"drep_id": "drep1ygfnxf6rphr5wqkm2wk5u6xfne369x9ln0wz2sv75uvwlsg8ss9yx",
+"hash": "133327430dc74702db53ad4e68c99e63a298bf9bdc25419ea718efc1",
+"script": false,
+"voting_power_ada": 6284,
+"share": 0.0,
+"delegators": 1,
+"eligible": 13,
+"voted": 3,
+"rationale": 0,
+"last_vote": "2026-08-02"
 },
 {
 "name": "Dr. Safe",
@@ -3024,17 +3063,17 @@
 "last_vote": "2026-08-28"
 },
 {
-"name": null,
-"drep_id": "drep1yfa3rl2g4t5tv6xys4huqz3ljghcn56w2zpgspveftwc3tczprscj",
-"hash": "7b11fd48aae8b668c4856fc00a3f922f89d34e50828805994add88af",
+"name": "Breizh DRep [BZH]",
+"drep_id": "drep1yf64m233qq6nutjpkh4uc7jncr2gxwtlsq7n68v38ka2l9qez8h3h",
+"hash": "755daa3100353e2e41b5ebcc7a53c0d483397f803d3d1d913dbaaf94",
 "script": false,
-"voting_power_ada": 2635,
-"share": 0.0,
-"delegators": 2,
-"eligible": 27,
-"voted": 6,
+"voting_power_ada": 102090,
+"share": 0.002,
+"delegators": 7,
+"eligible": 9,
+"voted": 2,
 "rationale": 0,
-"last_vote": "2026-08-22"
+"last_vote": "2026-09-01"
 },
 {
 "name": "AtlasFD",
@@ -3044,7 +3083,7 @@
 "voting_power_ada": 94910,
 "share": 0.002,
 "delegators": 2,
-"eligible": 66,
+"eligible": 65,
 "voted": 14,
 "rationale": 0,
 "last_vote": "2026-07-29"
@@ -3076,19 +3115,6 @@
 "last_vote": "2026-09-22"
 },
 {
-"name": "Breizh DRep [BZH]",
-"drep_id": "drep1yf64m233qq6nutjpkh4uc7jncr2gxwtlsq7n68v38ka2l9qez8h3h",
-"hash": "755daa3100353e2e41b5ebcc7a53c0d483397f803d3d1d913dbaaf94",
-"script": false,
-"voting_power_ada": 102090,
-"share": 0.002,
-"delegators": 7,
-"eligible": 11,
-"voted": 2,
-"rationale": 0,
-"last_vote": "2026-09-01"
-},
-{
 "name": "Medusa DRep",
 "drep_id": "drep1yg5pzxhp0lu0m7757ww2hke8qhcuqgqt3c2ezphngwytz4gjr6yge",
 "hash": "28111ae17ff8fdfbd4f39cabdb2705f1c0200b8e159106f34388b155",
@@ -3102,6 +3128,19 @@
 "last_vote": "2026-10-11"
 },
 {
+"name": "Jose Martinez | Atlas Network Transmissions",
+"drep_id": "drep1yfnsfvzqf33wxqhf7wg263rkefgk67gsfvslfcw06e9nc2gx2swpt",
+"hash": "6704b0404c62e302e9f390ad4476ca516d79104b21f4e1cfd64b3c29",
+"script": false,
+"voting_power_ada": 1842,
+"share": 0.0,
+"delegators": 1,
+"eligible": 12,
+"voted": 2,
+"rationale": 0,
+"last_vote": "2026-07-23"
+},
+{
 "name": "PRIDE",
 "drep_id": "drep1yfpazkd0aqex0kd3vrhk47sjy0jqgq3xu6h2zv9wevfequcxyynwv",
 "hash": "43d159afe83267d9b160ef6afa1223e4040226e6aea130aecb139073",
@@ -3113,6 +3152,19 @@
 "voted": 11,
 "rationale": 0,
 "last_vote": "2026-07-28"
+},
+{
+"name": "GoCharles",
+"drep_id": "drep1ygage0max8wmr48mr47d7ap9n7642njh0zsec9xrr3smhdcy4ssnp",
+"hash": "3a8cbf7d31ddb1d4fb1d7cdf74259fb5554e5778a19c14c31c61bbb7",
+"script": false,
+"voting_power_ada": 8015,
+"share": 0.0,
+"delegators": 2,
+"eligible": 13,
+"voted": 2,
+"rationale": 0,
+"last_vote": "2026-07-11"
 },
 {
 "name": null,
@@ -3154,30 +3206,17 @@
 "last_vote": "2026-07-28"
 },
 {
-"name": null,
-"drep_id": "drep1ygfnxf6rphr5wqkm2wk5u6xfne369x9ln0wz2sv75uvwlsg8ss9yx",
-"hash": "133327430dc74702db53ad4e68c99e63a298bf9bdc25419ea718efc1",
+"name": "Dodue",
+"drep_id": "drep1ygdqxmgpy8tec74adul5jy5ucxvhywrakpru5yl9wz0eyectvkfns",
+"hash": "1a036d0121d79c7abd6f3f49129cc19972387db047ca13e5709f9267",
 "script": false,
-"voting_power_ada": 6284,
-"share": 0.0,
-"delegators": 1,
-"eligible": 27,
-"voted": 3,
+"voting_power_ada": 311055,
+"share": 0.006,
+"delegators": 3,
+"eligible": 8,
+"voted": 1,
 "rationale": 0,
-"last_vote": "2026-08-02"
-},
-{
-"name": null,
-"drep_id": "drep1yg5myctyh4amewxt4585npfynpk98erc9e76d9tyhc2hhfcrvfggd",
-"hash": "29b26164bd7bbcb8cbad0f498524986c53e4782e7da69564be157ba7",
-"script": false,
-"voting_power_ada": 144852,
-"share": 0.003,
-"delegators": 1,
-"eligible": 27,
-"voted": 3,
-"rationale": 0,
-"last_vote": "2026-10-08"
+"last_vote": "2026-08-10"
 },
 {
 "name": "CBROS Pool",
@@ -3245,6 +3284,19 @@
 "last_vote": "2026-09-20"
 },
 {
+"name": "Marco Gonvil",
+"drep_id": "drep1yfvhr5u4jkg7acukzt7k09xjzw67fgcgzvhaf3wf34hq9asl8ajkn",
+"hash": "5971d3959591eee39612fd6794d213b5e4a308132fd4c5c98d6e02f6",
+"script": false,
+"voting_power_ada": 19784,
+"share": 0.0,
+"delegators": 1,
+"eligible": 39,
+"voted": 4,
+"rationale": 0,
+"last_vote": "2026-08-11"
+},
+{
 "name": "Addisetech",
 "drep_id": "drep1yfc4z43nmfdarjk0zyt9d95a4xhhrdxgjhhzdzqemxs8c7gmka698",
 "hash": "71515633da5bd1cacf111656969da9af71b4c895ee268819d9a07c79",
@@ -3256,19 +3308,6 @@
 "voted": 6,
 "rationale": 0,
 "last_vote": "2026-07-20"
-},
-{
-"name": "Dodue",
-"drep_id": "drep1ygdqxmgpy8tec74adul5jy5ucxvhywrakpru5yl9wz0eyectvkfns",
-"hash": "1a036d0121d79c7abd6f3f49129cc19972387db047ca13e5709f9267",
-"script": false,
-"voting_power_ada": 311055,
-"share": 0.006,
-"delegators": 3,
-"eligible": 11,
-"voted": 1,
-"rationale": 0,
-"last_vote": "2026-08-10"
 },
 {
 "name": "Jason Matthys",
@@ -3297,17 +3336,17 @@
 "last_vote": "2026-08-19"
 },
 {
-"name": "Marco Gonvil",
-"drep_id": "drep1yfvhr5u4jkg7acukzt7k09xjzw67fgcgzvhaf3wf34hq9asl8ajkn",
-"hash": "5971d3959591eee39612fd6794d213b5e4a308132fd4c5c98d6e02f6",
+"name": null,
+"drep_id": "drep1ygp2552yp5vujfyhcfeg9jwqlf2cx48dv6xahhrnq3vq72cx3r5qc",
+"hash": "02aa51440d19c92497c27282c9c0fa558354ed668ddbdc7304580f2b",
 "script": false,
-"voting_power_ada": 19784,
-"share": 0.0,
-"delegators": 1,
-"eligible": 49,
+"voting_power_ada": 100869,
+"share": 0.002,
+"delegators": 8,
+"eligible": 45,
 "voted": 4,
 "rationale": 0,
-"last_vote": "2026-08-11"
+"last_vote": "2026-09-01"
 },
 {
 "name": null,
@@ -3347,32 +3386,6 @@
 "voted": 5,
 "rationale": 0,
 "last_vote": "2026-09-23"
-},
-{
-"name": "Jose Martinez | Atlas Network Transmissions",
-"drep_id": "drep1yfnsfvzqf33wxqhf7wg263rkefgk67gsfvslfcw06e9nc2gx2swpt",
-"hash": "6704b0404c62e302e9f390ad4476ca516d79104b21f4e1cfd64b3c29",
-"script": false,
-"voting_power_ada": 1842,
-"share": 0.0,
-"delegators": 1,
-"eligible": 27,
-"voted": 2,
-"rationale": 0,
-"last_vote": "2026-07-23"
-},
-{
-"name": null,
-"drep_id": "drep1ygp2552yp5vujfyhcfeg9jwqlf2cx48dv6xahhrnq3vq72cx3r5qc",
-"hash": "02aa51440d19c92497c27282c9c0fa558354ed668ddbdc7304580f2b",
-"script": false,
-"voting_power_ada": 100869,
-"share": 0.002,
-"delegators": 8,
-"eligible": 64,
-"voted": 4,
-"rationale": 0,
-"last_vote": "2026-09-01"
 },
 {
 "name": "Rbaker2024",
@@ -3503,19 +3516,6 @@
 "voted": 4,
 "rationale": 0,
 "last_vote": "2026-08-31"
-},
-{
-"name": "GoCharles",
-"drep_id": "drep1ygage0max8wmr48mr47d7ap9n7642njh0zsec9xrr3smhdcy4ssnp",
-"hash": "3a8cbf7d31ddb1d4fb1d7cdf74259fb5554e5778a19c14c31c61bbb7",
-"script": false,
-"voting_power_ada": 8015,
-"share": 0.0,
-"delegators": 2,
-"eligible": 39,
-"voted": 2,
-"rationale": 0,
-"last_vote": "2026-07-11"
 },
 {
 "name": null,
@@ -3733,7 +3733,7 @@
 "voting_power_ada": 540331,
 "share": 0.01,
 "delegators": 2,
-"eligible": 47,
+"eligible": 37,
 "voted": 1,
 "rationale": 0,
 "last_vote": "2026-07-18"
@@ -3746,7 +3746,7 @@
 "voting_power_ada": 348387,
 "share": 0.007,
 "delegators": 1,
-"eligible": 64,
+"eligible": 44,
 "voted": 1,
 "rationale": 0,
 "last_vote": "2026-08-20"
@@ -3888,8 +3888,8 @@
 "script": false,
 "voting_power_ada": 1623,
 "share": 0.0,
-"delegators": 3,
-"eligible": 3,
+"delegators": 4,
+"eligible": 2,
 "voted": 0,
 "rationale": 0,
 "last_vote": null
@@ -3902,7 +3902,7 @@
 "voting_power_ada": 1974,
 "share": 0.0,
 "delegators": 1,
-"eligible": 37,
+"eligible": 11,
 "voted": 0,
 "rationale": 0,
 "last_vote": null
@@ -3915,7 +3915,7 @@
 "voting_power_ada": 4693,
 "share": 0.0,
 "delegators": 1,
-"eligible": 10,
+"eligible": 5,
 "voted": 0,
 "rationale": 0,
 "last_vote": null
@@ -3928,7 +3928,7 @@
 "voting_power_ada": 8537,
 "share": 0.0,
 "delegators": 1,
-"eligible": 9,
+"eligible": 5,
 "voted": 0,
 "rationale": 0,
 "last_vote": null
@@ -3941,7 +3941,7 @@
 "voting_power_ada": 16180,
 "share": 0.0,
 "delegators": 1,
-"eligible": 37,
+"eligible": 11,
 "voted": 0,
 "rationale": 0,
 "last_vote": null
@@ -3954,7 +3954,7 @@
 "voting_power_ada": 35684,
 "share": 0.001,
 "delegators": 1,
-"eligible": 37,
+"eligible": 11,
 "voted": 0,
 "rationale": 0,
 "last_vote": null
@@ -3967,7 +3967,7 @@
 "voting_power_ada": 49928,
 "share": 0.001,
 "delegators": 1,
-"eligible": 5,
+"eligible": 2,
 "voted": 0,
 "rationale": 0,
 "last_vote": null
@@ -3980,7 +3980,7 @@
 "voting_power_ada": 619164,
 "share": 0.012,
 "delegators": 778,
-"eligible": 11,
+"eligible": 7,
 "voted": 0,
 "rationale": 0,
 "last_vote": "2026-06-03"
