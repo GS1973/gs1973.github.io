@@ -1,6 +1,15 @@
 [
   {
     "role": "DRep",
+    "title": "AURORA open credit market infrastructure (Fairway)",
+    "action": "Treasury Withdrawal",
+    "vote": "No",
+    "epoch": 662,
+    "govActionId": "14d6a48df8b9099a3e727e1bf6a9ac6c911341a9601e91c7d3ac799bfd89b01b#0",
+    "rationale": "governance/vote-aurora-14d6a48d.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "Cardano Strategic Copper Reserve (Toto Finance)",
     "action": "Treasury Withdrawal",
     "vote": "No",
