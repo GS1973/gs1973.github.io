@@ -1,6 +1,15 @@
 [
   {
     "role": "DRep",
+    "title": "PFMS government scale adoption (Trivolve Tech)",
+    "action": "Treasury Withdrawal",
+    "vote": "No",
+    "epoch": 662,
+    "govActionId": "72491608dc1a500d38613214069a2bd3b7e9a0e670d5abd7d6374e6bb54fc0e8#0",
+    "rationale": "governance/vote-pfms-72491608.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "AURORA open credit market infrastructure (Fairway)",
     "action": "Treasury Withdrawal",
     "vote": "No",
