@@ -78,6 +78,10 @@
         const rowTop = head.getBoundingClientRect().top - boxTop + box.scrollTop;
         const stuck = header ? Math.max(0, header.getBoundingClientRect().height - 40) : 0;
         box.scrollTop = Math.max(0, rowTop - stuck - 8);
+        // Second pass against the header as it actually sticks after scrolling.
+        const edge = header ? header.getBoundingClientRect().bottom : boxTop;
+        const delta = head.getBoundingClientRect().top - edge - 8;
+        if (Math.abs(delta) > 1) box.scrollTop = Math.max(0, box.scrollTop + delta);
     }
 
     function openModal() {
