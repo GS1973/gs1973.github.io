@@ -13,6 +13,58 @@
     let lastFocused = null;
     let loaded = false;
     const rationaleCache = new Map();
+    const rows = [];
+    let pendingKey = null;
+
+    // Deep links: #votes opens the list, #votes/<key> opens one vote, where
+    // <key> is the start of the governance action id (at least 8 characters).
+    // When BKIND voted on the same action as SPO and as DRep, the key of each
+    // row carries the role as well: <key>-drep, <key>-spo.
+    function voteKeys(votes) {
+        const prefix = votes.map(function (v, i) {
+            return v.govActionId ? String(v.govActionId).slice(0, 8).toLowerCase() : String(i);
+        });
+        const count = {};
+        prefix.forEach(function (k) { count[k] = (count[k] || 0) + 1; });
+        return prefix.map(function (k, i) {
+            if (count[k] > 1 && votes[i].role) return k + '-' + String(votes[i].role).toLowerCase();
+            return k;
+        });
+    }
+
+    function parseHash() {
+        const m = /^#votes(?:\/([^\s]*))?$/.exec(location.hash || '');
+        if (!m) return null;
+        let key = '';
+        try { key = decodeURIComponent(m[1] || ''); } catch (e) { key = m[1] || ''; }
+        return { key: key.toLowerCase() };
+    }
+
+    function setHash(fragment) {
+        const url = location.pathname + location.search + (fragment ? '#' + fragment : '');
+        history.replaceState(null, '', url);
+    }
+
+    function findRow(key) {
+        if (!key) return null;
+        for (const r of rows) {
+            if (r.key === key) return r;
+            if (r.v.govActionId && key.length >= 8 &&
+                String(r.v.govActionId).toLowerCase().indexOf(key) === 0) return r;
+        }
+        return null;
+    }
+
+    async function applyPending() {
+        const key = pendingKey;
+        pendingKey = null;
+        const r = findRow(key);
+        if (!r) return;
+        if (r.head.getAttribute('aria-expanded') !== 'true') {
+            await togglePanel(r.head, r.panel, r.v, r.key);
+        }
+        r.head.scrollIntoView({ block: 'start' });
+    }
 
     function openModal() {
         lastFocused = document.activeElement;
@@ -28,6 +80,7 @@
     function closeModal() {
         modal.hidden = true;
         document.removeEventListener('keydown', onKeydown);
+        if (parseHash()) setHash('');
         if (lastFocused && typeof lastFocused.focus === 'function') {
             lastFocused.focus();
         }
@@ -49,9 +102,11 @@
                 listEl.appendChild(emptyMessage('No votes recorded yet.'));
                 return;
             }
+            const keys = voteKeys(votes);
             votes.forEach(function (v, i) {
-                listEl.appendChild(renderRow(v, i));
+                listEl.appendChild(renderRow(v, i, keys[i]));
             });
+            await applyPending();
         } catch (error) {
             listEl.textContent = '';
             listEl.appendChild(emptyMessage('Could not load votes.'));
@@ -65,7 +120,7 @@
         return p;
     }
 
-    function renderRow(v, index) {
+    function renderRow(v, index, key) {
         const item = document.createElement('div');
         item.className = 'vote-item';
 
@@ -104,24 +159,26 @@
         panel.hidden = true;
 
         head.addEventListener('click', function () {
-            togglePanel(head, panel, v);
+            togglePanel(head, panel, v, key);
         });
 
+        rows.push({ key: key, head: head, panel: panel, v: v });
         item.append(head, panel);
         return item;
     }
 
-    async function togglePanel(head, panel, v) {
+    async function togglePanel(head, panel, v, key) {
         const expanded = head.getAttribute('aria-expanded') === 'true';
         head.setAttribute('aria-expanded', String(!expanded));
         panel.hidden = expanded;
+        setHash(expanded ? 'votes' : 'votes/' + key);
         if (!expanded && !panel.dataset.filled) {
             panel.dataset.filled = '1';
-            panel.appendChild(await renderRationale(v));
+            panel.appendChild(await renderRationale(v, key));
         }
     }
 
-    async function renderRationale(v) {
+    async function renderRationale(v, key) {
         const wrap = document.createElement('div');
         let doc;
         try {
@@ -187,6 +244,11 @@
             gid.textContent = v.govActionId;
             meta.appendChild(gid);
         }
+        const link = document.createElement('a');
+        link.className = 'vote-link';
+        link.href = '#votes/' + key;
+        link.textContent = 'Link to this vote';
+        meta.appendChild(link);
         if (meta.childElementCount > 0) wrap.appendChild(meta);
 
         if (Array.isArray(body.references) && body.references.length > 0) {
@@ -214,4 +276,17 @@
             closeModal();
         }
     });
+
+    function onHash() {
+        const h = parseHash();
+        if (!h) {
+            if (!modal.hidden) closeModal();
+            return;
+        }
+        pendingKey = h.key || null;
+        if (modal.hidden) openModal();
+        if (loaded && rows.length > 0) applyPending();
+    }
+    window.addEventListener('hashchange', onHash);
+    onHash();
 })();

@@ -259,3 +259,15 @@
         order: 3;
     }
 }
+
+.vote-link {
+    font-size: 0.75rem;
+    color: #999;
+    text-decoration: underline;
+    margin-left: auto;
+}
+
+.vote-link:hover,
+.vote-link:focus {
+    color: #28a745;
+}
