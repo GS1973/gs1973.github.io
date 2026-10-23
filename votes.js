@@ -63,7 +63,21 @@
         if (r.head.getAttribute('aria-expanded') !== 'true') {
             await togglePanel(r.head, r.panel, r.v, r.key);
         }
-        r.head.scrollIntoView({ block: 'start' });
+        scrollToRow(r.head);
+    }
+
+    // Scroll the list so the row sits just below the sticky header.
+    function scrollToRow(head) {
+        const box = modal.querySelector('.modal-votes');
+        const header = modal.querySelector('.votes-header');
+        if (!box) {
+            head.scrollIntoView({ block: 'start' });
+            return;
+        }
+        const boxTop = box.getBoundingClientRect().top;
+        const rowTop = head.getBoundingClientRect().top - boxTop + box.scrollTop;
+        const stuck = header ? Math.max(0, header.getBoundingClientRect().height - 40) : 0;
+        box.scrollTop = Math.max(0, rowTop - stuck - 8);
     }
 
     function openModal() {
