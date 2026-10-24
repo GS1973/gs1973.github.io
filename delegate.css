@@ -97,11 +97,21 @@
     background: #fff5bf;
 }
 
-/* The Delegate window: two ways on */
+/* The Delegate window: four ways on, in two columns of equal buttons */
 .delegate-choice {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
     margin-bottom: 16px;
+}
+
+.delegate-choice .delegate-go {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .delegate-choice {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
