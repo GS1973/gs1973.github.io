@@ -6,12 +6,16 @@ if (window.top !== window.self) {
     try { window.top.location = window.location.href; } catch (e) { /* the frame stays hidden */ }
 }
 
-// Delegate: a window with two ways on, delegating to BKIND through the wallet
-// dialog of delegate.js, or choosing another pool from the Pools window.
+// Delegate: a window with four ways on. Stake to BKIND or a vote to BKIND go
+// straight to the wallet dialog of delegate.js; another pool or another DRep
+// open the Pools or DReps window, where every row has its own Delegate button.
 (function () {
     'use strict';
 
     const BKIND = { ticker: 'BKIND', name: 'Smit Blockchain Operations', pool_id: 'pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y' };
+    // The DRep of the same operator. delegate.js checks that the ID and the hash agree before it builds anything.
+    const BKIND_DREP = { kind: 'drep', name: 'BKIND', drep_id: 'drep1ytc6867ae0xmkekvmex79r9akyy28eu8nu03jf3xu9fle6c82l4eq',
+        hash: 'f1a3ebddcbcdbb66ccde4de28cbdb108a3e7879f1f192626e153fceb', script: false };
 
     const delegateBtn = document.getElementById('delegateBtn');
     const modal = document.getElementById('delegateModal');
@@ -19,6 +23,7 @@ if (window.top !== window.self) {
     const walletBtn = document.getElementById('delegateWalletBtn');
     const toPools = document.getElementById('delegateToPools');
     const toDreps = document.getElementById('delegateToDreps');
+    const voteBtn = document.getElementById('delegateVoteBtn');
 
     let lastFocused = null;
 
@@ -67,6 +72,13 @@ if (window.top !== window.self) {
         closeModal();
         if (window.sboDelegate) {
             window.sboDelegate.open(BKIND);
+        }
+    });
+
+    voteBtn.addEventListener('click', function () {
+        closeModal();
+        if (window.sboDelegate) {
+            window.sboDelegate.open(BKIND_DREP);
         }
     });
 

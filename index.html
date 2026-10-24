@@ -32,7 +32,7 @@
                 <span class="menu-toggle-bar"></span>
             </button>
             <div class="header-actions" id="headerActions">
-                <button id="delegateBtn" class="delegate-btn" aria-haspopup="dialog" aria-controls="delegateModal" aria-label="Delegate to BKIND or another pool">Delegate</button>
+                <button id="delegateBtn" class="delegate-btn" aria-haspopup="dialog" aria-controls="delegateModal" aria-label="Delegate your stake or your vote">Delegate</button>
                 <button id="votesBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="votesModal" aria-label="View BKIND governance votes">Votes</button>
                 <a id="toolsBtn" class="tools-btn" href="https://github.com/GS1973/Cardano-Tools" target="_blank" rel="noopener noreferrer" aria-label="Cardano Tools on GitHub (opens in a new tab)">Tools</a>
                 <button id="poolsBtn" class="votes-btn" aria-haspopup="dialog" aria-controls="poolsModal" aria-label="Live pools under the saturation point">Pools</button>
@@ -64,11 +64,12 @@
             <button id="modalClose" class="modal-close" aria-label="Close">&times;</button>
             <h2 id="modalTitle" class="modal-title">Delegate</h2>
             <div id="modalBody" class="modal-body">
-                <p>Delegate to BKIND or to another pool below the saturation point at <code>k</code>&nbsp;=&nbsp;1000, or give your vote to a DRep.</p>
+                <p>Delegate your stake to BKIND or to another pool below the saturation point at <code>k</code>&nbsp;=&nbsp;1000. Give your vote to BKIND or to another DRep. Stake and vote are two separate delegations: each is its own transaction.</p>
                 <div class="delegate-choice">
-                    <button type="button" id="delegateWalletBtn" class="delegate-go">Delegate to BKIND</button>
+                    <button type="button" id="delegateWalletBtn" class="delegate-go">Delegate stake to BKIND</button>
                     <button type="button" id="delegateToPools" class="delegate-go">Choose another pool</button>
-                    <button type="button" id="delegateToDreps" class="delegate-go">Choose a DRep</button>
+                    <button type="button" id="delegateVoteBtn" class="delegate-go">Give your vote to BKIND</button>
+                    <button type="button" id="delegateToDreps" class="delegate-go">Choose another DRep</button>
                 </div>
                 <p class="delegate-fine">Your wallet shows the transaction before you sign it. Delegating does not move your ADA: you pay only the transaction fee, and a refundable deposit the first time your wallet delegates.</p>
             </div>
