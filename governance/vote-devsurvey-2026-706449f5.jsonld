@@ -1,0 +1,111 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "179f7fcb76adfd21200c26b549a661f815f3fed43ed7577ee8008176d1f72b3f",
+        "signature": "bcfb3f444e3d1836b9af8fc575d5fdabac9f4b8a6a92e6e71182d2c490d78a5eea4bbeff6be5930d3034a872f362d715b14413ac3f035f2c432e1597c2f44f00"
+      }
+    },
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "a06c4df29d2d74a14943b696a344e4f55d1da71eec0cc71de1bb9aa03aab0349",
+        "signature": "7d963777b84de5709bec85334f4a20da23384d29ee47eb05cb0e03a89f4a48ef4021fec2a8f85cb496035b452a77e789810052d05d97b237e417563231df4600"
+      }
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes No. This info action asks for no decision. It promotes a survey whose answers are recorded on chain under keys made in the browser for the occasion. Such a record looks like a count anyone can check, but it cannot show how many people answered.",
+    "rationaleStatement": "Action: info action 706449f5192f3951a3c3cb1485215c7c02c951114e75f00147d6e2dfd16d657d#0 by the Cardano Foundation, with a deposit of 100,000 ada that returns to stake1uyyqmz5ae7ct4f26p4t87y2xrrgu7f3e0cpap66zgcnxu0gl7gy6y. I verified on chain that the action was published on 28 October 2026 in epoch 664, and that the proposal document hashes to the on-chain anchor, 0ac3f40505cab485e027989b2eebcb4897a2af0e483fe5fe1274c88ecd8290b1. The survey it links is the CIP-179 survey definition in transaction 8a9e8ee18d216904681d544f2a0bae365bb39de8bd397d5434cde9516a618081#0, published on 26 October 2026 in epoch 663, open to one role only, Keyholder, with public answers and end epoch 670.\n\nWhat I support. A yearly survey of Cardano developers is useful, and the code of the survey and of its report is open source. My No is not to asking developers. It is to the way the answers are collected and presented.\n\nA key per browser, not a person. Keyholder is the CIP-179 role for \"control of a payment/spending credential\". Such a credential costs nothing, needs no ada and no registration. The survey's documentation states: \"The browser makes a key, and the response's credential is that key.\" The sponsor \"pays at most 0.5 ada per response, once per respondent key\". Another browser makes another key, and with it another response the sponsor pays for. The chain cannot tell these responses apart from responses by different people.\n\nThe proposer pays for and admits answers. Respondents \"don't need a wallet: a sponsor, run on Vercel, pays their transactions.\" That sponsor is run by the proposer, and through its bot check it decides which responses it pays for and submits. A respondent without a wallet can only answer through it. The answers are on chain, but for those respondents, whether an answer gets there is decided off chain by the party that asks the questions.\n\nOn chain is not the same as verifiable. The survey's documentation is open about how responses are made. The action, read by every DRep, stake pool operator and Constitutional Committee member, states instead: \"Anyone can count the answers and check the results for themselves.\" Anyone can count the records. Nobody can check from the chain how many people they come from. Recording them on chain gives the results the look of a verifiable count that the method does not support.",
+    "precedentDiscussion": "My DRep registration commits me to hold proposals \"to evidence rather than promises\". My No votes on actions 158, 161, 162 and 163 applied that standard to treasury withdrawals. This vote applies it to a count: a result is only as strong as the evidence of who produced it.\n\nDisclosure: I am the author of CIP-0204, a different on-chain format in which ADA holders answer on governance actions with a stake key that was registered before the action was submitted.",
+    "counterargumentDiscussion": "It is a developer survey, not a vote. The action asks for no decision. But it is presented to governance participants as information that \"matters to you too\", and its results are meant to help \"tool builders, documentation writers and funders decide what to work on first\". A count that can grow with every new browser is weak evidence for those decisions.\n\nThe bot check prevents abuse. It checks for robots, not for one person answering from several browsers, and its decisions are not on chain.\n\nAbstain is the suggested vote. The proposer writes: \"If you'd still like to record a vote, Abstain is the way to go.\" A No records that I do not support this way of collecting and presenting answers.",
+    "conclusion": "BKIND votes No: answers under keys made in the browser for the occasion are presented as a count anyone can check, while the chain cannot show how many people stand behind them (govActionId 706449f5192f3951a3c3cb1485215c7c02c951114e75f00147d6e2dfd16d657d#0).",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Governance action 164, proposal document (IPFS)",
+        "uri": "ipfs://Qmcg5XYqcMe9Xtd741SozLx4dFGCnB26G57BvSHZ4WQvqN"
+      },
+      {
+        "@type": "Other",
+        "label": "Survey source code and documentation",
+        "uri": "https://github.com/cardano-foundation/state-of-the-developer-ecosystem/blob/5def8b49d08ee48587d8aa5d3956cabbc3d7bb43/survey/README.md"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-179, On-Chain Surveys and Polls (as linked by the action)",
+        "uri": "https://github.com/cardano-foundation/CIPs/blob/befcdb75289cb6571ffba6dbece3249ad2bfd491/CIP-0179/README.md"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-0204, Holder Answers on Governance Actions",
+        "uri": "https://cips.cardano.org/cip/CIP-0204"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND DRep registration (CIP-119)",
+        "uri": "https://smitblockchainops.nl/governance/drep.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-136, DRep vote rationale",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0136"
+      }
+    ]
+  }
+}

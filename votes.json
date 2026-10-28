@@ -1,6 +1,24 @@
 [
   {
     "role": "DRep",
+    "title": "State of the Cardano Developer Ecosystem 2026 Survey",
+    "action": "Info Action",
+    "vote": "No",
+    "epoch": 664,
+    "govActionId": "706449f5192f3951a3c3cb1485215c7c02c951114e75f00147d6e2dfd16d657d#0",
+    "rationale": "governance/vote-devsurvey-2026-706449f5.jsonld"
+  },
+  {
+    "role": "SPO",
+    "title": "State of the Cardano Developer Ecosystem 2026 Survey",
+    "action": "Info Action",
+    "vote": "No",
+    "epoch": 664,
+    "govActionId": "706449f5192f3951a3c3cb1485215c7c02c951114e75f00147d6e2dfd16d657d#0",
+    "rationale": "governance/vote-devsurvey-2026-706449f5.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "PFMS government scale adoption (Trivolve Tech)",
     "action": "Treasury Withdrawal",
     "vote": "No",
