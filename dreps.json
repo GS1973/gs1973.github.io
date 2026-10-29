@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-29T08:36:54Z",
+"generated": "2026-10-29T12:50:40Z",
 "epoch": 664,
 "figures": {
 "circulating_ada": 37566264202,
@@ -17,8 +17,8 @@
 "carry_treasury": 19,
 "window_epochs": 36,
 "drep_activity_epochs": 20,
-"votes": 9473,
-"votes_with_rationale": 3700,
+"votes": 9484,
+"votes_with_rationale": 3704,
 "dreps_never_rationale": 130,
 "dreps_never_rationale_ada": 1153693386,
 "thresholds": {
@@ -70,7 +70,9 @@
 "eligible": 67,
 "voted": 66,
 "rationale": 66,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "BWtake(長崎)Japan",
@@ -83,7 +85,9 @@
 "eligible": 67,
 "voted": 65,
 "rationale": 65,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "SASA_nagamaru_ながまる",
@@ -96,7 +100,9 @@
 "eligible": 67,
 "voted": 65,
 "rationale": 65,
-"last_vote": "2026-10-20"
+"last_vote": "2026-10-20",
+"document": "valid",
+"roles": []
 },
 {
 "name": "InputEndorsers",
@@ -109,7 +115,9 @@
 "eligible": 67,
 "voted": 66,
 "rationale": 64,
-"last_vote": "2026-10-24"
+"last_vote": "2026-10-24",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Chris Cata",
@@ -122,7 +130,9 @@
 "eligible": 67,
 "voted": 64,
 "rationale": 64,
-"last_vote": "2026-10-24"
+"last_vote": "2026-10-24",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Cerkoryn",
@@ -135,7 +145,9 @@
 "eligible": 67,
 "voted": 64,
 "rationale": 64,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "YUTA",
@@ -144,11 +156,13 @@
 "script": false,
 "voting_power_ada": 479812960,
 "share": 9.196,
-"delegators": 2077,
+"delegators": 2076,
 "eligible": 67,
 "voted": 66,
 "rationale": 63,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Chris [STR8] - Straightpool",
@@ -161,7 +175,9 @@
 "eligible": 67,
 "voted": 63,
 "rationale": 62,
-"last_vote": "2026-09-25"
+"last_vote": "2026-09-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "SIPO",
@@ -170,11 +186,13 @@
 "script": false,
 "voting_power_ada": 104626225,
 "share": 2.005,
-"delegators": 418,
+"delegators": 419,
 "eligible": 67,
 "voted": 63,
 "rationale": 62,
-"last_vote": "2026-10-07"
+"last_vote": "2026-10-07",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Latam Cardano",
@@ -187,7 +205,9 @@
 "eligible": 67,
 "voted": 62,
 "rationale": 62,
-"last_vote": "2026-10-08"
+"last_vote": "2026-10-08",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Pallamus",
@@ -200,7 +220,9 @@
 "eligible": 13,
 "voted": 12,
 "rationale": 12,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -213,7 +235,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 61,
-"last_vote": "2026-10-16"
+"last_vote": "2026-10-16",
+"document": "unreachable",
+"roles": []
 },
 {
 "name": "Will Norris",
@@ -226,7 +250,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 61,
-"last_vote": "2026-10-07"
+"last_vote": "2026-10-07",
+"document": "valid",
+"roles": []
 },
 {
 "name": "jonahkoch",
@@ -239,7 +265,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 60,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Cardanians",
@@ -252,7 +280,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 60,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Dave",
@@ -265,7 +295,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 60,
-"last_vote": "2026-10-10"
+"last_vote": "2026-10-10",
+"document": "valid",
+"roles": []
 },
 {
 "name": "AdaStat",
@@ -278,7 +310,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 60,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "William Doyle",
@@ -291,7 +325,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 59,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "AustinAnthony",
@@ -304,7 +340,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 58,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Dan",
@@ -317,7 +355,9 @@
 "eligible": 67,
 "voted": 59,
 "rationale": 58,
-"last_vote": "2026-10-19"
+"last_vote": "2026-10-19",
+"document": "valid",
+"roles": []
 },
 {
 "name": "RCADA",
@@ -330,7 +370,9 @@
 "eligible": 67,
 "voted": 58,
 "rationale": 58,
-"last_vote": "2026-10-10"
+"last_vote": "2026-10-10",
+"document": "valid",
+"roles": []
 },
 {
 "name": "No stress",
@@ -343,7 +385,9 @@
 "eligible": 67,
 "voted": 63,
 "rationale": 57,
-"last_vote": "2026-10-01"
+"last_vote": "2026-10-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Aichi/Tokai_DRep",
@@ -356,7 +400,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 57,
-"last_vote": "2026-10-19"
+"last_vote": "2026-10-19",
+"document": "valid",
+"roles": []
 },
 {
 "name": "$Khale",
@@ -369,7 +415,9 @@
 "eligible": 67,
 "voted": 57,
 "rationale": 57,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Army of Spies",
@@ -382,7 +430,9 @@
 "eligible": 67,
 "voted": 57,
 "rationale": 57,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "wolf31o2 (Chris Gianelloni)",
@@ -395,7 +445,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 55,
-"last_vote": "2026-10-23"
+"last_vote": "2026-10-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Mike Rogero (羅邁凱）",
@@ -408,7 +460,9 @@
 "eligible": 67,
 "voted": 56,
 "rationale": 55,
-"last_vote": "2026-10-15"
+"last_vote": "2026-10-15",
+"document": "valid",
+"roles": []
 },
 {
 "name": "hix_coffeepool☕️",
@@ -421,7 +475,9 @@
 "eligible": 67,
 "voted": 55,
 "rationale": 55,
-"last_vote": "2026-10-20"
+"last_vote": "2026-10-20",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Agora | Cardano (by Rodrigo Pacini)",
@@ -434,7 +490,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 54,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Eternl DRep Committee",
@@ -443,11 +501,13 @@
 "script": false,
 "voting_power_ada": 217883284,
 "share": 4.176,
-"delegators": 10022,
+"delegators": 10023,
 "eligible": 67,
 "voted": 55,
 "rationale": 54,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Wada DRep",
@@ -460,7 +520,9 @@
 "eligible": 67,
 "voted": 54,
 "rationale": 53,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Dori",
@@ -473,7 +535,9 @@
 "eligible": 67,
 "voted": 58,
 "rationale": 52,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Crypto Eats Legacy",
@@ -486,7 +550,9 @@
 "eligible": 67,
 "voted": 54,
 "rationale": 52,
-"last_vote": "2026-09-05"
+"last_vote": "2026-09-05",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Varavas",
@@ -499,7 +565,9 @@
 "eligible": 67,
 "voted": 66,
 "rationale": 51,
-"last_vote": "2026-10-22"
+"last_vote": "2026-10-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "AtlasHub",
@@ -512,7 +580,9 @@
 "eligible": 67,
 "voted": 67,
 "rationale": 50,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Porto Cripto DRep 🇧🇷 🇵🇹 (Atico & Bosco, from Cardanistas Stake Pool - CARDs)",
@@ -525,7 +595,9 @@
 "eligible": 67,
 "voted": 49,
 "rationale": 49,
-"last_vote": "2026-08-22"
+"last_vote": "2026-08-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Styg",
@@ -538,7 +610,9 @@
 "eligible": 17,
 "voted": 16,
 "rationale": 12,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "CardanoLeo",
@@ -551,7 +625,9 @@
 "eligible": 13,
 "voted": 9,
 "rationale": 9,
-"last_vote": "2026-09-23"
+"last_vote": "2026-09-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "iFly",
@@ -564,7 +640,9 @@
 "eligible": 14,
 "voted": 9,
 "rationale": 9,
-"last_vote": "2026-09-30"
+"last_vote": "2026-09-30",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Victor.Villagomez",
@@ -577,7 +655,9 @@
 "eligible": 67,
 "voted": 50,
 "rationale": 43,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Krypto Labs",
@@ -590,7 +670,9 @@
 "eligible": 67,
 "voted": 43,
 "rationale": 43,
-"last_vote": "2026-10-26"
+"last_vote": "2026-10-26",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Kevin_ALBERT",
@@ -603,7 +685,9 @@
 "eligible": 67,
 "voted": 51,
 "rationale": 42,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Goofycrisp",
@@ -616,7 +700,9 @@
 "eligible": 67,
 "voted": 40,
 "rationale": 40,
-"last_vote": "2026-08-06"
+"last_vote": "2026-08-06",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Angry Crypto Show",
@@ -629,7 +715,9 @@
 "eligible": 12,
 "voted": 8,
 "rationale": 7,
-"last_vote": "2026-10-26"
+"last_vote": "2026-10-26",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Lourde",
@@ -642,7 +730,9 @@
 "eligible": 67,
 "voted": 39,
 "rationale": 39,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Socious",
@@ -655,7 +745,9 @@
 "eligible": 67,
 "voted": 39,
 "rationale": 39,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Dr. Navjit Dhaliwal",
@@ -668,7 +760,9 @@
 "eligible": 67,
 "voted": 57,
 "rationale": 38,
-"last_vote": "2026-08-21"
+"last_vote": "2026-08-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Cardano Cypherpunks",
@@ -681,7 +775,9 @@
 "eligible": 67,
 "voted": 66,
 "rationale": 37,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Kevin G Mohr",
@@ -694,7 +790,9 @@
 "eligible": 67,
 "voted": 40,
 "rationale": 36,
-"last_vote": "2026-10-10"
+"last_vote": "2026-10-10",
+"document": "valid",
+"roles": []
 },
 {
 "name": "HOSKY",
@@ -707,7 +805,9 @@
 "eligible": 67,
 "voted": 36,
 "rationale": 35,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Nimuë Lady of the Lake Pool",
@@ -720,7 +820,9 @@
 "eligible": 67,
 "voted": 66,
 "rationale": 34,
-"last_vote": "2026-10-22"
+"last_vote": "2026-10-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "GAIA",
@@ -733,7 +835,9 @@
 "eligible": 67,
 "voted": 34,
 "rationale": 34,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -746,7 +850,9 @@
 "eligible": 4,
 "voted": 3,
 "rationale": 2,
-"last_vote": "2026-10-24"
+"last_vote": "2026-10-24",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Meria",
@@ -759,7 +865,9 @@
 "eligible": 12,
 "voted": 6,
 "rationale": 6,
-"last_vote": "2026-10-16"
+"last_vote": "2026-10-16",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Hephaestus Stake Pool [HEPHY]",
@@ -772,7 +880,9 @@
 "eligible": 67,
 "voted": 62,
 "rationale": 33,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "TriangleForces",
@@ -785,7 +895,9 @@
 "eligible": 67,
 "voted": 64,
 "rationale": 32,
-"last_vote": "2026-10-15"
+"last_vote": "2026-10-15",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Dynamic Strategies",
@@ -798,7 +910,9 @@
 "eligible": 67,
 "voted": 32,
 "rationale": 32,
-"last_vote": "2026-08-02"
+"last_vote": "2026-08-02",
+"document": "valid",
+"roles": []
 },
 {
 "name": "MUEN",
@@ -811,7 +925,9 @@
 "eligible": 67,
 "voted": 66,
 "rationale": 31,
-"last_vote": "2026-10-24"
+"last_vote": "2026-10-24",
+"document": "valid",
+"roles": []
 },
 {
 "name": "HeptaSean",
@@ -824,7 +940,9 @@
 "eligible": 67,
 "voted": 64,
 "rationale": 31,
-"last_vote": "2026-10-16"
+"last_vote": "2026-10-16",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Cash",
@@ -837,7 +955,9 @@
 "eligible": 67,
 "voted": 58,
 "rationale": 31,
-"last_vote": "2026-08-10"
+"last_vote": "2026-08-10",
+"document": "valid",
+"roles": []
 },
 {
 "name": "DraculaDAO",
@@ -850,7 +970,9 @@
 "eligible": 67,
 "voted": 39,
 "rationale": 31,
-"last_vote": "2026-10-05"
+"last_vote": "2026-10-05",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Viet_Cardano_Community",
@@ -863,7 +985,9 @@
 "eligible": 67,
 "voted": 34,
 "rationale": 31,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "drep.collective",
@@ -876,7 +1000,9 @@
 "eligible": 67,
 "voted": 36,
 "rationale": 29,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "MREDGARCROSS",
@@ -889,7 +1015,9 @@
 "eligible": 67,
 "voted": 65,
 "rationale": 27,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Kyle Solomon",
@@ -902,7 +1030,9 @@
 "eligible": 67,
 "voted": 38,
 "rationale": 27,
-"last_vote": "2026-07-28"
+"last_vote": "2026-07-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "CryptoDossier",
@@ -915,7 +1045,9 @@
 "eligible": 5,
 "voted": 2,
 "rationale": 2,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Peter Horsfall",
@@ -928,7 +1060,9 @@
 "eligible": 67,
 "voted": 57,
 "rationale": 26,
-"last_vote": "2026-10-19"
+"last_vote": "2026-10-19",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ADAR_Chris",
@@ -941,7 +1075,9 @@
 "eligible": 67,
 "voted": 59,
 "rationale": 25,
-"last_vote": "2026-10-08"
+"last_vote": "2026-10-08",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Blockjock (James Meidinger)",
@@ -954,7 +1090,9 @@
 "eligible": 67,
 "voted": 64,
 "rationale": 24,
-"last_vote": "2026-10-22"
+"last_vote": "2026-10-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -967,7 +1105,9 @@
 "eligible": 55,
 "voted": 19,
 "rationale": 19,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Christopher Erckert | Dotare",
@@ -980,7 +1120,9 @@
 "eligible": 67,
 "voted": 39,
 "rationale": 23,
-"last_vote": "2026-10-20"
+"last_vote": "2026-10-20",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Rod G.",
@@ -993,7 +1135,9 @@
 "eligible": 67,
 "voted": 24,
 "rationale": 23,
-"last_vote": "2026-10-19"
+"last_vote": "2026-10-19",
+"document": "valid",
+"roles": []
 },
 {
 "name": "BKIND",
@@ -1006,7 +1150,19 @@
 "eligible": 35,
 "voted": 12,
 "rationale": 12,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": [
+{
+"kind": "pool",
+"pool_id": "pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y",
+"ticker": "BKIND",
+"name": "Smit Blockchain Operations",
+"document": "valid",
+"relation": "reciprocal",
+"declared_by": "both"
+}
+]
 },
 {
 "name": "MyCNFT DRep",
@@ -1019,7 +1175,9 @@
 "eligible": 67,
 "voted": 51,
 "rationale": 21,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "JohnM",
@@ -1032,7 +1190,9 @@
 "eligible": 10,
 "voted": 3,
 "rationale": 3,
-"last_vote": "2026-10-09"
+"last_vote": "2026-10-09",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Wolfoden",
@@ -1045,7 +1205,9 @@
 "eligible": 41,
 "voted": 20,
 "rationale": 12,
-"last_vote": "2026-10-15"
+"last_vote": "2026-10-15",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Sebastien Guillemot セバ",
@@ -1058,7 +1220,9 @@
 "eligible": 67,
 "voted": 51,
 "rationale": 19,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ADAtainment",
@@ -1071,7 +1235,9 @@
 "eligible": 43,
 "voted": 37,
 "rationale": 12,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Patrick_Tobler",
@@ -1084,7 +1250,9 @@
 "eligible": 67,
 "voted": 64,
 "rationale": 18,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "TNT",
@@ -1097,7 +1265,9 @@
 "eligible": 67,
 "voted": 63,
 "rationale": 18,
-"last_vote": "2026-10-23"
+"last_vote": "2026-10-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "π Lanningham",
@@ -1110,7 +1280,9 @@
 "eligible": 67,
 "voted": 18,
 "rationale": 18,
-"last_vote": "2026-07-28"
+"last_vote": "2026-07-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "AdaLovelace777",
@@ -1123,7 +1295,9 @@
 "eligible": 67,
 "voted": 25,
 "rationale": 17,
-"last_vote": "2026-10-08"
+"last_vote": "2026-10-08",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ACL-CardanoLand",
@@ -1136,7 +1310,24 @@
 "eligible": 67,
 "voted": 20,
 "rationale": 17,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
+},
+{
+"name": "Maureen",
+"drep_id": "drep1y22hlaj8wuyygpnjy5cf96tg9tgvjrz39kxvqgv898uj9scfc55t7",
+"hash": "957ff6477708440672253092e9682ad0c90c512d8cc0218729f922c3",
+"script": false,
+"voting_power_ada": 549967,
+"share": 0.011,
+"delegators": 59,
+"eligible": 67,
+"voted": 17,
+"rationale": 17,
+"last_vote": "2026-10-29",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Phil UPLC",
@@ -1149,7 +1340,24 @@
 "eligible": 67,
 "voted": 43,
 "rationale": 16,
-"last_vote": "2026-09-14"
+"last_vote": "2026-09-14",
+"document": "valid",
+"roles": []
+},
+{
+"name": "Florian Volery",
+"drep_id": "drep1yguh6dsgx0g58v8pqmxgfrkq0x8vfv6tcp92uzzjrykwy8cjmelsy",
+"hash": "397d360833d143b0e106cc848ec0798ec4b34bc04aae0852192ce21f",
+"script": false,
+"voting_power_ada": 25532565,
+"share": 0.489,
+"delegators": 132,
+"eligible": 67,
+"voted": 26,
+"rationale": 16,
+"last_vote": "2026-10-29",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Hermes Stakepool Germany (HRMS)",
@@ -1162,20 +1370,9 @@
 "eligible": 67,
 "voted": 47,
 "rationale": 15,
-"last_vote": "2026-10-27"
-},
-{
-"name": "Florian Volery",
-"drep_id": "drep1yguh6dsgx0g58v8pqmxgfrkq0x8vfv6tcp92uzzjrykwy8cjmelsy",
-"hash": "397d360833d143b0e106cc848ec0798ec4b34bc04aae0852192ce21f",
-"script": false,
-"voting_power_ada": 25532565,
-"share": 0.489,
-"delegators": 132,
-"eligible": 67,
-"voted": 24,
-"rationale": 15,
-"last_vote": "2026-08-09"
+"last_vote": "2026-10-27",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -1188,20 +1385,9 @@
 "eligible": 67,
 "voted": 51,
 "rationale": 14,
-"last_vote": "2026-10-01"
-},
-{
-"name": "Maureen",
-"drep_id": "drep1y22hlaj8wuyygpnjy5cf96tg9tgvjrz39kxvqgv898uj9scfc55t7",
-"hash": "957ff6477708440672253092e9682ad0c90c512d8cc0218729f922c3",
-"script": false,
-"voting_power_ada": 549967,
-"share": 0.011,
-"delegators": 59,
-"eligible": 67,
-"voted": 14,
-"rationale": 14,
-"last_vote": "2026-07-21"
+"last_vote": "2026-10-01",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Musa Ridwan Itopa",
@@ -1214,7 +1400,9 @@
 "eligible": 67,
 "voted": 13,
 "rationale": 13,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "This Corrosion",
@@ -1227,7 +1415,9 @@
 "eligible": 67,
 "voted": 63,
 "rationale": 12,
-"last_vote": "2026-10-19"
+"last_vote": "2026-10-19",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -1240,7 +1430,9 @@
 "eligible": 67,
 "voted": 13,
 "rationale": 12,
-"last_vote": "2026-07-20"
+"last_vote": "2026-07-20",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Rodrigo-[CHIL]",
@@ -1253,7 +1445,9 @@
 "eligible": 67,
 "voted": 63,
 "rationale": 11,
-"last_vote": "2026-10-16"
+"last_vote": "2026-10-16",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Cryptotexty",
@@ -1266,7 +1460,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 10,
-"last_vote": "2026-09-30"
+"last_vote": "2026-09-30",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Alex BKV",
@@ -1279,7 +1475,9 @@
 "eligible": 67,
 "voted": 10,
 "rationale": 10,
-"last_vote": "2026-10-22"
+"last_vote": "2026-10-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Jose Martinez | Atlas Network Transmissions",
@@ -1292,7 +1490,9 @@
 "eligible": 14,
 "voted": 2,
 "rationale": 2,
-"last_vote": "2026-07-23"
+"last_vote": "2026-07-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "erikdrep",
@@ -1305,7 +1505,9 @@
 "eligible": 67,
 "voted": 59,
 "rationale": 9,
-"last_vote": "2026-10-19"
+"last_vote": "2026-10-19",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Shawn McMurdo - SQUID",
@@ -1318,7 +1520,9 @@
 "eligible": 67,
 "voted": 36,
 "rationale": 9,
-"last_vote": "2026-08-09"
+"last_vote": "2026-08-09",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Tony Boersma",
@@ -1331,7 +1535,9 @@
 "eligible": 67,
 "voted": 34,
 "rationale": 9,
-"last_vote": "2026-10-03"
+"last_vote": "2026-10-03",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ranket",
@@ -1344,7 +1550,9 @@
 "eligible": 67,
 "voted": 62,
 "rationale": 8,
-"last_vote": "2026-10-13"
+"last_vote": "2026-10-13",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -1357,7 +1565,9 @@
 "eligible": 67,
 "voted": 53,
 "rationale": 7,
-"last_vote": "2026-10-26"
+"last_vote": "2026-10-26",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Cardanolotus",
@@ -1370,7 +1580,9 @@
 "eligible": 67,
 "voted": 49,
 "rationale": 7,
-"last_vote": "2026-09-25"
+"last_vote": "2026-09-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "phillerino",
@@ -1383,7 +1595,9 @@
 "eligible": 67,
 "voted": 29,
 "rationale": 7,
-"last_vote": "2026-08-01"
+"last_vote": "2026-08-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Zacros",
@@ -1396,7 +1610,9 @@
 "eligible": 67,
 "voted": 27,
 "rationale": 7,
-"last_vote": "2026-10-18"
+"last_vote": "2026-10-18",
+"document": "valid",
+"roles": []
 },
 {
 "name": "8Ball",
@@ -1409,7 +1625,9 @@
 "eligible": 67,
 "voted": 24,
 "rationale": 7,
-"last_vote": "2026-09-12"
+"last_vote": "2026-09-12",
+"document": "valid",
+"roles": []
 },
 {
 "name": "GOMA-DRep",
@@ -1422,7 +1640,9 @@
 "eligible": 67,
 "voted": 8,
 "rationale": 7,
-"last_vote": "2026-09-12"
+"last_vote": "2026-09-12",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Captain Crypto",
@@ -1435,7 +1655,9 @@
 "eligible": 67,
 "voted": 8,
 "rationale": 7,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Marco Gonvil",
@@ -1448,7 +1670,9 @@
 "eligible": 41,
 "voted": 4,
 "rationale": 4,
-"last_vote": "2026-08-11"
+"last_vote": "2026-08-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "AYOMI",
@@ -1461,7 +1685,9 @@
 "eligible": 67,
 "voted": 36,
 "rationale": 6,
-"last_vote": "2026-10-09"
+"last_vote": "2026-10-09",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ArcadianComputers",
@@ -1474,7 +1700,9 @@
 "eligible": 67,
 "voted": 7,
 "rationale": 6,
-"last_vote": "2026-10-02"
+"last_vote": "2026-10-02",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Todd",
@@ -1487,7 +1715,9 @@
 "eligible": 48,
 "voted": 12,
 "rationale": 4,
-"last_vote": "2026-09-04"
+"last_vote": "2026-09-04",
+"document": "valid",
+"roles": []
 },
 {
 "name": "P",
@@ -1500,7 +1730,9 @@
 "eligible": 13,
 "voted": 4,
 "rationale": 1,
-"last_vote": "2026-08-11"
+"last_vote": "2026-08-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -1513,7 +1745,9 @@
 "eligible": 13,
 "voted": 3,
 "rationale": 1,
-"last_vote": "2026-10-08"
+"last_vote": "2026-10-08",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -1526,7 +1760,9 @@
 "eligible": 14,
 "voted": 8,
 "rationale": 1,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "unreachable",
+"roles": []
 },
 {
 "name": "No Treasury Withdrawals until ADA > $3",
@@ -1539,7 +1775,9 @@
 "eligible": 67,
 "voted": 62,
 "rationale": 4,
-"last_vote": "2026-10-02"
+"last_vote": "2026-10-02",
+"document": "valid",
+"roles": []
 },
 {
 "name": "LallyMcClay",
@@ -1552,7 +1790,9 @@
 "eligible": 67,
 "voted": 36,
 "rationale": 4,
-"last_vote": "2026-10-27"
+"last_vote": "2026-10-27",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Michele_Harmonic",
@@ -1565,7 +1805,9 @@
 "eligible": 67,
 "voted": 22,
 "rationale": 4,
-"last_vote": "2026-07-23"
+"last_vote": "2026-07-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Terminada",
@@ -1578,7 +1820,9 @@
 "eligible": 67,
 "voted": 14,
 "rationale": 4,
-"last_vote": "2026-09-15"
+"last_vote": "2026-09-15",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Rbaker2024",
@@ -1591,7 +1835,9 @@
 "eligible": 67,
 "voted": 4,
 "rationale": 4,
-"last_vote": "2026-08-01"
+"last_vote": "2026-08-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Talos",
@@ -1604,7 +1850,9 @@
 "eligible": 67,
 "voted": 47,
 "rationale": 3,
-"last_vote": "2026-10-06"
+"last_vote": "2026-10-06",
+"document": "valid",
+"roles": []
 },
 {
 "name": "MOKSH",
@@ -1617,7 +1865,9 @@
 "eligible": 67,
 "voted": 45,
 "rationale": 3,
-"last_vote": "2026-08-31"
+"last_vote": "2026-08-31",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Martin Lang",
@@ -1630,7 +1880,9 @@
 "eligible": 67,
 "voted": 45,
 "rationale": 3,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Jonathan Adjei",
@@ -1643,7 +1895,9 @@
 "eligible": 67,
 "voted": 29,
 "rationale": 3,
-"last_vote": "2026-10-07"
+"last_vote": "2026-10-07",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Lauris_StakePool247",
@@ -1656,7 +1910,9 @@
 "eligible": 67,
 "voted": 21,
 "rationale": 3,
-"last_vote": "2026-10-04"
+"last_vote": "2026-10-04",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -1669,7 +1925,9 @@
 "eligible": 67,
 "voted": 14,
 "rationale": 3,
-"last_vote": "2026-10-20"
+"last_vote": "2026-10-20",
+"document": "hash mismatch",
+"roles": []
 },
 {
 "name": "Atlanter",
@@ -1682,7 +1940,9 @@
 "eligible": 67,
 "voted": 7,
 "rationale": 3,
-"last_vote": "2026-08-02"
+"last_vote": "2026-08-02",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Erasmus",
@@ -1695,7 +1955,9 @@
 "eligible": 67,
 "voted": 5,
 "rationale": 3,
-"last_vote": "2026-10-04"
+"last_vote": "2026-10-04",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Mayhem",
@@ -1708,7 +1970,9 @@
 "eligible": 67,
 "voted": 5,
 "rationale": 3,
-"last_vote": "2026-08-14"
+"last_vote": "2026-08-14",
+"document": "valid",
+"roles": []
 },
 {
 "name": "virtuallykeith",
@@ -1721,7 +1985,9 @@
 "eligible": 67,
 "voted": 3,
 "rationale": 3,
-"last_vote": "2026-10-05"
+"last_vote": "2026-10-05",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Luc₳s @ 45B.io (Direct Voter)",
@@ -1734,7 +2000,9 @@
 "eligible": 58,
 "voted": 14,
 "rationale": 2,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "YOADA",
@@ -1747,7 +2015,9 @@
 "eligible": 67,
 "voted": 66,
 "rationale": 2,
-"last_vote": "2026-10-24"
+"last_vote": "2026-10-24",
+"document": "valid",
+"roles": []
 },
 {
 "name": "heo.keo",
@@ -1760,7 +2030,9 @@
 "eligible": 67,
 "voted": 58,
 "rationale": 2,
-"last_vote": "2026-09-02"
+"last_vote": "2026-09-02",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Dumpling🥟",
@@ -1773,7 +2045,9 @@
 "eligible": 67,
 "voted": 31,
 "rationale": 2,
-"last_vote": "2026-09-16"
+"last_vote": "2026-09-16",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Holger",
@@ -1786,7 +2060,9 @@
 "eligible": 67,
 "voted": 30,
 "rationale": 2,
-"last_vote": "2026-09-22"
+"last_vote": "2026-09-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "GNP1_DRep",
@@ -1799,7 +2075,9 @@
 "eligible": 67,
 "voted": 21,
 "rationale": 2,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Long Hồ",
@@ -1812,7 +2090,9 @@
 "eligible": 67,
 "voted": 16,
 "rationale": 2,
-"last_vote": "2026-08-19"
+"last_vote": "2026-08-19",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -1825,7 +2105,9 @@
 "eligible": 67,
 "voted": 15,
 "rationale": 2,
-"last_vote": "2026-10-27"
+"last_vote": "2026-10-27",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Ferdz",
@@ -1838,7 +2120,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 2,
-"last_vote": "2026-08-20"
+"last_vote": "2026-08-20",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -1851,7 +2135,9 @@
 "eligible": 67,
 "voted": 62,
 "rationale": 1,
-"last_vote": "2026-10-25"
+"last_vote": "2026-10-25",
+"document": "unreachable",
+"roles": []
 },
 {
 "name": "BAT Community",
@@ -1864,7 +2150,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 1,
-"last_vote": "2026-09-13"
+"last_vote": "2026-09-13",
+"document": "valid",
+"roles": []
 },
 {
 "name": "CryptoCrow",
@@ -1877,7 +2165,9 @@
 "eligible": 67,
 "voted": 57,
 "rationale": 1,
-"last_vote": "2026-10-20"
+"last_vote": "2026-10-20",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Chris-O",
@@ -1890,7 +2180,9 @@
 "eligible": 67,
 "voted": 55,
 "rationale": 1,
-"last_vote": "2026-07-21"
+"last_vote": "2026-07-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "SAGAN Stake Pool",
@@ -1903,7 +2195,9 @@
 "eligible": 67,
 "voted": 51,
 "rationale": 1,
-"last_vote": "2026-10-05"
+"last_vote": "2026-10-05",
+"document": "valid",
+"roles": []
 },
 {
 "name": "God BLESS You",
@@ -1916,7 +2210,9 @@
 "eligible": 67,
 "voted": 40,
 "rationale": 1,
-"last_vote": "2026-09-06"
+"last_vote": "2026-09-06",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -1929,7 +2225,9 @@
 "eligible": 67,
 "voted": 38,
 "rationale": 1,
-"last_vote": "2026-09-19"
+"last_vote": "2026-09-19",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "ATLAS_Wolfgang",
@@ -1942,7 +2240,9 @@
 "eligible": 67,
 "voted": 21,
 "rationale": 1,
-"last_vote": "2026-10-27"
+"last_vote": "2026-10-27",
+"document": "valid",
+"roles": []
 },
 {
 "name": "CAPO",
@@ -1955,7 +2255,9 @@
 "eligible": 67,
 "voted": 15,
 "rationale": 1,
-"last_vote": "2026-08-31"
+"last_vote": "2026-08-31",
+"document": "valid",
+"roles": []
 },
 {
 "name": "The Victor",
@@ -1968,7 +2270,9 @@
 "eligible": 67,
 "voted": 11,
 "rationale": 1,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "FAIR Pool #01",
@@ -1981,7 +2285,9 @@
 "eligible": 67,
 "voted": 4,
 "rationale": 1,
-"last_vote": "2026-10-10"
+"last_vote": "2026-10-10",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ANGEL",
@@ -1994,7 +2300,9 @@
 "eligible": 67,
 "voted": 4,
 "rationale": 1,
-"last_vote": "2026-09-26"
+"last_vote": "2026-09-26",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2007,7 +2315,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 1,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -2020,7 +2330,9 @@
 "eligible": 67,
 "voted": 1,
 "rationale": 1,
-"last_vote": "2026-08-03"
+"last_vote": "2026-08-03",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -2033,7 +2345,9 @@
 "eligible": 67,
 "voted": 1,
 "rationale": 1,
-"last_vote": "2026-07-27"
+"last_vote": "2026-07-27",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Next Epoch",
@@ -2046,7 +2360,9 @@
 "eligible": 67,
 "voted": 67,
 "rationale": 0,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "HenriqC",
@@ -2059,7 +2375,9 @@
 "eligible": 67,
 "voted": 66,
 "rationale": 0,
-"last_vote": "2026-10-22"
+"last_vote": "2026-10-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Earn Coin Pool",
@@ -2072,7 +2390,9 @@
 "eligible": 67,
 "voted": 66,
 "rationale": 0,
-"last_vote": "2026-10-24"
+"last_vote": "2026-10-24",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Anonymous",
@@ -2085,7 +2405,9 @@
 "eligible": 67,
 "voted": 65,
 "rationale": 0,
-"last_vote": "2026-10-19"
+"last_vote": "2026-10-19",
+"document": "valid",
+"roles": []
 },
 {
 "name": "CTEC-Stake-Pool",
@@ -2098,7 +2420,9 @@
 "eligible": 67,
 "voted": 65,
 "rationale": 0,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Farid_CZ",
@@ -2111,7 +2435,9 @@
 "eligible": 67,
 "voted": 63,
 "rationale": 0,
-"last_vote": "2026-10-18"
+"last_vote": "2026-10-18",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2124,7 +2450,9 @@
 "eligible": 67,
 "voted": 63,
 "rationale": 0,
-"last_vote": "2026-10-16"
+"last_vote": "2026-10-16",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "concon",
@@ -2137,7 +2465,9 @@
 "eligible": 67,
 "voted": 63,
 "rationale": 0,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Moonstake",
@@ -2150,7 +2480,9 @@
 "eligible": 67,
 "voted": 63,
 "rationale": 0,
-"last_vote": "2026-09-18"
+"last_vote": "2026-09-18",
+"document": "valid",
+"roles": []
 },
 {
 "name": "DINO",
@@ -2163,7 +2495,9 @@
 "eligible": 67,
 "voted": 62,
 "rationale": 0,
-"last_vote": "2026-10-09"
+"last_vote": "2026-10-09",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2176,7 +2510,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 0,
-"last_vote": "2026-10-03"
+"last_vote": "2026-10-03",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Pavol Korvas",
@@ -2189,7 +2525,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 0,
-"last_vote": "2026-10-03"
+"last_vote": "2026-10-03",
+"document": "valid",
+"roles": []
 },
 {
 "name": "TERA DRep",
@@ -2202,7 +2540,9 @@
 "eligible": 67,
 "voted": 61,
 "rationale": 0,
-"last_vote": "2026-10-27"
+"last_vote": "2026-10-27",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2215,7 +2555,9 @@
 "eligible": 43,
 "voted": 39,
 "rationale": 0,
-"last_vote": "2026-10-03"
+"last_vote": "2026-10-03",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Javi M.",
@@ -2228,7 +2570,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 0,
-"last_vote": "2026-10-04"
+"last_vote": "2026-10-04",
+"document": "valid",
+"roles": []
 },
 {
 "name": "BRIAN",
@@ -2241,7 +2585,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 0,
-"last_vote": "2026-10-01"
+"last_vote": "2026-10-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2254,7 +2600,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 0,
-"last_vote": "2026-09-29"
+"last_vote": "2026-09-29",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "JAZZ",
@@ -2267,7 +2615,9 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 0,
-"last_vote": "2026-10-22"
+"last_vote": "2026-10-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Everstake",
@@ -2280,7 +2630,24 @@
 "eligible": 67,
 "voted": 60,
 "rationale": 0,
-"last_vote": "2026-10-20"
+"last_vote": "2026-10-20",
+"document": "valid",
+"roles": []
+},
+{
+"name": "Liqwid DAO",
+"drep_id": "drep1ygctwczmpjxef8w3ljugkdth2d4upz2f2yfv9mvyxe0papswz26s6",
+"hash": "30b7605b0c8d949dd1fcb88b3577536bc089495112c2ed84365e1e86",
+"script": false,
+"voting_power_ada": 22423995,
+"share": 0.43,
+"delegators": 31,
+"eligible": 66,
+"voted": 58,
+"rationale": 0,
+"last_vote": "2026-10-29",
+"document": "valid",
+"roles": []
 },
 {
 "name": "PoolTool",
@@ -2293,7 +2660,9 @@
 "eligible": 67,
 "voted": 58,
 "rationale": 0,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2306,7 +2675,9 @@
 "eligible": 67,
 "voted": 57,
 "rationale": 0,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "hash mismatch",
+"roles": []
 },
 {
 "name": "eoniam/Chad the New Mexico DRep",
@@ -2319,7 +2690,9 @@
 "eligible": 67,
 "voted": 56,
 "rationale": 0,
-"last_vote": "2026-10-12"
+"last_vote": "2026-10-12",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2332,7 +2705,9 @@
 "eligible": 67,
 "voted": 56,
 "rationale": 0,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Adapolis_Stakepool",
@@ -2345,20 +2720,9 @@
 "eligible": 67,
 "voted": 56,
 "rationale": 0,
-"last_vote": "2026-10-23"
-},
-{
-"name": "Liqwid DAO",
-"drep_id": "drep1ygctwczmpjxef8w3ljugkdth2d4upz2f2yfv9mvyxe0papswz26s6",
-"hash": "30b7605b0c8d949dd1fcb88b3577536bc089495112c2ed84365e1e86",
-"script": false,
-"voting_power_ada": 22423995,
-"share": 0.43,
-"delegators": 31,
-"eligible": 66,
-"voted": 55,
-"rationale": 0,
-"last_vote": "2026-08-24"
+"last_vote": "2026-10-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "RCorreia",
@@ -2371,7 +2735,9 @@
 "eligible": 67,
 "voted": 55,
 "rationale": 0,
-"last_vote": "2026-10-05"
+"last_vote": "2026-10-05",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2384,7 +2750,9 @@
 "eligible": 49,
 "voted": 40,
 "rationale": 0,
-"last_vote": "2026-08-17"
+"last_vote": "2026-08-17",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Themeda",
@@ -2397,7 +2765,9 @@
 "eligible": 67,
 "voted": 53,
 "rationale": 0,
-"last_vote": "2026-09-09"
+"last_vote": "2026-09-09",
+"document": "valid",
+"roles": []
 },
 {
 "name": "damiondutch",
@@ -2410,7 +2780,9 @@
 "eligible": 23,
 "voted": 18,
 "rationale": 0,
-"last_vote": "2026-09-16"
+"last_vote": "2026-09-16",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Linda - Cryptofly",
@@ -2423,7 +2795,9 @@
 "eligible": 67,
 "voted": 51,
 "rationale": 0,
-"last_vote": "2026-07-23"
+"last_vote": "2026-07-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "忠実",
@@ -2436,7 +2810,9 @@
 "eligible": 67,
 "voted": 50,
 "rationale": 0,
-"last_vote": "2026-08-25"
+"last_vote": "2026-08-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "World Peace",
@@ -2449,7 +2825,9 @@
 "eligible": 67,
 "voted": 50,
 "rationale": 0,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Crypto_Oaj",
@@ -2462,7 +2840,9 @@
 "eligible": 67,
 "voted": 48,
 "rationale": 0,
-"last_vote": "2026-09-09"
+"last_vote": "2026-09-09",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Blockdaemon",
@@ -2475,7 +2855,9 @@
 "eligible": 67,
 "voted": 48,
 "rationale": 0,
-"last_vote": "2026-07-29"
+"last_vote": "2026-07-29",
+"document": "valid",
+"roles": []
 },
 {
 "name": "SVRN | Sleeping Natives",
@@ -2488,7 +2870,24 @@
 "eligible": 67,
 "voted": 46,
 "rationale": 0,
-"last_vote": "2026-09-23"
+"last_vote": "2026-09-23",
+"document": "valid",
+"roles": []
+},
+{
+"name": "RobertJTokay",
+"drep_id": "drep1y2m0putteu5wcdf3dtww7p9tvfupqut5tplscdkd9q65uqcrx4p8e",
+"hash": "b6f0f16bcf28ec35316adcef04ab6278107174587f0c36cd28354e03",
+"script": false,
+"voting_power_ada": 959116,
+"share": 0.018,
+"delegators": 19,
+"eligible": 67,
+"voted": 46,
+"rationale": 0,
+"last_vote": "2026-10-29",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2501,7 +2900,9 @@
 "eligible": 67,
 "voted": 45,
 "rationale": 0,
-"last_vote": "2026-08-19"
+"last_vote": "2026-08-19",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -2514,7 +2915,9 @@
 "eligible": 67,
 "voted": 44,
 "rationale": 0,
-"last_vote": "2026-07-24"
+"last_vote": "2026-07-24",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "VNEconomics",
@@ -2527,20 +2930,9 @@
 "eligible": 67,
 "voted": 44,
 "rationale": 0,
-"last_vote": "2026-07-25"
-},
-{
-"name": "RobertJTokay",
-"drep_id": "drep1y2m0putteu5wcdf3dtww7p9tvfupqut5tplscdkd9q65uqcrx4p8e",
-"hash": "b6f0f16bcf28ec35316adcef04ab6278107174587f0c36cd28354e03",
-"script": false,
-"voting_power_ada": 959116,
-"share": 0.018,
-"delegators": 19,
-"eligible": 67,
-"voted": 43,
-"rationale": 0,
-"last_vote": "2026-10-05"
+"last_vote": "2026-07-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Kurdopia",
@@ -2553,7 +2945,9 @@
 "eligible": 67,
 "voted": 42,
 "rationale": 0,
-"last_vote": "2026-07-22"
+"last_vote": "2026-07-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "OCTAS DRep",
@@ -2566,7 +2960,9 @@
 "eligible": 67,
 "voted": 42,
 "rationale": 0,
-"last_vote": "2026-09-26"
+"last_vote": "2026-09-26",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2579,7 +2975,9 @@
 "eligible": 67,
 "voted": 42,
 "rationale": 0,
-"last_vote": "2026-08-17"
+"last_vote": "2026-08-17",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Paul Ko",
@@ -2592,7 +2990,9 @@
 "eligible": 67,
 "voted": 41,
 "rationale": 0,
-"last_vote": "2026-10-10"
+"last_vote": "2026-10-10",
+"document": "valid",
+"roles": []
 },
 {
 "name": "NEDSCAVE.IO",
@@ -2605,7 +3005,9 @@
 "eligible": 67,
 "voted": 41,
 "rationale": 0,
-"last_vote": "2026-08-27"
+"last_vote": "2026-08-27",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ADA_Labo",
@@ -2618,7 +3020,9 @@
 "eligible": 67,
 "voted": 40,
 "rationale": 0,
-"last_vote": "2026-10-23"
+"last_vote": "2026-10-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Cheeky Crypto (CHEEK)",
@@ -2631,7 +3035,9 @@
 "eligible": 67,
 "voted": 40,
 "rationale": 0,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "DanShipps_HarborStakePool",
@@ -2644,7 +3050,9 @@
 "eligible": 67,
 "voted": 39,
 "rationale": 0,
-"last_vote": "2026-08-13"
+"last_vote": "2026-08-13",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Adastra",
@@ -2657,7 +3065,9 @@
 "eligible": 67,
 "voted": 36,
 "rationale": 0,
-"last_vote": "2026-10-15"
+"last_vote": "2026-10-15",
+"document": "valid",
+"roles": []
 },
 {
 "name": "HyperlinkPool_SPO",
@@ -2670,7 +3080,9 @@
 "eligible": 67,
 "voted": 36,
 "rationale": 0,
-"last_vote": "2026-08-12"
+"last_vote": "2026-08-12",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Drep One",
@@ -2683,7 +3095,9 @@
 "eligible": 67,
 "voted": 36,
 "rationale": 0,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2696,7 +3110,9 @@
 "eligible": 67,
 "voted": 34,
 "rationale": 0,
-"last_vote": "2026-10-29"
+"last_vote": "2026-10-29",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "42",
@@ -2709,7 +3125,9 @@
 "eligible": 67,
 "voted": 34,
 "rationale": 0,
-"last_vote": "2026-10-04"
+"last_vote": "2026-10-04",
+"document": "valid",
+"roles": []
 },
 {
 "name": "BreadAndRoses",
@@ -2722,7 +3140,9 @@
 "eligible": 67,
 "voted": 33,
 "rationale": 0,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "THOR",
@@ -2735,7 +3155,9 @@
 "eligible": 67,
 "voted": 31,
 "rationale": 0,
-"last_vote": "2026-08-18"
+"last_vote": "2026-08-18",
+"document": "valid",
+"roles": []
 },
 {
 "name": "matticus_kiwi",
@@ -2748,7 +3170,9 @@
 "eligible": 67,
 "voted": 31,
 "rationale": 0,
-"last_vote": "2026-09-16"
+"last_vote": "2026-09-16",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2761,7 +3185,9 @@
 "eligible": 59,
 "voted": 26,
 "rationale": 0,
-"last_vote": "2026-08-10"
+"last_vote": "2026-08-10",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "ThisCrazyDrep",
@@ -2774,7 +3200,9 @@
 "eligible": 67,
 "voted": 29,
 "rationale": 0,
-"last_vote": "2026-08-29"
+"last_vote": "2026-08-29",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2787,7 +3215,9 @@
 "eligible": 67,
 "voted": 29,
 "rationale": 0,
-"last_vote": "2026-08-30"
+"last_vote": "2026-08-30",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -2800,7 +3230,9 @@
 "eligible": 7,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-10-01"
+"last_vote": "2026-10-01",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Mat - ECO Pool",
@@ -2813,7 +3245,9 @@
 "eligible": 67,
 "voted": 27,
 "rationale": 0,
-"last_vote": "2026-09-02"
+"last_vote": "2026-09-02",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2826,7 +3260,9 @@
 "eligible": 67,
 "voted": 26,
 "rationale": 0,
-"last_vote": "2026-08-14"
+"last_vote": "2026-08-14",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -2839,7 +3275,9 @@
 "eligible": 67,
 "voted": 26,
 "rationale": 0,
-"last_vote": "2026-07-27"
+"last_vote": "2026-07-27",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "lido",
@@ -2852,7 +3290,9 @@
 "eligible": 67,
 "voted": 25,
 "rationale": 0,
-"last_vote": "2026-07-22"
+"last_vote": "2026-07-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2865,7 +3305,9 @@
 "eligible": 59,
 "voted": 21,
 "rationale": 0,
-"last_vote": "2026-09-20"
+"last_vote": "2026-09-20",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Holland",
@@ -2878,7 +3320,9 @@
 "eligible": 67,
 "voted": 23,
 "rationale": 0,
-"last_vote": "2026-08-31"
+"last_vote": "2026-08-31",
+"document": "valid",
+"roles": []
 },
 {
 "name": "CoinCeylon",
@@ -2891,7 +3335,9 @@
 "eligible": 67,
 "voted": 23,
 "rationale": 0,
-"last_vote": "2026-07-21"
+"last_vote": "2026-07-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "DMOON Stake Pool",
@@ -2904,7 +3350,9 @@
 "eligible": 67,
 "voted": 22,
 "rationale": 0,
-"last_vote": "2026-09-13"
+"last_vote": "2026-09-13",
+"document": "valid",
+"roles": []
 },
 {
 "name": "@gersongomes",
@@ -2917,7 +3365,9 @@
 "eligible": 67,
 "voted": 22,
 "rationale": 0,
-"last_vote": "2026-08-31"
+"last_vote": "2026-08-31",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Daehan_kor",
@@ -2930,7 +3380,9 @@
 "eligible": 67,
 "voted": 22,
 "rationale": 0,
-"last_vote": "2026-10-01"
+"last_vote": "2026-10-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -2943,7 +3395,9 @@
 "eligible": 54,
 "voted": 17,
 "rationale": 0,
-"last_vote": "2026-08-28"
+"last_vote": "2026-08-28",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Seidu Ziblim",
@@ -2956,7 +3410,9 @@
 "eligible": 67,
 "voted": 20,
 "rationale": 0,
-"last_vote": "2026-10-07"
+"last_vote": "2026-10-07",
+"document": "valid",
+"roles": []
 },
 {
 "name": "geeky.d",
@@ -2969,7 +3425,9 @@
 "eligible": 67,
 "voted": 20,
 "rationale": 0,
-"last_vote": "2026-08-16"
+"last_vote": "2026-08-16",
+"document": "valid",
+"roles": []
 },
 {
 "name": "LEADStakePool",
@@ -2982,7 +3440,9 @@
 "eligible": 67,
 "voted": 18,
 "rationale": 0,
-"last_vote": "2026-08-30"
+"last_vote": "2026-08-30",
+"document": "valid",
+"roles": []
 },
 {
 "name": "SIDAN Lab",
@@ -2995,7 +3455,9 @@
 "eligible": 67,
 "voted": 17,
 "rationale": 0,
-"last_vote": "2026-07-23"
+"last_vote": "2026-07-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Giovanni Gargiulo",
@@ -3008,7 +3470,9 @@
 "eligible": 67,
 "voted": 17,
 "rationale": 0,
-"last_vote": "2026-10-09"
+"last_vote": "2026-10-09",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Yosh",
@@ -3021,7 +3485,9 @@
 "eligible": 67,
 "voted": 16,
 "rationale": 0,
-"last_vote": "2026-09-06"
+"last_vote": "2026-09-06",
+"document": "valid",
+"roles": []
 },
 {
 "name": "HISAI",
@@ -3034,7 +3500,9 @@
 "eligible": 67,
 "voted": 15,
 "rationale": 0,
-"last_vote": "2026-08-28"
+"last_vote": "2026-08-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Dr. Safe",
@@ -3047,7 +3515,9 @@
 "eligible": 67,
 "voted": 14,
 "rationale": 0,
-"last_vote": "2026-08-04"
+"last_vote": "2026-08-04",
+"document": "valid",
+"roles": []
 },
 {
 "name": "AtlasFD",
@@ -3060,7 +3530,9 @@
 "eligible": 67,
 "voted": 14,
 "rationale": 0,
-"last_vote": "2026-07-29"
+"last_vote": "2026-07-29",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Fred Tanaka",
@@ -3073,7 +3545,9 @@
 "eligible": 67,
 "voted": 14,
 "rationale": 0,
-"last_vote": "2026-07-22"
+"last_vote": "2026-07-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Scientific-Analytical-Tools",
@@ -3086,7 +3560,9 @@
 "eligible": 67,
 "voted": 14,
 "rationale": 0,
-"last_vote": "2026-09-23"
+"last_vote": "2026-09-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -3099,7 +3575,9 @@
 "eligible": 15,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-08-02"
+"last_vote": "2026-08-02",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Bamboo_Drep",
@@ -3112,7 +3590,9 @@
 "eligible": 67,
 "voted": 13,
 "rationale": 0,
-"last_vote": "2026-09-22"
+"last_vote": "2026-09-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Breizh DRep [BZH]",
@@ -3125,7 +3605,9 @@
 "eligible": 11,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Medusa DRep",
@@ -3138,7 +3620,9 @@
 "eligible": 67,
 "voted": 12,
 "rationale": 0,
-"last_vote": "2026-10-11"
+"last_vote": "2026-10-11",
+"document": "valid",
+"roles": []
 },
 {
 "name": "PRIDE",
@@ -3151,7 +3635,9 @@
 "eligible": 67,
 "voted": 12,
 "rationale": 0,
-"last_vote": "2026-10-28"
+"last_vote": "2026-10-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Dutch DRep - SPO FLOWR",
@@ -3164,7 +3650,9 @@
 "eligible": 67,
 "voted": 9,
 "rationale": 0,
-"last_vote": "2026-07-28"
+"last_vote": "2026-07-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Elite",
@@ -3177,7 +3665,9 @@
 "eligible": 67,
 "voted": 9,
 "rationale": 0,
-"last_vote": "2026-07-28"
+"last_vote": "2026-07-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "CBROS Pool",
@@ -3190,7 +3680,9 @@
 "eligible": 67,
 "voted": 7,
 "rationale": 0,
-"last_vote": "2026-10-16"
+"last_vote": "2026-10-16",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -3203,7 +3695,9 @@
 "eligible": 67,
 "voted": 7,
 "rationale": 0,
-"last_vote": "2026-07-25"
+"last_vote": "2026-07-25",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Dodue",
@@ -3216,7 +3710,9 @@
 "eligible": 10,
 "voted": 1,
 "rationale": 0,
-"last_vote": "2026-08-10"
+"last_vote": "2026-08-10",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ENVY Stake Pool",
@@ -3229,7 +3725,9 @@
 "eligible": 67,
 "voted": 6,
 "rationale": 0,
-"last_vote": "2026-08-01"
+"last_vote": "2026-08-01",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Addisetech",
@@ -3242,7 +3740,9 @@
 "eligible": 67,
 "voted": 6,
 "rationale": 0,
-"last_vote": "2026-07-20"
+"last_vote": "2026-07-20",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Jason Matthys",
@@ -3255,7 +3755,9 @@
 "eligible": 67,
 "voted": 6,
 "rationale": 0,
-"last_vote": "2026-07-24"
+"last_vote": "2026-07-24",
+"document": "valid",
+"roles": []
 },
 {
 "name": "TOPO",
@@ -3268,7 +3770,9 @@
 "eligible": 67,
 "voted": 6,
 "rationale": 0,
-"last_vote": "2026-08-19"
+"last_vote": "2026-08-19",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ADALO",
@@ -3281,7 +3785,9 @@
 "eligible": 67,
 "voted": 6,
 "rationale": 0,
-"last_vote": "2026-09-20"
+"last_vote": "2026-09-20",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -3294,7 +3800,9 @@
 "eligible": 47,
 "voted": 4,
 "rationale": 0,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -3307,7 +3815,9 @@
 "eligible": 67,
 "voted": 5,
 "rationale": 0,
-"last_vote": "2026-08-06"
+"last_vote": "2026-08-06",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "Apex Pool",
@@ -3320,7 +3830,9 @@
 "eligible": 67,
 "voted": 5,
 "rationale": 0,
-"last_vote": "2026-08-22"
+"last_vote": "2026-08-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ADAAT",
@@ -3333,7 +3845,9 @@
 "eligible": 67,
 "voted": 5,
 "rationale": 0,
-"last_vote": "2026-09-23"
+"last_vote": "2026-09-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "8Ball",
@@ -3346,7 +3860,9 @@
 "eligible": 67,
 "voted": 4,
 "rationale": 0,
-"last_vote": "2026-08-24"
+"last_vote": "2026-08-24",
+"document": "valid",
+"roles": []
 },
 {
 "name": "STOIC",
@@ -3359,7 +3875,9 @@
 "eligible": 67,
 "voted": 4,
 "rationale": 0,
-"last_vote": "2026-07-23"
+"last_vote": "2026-07-23",
+"document": "valid",
+"roles": []
 },
 {
 "name": "AQUA_Vote",
@@ -3372,7 +3890,9 @@
 "eligible": 67,
 "voted": 4,
 "rationale": 0,
-"last_vote": "2026-08-31"
+"last_vote": "2026-08-31",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Dmitrii Gartung",
@@ -3385,7 +3905,9 @@
 "eligible": 67,
 "voted": 4,
 "rationale": 0,
-"last_vote": "2026-08-12"
+"last_vote": "2026-08-12",
+"document": "valid",
+"roles": []
 },
 {
 "name": "OREKA_Vote",
@@ -3398,7 +3920,9 @@
 "eligible": 67,
 "voted": 4,
 "rationale": 0,
-"last_vote": "2026-08-31"
+"last_vote": "2026-08-31",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -3411,7 +3935,9 @@
 "eligible": 67,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-10-18"
+"last_vote": "2026-10-18",
+"document": "unreachable",
+"roles": []
 },
 {
 "name": "Manuel SNAKE",
@@ -3424,7 +3950,9 @@
 "eligible": 67,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-08-31"
+"last_vote": "2026-08-31",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Marin_Cardano_Maven",
@@ -3437,7 +3965,9 @@
 "eligible": 67,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-10-09"
+"last_vote": "2026-10-09",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Björn Sandmann",
@@ -3450,7 +3980,9 @@
 "eligible": 67,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-07-28"
+"last_vote": "2026-07-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "KysenPool_KYSN_KYSN2",
@@ -3463,7 +3995,9 @@
 "eligible": 67,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-08-25"
+"last_vote": "2026-08-25",
+"document": "valid",
+"roles": []
 },
 {
 "name": "SPIRE",
@@ -3476,7 +4010,9 @@
 "eligible": 67,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-08-28"
+"last_vote": "2026-08-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "anonDREP",
@@ -3489,7 +4025,9 @@
 "eligible": 67,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-09-30"
+"last_vote": "2026-09-30",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Micah",
@@ -3502,7 +4040,9 @@
 "eligible": 67,
 "voted": 3,
 "rationale": 0,
-"last_vote": "2026-08-02"
+"last_vote": "2026-08-02",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -3515,7 +4055,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-07-21"
+"last_vote": "2026-07-21",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -3528,7 +4070,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-07-22"
+"last_vote": "2026-07-22",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "HD5000",
@@ -3541,7 +4085,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-10-21"
+"last_vote": "2026-10-21",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Adalion",
@@ -3554,7 +4100,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-09-29"
+"last_vote": "2026-09-29",
+"document": "valid",
+"roles": []
 },
 {
 "name": "TAVN",
@@ -3567,7 +4115,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-09-04"
+"last_vote": "2026-09-04",
+"document": "valid",
+"roles": []
 },
 {
 "name": "spannercode",
@@ -3580,7 +4130,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-08-22"
+"last_vote": "2026-08-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -3593,7 +4145,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-09-28"
+"last_vote": "2026-09-28",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "HUAT 發 Singapore",
@@ -3606,7 +4160,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-08-28"
+"last_vote": "2026-08-28",
+"document": "valid",
+"roles": []
 },
 {
 "name": "stakit (sti) by TOBG",
@@ -3619,7 +4175,9 @@
 "eligible": 67,
 "voted": 2,
 "rationale": 0,
-"last_vote": "2026-06-30"
+"last_vote": "2026-06-30",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -3632,7 +4190,9 @@
 "eligible": 46,
 "voted": 1,
 "rationale": 0,
-"last_vote": "2026-08-20"
+"last_vote": "2026-08-20",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -3645,7 +4205,9 @@
 "eligible": 67,
 "voted": 1,
 "rationale": 0,
-"last_vote": "2026-09-01"
+"last_vote": "2026-09-01",
+"document": "no anchor",
+"roles": []
 },
 {
 "name": "MonedaCloud",
@@ -3658,7 +4220,9 @@
 "eligible": 67,
 "voted": 1,
 "rationale": 0,
-"last_vote": "2026-08-06"
+"last_vote": "2026-08-06",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Seomon",
@@ -3671,7 +4235,9 @@
 "eligible": 67,
 "voted": 1,
 "rationale": 0,
-"last_vote": "2026-08-24"
+"last_vote": "2026-08-24",
+"document": "valid",
+"roles": []
 },
 {
 "name": "CZBE1",
@@ -3684,7 +4250,9 @@
 "eligible": 67,
 "voted": 1,
 "rationale": 0,
-"last_vote": "2026-09-09"
+"last_vote": "2026-09-09",
+"document": "valid",
+"roles": []
 },
 {
 "name": "Logical Mechanism dRep",
@@ -3697,7 +4265,9 @@
 "eligible": 67,
 "voted": 1,
 "rationale": 0,
-"last_vote": "2026-08-17"
+"last_vote": "2026-08-17",
+"document": "valid",
+"roles": []
 },
 {
 "name": "WMOPS",
@@ -3710,7 +4280,9 @@
 "eligible": 67,
 "voted": 1,
 "rationale": 0,
-"last_vote": "2026-10-02"
+"last_vote": "2026-10-02",
+"document": "valid",
+"roles": []
 },
 {
 "name": "ADA Ocean",
@@ -3723,7 +4295,9 @@
 "eligible": 67,
 "voted": 1,
 "rationale": 0,
-"last_vote": "2026-07-22"
+"last_vote": "2026-07-22",
+"document": "valid",
+"roles": []
 },
 {
 "name": null,
@@ -3736,7 +4310,9 @@
 "eligible": 1,
 "voted": 0,
 "rationale": 0,
-"last_vote": null
+"last_vote": null,
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -3749,7 +4325,9 @@
 "eligible": 7,
 "voted": 0,
 "rationale": 0,
-"last_vote": null
+"last_vote": null,
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -3762,7 +4340,9 @@
 "eligible": 7,
 "voted": 0,
 "rationale": 0,
-"last_vote": null
+"last_vote": null,
+"document": "no anchor",
+"roles": []
 },
 {
 "name": null,
@@ -3775,7 +4355,9 @@
 "eligible": 9,
 "voted": 0,
 "rationale": 0,
-"last_vote": "2026-06-03"
+"last_vote": "2026-06-03",
+"document": "no anchor",
+"roles": []
 }
 ]
 }
