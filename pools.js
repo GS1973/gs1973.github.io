@@ -60,7 +60,7 @@
         const el = document.createElement('span');
         el.className = 'pools-roles';
         if (x.document !== 'valid') {
-            el.textContent = 'Roles unknown: ' + (x.document === 'no anchor' ? 'no metadata registered' : 'metadata ' + x.document);
+            el.textContent = 'Roles unknown: ' + (x.document === 'no anchor' ? 'no metadata registered' : 'metadata ' + x.document + (x.document === 'not fetched' ? ' yet' : ''));
             return el;
         }
         if (!x.roles || !x.roles.length) {
@@ -71,7 +71,7 @@
             if (r.kind === 'committee') return 'Constitutional Committee ' + shortId(r.cc_id) + ', ' + r.member + ' member';
             const who = r.kind === 'pool' ? 'pool ' + (r.ticker || shortId(r.pool_id)) : 'DRep ' + (r.name || shortId(r.drep_id));
             if (r.relation === 'unknown') {
-                const other = r.document === 'no anchor' ? 'no metadata registered' : 'metadata ' + r.document;
+                const other = r.document === 'no anchor' ? 'no metadata registered' : 'metadata ' + r.document + (r.document === 'not fetched' ? ' yet' : '');
                 return who + ', declared by ' + r.declared_by + ', the other side has ' + other;
             }
             return who + ', ' + r.relation;
