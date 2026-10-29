@@ -678,3 +678,10 @@ body.terms-page {
         font-size: 1.1rem;
     }
 }
+
+/* Long on-chain identifiers (pool ID, DRep ID) in running text: break anywhere, never overflow */
+.chain-id {
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    font-size: 0.9em;
+}
