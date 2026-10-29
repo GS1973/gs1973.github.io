@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-28T17:59:11Z",
+"generated": "2026-10-29T05:36:04Z",
 "epoch": 664,
 "figures": {
 "circulating_ada": 37566264202,
@@ -17,8 +17,8 @@
 "carry_treasury": 19,
 "window_epochs": 36,
 "drep_activity_epochs": 20,
-"votes": 9444,
-"votes_with_rationale": 3678,
+"votes": 9471,
+"votes_with_rationale": 3700,
 "dreps_never_rationale": 130,
 "dreps_never_rationale_ada": 1153693386,
 "thresholds": {
@@ -60,6 +60,19 @@
 },
 "dreps": [
 {
+"name": "CardanoYoda (MANDA Pool)",
+"drep_id": "drep1y2m0g4r66pyaw3p7u454wc0p4f0ygm8ueaev0mgd3tvwm7sskqwqp",
+"hash": "b6f4547ad049d7443ee5695761e1aa5e446cfccf72c7ed0d8ad8edfa",
+"script": false,
+"voting_power_ada": 94768917,
+"share": 1.816,
+"delegators": 1938,
+"eligible": 67,
+"voted": 66,
+"rationale": 66,
+"last_vote": "2026-10-28"
+},
+{
 "name": "BWtake(長崎)Japan",
 "drep_id": "drep1ytcw6qzpqqclx2yd0zy64ztvlkkhnf6yrzza8whgnq4vz5gh89626",
 "hash": "f0ed00410031f3288d7889aa896cfdad79a7441885d3bae8982ac151",
@@ -73,26 +86,13 @@
 "last_vote": "2026-10-21"
 },
 {
-"name": "CardanoYoda (MANDA Pool)",
-"drep_id": "drep1y2m0g4r66pyaw3p7u454wc0p4f0ygm8ueaev0mgd3tvwm7sskqwqp",
-"hash": "b6f4547ad049d7443ee5695761e1aa5e446cfccf72c7ed0d8ad8edfa",
-"script": false,
-"voting_power_ada": 94768917,
-"share": 1.816,
-"delegators": 1938,
-"eligible": 67,
-"voted": 65,
-"rationale": 65,
-"last_vote": "2026-10-19"
-},
-{
 "name": "SASA_nagamaru_ながまる",
 "drep_id": "drep1ytuddrgqca0xd4aams6pl9zndpcmxg0rs7z3mggjelm6kscp4arg5",
 "hash": "f8d68d00c75e66d7bddc341f94536871b321e387851da112cff7ab43",
 "script": false,
 "voting_power_ada": 131204387,
 "share": 2.515,
-"delegators": 483,
+"delegators": 485,
 "eligible": 67,
 "voted": 65,
 "rationale": 65,
@@ -261,7 +261,7 @@
 "script": false,
 "voting_power_ada": 78495596,
 "share": 1.504,
-"delegators": 1124,
+"delegators": 1125,
 "eligible": 67,
 "voted": 61,
 "rationale": 60,
@@ -443,7 +443,7 @@
 "script": false,
 "voting_power_ada": 217883284,
 "share": 4.176,
-"delegators": 10020,
+"delegators": 10021,
 "eligible": 67,
 "voted": 55,
 "rationale": 54,
@@ -502,6 +502,19 @@
 "last_vote": "2026-10-22"
 },
 {
+"name": "AtlasHub",
+"drep_id": "drep1y2dnsj0taktxwmzwf4a7sp0mg3rvm3jsetag0h0m83khs3c7d3l6x",
+"hash": "9b3849ebed96676c4e4d7be805fb4446cdc650cafa87ddfb3c6d7847",
+"script": false,
+"voting_power_ada": 5759300,
+"share": 0.11,
+"delegators": 133,
+"eligible": 67,
+"voted": 67,
+"rationale": 50,
+"last_vote": "2026-10-28"
+},
+{
 "name": "Porto Cripto DRep 🇧🇷 🇵🇹 (Atico & Bosco, from Cardanistas Stake Pool - CARDs)",
 "drep_id": "drep1ywuk39acvmkzda9e8kfmy7fwf946jd5uaa4l696atlas66s68f0fl",
 "hash": "b96897b866ec26f4b93d93b2792e496ba9369cef6bfd175d5ffb0d6a",
@@ -515,6 +528,19 @@
 "last_vote": "2026-08-22"
 },
 {
+"name": "Styg",
+"drep_id": "drep1yfaq8dsam7nusdccey2x2p684f6ulhr42pv24tslv0terqs3nq50q",
+"hash": "7a03b61ddfa7c83718c914650747aa75cfdc755058aaae1f63d79182",
+"script": false,
+"voting_power_ada": 142514,
+"share": 0.003,
+"delegators": 3,
+"eligible": 17,
+"voted": 16,
+"rationale": 12,
+"last_vote": "2026-10-28"
+},
+{
 "name": "CardanoLeo",
 "drep_id": "drep1y28xhrjxe496rnle8ln3slpggnp8leu3mn244ujrhwet0cc2vmte4",
 "hash": "8e6b8e46cd4ba1cff93fe7187c2844c27fe791dcd55af243bbb2b7e3",
@@ -526,32 +552,6 @@
 "voted": 9,
 "rationale": 9,
 "last_vote": "2026-09-23"
-},
-{
-"name": "AtlasHub",
-"drep_id": "drep1y2dnsj0taktxwmzwf4a7sp0mg3rvm3jsetag0h0m83khs3c7d3l6x",
-"hash": "9b3849ebed96676c4e4d7be805fb4446cdc650cafa87ddfb3c6d7847",
-"script": false,
-"voting_power_ada": 5759300,
-"share": 0.11,
-"delegators": 133,
-"eligible": 67,
-"voted": 63,
-"rationale": 46,
-"last_vote": "2026-09-19"
-},
-{
-"name": "Styg",
-"drep_id": "drep1yfaq8dsam7nusdccey2x2p684f6ulhr42pv24tslv0terqs3nq50q",
-"hash": "7a03b61ddfa7c83718c914650747aa75cfdc755058aaae1f63d79182",
-"script": false,
-"voting_power_ada": 142514,
-"share": 0.003,
-"delegators": 3,
-"eligible": 17,
-"voted": 15,
-"rationale": 11,
-"last_vote": "2026-10-23"
 },
 {
 "name": "iFly",
@@ -695,6 +695,19 @@
 "voted": 40,
 "rationale": 36,
 "last_vote": "2026-10-10"
+},
+{
+"name": "HOSKY",
+"drep_id": "drep1yf2jzhuc4f7eu2yay9d9ta3dykxxcwn34wz8kak7nhd7vcgrxn7ns",
+"hash": "55215f98aa7d9e289d215a55f62d258c6c3a71ab847b76de9ddbe661",
+"script": false,
+"voting_power_ada": 34734340,
+"share": 0.666,
+"delegators": 1724,
+"eligible": 67,
+"voted": 36,
+"rationale": 35,
+"last_vote": "2026-10-28"
 },
 {
 "name": "Nimuë Lady of the Lake Pool",
@@ -853,19 +866,6 @@
 "last_vote": "2026-10-11"
 },
 {
-"name": "HOSKY",
-"drep_id": "drep1yf2jzhuc4f7eu2yay9d9ta3dykxxcwn34wz8kak7nhd7vcgrxn7ns",
-"hash": "55215f98aa7d9e289d215a55f62d258c6c3a71ab847b76de9ddbe661",
-"script": false,
-"voting_power_ada": 34734340,
-"share": 0.666,
-"delegators": 1724,
-"eligible": 67,
-"voted": 32,
-"rationale": 31,
-"last_vote": "2026-09-16"
-},
-{
 "name": "drep.collective",
 "drep_id": "drep1ydwtnlvdd8atlj5c5ylgw4kg5e640vyt8resattrjmwufyg4qclf7",
 "hash": "5cb9fd8d69fabfca98a13e8756c8a67557b08b38f30ead6396ddc491",
@@ -1009,6 +1009,19 @@
 "last_vote": "2026-10-28"
 },
 {
+"name": "MyCNFT DRep",
+"drep_id": "drep1y2wwa9cqns95zzztmz9vw3jm7n8lpd3x8wfvg6wnvvt29ngdm0mlh",
+"hash": "9cee97009c0b41084bd88ac7465bf4cff0b6263b92c469d36316a2cd",
+"script": false,
+"voting_power_ada": 184567,
+"share": 0.004,
+"delegators": 17,
+"eligible": 67,
+"voted": 51,
+"rationale": 21,
+"last_vote": "2026-10-28"
+},
+{
 "name": "JohnM",
 "drep_id": "drep1y2hky8fgx58luuuz5at5dr4xw0jzlre87wwyw3agra9f8js5eu9hp",
 "hash": "af621d28350ffe7382a757468ea673e42f8f27f39c4747a81f4a93ca",
@@ -1041,7 +1054,7 @@
 "script": false,
 "voting_power_ada": 171735716,
 "share": 3.291,
-"delegators": 1529,
+"delegators": 1530,
 "eligible": 67,
 "voted": 51,
 "rationale": 19,
@@ -1093,24 +1106,11 @@
 "script": false,
 "voting_power_ada": 40852618,
 "share": 0.783,
-"delegators": 271,
+"delegators": 272,
 "eligible": 67,
 "voted": 18,
 "rationale": 18,
 "last_vote": "2026-07-28"
-},
-{
-"name": "MyCNFT DRep",
-"drep_id": "drep1y2wwa9cqns95zzztmz9vw3jm7n8lpd3x8wfvg6wnvvt29ngdm0mlh",
-"hash": "9cee97009c0b41084bd88ac7465bf4cff0b6263b92c469d36316a2cd",
-"script": false,
-"voting_power_ada": 184567,
-"share": 0.004,
-"delegators": 17,
-"eligible": 67,
-"voted": 47,
-"rationale": 17,
-"last_vote": "2026-09-25"
 },
 {
 "name": "AdaLovelace777",
@@ -1873,7 +1873,7 @@
 "script": false,
 "voting_power_ada": 290440968,
 "share": 5.567,
-"delegators": 3703,
+"delegators": 3702,
 "eligible": 67,
 "voted": 57,
 "rationale": 1,
@@ -2036,6 +2036,19 @@
 "last_vote": "2026-07-27"
 },
 {
+"name": "Next Epoch",
+"drep_id": "drep1y27a56gx9vm6yhjm9wsvvp847mt0dv4cyx93vz2r5rjytnsew90d6",
+"hash": "bdda69062b37a25e5b2ba0c604f5f6d6f6b2b8218b160943a0e445ce",
+"script": false,
+"voting_power_ada": 916879,
+"share": 0.018,
+"delegators": 45,
+"eligible": 67,
+"voted": 67,
+"rationale": 0,
+"last_vote": "2026-10-28"
+},
+{
 "name": "HenriqC",
 "drep_id": "drep1y2f5m5mn48q65xkw65q2kfd2tkakz3lh8553ugmcsq0ahnsl2nfcj",
 "hash": "934dd373a9c1aa1aced500ab25aa5dbb6147f73d291e2378801fdbce",
@@ -2112,19 +2125,6 @@
 "voted": 63,
 "rationale": 0,
 "last_vote": "2026-10-16"
-},
-{
-"name": "Next Epoch",
-"drep_id": "drep1y27a56gx9vm6yhjm9wsvvp847mt0dv4cyx93vz2r5rjytnsew90d6",
-"hash": "bdda69062b37a25e5b2ba0c604f5f6d6f6b2b8218b160943a0e445ce",
-"script": false,
-"voting_power_ada": 916879,
-"share": 0.018,
-"delegators": 45,
-"eligible": 67,
-"voted": 63,
-"rationale": 0,
-"last_vote": "2026-10-08"
 },
 {
 "name": "concon",
@@ -2588,7 +2588,7 @@
 "script": false,
 "voting_power_ada": 11884129,
 "share": 0.228,
-"delegators": 85,
+"delegators": 87,
 "eligible": 67,
 "voted": 41,
 "rationale": 0,
@@ -2627,7 +2627,7 @@
 "script": false,
 "voting_power_ada": 10176876,
 "share": 0.195,
-"delegators": 175,
+"delegators": 176,
 "eligible": 67,
 "voted": 40,
 "rationale": 0,
@@ -3149,9 +3149,9 @@
 "share": 0.156,
 "delegators": 276,
 "eligible": 67,
-"voted": 11,
+"voted": 12,
 "rationale": 0,
-"last_vote": "2026-07-28"
+"last_vote": "2026-10-28"
 },
 {
 "name": "Dutch DRep - SPO FLOWR",
@@ -3771,7 +3771,7 @@
 "script": false,
 "voting_power_ada": 619780,
 "share": 0.012,
-"delegators": 769,
+"delegators": 770,
 "eligible": 9,
 "voted": 0,
 "rationale": 0,
