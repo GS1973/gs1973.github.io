@@ -1,5 +1,5 @@
 {
-"generated": "2026-10-29T08:14:45Z",
+"generated": "2026-10-29T08:36:51Z",
 "epoch": 664,
 "k": 1000,
 "saturation_ada": 38960772,
@@ -11,12 +11,12 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2668,
-"alive_named": 1046,
+"alive_named": 1041,
 "pledge_not_met": 502,
-"above_saturation": 128,
+"above_saturation": 125,
 "excluded_exchanges": 48,
 "excluded_founders": 8,
-"excluded_several": 241,
+"excluded_several": 240,
 "excluded": [
 {
 "ticker": "BNP",
@@ -907,6 +907,18 @@
 "reason": "several pools"
 },
 {
+"ticker": "DAPP",
+"name": "Dapp Central Stake Pool",
+"pool_id": "pool1qakys0fxx5p2fxcnsc2tyjpqa88q7qgtdh5t3a32hplv6fg25r9",
+"reason": "several pools"
+},
+{
+"ticker": "DAPP",
+"name": "Dapp Central Stake Pool",
+"pool_id": "pool12m0v0myprg2nfvlymzaghvjrzhnlzkh2psn3sur2nhkj5wpkdmh",
+"reason": "several pools"
+},
+{
 "ticker": "DIGI2",
 "name": "Digital Fortress",
 "pool_id": "pool1lvsa8e0dw6z8g2fkw7prnfa7627wuy5jjexaadck6w5sxw5xkvm",
@@ -970,12 +982,6 @@
 "ticker": "EVE9",
 "name": "Everstake Partner",
 "pool_id": "pool1xflehvzad4wr6rrvf6eea65jst5af0r4k0rh4xvmnqgvkzt3xjt",
-"reason": "several pools"
-},
-{
-"ticker": "SECUR",
-"name": "FIVE SecureStaking.io",
-"pool_id": "pool14n77mmxh6a2d9k05jamzdwsws2ayvkyje8uc7led958p63at3aj",
 "reason": "several pools"
 },
 {
@@ -1264,12 +1270,6 @@
 "ticker": "KYSN2",
 "name": "KysenPool Thunder 2",
 "pool_id": "pool1d76p7zfn2ydq577z4wsvmnl2lx4cxa3s5vplfuhvr8qfw8hd05j",
-"reason": "several pools"
-},
-{
-"ticker": "LBF5",
-"name": "Ledger by Figment 5",
-"pool_id": "pool1lvl6pfge9lgjuanu3556x29zglf6s3fw2lf2m823x9duj9gz6tu",
 "reason": "several pools"
 },
 {
@@ -1648,12 +1648,6 @@
 "ticker": "SUNNY",
 "name": "Sunshine Stake Pool #2",
 "pool_id": "pool1p8fhygz7ga9hghhwmkr64p3ftn77lxu9nyddvsqszattcdyajc0",
-"reason": "several pools"
-},
-{
-"ticker": "SECUR",
-"name": "THREE SecureStaking.io",
-"pool_id": "pool1xjhzgchsl2ccvc5pj3aqytv9hh0jnaz63wtfnw4th07tjypm46x",
 "reason": "several pools"
 },
 {
@@ -2069,15 +2063,6 @@
 "pool_id": "pool1st58tj7nun3vynlhlmfawrn24ar0pshdle733vtkv43szxt2kq0",
 "stake_ada": 5153,
 "blocks_2026": 0,
-"blocks_last_10_epochs": 0,
-"retiring_epoch": null
-},
-{
-"ticker": "YAM",
-"name": "YAM Pool",
-"pool_id": "pool12hhrd4azpps5jxppcqs2pgtylatg7xkhaqmnetgv2988k3t4drf",
-"stake_ada": 5444,
-"blocks_2026": 11,
 "blocks_last_10_epochs": 0,
 "retiring_epoch": null
 },
@@ -3765,15 +3750,6 @@
 "retiring_epoch": null
 },
 {
-"ticker": "4WARD",
-"name": "ADA for Warriors",
-"pool_id": "pool1kcrr7re05pwesye0zh00a4xxnsrw5c29rd82fn4qecdcqu5rue3",
-"stake_ada": 453570,
-"blocks_2026": 29,
-"blocks_last_10_epochs": 2,
-"retiring_epoch": null
-},
-{
 "ticker": "BOATS",
 "name": "Harbor Stake Pool",
 "pool_id": "pool14f0uj8vghxzs09p3rzvhlur0dnfwylxc67whaz087srtjjrcjgd",
@@ -5173,8 +5149,8 @@
 "name": "CarPool",
 "pool_id": "pool1zwqrrwpr5zx7c3f4ukpu4r4fz5c2hkwx9vwqka5068urgqvpjzr",
 "stake_ada": 1591009,
-"blocks_2026": 81,
-"blocks_last_10_epochs": 12,
+"blocks_2026": 82,
+"blocks_last_10_epochs": 13,
 "retiring_epoch": null
 },
 {
@@ -5754,6 +5730,15 @@
 "retiring_epoch": null
 },
 {
+"ticker": "LGC",
+"name": "Late Game Crypto",
+"pool_id": "pool13xzckaj3srgldr67dksx874jxe3c9xnc245xyr44p7cdxh07hft",
+"stake_ada": 2927670,
+"blocks_2026": 248,
+"blocks_last_10_epochs": 40,
+"retiring_epoch": null
+},
+{
 "ticker": "ANET",
 "name": "AdaNet.io",
 "pool_id": "pool1xwqye6mlftwjg706acz5fjqz7gmf4qdye99zsjl03a4ru68ghee",
@@ -6109,8 +6094,8 @@
 "name": "Cardano Canucks Pool",
 "pool_id": "pool1fh4sh2telea0tfdy39h0drx6uq566yt9gf24edpz7335sclx39z",
 "stake_ada": 4244939,
-"blocks_2026": 257,
-"blocks_last_10_epochs": 44,
+"blocks_2026": 258,
+"blocks_last_10_epochs": 45,
 "retiring_epoch": null
 },
 {
@@ -6172,8 +6157,8 @@
 "name": "HADA.VN.COM",
 "pool_id": "pool1rqgf6qd0p3wyf9dxf2w7qcddvgg4vu56l35ez2xqemhqun2gn7y",
 "stake_ada": 4522070,
-"blocks_2026": 97,
-"blocks_last_10_epochs": 34,
+"blocks_2026": 98,
+"blocks_last_10_epochs": 35,
 "retiring_epoch": null
 },
 {
@@ -6361,8 +6346,8 @@
 "name": "Stakepool for UNHCR, the UN Refugee Agency",
 "pool_id": "pool1dmnyhw9uthknzcq4q6pwdc4vtfxz5zzrvd9eg432u60lzl959tw",
 "stake_ada": 5893005,
-"blocks_2026": 322,
-"blocks_last_10_epochs": 49,
+"blocks_2026": 323,
+"blocks_last_10_epochs": 50,
 "retiring_epoch": null
 },
 {
@@ -6982,8 +6967,8 @@
 "name": "Cardaspians",
 "pool_id": "pool10tqeu6d03p6rnalqlvdshmpsljxaq2c0ww6draq6xm8lgyl2a3p",
 "stake_ada": 14393369,
-"blocks_2026": 682,
-"blocks_last_10_epochs": 112,
+"blocks_2026": 683,
+"blocks_last_10_epochs": 113,
 "retiring_epoch": null
 },
 {
@@ -7090,8 +7075,8 @@
 "name": "BURN Pool",
 "pool_id": "pool1r0sxz0hygfc0266lhdclve6j3cwcwlth6dya6uey65yxjnwm7qc",
 "stake_ada": 18463554,
-"blocks_2026": 855,
-"blocks_last_10_epochs": 183,
+"blocks_2026": 857,
+"blocks_last_10_epochs": 185,
 "retiring_epoch": null
 },
 {
@@ -7117,8 +7102,8 @@
 "name": "Kaizen Crypto Stake Pool",
 "pool_id": "pool1jeu74g86ys4fekhykqcww99kdsq3nlym8a6kfw8s8ff3vskad70",
 "stake_ada": 21737175,
-"blocks_2026": 1396,
-"blocks_last_10_epochs": 226,
+"blocks_2026": 1397,
+"blocks_last_10_epochs": 227,
 "retiring_epoch": null
 },
 {
