@@ -47,6 +47,39 @@
         }
     }
 
+    const shortId = id => id.slice(0, 12) + '…' + id.slice(-6);
+
+    // The governance roles that the pool declares in its registered metadata,
+    // as the CIP "Disclosure of Governance Roles" reads them: a line under the
+    // name. Only a declaration counts. Nothing is inferred from a name, a
+    // website, a delegation or a vote. "No roles declared" is not the absence
+    // of an overlap, and a reciprocal relation is not proof of who controls
+    // both credentials: it proves that both documents name each other.
+    function rolesLine(x) {
+        if (!x.document) return null;
+        const el = document.createElement('span');
+        el.className = 'pools-roles';
+        if (x.document !== 'valid') {
+            el.textContent = 'Roles unknown: ' + (x.document === 'no anchor' ? 'no metadata registered' : 'metadata ' + x.document);
+            return el;
+        }
+        if (!x.roles || !x.roles.length) {
+            el.textContent = 'No roles declared';
+            return el;
+        }
+        el.textContent = 'Roles: ' + x.roles.map(r => {
+            if (r.kind === 'committee') return 'Constitutional Committee ' + shortId(r.cc_id) + ', ' + r.member + ' member';
+            const who = r.kind === 'pool' ? 'pool ' + (r.ticker || shortId(r.pool_id)) : 'DRep ' + (r.name || shortId(r.drep_id));
+            if (r.relation === 'unknown') {
+                const other = r.document === 'no anchor' ? 'no metadata registered' : 'metadata ' + r.document;
+                return who + ', declared by ' + r.declared_by + ', the other side has ' + other;
+            }
+            return who + ', ' + r.relation;
+        }).join('. ');
+        el.title = x.roles.map(r => r.kind === 'committee' ? r.cc_id : r.kind === 'pool' ? r.pool_id : r.drep_id).join('\n');
+        return el;
+    }
+
     function render() {
         const q = filterEl.value.trim().toLowerCase();
         const shown = pools
@@ -78,6 +111,10 @@
                     tag.textContent = 'retiring in epoch ' + p.retiring_epoch;
                     tag.title = p.ticker + ' has announced its retirement; it stops at the start of epoch ' + p.retiring_epoch + '.';
                     td.appendChild(tag);
+                }
+                if (cls === 'pools-link') {
+                    const roles = rolesLine(p);
+                    if (roles) td.appendChild(roles);
                 }
                 tr.appendChild(td);
             }

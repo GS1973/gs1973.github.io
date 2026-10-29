@@ -205,6 +205,15 @@
     }
 }
 
+/* The governance roles a pool or a DRep declares: a line under the name. */
+.pools-roles {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.8em;
+    color: #777;
+    font-weight: normal;
+}
+
 .pools-retiring {
     display: inline-block;
     margin-left: 8px;
