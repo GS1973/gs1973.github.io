@@ -12,6 +12,9 @@
                     "@context": {
                         "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
                         "Other": "CIP100:OtherReference",
+                        "Link": "CIP119:LinkReference",
+                        "Identity": "CIP119:IdentityReference",
+                        "Role": "CIP119:RoleReference",
                         "label": "CIP100:reference-label",
                         "uri": "CIP100:reference-uri"
                     }
@@ -53,8 +56,8 @@
                 "uri": "https://github.com/GS1973"
             },
             {
-                "@type": "Link",
-                "label": "Stake pool BKIND, operated by this DRep (CIP-13 stake pool URI, pool ID in hex)",
+                "@type": "Role",
+                "label": "Stake pool BKIND, operated by this DRep",
                 "uri": "web+cardano://stake?d9e2d181dfe21ab2ca7e95847b9a219e691ee1366d22569712390655"
             }
         ]
