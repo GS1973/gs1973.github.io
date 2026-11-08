@@ -688,9 +688,9 @@ body.terms-page {
     font-size: 0.9em;
 }
 
-/* Neon: the buttons in the gold of their borders, the title in the green of the
-   palette (#28a745), each
-   as a lit tube with a light core and layered light around it; the title switches on with a short flicker,
+/* Neon: the buttons in the gold of their borders, the title in the green
+   of the palette (#28a745), each as a lit tube with a light core and
+   layered light around it. The title switches on with a short flicker,
    left out for visitors who reduce motion. */
 .hero-title {
     color: #ecfff1;
