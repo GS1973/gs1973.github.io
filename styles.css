@@ -686,17 +686,41 @@ body.terms-page {
     font-size: 0.9em;
 }
 
-/* Glow: the gold of the button borders, as light. Static, no animation, so
-   it costs nothing for visitors who reduce motion. */
+/* Neon: the gold of the button borders as a lit tube. A light core with
+   layered gold light around it; the title switches on with a short flicker,
+   left out for visitors who reduce motion. */
 .hero-title {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
-                 0 0 18px rgba(255, 215, 0, 0.35),
-                 0 0 42px rgba(255, 215, 0, 0.18);
+    color: #fff8d6;
+    text-shadow: 0 0 2px #fff,
+                 0 0 6px #ffe680,
+                 0 0 12px #FFD700,
+                 0 0 24px #FFD700,
+                 0 0 48px rgba(255, 200, 0, 0.8),
+                 0 0 90px rgba(255, 180, 0, 0.55);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero-title {
+        animation: neon-on 1.6s ease-out 1;
+    }
+}
+
+@keyframes neon-on {
+    0%, 12%, 20%, 34% { opacity: 0.25; text-shadow: none; }
+    10%, 16%, 28%, 100% { opacity: 1; }
 }
 
 .logo-link:hover .logo,
 .logo-link:focus-visible .logo {
-    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
+    filter: drop-shadow(0 0 4px #FFD700) drop-shadow(0 0 14px rgba(255, 200, 0, 0.8));
+}
+
+.delegate-btn, .votes-btn, .tools-btn, .about-btn, .contact-btn, .menu-toggle {
+    border-color: #ffe680;
+    box-shadow: 0 0 4px #FFD700,
+                0 0 10px rgba(255, 215, 0, 0.6),
+                inset 0 0 6px rgba(255, 215, 0, 0.45);
+    text-shadow: 0 0 4px rgba(255, 230, 128, 0.9);
 }
 
 .delegate-btn:hover, .delegate-btn:focus-visible,
@@ -705,7 +729,10 @@ body.terms-page {
 .about-btn:hover, .about-btn:focus-visible,
 .contact-btn:hover, .contact-btn:focus-visible,
 .menu-toggle:hover, .menu-toggle:focus-visible {
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.55),
-                0 0 24px rgba(255, 215, 0, 0.25);
+    border-color: #fff4b0;
+    box-shadow: 0 0 6px #fff4b0,
+                0 0 14px #FFD700,
+                0 0 30px rgba(255, 200, 0, 0.75),
+                inset 0 0 10px rgba(255, 215, 0, 0.6);
     outline: none;
 }
