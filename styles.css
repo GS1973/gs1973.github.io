@@ -688,17 +688,18 @@ body.terms-page {
     font-size: 0.9em;
 }
 
-/* Neon: the buttons in the gold of their borders, the title in blue, each
+/* Neon: the buttons in the gold of their borders, the title in the green of the
+   palette (#28a745), each
    as a lit tube with a light core and layered light around it; the title switches on with a short flicker,
    left out for visitors who reduce motion. */
 .hero-title {
-    color: #eaf4ff;
+    color: #ecfff1;
     text-shadow: 0 0 2px #fff,
-                 0 0 6px #9fd0ff,
-                 0 0 12px #3d9bff,
-                 0 0 24px #1a75ff,
-                 0 0 48px rgba(0, 90, 255, 0.85),
-                 0 0 90px rgba(0, 51, 173, 0.7);
+                 0 0 6px #a3ecb4,
+                 0 0 12px #4fd16e,
+                 0 0 24px #28a745,
+                 0 0 48px rgba(40, 167, 69, 0.85),
+                 0 0 90px rgba(25, 120, 48, 0.7);
 }
 
 @media (prefers-reduced-motion: no-preference) {
