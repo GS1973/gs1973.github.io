@@ -685,3 +685,27 @@ body.terms-page {
     word-break: break-all;
     font-size: 0.9em;
 }
+
+/* Glow: the gold of the button borders, as light. Static, no animation, so
+   it costs nothing for visitors who reduce motion. */
+.hero-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+                 0 0 18px rgba(255, 215, 0, 0.35),
+                 0 0 42px rgba(255, 215, 0, 0.18);
+}
+
+.logo-link:hover .logo,
+.logo-link:focus-visible .logo {
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
+}
+
+.delegate-btn:hover, .delegate-btn:focus-visible,
+.votes-btn:hover, .votes-btn:focus-visible,
+.tools-btn:hover, .tools-btn:focus-visible,
+.about-btn:hover, .about-btn:focus-visible,
+.contact-btn:hover, .contact-btn:focus-visible,
+.menu-toggle:hover, .menu-toggle:focus-visible {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.55),
+                0 0 24px rgba(255, 215, 0, 0.25);
+    outline: none;
+}
