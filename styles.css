@@ -197,7 +197,9 @@ html, body {
     text-align: center;
     color: white;
     padding: 20px;
-    max-width: 800px;
+    /* The title does not wrap and is about 830px wide at full size: the box
+       must hold it, or it runs out on the right and sits off centre. */
+    max-width: 900px;
 }
 
 .hero-title {
