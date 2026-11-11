@@ -2,6 +2,7 @@
     "@context": {
         "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
         "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+        "CIP208": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0208/README.md#",
         "hashAlgorithm": "CIP100:hashAlgorithm",
         "body": {
             "@id": "CIP119:body",
@@ -14,7 +15,7 @@
                         "Other": "CIP100:OtherReference",
                         "Link": "CIP119:LinkReference",
                         "Identity": "CIP119:IdentityReference",
-                        "Role": "CIP119:RoleReference",
+                        "Role": "CIP208:RoleReference",
                         "label": "CIP100:reference-label",
                         "uri": "CIP100:reference-uri"
                     }
@@ -58,7 +59,7 @@
             {
                 "@type": "Role",
                 "label": "Stake pool BKIND, operated by this DRep",
-                "uri": "web+cardano://stake?d9e2d181dfe21ab2ca7e95847b9a219e691ee1366d22569712390655"
+                "uri": "web+cardano://pool/pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y"
             }
         ]
     }
