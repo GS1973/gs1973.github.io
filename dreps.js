@@ -71,7 +71,7 @@
     function closeModal() {
         modal.hidden = true;
         document.removeEventListener('keydown', onKeydown);
-        if (location.hash === '#dreps') {
+        if (location.hash.toLowerCase() === '#dreps') {
             history.replaceState(null, '', location.pathname + location.search);
         }
         if (lastFocused && typeof lastFocused.focus === 'function') {
@@ -219,5 +219,8 @@
     modal.addEventListener('click', function (event) {
         if (event.target === modal) closeModal();
     });
-    if (location.hash === '#dreps') openModal();
+    // /#dreps opens the window, in any case of letters, also when the hash changes on the page
+    const wanted = () => location.hash.toLowerCase() === '#dreps';
+    if (wanted()) openModal();
+    window.addEventListener('hashchange', () => { if (wanted() && modal.hidden) openModal(); });
 })();

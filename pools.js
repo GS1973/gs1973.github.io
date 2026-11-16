@@ -33,7 +33,7 @@
     function closeModal() {
         modal.hidden = true;
         document.removeEventListener('keydown', onKeydown);
-        if (location.hash === '#pools') {
+        if (location.hash.toLowerCase() === '#pools') {
             history.replaceState(null, '', location.pathname + location.search);
         }
         if (lastFocused && typeof lastFocused.focus === 'function') {
@@ -182,5 +182,8 @@
     modal.addEventListener('click', function (event) {
         if (event.target === modal) closeModal();
     });
-    if (location.hash === '#pools') openModal();
+    // /#pools opens the window, in any case of letters, also when the hash changes on the page
+    const wanted = () => location.hash.toLowerCase() === '#pools';
+    if (wanted()) openModal();
+    window.addEventListener('hashchange', () => { if (wanted() && modal.hidden) openModal(); });
 })();
