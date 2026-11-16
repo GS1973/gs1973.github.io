@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T17:14:45Z",
+ "generated": "2026-11-16T17:25:46Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -70,7 +70,9 @@
    "drep_id": "drep1ygr9tuapcanc3kpeyy4dc3vmrz9cfe5q7v9wj3x9j0ap3tswtre9j",
    "ada": 389172035,
    "cls": "spo",
-   "why": "EMURGO, which also runs pools EMGHW, MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7 (both recognized by ID in the lists on this site)"
+   "why": "EMURGO, which also runs pools EMGHW, MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7 (both recognized by ID in the lists on this site). Its owner runs 8 pools with 181.2 million ADA together",
+   "pools": 8,
+   "pools_ada": 181233744
   },
   {
    "name": "CryptoCrow",
@@ -98,14 +100,18 @@
    "drep_id": "drep1yt8p080ajks6zdnxd9z6a6q60p9sm9j5rl7tc63mfna8r6cnp4wr3",
    "ada": 215301642,
    "cls": "spo",
-   "why": "has the same name as pool EVRST (Everstake)"
+   "why": "has the same name as pool EVRST (Everstake). Its owner runs 15 pools with 675.4 million ADA together",
+   "pools": 15,
+   "pools_ada": 675356151
   },
   {
    "name": "EMURGO",
    "drep_id": "drep1ytvlwvyjmzfyn56n0zz4f6lj94wxhmsl5zky6knnzrf4jygpyahug",
    "ada": 210721986,
    "cls": "spo",
-   "why": "EMURGO, which also runs pools EMGHW, MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7 (both recognized by ID in the lists on this site)"
+   "why": "EMURGO, which also runs pools EMGHW, MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7 (both recognized by ID in the lists on this site). Its owner runs 8 pools with 181.2 million ADA together",
+   "pools": 8,
+   "pools_ada": 181233744
   },
   {
    "name": "Sebastien Guillemot セバ",
@@ -119,21 +125,27 @@
    "drep_id": "drep1ydpfkyjxzeqvalf6fgvj7lznrk8kcmfnvy9hyl6gr6ez6wgsjaelx",
    "ada": 150512643,
    "cls": "spo",
-   "why": "Cardano Foundation, which also runs pools CF1, CF2, CF3, CF4, CF5 (both recognized by ID in the lists on this site)"
+   "why": "Cardano Foundation, which also runs pools CF1, CF2, CF3, CF4, CF5 (both recognized by ID in the lists on this site). Its owner runs 5 pools with 250.0 million ADA together",
+   "pools": 5,
+   "pools_ada": 249969212
   },
   {
    "name": "SASA_nagamaru_ながまる",
    "drep_id": "drep1ytuddrgqca0xd4aams6pl9zndpcmxg0rs7z3mggjelm6kscp4arg5",
    "ada": 130367068,
    "cls": "spo",
-   "why": "carries the ticker of pool SASA (SASA Stake Pool) in its own name"
+   "why": "carries the ticker of pool SASA (SASA Stake Pool) in its own name. Its owner runs 2 pools with 95.9 million ADA together",
+   "pools": 2,
+   "pools_ada": 95935719
   },
   {
    "name": "SIPO",
    "drep_id": "drep1yffld2866p00cyg3ejjdewtvazgah7jjgk0s9m7m5ytmmdq33v3zh",
    "ada": 120113673,
    "cls": "spo",
-   "why": "carries the ticker of pool SIPO (SITION POOL) in its own name"
+   "why": "carries the ticker of pool SIPO (SITION POOL) in its own name. Its owner runs 3 pools with 114.2 million ADA together",
+   "pools": 3,
+   "pools_ada": 114190611
   },
   {
    "name": "ranket",
@@ -147,14 +159,18 @@
    "drep_id": "drep1yt77crnmjuqkj9gcwjjsurez7s07jhwhyt4suxs3xeqftcsfrspun",
    "ada": 96337966,
    "cls": "spo",
-   "why": "has the same name as pool JAZZ2 (JAZZ2)"
+   "why": "has the same name as pool JAZZ2 (JAZZ2). Its owner runs 4 pools with 85.2 million ADA together",
+   "pools": 4,
+   "pools_ada": 85156579
   },
   {
    "name": "CardanoYoda (MANDA Pool)",
    "drep_id": "drep1y2m0g4r66pyaw3p7u454wc0p4f0ygm8ueaev0mgd3tvwm7sskqwqp",
    "ada": 95125541,
    "cls": "spo",
-   "why": "carries the ticker of pool MANDA (Cardano Yoda Pool) in its own name"
+   "why": "carries the ticker of pool MANDA (Cardano Yoda Pool) in its own name. Its pool has 2.4 million ADA",
+   "pools": 1,
+   "pools_ada": 2400435
   },
   {
    "name": "Dumpling🥟",
@@ -168,7 +184,9 @@
    "drep_id": "drep1ygqgayvx8yzsaj9hprja3l6jy3v4px9z3u8uvecuvm3f92ce7mckx",
    "ada": 82824612,
    "cls": "spo",
-   "why": "has the same name as pool AOS (Army of Spies)"
+   "why": "has the same name as pool AOS (Army of Spies). Its pool has 46.8 million ADA",
+   "pools": 1,
+   "pools_ada": 46808458
   },
   {
    "name": "Dave",
@@ -189,14 +207,18 @@
    "drep_id": "drep1ytwmwvtd0a8lr45ssner2tjxzv5y8q03w3606yeald9mdmgmwecja",
    "ada": 72274934,
    "cls": "spo",
-   "why": "names pool ATADA (ATADA Stakepool in Austria) in its own DRep metadata"
+   "why": "names pool ATADA (ATADA Stakepool in Austria) in its own DRep metadata. Its owner runs 2 pools with 130.0 million ADA together",
+   "pools": 2,
+   "pools_ada": 129985843
   },
   {
    "name": "Hermes Stakepool Germany (HRMS)",
    "drep_id": "drep1ygs5hngva3hymv7j4v0aewxpsjqskj9dnmy7j3jz5ven5zqvulq2t",
    "ada": 65665073,
    "cls": "spo",
-   "why": "carries the ticker of pool HRMS (Hermes Stakepool Germany #1) in its own name"
+   "why": "carries the ticker of pool HRMS (Hermes Stakepool Germany #1) in its own name. Its pool has 28.3 million ADA",
+   "pools": 1,
+   "pools_ada": 28314173
   },
   {
    "name": "hix_coffeepool☕️",
@@ -217,14 +239,18 @@
    "drep_id": "drep1yfe9en4hsgc3r6nhtmwjeljh06hgnvt9yzzkwqcftvdj34cdxdg7u",
    "ada": 48838002,
    "cls": "spo",
-   "why": "names pool STAT (AdaStat Pool) in its own DRep metadata"
+   "why": "names pool STAT (AdaStat Pool) in its own DRep metadata. Its pool has 43.9 million ADA",
+   "pools": 1,
+   "pools_ada": 43930030
   },
   {
    "name": "MUEN",
    "drep_id": "drep1yt6lgdpqjey286qwt287mnk7sdqh95avfmde42vq3mltjys75kg5k",
    "ada": 44833757,
    "cls": "spo",
-   "why": "carries the ticker of pool MUEN (MUEN-StakePool,) in its own name"
+   "why": "carries the ticker of pool MUEN (MUEN-StakePool,) in its own name. Its owner runs 3 pools with 35.3 million ADA together",
+   "pools": 3,
+   "pools_ada": 35306947
   },
   {
    "name": "HISAI",
@@ -238,7 +264,9 @@
    "drep_id": "drep1yfemdmjmxr59kecgqnzd8d0ankkue4rdnn35c8qfsuljt9cjree5m",
    "ada": 43249837,
    "cls": "spo",
-   "why": "names pool LOVE (StakeLove) in its own DRep metadata"
+   "why": "names pool LOVE (StakeLove) in its own DRep metadata. Its pool has 28.7 million ADA",
+   "pools": 1,
+   "pools_ada": 28710820
   },
   {
    "name": "Patrick_Tobler",
@@ -252,14 +280,18 @@
    "drep_id": "drep1yf2jzhuc4f7eu2yay9d9ta3dykxxcwn34wz8kak7nhd7vcgrxn7ns",
    "ada": 35145681,
    "cls": "spo",
-   "why": "has the same name as pool HOSKY (HOSKY)"
+   "why": "has the same name as pool HOSKY (HOSKY). Its pool has 3.7 million ADA",
+   "pools": 1,
+   "pools_ada": 3735082
   },
   {
    "name": "Moonstake",
    "drep_id": "drep1yfp4qmp849250svle8gw2m5jwjra86e76q8vz97wp998feg9mx9c5",
    "ada": 34171810,
    "cls": "spo",
-   "why": "has the same name as pool MS4 (Moonstake 4)"
+   "why": "has the same name as pool MS4 (Moonstake 4). Its owner runs 4 pools with 132.8 million ADA together",
+   "pools": 4,
+   "pools_ada": 132841484
   },
   {
    "name": "Aichi/Tokai_DRep",
@@ -273,7 +305,9 @@
    "drep_id": "drep1ygxeadaklzz93n2tn9vnqz0fxapyv7ltel4d9808aeftl7gnxkszd",
    "ada": 30768094,
    "cls": "spo",
-   "why": "has the same name as pool NEDS1 (NEDSCAVE.IO)"
+   "why": "has the same name as pool NEDS1 (NEDSCAVE.IO). Its owner runs 4 pools with 106.6 million ADA together",
+   "pools": 4,
+   "pools_ada": 106574932
   },
   {
    "name": "Goofycrisp",
@@ -301,7 +335,9 @@
    "drep_id": "drep1ygtxcscvznhs2nqap9u8gtxa0dx0l6q5zhsqqlw46enwh8cttd07h",
    "ada": 28020002,
    "cls": "spo",
-   "why": "carries the ticker of pool TERA (⭐ TERA ⭐) in its own name"
+   "why": "carries the ticker of pool TERA (⭐ TERA ⭐) in its own name. Its owner runs 3 pools with 44.8 million ADA together",
+   "pools": 3,
+   "pools_ada": 44763996
   },
   {
    "name": "Drep One",
@@ -350,28 +386,36 @@
    "drep_id": "drep1ytfnmf4uftt4fe0h63xhadl0v402gr6nnhtcgrq2sas26kgaf3n5y",
    "ada": 21571887,
    "cls": "spo",
-   "why": "carries the ticker of pool DINO (Cardino Stake Pool) in its own name"
+   "why": "carries the ticker of pool DINO (Cardino Stake Pool) in its own name. Its pool has 27.2 million ADA",
+   "pools": 1,
+   "pools_ada": 27229667
   },
   {
    "name": "Hephaestus Stake Pool [HEPHY]",
    "drep_id": "drep1y2zu74gt8sxtrxcngqsmrnupkzrtmlqshmvmm5qtuhxx6xqt7yhaw",
    "ada": 21518583,
    "cls": "spo",
-   "why": "carries the ticker of pool HEPHY (Hephaestus Stake Pool) in its own name"
+   "why": "carries the ticker of pool HEPHY (Hephaestus Stake Pool) in its own name. Its pool has 885,489 ADA",
+   "pools": 1,
+   "pools_ada": 885489
   },
   {
    "name": "Chris [STR8] - Straightpool",
    "drep_id": "drep1y27qjjnz9a7q6zmvpajzqpqylnka6lpkvcm9sgjrdheqt0qq6pchw",
    "ada": 21140918,
    "cls": "spo",
-   "why": "carries the ticker of pool STR8 (Straight Pool) in its own name"
+   "why": "carries the ticker of pool STR8 (Straight Pool) in its own name. Its pool has 56.9 million ADA",
+   "pools": 1,
+   "pools_ada": 56939059
   },
   {
    "name": "CTEC-Stake-Pool",
    "drep_id": "drep1y24xr6m4mkgl7e7886sk3wee7h73mcreysyvhrwzksy5ajqrv0rrv",
    "ada": 20265919,
    "cls": "spo",
-   "why": "carries the ticker of pool CTEC (CTEC Stake Pool) in its own name"
+   "why": "carries the ticker of pool CTEC (CTEC Stake Pool) in its own name. Its owner runs 2 pools with 18.7 million ADA together",
+   "pools": 2,
+   "pools_ada": 18679218
   },
   {
    "name": "DraculaDAO",
@@ -385,14 +429,18 @@
    "drep_id": "drep1y2j2q9pcl855969ea9csrhdta6slnamctgzuvuqnnkl6fusqyjy36",
    "ada": 16268985,
    "cls": "spo",
-   "why": "carries the ticker of pool CHIL (Chile_Stake_po) in its own name"
+   "why": "carries the ticker of pool CHIL (Chile_Stake_po) in its own name. Its pool has 12.0 million ADA",
+   "pools": 1,
+   "pools_ada": 12042098
   },
   {
    "name": "Terminada",
    "drep_id": "drep1ytf9f78k7rkwk4cu6l2nvna22keu9yus4kqzc0hqspd36uszu0xc2",
    "ada": 16184719,
    "cls": "spo",
-   "why": "has the same name as pool TERM (Terminada)"
+   "why": "has the same name as pool TERM (Terminada). Its pool has 73.8 million ADA",
+   "pools": 1,
+   "pools_ada": 73833179
   },
   {
    "name": "Angry Crypto Show",
@@ -413,7 +461,9 @@
    "drep_id": "drep1yt5cc878w5c8umxrfudnmzw425epxnvvttw7hhrhwfhp0zqf400ze",
    "ada": 11909812,
    "cls": "spo",
-   "why": "names pool JOY (JOY) in its own DRep metadata"
+   "why": "names pool JOY (JOY) in its own DRep metadata. Its owner runs 2 pools with 12.2 million ADA together",
+   "pools": 2,
+   "pools_ada": 12249238
   },
   {
    "name": "OREKA_Vote",
@@ -434,7 +484,9 @@
    "drep_id": "drep1yf7kjx5rlyuyzxkr4dzyccdfs8tesh29amrtcpyplu3asnqjgmdz3",
    "ada": 10729573,
    "cls": "spo",
-   "why": "carries the ticker of pool RCADA (Stake ADA Pool) in its own name"
+   "why": "carries the ticker of pool RCADA (Stake ADA Pool) in its own name. Its pool has 1.1 million ADA",
+   "pools": 1,
+   "pools_ada": 1135918
   },
   {
    "name": "Dr. Navjit Dhaliwal",
@@ -469,7 +521,9 @@
    "drep_id": "drep1yfpazkd0aqex0kd3vrhk47sjy0jqgq3xu6h2zv9wevfequcxyynwv",
    "ada": 8071113,
    "cls": "spo",
-   "why": "carries the ticker of pool PRIDE (Stake with Pride - Hosky ISPO) in its own name"
+   "why": "carries the ticker of pool PRIDE (Stake with Pride - Hosky ISPO) in its own name. Its pool has 24.1 million ADA",
+   "pools": 1,
+   "pools_ada": 24071260
   },
   {
    "name": "",
@@ -518,7 +572,9 @@
    "drep_id": "drep1ytq64jdk5fequ0228znae33d3ncs50ujl7qev0uqlx37l8cpjhc2k",
    "ada": 6083320,
    "cls": "spo",
-   "why": "carries the ticker of pool ATLAS (AtlasStakePool) in its own name"
+   "why": "carries the ticker of pool ATLAS (AtlasStakePool) in its own name. Its owner runs 2 pools with 43.6 million ADA together",
+   "pools": 2,
+   "pools_ada": 43605365
   },
   {
    "name": "InputEndorsers",
@@ -532,7 +588,9 @@
    "drep_id": "drep1yg8vjs7ute7z7vyd8yez5tgjey6043djjfh8d3n7sjev35g064xxc",
    "ada": 5912499,
    "cls": "spo",
-   "why": "has the same name as pool ECP (Earn Coin Pool)"
+   "why": "has the same name as pool ECP (Earn Coin Pool). Its pool has 2.5 million ADA",
+   "pools": 1,
+   "pools_ada": 2514688
   },
   {
    "name": "AtlasHub",
@@ -581,7 +639,9 @@
    "drep_id": "drep1yt4vlxgkllldxtwrmzj2ymwnc5qw0cmzvkn4nxpxkpgt4fgwj36md",
    "ada": 4332890,
    "cls": "spo",
-   "why": "carries the ticker of pool MOKSH (Moksh Stake Pool) in its own name"
+   "why": "carries the ticker of pool MOKSH (Moksh Stake Pool) in its own name. Its pool has 39.9 million ADA",
+   "pools": 1,
+   "pools_ada": 39915790
   },
   {
    "name": "",
@@ -609,7 +669,9 @@
    "drep_id": "drep1y2s4qj2j05s8h0a532ncv4q77rwglr5cwf4c728yfutauqqgjszwx",
    "ada": 3792373,
    "cls": "spo",
-   "why": "carries the ticker of pool ECO (ECO Pool) in its own name"
+   "why": "carries the ticker of pool ECO (ECO Pool) in its own name. Its owner runs 2 pools with 36.7 million ADA together",
+   "pools": 2,
+   "pools_ada": 36721709
   },
   {
    "name": "Mike Rogero (羅邁凱）",
@@ -637,42 +699,54 @@
    "drep_id": "drep1ytn29gxylzlrhzmkt4c75w7qmesxqc248r9089f0pvuysdqeva6ht",
    "ada": 3462979,
    "cls": "spo",
-   "why": "names pool EASY1 (easy1staking.com) in its own DRep metadata"
+   "why": "names pool EASY1 (easy1staking.com) in its own DRep metadata. Its pool has 53.8 million ADA",
+   "pools": 1,
+   "pools_ada": 53797456
   },
   {
    "name": "GAIA",
    "drep_id": "drep1ytxr0lhg5j72wysva9ac2gsn4lck4gyen8ywxkqfchsqg3qs8uy44",
    "ada": 3421444,
    "cls": "spo",
-   "why": "carries the ticker of pool GAIA (GAIA Stake Pool) in its own name"
+   "why": "carries the ticker of pool GAIA (GAIA Stake Pool) in its own name. Its pool has 578,136 ADA",
+   "pools": 1,
+   "pools_ada": 578136
   },
   {
    "name": "Captain Crypto",
    "drep_id": "drep1y2x0d3jgae3xs7kdagq2w74kmzlgktw3l5th2lusrgn7m6gg52x78",
    "ada": 3224791,
    "cls": "spo",
-   "why": "names pool PARAD (Paradise Staking Pool) in its own DRep metadata"
+   "why": "names pool PARAD (Paradise Staking Pool) in its own DRep metadata. Its pool has 102,108 ADA",
+   "pools": 1,
+   "pools_ada": 102108
   },
   {
    "name": "42",
    "drep_id": "drep1y26ppxzudkhtak4y7kc2rag9ezq7szje78aetxge3pg5w7qwthkqv",
    "ada": 3114581,
    "cls": "spo",
-   "why": "has the same name as pool 1337 (1337)"
+   "why": "has the same name as pool 1337 (1337). Its pool has 4,365 ADA",
+   "pools": 1,
+   "pools_ada": 4365
   },
   {
    "name": "BWtake(長崎)Japan",
    "drep_id": "drep1ytcw6qzpqqclx2yd0zy64ztvlkkhnf6yrzza8whgnq4vz5gh89626",
    "ada": 3096026,
    "cls": "spo",
-   "why": "names pool NGS (NGS発達障がい支援KGSP) in its own DRep metadata"
+   "why": "names pool NGS (NGS発達障がい支援KGSP) in its own DRep metadata. Its pool has 6.0 million ADA",
+   "pools": 1,
+   "pools_ada": 6034908
   },
   {
    "name": "Medusa DRep",
    "drep_id": "drep1yg5pzxhp0lu0m7757ww2hke8qhcuqgqt3c2ezphngwytz4gjr6yge",
    "ada": 3042504,
    "cls": "spo",
-   "why": "names pool MDS (Medusa Development Support) in its own DRep metadata"
+   "why": "names pool MDS (Medusa Development Support) in its own DRep metadata. Its pool has 1.3 million ADA",
+   "pools": 1,
+   "pools_ada": 1285148
   },
   {
    "name": "ADA_Labo",
@@ -686,28 +760,36 @@
    "drep_id": "drep1yfkn463gfmajw3v0nva9cds6cvzghsvv6pdgn2ywmqv684q9u7ph4",
    "ada": 2817450,
    "cls": "spo",
-   "why": "carries the ticker of pool CRICH (CryptoRich Stake Pool) in its own name"
+   "why": "carries the ticker of pool CRICH (CryptoRich Stake Pool) in its own name. Its pool has 6.5 million ADA",
+   "pools": 1,
+   "pools_ada": 6541003
   },
   {
    "name": "SAGAN Stake Pool",
    "drep_id": "drep1y290s8rwsezxkct6urmqne8tc92wqtltal8dfxfk45xj6eqn2mgfx",
    "ada": 2794558,
    "cls": "spo",
-   "why": "has the same name as pool SAGAN (Sagan Stake Pool)"
+   "why": "has the same name as pool SAGAN (Sagan Stake Pool). Its pool has 1.4 million ADA",
+   "pools": 1,
+   "pools_ada": 1377625
   },
   {
    "name": "ADALO",
    "drep_id": "drep1y22eh8rzfmnjw8m82hlcgxfm8tcmwqmdqy2mjupdduztq0s5s5dkk",
    "ada": 2783938,
    "cls": "spo",
-   "why": "carries the ticker of pool ADALO (ADALovelacePool) in its own name"
+   "why": "carries the ticker of pool ADALO (ADALovelacePool) in its own name. Its pool has 76.1 million ADA",
+   "pools": 1,
+   "pools_ada": 76091634
   },
   {
    "name": "OCTAS DRep",
    "drep_id": "drep1y2t4hsu6zk98407q4ymj5jnm2d52rh76dv6whl88r9dts4qayakaf",
    "ada": 2736904,
    "cls": "spo",
-   "why": "carries the ticker of pool OCTAS (OctasPool) in its own name"
+   "why": "carries the ticker of pool OCTAS (OctasPool) in its own name. Its pool has 54.3 million ADA",
+   "pools": 1,
+   "pools_ada": 54340412
   },
   {
    "name": "Cash",
@@ -735,7 +817,9 @@
    "drep_id": "drep1y2t3t35yx7j8nnh3wkqn2zzhgwqksksn85zv62pjrwzjawczwgyv7",
    "ada": 2489202,
    "cls": "spo",
-   "why": "names pool EPOCH (EPOCH Stake Pool) in its own DRep metadata"
+   "why": "names pool EPOCH (EPOCH Stake Pool) in its own DRep metadata. Its pool has 3.1 million ADA",
+   "pools": 1,
+   "pools_ada": 3101510
   },
   {
    "name": "",
@@ -749,7 +833,9 @@
    "drep_id": "drep1y2nfn97daaffqdpc2snj5k0fdamf7wgffn8xlscl2nxnxjcala80u",
    "ada": 2405131,
    "cls": "spo",
-   "why": "carries the ticker of pool ANGEL (ANGEL stake pool) in its own name"
+   "why": "carries the ticker of pool ANGEL (ANGEL stake pool) in its own name. Its owner runs 2 pools with 23.8 million ADA together",
+   "pools": 2,
+   "pools_ada": 23814356
   },
   {
    "name": "Bamboo_Drep",
@@ -770,7 +856,9 @@
    "drep_id": "drep1yt9rp59j57rxev92qzsjyxpnyul8gc94fny4af32hr35l0qh9ahj8",
    "ada": 2254123,
    "cls": "spo",
-   "why": "names pool ADP (Adapolis) in its own DRep metadata"
+   "why": "names pool ADP (Adapolis) in its own DRep metadata. Its pool has 4.1 million ADA",
+   "pools": 1,
+   "pools_ada": 4118677
   },
   {
    "name": "Dmitrii Gartung",
@@ -798,7 +886,9 @@
    "drep_id": "drep1ytc6867ae0xmkekvmex79r9akyy28eu8nu03jf3xu9fle6c82l4eq",
    "ada": 1827689,
    "cls": "spo",
-   "why": "declares pool BKIND as its own (CIP-0208)"
+   "why": "declares pool BKIND as its own (CIP-0208). Its pool has 2.3 million ADA",
+   "pools": 1,
+   "pools_ada": 2300409
   },
   {
    "name": "matticus_kiwi",
@@ -819,21 +909,27 @@
    "drep_id": "drep1ygzp8678j5q8s8syhk4a7a4tr54sp3su8fxzzdjhuxcn4tc6r2qcn",
    "ada": 1650456,
    "cls": "spo",
-   "why": "carries the ticker of pool AQUA (AquaPoolADA) in its own name"
+   "why": "carries the ticker of pool AQUA (AquaPoolADA) in its own name. Its pool has 1.1 million ADA",
+   "pools": 1,
+   "pools_ada": 1140654
   },
   {
    "name": "Alex BKV",
    "drep_id": "drep1yf2yd8jgdvmtm7jqmvvl0rmw7yprv5723y8h6tjnwfmcejq476nsl",
    "ada": 1648643,
    "cls": "spo",
-   "why": "carries the ticker of pool BKV (bkvpool.com | Single SPO) in its own name"
+   "why": "carries the ticker of pool BKV (bkvpool.com | Single SPO) in its own name. Its pool has 505,735 ADA",
+   "pools": 1,
+   "pools_ada": 505735
   },
   {
    "name": "Nimuë Lady of the Lake Pool",
    "drep_id": "drep1ygj02llvuusnhphvhlxf7d2cxhs53twjnwwl5at3zwht4xc6xdgl4",
    "ada": 1605191,
    "cls": "spo",
-   "why": "has the same name as pool NIMUE (Nimuë Lady of the Lake Pool)"
+   "why": "has the same name as pool NIMUE (Nimuë Lady of the Lake Pool). Its pool has 3.8 million ADA",
+   "pools": 1,
+   "pools_ada": 3799847
   },
   {
    "name": "",
@@ -875,7 +971,9 @@
    "drep_id": "drep1ygxu629f9zzm0r6fm8m2rtn3qglgtstvfxvt7nj68hxmdpcrwphte",
    "ada": 1345277,
    "cls": "spo",
-   "why": "names pool BOATS (Harbor Stake Pool) in its own DRep metadata"
+   "why": "names pool BOATS (Harbor Stake Pool) in its own DRep metadata. Its pool has 1.2 million ADA",
+   "pools": 1,
+   "pools_ada": 1160450
   },
   {
    "name": "Elite",
@@ -931,7 +1029,9 @@
    "drep_id": "drep1y2u2848fer43ghnyhyadhaqd2ek4q9x09h2y0sxev5gklcgnx3qyp",
    "ada": 1142672,
    "cls": "spo",
-   "why": "has the same name as pool BLESS (God BlESS You)"
+   "why": "has the same name as pool BLESS (God BlESS You). Its pool has 110,774 ADA",
+   "pools": 1,
+   "pools_ada": 110774
   },
   {
    "name": "Christopher Erckert | Dotare",
@@ -945,7 +1045,9 @@
    "drep_id": "drep1y2r5pajz7vvw8v0kvf4968gjwua077n25k75mv3ne7vd6cc7rw8p5",
    "ada": 1057821,
    "cls": "spo",
-   "why": "carries the ticker of pool ACL (A CardanoLand pool ACL) in its own name"
+   "why": "carries the ticker of pool ACL (A CardanoLand pool ACL) in its own name. Its owner runs 4 pools with 78.0 million ADA together",
+   "pools": 4,
+   "pools_ada": 78000441
   },
   {
    "name": "Lauris_StakePool247",
@@ -959,7 +1061,9 @@
    "drep_id": "drep1y296zyw2r8rcsy7slkd7l687hh88xc0m6ac2y3h2r3mvsdgc9q6yy",
    "ada": 1024677,
    "cls": "spo",
-   "why": "has the same name as pool 8BALL (8BALL)"
+   "why": "has the same name as pool 8BALL (8BALL). Its pool has 1.4 million ADA",
+   "pools": 1,
+   "pools_ada": 1441574
   },
   {
    "name": "",
@@ -987,7 +1091,9 @@
    "drep_id": "drep1y26nj0u86z00s2c6yteecduedrzxxrxrn39th5mau0h0r5gszp025",
    "ada": 953553,
    "cls": "spo",
-   "why": "carries the ticker of pool ADAR (ADA Rewards) in its own name"
+   "why": "carries the ticker of pool ADAR (ADA Rewards) in its own name. Its pool has 402,957 ADA",
+   "pools": 1,
+   "pools_ada": 402957
   },
   {
    "name": "Erasmus",
@@ -1015,7 +1121,9 @@
    "drep_id": "drep1yg7svuv02gh9j2q574jv06l4xnzwyp63effljze28qe993caj8ras",
    "ada": 937008,
    "cls": "spo",
-   "why": "carries the ticker of pool BRIAN (BRIAN Pool) in its own name"
+   "why": "carries the ticker of pool BRIAN (BRIAN Pool) in its own name. Its pool has 323,146 ADA",
+   "pools": 1,
+   "pools_ada": 323146
   },
   {
    "name": "Mayhem",
@@ -1127,7 +1235,9 @@
    "drep_id": "drep1ytamqncvuz2r0atkwxwgcn5zmgxm09j0g2lgcrp7ddqfsfcsgnr8s",
    "ada": 626745,
    "cls": "spo",
-   "why": "has the same name as pool FAIR (Fair Pool #01)"
+   "why": "has the same name as pool FAIR (Fair Pool #01). Its pool has 53.0 million ADA",
+   "pools": 1,
+   "pools_ada": 53048287
   },
   {
    "name": "jonahkoch",
@@ -1218,7 +1328,9 @@
    "drep_id": "drep1yfpf7hqxl4sfrz4xcfamdc36pyp39fce3nrt53vh8jfffuc9rs23q",
    "ada": 499785,
    "cls": "spo",
-   "why": "carries the ticker of pool CAPO (CardaPool.com - 0% Fees - ¡Midnight Token!) in its own name"
+   "why": "carries the ticker of pool CAPO (CardaPool.com - 0% Fees - ¡Midnight Token!) in its own name. Its pool has 1.9 million ADA",
+   "pools": 1,
+   "pools_ada": 1944503
   },
   {
    "name": "",
@@ -1232,7 +1344,9 @@
    "drep_id": "drep1ytuf3fjch3lu5rkutgfz0wc3ngjszqluthj67pdeyvp49uszfkcp7",
    "ada": 413022,
    "cls": "spo",
-   "why": "carries the ticker of pool THOR (THOR - The Viking Pool) in its own name"
+   "why": "carries the ticker of pool THOR (THOR - The Viking Pool) in its own name. Its pool has 13.2 million ADA",
+   "pools": 1,
+   "pools_ada": 13227066
   },
   {
    "name": "",
@@ -1246,7 +1360,9 @@
    "drep_id": "drep1y25req7clwkrxnjvx9075he2l80t3wksgeu9eqru09uvt3ctz60gx",
    "ada": 395367,
    "cls": "spo",
-   "why": "carries the ticker of pool ADAAT (adapool.at) in its own name"
+   "why": "carries the ticker of pool ADAAT (adapool.at) in its own name. Its pool has 840,222 ADA",
+   "pools": 1,
+   "pools_ada": 840222
   },
   {
    "name": "Holland",
@@ -1302,7 +1418,9 @@
    "drep_id": "drep1y26p5lfmwtk2zlrg3jgnhsvh2yatczwa8dwfy3azg8u4t9qq5cyc2",
    "ada": 342995,
    "cls": "spo",
-   "why": "carries the ticker of pool GNP1 (GrahamsNumberPlus1) in its own name"
+   "why": "carries the ticker of pool GNP1 (GrahamsNumberPlus1) in its own name. Its pool has 1.2 million ADA",
+   "pools": 1,
+   "pools_ada": 1228370
   },
   {
    "name": "Cardanolotus",
@@ -1330,7 +1448,9 @@
    "drep_id": "drep1ytxtrka4tmvm692nkgkdh4uezns35wdqerqugacdvttlzdga03rnz",
    "ada": 329626,
    "cls": "spo",
-   "why": "names pool CLUB (Cardano Club) in its own DRep metadata"
+   "why": "names pool CLUB (Cardano Club) in its own DRep metadata. Its pool has 545,575 ADA",
+   "pools": 1,
+   "pools_ada": 545575
   },
   {
    "name": "",
@@ -1365,7 +1485,9 @@
    "drep_id": "drep1yfrmyrf4twcxa0z3w63842ktmufdu06c3vdaz8rpkgzu8gclnyuh9",
    "ada": 292842,
    "cls": "spo",
-   "why": "names pool APEX (Apex Stake Pool) in its own DRep metadata"
+   "why": "names pool APEX (Apex Stake Pool) in its own DRep metadata. Its pool has 14.9 million ADA",
+   "pools": 1,
+   "pools_ada": 14889049
   },
   {
    "name": "BAT Community",
@@ -1386,7 +1508,9 @@
    "drep_id": "drep1yfrpcln42j0f6p6zzt5863xn8pz4kkgfkvswlp88klyy4acjdju2k",
    "ada": 273579,
    "cls": "spo",
-   "why": "carries the ticker of pool SVRN (Commercial Sovereignty Restoration) in its own name"
+   "why": "carries the ticker of pool SVRN (Commercial Sovereignty Restoration) in its own name. Its pool has 770,407 ADA",
+   "pools": 1,
+   "pools_ada": 770407
   },
   {
    "name": "",
@@ -1400,7 +1524,9 @@
    "drep_id": "drep1ygxy3yn7x7ryfu52c23x2nkwnnl7uyd56u29vptfy98759gaaltuz",
    "ada": 249649,
    "cls": "spo",
-   "why": "carries the ticker of pool TAVN (TAVN Viet Nam Stake Pool) in its own name"
+   "why": "carries the ticker of pool TAVN (TAVN Viet Nam Stake Pool) in its own name. Its pool has 1.2 million ADA",
+   "pools": 1,
+   "pools_ada": 1216646
   },
   {
    "name": "",
@@ -1414,7 +1540,9 @@
    "drep_id": "drep1ytc030h6jr0u47z57l5g8e9gx7pelwk0u7z8d3989una3xql3vfvy",
    "ada": 226727,
    "cls": "spo",
-   "why": "carries the ticker of pool CZBE1 (ADACZECH) in its own name"
+   "why": "carries the ticker of pool CZBE1 (ADACZECH) in its own name. Its pool has 562,863 ADA",
+   "pools": 1,
+   "pools_ada": 562863
   },
   {
    "name": "Talos",
@@ -1428,7 +1556,9 @@
    "drep_id": "drep1ygg9eg90gjm5fj40pncn56jntvskk72v3f3rzrs36q5lswsusmste",
    "ada": 204217,
    "cls": "spo",
-   "why": "names pool FLUID (FLUID pool) in its own DRep metadata"
+   "why": "names pool FLUID (FLUID pool) in its own DRep metadata. Its pool has 453,006 ADA",
+   "pools": 1,
+   "pools_ada": 453006
   },
   {
    "name": "",
@@ -1449,21 +1579,27 @@
    "drep_id": "drep1yt56tpzpzu58zy7pz4zwfp32rq95tj3xfxmdrg8k3qhxjlccp47cn",
    "ada": 198278,
    "cls": "spo",
-   "why": "carries the ticker of pool SNAKE (SN₳KE Cardano Staking) in its own name"
+   "why": "carries the ticker of pool SNAKE (SN₳KE Cardano Staking) in its own name. Its pool has 34.0 million ADA",
+   "pools": 1,
+   "pools_ada": 33988292
   },
   {
    "name": "AdaSouls",
    "drep_id": "drep1y2yemxvjptae0j7qws0emn4lv5eh73fkp43f4p3gla3msackq60pj",
    "ada": 194203,
    "cls": "spo",
-   "why": "has the same name as pool SOULS (AdaSouls)"
+   "why": "has the same name as pool SOULS (AdaSouls). Its pool has 251,237 ADA",
+   "pools": 1,
+   "pools_ada": 251237
   },
   {
    "name": "Long Hồ",
    "drep_id": "drep1yttfrpngasw7yrdryydsg66gzv8znkj0stjngm5a8hs353stdeml6",
    "ada": 185755,
    "cls": "spo",
-   "why": "names pool SDG13 (Blue Ocean Stake Pool) in its own DRep metadata"
+   "why": "names pool SDG13 (Blue Ocean Stake Pool) in its own DRep metadata. Its pool has 48.1 million ADA",
+   "pools": 1,
+   "pools_ada": 48081408
   },
   {
    "name": "MyCNFT DRep",
@@ -1505,7 +1641,9 @@
    "drep_id": "drep1ytsj5tchu9qh32zml24ctuvam90tygx8p286uw3n78nlypc2fqmyr",
    "ada": 150677,
    "cls": "spo",
-   "why": "has the same name as pool PAL (Pallamus)"
+   "why": "has the same name as pool PAL (Pallamus). Its pool has 218 ADA",
+   "pools": 1,
+   "pools_ada": 218
   },
   {
    "name": "Victor.Villagomez",
@@ -1568,7 +1706,9 @@
    "drep_id": "drep1yfcxq9rm3nkk6chq7nedd788agzxl3f4hmqv9nr3h67ntkq62jagy",
    "ada": 115558,
    "cls": "spo",
-   "why": "carries the ticker of pool DMOON (Dented Moon) in its own name"
+   "why": "carries the ticker of pool DMOON (Dented Moon) in its own name. Its pool has 244,039 ADA",
+   "pools": 1,
+   "pools_ada": 244039
   },
   {
    "name": "ADAtainment",
@@ -1603,7 +1743,9 @@
    "drep_id": "drep1yf64m233qq6nutjpkh4uc7jncr2gxwtlsq7n68v38ka2l9qez8h3h",
    "ada": 102096,
    "cls": "spo",
-   "why": "carries the ticker of pool BZH (BreizhStakePool) in its own name"
+   "why": "carries the ticker of pool BZH (BreizhStakePool) in its own name. Its pool has 207,940 ADA",
+   "pools": 1,
+   "pools_ada": 207940
   },
   {
    "name": "",
@@ -1624,7 +1766,9 @@
    "drep_id": "drep1ygj2shrjluwfkcyp2d85p09dagaqqmcue8sztq925z7jacg02nr4x",
    "ada": 92363,
    "cls": "spo",
-   "why": "carries the ticker of pool CBROS (Coudre Bros) in its own name"
+   "why": "carries the ticker of pool CBROS (Coudre Bros) in its own name. Its pool has 118,595 ADA",
+   "pools": 1,
+   "pools_ada": 118595
   },
   {
    "name": "iFly",
@@ -1701,7 +1845,9 @@
    "drep_id": "drep1y2tf4f0ls404aenhhjqmyh4zvklzy8azqmpxseqea2sd4esfc2d5z",
    "ada": 53754,
    "cls": "spo",
-   "why": "names pool FRUIT (Far Reaching Use of Information Technology) in its own DRep metadata"
+   "why": "names pool FRUIT (Far Reaching Use of Information Technology) in its own DRep metadata. Its pool has 15,664 ADA",
+   "pools": 1,
+   "pools_ada": 15664
   },
   {
    "name": "",
@@ -1771,7 +1917,9 @@
    "drep_id": "drep1y296z8tm7y7elwsmsewn4q2tdr5gu0fqztq97yttlpv7zycvsl554",
    "ada": 14322,
    "cls": "spo",
-   "why": "has the same name as pool 8BALL (8BALL)"
+   "why": "has the same name as pool 8BALL (8BALL). Its pool has 1.4 million ADA",
+   "pools": 1,
+   "pools_ada": 1441574
   },
   {
    "name": "",
@@ -1890,7 +2038,9 @@
    "drep_id": "drep1yf5swlr6jwjpx9m8cunjr5v8khfcd642wrvmgq3dedmle8g8lrfgp",
    "ada": 5,
    "cls": "spo",
-   "why": "has the same name as pool MERIA (Meria)"
+   "why": "has the same name as pool MERIA (Meria). Its pool has 2.1 million ADA",
+   "pools": 1,
+   "pools_ada": 2112085
   },
   {
    "name": "Musa Ridwan Itopa",
@@ -1917,7 +2067,7 @@
   "abstain_net_ada": -49417447
  },
  "lookup": {
-  "credentials": 1883307,
+  "credentials": 1883308,
   "shards": 256
  }
 }

@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T17:14:44Z",
+"generated": "2026-11-16T17:25:45Z",
 "epoch": 668,
 "k": 1000,
 "saturation_ada": 38999661,
@@ -11,7 +11,7 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2665,
-"alive_named": 1047,
+"alive_named": 1048,
 "pledge_not_met": 499,
 "above_saturation": 127,
 "excluded_exchanges": 48,
@@ -4493,8 +4493,8 @@
 "name": "Tre Viet - Bamboo Pool",
 "pool_id": "pool1y89sy2e927hvvt66wnukx5xnnrarzxrt55eypttaw3n06u0uam4",
 "stake_ada": 559563,
-"blocks_2026": 50,
-"blocks_last_10_epochs": 4,
+"blocks_2026": 51,
+"blocks_last_10_epochs": 5,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6220,8 +6220,8 @@
 "name": "[DEAD]POOL",
 "pool_id": "pool1t8gjk7jzvujfv9s8q992e6s7tp8na0q3j62g7s4ppzfmccus4jk",
 "stake_ada": 2019611,
-"blocks_2026": 155,
-"blocks_last_10_epochs": 13,
+"blocks_2026": 156,
+"blocks_last_10_epochs": 14,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6409,6 +6409,17 @@
 "stake_ada": 2393630,
 "blocks_2026": 153,
 "blocks_last_10_epochs": 19,
+"retiring_epoch": null,
+"document": "valid",
+"roles": []
+},
+{
+"ticker": "AZDFM",
+"name": "AZDFM stake pool",
+"pool_id": "pool1hnnfvsq3xlln6vz7d2xmk6kqekd5z4ctmfpdad8g8kr0yk8kdfd",
+"stake_ada": 2399073,
+"blocks_2026": 271,
+"blocks_last_10_epochs": 23,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6605,8 +6616,8 @@
 "name": "AdaNet.io",
 "pool_id": "pool1xwqye6mlftwjg706acz5fjqz7gmf4qdye99zsjl03a4ru68ghee",
 "stake_ada": 2991849,
-"blocks_2026": 181,
-"blocks_last_10_epochs": 24,
+"blocks_2026": 182,
+"blocks_last_10_epochs": 25,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8541,8 +8552,8 @@
 "name": "dataDyne.earth",
 "pool_id": "pool13hxlxd6qa68fmfhrvvmasa0mjg30tj9p5v2lmgmgsmrp2rgzkfp",
 "stake_ada": 29811483,
-"blocks_2026": 4062,
-"blocks_last_10_epochs": 495,
+"blocks_2026": 4063,
+"blocks_last_10_epochs": 496,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
