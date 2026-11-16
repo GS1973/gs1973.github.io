@@ -209,37 +209,66 @@
                 <button id="dashboardClose" class="modal-close" aria-label="Close">&times;</button>
             </div>
             <div class="pools-body dash-body">
-                <div class="dash-cards" id="dashCards"></div>
-                <div class="dash-row dash-row-chart">
-                    <section class="dash-panel">
-                        <div class="dash-paneltitle">
-                            <h3>Every active DRep, by voting power</h3>
-                            <div class="dash-legend">
+                <div class="dash-tabs" id="dashTabs" role="tablist" aria-label="Views of the dashboard">
+                    <button id="dashTab-dreps" class="dash-tab dash-tab-on" role="tab" aria-selected="true" aria-controls="dashView-dreps" type="button">DReps</button>
+                    <button id="dashTab-pools" class="dash-tab" role="tab" aria-selected="false" aria-controls="dashView-pools" type="button" tabindex="-1">Stake pools</button>
+                </div>
+
+                <div id="dashView-dreps" class="dash-view" role="tabpanel" aria-labelledby="dashTab-dreps">
+                    <div class="dash-cards" id="dashCards-dreps"></div>
+                    <div class="dash-row dash-row-chart">
+                        <section class="dash-panel">
+                            <div class="dash-paneltitle">
+                                <h3>Every active DRep, by voting power</h3>
+                                <div class="dash-legend">
                                 <span class="dash-key"><span class="dash-swatch dash-sw-spo"></span>Also runs a stake pool</span>
                                 <span class="dash-key"><span class="dash-swatch dash-sw-cc"></span>Also on the Constitutional Committee</span>
                                 <span class="dash-key"><span class="dash-swatch dash-sw-drep"></span>DRep only</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="dash-chart" id="dashChart"></div>
-                        <p class="dash-hint">One bar for each DRep, the largest on the left. Point at or tap a bar for its name and the reason of its colour. Click, or tap again, to open it on Cardanoscan.</p>
-                    </section>
-                    <section class="dash-panel" id="dashLargest"></section>
-                </div>
-                <div class="dash-row dash-row-bars">
-                    <section class="dash-panel">
-                        <h3>Where the stake sits</h3>
-                        <div id="dashStake"></div>
-                    </section>
+                            <div class="dash-chart" id="dashChart-dreps"></div>
+                            <p class="dash-hint">One bar for each DRep, the largest on the left. Point at or tap a bar for its name and the reason of its colour. Click, or tap again, to open it on Cardanoscan.</p>
+                        </section>
+                        <section class="dash-panel" id="dashLargest-dreps"></section>
+                    </div>
                     <section class="dash-panel">
                         <h3>What all ADA does with its vote</h3>
                         <div id="dashVote"></div>
                     </section>
+                    <section class="dash-panel">
+                        <h3>Where delegation moved in the last 10 epochs</h3>
+                        <div id="dashFlows-dreps"></div>
+                    </section>
                 </div>
-                <section class="dash-panel">
-                    <h3>Where delegation moved in the last 10 epochs</h3>
-                    <div id="dashFlows"></div>
-                </section>
-                <section class="dash-panel">
+
+                <div id="dashView-pools" class="dash-view" role="tabpanel" aria-labelledby="dashTab-pools" hidden>
+                    <div class="dash-cards" id="dashCards-pools"></div>
+                    <div class="dash-row dash-row-chart">
+                        <section class="dash-panel">
+                            <div class="dash-paneltitle">
+                                <h3>The 200 largest pool owners, by stake</h3>
+                                <div class="dash-legend">
+                                <span class="dash-key"><span class="dash-swatch dash-sw-spo"></span>Also has a DRep</span>
+                                <span class="dash-key"><span class="dash-swatch dash-sw-multi"></span>Several pools</span>
+                                <span class="dash-key"><span class="dash-swatch dash-sw-drep"></span>One pool</span>
+                                </div>
+                            </div>
+                            <div class="dash-chart" id="dashChart-pools"></div>
+                            <p class="dash-hint" id="dashRest"></p>
+                        </section>
+                        <section class="dash-panel" id="dashLargest-pools"></section>
+                    </div>
+                    <section class="dash-panel">
+                        <h3>Stake by size of the pool</h3>
+                        <div id="dashStake"></div>
+                    </section>
+                    <section class="dash-panel">
+                        <h3>Where delegation moved in the last 10 epochs</h3>
+                        <div id="dashFlows-pools"></div>
+                    </section>
+                </div>
+
+                <section class="dash-panel dash-lookupbox">
                     <div class="dash-lookup">
                         <h3>Where does your ADA sit?</h3>
                         <button id="dashConnect" class="dash-btn" type="button">Connect wallet</button>
@@ -262,7 +291,8 @@
                     <li>Every other DRep is shown as DRep only. That means no other role was found in what it declares, not that there is none. A DRep that calls itself a stake pool operator but is not linked to a pool stays DRep only, and the reason says so.</li>
                     <li><em>Where it moved</em> compares the stake of every stake address ten epochs ago with the stake now, and counts what went to another pool or another DRep, in and out.</li>
                     <li>The lookup shows the latest delegation on the chain. A change counts from the snapshot of the next epoch.</li>
-                </ul>
+                <li>In the stake pools view an owner is orange when our Decentralization Monitor links one of its pools to a DRep, dark grey when it has several pools and light grey when it has one. The chart shows the 200 largest owners. The line under it says what the others hold together.</li>
+                    </ul>
                     <p>The dashboard is made by Smit Blockchain Operations, operator of pool BKIND and a DRep, which is in these figures on the same terms as everyone else.</p>
                 </details>
             </div>
