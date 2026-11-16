@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T18:54:28Z",
+"generated": "2026-11-16T19:27:37Z",
 "epoch": 668,
 "k": 1000,
 "saturation_ada": 38999661,
@@ -11,7 +11,7 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2665,
-"alive_named": 1053,
+"alive_named": 1052,
 "pledge_not_met": 499,
 "above_saturation": 130,
 "excluded_exchanges": 48,
@@ -6426,17 +6426,6 @@
 "roles": []
 },
 {
-"ticker": "AZDFM",
-"name": "AZDFM stake pool",
-"pool_id": "pool1hnnfvsq3xlln6vz7d2xmk6kqekd5z4ctmfpdad8g8kr0yk8kdfd",
-"stake_ada": 2399073,
-"blocks_2026": 271,
-"blocks_last_10_epochs": 23,
-"retiring_epoch": null,
-"document": "valid",
-"roles": []
-},
-{
 "ticker": "MANDA",
 "name": "Cardano Yoda Pool",
 "pool_id": "pool1c3fjkls7d2aujud8y5xy5e0azu0ueatwn34u7jy3ql85ze3xya8",
@@ -6606,8 +6595,8 @@
 "name": "Late Game Crypto",
 "pool_id": "pool13xzckaj3srgldr67dksx874jxe3c9xnc245xyr44p7cdxh07hft",
 "stake_ada": 2930240,
-"blocks_2026": 261,
-"blocks_last_10_epochs": 38,
+"blocks_2026": 262,
+"blocks_last_10_epochs": 39,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6661,8 +6650,8 @@
 "name": "UKADA",
 "pool_id": "pool1wwzctexlp70mj00vv65mlhwhwresn58s9x7jl4tswvkg77eu7n7",
 "stake_ada": 3170488,
-"blocks_2026": 210,
-"blocks_last_10_epochs": 42,
+"blocks_2026": 211,
+"blocks_last_10_epochs": 43,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6760,8 +6749,8 @@
 "name": "EN/FR community from Québec⚜️ Canada🍁 HOSKY ISPO",
 "pool_id": "pool1c2utlagkpht4zj0jetsf245c258geuxnjqp9kf4f2z9rutx9dz4",
 "stake_ada": 3423443,
-"blocks_2026": 190,
-"blocks_last_10_epochs": 33,
+"blocks_2026": 191,
+"blocks_last_10_epochs": 34,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6991,8 +6980,8 @@
 "name": "Waldmops",
 "pool_id": "pool1k0xa8wlsntmjhtw2shj3tspqd4kjyquw9tuyx5s7zz5jsyw4y2p",
 "stake_ada": 3969593,
-"blocks_2026": 373,
-"blocks_last_10_epochs": 50,
+"blocks_2026": 374,
+"blocks_last_10_epochs": 51,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7486,8 +7475,8 @@
 "name": "CanadaStakes",
 "pool_id": "pool12eht6dqxpzqj87xuextrpufz2gxmt4reuesuw26r2utzw0kw906",
 "stake_ada": 6198599,
-"blocks_2026": 399,
-"blocks_last_10_epochs": 74,
+"blocks_2026": 400,
+"blocks_last_10_epochs": 75,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7838,8 +7827,8 @@
 "name": "Beaver Pool!",
 "pool_id": "pool1ty7lh3nvtwxlcpqg2x30fkr3j9ys6nprztr9m4zp3aajxyjk2vz",
 "stake_ada": 9794194,
-"blocks_2026": 632,
-"blocks_last_10_epochs": 73,
+"blocks_2026": 633,
+"blocks_last_10_epochs": 74,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8146,8 +8135,8 @@
 "name": "Apex Stake Pool",
 "pool_id": "pool12wpfng6cu7dz38yduaul3ngfm44xhv5xmech68m5fwe4wu77udd",
 "stake_ada": 14889049,
-"blocks_2026": 357,
-"blocks_last_10_epochs": 123,
+"blocks_2026": 358,
+"blocks_last_10_epochs": 124,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8179,8 +8168,8 @@
 "name": "Cero Stake Pool",
 "pool_id": "pool1lskcfz80qg2kr2p6776kl9emjn8ulkqsqse7um7skz4y2lwa0cu",
 "stake_ada": 15854217,
-"blocks_2026": 1204,
-"blocks_last_10_epochs": 146,
+"blocks_2026": 1205,
+"blocks_last_10_epochs": 147,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8245,8 +8234,8 @@
 "name": "BURN Pool",
 "pool_id": "pool1r0sxz0hygfc0266lhdclve6j3cwcwlth6dya6uey65yxjnwm7qc",
 "stake_ada": 18158935,
-"blocks_2026": 934,
-"blocks_last_10_epochs": 194,
+"blocks_2026": 935,
+"blocks_last_10_epochs": 195,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8443,8 +8432,8 @@
 "name": "Cosmic Asset Stake Pool",
 "pool_id": "pool1c3ecg6h4m73a2mftmdm9mz3gxklxmnzuwzl9e38lzd4y26qcm8a",
 "stake_ada": 25816027,
-"blocks_2026": 1739,
-"blocks_last_10_epochs": 248,
+"blocks_2026": 1740,
+"blocks_last_10_epochs": 249,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8454,8 +8443,8 @@
 "name": "The independent",
 "pool_id": "pool1gqgyta9sku3crjzfl9kj7kxsgfkt98y98yeu09kx22zscrezuj7",
 "stake_ada": 26374436,
-"blocks_2026": 1817,
-"blocks_last_10_epochs": 241,
+"blocks_2026": 1818,
+"blocks_last_10_epochs": 242,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8476,8 +8465,8 @@
 "name": "SAKE🍶",
 "pool_id": "pool1xlfty06hg6q23qvcaxwv3p9ke7ff9n34qpr8tpxt2zflyq20ceh",
 "stake_ada": 26516711,
-"blocks_2026": 2149,
-"blocks_last_10_epochs": 265,
+"blocks_2026": 2150,
+"blocks_last_10_epochs": 266,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8652,8 +8641,8 @@
 "name": "BitcoinSuisse01",
 "pool_id": "pool1m06dl8dfcy6d0475fanf0mtnnp2tzhw8rarums042q3jux23q0j",
 "stake_ada": 35886028,
-"blocks_2026": 1882,
-"blocks_last_10_epochs": 332,
+"blocks_2026": 1883,
+"blocks_last_10_epochs": 333,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
