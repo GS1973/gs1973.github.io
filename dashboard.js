@@ -17,7 +17,13 @@
 
     const SVG = 'http://www.w3.org/2000/svg';
     const WALLETS = { eternl: 'Eternl', gerowallet: 'Gero', lace: 'Lace', typhoncip30: 'Typhon', vespr: 'VESPR' };   // as delegate.js
-    const CLS = { spo: 'also runs a stake pool', cc: 'also on the Constitutional Committee', drep: 'DRep only' };
+    const CLS = { spo: 'Also runs a stake pool', cc: 'Also on the Constitutional Committee', drep: 'DRep only' };
+    const cap = t => t ? t.charAt(0).toUpperCase() + t.slice(1) : t;
+    // The reason a DRep has its colour, as one or more sentences.
+    function reason(x) {
+        if (x.cls === 'drep') return 'DRep only: No other role found in what it declares.' + (x.why ? ' It ' + x.why + '.' : '');
+        return CLS[x.cls] + ': ' + cap(x.why) + '.';
+    }
     let lastFocused = null;
     let data = null;
     let index = null;
@@ -63,8 +69,9 @@
         return fmt(Math.round(n));
     }
     const pct = (a, b) => b ? (100 * a / b) : 0;
-    const BAND = ['above saturation at k = 1000', '10M ADA to saturation', '1 to 10M ADA', 'under 1M ADA'];   // short labels; the full ones in the tooltip
-    const VOTE = ['active DReps', 'No Confidence', 'inactive DReps', 'Always Abstain', 'no DRep'];
+    const BAND = ['Above saturation at k = 1000', '10M ADA to saturation', '1 to 10M ADA', 'Under 1M ADA'];   // short labels; the full ones in the tooltip
+    const VOTE = ['Active DReps', 'No Confidence', 'Inactive DReps', 'Always Abstain', 'No DRep'];
+    const low = t => t.charAt(0).toLowerCase() + t.slice(1);
     const pctText = x => (x < 1 && x > 0) ? 'under 1%' : x.toFixed(x < 10 ? 1 : 0) + '%';
 
     // ---------- loading ----------
@@ -81,8 +88,8 @@
 
     function render() {
         const d = data;
-        $('dashMeta').textContent = 'Epoch ' + d.epoch + ', measured on ' + d.generated.slice(0, 10) +
-            ' from the Cardano chain. The figures are the same as in the DRep window and the Decentralization Monitor.';
+        $('dashMeta').textContent = 'Epoch ' + d.epoch + ', measured on ' + d.generated.slice(0, 10) + ' from the Cardano chain.';
+        $('dashMeta').title = 'The figures are the same as in the DRep window and the Decentralization Monitor.';
         cards(d);
         stakeBar(d);
         voteBar(d);
@@ -101,7 +108,7 @@
 
     function wasText(now, before, epoch) {
         if (before === null || before === undefined) return '';
-        return before === now ? 'the same a month ago' : before + ' a month ago (epoch ' + epoch + ')';
+        return before === now ? 'The same a month ago' : before + ' a month ago (epoch ' + epoch + ')';
     }
 
     function cards(d) {
@@ -122,7 +129,7 @@
             const seg = el('div', 'dash-seg ' + colors[i]);
             const item = el('span', 'dash-key');
             seg.style.flexGrow = String(Math.max(p.ada, 0));
-            seg.title = p.label + ': ' + ada(p.ada) + ' ADA (' + pctText(share) + ')';
+            seg.title = cap(p.label) + ': ' + ada(p.ada) + ' ADA (' + pctText(share) + ')';
             item.title = seg.title;
             wrap.append(seg);
             item.append(el('span', 'dash-swatch ' + colors[i]), document.createTextNode((short ? short[i] : p.label) + ' ' + pctText(share)));
@@ -142,7 +149,7 @@
 
     // ---------- every active DRep ----------
     function chart(d) {
-        const W = 860, H = 225, L = 50, R = 8, T = 8, B = 12;
+        const W = 860, H = 215, L = 50, R = 8, T = 8, B = 12;
         const n = d.dreps.length;
         const vmax = Math.max(...d.dreps.map(x => x.ada));
         const step = vmax > 400e6 ? 250e6 : 100e6;
@@ -157,11 +164,12 @@
             s.append(t);
         }
         const bw = (W - L - R) / n;
-        d.dreps.forEach((x, i) => {
+        const bars = d.dreps.map((x, i) => {
             const h = Math.max((H - T - B) * x.ada / top, 0.8);
             const r = svg('rect', { x: L + i * bw, y: y(0) - h, width: Math.max(bw - 0.6, 0.8), height: h,
-                class: 'dash-barc dash-c-' + x.cls, tabindex: i < 40 ? 0 : -1, 'data-i': i });
+                class: 'dash-c-' + x.cls, 'data-b': i });
             s.append(r);
+            return r;
         });
         [[d.block, 'can block'], [d.carry, 'carry']].forEach(([k, what], j) => {
             const lx = L + k * bw;
@@ -170,30 +178,43 @@
             t.textContent = k + ' DReps ' + what;
             s.append(t);
         });
+        // An invisible area over the full height of each column, on top of the
+        // bars and the marks: a small DRep is as easy to point at as a large one.
+        const hits = d.dreps.map((x, i) => {
+            const r = svg('rect', { x: L + i * bw, y: T, width: bw, height: y(0) - T,
+                class: 'dash-hit', tabindex: i < 40 ? 0 : -1, 'data-i': i });
+            s.append(r);
+            return r;
+        });
         const box = $('dashChart');
         const tip = el('div', 'dash-tip');
         tip.hidden = true;
         box.replaceChildren(s, tip);
 
+        const total = d.dreps.reduce((a, b) => a + b.ada, 0);
         function show(target) {
             const i = Number(target.getAttribute('data-i'));
             const x = d.dreps[i];
             tip.replaceChildren(el('strong', '', (i + 1) + '. ' + (x.name || x.drep_id.slice(0, 14) + '…')),
-                el('div', '', ada(x.ada) + ' ADA, ' + pctText(pct(x.ada, d.dreps.reduce((a, b) => a + b.ada, 0))) + ' of the active vote'),
-                el('div', 'dash-tipwhy', x.cls === 'drep'
-                    ? 'DRep only: no other role found in what it declares' + (x.why ? '. It ' + x.why : '')
-                    : CLS[x.cls] + ': ' + x.why));
+                el('div', '', ada(x.ada) + ' ADA, ' + pctText(pct(x.ada, total)) + ' of the active vote'),
+                el('div', 'dash-tipwhy', reason(x)));
             tip.hidden = false;
             const br = box.getBoundingClientRect(), rr = target.getBoundingClientRect();
-            const left = Math.min(Math.max(rr.left - br.left + 10, 0), br.width - 280) + box.scrollLeft;   // the box scrolls on a phone
-            tip.style.left = left + 'px';
-            tip.style.top = Math.max(rr.top - br.top - 70, 0) + 'px';
+            const right = rr.left - br.left + 14 + 280 > br.width;              // near the right edge: show it on the left
+            const left = (right ? rr.left - br.left - 284 : rr.left - br.left + 14) + box.scrollLeft;   // the box scrolls on a phone
+            tip.style.left = Math.max(left, 0) + 'px';
+            tip.style.top = '4px';
+            off();
+            bars[i].classList.add('dash-on');
+            hits[i].classList.add('dash-col');
+        }
+        function off() {
             box.querySelectorAll('.dash-on').forEach(e => e.classList.remove('dash-on'));
-            target.classList.add('dash-on');
+            box.querySelectorAll('.dash-col').forEach(e => e.classList.remove('dash-col'));
         }
         s.addEventListener('mouseover', e => { if (e.target.hasAttribute('data-i')) show(e.target); });
         s.addEventListener('focusin', e => { if (e.target.hasAttribute('data-i')) show(e.target); });
-        s.addEventListener('mouseleave', () => { tip.hidden = true; });
+        s.addEventListener('mouseleave', () => { tip.hidden = true; off(); });
         s.addEventListener('click', e => {
             if (!e.target.hasAttribute('data-i')) return;
             const x = d.dreps[Number(e.target.getAttribute('data-i'))];
@@ -207,7 +228,7 @@
         d.dreps.slice(0, d.carry).forEach(x => {
             const li = el('li', 'dash-c-' + x.cls + '-text', x.name || x.drep_id.slice(0, 14) + '…');
             if (x.pools >= 2) li.append(el('span', 'dash-pools', ' ' + x.pools + ' pools, ' + ada(x.pools_ada)));
-            li.title = x.cls === 'drep' ? 'DRep only' + (x.why ? '. It ' + x.why : '') : CLS[x.cls] + ': ' + x.why;
+            li.title = reason(x);
             list.append(li);
         });
         const h = el('h3', '', 'The ' + d.carry + ' largest');
@@ -225,7 +246,7 @@
         f.pool_bands_net_ada.forEach((n, i) => {
             const t = el('div', 'dash-flow');
             t.title = 'Pools ' + d.stake_bands[i].label;
-            t.append(el('div', 'dash-flowlabel', 'Pools ' + BAND[i]), el('div', 'dash-flownum ' + (n < 0 ? 'dash-neg' : 'dash-pos'), sign(n)));
+            t.append(el('div', 'dash-flowlabel', 'Pools ' + low(BAND[i])), el('div', 'dash-flownum ' + (n < 0 ? 'dash-neg' : 'dash-pos'), sign(n)));
             tiles.append(t);
         });
         const t = el('div', 'dash-flow');
@@ -234,7 +255,7 @@
         t.title = f.carry_group_share_of_moved === null ? '' : Math.round(100 * f.carry_group_share_of_moved) + '% of all vote delegation that moved went to them';
         tiles.append(t);
         box.replaceChildren(tiles, el('p', 'dash-hint', 'From epoch ' + f.from_epoch + ' to epoch ' + f.to_epoch +
-            ': stake that moved to another pool, and vote delegation that moved to another DRep, in minus out.'));
+            ': Stake that moved to another pool, and vote delegation that moved to another DRep, in minus out.'));
     }
 
     // ---------- the lookup ----------
@@ -283,7 +304,7 @@
 
     const LOOKUP_ERRORS = {
         format: 'This is not a Cardano address. Enter an address that starts with stake1 or addr1.',
-        checksum: 'This address has a typing error: its checksum does not match.',
+        checksum: 'This address has a typing error: Its checksum does not match.',
         network: 'This is not a mainnet address.',
         enterprise: 'This address has no stake part, so it cannot delegate. Enter the stake address or a receive address of the wallet.',
         pointer: 'This is a pointer address. Enter the stake address of the wallet.',
@@ -325,15 +346,15 @@
         if (!row) { box.replaceChildren(el('p', '', LOOKUP_ERRORS.notfound)); return; }
         const [, pc, dc] = row;
         const out = [];
-        if (pc === '-') out.push(line('Your stake:', 'not delegated to a pool.'));
+        if (pc === '-') out.push(line('Your stake:', 'Not delegated to a pool.'));
         else {
             const p = index.pool[pc];
             const nm = p ? (p[1] || p[0].slice(0, 14) + '…') + (p[2] ? ' (' + p[2] + ')' : '') : 'a pool';
-            const band = p && p[3] !== null ? 'Pools ' + index.bands[p[3]] + ' hold ' + pctText(pct(d.stake_bands[p[3]].ada, d.stake_total_ada)) + ' of all stake.' : 'This pool has no stake this epoch.';
-            out.push(line('Your stake:', 'pool ' + nm + '.', band));
+            const band = p && p[3] !== null ? 'Pools ' + low(index.bands[p[3]]) + ' hold ' + pctText(pct(d.stake_bands[p[3]].ada, d.stake_total_ada)) + ' of all stake.' : 'This pool has no stake this epoch.';
+            out.push(line('Your stake:', 'Pool ' + nm + '.', band));
         }
         let rank = null;
-        if (dc === '-') out.push(line('Your vote:', 'no DRep. Your ADA does not take part in the vote.'));
+        if (dc === '-') out.push(line('Your vote:', 'No DRep. Your ADA does not take part in the vote.'));
         else if (dc === 'A') out.push(line('Your vote:', 'Always Abstain. Your ADA never votes.'));
         else if (dc === 'N') out.push(line('Your vote:', 'Always No Confidence.'));
         else {
@@ -341,11 +362,11 @@
             const nm = x ? (x[1] || x[0].slice(0, 14) + '…') : 'a DRep';
             rank = x ? x[4] : null;
             let note = '';
-            if (x && x[2] !== 'active') note = 'This DRep is not active: the ADA delegated to it counts for nothing.';
-            else if (rank && rank <= d.block) note = 'Number ' + rank + ' of ' + d.dreps.length + ': one of the ' + d.block + ' DReps who together can block a treasury withdrawal.';
-            else if (rank && rank <= d.carry) note = 'Number ' + rank + ' of ' + d.dreps.length + ': one of the ' + d.carry + ' DReps who together carry a treasury withdrawal.';
+            if (x && x[2] !== 'active') note = 'This DRep is not active: The ADA delegated to it counts for nothing.';
+            else if (rank && rank <= d.block) note = 'Number ' + rank + ' of ' + d.dreps.length + ': One of the ' + d.block + ' DReps who together can block a treasury withdrawal.';
+            else if (rank && rank <= d.carry) note = 'Number ' + rank + ' of ' + d.dreps.length + ': One of the ' + d.carry + ' DReps who together carry a treasury withdrawal.';
             else if (rank) note = 'Number ' + rank + ' of ' + d.dreps.length + ' active DReps.';
-            if (x && x[3] && x[3] !== 'drep') note += ' This DRep ' + CLS[x[3]] + '.';
+            if (x && x[3] && x[3] !== 'drep') note += ' This DRep ' + low(CLS[x[3]]) + '.';
             out.push(line('Your vote:', 'DRep ' + nm + '.', note));
         }
         const go = el('div', 'dash-go');
@@ -358,7 +379,7 @@
         box.replaceChildren(...out, go);
         document.querySelectorAll('#dashChart .dash-mine').forEach(e => e.classList.remove('dash-mine'));
         if (rank) {
-            const r = document.querySelector('#dashChart rect[data-i="' + (rank - 1) + '"]');
+            const r = document.querySelector('#dashChart rect[data-b="' + (rank - 1) + '"]');
             if (r) r.classList.add('dash-mine');
         }
     }

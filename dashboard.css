@@ -32,8 +32,15 @@
 }
 
 .dash-meta {
-    font-size: 0.8rem;
-    margin: 0 0 8px 0;
+    flex: 1;
+    font-size: 0.78rem;
+    color: #777;
+    line-height: 1.3;
+    text-align: right;
+}
+
+.dash-lookup h3 {
+    margin: 0 6px 0 0;
 }
 
 .dash-hint {
@@ -177,12 +184,18 @@
     fill: #777;
 }
 
-.dash-barc {
+/* the invisible area over the full height of a column */
+.dash-hit {
+    fill: transparent;
     cursor: pointer;
 }
 
-.dash-barc:focus {
+.dash-hit:focus {
     outline: none;
+}
+
+.dash-hit.dash-col {
+    fill: rgba(255, 215, 0, 0.18);
 }
 
 .dash-c-spo { fill: #e8892b; }
@@ -229,9 +242,9 @@
 .dash-largest {
     margin: 4px 0 0 22px;
     padding: 0;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     font-weight: 700;
-    line-height: 1.24;
+    line-height: 1.17;
 }
 
 .dash-c-spo-text { color: #c46a12; }
@@ -411,4 +424,69 @@
 .dash-pools {
     font-weight: 400;
     color: #777;
+}
+
+/* a lower window still: smaller type, the same view */
+@media (min-width: 901px) and (max-height: 760px) {
+    .modal-dashboard .modal-title {
+        font-size: 1.15rem;
+    }
+
+    .dash-cards {
+        gap: 8px;
+    }
+
+    .dash-card {
+        padding: 3px 10px;
+    }
+
+    .dash-big {
+        font-size: 1.55rem;
+    }
+
+    .dash-line {
+        font-size: 0.8rem;
+    }
+
+    .dash-body h3 {
+        font-size: 0.86rem;
+        margin-bottom: 2px;
+    }
+
+    .dash-largest {
+        font-size: 0.68rem;
+        line-height: 1.08;
+    }
+
+    .dash-legend {
+        font-size: 0.68rem;
+    }
+
+    .dash-flow {
+        padding: 3px 8px;
+    }
+
+    .dash-flownum {
+        font-size: 0.92rem;
+    }
+
+    .dash-lookup input {
+        padding: 4px 8px;
+    }
+
+    .dash-btn {
+        padding: 3px 12px;
+    }
+
+    .dash-details {
+        padding-top: 3px;
+    }
+
+    .dash-panel {
+        margin-bottom: 3px;
+    }
+
+    .dash-cards {
+        margin-bottom: 4px;
+    }
 }

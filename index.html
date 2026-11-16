@@ -205,18 +205,18 @@
         <div class="modal modal-votes modal-pools modal-dashboard" role="dialog" aria-modal="true" aria-labelledby="dashboardTitle">
             <div class="votes-header">
                 <h2 id="dashboardTitle" class="modal-title">Who holds the power in Cardano?</h2>
+                <span class="dash-meta" id="dashMeta">Loading the dashboard…</span>
                 <button id="dashboardClose" class="modal-close" aria-label="Close">&times;</button>
             </div>
             <div class="pools-body dash-body">
-                <p class="pools-meta dash-meta" id="dashMeta">Loading the dashboard…</p>
                 <div class="dash-cards" id="dashCards"></div>
                 <div class="dash-row dash-row-chart">
                     <section class="dash-panel">
                         <div class="dash-paneltitle">
                             <h3>Every active DRep, by voting power</h3>
                             <div class="dash-legend">
-                                <span class="dash-key"><span class="dash-swatch dash-sw-spo"></span>also runs a stake pool</span>
-                                <span class="dash-key"><span class="dash-swatch dash-sw-cc"></span>also on the Constitutional Committee</span>
+                                <span class="dash-key"><span class="dash-swatch dash-sw-spo"></span>Also runs a stake pool</span>
+                                <span class="dash-key"><span class="dash-swatch dash-sw-cc"></span>Also on the Constitutional Committee</span>
                                 <span class="dash-key"><span class="dash-swatch dash-sw-drep"></span>DRep only</span>
                             </div>
                         </div>
@@ -240,8 +240,8 @@
                     <div id="dashFlows"></div>
                 </section>
                 <section class="dash-panel">
-                    <h3>Where does your ADA sit?</h3>
                     <div class="dash-lookup">
+                        <h3>Where does your ADA sit?</h3>
                         <button id="dashConnect" class="dash-btn" type="button">Connect wallet</button>
                         <span>or</span>
                         <input id="dashAddr" type="text" placeholder="stake1… or addr1q…" aria-label="Stake address or receive address" autocomplete="off" spellcheck="false">
@@ -256,9 +256,9 @@
                     <p>Cardano is only as decentralized as the power over it is spread. This page shows in one view how the stake and the vote are spread today, measured from the chain, and where your own ADA sits.</p>
                     <ul class="pools-rules">
                     <li>Every day, from the Cardano chain, by the same job as the pool list and the DRep list. The voting power, the DReps who together can block or carry, and the saturation point are the same figures as there.</li>
-                    <li><em>Owners</em> are grouped as in our Decentralization Monitor: pools that share an owner key or a reward account, or belong to the same exchange or founding entity, are of one owner. The figure counts the fewest owners who together hold more than a third of all stake.</li>
+                    <li><em>Owners</em> are grouped as in our Decentralization Monitor: Pools that share an owner key or a reward account, or belong to the same exchange or founding entity, are of one owner. The figure counts the fewest owners who together hold more than a third of all stake.</li>
                     <li>A DRep <em>can block</em> together with others when their voting power, with Always No Confidence on the same side, is more than a third of the ADA that votes. They <em>carry</em> a treasury withdrawal when they reach the threshold of 67% on their own.</li>
-                    <li>A DRep is marked as also running a stake pool only when this follows from what the DRep or the pool declares itself: a Role reference in the forms of CIP-0208, the ticker of the pool in the DRep's own name, the pool named as a ticker or pool ID in the DRep's own metadata, the same name as the pool, or, for the founding entities, both recognized by ID in the lists on this site. A seat on the Constitutional Committee follows from Intersect's own anchor on the chain, or from the DRep's own statement in its metadata that it is a member of a body with a seat on the committee. When both apply, the colour is that of the committee and both reasons are shown. Point at a bar to see the reason.</li>
+                    <li>A DRep is marked as also running a stake pool only when this follows from what the DRep or the pool declares itself: A Role reference in the forms of CIP-0208, the ticker of the pool in the DRep's own name, the pool named as a ticker or pool ID in the DRep's own metadata, the same name as the pool, or, for the founding entities, both recognized by ID in the lists on this site. A seat on the Constitutional Committee follows from Intersect's own anchor on the chain, or from the DRep's own statement in its metadata that it is a member of a body with a seat on the committee. When both apply, the colour is that of the committee and both reasons are shown. Point at a bar to see the reason.</li>
                     <li>Every other DRep is shown as DRep only. That means no other role was found in what it declares, not that there is none. A DRep that calls itself a stake pool operator without naming its pool stays DRep only, and the reason says so.</li>
                     <li><em>Where it moved</em> compares the stake of every stake address ten epochs ago with the stake now, and counts what went to another pool or another DRep, in and out.</li>
                     <li>The lookup shows the latest delegation on the chain. A change counts from the snapshot of the next epoch.</li>
