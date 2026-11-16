@@ -207,48 +207,64 @@
                 <h2 id="dashboardTitle" class="modal-title">Who holds the power in Cardano?</h2>
                 <button id="dashboardClose" class="modal-close" aria-label="Close">&times;</button>
             </div>
-            <div class="pools-body">
-                <p>Cardano is only as decentralized as the power over it is spread. This page shows in one view how the stake and the vote are spread today, measured from the chain, and where your own ADA sits.</p>
-                <p class="pools-meta" id="dashMeta">Loading the dashboard…</p>
+            <div class="pools-body dash-body">
+                <p class="pools-meta dash-meta" id="dashMeta">Loading the dashboard…</p>
                 <div class="dash-cards" id="dashCards"></div>
-                <h3>Where the stake sits</h3>
-                <p class="dash-small">All stake, by the size of the pool it is in. The saturation point at <code>k</code> = 1000 is the same as in the pool list.</p>
-                <div id="dashStake"></div>
-                <h3>What all ADA does with its vote</h3>
-                <p class="dash-small">All ADA in circulation: delegated to an active DRep, to Always No Confidence, to a DRep that is no longer active, to Always Abstain, or to no DRep at all.</p>
-                <div id="dashVote"></div>
-                <h3>Every active DRep</h3>
-                <div class="dash-legend">
-                    <span class="dash-key"><span class="dash-swatch dash-sw-spo"></span>also runs a stake pool</span>
-                    <span class="dash-key"><span class="dash-swatch dash-sw-cc"></span>also on the Constitutional Committee</span>
-                    <span class="dash-key"><span class="dash-swatch dash-sw-drep"></span>DRep only</span>
+                <div class="dash-row dash-row-chart">
+                    <section class="dash-panel">
+                        <div class="dash-paneltitle">
+                            <h3>Every active DRep, by voting power</h3>
+                            <div class="dash-legend">
+                                <span class="dash-key"><span class="dash-swatch dash-sw-spo"></span>also runs a stake pool</span>
+                                <span class="dash-key"><span class="dash-swatch dash-sw-cc"></span>also on the Constitutional Committee</span>
+                                <span class="dash-key"><span class="dash-swatch dash-sw-drep"></span>DRep only</span>
+                            </div>
+                        </div>
+                        <div class="dash-chart" id="dashChart"></div>
+                        <p class="dash-hint">One bar for each DRep, the largest on the left. Point at a bar for its name and the reason of its colour. Click to open it on Cardanoscan.</p>
+                    </section>
+                    <section class="dash-panel" id="dashLargest"></section>
                 </div>
-                <div class="dash-chart" id="dashChart"></div>
-                <p class="dash-small">One bar for each active DRep, the largest on the left. Point at a bar to see its name, its voting power and why it is marked. Click a bar to open the DRep on Cardanoscan.</p>
-                <div id="dashLargest"></div>
-                <h3>Where it moved in the last 10 epochs</h3>
-                <div id="dashFlows"></div>
-                <h3>Where does your ADA sit?</h3>
-                <p>Connect your wallet or enter an address. The page reads only the stake address of the wallet: nothing is signed and nothing is sent. Your address stays in your browser. The page fetches one of 256 files from this site, which says nothing about who asks.</p>
-                <div class="dash-lookup">
-                    <button id="dashConnect" class="dash-btn" type="button">Connect wallet</button>
-                    <span>or</span>
-                    <input id="dashAddr" type="text" placeholder="stake1… or addr1q…" aria-label="Stake address or receive address" autocomplete="off" spellcheck="false">
-                    <button id="dashLook" class="dash-btn" type="button">Look up</button>
+                <div class="dash-row dash-row-bars">
+                    <section class="dash-panel">
+                        <h3>Where the stake sits</h3>
+                        <div id="dashStake"></div>
+                    </section>
+                    <section class="dash-panel">
+                        <h3>What all ADA does with its vote</h3>
+                        <div id="dashVote"></div>
+                    </section>
                 </div>
-                <div id="dashWallets" class="dash-wallets" hidden></div>
-                <div id="dashResult" class="dash-result" hidden></div>
-                <h3>How it is made</h3>
-                <ul class="pools-rules">
+                <section class="dash-panel">
+                    <h3>Where it moved in the last 10 epochs</h3>
+                    <div id="dashFlows"></div>
+                </section>
+                <section class="dash-panel">
+                    <h3>Where does your ADA sit?</h3>
+                    <div class="dash-lookup">
+                        <button id="dashConnect" class="dash-btn" type="button">Connect wallet</button>
+                        <span>or</span>
+                        <input id="dashAddr" type="text" placeholder="stake1… or addr1q…" aria-label="Stake address or receive address" autocomplete="off" spellcheck="false">
+                        <button id="dashLook" class="dash-btn" type="button">Look up</button>
+                    </div>
+                    <p class="dash-hint">Only the stake address of the wallet is read. Nothing is signed and your address never leaves your browser.</p>
+                    <div id="dashWallets" class="dash-wallets" hidden></div>
+                    <div id="dashResult" class="dash-result" hidden></div>
+                </section>
+                <details class="dash-details">
+                    <summary>About this dashboard and how it is made</summary>
+                    <p>Cardano is only as decentralized as the power over it is spread. This page shows in one view how the stake and the vote are spread today, measured from the chain, and where your own ADA sits.</p>
+                    <ul class="pools-rules">
                     <li>Every day, from the Cardano chain, by the same job as the pool list and the DRep list. The voting power, the DReps who together can block or carry, and the saturation point are the same figures as there.</li>
                     <li><em>Owners</em> are grouped as in our Decentralization Monitor: pools that share an owner key or a reward account, or belong to the same exchange or founding entity, are of one owner. The figure counts the fewest owners who together hold more than a third of all stake.</li>
                     <li>A DRep <em>can block</em> together with others when their voting power, with Always No Confidence on the same side, is more than a third of the ADA that votes. They <em>carry</em> a treasury withdrawal when they reach the threshold of 67% on their own.</li>
-                    <li>A DRep is marked as also running a stake pool only when this follows from what the DRep or the pool declares itself: a Role reference in the forms of CIP-0208, the ticker of the pool in the DRep's own name, the pool named as a ticker or pool ID in the DRep's own metadata, the same name as the pool, or, for the founding entities, both recognized by ID in the lists on this site. A seat on the Constitutional Committee follows from Intersect's own anchor on the chain. Point at a bar to see the reason.</li>
-                    <li>Every other DRep is shown as DRep only. That means no other role was found in what it declares, not that there is none.</li>
+                    <li>A DRep is marked as also running a stake pool only when this follows from what the DRep or the pool declares itself: a Role reference in the forms of CIP-0208, the ticker of the pool in the DRep's own name, the pool named as a ticker or pool ID in the DRep's own metadata, the same name as the pool, or, for the founding entities, both recognized by ID in the lists on this site. A seat on the Constitutional Committee follows from Intersect's own anchor on the chain, or from the DRep's own statement in its metadata that it is a member of a body with a seat on the committee. When both apply, the colour is that of the committee and both reasons are shown. Point at a bar to see the reason.</li>
+                    <li>Every other DRep is shown as DRep only. That means no other role was found in what it declares, not that there is none. A DRep that calls itself a stake pool operator without naming its pool stays DRep only, and the reason says so.</li>
                     <li><em>Where it moved</em> compares the stake of every stake address ten epochs ago with the stake now, and counts what went to another pool or another DRep, in and out.</li>
                     <li>The lookup shows the latest delegation on the chain. A change counts from the snapshot of the next epoch.</li>
                 </ul>
-                <p>The dashboard is made by Smit Blockchain Operations, operator of pool BKIND and a DRep, which is in these figures on the same terms as everyone else.</p>
+                    <p>The dashboard is made by Smit Blockchain Operations, operator of pool BKIND and a DRep, which is in these figures on the same terms as everyone else.</p>
+                </details>
             </div>
         </div>
     </div>

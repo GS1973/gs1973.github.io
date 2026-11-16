@@ -63,6 +63,8 @@
         return fmt(Math.round(n));
     }
     const pct = (a, b) => b ? (100 * a / b) : 0;
+    const BAND = ['above saturation at k = 1000', '10M ADA to saturation', '1 to 10M ADA', 'under 1M ADA'];   // short labels; the full ones in the tooltip
+    const VOTE = ['active DReps', 'No Confidence', 'inactive DReps', 'Always Abstain', 'no DRep'];
     const pctText = x => (x < 1 && x > 0) ? 'under 1%' : x.toFixed(x < 10 ? 1 : 0) + '%';
 
     // ---------- loading ----------
@@ -112,17 +114,18 @@
     }
 
     // ---------- the two bars ----------
-    function bar(target, parts, total, colors) {
+    function bar(target, parts, total, colors, short) {
         const wrap = el('div', 'dash-bar');
         const legend = el('div', 'dash-legend');
         parts.forEach((p, i) => {
             const share = pct(p.ada, total);
             const seg = el('div', 'dash-seg ' + colors[i]);
+            const item = el('span', 'dash-key');
             seg.style.flexGrow = String(Math.max(p.ada, 0));
             seg.title = p.label + ': ' + ada(p.ada) + ' ADA (' + pctText(share) + ')';
+            item.title = seg.title;
             wrap.append(seg);
-            const item = el('span', 'dash-key');
-            item.append(el('span', 'dash-swatch ' + colors[i]), document.createTextNode(p.label + ' ' + pctText(share)));
+            item.append(el('span', 'dash-swatch ' + colors[i]), document.createTextNode((short ? short[i] : p.label) + ' ' + pctText(share)));
             legend.append(item);
         });
         target.replaceChildren(wrap, legend);
@@ -130,16 +133,16 @@
 
     function stakeBar(d) {
         const parts = d.stake_bands.map(b => ({ label: b.label + ' (' + fmt(b.pools) + ' pools)', ada: b.ada }));
-        bar($('dashStake'), parts, d.stake_total_ada, ['dash-g4', 'dash-g3', 'dash-g2', 'dash-g1']);
+        bar($('dashStake'), parts, d.stake_total_ada, ['dash-g4', 'dash-g3', 'dash-g2', 'dash-g1'], BAND);
     }
 
     function voteBar(d) {
-        bar($('dashVote'), d.vote_bar, d.circulating_ada, ['dash-v-active', 'dash-v-nc', 'dash-v-inactive', 'dash-v-abstain', 'dash-v-none']);
+        bar($('dashVote'), d.vote_bar, d.circulating_ada, ['dash-v-active', 'dash-v-nc', 'dash-v-inactive', 'dash-v-abstain', 'dash-v-none'], VOTE);
     }
 
     // ---------- every active DRep ----------
     function chart(d) {
-        const W = 860, H = 300, L = 54, R = 10, T = 12, B = 26;
+        const W = 860, H = 225, L = 50, R = 8, T = 8, B = 12;
         const n = d.dreps.length;
         const vmax = Math.max(...d.dreps.map(x => x.ada));
         const step = vmax > 400e6 ? 250e6 : 100e6;
@@ -177,7 +180,9 @@
             const x = d.dreps[i];
             tip.replaceChildren(el('strong', '', (i + 1) + '. ' + (x.name || x.drep_id.slice(0, 14) + '…')),
                 el('div', '', ada(x.ada) + ' ADA, ' + pctText(pct(x.ada, d.dreps.reduce((a, b) => a + b.ada, 0))) + ' of the active vote'),
-                el('div', 'dash-tipwhy', x.cls === 'drep' ? 'DRep only: no other role found in what it declares' : CLS[x.cls] + ': ' + x.why));
+                el('div', 'dash-tipwhy', x.cls === 'drep'
+                    ? 'DRep only: no other role found in what it declares' + (x.why ? '. It ' + x.why : '')
+                    : CLS[x.cls] + ': ' + x.why));
             tip.hidden = false;
             const br = box.getBoundingClientRect(), rr = target.getBoundingClientRect();
             const left = Math.min(Math.max(rr.left - br.left + 10, 0), br.width - 280) + box.scrollLeft;   // the box scrolls on a phone
@@ -201,10 +206,12 @@
         const list = el('ol', 'dash-largest');
         d.dreps.slice(0, d.carry).forEach(x => {
             const li = el('li', 'dash-c-' + x.cls + '-text', x.name || x.drep_id.slice(0, 14) + '…');
-            li.title = x.cls === 'drep' ? 'DRep only' : CLS[x.cls] + ': ' + x.why;
+            li.title = x.cls === 'drep' ? 'DRep only' + (x.why ? '. It ' + x.why : '') : CLS[x.cls] + ': ' + x.why;
             list.append(li);
         });
-        box.replaceChildren(el('p', 'dash-small', 'The ' + d.carry + ' largest, who together carry a treasury withdrawal:'), list);
+        const h = el('h3', '', 'The ' + d.carry + ' largest');
+        h.title = 'Together they carry a treasury withdrawal. The first ' + d.block + ' can block one.';
+        box.replaceChildren(h, list);
     }
 
     // ---------- where it moved ----------
@@ -216,16 +223,17 @@
         const tiles = el('div', 'dash-flows');
         f.pool_bands_net_ada.forEach((n, i) => {
             const t = el('div', 'dash-flow');
-            t.append(el('div', 'dash-flowlabel', 'Pools ' + d.stake_bands[i].label), el('div', 'dash-flownum ' + (n < 0 ? 'dash-neg' : 'dash-pos'), sign(n)));
+            t.title = 'Pools ' + d.stake_bands[i].label;
+            t.append(el('div', 'dash-flowlabel', 'Pools ' + BAND[i]), el('div', 'dash-flownum ' + (n < 0 ? 'dash-neg' : 'dash-pos'), sign(n)));
             tiles.append(t);
         });
         const t = el('div', 'dash-flow');
         t.append(el('div', 'dash-flowlabel', 'The ' + f.carry_group + ' largest DReps'),
-            el('div', 'dash-flownum ' + (f.carry_group_net_ada < 0 ? 'dash-neg' : 'dash-pos'), sign(f.carry_group_net_ada)),
-            el('div', 'dash-small', f.carry_group_share_of_moved === null ? '' : Math.round(100 * f.carry_group_share_of_moved) + '% of all vote delegation that moved went to them'));
+            el('div', 'dash-flownum ' + (f.carry_group_net_ada < 0 ? 'dash-neg' : 'dash-pos'), sign(f.carry_group_net_ada)));
+        t.title = f.carry_group_share_of_moved === null ? '' : Math.round(100 * f.carry_group_share_of_moved) + '% of all vote delegation that moved went to them';
         tiles.append(t);
-        box.replaceChildren(el('p', 'dash-small', 'From epoch ' + f.from_epoch + ' to epoch ' + f.to_epoch +
-            ': the stake that moved to another pool, and the vote delegation that moved to another DRep, in and out.'), tiles);
+        box.replaceChildren(tiles, el('p', 'dash-hint', 'From epoch ' + f.from_epoch + ' to epoch ' + f.to_epoch +
+            ': stake that moved to another pool, and vote delegation that moved to another DRep, in minus out.'));
     }
 
     // ---------- the lookup ----------
