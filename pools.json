@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T16:27:45Z",
+"generated": "2026-11-16T17:14:44Z",
 "epoch": 668,
 "k": 1000,
 "saturation_ada": 38999661,
@@ -11,12 +11,12 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2665,
-"alive_named": 1053,
+"alive_named": 1047,
 "pledge_not_met": 499,
-"above_saturation": 130,
+"above_saturation": 127,
 "excluded_exchanges": 48,
 "excluded_founders": 8,
-"excluded_several": 247,
+"excluded_several": 245,
 "excluded": [
 {
 "ticker": "BNP",
@@ -1021,12 +1021,6 @@
 "reason": "several pools"
 },
 {
-"ticker": "SECUR",
-"name": "FIVE SecureStaking.io",
-"pool_id": "pool14n77mmxh6a2d9k05jamzdwsws2ayvkyje8uc7led958p63at3aj",
-"reason": "several pools"
-},
-{
 "ticker": "FGMTB",
 "name": "Figment 11",
 "pool_id": "pool1g59d82m8c84f2ds6l50mng863h9cxfm88khxyhna2l9rzgv6030",
@@ -1684,12 +1678,6 @@
 "ticker": "SUNNY",
 "name": "Sunshine Stake Pool #2",
 "pool_id": "pool1p8fhygz7ga9hghhwmkr64p3ftn77lxu9nyddvsqszattcdyajc0",
-"reason": "several pools"
-},
-{
-"ticker": "SECUR",
-"name": "THREE SecureStaking.io",
-"pool_id": "pool1xjhzgchsl2ccvc5pj3aqytv9hh0jnaz63wtfnw4th07tjypm46x",
 "reason": "several pools"
 },
 {
@@ -5473,8 +5461,8 @@
 "name": "VICE 💚 CardanoWall.com",
 "pool_id": "pool1pzqdfptvl5f8vh28az37jag2wkfmqz9x8d6eufl8y0z9q34hlr7",
 "stake_ada": 1236127,
-"blocks_2026": 75,
-"blocks_last_10_epochs": 15,
+"blocks_2026": 76,
+"blocks_last_10_epochs": 16,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -5836,8 +5824,8 @@
 "name": "LILIE Stake Pool",
 "pool_id": "pool1qeqylk3pnenvt3j4mah2dafcnd3h8uc3fqhvfzrxlxf3xuvdvvp",
 "stake_ada": 1520141,
-"blocks_2026": 96,
-"blocks_last_10_epochs": 12,
+"blocks_2026": 97,
+"blocks_last_10_epochs": 13,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6426,17 +6414,6 @@
 "roles": []
 },
 {
-"ticker": "AZDFM",
-"name": "AZDFM stake pool",
-"pool_id": "pool1hnnfvsq3xlln6vz7d2xmk6kqekd5z4ctmfpdad8g8kr0yk8kdfd",
-"stake_ada": 2399073,
-"blocks_2026": 271,
-"blocks_last_10_epochs": 23,
-"retiring_epoch": null,
-"document": "valid",
-"roles": []
-},
-{
 "ticker": "MANDA",
 "name": "Cardano Yoda Pool",
 "pool_id": "pool1c3fjkls7d2aujud8y5xy5e0azu0ueatwn34u7jy3ql85ze3xya8",
@@ -6507,8 +6484,8 @@
 "name": "Ouroboros-暗号通貨革命",
 "pool_id": "pool1qu48wpwwarmkewhlwge9xs87sgt8gdnqq26nnre2v6c8up4fxwr",
 "stake_ada": 2591301,
-"blocks_2026": 337,
-"blocks_last_10_epochs": 25,
+"blocks_2026": 338,
+"blocks_last_10_epochs": 26,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7156,8 +7133,8 @@
 "name": "genePool One",
 "pool_id": "pool19ae6xhzsscypyha0sszv90xwjsh20hxecxjpcqynshfawvwxqnn",
 "stake_ada": 4484479,
-"blocks_2026": 287,
-"blocks_last_10_epochs": 35,
+"blocks_2026": 288,
+"blocks_last_10_epochs": 36,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7442,8 +7419,8 @@
 "name": "PONTA Pool",
 "pool_id": "pool1hkr5zcthjvcn3ffncc4jqk5ctxxfrk37h7uddqnvxd4cu872nrt",
 "stake_ada": 6052756,
-"blocks_2026": 394,
-"blocks_last_10_epochs": 56,
+"blocks_2026": 395,
+"blocks_last_10_epochs": 57,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7772,8 +7749,8 @@
 "name": "Blockchain Better Have My Money 💰",
 "pool_id": "pool10p6wd9k0fwk2zqkqnqr8efyr7gms627ujk9dxgk6majskhawr6r",
 "stake_ada": 9014355,
-"blocks_2026": 445,
-"blocks_last_10_epochs": 72,
+"blocks_2026": 446,
+"blocks_last_10_epochs": 73,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8058,8 +8035,8 @@
 "name": "CEX.IO Validator",
 "pool_id": "pool18jqumjfevywycjj54m62g74ghds4mmuyqynpwfkaem0xktazlqw",
 "stake_ada": 13713413,
-"blocks_2026": 874,
-"blocks_last_10_epochs": 130,
+"blocks_2026": 875,
+"blocks_last_10_epochs": 131,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8113,8 +8090,8 @@
 "name": "PSILOBLOX",
 "pool_id": "pool17taqml487n9t4r9a6ppvf9qv0qlw2lu4zcrzwfdsfcv6xp7uqym",
 "stake_ada": 14245638,
-"blocks_2026": 1035,
-"blocks_last_10_epochs": 131,
+"blocks_2026": 1036,
+"blocks_last_10_epochs": 132,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8157,8 +8134,8 @@
 "name": "MANA",
 "pool_id": "pool1tpy5yawzpetcverves0h6xdycxgrstehfvrkygydt9jcqxwpw3j",
 "stake_ada": 15154145,
-"blocks_2026": 1020,
-"blocks_last_10_epochs": 117,
+"blocks_2026": 1021,
+"blocks_last_10_epochs": 118,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8278,8 +8255,8 @@
 "name": "NVE Tech StakePool",
 "pool_id": "pool1xjqjwe0t7uw7wfdygvt99e5wjcuz6ex6rcx2p067aqxp6tsgwgm",
 "stake_ada": 19788956,
-"blocks_2026": 1329,
-"blocks_last_10_epochs": 195,
+"blocks_2026": 1330,
+"blocks_last_10_epochs": 196,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8509,8 +8486,8 @@
 "name": "Hermes Stakepool Germany #1",
 "pool_id": "pool16fyda57p3c8gp5r6gmcq5tvqsp6mnzwvkxswgznkuh8wztrp6vv",
 "stake_ada": 28314173,
-"blocks_2026": 2398,
-"blocks_last_10_epochs": 270,
+"blocks_2026": 2399,
+"blocks_last_10_epochs": 271,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8564,8 +8541,8 @@
 "name": "dataDyne.earth",
 "pool_id": "pool13hxlxd6qa68fmfhrvvmasa0mjg30tj9p5v2lmgmgsmrp2rgzkfp",
 "stake_ada": 29811483,
-"blocks_2026": 4061,
-"blocks_last_10_epochs": 494,
+"blocks_2026": 4062,
+"blocks_last_10_epochs": 495,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8619,8 +8596,8 @@
 "name": "AAAA pool",
 "pool_id": "pool193uec04jldvah7r52q86wl033g4v42x0aste8jfg9999qepaxfp",
 "stake_ada": 32677795,
-"blocks_2026": 2843,
-"blocks_last_10_epochs": 306,
+"blocks_2026": 2844,
+"blocks_last_10_epochs": 307,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8641,8 +8618,8 @@
 "name": "SN₳KE Cardano Staking",
 "pool_id": "pool1xs34q2z06a46nk7hl48d27dj5gzc6hh9trugw2ehs9ajsevqffx",
 "stake_ada": 33988292,
-"blocks_2026": 3618,
-"blocks_last_10_epochs": 348,
+"blocks_2026": 3621,
+"blocks_last_10_epochs": 351,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []

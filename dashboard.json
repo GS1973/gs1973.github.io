@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T16:27:45Z",
+ "generated": "2026-11-16T17:14:45Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -62,8 +62,8 @@
    "name": "YUTA",
    "drep_id": "drep1y2200we9c904un36tzaearntzzl63snffuul9qsk0te4utqfkke0w",
    "ada": 482774913,
-   "cls": "drep",
-   "why": ""
+   "cls": "cc",
+   "why": "says in its own DRep metadata that it is a member of Eastern Cardano Council, which holds a seat on the Constitutional Committee until epoch 726. It also calls itself a stake pool operator in its own DRep metadata, without naming its pool"
   },
   {
    "name": "Yoroi W₳llet",
@@ -203,7 +203,7 @@
    "drep_id": "drep1ygnh2uf4wkc8ldgfxwz7rzuga3m8jtqew9xh5g3n587mg6g3ge0sj",
    "ada": 62564822,
    "cls": "drep",
-   "why": ""
+   "why": "calls itself a stake pool operator in its own DRep metadata, without naming its pool"
   },
   {
    "name": "FIMI",
@@ -266,7 +266,7 @@
    "drep_id": "drep1y2xacakh0g8q4exfgmvywy62an74cj7ejcpcrgq6vh4dckqhtsyh5",
    "ada": 31994053,
    "cls": "drep",
-   "why": ""
+   "why": "calls itself a stake pool operator in its own DRep metadata, without naming its pool"
   },
   {
    "name": "NEDSCAVE.IO",
@@ -679,7 +679,7 @@
    "drep_id": "drep1ytrfnk7mslmfrwgqed6l5fyupkx22z59cx4qlwmrvdyjsmgrjejvq",
    "ada": 2825322,
    "cls": "drep",
-   "why": ""
+   "why": "calls itself a stake pool operator in its own DRep metadata, without naming its pool"
   },
   {
    "name": "CryptoRich (CRICH)",
@@ -882,7 +882,7 @@
    "drep_id": "drep1ytgutursutn574aqvumh77egx5wxastcv777p6dq3elfzqqwd5yc6",
    "ada": 1262433,
    "cls": "drep",
-   "why": ""
+   "why": "calls itself a stake pool operator in its own DRep metadata, without naming its pool"
   },
   {
    "name": "Kevin_ALBERT",
@@ -1064,7 +1064,7 @@
    "drep_id": "drep1yt99uyp9c8qura9spfgqe8uf7g2avmqc683x28zcugh0sycjd6wp0",
    "ada": 854387,
    "cls": "drep",
-   "why": ""
+   "why": "calls itself a stake pool operator in its own DRep metadata, without naming its pool"
   },
   {
    "name": "heo.keo",
@@ -1917,7 +1917,7 @@
   "abstain_net_ada": -49417447
  },
  "lookup": {
-  "credentials": 1883302,
+  "credentials": 1883307,
   "shards": 256
  }
 }
