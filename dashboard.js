@@ -40,7 +40,7 @@
     function closeModal() {
         modal.hidden = true;
         document.removeEventListener('keydown', onKeydown);
-        if (location.hash === '#dashboard') history.replaceState(null, '', location.pathname + location.search);
+        if (location.hash.toLowerCase() === '#dashboard') history.replaceState(null, '', location.pathname + location.search);
         if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
     }
 
@@ -438,5 +438,8 @@
     btn.addEventListener('click', openModal);
     closeBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-    if (location.hash === '#dashboard') openModal();
+    // /#dashboard opens the window, in any case of letters (#Dashboard), also when the hash changes on the page
+    const wanted = () => location.hash.toLowerCase() === '#dashboard';
+    if (wanted()) openModal();
+    window.addEventListener('hashchange', () => { if (wanted() && modal.hidden) openModal(); });
 })();
