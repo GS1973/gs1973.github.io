@@ -254,11 +254,11 @@
         f.pool_bands_net_ada.forEach((n, i) => {
             const t = el('div', 'dash-flow');
             t.title = 'Pools ' + d.stake_bands[i].label;
-            t.append(el('div', 'dash-flowlabel', 'Pools ' + low(BAND[i])), el('div', 'dash-flownum ' + (n < 0 ? 'dash-neg' : 'dash-pos'), sign(n)));
+            t.append(el('div', 'dash-flowlabel', ['Pools above saturation', 'Pools 10M to saturation', 'Pools 1 to 10M', 'Pools under 1M'][i] + ', stake'), el('div', 'dash-flownum ' + (n < 0 ? 'dash-neg' : 'dash-pos'), sign(n)));
             tiles.append(t);
         });
         const t = el('div', 'dash-flow');
-        t.append(el('div', 'dash-flowlabel', 'The ' + f.carry_group + ' largest DReps'),
+        t.append(el('div', 'dash-flowlabel', 'The ' + f.carry_group + ' largest DReps, votes'),
             el('div', 'dash-flownum ' + (f.carry_group_net_ada < 0 ? 'dash-neg' : 'dash-pos'), sign(f.carry_group_net_ada)));
         t.title = f.carry_group_share_of_moved === null ? '' : Math.round(100 * f.carry_group_share_of_moved) + '% of all vote delegation that moved went to them';
         tiles.append(t);
@@ -358,8 +358,9 @@
         else {
             const p = index.pool[pc];
             const nm = p ? (p[1] || p[0].slice(0, 14) + '…') + (p[2] ? ' (' + p[2] + ')' : '') : 'a pool';
-            const band = p && p[3] !== null ? 'Pools ' + low(index.bands[p[3]]) + ' hold ' + pctText(pct(d.stake_bands[p[3]].ada, d.stake_total_ada)) + ' of all stake.' : 'This pool has no stake this epoch.';
-            out.push(line('Your stake:', 'Pool ' + nm + '.', band));
+            const stake = p ? p[4] : 0;
+            out.push(line('Your stake:', 'Pool ' + nm + (stake ? ', with ' + ada(stake) + ' ADA of stake.' : '.'),
+                stake ? '' : 'This pool has no stake this epoch.'));
         }
         let rank = null;
         if (dc === '-') out.push(line('Your vote:', 'No DRep. Your ADA does not take part in the vote.'));
@@ -375,7 +376,8 @@
             else if (rank && rank <= d.carry) note = 'Number ' + rank + ' of ' + d.dreps.length + ': One of the ' + d.carry + ' DReps who together carry a treasury withdrawal.';
             else if (rank) note = 'Number ' + rank + ' of ' + d.dreps.length + ' active DReps.';
             if (x && x[3] && x[3] !== 'drep') note += ' This DRep ' + low(CLS[x[3]]) + '.';
-            out.push(line('Your vote:', 'DRep ' + nm + '.', note));
+            const power = x ? x[5] : null;
+            out.push(line('Your vote:', 'DRep ' + nm + (power ? ', with ' + ada(power) + ' ADA of voting power.' : '.'), note));
         }
         const go = el('div', 'dash-go');
         const toPools = el('button', 'dash-btn', 'See the pool list');
