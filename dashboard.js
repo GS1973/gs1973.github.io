@@ -206,6 +206,7 @@
         const list = el('ol', 'dash-largest');
         d.dreps.slice(0, d.carry).forEach(x => {
             const li = el('li', 'dash-c-' + x.cls + '-text', x.name || x.drep_id.slice(0, 14) + '…');
+            if (x.pools >= 2) li.append(el('span', 'dash-pools', ' ' + x.pools + ' pools, ' + ada(x.pools_ada)));
             li.title = x.cls === 'drep' ? 'DRep only' + (x.why ? '. It ' + x.why : '') : CLS[x.cls] + ': ' + x.why;
             list.append(li);
         });
