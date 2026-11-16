@@ -215,10 +215,18 @@
         s.addEventListener('mouseover', e => { if (e.target.hasAttribute('data-i')) show(e.target); });
         s.addEventListener('focusin', e => { if (e.target.hasAttribute('data-i')) show(e.target); });
         s.addEventListener('mouseleave', () => { tip.hidden = true; off(); });
+        // On a touch screen the first tap shows the name, a second tap on the
+        // same column opens it; with a mouse a click opens it at once.
+        let tapped = null;
         s.addEventListener('click', e => {
             if (!e.target.hasAttribute('data-i')) return;
-            const x = d.dreps[Number(e.target.getAttribute('data-i'))];
-            window.open('https://cardanoscan.io/dRep/' + encodeURIComponent(x.drep_id), '_blank', 'noopener');
+            const i = Number(e.target.getAttribute('data-i'));
+            if (window.matchMedia('(hover: none)').matches && tapped !== i) {
+                tapped = i;
+                show(e.target);
+                return;
+            }
+            window.open('https://cardanoscan.io/dRep/' + encodeURIComponent(d.dreps[i].drep_id), '_blank', 'noopener');
         });
     }
 

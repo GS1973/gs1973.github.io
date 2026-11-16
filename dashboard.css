@@ -62,6 +62,13 @@
     gap: 18px;
 }
 
+/* a grid item may be narrower than its content: the chart scrolls inside its
+   own box on a phone instead of widening the whole panel */
+.dash-row > *,
+.dash-panel {
+    min-width: 0;
+}
+
 .dash-row-chart {
     grid-template-columns: 3fr 1fr;
 }
@@ -373,6 +380,40 @@
 @media (max-width: 640px) {
     .modal-dashboard {
         padding: 20px 16px;
+    }
+
+    .modal-dashboard .votes-header {
+        flex-wrap: wrap;
+        margin: -20px -16px 8px;
+        padding: 20px 16px 8px;
+    }
+
+    .modal-dashboard .votes-header .modal-title {
+        flex: 1;
+    }
+
+    .dash-meta {
+        order: 3;
+        flex-basis: 100%;
+        text-align: left;
+    }
+
+    .dash-largest {
+        columns: 1;
+    }
+
+    .dash-lookup h3 {
+        flex-basis: 100%;
+        margin: 0 0 2px 0;
+    }
+
+    .dash-lookup input {
+        flex-basis: 100%;
+        order: 4;
+    }
+
+    .dash-lookup #dashLook {
+        order: 5;
     }
 
     .dash-cards {
