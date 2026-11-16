@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T17:25:45Z",
+"generated": "2026-11-16T17:54:32Z",
 "epoch": 668,
 "k": 1000,
 "saturation_ada": 38999661,
@@ -11,12 +11,12 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2665,
-"alive_named": 1048,
+"alive_named": 1053,
 "pledge_not_met": 499,
-"above_saturation": 127,
+"above_saturation": 130,
 "excluded_exchanges": 48,
 "excluded_founders": 8,
-"excluded_several": 245,
+"excluded_several": 247,
 "excluded": [
 {
 "ticker": "BNP",
@@ -1021,6 +1021,12 @@
 "reason": "several pools"
 },
 {
+"ticker": "SECUR",
+"name": "FIVE SecureStaking.io",
+"pool_id": "pool14n77mmxh6a2d9k05jamzdwsws2ayvkyje8uc7led958p63at3aj",
+"reason": "several pools"
+},
+{
 "ticker": "FGMTB",
 "name": "Figment 11",
 "pool_id": "pool1g59d82m8c84f2ds6l50mng863h9cxfm88khxyhna2l9rzgv6030",
@@ -1678,6 +1684,12 @@
 "ticker": "SUNNY",
 "name": "Sunshine Stake Pool #2",
 "pool_id": "pool1p8fhygz7ga9hghhwmkr64p3ftn77lxu9nyddvsqszattcdyajc0",
+"reason": "several pools"
+},
+{
+"ticker": "SECUR",
+"name": "THREE SecureStaking.io",
+"pool_id": "pool1xjhzgchsl2ccvc5pj3aqytv9hh0jnaz63wtfnw4th07tjypm46x",
 "reason": "several pools"
 },
 {
@@ -5098,8 +5110,8 @@
 "name": "ADA Made in France",
 "pool_id": "pool1yd67lvc04eztwrpnefqh3g4dsydmezwgrg6ce4km728v6sg8zwf",
 "stake_ada": 919310,
-"blocks_2026": 94,
-"blocks_last_10_epochs": 8,
+"blocks_2026": 95,
+"blocks_last_10_epochs": 9,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6242,8 +6254,8 @@
 "name": "ADABreathes",
 "pool_id": "pool1sr953s548fudyhmfm082xp0mensv2gxzt4qpe466ykw0z3jjzvv",
 "stake_ada": 2042961,
-"blocks_2026": 147,
-"blocks_last_10_epochs": 25,
+"blocks_2026": 148,
+"blocks_last_10_epochs": 26,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6506,8 +6518,8 @@
 "name": "JORGE",
 "pool_id": "pool10mf43thtl3keag50mrlvqa78xkwg7harmu4w5yzr3k7jvw0ap43",
 "stake_ada": 2616628,
-"blocks_2026": 170,
-"blocks_last_10_epochs": 34,
+"blocks_2026": 171,
+"blocks_last_10_epochs": 35,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7034,8 +7046,8 @@
 "name": "ADA Moon Stake Pool",
 "pool_id": "pool1qkd5y9azf2xx0gmrj68lrkcn59ldjmnpzd3y2rq3tvjp2vqljan",
 "stake_ada": 4154178,
-"blocks_2026": 537,
-"blocks_last_10_epochs": 50,
+"blocks_2026": 538,
+"blocks_last_10_epochs": 51,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7155,8 +7167,8 @@
 "name": "BRADA POOL",
 "pool_id": "pool1wz27a9pvd2jat98s375lxaaj7qxy405km4vzp83wn5vtwp59kvh",
 "stake_ada": 4503963,
-"blocks_2026": 329,
-"blocks_last_10_epochs": 52,
+"blocks_2026": 330,
+"blocks_last_10_epochs": 53,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7364,8 +7376,8 @@
 "name": "VINCE pool",
 "pool_id": "pool1lqpymyzg9glc88r7urptuv0d8t2tu9ty7xtshvxmgpu0j4lp8p3",
 "stake_ada": 5914868,
-"blocks_2026": 376,
-"blocks_last_10_epochs": 37,
+"blocks_2026": 378,
+"blocks_last_10_epochs": 39,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7694,8 +7706,8 @@
 "name": "Kaze-Wa-Minamikara",
 "pool_id": "pool1c3kxs76qj58284f923cx7ed8vw25en3nfghyurv0z9m2g3x9c4j",
 "stake_ada": 8455718,
-"blocks_2026": 503,
-"blocks_last_10_epochs": 74,
+"blocks_2026": 504,
+"blocks_last_10_epochs": 75,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7716,8 +7728,8 @@
 "name": "Your ADA Moon",
 "pool_id": "pool1lxqewhueg4hzyad766zhdwsjet5348ww8mzejf6fprxaw8wfq5s",
 "stake_ada": 8812220,
-"blocks_2026": 559,
-"blocks_last_10_epochs": 92,
+"blocks_2026": 560,
+"blocks_last_10_epochs": 93,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7760,8 +7772,8 @@
 "name": "Blockchain Better Have My Money 💰",
 "pool_id": "pool10p6wd9k0fwk2zqkqnqr8efyr7gms627ujk9dxgk6majskhawr6r",
 "stake_ada": 9014355,
-"blocks_2026": 446,
-"blocks_last_10_epochs": 73,
+"blocks_2026": 447,
+"blocks_last_10_epochs": 74,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7947,8 +7959,8 @@
 "name": "AHLNET",
 "pool_id": "pool1qqq6qqa0hpzvumv5p87ynczfmdj557xuwlc3289ke42g72z7f74",
 "stake_ada": 11834764,
-"blocks_2026": 740,
-"blocks_last_10_epochs": 113,
+"blocks_2026": 741,
+"blocks_last_10_epochs": 114,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8156,8 +8168,8 @@
 "name": "Cardanesia",
 "pool_id": "pool1pfprlfz0ywcnewjegazz05ghgcfkvu40v6edsz6yn8w362sdjr8",
 "stake_ada": 15310292,
-"blocks_2026": 1664,
-"blocks_last_10_epochs": 163,
+"blocks_2026": 1665,
+"blocks_last_10_epochs": 164,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8211,8 +8223,8 @@
 "name": "U0001",
 "pool_id": "pool1flkcdxj7cq6sfgl4fujx50p20ylqgj02kgwvfj4g5w24s6th8vz",
 "stake_ada": 16746040,
-"blocks_2026": 1159,
-"blocks_last_10_epochs": 162,
+"blocks_2026": 1160,
+"blocks_last_10_epochs": 163,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8233,8 +8245,8 @@
 "name": "BURN Pool",
 "pool_id": "pool1r0sxz0hygfc0266lhdclve6j3cwcwlth6dya6uey65yxjnwm7qc",
 "stake_ada": 18158935,
-"blocks_2026": 933,
-"blocks_last_10_epochs": 193,
+"blocks_2026": 934,
+"blocks_last_10_epochs": 194,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8475,8 +8487,8 @@
 "name": "Cardino Stake Pool",
 "pool_id": "pool1rvjj8cp3urh7de07pm0ceqha2x4lxws69lhd4429dm6djfjsy4l",
 "stake_ada": 27229667,
-"blocks_2026": 1776,
-"blocks_last_10_epochs": 278,
+"blocks_2026": 1777,
+"blocks_last_10_epochs": 279,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8596,8 +8608,8 @@
 "name": "ADA4Good ❤️ ADA + Save the Children ❤️",
 "pool_id": "pool1ewrm7y47s9hv6hxku9n5gfnsuspymp0qqpwgvgm9rvm37cek2h6",
 "stake_ada": 32094475,
-"blocks_2026": 2196,
-"blocks_last_10_epochs": 331,
+"blocks_2026": 2197,
+"blocks_last_10_epochs": 332,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8640,8 +8652,8 @@
 "name": "BitcoinSuisse01",
 "pool_id": "pool1m06dl8dfcy6d0475fanf0mtnnp2tzhw8rarums042q3jux23q0j",
 "stake_ada": 35886028,
-"blocks_2026": 1879,
-"blocks_last_10_epochs": 329,
+"blocks_2026": 1880,
+"blocks_last_10_epochs": 330,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []

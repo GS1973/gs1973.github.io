@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T17:25:46Z",
+ "generated": "2026-11-16T17:54:32Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -63,7 +63,9 @@
    "drep_id": "drep1y2200we9c904un36tzaearntzzl63snffuul9qsk0te4utqfkke0w",
    "ada": 482774913,
    "cls": "cc",
-   "why": "says in its own DRep metadata that it is a member of Eastern Cardano Council, which holds a seat on the Constitutional Committee until epoch 726. It also calls itself a stake pool operator in its own DRep metadata, without naming its pool"
+   "why": "says in its own DRep metadata that it is a member of Eastern Cardano Council, which holds a seat on the Constitutional Committee until epoch 726. It is also named by pools ZZZ, ZZZ2, ZZZ3, ZZZ4, ZZZ5 as the YUTA pool in their own metadata, and calls itself a stake pool operator. Its owner runs 5 pools with 110.4 million ADA together",
+   "pools": 5,
+   "pools_ada": 110374773
   },
   {
    "name": "Yoroi W₳llet",
@@ -725,10 +727,8 @@
    "name": "42",
    "drep_id": "drep1y26ppxzudkhtak4y7kc2rag9ezq7szje78aetxge3pg5w7qwthkqv",
    "ada": 3114581,
-   "cls": "spo",
-   "why": "has the same name as pool 1337 (1337). Its pool has 4,365 ADA",
-   "pools": 1,
-   "pools_ada": 4365
+   "cls": "drep",
+   "why": ""
   },
   {
    "name": "BWtake(長崎)Japan",
@@ -979,8 +979,10 @@
    "name": "Elite",
    "drep_id": "drep1ytgutursutn574aqvumh77egx5wxastcv777p6dq3elfzqqwd5yc6",
    "ada": 1262433,
-   "cls": "drep",
-   "why": "calls itself a stake pool operator in its own DRep metadata, without naming its pool"
+   "cls": "spo",
+   "why": "is named by pools ELITE as the Elite pool in their own metadata, and calls itself a stake pool operator. Its owner runs 2 pools with 27.5 million ADA together",
+   "pools": 2,
+   "pools_ada": 27456660
   },
   {
    "name": "Kevin_ALBERT",
@@ -2067,7 +2069,7 @@
   "abstain_net_ada": -49417447
  },
  "lookup": {
-  "credentials": 1883308,
+  "credentials": 1883312,
   "shards": 256
  }
 }
