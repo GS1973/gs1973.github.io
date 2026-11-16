@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T19:27:37Z",
+"generated": "2026-11-16T20:35:52Z",
 "epoch": 668,
 "figures": {
 "circulating_ada": 37567607735,
@@ -17,7 +17,7 @@
 "carry_treasury": 18,
 "window_epochs": 36,
 "drep_activity_epochs": 20,
-"votes": 9103,
+"votes": 9104,
 "votes_with_rationale": 3705,
 "dreps_never_rationale": 110,
 "dreps_never_rationale_ada": 802286551,
@@ -1028,7 +1028,7 @@
 "share": 0.011,
 "delegators": 14,
 "eligible": 7,
-"voted": 4,
+"voted": 5,
 "rationale": 3,
 "last_vote": "2026-11-16",
 "document": "valid",

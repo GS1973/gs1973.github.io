@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T19:27:37Z",
+ "generated": "2026-11-16T20:35:52Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -10,7 +10,13 @@
   "block_prev": 5,
   "carry": 18,
   "carry_prev": 20,
-  "prev_epoch": 662
+  "prev_epoch": 662,
+  "linked_dreps": 110,
+  "linked_share": 0.7812,
+  "large_dreps": 13,
+  "large_share": 0.4013,
+  "producing": 1352,
+  "no_vote_share": 0.8522
  },
  "stake_total_ada": 21493202937,
  "stake_bands": [
@@ -2124,6 +2130,3193 @@
  ],
  "block": 5,
  "carry": 18,
+ "owners": {
+  "count": 2244,
+  "third": 12,
+  "half": 37,
+  "top": [
+   {
+    "name": "Coinbase",
+    "pools": 48,
+    "ada": 2609056176,
+    "tickers": [
+     "ARH",
+     "COIN",
+     "CVM",
+     "EGH",
+     "FBA",
+     "FCS",
+     "FMD",
+     "FVG"
+    ],
+    "pool_ids": [
+     "pool1fl20ddkpvnstlx63fal6e3ku46r76nk2s4mqtk5jnyxn2vt7hg6",
+     "pool1j276s043qh2knv3ukmap6sra6sk7p5khuetzwx9h43wqydzsx8c",
+     "pool14xq8v9s80ut6vmwp93tzhlydhsdqhxk3e9jerl2kl7hm2dq6pru",
+     "pool1edqwpnln3zr9gj9sfsmyl72pen6hdwev07xgqj7uz5mkjrgfj6h",
+     "pool1sdare7xfd6tmak8ghek7kwgpgj6xzu0reppmw4t46rmcs0h6vr2",
+     "pool1vcwsfldh4gkzga4mc6p86y0vytkqfm9e2dy44hs00v34yeqnfaf",
+     "pool1fqas6yd8n3fdpz8e869qjvyensdmzletqjexcut8mxasu2sk72r",
+     "pool1s8347yjgmfguf0ynj69euw7r75w7usdrfheckpcrjrk2yfvnpwq",
+     "pool1lev7ygxcqd4aw5em7wf7y64au4hv04yl5cew27lkjmgngj46vqk",
+     "pool1qc05c76autq4235sq20zu4vjwtl5m0xn4mxq9kg6e66uwz95kd4",
+     "pool1xucruwwxsym3u9v0m4ex3az5d4vpz9xu877vsl9udpt0q237e9m",
+     "pool1njjr0zn7uvydjy8067nprgwlyxqnznp9wgllfnag24nycgkda25",
+     "pool17arsgklktp9sayk5kzaakwvl3jwyczp07guux2yd0upgqh04qjl",
+     "pool16e43yxx4djcvnsunwgrm8tnph0ljrt3p9tnezu3qvtcwzh4zwwa",
+     "pool1kl2vuauwfc5k0avf874ym5tcm04ywa22frleszhujeccj4va3lt",
+     "pool104z3yr7faqhck6wcsczhmqrrpdeparcr8juw8unxy8tm6xp447d",
+     "pool13s5faca3kkg6jhqcll8xd9tarur3zkhalyuu92d5g87zyj4wrrc",
+     "pool1gk20vlqg7qq868avysckjcjtwyphtjurfwlgra45670ny6r4fww",
+     "pool1w7dk7rn0cflzzfr4fqvjpapn0rkz5ksmerx5tgwpm2gtj2gly97",
+     "pool1qlps2dwr0qd0a7pjqr47apewf2lq42xv03zgentgwv9mspeh57g",
+     "pool1tn7rcvc5lln8frln5n9rfd9cg8kcrj4vlm3ycdquyx5s2mlhmtk",
+     "pool1kcvaxe4q4npwt28qlr3h84htjf4qrqglqk3cr2484ptycr0ldut",
+     "pool143d6z506u6yfufgzrtx8ywcwx3j4s29lxv5tdugcpcwk2l83gck",
+     "pool1xed948ze4guhrkt9zxjmecjvgkvgf8gd8skkzgtacz6gsyk9m5c",
+     "pool1u2fuz3fn5dfphf0cu0sewm4rnera445avenggle9sl4hy7rjzgv",
+     "pool1wvaj307ee8jfewv9qjtgk0q3elmpe5lz4n2dec2303062f7dc4c",
+     "pool1q5q3rld4nll02w8sqhf9582jcf22t99yt27z0pqksvpnv4rdra9",
+     "pool1j6xfryctrxm4aplw3vnrtgfsvqdr35exenxqse5kzxmfue7qqmr",
+     "pool1095d0cr8yp0selmnrst5hnuf8jcl6vlkxlr2j6kq4x6qs4yxuwt",
+     "pool197na7w0h8hjc8wdvwys7nsalhtpctefa3m23udeqxpfk6nzq8l9",
+     "pool1y6gnk7t3n6rvpr67f68mehxgqs5x24n0esz9l5j7m4aqzn4e0qw",
+     "pool147tju4482jtl253lgqq88fkefdugcuhaumf8m0rcj8uzxu846qm",
+     "pool1qtscx3ge0rgmpffgqen5uup8r8tnav7a2veduweskqx7gf8gjec",
+     "pool1a8fp4uygrweyx2hgkawfec4dn9vnw73ruqj0p6p2ewsjyfu2lgu",
+     "pool1yh7ksvg54nger73ldnf22cgwyh0dnm4aerahdd0kdukjqeacy32",
+     "pool12m7z9p7jqymxrvvp6z7vmfdu6j6u6y43p0m6y4xalz43sc8s4t9",
+     "pool1fxra32qureulvqrhrdpnrl5yechhqreg2khrghv3tkl4z66t0rm",
+     "pool1hyqdlnuff3rnvg9lx70ccca2xqxcezzz4998tp6chhxnx2st257",
+     "pool19zz6frugmvm82ecgl5hh5vq3093d4kzr4h2r5vfmt6la7trk929",
+     "pool18gsrasdghtjsnzlf20pht85l4epwag74w9pfx5qvdvcpxw68sl6",
+     "pool15kek228mhvnsncdjn77u8qtrn8hjh5wfzmh6g942xf0353yc77j",
+     "pool1rqgmaq82p2l3j2jknc2syky2xtgylevss39c7ffgpp5x56s5pt5",
+     "pool14nxj3szga2tgllwenjgajfl3y4t570yghhyk36d2heuqvy63wl3",
+     "pool1dqzprrl8305mlysnh85znqpe22lg0q2d9zest7jjhugajuf46kv",
+     "pool1rte6kvv4z3f4fuq6np3qsmxh3pujem6rncpg58tuxc04gwmc2xn",
+     "pool1xlst0jw9safmz3c8m56zvl4m65y306dcp48hdks8ursmsz2awm2",
+     "pool1qv3velgldz529zq904jy9qfrhdh0akwkkhylu2rymd6sw9m02cc",
+     "pool1sfzvwcqx77fkyfsmhpyhtkh2ef5ppezl2qtrl7jpe7q5up96ux9"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Figment 8",
+    "pools": 26,
+    "ada": 723165908,
+    "tickers": [
+     "FGMT4",
+     "FGMT5",
+     "FGMT6",
+     "FGMT7",
+     "FGMT8",
+     "FGMT9",
+     "FGMTA",
+     "FGMTB"
+    ],
+    "pool_ids": [
+     "pool1v96277f457qtwhuq3ma9yjlacq4mjw9h4j3jfy5rjgjru5lyxea",
+     "pool1fuge4duc9hfgm9xvu33llsntmnfcumsyw2d0away49v8gmphfzs",
+     "pool17uux76nu89sauwvzuy99lnk50war63uye826sqc20a4ysekegd6",
+     "pool1l92vxagssugcsu4wyhvnjd0t6dlqjjfrxkt8v4qaucgmq8t3j3s",
+     "pool1cauj94scz5wp58defdxqqgnujaalvxe388peyv2gx79y6suzl55",
+     "pool19yzqr3meksnvzdxh5xf6aknfhldyqdj7eaquxgcjva4mzt5kg3v",
+     "pool1wm5pnu72efdcvjm34r7ykkxx2h549swddjrn6r2aqy3tvjc4l57",
+     "pool1h5a30zxga37fphw3tjkp8anu3xm69a28kytceppz2prysfzfcjv",
+     "pool1da9msyhpfmt58vrdkk7lpzgwldvc0t7q46kvpcyvvpff7347lsp",
+     "pool1umukx8qjyjuatw0zznvhc7ma06wl6pdc2ly50d7uv3svkkefjml",
+     "pool159s558a4ffhp9nqjp9dx048lphdlxjc8xmy5pcmfe4jhuxe4a2u",
+     "pool1u8f87frd3k6cy9lp4uk5faj53wfzh8smxjdpt8ua45f0x8s5v58",
+     "pool1dzdglfergm9km74055n6c9xsp8n78ec8ztsklgxg5c5gyrfz9zc",
+     "pool1mdzxt5rl2sgnehedgnl0jwk8vumsglequrap26qgg0uwg4cuq52",
+     "pool1mvtxupzcgdtslv2sw0l3f4zlhd3a69fue6gu0vhqz47w7j5zryx",
+     "pool1anxttanf5g4cjgagns6cf084wq6x9k2pfygjdjyk3swf77wj2ax",
+     "pool1kf0c6a38vy9t7muc2jpfefdc0y6ey8386ujtn6rtly25y5yxwqf",
+     "pool1vn0mxlvhm4l8pcft3jp5pxh4nhh89qevdg2xu6s6sdqvvs4ft28",
+     "pool1w9u6rtvuzke9cq5q4x2r7g8xlt6lqmcd2tugzpjpj5w5xv0eyws",
+     "pool1ah6f5h5xss3qcc5wv5smvkwsqrqz2v2v4u0pvmrrttzs6z52kx8",
+     "pool12582dmkl7xanxlmfnwd4fepmx4tt5kkw327mmklcjdxngwaxvh2",
+     "pool1lfxjjg2fmaea3dnvu6wpxylrtrzq0pkgjutjesuzwem4xymtqaj",
+     "pool1m4awll97kncxpantx2cvswt3yfh0sqkhzzg7m2rstyy36udnt29",
+     "pool1g59d82m8c84f2ds6l50mng863h9cxfm88khxyhna2l9rzgv6030",
+     "pool1j4vmgapf520ul8tvwz95xsmne4alpymxpmcnf0zu5v4vz2pej34",
+     "pool1enve22w67h6nm4y80cl0svc4edlm26h7ce226u5xlxq7ucawt07"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Upbit",
+    "pools": 20,
+    "ada": 676903411,
+    "tickers": [
+     "UPBIT"
+    ],
+    "pool_ids": [
+     "pool1sjnh0ymk9fhhnusm7uksux5yhpfyhjfmseq5nuupsj6ezskc0pj",
+     "pool1ek9pyk0xwjelrw7uqktvjwqj8wlcqqftjxqeq3t2vffw7qm8efs",
+     "pool1wthsvhhxueqfd9eqjdj8pgyprhr4gptn5g63z9rdrtelcfumnvg",
+     "pool1ua5exfeju4jc95yy595cykjh4x46998g8hrrvw2v5h9k7987a44",
+     "pool1r9kse9x8ja0ajkyw8w96zw5c2aqeey6j85nmyqxhwt0rs090fu4",
+     "pool1cp4q7w2jvlthul9mlskj6xutx9rdr7n4vruqqe09pfg5ywmzdzq",
+     "pool13z9mfsve9w39sl5akgz58yewad9daycxn8ja426ytdxey47yatu",
+     "pool13t8yafhx3mfnxs8nnkvgqnm9v5gspk7cdjc5dmpzpt0a6h294yn",
+     "pool1hnukelq3ap6pj3wnetj448efj4nalngy756jln9zd2mjsp73etg",
+     "pool1859zslu3scj23wxcamw0slkhn80waxwkdl4k8k0asyw7sfa8dv5",
+     "pool1jldj0znj8rltkuj4sumqq5z6p8sdt3yk4qde90q42daru5kgfl6",
+     "pool1hnaps49hfe3uljp4cleu4amhes6wvatufyvgt2tjdtj3xjrgknk",
+     "pool13mxx49xrq4hp6mca8qrzxxmjhfrts0ayh5n6ff9uyuusq9cx4d8",
+     "pool1k2224hj6uhdgkflj6ncqvmfhqvhlhj0t8crhqux5mphwwumupec",
+     "pool1fgp4f4afdrq26axqlnm80fz49hdkyq4am3ca3r33w0w8sw2x8ap",
+     "pool19egsg4esywdpq8lk5e0r4c8se3mx6k68de2pt2d0fnrs7jntp6m",
+     "pool1j6jnnxsngexalq60tqnvn2muge7vevd5ukc0unacr4432t4lr28",
+     "pool1ktqaf79utweyenk6e7289ta5p5993g32emn8355rxmp0kgh2r0m",
+     "pool1ds25hy480zcnzjwzr4eef28j85lvpm4mq9qm55vr4mqr5h3l68y",
+     "pool1p6t3cglz78w32telly44te3d5l30zc0f0mprhehm6jus59m9aaa"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Everstake Partner",
+    "pools": 15,
+    "ada": 675356151,
+    "tickers": [
+     "ESTK",
+     "EVE",
+     "EVE1",
+     "EVE2",
+     "EVE3",
+     "EVE4",
+     "EVE5",
+     "EVE6"
+    ],
+    "pool_ids": [
+     "pool1n0uxgs5qfk5n9xl7qvq9jt8zuu02cntrsjnjayjlqtejyffnemj",
+     "pool13rt3ngkek4l876980ect869cu978d36dcyh22ts4nwuf7ncq02u",
+     "pool1sysgx87cwxnqy0pqn8g97gdhd0dmre9rw3jvpn2k7apuwa7cgkn",
+     "pool12l453n0jtxqq88cgwgr67z06ldyhqqvwxgkn0sgungjfvhtp2el",
+     "pool1zgxvcqf0dvh0ze56ev2ayjvuex3zdd3hgxzdrcezkx497mv3l7s",
+     "pool14skj6e4rpjanzclx3fc880xnl8xafgg63tmw93t9xspvwx985qu",
+     "pool1uj4u73qgtprqre78q75fq2vkcrpfrcdreqcqkvn6u0m2k6nk2yp",
+     "pool1ng3vqzrhn3z45yjdscv3q37n26g2pj3vp99rfkgv6225y8lqg8j",
+     "pool1ywpt43nttzjd7883wafg255mh0hmjypwe65ercw6p2sxg5lt7ez",
+     "pool1ynxx88cq0y8vg8yrq3jrw6epm7rq9a8859v34sq9lzjy7ztg90u",
+     "pool1g3ssnndd8e7lcmstkjl9ane9mup0eshv3aklg63u5tznwl4ch87",
+     "pool1jst7rrhucnp93hepezv5yqy6fx982xs2v0udwfc5ea6my3kfak7",
+     "pool1xmsdhync6k6grkkj7tuycskjpseykpr24luhlazl5nsngsy87gm",
+     "pool1xflehvzad4wr6rrvf6eea65jst5af0r4k0rh4xvmnqgvkzt3xjt",
+     "pool14f58kf59ec7ymk7mm5w07advfgs6a2guur3g5zyf45uvyvl80t4"
+    ],
+    "dreps": [
+     {
+      "name": "Everstake",
+      "ada": 215301642,
+      "rank": 6,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "eToro",
+    "pools": 16,
+    "ada": 510387980,
+    "tickers": [
+     "ETO1",
+     "ETO10",
+     "ETO11",
+     "ETO12",
+     "ETO13",
+     "ETO14",
+     "ETO19",
+     "ETO2"
+    ],
+    "pool_ids": [
+     "pool19066qvd5dv6vq7fh5a5l7muzk6nc5fw8zq3w4tclyrhvjvlyeuc",
+     "pool1swuyjknhewtqcmh583jjpvlcl0p9h9hrt5l2f3v2hl6gchqrn40",
+     "pool1xt7mjrtnsew3v33lu8sf93upf20sxhmcrfnpm82ra46yxk7uy45",
+     "pool16eua0zalaln7q0s9u7jzlyygqad0pu2l2qdxx8r8ueqrw2jdhqf",
+     "pool19l206haluae6wyzm7tjpt3gln9paa5m9s4fedec2u09fqz300ht",
+     "pool1wdujj7tmux5nuwnpeksgncendr3mj8ecsjcddpzx9gewc3flp4r",
+     "pool1jzk8rwf2fs5l02dmm6pm5tnw9stmd8jpmvsy54085vu2u2656re",
+     "pool1dzdxps32uqhva9q9urx4lm7m0nhlczjjccwy9kv4t2d3krsn4m7",
+     "pool1fvgmxt3688a5zl6amhvaqk9tmvk3lhxkgdsta6yj3czuy5hjwfy",
+     "pool1hqlvn3qndgkne52uhe5347nlysmmec73ys9vduk96rs4jzjjyxm",
+     "pool1nyjw0460ww5qjtpukexuywxdz4lzhy6tm7yygn74lnlcc62hnc8",
+     "pool150n38x8gquu4yt5s0s6m3ajjqe89y68x96dh32tq8a4es2l6dvp",
+     "pool1wuxqvk0flqtdj58aaqn8m8w2qheawpvgrhmqnry7uk6pcrwnp4a",
+     "pool1jkltjlyk484wpdrhe20sjmgqgxhw0zx8lx6tml4wkprt5z28tvw",
+     "pool1sskadl6p2w0ttfr60y2ssfzcmrnaty4wt68v5glzd3e5vwkh7z5",
+     "pool1lyh8e725vttnkr5eylgfap7pmnmkrk0wznpkfl8qxahyqe2agcu"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "kiln",
+    "pools": 9,
+    "ada": 446794449,
+    "tickers": [
+     "KILN0",
+     "KILN1",
+     "KILN2",
+     "KILN3",
+     "KILN4",
+     "KILN6",
+     "KILN7",
+     "KILN8"
+    ],
+    "pool_ids": [
+     "pool10d6mmw3mn9ku3r7uqqye672dz3sv76lh5kvh5rdpr9l5ug5yknr",
+     "pool1v62c7d92xv6gyh4x9rhfpkwzlpw2ypxk92xvzavakg3xypatklv",
+     "pool1mtuhuh8hkf8am0qzx45y58kll8q83sjh6pwljrflcmw970d82f3",
+     "pool1aqg8vxzv75zhjzjjd9s20fu6r0xz70yl8lk3teacwy7qyc2p2j7",
+     "pool10rdglgh4pzvkf936p2m669qzarr9dusrhmmz9nultm3uvq4eh5k",
+     "pool19kfm6lz5uw7nylq27swr367mqdycmug7tve94l6h3xsz64seqtc",
+     "pool1mtxmk0skqkr5y0wxnxps4n35j6wn9q8dfr82y423vvlp53vccux",
+     "pool1fcp4d2pxh0e7q5ju63sjqcdpxpr3pvxg6ykl23t6c97d7dnvjvw",
+     "pool1k3nkfa5ugavrpd9nwd3s6yyx454qxnquxwmux4rzfunl7q0z38t"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Binance",
+    "pools": 37,
+    "ada": 421600259,
+    "tickers": [
+     "BNP"
+    ],
+    "pool_ids": [
+     "pool1l7xwy6sswcpxcepf9m43sez4kwgrgxuw5ekhkavj3k2lv6njvec",
+     "pool1ewgnsmk42ljf00wytawfcl3dcash9f852u5fr92e37wqxutyksl",
+     "pool16vdezg50c80dhs78jhfl0gpqr68trtmqy40xplw39t9mgk6vrkd",
+     "pool1lvgs6gdcgl3lgcc77wxmuyst8x4h9gxcth07pzry0rfsv5ntl3r",
+     "pool1ptzl40tt9a6l2kp6fhjmzsg3t2maqdhwv6cnqu8kj6xgz3vw9us",
+     "pool17c4u37tjcjaeym0cs5mffvdkyyv74rkhczhnsgplef4sjglkwpj",
+     "pool1lfsslc99da8jhj5apzctsnfm76kjc6ndyc6hnynagcj8xexvjsr",
+     "pool12ahcpgfgzkm29zajw8fgfqjma6ngsks7zdk4tr7q280pwfvtlek",
+     "pool18xmqj9h97tx245mzkz0fqlvas5zse0fzh9xmn9p6z77aj5jegsx",
+     "pool1vqq5mg8ccqemjr5ukfa48a767dqjsa7nas8xnpf7huvcz7amlv9",
+     "pool124hy9qgc0nhqsve268kj5r53pvz7ppg295q6r2d0sjxswchljf0",
+     "pool1f89cpnym44rfv52jj88f3g20axraw4g9g7aglnqsgjl220lpdd8",
+     "pool10xk8jp4m2cztf69x9gvg3j33x5drkrz2hulsjes29wktcfcxdls",
+     "pool16c989ahn582z53azjfmregygfuc9k44u3q97wqgyn0zxuzp3dn4",
+     "pool1nll5ghr8cdkl6ppnxpuk6c6vrg9d5kq3tp8d6xjdds5pct6pxj9",
+     "pool1me68mzk9kephj0yqya6xu9jefjvtg0dvmly3m9sy67cezrexalx",
+     "pool1f4n4mdsv5ydxuc3y4tzgumqvfa8xxlyr8jl70qquama0ug2pmhf",
+     "pool1nwv3c3q62lqcdgp7s0jtl4xldgfnjnt0szkdclk4tzjqzv6kv7n",
+     "pool1e96dkrs5msjuycwz4mf0kq6fytlz0x48mnrur5ggufqkzs2a4kp",
+     "pool177ukluyy3tq6mphkp7kfpe6ku48rs8x48le7y23quee0xqmal06",
+     "pool134d4ndkh0q43mykqh922k0khrrkm7rlpkj834ju6kwja6dmu2f6",
+     "pool19sydze39a8dccylczqe2m4nnslpreytxlj5fu400nqxkg8wvgx8",
+     "pool1jqnywskl2n92fx65thtew8zlj3vqfrqxz7zyj70tt7d3qmn0m9t",
+     "pool1z46azf72z9yjlq6rpngwn5syg5xup8jcwguu2t259ngl5cnv2ds",
+     "pool1lpw2wnj2vrc75fv7f4jnfzgkqvlrxlampz5nmduwve47xgnckns",
+     "pool10x7rsal3ldumkycuc7f7rslx3vc5axhz5jzwngfcg7hd6t2p7sc",
+     "pool12xxugucen5pql0ay70uakgqjaxpwfj6c9py8euyu4q3p23s0fyg",
+     "pool1wp9p6rlpratng7rhrvyz6mcjqsl04laxxvvuu06umc5vghacqa4",
+     "pool1ur2y44cgsyf9l40y4xdc7w3cwy88vgmj95deatatzqnqqhrfp7f",
+     "pool1lm89trd8cl36k8njlhgsemavry2jymnhddpvtk7fk7r7g4e3fep",
+     "pool1rpfj2y4vddj8azwu9977a63s2cjl374pep98l6dhuqh5u9jctj0",
+     "pool1043kkcc2uwmdf76wg6jy80tkgwztzprep2rakyypmwc4637c2xe",
+     "pool1aq6sd3kr3cnjk995tfthhyf0suth3rm547kp6pv35z7wgqu6twn",
+     "pool19mc6suzenqdvmq3ssf3nfzv4xva3wgl83z6syumccdppyar0vga",
+     "pool1t6tyc9menh5uax38j89jgdyj0maz6e4mgx90n7xkcl7mu8fzqxu",
+     "pool1dmugaarr3nq0679fa02kqunlfmcyxdxfy3quc9x9s69zquty478",
+     "pool1jsala5rdc0hjewcvu9dujcz8jpfxp7hadqr3r3hzs63skhhtpqs"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Nu.Fi & AdaLite D",
+    "pools": 18,
+    "ada": 301454975,
+    "tickers": [
+     "ELLIP",
+     "NUFI",
+     "NUFI0",
+     "NUFI1",
+     "NUFI2",
+     "NUFI3",
+     "NUFI4",
+     "NUFI5"
+    ],
+    "pool_ids": [
+     "pool15d62znf04qymt6ve536tt5y9ky979ly4um5zmgz9m850vu7wuv7",
+     "pool1f8erepj5w5nth5xfxgxnwpz59jzywt6zdwfr50jzjwfwksmg9ek",
+     "pool1qnrqc7zpwye2r9wtkayh2dryvfqs7unp99f2039duljrsaffq5c",
+     "pool16hs0jxw7h6pwg3ru7rcq3yvg4csj7lhmcpj68kqem2sh5nt8mwk",
+     "pool104avq7309gjm0fxms69yqusxy8zf888k4mamngg5vnc6vculpzq",
+     "pool1fqwnqk3phwa2s5thgym8dw34pv0z67m526uqprnjh93cvzxymef",
+     "pool1jdhjfcu34lq88rypdtslzwyf27uh0h3apcr9mjd68zhc69r29fy",
+     "pool1caulv7s08g0jnptzdc69qycptacu7fzahny2epzh7sh9vhqz6xz",
+     "pool1uhy50u9y76nd6z2xmzt3mta0yc7g3gdssef8lheyyg7zzymgzm8",
+     "pool1ecvcst7k9eul4ggnljh0jw2s5nc2tyfmyzsx3xg3kmmz6ptgfwj",
+     "pool1ea568m9q882n0tx5d4vxff2dmz2n7rq5h62hx5ystq625m4tcfu",
+     "pool1jg3fmnmc9n52sgzslhhvhye5e3xeqmrwkekdhh82sma47r47zg0",
+     "pool1s7ddsvuw09dvk7et6t842vhdfcmq893y88y3ev9attn67mruf5m",
+     "pool1q0a7a94cfk4ph7gugj636tsuhhd98l2sfjv2adhaff2mvs7kmtl",
+     "pool15r7xg0vrrv2yu8wj3866eap8ftkuxvdk5rjz2lh4xajjq5v3p5d",
+     "pool167zl76srpt5a2gthpsq0ye9z4fpray5vsh7xyzcn63hd5mnw7fa",
+     "pool1ye4zrxf0w7d7drq5wmat36dlzq270dxy9rhgcwufnaja644vwr9",
+     "pool1chtam5czevzk2ttctvltpsc8twlwf6zzyh7kj3jkz72gks975sn"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "#4 Nordic Pool",
+    "pools": 5,
+    "ada": 298083757,
+    "tickers": [
+     "NORTH"
+    ],
+    "pool_ids": [
+     "pool1k633phcvz2hjhj45evwwau4w576jpq83acg5h84w23jauqu56cw",
+     "pool12t3zmafwjqms7cuun86uwc8se4na07r3e5xswe86u37djr5f0lx",
+     "pool1lfvzgsrghmugvpym868mh29288ez0nncz680mamzjygu2jpuwcd",
+     "pool17rjst78s67lvellg8s586rf076jxa3wnsdz730f4xk2zwuhrtej",
+     "pool1nz9h4raywm6mu2v8l7htuaqvmn06l3mepuaxynpzlwljsf8txhy"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Cardano Foundation",
+    "pools": 5,
+    "ada": 249969212,
+    "tickers": [
+     "CF1",
+     "CF2",
+     "CF3",
+     "CF4",
+     "CF5"
+    ],
+    "pool_ids": [
+     "pool18rjrygm3knlt67n3r3prlhnzcjxun7wa8d3l8w9nmlpasquv4au",
+     "pool1xmlq3sgssww6kwu8dupgxukzhlk77j40p9c4r3qux3j5z2ysk2c",
+     "pool1l0erdjregched3dj828q93rfa2f4w4p62nr248xshj5huq6zuvp",
+     "pool1n6erydn8x79sa3fmrqmj7mcyqa9em5fppr447j6d9k0xwfl7sc5",
+     "pool1luhm55xxqp0cv7a43rcfrr8m6m74kfe7wdvqdgfzt483x29lr0t"
+    ],
+    "dreps": [
+     {
+      "name": "Cardano Foundation",
+      "ada": 150512643,
+      "rank": 9,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "1 Percent Pool #2 (v1)",
+    "pools": 28,
+    "ada": 235133023,
+    "tickers": [
+     "1PCT",
+     "1PCT0",
+     "1PCT1",
+     "1PCT2",
+     "1PCT3",
+     "1PCT4",
+     "1PCT5",
+     "1PCT6"
+    ],
+    "pool_ids": [
+     "pool1z7n2ruhmxmv77f6cqhd3wsy6774h2wuay77agxuf2y9mj8q55vw",
+     "pool1gclysx2h7fndj0jdajlmwvqr8q9tzu3rurjknacu0ff954fsg9a",
+     "pool1w8ham64lthvzzxzn5hknq4yrj8xt2nark409s2xmntlwvt4ag3r",
+     "pool1ddgcpgjcyawxw95se9x8qnc8gxgwjr4fqrk4vk6v9x47s0ggpjp",
+     "pool1kkfkdces5mdcyc9dn2hgg3463jggjvw3h89nejjarkz25uavaqu",
+     "pool1g0nq3m3fnvd245k4favcvutn09vce0yshg535f68d2xa54vy0cc",
+     "pool12mmcc4rc2fzfv7gyv8h06nvnsrm3m7erzdv8x6gzvjxlu2lf09n",
+     "pool1vnsfv2qpt5gxte9prupjey8kw7ap7t6c8lc02ks4s3gtqplhgd3",
+     "pool1uzla0r73fvpnvxr07m98nfzlxcv3q26mkjz00cqjfh7uqsyjkju",
+     "pool1rkyc3ss904h066sffergss99r9p2kqa4k6ds0g4u5ud4x7yaajd",
+     "pool1g8y2gz4sk7xhyaj469jlj3njyu5dlvqa7t7v9c2gk0yc69879z8",
+     "pool1s3z5qsg75dar26ykyzcz2u8wc2swgq7pyp7f9sdh5n06qh3jhq2",
+     "pool17qvfg2g843gw6lurru282kkex6vp3pyj6zwj99j4u6k7zvmva5a",
+     "pool1supp67ypelmgzuzqqvarc6czgmg3ggwpnrnfr90xpfcqqf8h05t",
+     "pool1ua0lx5ap5tj9f5l7tyjflp766ca5yu93djh5hqvm4e0kjgw5k7v",
+     "pool1e4tjrl3ve7dcqwa70pexds6f8llk0txx09gm3r4m472ej4p6473",
+     "pool1dww6s8stvm7dl2n8740s3v5rnxmsuqcl8jcnu64g7cds5w29pft",
+     "pool1nyf8x2xrlmfqwy9shqrlx2csentnzyjmxr0r3w0ljuaqz5ek7qz",
+     "pool18mege8wvzzdvh8cxx6ncnqyvacl4lxukw495c87xmz8qcdl6lj8",
+     "pool1258yqnsegc3k7raqcdkxu4893aqexxljflmg9g96yfha2qytayv",
+     "pool1ayfjmnrv5vg6tfducvysn360re6qfwuv2rhc4ph6jk33ztuxlhq",
+     "pool1w4am4s9w4gkt8r0245km62vtnnv9hhq6j68exzh2pyaxxfaq0gc",
+     "pool18zn7wa345uytjgds9hypn3jugnzqtfm4cny7anskkcmgwwxtwca",
+     "pool1yl76e0fhq0kcfy2jqs2mt6hl9xeyrnesehqp0p4s896lwv7hrta",
+     "pool15xgej4c7ns20y5pt7dc5vq6yj87ss5sl2ffucmh5j766j90ppur",
+     "pool1zmtm8yef7725p9n7x433m50kvv9xpzjujnny9m5t960g5qm30ua",
+     "pool1qdjx5xeeu6288ftmhmdr0c6mazkua7m07cydmr78ymfhz7jj7g4",
+     "pool15a04yc72q4tfkwaweu86l0764urswee8c3zxperyrdq4kx8nvua"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ADAvault",
+    "pools": 4,
+    "ada": 200146484,
+    "tickers": [
+     "ADV",
+     "ADV2",
+     "ADV3",
+     "ADV4"
+    ],
+    "pool_ids": [
+     "pool1xytvsd9qnvqxpthh9p8k85e823trvn3npxeur8kr9zhkqz5uls9",
+     "pool1ahazpr2yz5gljk2m4q8g7wnmq7m2sr9unhdfmr5arhqrjnntwdz",
+     "pool18vej0s9gska8c847aj95g9v24duuxg2g63d5cuqngnxew643jw9",
+     "pool19k9grwq9cdswn4k7vxzmwcls24jj3466g4s4xr5vucehcqpslfy"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "P2P Validator",
+    "pools": 4,
+    "ada": 199208869,
+    "tickers": [
+     "P2P",
+     "P2P2",
+     "P2P3",
+     "P2P4"
+    ],
+    "pool_ids": [
+     "pool1c2wf97p3j9gfvfjshj99ufxerpy3aznm8tzr2fd0ua465s26th4",
+     "pool19qgfp80d2sv3p2azmygfq87g7va4s3ewd6aaulas6eqsyz4r2yl",
+     "pool1nhlv5z2lsptzgcp9ype0mppc7zyndm66ypm4sw5hy27ewdchqx0",
+     "pool1umc7wawaucnyxr9tzrkgjcfc9crjsgpjcxf6xchy9xhnzvqkvrl"
+    ],
+    "dreps": [
+     {
+      "name": "drep1ytjh8c0dl",
+      "ada": 59867,
+      "rank": 230,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "StakeBowlPool1",
+    "pools": 3,
+    "ada": 199120196,
+    "tickers": [
+     "SBP1",
+     "SBP2",
+     "SBP3"
+    ],
+    "pool_ids": [
+     "pool18gk8kvd9qf829nldqus92q9y640e6u0jdyfz04mmktwxvglgt06",
+     "pool1fpvs8h5q5kwpz4k2yd0vw90dgdxacr3ef508tzzewm0kysdt4eq",
+     "pool1zeamhwsgj7n5wh499krl3dn2dp94tmeeh53q6g2jlm60jag2jwm"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ONE SecureStaking.io",
+    "pools": 5,
+    "ada": 198913120,
+    "tickers": [
+     "SECUR"
+    ],
+    "pool_ids": [
+     "pool15yyxtkhz64p7a8cnax9l7u82s9t9hdhyxsa3tdm977qhgpnsuhq",
+     "pool13qdkwy5y88ncr5qpjrh8hgtf94d0zw4wuhgezjg3hvlyyrh37c7",
+     "pool1lhz4gsk5ezdl5s4mv2kxgrkhzzhad6me2v0xmwuyt845vensdlc",
+     "pool1xjhzgchsl2ccvc5pj3aqytv9hh0jnaz63wtfnw4th07tjypm46x",
+     "pool14n77mmxh6a2d9k05jamzdwsws2ayvkyje8uc7led958p63at3aj"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "EMURGO",
+    "pools": 8,
+    "ada": 181233744,
+    "tickers": [
+     "EMGHW",
+     "MURA1",
+     "MURA2",
+     "MURA3",
+     "MURA4",
+     "MURA5",
+     "MURA6",
+     "MURA7"
+    ],
+    "pool_ids": [
+     "pool1m0drnjxsvnlesq0rwmur2rh6lenuql57jfzd6cf6aegj2cv7ugy",
+     "pool192pfftt48zc4x5aellvpufk6l6zxllpldw0rx82vrhqrqfhhqs2",
+     "pool1pmm654jfx088td54ekkkd0j28x6r5gnjdhnutzggursrxjnpk2y",
+     "pool13mas2wthxs28zftxskcsd8t87jk2w9ntc0u5uflt45sh7lcvs8h",
+     "pool1xkwnlr34tjrnkz6u4c0p36cju3xuls4dyynsdkf6cv22ksuhz6q",
+     "pool1kx0jm9ycs3t99tnwafw6w72jkdlzhj5ltxe2nrzkd9x2u5x343h",
+     "pool1dghwejqptsjtf9k8paspg9rhl8humxx0nh7sk37j0ada2dr9mqh",
+     "pool1e2a7hrepdkn0anf65djlmz8jpycujcg4nmfzs8w2ftvcvlnrw0g"
+    ],
+    "dreps": [
+     {
+      "name": "Yoroi W₳llet",
+      "ada": 389172035,
+      "rank": 2,
+      "cls": "spo"
+     },
+     {
+      "name": "EMURGO",
+      "ada": 210721986,
+      "rank": 7,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "CARDANIANS.io",
+    "pools": 5,
+    "ada": 171978456,
+    "tickers": [
+     "CRDN",
+     "CRDN1",
+     "CRDN2",
+     "CRDN3",
+     "CRDNS"
+    ],
+    "pool_ids": [
+     "pool1vx9tzlkgafernd9vpjpxkenutx2gncj4yn88fpq69823qlwcqrt",
+     "pool189lsf6c2upyhmrzddyvyfjxxkqnte9pw8aqx7f4cuf85sjxlm02",
+     "pool1ukeqarukv9gxwy9pt8jkr4qvad2yf87758g3xzemmvmtk8lrynp",
+     "pool1kmsr376syqkluhxvv8k2axugqw7unjmlkwhfxjxtj7cw7qcn0jn",
+     "pool1a5jd3x2udlvpm9mt4gpau4jlags6qtth6jdsguryh2zy27f5ttj"
+    ],
+    "dreps": [
+     {
+      "name": "Cardanians",
+      "ada": 24391022,
+      "rank": 39,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Garden Pool Two",
+    "pools": 5,
+    "ada": 165932713,
+    "tickers": [
+     "EDEN"
+    ],
+    "pool_ids": [
+     "pool103455uc7a3477q8pdmzvny884qtlv9vhm2csxvqx2cadwuk36sq",
+     "pool16kus5xvdysgmtjp0hhlwt72tsm0yn2zcn0a8wg9emc6c75lxvmc",
+     "pool1cmaafeyy52ppz62jqmsm20c5p8nua7xx95lkkf96ktmqqj3w5td",
+     "pool1c7jrfce3zxkk9s9enzpvwj8fuayvx3pdzc2k2es6mrw6gsfcjep",
+     "pool142xwjhpcvtp7tahpmn8tlnek7smefp9wn66z67j8vjpmjxqdg56"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "GMO Coin",
+    "pools": 3,
+    "ada": 156774720,
+    "tickers": [
+     "GMO2",
+     "GMO3"
+    ],
+    "pool_ids": [
+     "pool14mhf0xtx45a8979mcnad8upas8apwal4nfqd95arv4wlsuk6m9q",
+     "pool1457cnl7qu568h98xrw8krfnjkhf05mfhaq2l50epwy36yuln20q",
+     "pool1cu8s68yc9xt7w0cm7ecgu3gj8un5dct9u0yjydzzevx0cvnluy5"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Bloom Two",
+    "pools": 6,
+    "ada": 151990050,
+    "tickers": [
+     "BLOOM"
+    ],
+    "pool_ids": [
+     "pool1hntu7agmt8u5j9c20ejen7dvq0jfkvkpnul3mrdd8tppqvwfvt2",
+     "pool13crd2ljx87988umk22er6ynwadfwdqupdpcq6prc6v59z62kxse",
+     "pool12vs4c3cm0tr49c7alrevfs0xa5g3s4al4fn46h33e69uusat04v",
+     "pool19r8kcmqpajlm6h5q0lv8jye0q7evdur39wfsgs4z98fcqpz9lct",
+     "pool1uyvyxt9k9g038h567x8halej4x87j7m4r4zyz9lhv4dcv83husk",
+     "pool17kew7rtakc7g6qzydntann5umw08xq3ll2j7spk7en4kvff69fa"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ADA Ocean Three",
+    "pools": 8,
+    "ada": 151636415,
+    "tickers": [
+     "OCEA1",
+     "OCEA2",
+     "OCEA3",
+     "OCEA4",
+     "OCEA5",
+     "OCEA6",
+     "OCEA7",
+     "OCEAN"
+    ],
+    "pool_ids": [
+     "pool1vc8jp7uagxgh8trzx7r260ndcydz89ges8sws05cyv7jj8q8gqs",
+     "pool1ctzja2cdwyeqnvehmrlclc5wrn9w9acwklk3acn73jrx56d66vs",
+     "pool1ell3xjtspzzz4vtsatscan6rheltf7j3hh2s8qsam2h3jvcxzm9",
+     "pool1a2nh3ktswllhwf07fjahpdg5mpqyq7j950pyftq9765r6t4cefl",
+     "pool1s0cfkzheywsftgwp0yz7sq4rt5gyf7t5kfwj5a269kpxvndjn6q",
+     "pool1zk6uxgptztrxxamzd0ugrtu84xg8mjymd2xcdvxqazpruqt9r3x",
+     "pool1xaudqyen24fz02vhu9qa2ry44suzfk8z3lh7sc6qx7c3gpweww2",
+     "pool1ffrre548h22n68ln29xph3qezrag3z8ad0kg8yzu6epds3qr58k"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Bitvavo",
+    "pools": 4,
+    "ada": 149464093,
+    "tickers": [
+     "BTV1",
+     "BTV2",
+     "BTV3",
+     "BTV4"
+    ],
+    "pool_ids": [
+     "pool13z5t8wlhtf7ccc0hud8pnvpjeekjdsyn7sq69fcxf3k6kpnlm74",
+     "pool1cpwymxe2fjr20u34f874e2q6za3razk0rttslrxqhc4tu3zxau8",
+     "pool1p70svj9zrg7lgzkdn8udlslry0t27qs8r9tz9lr955v2yfna2rl",
+     "pool1wr79nyuty7wjgkey5vlfx9rn0x5ecxgge5mq45fpftqhye2shc0"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Digital Fortress",
+    "pools": 6,
+    "ada": 149278443,
+    "tickers": [
+     "DIGI",
+     "DIGI2",
+     "DIGI3",
+     "DIGI4",
+     "DIGI5",
+     "DIGI6"
+    ],
+    "pool_ids": [
+     "pool1rvng7n968748udkc5rxy4h9zp9hms4s3jsfwuues76ft28uc056",
+     "pool1lvsa8e0dw6z8g2fkw7prnfa7627wuy5jjexaadck6w5sxw5xkvm",
+     "pool1jz5ljsnj4fzmk84j0wcw9ldy866dn07nzqg2ktyuyjvfvr3jgtq",
+     "pool1ppznyu6qrvlw9uuqa3tslryjd40nh56jyvmaqw6kdf4kzq3y8kh",
+     "pool13pt7us94nw782t5v4d89sz8zqn8hcn8r8r7hhph5mvxvvp3c76v",
+     "pool1jql92je87mrx5gpjhmwr6a8a766cktcf5p0p8wd0wxq87nu80yf"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "BigLazyCat",
+    "pools": 3,
+    "ada": 148308229,
+    "tickers": [
+     "BLC",
+     "BLC2",
+     "BLC3"
+    ],
+    "pool_ids": [
+     "pool13k6tphjfsgqdq7h27p4x86ruchcdg2x073luw8pndh3ajxvwvja",
+     "pool1a0kp4vl4fh0p0rs8s08rm7qq3vkj3epwraayk3sdgm8sz0zwt7t",
+     "pool139gdv4lxw53enk4rms0ryr4ey07k56jufmfrclqqehjdzglheu6"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "P2P & Tangem",
+    "pools": 2,
+    "ada": 143804996,
+    "tickers": [
+     "PPTG1",
+     "PPTG2"
+    ],
+    "pool_ids": [
+     "pool1lu2luhmkyayq9njh848kfknn6evwzmn3gzsxar7z3sttg7grxcm",
+     "pool1phx66qvekyhrt3xsfp0zmmfzln726475qtqpw3vek6fjjxkucuy"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Moonstake 6",
+    "pools": 4,
+    "ada": 132841484,
+    "tickers": [
+     "MS4",
+     "MS5",
+     "MS6",
+     "MS9"
+    ],
+    "pool_ids": [
+     "pool1fpu5xurq3jx5rn626ejcx0dzzzk5lmtvdl2qkj9l4kw2sjp50dz",
+     "pool1wpmjtfqcwvtcs9znpuulk99yk2zz6pfh0c4k9f2xlcspgqjndk2",
+     "pool19lz8nyz0jjpdrdtnjaar4untk4th23gpg5s7aegn7480zff4vgq",
+     "pool1s04pdfl3sv5gzuc80322rc4ne0xs7gekux7gtckvvwt7qutjy6w"
+    ],
+    "dreps": [
+     {
+      "name": "Moonstake",
+      "ada": 34171810,
+      "rank": 29,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ATADA Stakepool in Austria",
+    "pools": 2,
+    "ada": 129985843,
+    "tickers": [
+     "ATAD2",
+     "ATADA"
+    ],
+    "pool_ids": [
+     "pool1qqqqqdk4zhsjuxxd8jyvwncf5eucfskz0xjjj64fdmlgj735lr9",
+     "pool19w5khsnmu27au0kprw0kjm8jr7knneysj7lfkqvnu66hyz0jxsx"
+    ],
+    "dreps": [
+     {
+      "name": "Martin Lang",
+      "ada": 72274934,
+      "rank": 19,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "TITANstaking #2",
+    "pools": 2,
+    "ada": 123700183,
+    "tickers": [
+     "TITAN"
+    ],
+    "pool_ids": [
+     "pool19pyfv4xnln8x4l7auw0n0skk3hd97shun707hrw5d4s553ys74x",
+     "pool1qqqqpanw9zc0rzh0yp247nzf2s35uvnsm7aaesfl2nnejaev0uc"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "SITION POOL",
+    "pools": 3,
+    "ada": 114190611,
+    "tickers": [
+     "SIPO",
+     "SIPO2",
+     "SIPO3"
+    ],
+    "pool_ids": [
+     "pool1w6l6rvhxtym5psec3mvgrjlg28d6hrv8g9jjexadzmxfgndfg2f",
+     "pool18rhzlrv83a7ygj7cp5uv8dx07qkn5drhe8nh6f3qvhv66xcyj2m",
+     "pool1p5ja48uqc7pjnuqvwu7cgmspvx938qpnf4zqm0x2k0ngkh4lkjx"
+    ],
+    "dreps": [
+     {
+      "name": "SIPO",
+      "ada": 120113673,
+      "rank": 11,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Trust Nodes",
+    "pools": 2,
+    "ada": 113049233,
+    "tickers": [
+     "TW001",
+     "TW002"
+    ],
+    "pool_ids": [
+     "pool1gaztx97t53k47fr7282d70tje8323vvzx8pshgts30t9krw62tm",
+     "pool1qxpjz94fpwdwnltngf036yjkh63nrl55xkshug56aukqqwn6gsn"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "(Crypto Capital Venture) #Pool2",
+    "pools": 4,
+    "ada": 112579269,
+    "tickers": [
+     "CCV1",
+     "CCV2",
+     "CCV3",
+     "CCV4"
+    ],
+    "pool_ids": [
+     "pool1urgvu6zk422j4xwtxa45lzpd6dm25msfthpkezr042secrtuwzc",
+     "pool1mh4ng2ldxk4sqfppzu6r4knxrk6e87e9c4wgrred84uy7xauzlh",
+     "pool1jq7r3evstu2c040vlry8tgvpwf0mfvft86cxecwjpwcuvvqfu2r",
+     "pool1yvf4nxph69ztm0tgj73ummxq45kfjhecyad26e3xc2002xgzalg"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ZZZ",
+    "pools": 5,
+    "ada": 110374773,
+    "tickers": [
+     "ZZZ",
+     "ZZZ2",
+     "ZZZ3",
+     "ZZZ4",
+     "ZZZ5"
+    ],
+    "pool_ids": [
+     "pool1vxz0deezj5c2950e7arpzfqxzq8zd9kawsullrzjw5rsq0yhxgr",
+     "pool14mm59ntjqzphjr6chrww639cdr3yjce4qcwzc5jkk38y22u7uc6",
+     "pool1smy2r8jdvgna5ykhe8rrch7h4qalyfafyzyh0rmanmq0jxptww7",
+     "pool1jx4ss2zjage3cw0wht3450328y82yeprmq4fr3e2qtac2rhezkv",
+     "pool1spus7k8cy5qcs82xhw60dwwk2d4vrfs0m5vr2zst04gtq700gjn"
+    ],
+    "dreps": [
+     {
+      "name": "YUTA",
+      "ada": 482774913,
+      "rank": 1,
+      "cls": "cc"
+     }
+    ]
+   },
+   {
+    "name": "NEDSCAVE.IO",
+    "pools": 4,
+    "ada": 106574932,
+    "tickers": [
+     "NEDS1",
+     "NEDS2",
+     "NEDS3",
+     "NEDS4"
+    ],
+    "pool_ids": [
+     "pool1qfxukshs4fkcrflzdnxa2fdza5lfvew3y6echg8ckaa4q8m5hyf",
+     "pool1vdh6kxcqt9mxavyv80ggnec6jjwms44ms30rhle3lt266aj8jgh",
+     "pool1cn0dqtplwf67fds40hgkf0u5rm4q4azev5qutmgkw5hdyvue2ue",
+     "pool1gas95lqlch5pj5e4lwg78gxlq7km9xfurfd557x4tgwk5kktd04"
+    ],
+    "dreps": [
+     {
+      "name": "NEDSCAVE.IO",
+      "ada": 30768094,
+      "rank": 31,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "SASA Stake Pool",
+    "pools": 2,
+    "ada": 95935719,
+    "tickers": [
+     "SASA",
+     "SASA2"
+    ],
+    "pool_ids": [
+     "pool1rmpv0h0pecysach8tj06vxx9wku2pdm74mk9cunx759v58q0hu2",
+     "pool153sc4fct34a680nyfj4084w8dpax6c0zt0js8zqvg3sj7wtk486"
+    ],
+    "dreps": [
+     {
+      "name": "SASA_nagamaru_ながまる",
+      "ada": 130367068,
+      "rank": 10,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "CardanoCafe",
+    "pools": 3,
+    "ada": 94713831,
+    "tickers": [
+     "CAFE",
+     "CAFE2",
+     "CAFE3"
+    ],
+    "pool_ids": [
+     "pool1tdsrw0n33gmy0mzh7cgtn9p0jy5xwjxaa2s26gn2ewf8kg4nrzx",
+     "pool1ufp38a9zwlvvrzcyxaxdrvav50nd7az5lyuzh4t0h3qp2gqamsx",
+     "pool18ljuhhw27t85zddz0pvsmsjsz5k0mlz03pzsxgh8qarcsw5wycc"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Spire Staking | 💎 Delegate to SPIR2",
+    "pools": 2,
+    "ada": 92927342,
+    "tickers": [
+     "SPIR2",
+     "SPIRE"
+    ],
+    "pool_ids": [
+     "pool16agnvfan65ypnswgg6rml52lqtcqe5guxltexkn82sqgj2crqtx",
+     "pool1yj9xduuwzvdkcwm2mc9x893zq684x7pyah4ja8zmzplgvxz6wgk"
+    ],
+    "dreps": [
+     {
+      "name": "SPIRE",
+      "ada": 529543,
+      "rank": 163,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Pilot Pool",
+    "pools": 2,
+    "ada": 88219203,
+    "tickers": [
+     "PILOT"
+    ],
+    "pool_ids": [
+     "pool1eqa7kxx4xg35cu4rqj4exkvzhenscgh8wxez0gl7hsagygp79kr",
+     "pool104gtn3hvp9lz5l6wevhjj98e45s7rfaa4zzvk9pex7nn786qncr"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool146s6wt66d",
+    "pools": 1,
+    "ada": 86688225,
+    "tickers": [],
+    "pool_ids": [
+     "pool146s6wt66d069uqfvjh39qn0racde6pytzju7y4mykf88zc0dscz"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "JAZZ",
+    "pools": 4,
+    "ada": 85156579,
+    "tickers": [
+     "JAZZ",
+     "JAZZ2",
+     "JAZZ3",
+     "JAZZ4"
+    ],
+    "pool_ids": [
+     "pool1h0524mtazrjnzqh5e4u060jsfk8lpsqqjfpa5gygjwuhqu34wvt",
+     "pool1hsq2jrulgj97tna2femdhsfn2wurkkwt8uk9uvs42h9zs0a783p",
+     "pool1gwnu7f7qgaruxph8gn3u28qphvquvnj63elyd3r0nndacj9g9pa",
+     "pool1fmcv9p7vv754rwc0p6ud2mgm76vnn0gq0gngrk7rq400vsvhsvs"
+    ],
+    "dreps": [
+     {
+      "name": "JAZZ",
+      "ada": 96337966,
+      "rank": 13,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Cardano With Paul ☘️",
+    "pools": 2,
+    "ada": 84193235,
+    "tickers": [
+     "PAUL",
+     "PAUL1"
+    ],
+    "pool_ids": [
+     "pool1s6se64qce5rjjjhh6ufcdnc54p8qg78mlhjm38lymx99sqysvzx",
+     "pool14zdcvdec8qmqzsat5wg3a2h9f0u5yzrgjew534z8u3gs5durnjz"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1f2wfjqkf2",
+    "pools": 1,
+    "ada": 82325072,
+    "tickers": [],
+    "pool_ids": [
+     "pool1f2wfjqkf2wx6jq93pdck6hgmy9zgw32lmvrq9zejl7scqxjqfze"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Balance Stake Pool",
+    "pools": 1,
+    "ada": 78749254,
+    "tickers": [
+     "BALNC"
+    ],
+    "pool_ids": [
+     "pool15s7w4spg5ee7n7rprhs0dq78plw2mhjkpu5v97uvl27gz2way7z"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Cardano Suisse",
+    "pools": 1,
+    "ada": 78175506,
+    "tickers": [
+     "CH1"
+    ],
+    "pool_ids": [
+     "pool14cq4fchmmqjygwjw4zexmqqd6a7caxptjnvseyu6wanjuppv4vk"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "A CardanoLand pool ACL",
+    "pools": 4,
+    "ada": 78000441,
+    "tickers": [
+     "ACL"
+    ],
+    "pool_ids": [
+     "pool1pshqcksxywy68lt04lw6uf35f4yssekh5dx2mxqmyrukke2z5y3",
+     "pool1hht4pctn70tqdsd0zwuxv8d8cz6l5scjzaquty7vamyzy78eqvc",
+     "pool1pemnlylem2e94xguhd3fytj90848kpv4agvr6rthx2tp58z79ek",
+     "pool1tah22gjtc7ntrdezv49hysegcwpzafea35t6f4hn3wr2y4hz3vz"
+    ],
+    "dreps": [
+     {
+      "name": "ACL-CardanoLand",
+      "ada": 1057821,
+      "rank": 127,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1r9fpxs4kc",
+    "pools": 1,
+    "ada": 77714840,
+    "tickers": [],
+    "pool_ids": [
+     "pool1r9fpxs4kcn80kylsjxs8tg3p50nk2s66qerfqtw4x70n5740nj9"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1kmmahq4up",
+    "pools": 1,
+    "ada": 77689685,
+    "tickers": [],
+    "pool_ids": [
+     "pool1kmmahq4upmm5j8fkh3xa9vd7gdffkp8pd4axucfh4w4dw549yqe"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool155p7g23vd",
+    "pools": 1,
+    "ada": 77374066,
+    "tickers": [],
+    "pool_ids": [
+     "pool155p7g23vdme50kp5lfqylfx5h7ndldyz2mletvr8fqucqzyrk44"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1ljqjqskd4",
+    "pools": 1,
+    "ada": 76870881,
+    "tickers": [],
+    "pool_ids": [
+     "pool1ljqjqskd4f4zekzddw204u5xtzhyz2cllq5v5dmn27zdwf9c70f"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1fkjfa9yuu",
+    "pools": 1,
+    "ada": 76833852,
+    "tickers": [],
+    "pool_ids": [
+     "pool1fkjfa9yuu844hyg7yagvjr9u7texse7dcdhe75c6lta0xqpgqgk"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1m42um4nhc",
+    "pools": 1,
+    "ada": 76831668,
+    "tickers": [],
+    "pool_ids": [
+     "pool1m42um4nhc654jyjasdk6mu4q38yf3qcswqcr4q2ysc6sjhyve9n"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool19tz0rwsnz",
+    "pools": 1,
+    "ada": 76830212,
+    "tickers": [],
+    "pool_ids": [
+     "pool19tz0rwsnzmsw602rauwhzrsgk4qx55qzhkmxfqe04s6vuu37ptw"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1vevcjr87c",
+    "pools": 1,
+    "ada": 76828028,
+    "tickers": [],
+    "pool_ids": [
+     "pool1vevcjr87ce94hny28ra8yj5jjgalcqdhqs5xd44ru6k0qr3dsq9"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool16pfjyderm",
+    "pools": 1,
+    "ada": 76828028,
+    "tickers": [],
+    "pool_ids": [
+     "pool16pfjyderm8gvzfpcrlk9xunhjetcp4w20g73gzzrvsgncte60e4"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1nc4tjhmg9",
+    "pools": 1,
+    "ada": 76827664,
+    "tickers": [],
+    "pool_ids": [
+     "pool1nc4tjhmg9m2rmhq5thyvn9nvayy28dt0z7h5erhlfw6pzj9usfn"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1c3f370yr0",
+    "pools": 1,
+    "ada": 76827303,
+    "tickers": [],
+    "pool_ids": [
+     "pool1c3f370yr063cpzpdapsdyqye8dutrztqjfhrug8dr3uj7d50375"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1alseugmsr",
+    "pools": 1,
+    "ada": 76826936,
+    "tickers": [],
+    "pool_ids": [
+     "pool1alseugmsr68dn8mlen92jqgdc6nm4f3dvqyc8m55fgl967ytyua"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1v6p29tne9",
+    "pools": 1,
+    "ada": 76826936,
+    "tickers": [],
+    "pool_ids": [
+     "pool1v6p29tne9m7773lw2da65qn3e58r64np0k5fj8sxns82g85j03g"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1qcvvyev6g",
+    "pools": 1,
+    "ada": 76825844,
+    "tickers": [],
+    "pool_ids": [
+     "pool1qcvvyev6gdhdnggvypta045l0vtruawayq6gap29a99c755k8nm"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1m6awcstjz",
+    "pools": 1,
+    "ada": 76825116,
+    "tickers": [],
+    "pool_ids": [
+     "pool1m6awcstjzafepr5dwan54gemvh4y8dlvmqjtpwxsa7uqurcuq0l"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1zm5qw9r7f",
+    "pools": 1,
+    "ada": 76823296,
+    "tickers": [],
+    "pool_ids": [
+     "pool1zm5qw9r7fz25t2epjgvzynsj3gp5puxcwy7363zy3265ujndfaw"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1mfyzxyggr",
+    "pools": 1,
+    "ada": 76599403,
+    "tickers": [],
+    "pool_ids": [
+     "pool1mfyzxyggryp0jhgghvzas7qjdyz2rcfnm5rfq8s9uefvukrlps5"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1l0m820vyq",
+    "pools": 1,
+    "ada": 76495809,
+    "tickers": [],
+    "pool_ids": [
+     "pool1l0m820vyqh5pp2yzpw973qzz23neqqd977u0uczh9fs9zqvg0je"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "POLYPool",
+    "pools": 1,
+    "ada": 76464532,
+    "tickers": [
+     "POLY"
+    ],
+    "pool_ids": [
+     "pool1k0ucs0fau2vhr3p7qh7mnpfgrllwwda7petxjz2gzzaxkyp8f88"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Cardano AG Pool - Private",
+    "pools": 1,
+    "ada": 76393631,
+    "tickers": [
+     "CAG"
+    ],
+    "pool_ids": [
+     "pool1nqheyct9a0mxn80cwp9pd5guncfu3rzwqtmru0l94accz7gjcgl"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ADALovelacePool",
+    "pools": 1,
+    "ada": 76091634,
+    "tickers": [
+     "ADALO"
+    ],
+    "pool_ids": [
+     "pool1ekcsyzwexl7p2kwxxh34hy28l6772vrmff7jwmuxsa6u6fzty9z"
+    ],
+    "dreps": [
+     {
+      "name": "ADALO",
+      "ada": 2783938,
+      "rank": 92,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1w4cetqsly",
+    "pools": 1,
+    "ada": 76040850,
+    "tickers": [],
+    "pool_ids": [
+     "pool1w4cetqsly2cz9fq2te95tnk2r56mh6ew6dmpyfctv2ldv8xuj9g"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool15v22rpfg6",
+    "pools": 1,
+    "ada": 75816443,
+    "tickers": [],
+    "pool_ids": [
+     "pool15v22rpfg6qx9l0gx0m955gfv7tes0jpa9sy0gjs3a04lv6x9jdr"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Ledger by Figment 4",
+    "pools": 3,
+    "ada": 75479035,
+    "tickers": [
+     "LBF4",
+     "LBF5",
+     "LBF6"
+    ],
+    "pool_ids": [
+     "pool1ra2su7cvnmr83pu9nvvz4a9carsgc9egc3e5fuk7h9pycyp5ela",
+     "pool1l93nkg4n5jzdsd7k33g8vsavq4ne6ka82eddt9ysnu35vy6883j",
+     "pool1lvl6pfge9lgjuanu3556x29zglf6s3fw2lf2m823x9duj9gz6tu"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1cunvnkjkz",
+    "pools": 1,
+    "ada": 75261731,
+    "tickers": [],
+    "pool_ids": [
+     "pool1cunvnkjkzh2lna593sjmkylcr3r5rmxdpr8r9u6pfuer72p24x4"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1xsj9s3mfp",
+    "pools": 1,
+    "ada": 75036278,
+    "tickers": [],
+    "pool_ids": [
+     "pool1xsj9s3mfpztls97x7jjql0msmeh5v3wa5vyqhmmmsx8jzsqxrsv"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "AzureADA",
+    "pools": 3,
+    "ada": 74995414,
+    "tickers": [
+     "AZUR",
+     "AZUR2",
+     "AZUR3"
+    ],
+    "pool_ids": [
+     "pool108zdflss3ayqlm5c7vr6mtqj2uwl99vk28ur8dv4zswdzt6yauc",
+     "pool1m4enp55hp80tf6xl7k6f6593wnyu3pr83xfvef9x3ktdw9m0em5",
+     "pool1hkklrx9ac7w57d79mnv76rxlgq4acg5ecwhyep7k3zn0u5cz2k9"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ADAFR",
+    "pools": 1,
+    "ada": 74836020,
+    "tickers": [
+     "ADAFR"
+    ],
+    "pool_ids": [
+     "pool1gtphgrdj8sluxm9e7ca2spcwcq2p0dxj9zf5v0yv3gsagzq704n"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool106sjgd9m4",
+    "pools": 1,
+    "ada": 74683716,
+    "tickers": [],
+    "pool_ids": [
+     "pool106sjgd9m4shsvtc9ruk7femgndknefmct6eedskww37pzv8hz9n"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1zgjk3dzwc",
+    "pools": 1,
+    "ada": 73887314,
+    "tickers": [],
+    "pool_ids": [
+     "pool1zgjk3dzwcwd02juqntuzknr368hvxjxy8l8uzkxvgu4252d7ekf"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Aichi Stake Pool",
+    "pools": 1,
+    "ada": 73849703,
+    "tickers": [
+     "AICHI"
+    ],
+    "pool_ids": [
+     "pool1ju8f57hyvaa32tp85r468kuedvmjmcy56f8u9968drea57p50l5"
+    ],
+    "dreps": [
+     {
+      "name": "Aichi/Tokai_DRep",
+      "ada": 31994053,
+      "rank": 30,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Terminada",
+    "pools": 1,
+    "ada": 73833179,
+    "tickers": [
+     "TERM"
+    ],
+    "pool_ids": [
+     "pool1prc9hna2mgamtspchrygc66s9n4tlkvh39e3t9zccef4kzc3ns2"
+    ],
+    "dreps": [
+     {
+      "name": "Terminada",
+      "ada": 16184719,
+      "rank": 48,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Maracuja-Pool",
+    "pools": 1,
+    "ada": 73320191,
+    "tickers": [
+     "MARAC"
+    ],
+    "pool_ids": [
+     "pool16f95up5u5lyqne5mnxmlhe0rgdgmya27mph288r6gw0ukegjffa"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "HAPPY Staking 🥳 • Midnight • RealFi",
+    "pools": 1,
+    "ada": 73181513,
+    "tickers": [
+     "HAPPY"
+    ],
+    "pool_ids": [
+     "pool1a8n7f97dmgtgrnl53exccknjdchqxrr9508hlxlgqp6xvjmzhej"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Tech pool",
+    "pools": 1,
+    "ada": 72724642,
+    "tickers": [
+     "TECH"
+    ],
+    "pool_ids": [
+     "pool15cy4p3axu0m6sfrmxsp46z5cevx3ruksfwjl48730cgx24j4ydz"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "StakePool Service No.2",
+    "pools": 5,
+    "ada": 71676119,
+    "tickers": [
+     "SPS",
+     "SPS2",
+     "SPS3",
+     "SPS4",
+     "SPS5"
+    ],
+    "pool_ids": [
+     "pool10quq4wlghwrvmhdzc7geq22pyhzegccwj56ax2g8hx0cjfahufs",
+     "pool1mqy259k253xryf4hvdq0n72n2uvadcgp34r0fxwpqzm0z5n0qp6",
+     "pool1xftlxx9slpz59thcgtwgdj3k9e0ntn3p4qnmzs3r84dkx0hccjc",
+     "pool1lqucyxuvjktfmpf7fd28j54cfgamyrxed344vnwlm9wqkwjeqwk",
+     "pool155cu3s06js3llfh07vnzepatfuvt3s5s7uwldt9rzz55wz7pugt"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "AutoStake I",
+    "pools": 4,
+    "ada": 70808690,
+    "tickers": [
+     "AUTO"
+    ],
+    "pool_ids": [
+     "pool1zz7x8ergn02chznayj9fjds2gk5q6prmpdr49faspd65kzqsrjs",
+     "pool1ljywsch33t7gaf02aeeqkqpuku0ngpwl9fm04t7u5sl5xyunmgp",
+     "pool1yet04d4ykpp7me8uc2jx2glxrx88kt9uhmv6jeh7xkmtu5zucna",
+     "pool194usk2h8vcq6yw89xs5asrvw22g08kcfy72xyfrnnkg6qrhtlfw"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "dark-private",
+    "pools": 1,
+    "ada": 70744807,
+    "tickers": [
+     "DARK"
+    ],
+    "pool_ids": [
+     "pool13c9mnvfx4nvwvkszxcprwlv60fh3tteef50hhhv9yxptsua2v70"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ADA Australia",
+    "pools": 1,
+    "ada": 70531818,
+    "tickers": [
+     "ADAOZ"
+    ],
+    "pool_ids": [
+     "pool1vev8z03vh7jwx3mfrgzrt9fltt97nupaxv8ffj4r5r8mgwts5ze"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "🐍Viper Stake Pool",
+    "pools": 2,
+    "ada": 70312456,
+    "tickers": [
+     "VIPER"
+    ],
+    "pool_ids": [
+     "pool166dkk9kx5y6ug9tnvh0dnvxhwt2yca3g5pd5jaqa8t39cgyqqlr",
+     "pool1qvvn2l690zm3v2p0f3vd66ly6cfs2wjqx34zpqcx5pwsx3eprtp"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Ogam_Pool",
+    "pools": 1,
+    "ada": 68899705,
+    "tickers": [
+     "OGAM"
+    ],
+    "pool_ids": [
+     "pool18ufrgfgmslekdxnk9v9345qvhrr7vfgzkvneqtwm7unnwaht6ww"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Blue Cheese Stakehouse",
+    "pools": 7,
+    "ada": 68554958,
+    "tickers": [
+     "BCSH",
+     "BCSH0",
+     "BCSH1",
+     "BCSH2",
+     "BCSH4",
+     "BCSH5",
+     "BCSH6"
+    ],
+    "pool_ids": [
+     "pool1qzlwlpcsgflr9z3f24fg836tyq45p0kf5cnrp20s8v0psp6tdkx",
+     "pool1qzlw7z5mutmd39ldyjnp8n650weqe55z5p8dl3fagac3ge0nx8l",
+     "pool1qzlw7den2mlj0fmm65g0fnf46vyhzkhmdaf0f8v3s6skuue6rlk",
+     "pool1qzlwlyu92fsx94qu6u5nw3sy334f5yat3dv3jgx0grrsv0kp422",
+     "pool1qzlw72zfwhhc0ptvzdpld06szu39x9mlm6782efy6sluz932fx6",
+     "pool1qzlw76zztkg02rywyypyw6s0gtkg2zpkaxhl6cq7eauqg8h9659",
+     "pool1qzlw756y0z6ehg9jkerrfrydr7qlvzl5pgset33h3h2akst593a"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "One Community ADA",
+    "pools": 1,
+    "ada": 67785465,
+    "tickers": [
+     "1COMM"
+    ],
+    "pool_ids": [
+     "pool1whmm0hkxunyhxsr6dfjpx2tpvd05qhev820lx9vcmvqa5wjc6nh"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "JAPAN2",
+    "pools": 5,
+    "ada": 67443513,
+    "tickers": [
+     "JAPAN",
+     "JP2",
+     "JP3",
+     "JP4",
+     "JP5"
+    ],
+    "pool_ids": [
+     "pool1k0xrqp03mn9u3q3sadndd6vu9udl5v38xpzyw0shm8sskuxw2av",
+     "pool1xrrrr8gldqz8pjxj6j8c638a9py04xuv66kfgn2dlsx9g52te0t",
+     "pool1llxh8l0h8g9ghz3nrzh7ndvev4x43vnk72nsemzm795vxqs6dp8",
+     "pool1larpvn53yyufaf8fh89nrrpgruqcq8mgxrtdxp5y87cqse3yfg2",
+     "pool19uynx6nxcdksmaqdcshjg487fap3rs3axyhrdqa7gdqgzgxss4y"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Into the Cryptoverse",
+    "pools": 3,
+    "ada": 66910592,
+    "tickers": [
+     "ITC",
+     "ITC2",
+     "ITC3"
+    ],
+    "pool_ids": [
+     "pool138m7hevnvp664cmtralju857t5k7e4frpnaevtgpuykggr50kne",
+     "pool1psk0c2p7pwactw00nkzjexdw0msn7g8nddc06eyvds6yswr3tjg",
+     "pool16j3mvwws7zc9pjluyhddgea0tq647v0dh3y4nkcuckg9znjcun2"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1dl4695wfl",
+    "pools": 1,
+    "ada": 66428923,
+    "tickers": [],
+    "pool_ids": [
+     "pool1dl4695wfl79k7gtzt87gsf8gsqeq97yzuvaq0d4zxhz6c0nlf4g"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "COOL2",
+    "pools": 5,
+    "ada": 64687640,
+    "tickers": [
+     "COOL",
+     "COOL2",
+     "COOL3",
+     "COOL4",
+     "COOL5"
+    ],
+    "pool_ids": [
+     "pool1myvgx4ef424e6nw2strqq7dxcepav52plyyhxrk0avaw7y098l2",
+     "pool1vxvdypctdecvc2j7xu9y8h2fdxvkpjy2pp8luwg2h6dx5jlv0nk",
+     "pool1ppqdq5yfkkllrcj0u47pakg9e4ha568pz3a9kkrr6w2kyw8gxv7",
+     "pool1w7pt822hfgw30xnkwpjzz0sr5psejksqdcdw4l0ms33lsgynp2e",
+     "pool1vdcu0y6ujrwmnv4u50j6upxkjug7cx7zsaynjvgkcm2ycmajelc"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Thunderstruck",
+    "pools": 1,
+    "ada": 64387951,
+    "tickers": [
+     "THNDR"
+    ],
+    "pool_ids": [
+     "pool1jakl9kqhx87ywc7fcxweaxvna9khxhzyh6v8j70u6zpaxa45ghh"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ONYX Stake Pool #3",
+    "pools": 4,
+    "ada": 64367713,
+    "tickers": [
+     "ONYX"
+    ],
+    "pool_ids": [
+     "pool1tdvqgy6mq7lx7d345e276xmgmhh3s4zj8dzu6xzq5m7rx4tzkg2",
+     "pool17xextu09ghdfcmsq83whq0a45geg83jxe4qt94sevu087tzdzkl",
+     "pool1g6g2d09le8hd6nv9jhyavewdnw8tu0ndst4lqysd00ru24cav0a",
+     "pool1q5sspejl875flc0z6wh9y9zxkgqnk0y3aaw8jc0pkxs6cpavm4q"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "FIKA Pool",
+    "pools": 1,
+    "ada": 64102483,
+    "tickers": [
+     "FIKA"
+    ],
+    "pool_ids": [
+     "pool17s3mr9c4ejjfq20dz0ls9ggskc770kt267s9xmw93payzdswwgg"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1up53z2kad",
+    "pools": 1,
+    "ada": 63107402,
+    "tickers": [],
+    "pool_ids": [
+     "pool1up53z2kadt6l5xs359ckx477rpyvyg3favh25qrhqt2ujclpq3h"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ADA NORTH POOL",
+    "pools": 1,
+    "ada": 62558796,
+    "tickers": [
+     "ANP"
+    ],
+    "pool_ids": [
+     "pool1qqq0c53vaf5ju0n3fvujmyxwca0yhp65930evw9lngmr5705csz"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1kkqc725ff",
+    "pools": 1,
+    "ada": 61927324,
+    "tickers": [],
+    "pool_ids": [
+     "pool1kkqc725ffjcarn2ycawan340fkf476276c5yxy9nw3u5x3xluyg"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Crowdano Stakepool",
+    "pools": 1,
+    "ada": 61428779,
+    "tickers": [
+     "CROW"
+    ],
+    "pool_ids": [
+     "pool1pp7tn2w6ken4rpfcjwcdup3g4m5gcdhc9lgvrm3mnxz5stmrhq2"
+    ],
+    "dreps": [
+     {
+      "name": "CryptoCrow",
+      "ada": 300151139,
+      "rank": 3,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "FLOWR Stake Pool",
+    "pools": 1,
+    "ada": 60973892,
+    "tickers": [
+     "FLOWR"
+    ],
+    "pool_ids": [
+     "pool1tpr44v3pxth9j0ff246dvsryxpanxwx52f024ws3ecvn72sgv55"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "LEAF pool",
+    "pools": 1,
+    "ada": 59677641,
+    "tickers": [
+     "LEAF"
+    ],
+    "pool_ids": [
+     "pool1krznhwu3h5pu2stuslr53z5rme50t6384macsmylcnljwc7yjky"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Queen Ada",
+    "pools": 1,
+    "ada": 58547141,
+    "tickers": [
+     "QUEEN"
+    ],
+    "pool_ids": [
+     "pool1ksrg8a964464las0ymw88slrwxkychjz9lh09lqltu5m7nw3pq0"
+    ],
+    "dreps": [
+     {
+      "name": "phillerino",
+      "ada": 817489,
+      "rank": 147,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "X-StakePool2",
+    "pools": 2,
+    "ada": 58524945,
+    "tickers": [
+     "XSP",
+     "XSP2"
+    ],
+    "pool_ids": [
+     "pool14fjmlppz76667ws3jl5luejf2wgztuhpsftulvh3ucc65anqgve",
+     "pool10zyf32q3w3n9x940j6yqgkwuegzn77p94wcmpku6gvmrqw8a97d"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1nhhsh9yhl",
+    "pools": 5,
+    "ada": 57787053,
+    "tickers": [],
+    "pool_ids": [
+     "pool1nhhsh9yhlrvj9e3nce0zpx0xm2xlt6tx7gqakhr6hjc8wy84sat",
+     "pool1398lzhvtaa0hgz305d2jz4urfkwkkt66yv476wqe6att2f7dphh",
+     "pool1z9m2kxeat06t30yf6ar7sqpert0cjdgxzcv2dv36dcwcqcqtgk4",
+     "pool1k2qhlrrweu8fecd4hx4hn22lv00nrd3rjdxj6durax7m78q7ynu",
+     "pool1z5rt6kn6yvuczj44qla73mfyln9l55lw0jkz6x4kjw00u32zec3"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Straight Pool",
+    "pools": 1,
+    "ada": 56939059,
+    "tickers": [
+     "STR8"
+    ],
+    "pool_ids": [
+     "pool1qqqqdktl6pq46td0mwut0qn30g7nlue0sete9wxl0hwsq37wrw8"
+    ],
+    "dreps": [
+     {
+      "name": "Chris [STR8] - Straightpool",
+      "ada": 21140918,
+      "rank": 44,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Steak.and.ADA",
+    "pools": 1,
+    "ada": 56785423,
+    "tickers": [
+     "ST3AK"
+    ],
+    "pool_ids": [
+     "pool17ahr5ygy48vpdfnatqn2z4wfu2te4quapk2yx3k50ce6kd7feg0"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Rocky Mountain Pool",
+    "pools": 1,
+    "ada": 56706402,
+    "tickers": [
+     "ROCKY"
+    ],
+    "pool_ids": [
+     "pool173mzegwuu0pjcrt60ekelzj5haqr8r5e4e0n45qh9jdz7xm5kh8"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "LovelaceCommunityPool",
+    "pools": 1,
+    "ada": 55944340,
+    "tickers": [
+     "LCP"
+    ],
+    "pool_ids": [
+     "pool1hnp560z9e5acwux8tjguxq36j9r255zuf02u7z2d46dvcf5zhns"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "CloverNodes",
+    "pools": 1,
+    "ada": 55478142,
+    "tickers": [
+     "CLOVR"
+    ],
+    "pool_ids": [
+     "pool1zkdc6ve9nndk7vxnjlalhqt4hr5h8auz5qzjk7lrjrqtv23yuy5"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "OctasPool",
+    "pools": 1,
+    "ada": 54340412,
+    "tickers": [
+     "OCTAS"
+    ],
+    "pool_ids": [
+     "pool1z5uqdk7dzdxaae5633fqfcu2eqzy3a3rgtuvy087fdld7yws0xt"
+    ],
+    "dreps": [
+     {
+      "name": "OCTAS DRep",
+      "ada": 2736904,
+      "rank": 93,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1xn4kqt45x",
+    "pools": 1,
+    "ada": 53955956,
+    "tickers": [],
+    "pool_ids": [
+     "pool1xn4kqt45xh3udf87kmtkdfz8xh9qn6trlqsf39eusk23ufmxhgr"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1cyq3v3v43",
+    "pools": 1,
+    "ada": 53945171,
+    "tickers": [],
+    "pool_ids": [
+     "pool1cyq3v3v43hu7spwlfxdm6vq9djpsjjueerhlu5qr2rvd57vqk84"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Lovelacepool",
+    "pools": 1,
+    "ada": 53859977,
+    "tickers": [
+     "1LOVE"
+    ],
+    "pool_ids": [
+     "pool1ft4xjlz9uw0r0ewcgtkgeakqrfc5azxmxwsm5pt94dv67mw4rgd"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "easy1staking.com",
+    "pools": 1,
+    "ada": 53797456,
+    "tickers": [
+     "EASY1"
+    ],
+    "pool_ids": [
+     "pool1yr0cv3dtmhcfgqa6yetvmf769ngk89e6tepecmjrmjl2jzcw2lm"
+    ],
+    "dreps": [
+     {
+      "name": "Giovanni Gargiulo",
+      "ada": 3462979,
+      "rank": 83,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Cardanode: 0.00% Fee & 100% Rewards Guaranteed",
+    "pools": 4,
+    "ada": 53418023,
+    "tickers": [
+     "CNODE",
+     "FUND",
+     "FUND2",
+     "FUND3"
+    ],
+    "pool_ids": [
+     "pool1qa6lqyu67ghpa0evxfu9nzqkj3h82qpfku82ec79zdwru4pd25m",
+     "pool1jufp9k6gmyusvch65ra8yk2s7wu6cx5fsgnltl83p93ejg6h3xg",
+     "pool1lkcd3w5g6s6v3hf6kwt55dqpalrmq9h9f3ec033nnzhvgjgl860",
+     "pool17wsk3ww9asev7kfk9ktfw2cxcq865jq2l796aue66xldwx6cy82"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1axzm26vdu",
+    "pools": 1,
+    "ada": 53182875,
+    "tickers": [],
+    "pool_ids": [
+     "pool1axzm26vduyuxgw0x9ddh4vkvn7q5hyd558l0t9c08p556lf2zaj"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Fair Pool #01",
+    "pools": 1,
+    "ada": 53048287,
+    "tickers": [
+     "FAIR"
+    ],
+    "pool_ids": [
+     "pool1ddg6t2h9kj6lqlec4ncjs945lzj43m3ggrgdhf5sgzhtygpkznz"
+    ],
+    "dreps": [
+     {
+      "name": "FAIR Pool #01",
+      "ada": 626745,
+      "rank": 153,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ABLE Stakepool in ⚜️Québec - 🍁Canada",
+    "pools": 1,
+    "ada": 52877103,
+    "tickers": [
+     "ABLE"
+    ],
+    "pool_ids": [
+     "pool1mt8sdg37f2h3rypyuc77k7vxrjshtvjw04zdjlae9vdzyt9uu34"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Allnodes",
+    "pools": 1,
+    "ada": 50453619,
+    "tickers": [
+     "ALND"
+    ],
+    "pool_ids": [
+     "pool1du3r4a7xq60hg2x0wcz7lw5ya3qs74rk258c8kanp93rsqdqu45"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1cd6mgg8y9",
+    "pools": 1,
+    "ada": 49116337,
+    "tickers": [],
+    "pool_ids": [
+     "pool1cd6mgg8y98sq4cc7668xwwg0g6ln4z7r0gx0r5pfvjg9w8u0rc8"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "CLIO1",
+    "pools": 1,
+    "ada": 48914011,
+    "tickers": [
+     "CLIO1"
+    ],
+    "pool_ids": [
+     "pool1c89d4drtwn0048mekkdkzllz559ahnntxelyw2mppxnmc36hjlx"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Alfa Pool",
+    "pools": 1,
+    "ada": 48833908,
+    "tickers": [
+     "ALFA"
+    ],
+    "pool_ids": [
+     "pool18qddv82sx8p22uxzdrf0qx9lkewxadlr9ef45kpcf7dzz3n56qv"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Bravo pool",
+    "pools": 2,
+    "ada": 48392710,
+    "tickers": [
+     "BRAVO"
+    ],
+    "pool_ids": [
+     "pool12z39rkzfylvn9wfe8j6x9ucq6g2l4mw4azj70y0gd8ejczznyj3",
+     "pool1pfdd8d8n7jx0xnk4uev3x36se87c747w6l2d5x7fanh5w9evhw2"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Blue Ocean Stake Pool",
+    "pools": 1,
+    "ada": 48081408,
+    "tickers": [
+     "SDG13"
+    ],
+    "pool_ids": [
+     "pool16pv24th2tzy8k70vk4ms35tff0fjxfm2dd2psk7cvs27wnjvlgh"
+    ],
+    "dreps": [
+     {
+      "name": "Long Hồ",
+      "ada": 185755,
+      "rank": 201,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Stake Shark #1",
+    "pools": 3,
+    "ada": 48057695,
+    "tickers": [
+     "STSH1",
+     "STSH2",
+     "STSH3"
+    ],
+    "pool_ids": [
+     "pool15wkxegrfflzcyhurrjxsm9ljqtz09xr5rtnqsarnp7hmsz5um3t",
+     "pool13annzt9hjfc822f0ejvxjf7fsmxd6cc28whpk5kagec6ggfmm7u",
+     "pool14enw2643rn9nn6yzv60jyz3hj4kxs0jvap87lkgsqykh508jxm6"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Army of Spies",
+    "pools": 1,
+    "ada": 46808458,
+    "tickers": [
+     "AOS"
+    ],
+    "pool_ids": [
+     "pool1a23gmvalpdams9d42t7fur8vmknzjv7wd3nsvuvrc7dv66lnau0"
+    ],
+    "dreps": [
+     {
+      "name": "Army of Spies",
+      "ada": 82824612,
+      "rank": 16,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Tai Chinh - Tam An",
+    "pools": 1,
+    "ada": 45832892,
+    "tickers": [
+     "FIMI"
+    ],
+    "pool_ids": [
+     "pool1rct5guwnp6nk9f4ldn5tr3s42j0nm5rxeayv56lxua5ck47ex39"
+    ],
+    "dreps": [
+     {
+      "name": "FIMI",
+      "ada": 61524698,
+      "rank": 22,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "planetarium39",
+    "pools": 1,
+    "ada": 45676690,
+    "tickers": [
+     "PNR39"
+    ],
+    "pool_ids": [
+     "pool136q98jnwt093qle4ph86vdpuwplg7gyvt20h2nq4m6ksv8xjcuj"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "stakit.io Pool by TOBG",
+    "pools": 2,
+    "ada": 45631452,
+    "tickers": [
+     "STI",
+     "STI2"
+    ],
+    "pool_ids": [
+     "pool1nudasuv0lljpe0tswcverqvlh0v4226vgnpsuxn0e9nkvnvcvne",
+     "pool147en6w8f9cplnn5x7qt4ese7fpacmmcwuffrtu0yqxpaz4agppr"
+    ],
+    "dreps": [
+     {
+      "name": "stakit (sti) by TOBG",
+      "ada": 6289986,
+      "rank": 65,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "KTN3",
+    "pools": 3,
+    "ada": 45389838,
+    "tickers": [
+     "KTN2",
+     "KTN3",
+     "KTN4"
+    ],
+    "pool_ids": [
+     "pool1pvu2zdexh8wr4ggmuz90jvqrua6an43qj9m9urs785p8kwjzqwl",
+     "pool1x2h98z6e5xvrg5zw3v3dlu8hqdtj6lhp6r3w5ge7rvcqcx3pafq",
+     "pool1q66d2n39uvln4hazyzv8fyq977mpqus78sjd2369qfn7cptdeyh"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "CCJ2",
+    "pools": 5,
+    "ada": 45385266,
+    "tickers": [
+     "CCJ",
+     "CCJ2",
+     "CCJ3",
+     "CCJ4",
+     "CCJ5"
+    ],
+    "pool_ids": [
+     "pool13pclvkwxee4znt7qc55k8ny89zvdkvfrt04dtd99zjm5vs2tws5",
+     "pool1fg42yz0qpu5jd0gd3g5xty4mm6jdxkje8szag8h798nyyxw6zd3",
+     "pool168t0xlm0dtdgf7d5w2mrm7ulsw4czpw297yvrpke9pmjcc9hz7k",
+     "pool189j5mz6wa0gfrakwvn2tar7qt309qxrmsgde5v6qwm892n6re3v",
+     "pool107attaqquuq5ne2ch0hx0qcnlkzzr2683s4gml4ywnqvgj6pak9"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "⭐ TERA3 ⭐",
+    "pools": 3,
+    "ada": 44763996,
+    "tickers": [
+     "TERA",
+     "TERA2",
+     "TERA3"
+    ],
+    "pool_ids": [
+     "pool149d5lzg7m6susau4f4yfdztgkty34qrcdpvd3ygsetmljgxxf8g",
+     "pool1wyfau3rlkckr3clr4mkyxn9vdlrkup0fj7uyyflfccmms24gm3a",
+     "pool12rs385dd534g8gtdtmnvlhq63whdvc6vnuzxa5cpx843zdy73qy"
+    ],
+    "dreps": [
+     {
+      "name": "TERA DRep",
+      "ada": 28020002,
+      "rank": 35,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "AdaStat Pool",
+    "pools": 1,
+    "ada": 43930030,
+    "tickers": [
+     "STAT"
+    ],
+    "pool_ids": [
+     "pool1w7c2j0px43jmudhf48ezp7dy8j7904c9l3wc7809lhh2z026hch"
+    ],
+    "dreps": [
+     {
+      "name": "AdaStat",
+      "ada": 48838002,
+      "rank": 23,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "qzsbu",
+    "pools": 1,
+    "ada": 43616015,
+    "tickers": [
+     "qzsbu"
+    ],
+    "pool_ids": [
+     "pool13h08lf24fjmxxg0mmuattjv8dvy0r6fc4hrqg4qmj38xsweexrv"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "AtlasStakePool",
+    "pools": 2,
+    "ada": 43605365,
+    "tickers": [
+     "ATLAS"
+    ],
+    "pool_ids": [
+     "pool1u6kpt8hgqcm596kukj97ghefmxn8ks2cgwg8qqe0gtgscnufk5p",
+     "pool1853ffwhtuka742fq4av7s3ssdpvzhdkpw53th3es36zkwrllj9g"
+    ],
+    "dreps": [
+     {
+      "name": "ATLAS_Wolfgang",
+      "ada": 6083320,
+      "rank": 66,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Tokai Stake Pool",
+    "pools": 1,
+    "ada": 43469572,
+    "tickers": [
+     "TOKAI"
+    ],
+    "pool_ids": [
+     "pool1cf7mqj0xd8z4jqhr7nf565mxuvepk8euv5t6ehmuwe49kfz9llr"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Blockdaemon 🧱😈 Stake Pool 0",
+    "pools": 4,
+    "ada": 43176473,
+    "tickers": [
+     "BD0",
+     "BD1",
+     "BD3",
+     "BD4"
+    ],
+    "pool_ids": [
+     "pool1t6ek99u2dzj8sr606uqm3uz0tt4ejr4cpvwtqfwen6p2z57rrst",
+     "pool1haus36sw7cwyg8jdeg882mentse5txac7fmeew8ketuwky6q602",
+     "pool1ff2hr0sukqqd75jr2rh3wrmnesxqgpq42dgd6rm3ungnqp904ue",
+     "pool18e545ehldchd8qr8qx7q7m5dljzaky2twxrynx2z29ru2mt6pv4"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Pool",
+    "pools": 1,
+    "ada": 42433457,
+    "tickers": [
+     "Pool"
+    ],
+    "pool_ids": [
+     "pool1y6z9q5hgneup3j5s40jauhd6wq6qux7gkcfwnzfaynnsu0edy2g"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Luganodes #1",
+    "pools": 1,
+    "ada": 42079655,
+    "tickers": [
+     "LGNS1"
+    ],
+    "pool_ids": [
+     "pool1qvudfuw9ar47up5fugs53s2g84q3c4v86z4es6uwsfzzs89rwha"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Cardano Dave Pool",
+    "pools": 1,
+    "ada": 39947143,
+    "tickers": [
+     "DAVE"
+    ],
+    "pool_ids": [
+     "pool1t6n7rysk6wzm9wqxda6zxpzmm3j6256fs3mp06dc26n6503hhj4"
+    ],
+    "dreps": [
+     {
+      "name": "Dave",
+      "ada": 78947715,
+      "rank": 17,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Moksh Stake Pool",
+    "pools": 1,
+    "ada": 39915790,
+    "tickers": [
+     "MOKSH"
+    ],
+    "pool_ids": [
+     "pool1v5u6wzakuc25q3zpx04t8gjz3rgu60wuxkv2mh5nga23xjkc86s"
+    ],
+    "dreps": [
+     {
+      "name": "MOKSH",
+      "ada": 4332890,
+      "rank": 75,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "(Crypto Capital Venture)",
+    "pools": 1,
+    "ada": 39735607,
+    "tickers": [
+     "CCV"
+    ],
+    "pool_ids": [
+     "pool1sjwdmeme5zs042jzwmdvxshhv27kepxke0mr02f2yzacsyd4wtu"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1k8dm3fwaj",
+    "pools": 1,
+    "ada": 39529177,
+    "tickers": [],
+    "pool_ids": [
+     "pool1k8dm3fwajc6c8s32accfwqw8dqawl6k243z43cf74uxu7457z6l"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool16ajaae2n5",
+    "pools": 1,
+    "ada": 38929681,
+    "tickers": [],
+    "pool_ids": [
+     "pool16ajaae2n5lsyr4f9k9uz5y8tpf0996tw640dzu7chwp2wdrnz6a"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Midnight ▫ 0% fee",
+    "pools": 2,
+    "ada": 38597921,
+    "tickers": [
+     "HODLR"
+    ],
+    "pool_ids": [
+     "pool1eaeynp2hs06v4x8q65jfm2xqcd3dc80rv220gmxvwg8m5sd6e7a",
+     "pool17am8pt0vu7zp8du7edlnz7x9sq4pln22rsn802gkr062vtp6fdp"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ADAPOP",
+    "pools": 1,
+    "ada": 38290754,
+    "tickers": [
+     "APOP"
+    ],
+    "pool_ids": [
+     "pool1dxwgzj66pual956mnv9delkelg873yvgr2dd8s279m0hxqvr475"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "AdaStrong",
+    "pools": 1,
+    "ada": 38071882,
+    "tickers": [
+     "ADAST"
+    ],
+    "pool_ids": [
+     "pool1uthdnav2zc2hxpg2hyeyy545lnxtl8lqdcdqxjm0j8t5srmyvzj"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ECO Pool",
+    "pools": 2,
+    "ada": 36721709,
+    "tickers": [
+     "ECO"
+    ],
+    "pool_ids": [
+     "pool1wt0pf4u2xktp0f7apveu242w6nkm4ltk3m8g039lvuhwq4zdtf3",
+     "pool1qm06f4n2hwgeqzm9lsc3rdyqcsvtt2d7z76carwxjv0e274mu24"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool1f9934hk9a",
+    "pools": 1,
+    "ada": 36568289,
+    "tickers": [],
+    "pool_ids": [
+     "pool1f9934hk9awd25mmxl0dd2haqvda9nlquwnh5pv64hs42znl07zj"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "POP2",
+    "pools": 4,
+    "ada": 36302076,
+    "tickers": [
+     "POP",
+     "POP2",
+     "POP3",
+     "POP4"
+    ],
+    "pool_ids": [
+     "pool1etfar35l4tf6vam3gvqf5dnaq7levz32vgw4p00jzk7q7twg2te",
+     "pool19ejln2jcpg5dphc8m5nh8sya49sycsqj0v2cjxw6nku966cc8nu",
+     "pool12lsfsh2s8yt8dvrt9m8kgrgr6ktntngvn2vad60xlqz7kxz9fxr",
+     "pool1a600v0jd2z3yajazd80phln3exekumm7g56d9yvlrh6vx8dx2fc"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "BitcoinSuisse01",
+    "pools": 1,
+    "ada": 35886028,
+    "tickers": [
+     "BTCS"
+    ],
+    "pool_ids": [
+     "pool1m06dl8dfcy6d0475fanf0mtnnp2tzhw8rarums042q3jux23q0j"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "MUEN2 CharityPrivatePool",
+    "pools": 3,
+    "ada": 35306947,
+    "tickers": [
+     "MUEN",
+     "MUEN2",
+     "MUEN3"
+    ],
+    "pool_ids": [
+     "pool1l6vtae673eltsx86sk4xxr3fnn9tk8e99jkrdvcmjqlc6cca4nk",
+     "pool15z87p296y3m7eq8pwuu8qs6h2v4d2ctnx3yd2vqpl6txkkdvl5h",
+     "pool1e9wmzv9r2pkvhwddc3ay42axm9aggheae6u4e52tgx6326krg03"
+    ],
+    "dreps": [
+     {
+      "name": "MUEN",
+      "ada": 44833757,
+      "rank": 24,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Watashitachi2",
+    "pools": 2,
+    "ada": 35194675,
+    "tickers": [
+     "WA1",
+     "WA2"
+    ],
+    "pool_ids": [
+     "pool1p9sjhjx0v3k76wvgdqu7jcks2ra48wqlhc6g0mkewd25k3zcymy",
+     "pool1whk6lawmfz4zq5fw8zghglp23452gnm9zgs59nqafhpexwcvute"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Krypto Knight",
+    "pools": 1,
+    "ada": 35023272,
+    "tickers": [
+     "KKS"
+    ],
+    "pool_ids": [
+     "pool1lnr8t7pxvq3vfg8c5lc7yjcq39haws4ntu28xpxzx4zyya9ntny"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "SN₳KE Cardano Staking",
+    "pools": 1,
+    "ada": 33988292,
+    "tickers": [
+     "SNAKE"
+    ],
+    "pool_ids": [
+     "pool1xs34q2z06a46nk7hl48d27dj5gzc6hh9trugw2ehs9ajsevqffx"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "NAP-Nekota ADA Pool",
+    "pools": 2,
+    "ada": 33567134,
+    "tickers": [
+     "NAP",
+     "NAP2"
+    ],
+    "pool_ids": [
+     "pool126mkma8nv5axltmz7mmg8qz9e70nmhnf58hwx5772fhwgkhk6ag",
+     "pool1y49e700dnx8lpvznmysgzw203mjq6l7um85ka4ys6x0zcwgs77w"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Zetetic",
+    "pools": 2,
+    "ada": 33372576,
+    "tickers": [
+     "ZETE",
+     "ZETE2"
+    ],
+    "pool_ids": [
+     "pool15zrkyr0f80hxlt4scv72tej8l8zwrcphmrega9wutqchjekceal",
+     "pool12fzerww0hmk0fyvaujz5t2kg6hl4n8daz85rqy5jk8qk58r59y6"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "MOMO ADA POOL",
+    "pools": 1,
+    "ada": 33169706,
+    "tickers": [
+     "MOMO"
+    ],
+    "pool_ids": [
+     "pool1cmdq8atcy8x7lfhh09vdumveuh0ywsx0269ur774nvzkyhma37d"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "AAAA pool",
+    "pools": 1,
+    "ada": 32677795,
+    "tickers": [
+     "0AAAA"
+    ],
+    "pool_ids": [
+     "pool193uec04jldvah7r52q86wl033g4v42x0aste8jfg9999qepaxfp"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "KIWI by 🥝Kiwipool Staking",
+    "pools": 2,
+    "ada": 32393242,
+    "tickers": [
+     "KIWI"
+    ],
+    "pool_ids": [
+     "pool1vquhv3kh6xkklckaenl8alyuhfsld57ef5573aqauueyqacx4ak",
+     "pool1jgwu8lq3dqddnnx7prymcgcyrqy0fdlghg33he2hmw9t2gma3zd"
+    ],
+    "dreps": [
+     {
+      "name": "matticus_kiwi",
+      "ada": 1803541,
+      "rank": 107,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Sunshine Stake Pool",
+    "pools": 2,
+    "ada": 32366391,
+    "tickers": [
+     "SUNNY"
+    ],
+    "pool_ids": [
+     "pool195gdnmj6smzuakm4etxsxw3fgh8asqc4awtcskpyfnkpcvh2v8t",
+     "pool1p8fhygz7ga9hghhwmkr64p3ftn77lxu9nyddvsqszattcdyajc0"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "ADA4Good ❤️ ADA + Save the Children ❤️",
+    "pools": 1,
+    "ada": 32094475,
+    "tickers": [
+     "A4G"
+    ],
+    "pool_ids": [
+     "pool1ewrm7y47s9hv6hxku9n5gfnsuspymp0qqpwgvgm9rvm37cek2h6"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Minswap",
+    "pools": 1,
+    "ada": 31781503,
+    "tickers": [
+     "MIN"
+    ],
+    "pool_ids": [
+     "pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "DigitalAssetNews Two",
+    "pools": 2,
+    "ada": 31649413,
+    "tickers": [
+     "DNEWS"
+    ],
+    "pool_ids": [
+     "pool1nwt6mxqus3tpzrshky5h5kykz9rjpxmacrvw0z6yak9uk5p5045",
+     "pool1wf7wk3802jxtkmek6uprm77cgqx53t4qep9kwkl078w3yw0ff69"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "竜SM₳UG",
+    "pools": 1,
+    "ada": 30738902,
+    "tickers": [
+     "SMAUG"
+    ],
+    "pool_ids": [
+     "pool14wk2m2af7y4gk5uzlsmsunn7d9ppldvcxxa5an9r5ywek8330fg"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "CoffeePool☕️",
+    "pools": 1,
+    "ada": 30456658,
+    "tickers": [
+     "COFFE"
+    ],
+    "pool_ids": [
+     "pool1r55hyfrd3tw6nzpkvf4rfceh2f04yph92fc462phnd0akp2s5r6"
+    ],
+    "dreps": [
+     {
+      "name": "hix_coffeepool☕️",
+      "ada": 62564822,
+      "rank": 21,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1mzcwrurfd",
+    "pools": 1,
+    "ada": 30296536,
+    "tickers": [],
+    "pool_ids": [
+     "pool1mzcwrurfd3afzp0xz84423q8xxdxj0ju5h4sse73hx4msvqra9t"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "dataDyne.earth",
+    "pools": 1,
+    "ada": 29811483,
+    "tickers": [
+     "dtDn"
+    ],
+    "pool_ids": [
+     "pool13hxlxd6qa68fmfhrvvmasa0mjg30tj9p5v2lmgmgsmrp2rgzkfp"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "RANKT",
+    "pools": 1,
+    "ada": 29459713,
+    "tickers": [
+     "RANKT"
+    ],
+    "pool_ids": [
+     "pool1zdtqtsu3l3ytatzyvrq48d4mpnll9c5evwfq6taxkmn9vvdz839"
+    ],
+    "dreps": [
+     {
+      "name": "ranket",
+      "ada": 110745192,
+      "rank": 12,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Dapp Central Stake Pool",
+    "pools": 2,
+    "ada": 29036777,
+    "tickers": [
+     "DAPP"
+    ],
+    "pool_ids": [
+     "pool1qakys0fxx5p2fxcnsc2tyjpqa88q7qgtdh5t3a32hplv6fg25r9",
+     "pool12m0v0myprg2nfvlymzaghvjrzhnlzkh2psn3sur2nhkj5wpkdmh"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool19hrn8me38",
+    "pools": 1,
+    "ada": 28983372,
+    "tickers": [],
+    "pool_ids": [
+     "pool19hrn8me383w9atvmjwukjxqsdvr8udpmyxau956hdc53x669j8p"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Aspen Pool by Woodland Pools",
+    "pools": 1,
+    "ada": 28774158,
+    "tickers": [
+     "ASPEN"
+    ],
+    "pool_ids": [
+     "pool1qku2yhky7sv4dfjfv42uyvauhehuqevk25aw952d7ulzqzx3jcu"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "StakeLove",
+    "pools": 1,
+    "ada": 28710820,
+    "tickers": [
+     "LOVE"
+    ],
+    "pool_ids": [
+     "pool1jhzf2mm6zdlhl6w89uhgx8nq8p6ykcc86qq58vjy0ejyxrrksfj"
+    ],
+    "dreps": [
+     {
+      "name": "PoolTool",
+      "ada": 43249837,
+      "rank": 26,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Berry",
+    "pools": 1,
+    "ada": 28654983,
+    "tickers": [
+     "BERRY"
+    ],
+    "pool_ids": [
+     "pool19f6guwy97mmnxg9dz65rxyj8hq07qxud886hamyu4fgfz7dj9gl"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Hermes Stakepool Germany #1",
+    "pools": 1,
+    "ada": 28314173,
+    "tickers": [
+     "HRMS"
+    ],
+    "pool_ids": [
+     "pool16fyda57p3c8gp5r6gmcq5tvqsp6mnzwvkxswgznkuh8wztrp6vv"
+    ],
+    "dreps": [
+     {
+      "name": "Hermes Stakepool Germany (HRMS)",
+      "ada": 65665073,
+      "rank": 20,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Plush Pool",
+    "pools": 1,
+    "ada": 28182844,
+    "tickers": [
+     "PLUSH"
+    ],
+    "pool_ids": [
+     "pool1zn9hjcmfddhcp2aj9xxuvz7z40rasyatkgavr8ryyz72qdfwtrj"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "pool19asxjgd6a",
+    "pools": 1,
+    "ada": 27640872,
+    "tickers": [],
+    "pool_ids": [
+     "pool19asxjgd6ah9ddzauwede4wpt9vsp6s4ax5nz297wt47evc9sn7z"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "01 ▫ Elite Stake Pool",
+    "pools": 2,
+    "ada": 27456660,
+    "tickers": [
+     "ELITE"
+    ],
+    "pool_ids": [
+     "pool1qwa8x4u4a2pff0xdv0haxpgk3tyrvl5adl2lpf3ztcftqruhea0",
+     "pool1k6altfangsst2mmxg8a9wvg3dppyszu8ckfzd3uv6azgw3z2txy"
+    ],
+    "dreps": [
+     {
+      "name": "Elite",
+      "ada": 1262433,
+      "rank": 118,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Cardino Stake Pool",
+    "pools": 1,
+    "ada": 27229667,
+    "tickers": [
+     "DINO"
+    ],
+    "pool_ids": [
+     "pool1rvjj8cp3urh7de07pm0ceqha2x4lxws69lhd4429dm6djfjsy4l"
+    ],
+    "dreps": [
+     {
+      "name": "DINO",
+      "ada": 21571887,
+      "rank": 42,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "SAKE🍶",
+    "pools": 1,
+    "ada": 26516711,
+    "tickers": [
+     "SAKE"
+    ],
+    "pool_ids": [
+     "pool1xlfty06hg6q23qvcaxwv3p9ke7ff9n34qpr8tpxt2zflyq20ceh"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "COINTAX",
+    "pools": 1,
+    "ada": 26513066,
+    "tickers": [
+     "CTAX"
+    ],
+    "pool_ids": [
+     "pool1xlra52x2es7dmsvpmcp2922h89h346awe7yuu664e50yvrzaaqe"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "The independent",
+    "pools": 1,
+    "ada": 26374436,
+    "tickers": [
+     "FORTE"
+    ],
+    "pool_ids": [
+     "pool1gqgyta9sku3crjzfl9kj7kxsgfkt98y98yeu09kx22zscrezuj7"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Cosmic Asset Stake Pool",
+    "pools": 1,
+    "ada": 25816027,
+    "tickers": [
+     "COSMC"
+    ],
+    "pool_ids": [
+     "pool1c3ecg6h4m73a2mftmdm9mz3gxklxmnzuwzl9e38lzd4y26qcm8a"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Cardano World",
+    "pools": 1,
+    "ada": 25381395,
+    "tickers": [
+     "WORLD"
+    ],
+    "pool_ids": [
+     "pool107rsdzswa5s3y8wk5z62tgh5lhm790dsyqjp4lq66fht7qnaq9d"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Hisa~i🌺Okinawa",
+    "pools": 1,
+    "ada": 25301180,
+    "tickers": [
+     "HISAI"
+    ],
+    "pool_ids": [
+     "pool1lfnlxfxxwvjadesxzm4c7grgs3elj70vfdnpjwjmg0ufsqnq52t"
+    ],
+    "dreps": [
+     {
+      "name": "HISAI",
+      "ada": 43467304,
+      "rank": 25,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Early Bird Pool",
+    "pools": 1,
+    "ada": 24803133,
+    "tickers": [
+     "BIRD"
+    ],
+    "pool_ids": [
+     "pool1fs2m5rmlx66crcwwrrsf2pcxjhvk7kzdurcqusd3v5gm65cufnj"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "NKR ADA POOL",
+    "pools": 1,
+    "ada": 24449975,
+    "tickers": [
+     "NKR"
+    ],
+    "pool_ids": [
+     "pool10ya6hxrssmyhl560gqyalhqxudkgfjdlc0e4krww6wweyaeajs8"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Cardano Fans",
+    "pools": 1,
+    "ada": 24237355,
+    "tickers": [
+     "CRFA"
+    ],
+    "pool_ids": [
+     "pool1d3gckjrphwytzw2uavgkxskwe08msumzsfj4lxnpcnpks3zjml3"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "world economic pool",
+    "pools": 1,
+    "ada": 24227440,
+    "tickers": [
+     "WEP"
+    ],
+    "pool_ids": [
+     "pool189vq6ay0gku9tkqc2t3nfjk3n88mm23grmfas852jruw6fjlkaf"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Stake with Pride - Hosky ISPO",
+    "pools": 1,
+    "ada": 24071260,
+    "tickers": [
+     "PRIDE"
+    ],
+    "pool_ids": [
+     "pool1j099ctc7kcc9fa78dz5qwsy2g0n96lrgletwxvxmyzh4zd7ck0j"
+    ],
+    "dreps": [
+     {
+      "name": "PRIDE",
+      "ada": 8071113,
+      "rank": 59,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Hyperlink Pool",
+    "pools": 1,
+    "ada": 23926137,
+    "tickers": [
+     "HYPER"
+    ],
+    "pool_ids": [
+     "pool1yc6f3cqsc7jfh07hcns64v5cp8720mve870pgxf2wkr3u8l7tse"
+    ],
+    "dreps": [
+     {
+      "name": "HyperlinkPool_SPO",
+      "ada": 1956015,
+      "rank": 105,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ANGEL stake pool",
+    "pools": 2,
+    "ada": 23814356,
+    "tickers": [
+     "ANGEL",
+     "SION"
+    ],
+    "pool_ids": [
+     "pool1qqqyv9pn9typyqwcxqk5ewpxy5p27g5j2ms58hpp2c2kuzs5z77",
+     "pool1qqq9tqyj69j9kygpxza3h82ynh8d0xlueucnu2yqum8nse8hj7y"
+    ],
+    "dreps": [
+     {
+      "name": "ANGEL",
+      "ada": 2405131,
+      "rank": 99,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "RIZIN",
+    "pools": 1,
+    "ada": 23661479,
+    "tickers": [
+     "RIZIN"
+    ],
+    "pool_ids": [
+     "pool1pjmqlsyny06w0x60rfd3seul5xc9pluh3t08y55ylhks28jeh7c"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "BASHO",
+    "pools": 1,
+    "ada": 23414226,
+    "tickers": [
+     "BASHO"
+    ],
+    "pool_ids": [
+     "pool1asfgkqtmjuusclgx72xpzvpw336gkulchtstsx9lsj9uqzjckv0"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Liqwid",
+    "pools": 2,
+    "ada": 23070570,
+    "tickers": [
+     "LQWD"
+    ],
+    "pool_ids": [
+     "pool1gecx8vya3f8lyre2gn9w53547p0rhkmq0x78zrw956lkcvn8uyp",
+     "pool16r6g7plyuh4cqs9f3qy97l4rh5edwx3w9xvd205mhj2e58cpp28"
+    ],
+    "dreps": [
+     {
+      "name": "Liqwid DAO",
+      "ada": 24177866,
+      "rank": 41,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Infinity Rising 1",
+    "pools": 1,
+    "ada": 22721377,
+    "tickers": [
+     "RSNG"
+    ],
+    "pool_ids": [
+     "pool1mkjtce8r8yeku0mmc9vpwl0scuwuwc8lz89ckpj3k0kwgvlunv5"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Oyster Pool | Midnight | Mithril | Rosen Bridge",
+    "pools": 1,
+    "ada": 22387563,
+    "tickers": [
+     "OYSTR"
+    ],
+    "pool_ids": [
+     "pool1l6aeyn35nkqkn9lqqlwqnpraakdzuukjrqprcrj3sctk6hhe32k"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Staking4ADA.org",
+    "pools": 1,
+    "ada": 21885843,
+    "tickers": [
+     "4ADA"
+    ],
+    "pool_ids": [
+     "pool15ccmgcc4k9t8auxw9v4dfjmrl2kqnuevawn8z6n7xv09utw9hh3"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "QQQ",
+    "pools": 1,
+    "ada": 21721156,
+    "tickers": [
+     "QQQ"
+    ],
+    "pool_ids": [
+     "pool12udshcl3ycj4qpxes28n0ugsye23h89rj8z2a5ast4482m08xe7"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Bliss Staking",
+    "pools": 1,
+    "ada": 21720282,
+    "tickers": [
+     "BLISS"
+    ],
+    "pool_ids": [
+     "pool1vtpn0drn5t39frknedmqq2jkhsfstwketsnvdm7cjzz674s30v2"
+    ],
+    "dreps": []
+   },
+   {
+    "name": "Kaizen Crypto Stake Pool",
+    "pools": 1,
+    "ada": 21586534,
+    "tickers": [
+     "KAIZN"
+    ],
+    "pool_ids": [
+     "pool1jeu74g86ys4fekhykqcww99kdsq3nlym8a6kfw8s8ff3vskad70"
+    ],
+    "dreps": []
+   }
+  ],
+  "rest_ada": 2290017104,
+  "total_ada": 21493202937
+ },
  "flows": {
   "from_epoch": 658,
   "to_epoch": 668,
@@ -2139,7 +5332,7 @@
   "abstain_net_ada": -49417447
  },
  "lookup": {
-  "credentials": 1883324,
+  "credentials": 1883334,
   "shards": 256
  },
  "links": {
