@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T17:54:32Z",
+"generated": "2026-11-16T18:02:50Z",
 "epoch": 668,
 "k": 1000,
 "saturation_ada": 38999661,
@@ -11,12 +11,12 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2665,
-"alive_named": 1053,
+"alive_named": 1047,
 "pledge_not_met": 499,
-"above_saturation": 130,
+"above_saturation": 127,
 "excluded_exchanges": 48,
 "excluded_founders": 8,
-"excluded_several": 247,
+"excluded_several": 245,
 "excluded": [
 {
 "ticker": "BNP",
@@ -1021,12 +1021,6 @@
 "reason": "several pools"
 },
 {
-"ticker": "SECUR",
-"name": "FIVE SecureStaking.io",
-"pool_id": "pool14n77mmxh6a2d9k05jamzdwsws2ayvkyje8uc7led958p63at3aj",
-"reason": "several pools"
-},
-{
 "ticker": "FGMTB",
 "name": "Figment 11",
 "pool_id": "pool1g59d82m8c84f2ds6l50mng863h9cxfm88khxyhna2l9rzgv6030",
@@ -1684,12 +1678,6 @@
 "ticker": "SUNNY",
 "name": "Sunshine Stake Pool #2",
 "pool_id": "pool1p8fhygz7ga9hghhwmkr64p3ftn77lxu9nyddvsqszattcdyajc0",
-"reason": "several pools"
-},
-{
-"ticker": "SECUR",
-"name": "THREE SecureStaking.io",
-"pool_id": "pool1xjhzgchsl2ccvc5pj3aqytv9hh0jnaz63wtfnw4th07tjypm46x",
 "reason": "several pools"
 },
 {
@@ -2659,17 +2647,6 @@
 "stake_ada": 71007,
 "blocks_2026": 10,
 "blocks_last_10_epochs": 2,
-"retiring_epoch": null,
-"document": "valid",
-"roles": []
-},
-{
-"ticker": "VITAL",
-"name": "Responsible Staking",
-"pool_id": "pool1qadgwr92pgx0yz3u9n63f0s9ugryaud6wxers850z6sfu06y3rg",
-"stake_ada": 72774,
-"blocks_2026": 0,
-"blocks_last_10_epochs": 0,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8542,8 +8519,8 @@
 "name": "Aspen Pool by Woodland Pools",
 "pool_id": "pool1qku2yhky7sv4dfjfv42uyvauhehuqevk25aw952d7ulzqzx3jcu",
 "stake_ada": 28774158,
-"blocks_2026": 1197,
-"blocks_last_10_epochs": 206,
+"blocks_2026": 1198,
+"blocks_last_10_epochs": 207,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
