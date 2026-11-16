@@ -1,0 +1,298 @@
+/* Dashboard component (dashboard.js). Reuses the votes modal (.modal-votes,
+   .votes-header) and the body of the pools window (.pools-body); only the
+   figures, bars, chart and lookup are new. Colours from the site palette:
+   gold #FFD700, green #28a745, greys; orange and red mark a second role. */
+
+.modal-dashboard {
+    max-width: 920px;
+}
+
+/* the key figures */
+.dash-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 4px 0 8px;
+}
+
+.dash-card {
+    background: #f5f5f5;
+    border-top: 3px solid #FFD700;
+    border-radius: 6px;
+    padding: 14px 10px 12px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.dash-big {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+
+.dash-line {
+    font-size: 0.95rem;
+}
+
+.dash-was {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 6px;
+}
+
+/* the two bars */
+.dash-bar {
+    display: flex;
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 6px 0 8px;
+}
+
+.dash-seg {
+    flex-basis: 0;
+    min-width: 1px;
+}
+
+.dash-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+}
+
+.dash-key {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dash-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    flex: none;
+}
+
+.dash-g4 { background: #1e7a37; }
+.dash-g3 { background: #28a745; }
+.dash-g2 { background: #8fd19e; }
+.dash-g1 { background: #d9f2df; }
+
+.dash-v-active { background: #28a745; }
+.dash-v-nc { background: #555; }
+.dash-v-inactive { background: #b0b0b0; }
+.dash-v-abstain { background: #d6d6d6; }
+.dash-v-none { background: #f0f0f0; }
+
+/* every active DRep */
+.dash-chart {
+    position: relative;
+    margin: 6px 0 4px;
+}
+
+.dash-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dash-grid {
+    stroke: #e6e6e6;
+    stroke-width: 1;
+}
+
+.dash-axis {
+    font-size: 11px;
+    fill: #777;
+}
+
+.dash-barc {
+    cursor: pointer;
+}
+
+.dash-barc:focus {
+    outline: none;
+}
+
+.dash-c-spo { fill: #e8892b; }
+.dash-c-cc { fill: #c0392b; }
+.dash-c-drep { fill: #9a9a9a; }
+.dash-on { fill: #FFD700; }
+.dash-mine { fill: #FFD700; stroke: #333; stroke-width: 1; }
+
+.dash-mark {
+    stroke: #333;
+    stroke-width: 1.2;
+    stroke-dasharray: 4 3;
+}
+
+.dash-marktext {
+    font-size: 12px;
+    font-weight: 700;
+    fill: #333;
+}
+
+.dash-tip {
+    position: absolute;
+    z-index: 2;
+    width: 270px;
+    background: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    line-height: 1.35;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.dash-tipwhy {
+    color: #555;
+    margin-top: 4px;
+}
+
+.dash-legend .dash-c-spo,
+.dash-legend .dash-c-cc,
+.dash-legend .dash-c-drep {
+    fill: none;
+}
+
+.dash-sw-spo { background: #e8892b; }
+.dash-sw-cc { background: #c0392b; }
+.dash-sw-drep { background: #9a9a9a; }
+
+.dash-largest {
+    columns: 3 200px;
+    column-gap: 24px;
+    margin: 0 0 8px 22px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.dash-c-spo-text { color: #c46a12; }
+.dash-c-cc-text { color: #c0392b; }
+.dash-c-drep-text { color: #555; }
+
+.dash-small {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* where it moved */
+.dash-flows {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.dash-flow {
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.dash-flowlabel {
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+.dash-flownum {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.dash-neg { color: #b23b3b; }
+.dash-pos { color: #28a745; }
+
+/* the lookup */
+.dash-lookup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.dash-lookup input {
+    flex: 1 1 260px;
+    padding: 10px 12px;
+    font: inherit;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dash-btn {
+    font: inherit;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fffdf0;
+    border: 2px solid #FFD700;
+    border-radius: 4px;
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dash-btn:hover,
+.dash-btn:focus-visible {
+    background-color: #fff5bf;
+}
+
+.dash-wallets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.dash-result {
+    background: #fffdf0;
+    border: 1px solid #FFD700;
+    border-radius: 6px;
+    padding: 12px 14px;
+    margin: 8px 0 4px;
+}
+
+.dash-resline {
+    margin: 0 0 8px 0;
+}
+
+.dash-resnote {
+    color: #555;
+}
+
+.dash-go {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 640px) {
+    .dash-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dash-big {
+        font-size: 2.1rem;
+    }
+
+    .dash-largest {
+        columns: 1;
+    }
+
+    /* the chart keeps a readable width and scrolls sideways */
+    .dash-chart {
+        overflow-x: auto;
+    }
+
+    .dash-svg {
+        min-width: 720px;
+    }
+}
