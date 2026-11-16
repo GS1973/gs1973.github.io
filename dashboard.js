@@ -115,7 +115,9 @@
         const k = d.key;
         const box = $('dashCards');
         box.replaceChildren(
-            card(k.owners_third, 'owners hold more than', 'a third of all stake', wasText(k.owners_third, k.owners_third_prev, k.prev_epoch)),
+            card(k.owners_third, 'owners hold more than a third,', (k.owners_half ? k.owners_half + ' owners hold half' : 'a third') + ' of all stake',
+                 (k.owners_third === k.owners_third_prev && k.owners_half === k.owners_half_prev) ? 'The same a month ago'
+                     : (k.owners_third_prev ? k.owners_third_prev + ' and ' + k.owners_half_prev + ' a month ago (epoch ' + k.prev_epoch + ')' : '')),
             card(k.block, 'DReps together can block', 'any treasury withdrawal', wasText(k.block, k.block_prev, k.prev_epoch)),
             card(k.carry, 'DReps together carry', 'a treasury withdrawal', wasText(k.carry, k.carry_prev, k.prev_epoch)));
     }
