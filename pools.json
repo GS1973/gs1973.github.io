@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-16T18:02:50Z",
+"generated": "2026-11-16T18:54:28Z",
 "epoch": 668,
 "k": 1000,
 "saturation_ada": 38999661,
@@ -11,12 +11,12 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2665,
-"alive_named": 1047,
+"alive_named": 1053,
 "pledge_not_met": 499,
-"above_saturation": 127,
+"above_saturation": 130,
 "excluded_exchanges": 48,
 "excluded_founders": 8,
-"excluded_several": 245,
+"excluded_several": 247,
 "excluded": [
 {
 "ticker": "BNP",
@@ -1021,6 +1021,12 @@
 "reason": "several pools"
 },
 {
+"ticker": "SECUR",
+"name": "FIVE SecureStaking.io",
+"pool_id": "pool14n77mmxh6a2d9k05jamzdwsws2ayvkyje8uc7led958p63at3aj",
+"reason": "several pools"
+},
+{
 "ticker": "FGMTB",
 "name": "Figment 11",
 "pool_id": "pool1g59d82m8c84f2ds6l50mng863h9cxfm88khxyhna2l9rzgv6030",
@@ -1678,6 +1684,12 @@
 "ticker": "SUNNY",
 "name": "Sunshine Stake Pool #2",
 "pool_id": "pool1p8fhygz7ga9hghhwmkr64p3ftn77lxu9nyddvsqszattcdyajc0",
+"reason": "several pools"
+},
+{
+"ticker": "SECUR",
+"name": "THREE SecureStaking.io",
+"pool_id": "pool1xjhzgchsl2ccvc5pj3aqytv9hh0jnaz63wtfnw4th07tjypm46x",
 "reason": "several pools"
 },
 {
@@ -2647,6 +2659,17 @@
 "stake_ada": 71007,
 "blocks_2026": 10,
 "blocks_last_10_epochs": 2,
+"retiring_epoch": null,
+"document": "valid",
+"roles": []
+},
+{
+"ticker": "VITAL",
+"name": "Responsible Staking",
+"pool_id": "pool1qadgwr92pgx0yz3u9n63f0s9ugryaud6wxers850z6sfu06y3rg",
+"stake_ada": 72774,
+"blocks_2026": 0,
+"blocks_last_10_epochs": 0,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -4647,8 +4670,8 @@
 "name": "Janus Stake Pool",
 "pool_id": "pool1h8fnr4vlfcv9l4jlv9epalghy3zgjpye4wv85c4rafpvvfztsk7",
 "stake_ada": 663795,
-"blocks_2026": 35,
-"blocks_last_10_epochs": 1,
+"blocks_2026": 36,
+"blocks_last_10_epochs": 2,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7298,8 +7321,8 @@
 "name": "London pool",
 "pool_id": "pool18v9r8afalh50l4lstct2awdc3zspnvurcs7t45nv29uc2mnxc6c",
 "stake_ada": 5722019,
-"blocks_2026": 388,
-"blocks_last_10_epochs": 32,
+"blocks_2026": 389,
+"blocks_last_10_epochs": 33,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7529,8 +7552,8 @@
 "name": "Asahi Stake Pool",
 "pool_id": "pool12qtv7kyrx8g0d5890alk6dkc6n6nyfx80synspvqafjrqd3ergz",
 "stake_ada": 6829838,
-"blocks_2026": 480,
-"blocks_last_10_epochs": 63,
+"blocks_2026": 481,
+"blocks_last_10_epochs": 64,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7848,8 +7871,8 @@
 "name": "mimosa",
 "pool_id": "pool1pj5jnehwjtt4esfl0325hr338n98v3kcww3sggce59ugyf2f883",
 "stake_ada": 10318534,
-"blocks_2026": 524,
-"blocks_last_10_epochs": 102,
+"blocks_2026": 525,
+"blocks_last_10_epochs": 103,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8145,8 +8168,8 @@
 "name": "Cardanesia",
 "pool_id": "pool1pfprlfz0ywcnewjegazz05ghgcfkvu40v6edsz6yn8w362sdjr8",
 "stake_ada": 15310292,
-"blocks_2026": 1665,
-"blocks_last_10_epochs": 164,
+"blocks_2026": 1666,
+"blocks_last_10_epochs": 165,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8200,8 +8223,8 @@
 "name": "U0001",
 "pool_id": "pool1flkcdxj7cq6sfgl4fujx50p20ylqgj02kgwvfj4g5w24s6th8vz",
 "stake_ada": 16746040,
-"blocks_2026": 1160,
-"blocks_last_10_epochs": 163,
+"blocks_2026": 1162,
+"blocks_last_10_epochs": 165,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8409,8 +8432,8 @@
 "name": "Hisa~i🌺Okinawa",
 "pool_id": "pool1lfnlxfxxwvjadesxzm4c7grgs3elj70vfdnpjwjmg0ufsqnq52t",
 "stake_ada": 25301180,
-"blocks_2026": 1645,
-"blocks_last_10_epochs": 216,
+"blocks_2026": 1646,
+"blocks_last_10_epochs": 217,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8541,8 +8564,8 @@
 "name": "dataDyne.earth",
 "pool_id": "pool13hxlxd6qa68fmfhrvvmasa0mjg30tj9p5v2lmgmgsmrp2rgzkfp",
 "stake_ada": 29811483,
-"blocks_2026": 4063,
-"blocks_last_10_epochs": 496,
+"blocks_2026": 4064,
+"blocks_last_10_epochs": 497,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8629,8 +8652,8 @@
 "name": "BitcoinSuisse01",
 "pool_id": "pool1m06dl8dfcy6d0475fanf0mtnnp2tzhw8rarums042q3jux23q0j",
 "stake_ada": 35886028,
-"blocks_2026": 1880,
-"blocks_last_10_epochs": 330,
+"blocks_2026": 1882,
+"blocks_last_10_epochs": 332,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []

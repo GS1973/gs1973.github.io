@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T18:02:50Z",
+ "generated": "2026-11-16T18:54:28Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -2137,7 +2137,7 @@
   "abstain_net_ada": -49417447
  },
  "lookup": {
-  "credentials": 1883314,
+  "credentials": 1883318,
   "shards": 256
  },
  "links": {
