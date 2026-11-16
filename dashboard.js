@@ -150,10 +150,10 @@
 
     // ---------- every active DRep ----------
     function chart(d) {
-        const W = 860, H = 215, L = 50, R = 8, T = 8, B = 12;
+        const W = 860, H = 215, L = 68, R = 8, T = 8, B = 26;
         const n = d.dreps.length;
         const vmax = Math.max(...d.dreps.map(x => x.ada));
-        const step = vmax > 400e6 ? 250e6 : 100e6;
+        const step = 100e6;                                   // a grid line and a number every 100 million ADA
         const top = Math.ceil(vmax / step) * step;
         const s = svg('svg', { viewBox: `0 0 ${W} ${H}`, class: 'dash-svg', role: 'img',
             'aria-label': 'Voting power of all ' + n + ' active DReps, largest first' });
@@ -161,10 +161,21 @@
         for (let v = 0; v <= top; v += step) {
             s.append(svg('line', { x1: L, x2: W - R, y1: y(v), y2: y(v), class: 'dash-grid' }));
             const t = svg('text', { x: L - 6, y: y(v) + 4, class: 'dash-axis', 'text-anchor': 'end' });
-            t.textContent = v === 0 ? '0' : (v / 1e6) + 'M';
+            t.textContent = v === 0 ? '0' : (v / 1e6) + 'M ADA';
             s.append(t);
         }
         const bw = (W - L - R) / n;
+        // the rank of the DRep under the axis
+        [1, 10, 50, 100, 150, 200, 250].filter(r => r <= n).forEach(r => {
+            const cx = L + (r - 0.5) * bw;
+            s.append(svg('line', { x1: cx, x2: cx, y1: y(0), y2: y(0) + 4, class: 'dash-tick' }));
+            const t = svg('text', { x: cx, y: y(0) + 14, class: 'dash-axis', 'text-anchor': 'middle' });
+            t.textContent = String(r);
+            s.append(t);
+        });
+        const xt = svg('text', { x: W - R, y: H - 2, class: 'dash-axis', 'text-anchor': 'end' });
+        xt.textContent = 'Rank by voting power';
+        s.append(xt);
         const bars = d.dreps.map((x, i) => {
             const h = Math.max((H - T - B) * x.ada / top, 0.8);
             const r = svg('rect', { x: L + i * bw, y: y(0) - h, width: Math.max(bw - 0.6, 0.8), height: h,

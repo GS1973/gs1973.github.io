@@ -535,3 +535,8 @@
         margin-bottom: 4px;
     }
 }
+
+.dash-tick {
+    stroke: #999;
+    stroke-width: 1;
+}
