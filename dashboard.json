@@ -1,0 +1,1923 @@
+{
+ "generated": "2026-11-16T16:27:45Z",
+ "epoch": 668,
+ "key": {
+  "owners_third": 12,
+  "owners_third_prev": 12,
+  "block": 5,
+  "block_prev": 5,
+  "carry": 18,
+  "carry_prev": 20,
+  "prev_epoch": 662
+ },
+ "stake_total_ada": 21493202937,
+ "stake_bands": [
+  {
+   "label": "above the saturation point at k = 1000",
+   "pools": 213,
+   "ada": 13327136664
+  },
+  {
+   "label": "10 million ADA to the saturation point",
+   "pools": 282,
+   "ada": 6421769185
+  },
+  {
+   "label": "1 to 10 million ADA",
+   "pools": 417,
+   "ada": 1566594385
+  },
+  {
+   "label": "under 1 million ADA",
+   "pools": 1753,
+   "ada": 177702701
+  }
+ ],
+ "saturation_ada": 38999661,
+ "circulating_ada": 37567607735,
+ "vote_bar": [
+  {
+   "label": "active DReps",
+   "ada": 4637984076
+  },
+  {
+   "label": "Always No Confidence",
+   "ada": 131285282
+  },
+  {
+   "label": "inactive DReps",
+   "ada": 783082717
+  },
+  {
+   "label": "Always Abstain",
+   "ada": 10460499336
+  },
+  {
+   "label": "no DRep",
+   "ada": 21554756323
+  }
+ ],
+ "dreps": [
+  {
+   "name": "YUTA",
+   "drep_id": "drep1y2200we9c904un36tzaearntzzl63snffuul9qsk0te4utqfkke0w",
+   "ada": 482774913,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Yoroi W₳llet",
+   "drep_id": "drep1ygr9tuapcanc3kpeyy4dc3vmrz9cfe5q7v9wj3x9j0ap3tswtre9j",
+   "ada": 389172035,
+   "cls": "spo",
+   "why": "EMURGO, which also runs pools EMGHW, MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7 (both recognized by ID in the lists on this site)"
+  },
+  {
+   "name": "CryptoCrow",
+   "drep_id": "drep1ytfwpmt2fvdnyvlswyjyggpf8alwkpm7ha6cua9nsak525ssmvm57",
+   "ada": 300151139,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Phil UPLC",
+   "drep_id": "drep1yg343cyuckglj48a6gpcey7fkfcy5x5f9g65wme3ne9q2mgaedmkm",
+   "ada": 229693530,
+   "cls": "cc",
+   "why": "member of the Constitutional Committee (cold credential 13493790...) until epoch 799 (Intersect's committee anchor on the chain)"
+  },
+  {
+   "name": "Eternl DRep Committee",
+   "drep_id": "drep1y29h2q6cst2pvkl2sqqvf5ljcy36uv7pmy482xnczddzgqshus24w",
+   "ada": 228659851,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Everstake",
+   "drep_id": "drep1yt8p080ajks6zdnxd9z6a6q60p9sm9j5rl7tc63mfna8r6cnp4wr3",
+   "ada": 215301642,
+   "cls": "spo",
+   "why": "has the same name as pool EVRST (Everstake)"
+  },
+  {
+   "name": "EMURGO",
+   "drep_id": "drep1ytvlwvyjmzfyn56n0zz4f6lj94wxhmsl5zky6knnzrf4jygpyahug",
+   "ada": 210721986,
+   "cls": "spo",
+   "why": "EMURGO, which also runs pools EMGHW, MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7 (both recognized by ID in the lists on this site)"
+  },
+  {
+   "name": "Sebastien Guillemot セバ",
+   "drep_id": "drep1y2csyxt7u2hl4674pl9cef5lknafaw5nraxvyx033kmd0es3awuv0",
+   "ada": 170307176,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Cardano Foundation",
+   "drep_id": "drep1ydpfkyjxzeqvalf6fgvj7lznrk8kcmfnvy9hyl6gr6ez6wgsjaelx",
+   "ada": 150512643,
+   "cls": "spo",
+   "why": "Cardano Foundation, which also runs pools CF1, CF2, CF3, CF4, CF5 (both recognized by ID in the lists on this site)"
+  },
+  {
+   "name": "SASA_nagamaru_ながまる",
+   "drep_id": "drep1ytuddrgqca0xd4aams6pl9zndpcmxg0rs7z3mggjelm6kscp4arg5",
+   "ada": 130367068,
+   "cls": "spo",
+   "why": "carries the ticker of pool SASA (SASA Stake Pool) in its own name"
+  },
+  {
+   "name": "SIPO",
+   "drep_id": "drep1yffld2866p00cyg3ejjdewtvazgah7jjgk0s9m7m5ytmmdq33v3zh",
+   "ada": 120113673,
+   "cls": "spo",
+   "why": "carries the ticker of pool SIPO (SITION POOL) in its own name"
+  },
+  {
+   "name": "ranket",
+   "drep_id": "drep1ygj6hupsan57ujlv6l0vw9naxzt5753uhpe79nluymqzlcq7fe4vs",
+   "ada": 110745192,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "JAZZ",
+   "drep_id": "drep1yt77crnmjuqkj9gcwjjsurez7s07jhwhyt4suxs3xeqftcsfrspun",
+   "ada": 96337966,
+   "cls": "spo",
+   "why": "has the same name as pool JAZZ2 (JAZZ2)"
+  },
+  {
+   "name": "CardanoYoda (MANDA Pool)",
+   "drep_id": "drep1y2m0g4r66pyaw3p7u454wc0p4f0ygm8ueaev0mgd3tvwm7sskqwqp",
+   "ada": 95125541,
+   "cls": "spo",
+   "why": "carries the ticker of pool MANDA (Cardano Yoda Pool) in its own name"
+  },
+  {
+   "name": "Dumpling🥟",
+   "drep_id": "drep1y2rtf58m0lv9spcqx5mads20gpfulf6l97w57ecdy00vjdq0klh4l",
+   "ada": 83313282,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Army of Spies",
+   "drep_id": "drep1ygqgayvx8yzsaj9hprja3l6jy3v4px9z3u8uvecuvm3f92ce7mckx",
+   "ada": 82824612,
+   "cls": "spo",
+   "why": "has the same name as pool AOS (Army of Spies)"
+  },
+  {
+   "name": "Dave",
+   "drep_id": "drep1ygsgfhcydhlfglamhzkjn97rz3edef8a4z99fwl2frcwnrcmgurt3",
+   "ada": 78947715,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Dori",
+   "drep_id": "drep1yteh8udkttzy7frwl6yj5wzyqc04kx65pwwrqefx9j52ymgr6kuak",
+   "ada": 73323333,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Martin Lang",
+   "drep_id": "drep1ytwmwvtd0a8lr45ssner2tjxzv5y8q03w3606yeald9mdmgmwecja",
+   "ada": 72274934,
+   "cls": "spo",
+   "why": "names pool ATADA (ATADA Stakepool in Austria) in its own DRep metadata"
+  },
+  {
+   "name": "Hermes Stakepool Germany (HRMS)",
+   "drep_id": "drep1ygs5hngva3hymv7j4v0aewxpsjqskj9dnmy7j3jz5ven5zqvulq2t",
+   "ada": 65665073,
+   "cls": "spo",
+   "why": "carries the ticker of pool HRMS (Hermes Stakepool Germany #1) in its own name"
+  },
+  {
+   "name": "hix_coffeepool☕️",
+   "drep_id": "drep1ygnh2uf4wkc8ldgfxwz7rzuga3m8jtqew9xh5g3n587mg6g3ge0sj",
+   "ada": 62564822,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "FIMI",
+   "drep_id": "drep1ygeqtuysjy9s3mw3ej7essghq9rk3cnl08fehntu4jw3rtqfw96dg",
+   "ada": 61524698,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "AdaStat",
+   "drep_id": "drep1yfe9en4hsgc3r6nhtmwjeljh06hgnvt9yzzkwqcftvdj34cdxdg7u",
+   "ada": 48838002,
+   "cls": "spo",
+   "why": "names pool STAT (AdaStat Pool) in its own DRep metadata"
+  },
+  {
+   "name": "MUEN",
+   "drep_id": "drep1yt6lgdpqjey286qwt287mnk7sdqh95avfmde42vq3mltjys75kg5k",
+   "ada": 44833757,
+   "cls": "spo",
+   "why": "carries the ticker of pool MUEN (MUEN-StakePool,) in its own name"
+  },
+  {
+   "name": "HISAI",
+   "drep_id": "drep1ytjz60rgwhkzfhrv5hkvn9dxcerpwadq2khqvhp5fqws3kqmemccf",
+   "ada": 43467304,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "PoolTool",
+   "drep_id": "drep1yfemdmjmxr59kecgqnzd8d0ankkue4rdnn35c8qfsuljt9cjree5m",
+   "ada": 43249837,
+   "cls": "spo",
+   "why": "names pool LOVE (StakeLove) in its own DRep metadata"
+  },
+  {
+   "name": "Patrick_Tobler",
+   "drep_id": "drep1ygm9wxzrrdqpt0hek5kj7ys6tmsc8dycp7tkjwqxqrhjr6csq3s3t",
+   "ada": 41695478,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "HOSKY",
+   "drep_id": "drep1yf2jzhuc4f7eu2yay9d9ta3dykxxcwn34wz8kak7nhd7vcgrxn7ns",
+   "ada": 35145681,
+   "cls": "spo",
+   "why": "has the same name as pool HOSKY (HOSKY)"
+  },
+  {
+   "name": "Moonstake",
+   "drep_id": "drep1yfp4qmp849250svle8gw2m5jwjra86e76q8vz97wp998feg9mx9c5",
+   "ada": 34171810,
+   "cls": "spo",
+   "why": "has the same name as pool MS4 (Moonstake 4)"
+  },
+  {
+   "name": "Aichi/Tokai_DRep",
+   "drep_id": "drep1y2xacakh0g8q4exfgmvywy62an74cj7ejcpcrgq6vh4dckqhtsyh5",
+   "ada": 31994053,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "NEDSCAVE.IO",
+   "drep_id": "drep1ygxeadaklzz93n2tn9vnqz0fxapyv7ltel4d9808aeftl7gnxkszd",
+   "ada": 30768094,
+   "cls": "spo",
+   "why": "has the same name as pool NEDS1 (NEDSCAVE.IO)"
+  },
+  {
+   "name": "Goofycrisp",
+   "drep_id": "drep1ygxasnzmrevqra9vscpsy4xf4rqthzkp6rr6zzft2lc7nscahj9r9",
+   "ada": 29052875,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Cerkoryn",
+   "drep_id": "drep1yglrf4el8gghum239fggvfrau25k2576y4dvcz65r2ukj8sqpsc2k",
+   "ada": 29042318,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Socious",
+   "drep_id": "drep1ytcv4ax77s0enqef56qjflf4d8zjgxulukme9uf5p8cfaagysjppn",
+   "ada": 28126926,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "TERA DRep",
+   "drep_id": "drep1ygtxcscvznhs2nqap9u8gtxa0dx0l6q5zhsqqlw46enwh8cttd07h",
+   "ada": 28020002,
+   "cls": "spo",
+   "why": "carries the ticker of pool TERA (⭐ TERA ⭐) in its own name"
+  },
+  {
+   "name": "Drep One",
+   "drep_id": "drep1yfaaaaa270yjt6tu5skndugekprf5ykv5jshanl0c6gqx5qpstskf",
+   "ada": 26492089,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Florian Volery",
+   "drep_id": "drep1yguh6dsgx0g58v8pqmxgfrkq0x8vfv6tcp92uzzjrykwy8cjmelsy",
+   "ada": 25730075,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Blockjock (James Meidinger)",
+   "drep_id": "drep1ygnypzfv2v8fmfelthahvn0rqyh54sf6z2aa5m7f3fkjgqqt8l2qq",
+   "ada": 24654827,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Cardanians",
+   "drep_id": "drep1yt4lyf0fwlrz8k6j5evd3rxw0sqp67qkh36su98a97q3qsc0h03y4",
+   "ada": 24391022,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "wolf31o2 (Chris Gianelloni)",
+   "drep_id": "drep1yfa8r8r36x7x05htftce7qhafrn5nzzr6vazy95pzy6y5dqac0ss7",
+   "ada": 24387287,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Liqwid DAO",
+   "drep_id": "drep1ygctwczmpjxef8w3ljugkdth2d4upz2f2yfv9mvyxe0papswz26s6",
+   "ada": 24177866,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "DINO",
+   "drep_id": "drep1ytfnmf4uftt4fe0h63xhadl0v402gr6nnhtcgrq2sas26kgaf3n5y",
+   "ada": 21571887,
+   "cls": "spo",
+   "why": "carries the ticker of pool DINO (Cardino Stake Pool) in its own name"
+  },
+  {
+   "name": "Hephaestus Stake Pool [HEPHY]",
+   "drep_id": "drep1y2zu74gt8sxtrxcngqsmrnupkzrtmlqshmvmm5qtuhxx6xqt7yhaw",
+   "ada": 21518583,
+   "cls": "spo",
+   "why": "carries the ticker of pool HEPHY (Hephaestus Stake Pool) in its own name"
+  },
+  {
+   "name": "Chris [STR8] - Straightpool",
+   "drep_id": "drep1y27qjjnz9a7q6zmvpajzqpqylnka6lpkvcm9sgjrdheqt0qq6pchw",
+   "ada": 21140918,
+   "cls": "spo",
+   "why": "carries the ticker of pool STR8 (Straight Pool) in its own name"
+  },
+  {
+   "name": "CTEC-Stake-Pool",
+   "drep_id": "drep1y24xr6m4mkgl7e7886sk3wee7h73mcreysyvhrwzksy5ajqrv0rrv",
+   "ada": 20265919,
+   "cls": "spo",
+   "why": "carries the ticker of pool CTEC (CTEC Stake Pool) in its own name"
+  },
+  {
+   "name": "DraculaDAO",
+   "drep_id": "drep1ygs99wsy49h9vydggncfeck2xwmngyeltp66pvgzl6jz63s6qmu3p",
+   "ada": 16404238,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Rodrigo-[CHIL]",
+   "drep_id": "drep1y2j2q9pcl855969ea9csrhdta6slnamctgzuvuqnnkl6fusqyjy36",
+   "ada": 16268985,
+   "cls": "spo",
+   "why": "carries the ticker of pool CHIL (Chile_Stake_po) in its own name"
+  },
+  {
+   "name": "Terminada",
+   "drep_id": "drep1ytf9f78k7rkwk4cu6l2nvna22keu9yus4kqzc0hqspd36uszu0xc2",
+   "ada": 16184719,
+   "cls": "spo",
+   "why": "has the same name as pool TERM (Terminada)"
+  },
+  {
+   "name": "Angry Crypto Show",
+   "drep_id": "drep1y22m0k0d5mhv6anulnnh4m6m2cwp8evd3zw2qtjae64aw9chd7gag",
+   "ada": 15740011,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Wada DRep",
+   "drep_id": "drep1y2jnqfamg4tq5aepxhggzhqg7pq5gunph4wypkyh9q3qt2cru5m2j",
+   "ada": 12526943,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Paul Ko",
+   "drep_id": "drep1yt5cc878w5c8umxrfudnmzw425epxnvvttw7hhrhwfhp0zqf400ze",
+   "ada": 11909812,
+   "cls": "spo",
+   "why": "names pool JOY (JOY) in its own DRep metadata"
+  },
+  {
+   "name": "OREKA_Vote",
+   "drep_id": "drep1ygt7jr22s8fc36hnamgfzqtecuz2ppsj6jr5k0e8gp2pv7qw8ehel",
+   "ada": 11577523,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Cheeky Crypto (CHEEK)",
+   "drep_id": "drep1y2zu2ls2hqw9dycxl8s8z3d9nmw7s794xh3xn3jytkh30esalzwdv",
+   "ada": 10901078,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "RCADA",
+   "drep_id": "drep1yf7kjx5rlyuyzxkr4dzyccdfs8tesh29amrtcpyplu3asnqjgmdz3",
+   "ada": 10729573,
+   "cls": "spo",
+   "why": "carries the ticker of pool RCADA (Stake ADA Pool) in its own name"
+  },
+  {
+   "name": "Dr. Navjit Dhaliwal",
+   "drep_id": "drep1yfya5pwcm2zw0e60c3pkqscq6spge7m0k6jtxkfsymv68gs2z56e5",
+   "ada": 10226425,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Chris Cata",
+   "drep_id": "drep1yfdfs28uwafjgmrkatdektlzrvha2cmvqjhuz700e04mawq23rmrg",
+   "ada": 9602623,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Cardano Cypherpunks",
+   "drep_id": "drep1y23wk4w6f2aumc92vl9m3x74xzm6jh4ha9wdq09yfq2sl6q8zlv4l",
+   "ada": 8470502,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Varavas",
+   "drep_id": "drep1yte3chru8m7d3gzgpwvmgan0gjfxru9r9cyvrkkcerc0wcg6qfvtc",
+   "ada": 8349296,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "PRIDE",
+   "drep_id": "drep1yfpazkd0aqex0kd3vrhk47sjy0jqgq3xu6h2zv9wevfequcxyynwv",
+   "ada": 8071113,
+   "cls": "spo",
+   "why": "carries the ticker of pool PRIDE (Stake with Pride - Hosky ISPO) in its own name"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yt37s3z3ddzmzug9mujxy5c0patgetmjv6fhf3he4nmnv2ga3nad2",
+   "ada": 7762744,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfpj9e6k9q2et7nsutu0e7ymqt0v00aj57chnltjvn0lu0s28xakv",
+   "ada": 7105687,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y2fhyudw8ju53e296c3yugvul6h3fpurhnx45lfa9e5meqgtky0gg",
+   "ada": 7060472,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Holger",
+   "drep_id": "drep1y2k8uedxj5xzymxxzf07plg0t5xd4mmckwg9lwkwhdlwyesy0eyf8",
+   "ada": 6789233,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "concon",
+   "drep_id": "drep1y2v2ncht76apatlnxgtz8h8zy943avf7padqkkvycmzmcpcre7fek",
+   "ada": 6567290,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "stakit (sti) by TOBG",
+   "drep_id": "drep1ytae7wj5s8pu8qry9vfcnqy97w68z96lffzwzrc4verpkfqsl8e8m",
+   "ada": 6289986,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "ATLAS_Wolfgang",
+   "drep_id": "drep1ytq64jdk5fequ0228znae33d3ncs50ujl7qev0uqlx37l8cpjhc2k",
+   "ada": 6083320,
+   "cls": "spo",
+   "why": "carries the ticker of pool ATLAS (AtlasStakePool) in its own name"
+  },
+  {
+   "name": "InputEndorsers",
+   "drep_id": "drep1y2hlgh9600zjlt39dh54z7z8d65kahneck8yhh7ugmzc9as0xrzqd",
+   "ada": 6043961,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Earn Coin Pool",
+   "drep_id": "drep1yg8vjs7ute7z7vyd8yez5tgjey6043djjfh8d3n7sjev35g064xxc",
+   "ada": 5912499,
+   "cls": "spo",
+   "why": "has the same name as pool ECP (Earn Coin Pool)"
+  },
+  {
+   "name": "AtlasHub",
+   "drep_id": "drep1y2dnsj0taktxwmzwf4a7sp0mg3rvm3jsetag0h0m83khs3c7d3l6x",
+   "ada": 5773904,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "YOADA",
+   "drep_id": "drep1y26sfka2km0p4xw073ujdq406wxxczhdyfh9vw7yxpfselchzkdjn",
+   "ada": 5500245,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "WMOPS",
+   "drep_id": "drep1y2urcg66ytnvt5tv7kv4saemu83hnuk9rydhh0tmem96mac3ltuaf",
+   "ada": 5342409,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Peter Horsfall",
+   "drep_id": "drep1ytfas4axhm8yzrqqh4ru2uuqesu87zeq6fwg5pq8azqf7ecu4nu8s",
+   "ada": 5136147,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Viet_Cardano_Community",
+   "drep_id": "drep1ygpzpm4q38rfueu2use5te4ylykn4smvs7cxj2ggvktcjkqpxhvf4",
+   "ada": 5047701,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "erikdrep",
+   "drep_id": "drep1ytrf7kdyhk6ft3fqzqqqaszam6gt2fljpsvwkvngamyrvks6faung",
+   "ada": 4503272,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "MOKSH",
+   "drep_id": "drep1yt4vlxgkllldxtwrmzj2ymwnc5qw0cmzvkn4nxpxkpgt4fgwj36md",
+   "ada": 4332890,
+   "cls": "spo",
+   "why": "carries the ticker of pool MOKSH (Moksh Stake Pool) in its own name"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y2r5kww2gj4j6l2h7065fk5jtfhzxwf37ryygkdx4qhmpvqlah2jj",
+   "ada": 4077489,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Porto Cripto DRep 🇧🇷 🇵🇹 (Atico & Bosco, from Cardanistas Stake Pool - CARDs)",
+   "drep_id": "drep1ywuk39acvmkzda9e8kfmy7fwf946jd5uaa4l696atlas66s68f0fl",
+   "ada": 3945505,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Daehan_kor",
+   "drep_id": "drep1y28uwdrz2acyp4jka5fqp2fa3hp0klpme8wug3f5p2y45zsc0e8qw",
+   "ada": 3845692,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Mat - ECO Pool",
+   "drep_id": "drep1y2s4qj2j05s8h0a532ncv4q77rwglr5cwf4c728yfutauqqgjszwx",
+   "ada": 3792373,
+   "cls": "spo",
+   "why": "carries the ticker of pool ECO (ECO Pool) in its own name"
+  },
+  {
+   "name": "Mike Rogero (羅邁凱）",
+   "drep_id": "drep1y2lhe7wn2sr6vme8gnca4jrkhv47uh3tklsykmrqvwzdq4g5s8wju",
+   "ada": 3684532,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "LEADStakePool",
+   "drep_id": "drep1ytnvazqpsj98pu7w6vtmeddcy9pnn6y6nl0psr5ajzge52s82zz8t",
+   "ada": 3527413,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "CoinCeylon",
+   "drep_id": "drep1yfg2u28p4xuh5u5lv839vcfd6k2knptfw0avtefpyw4x3dsu5pu25",
+   "ada": 3488567,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Giovanni Gargiulo",
+   "drep_id": "drep1ytn29gxylzlrhzmkt4c75w7qmesxqc248r9089f0pvuysdqeva6ht",
+   "ada": 3462979,
+   "cls": "spo",
+   "why": "names pool EASY1 (easy1staking.com) in its own DRep metadata"
+  },
+  {
+   "name": "GAIA",
+   "drep_id": "drep1ytxr0lhg5j72wysva9ac2gsn4lck4gyen8ywxkqfchsqg3qs8uy44",
+   "ada": 3421444,
+   "cls": "spo",
+   "why": "carries the ticker of pool GAIA (GAIA Stake Pool) in its own name"
+  },
+  {
+   "name": "Captain Crypto",
+   "drep_id": "drep1y2x0d3jgae3xs7kdagq2w74kmzlgktw3l5th2lusrgn7m6gg52x78",
+   "ada": 3224791,
+   "cls": "spo",
+   "why": "names pool PARAD (Paradise Staking Pool) in its own DRep metadata"
+  },
+  {
+   "name": "42",
+   "drep_id": "drep1y26ppxzudkhtak4y7kc2rag9ezq7szje78aetxge3pg5w7qwthkqv",
+   "ada": 3114581,
+   "cls": "spo",
+   "why": "has the same name as pool 1337 (1337)"
+  },
+  {
+   "name": "BWtake(長崎)Japan",
+   "drep_id": "drep1ytcw6qzpqqclx2yd0zy64ztvlkkhnf6yrzza8whgnq4vz5gh89626",
+   "ada": 3096026,
+   "cls": "spo",
+   "why": "names pool NGS (NGS発達障がい支援KGSP) in its own DRep metadata"
+  },
+  {
+   "name": "Medusa DRep",
+   "drep_id": "drep1yg5pzxhp0lu0m7757ww2hke8qhcuqgqt3c2ezphngwytz4gjr6yge",
+   "ada": 3042504,
+   "cls": "spo",
+   "why": "names pool MDS (Medusa Development Support) in its own DRep metadata"
+  },
+  {
+   "name": "ADA_Labo",
+   "drep_id": "drep1ytrfnk7mslmfrwgqed6l5fyupkx22z59cx4qlwmrvdyjsmgrjejvq",
+   "ada": 2825322,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "CryptoRich (CRICH)",
+   "drep_id": "drep1yfkn463gfmajw3v0nva9cds6cvzghsvv6pdgn2ywmqv684q9u7ph4",
+   "ada": 2817450,
+   "cls": "spo",
+   "why": "carries the ticker of pool CRICH (CryptoRich Stake Pool) in its own name"
+  },
+  {
+   "name": "SAGAN Stake Pool",
+   "drep_id": "drep1y290s8rwsezxkct6urmqne8tc92wqtltal8dfxfk45xj6eqn2mgfx",
+   "ada": 2794558,
+   "cls": "spo",
+   "why": "has the same name as pool SAGAN (Sagan Stake Pool)"
+  },
+  {
+   "name": "ADALO",
+   "drep_id": "drep1y22eh8rzfmnjw8m82hlcgxfm8tcmwqmdqy2mjupdduztq0s5s5dkk",
+   "ada": 2783938,
+   "cls": "spo",
+   "why": "carries the ticker of pool ADALO (ADALovelacePool) in its own name"
+  },
+  {
+   "name": "OCTAS DRep",
+   "drep_id": "drep1y2t4hsu6zk98407q4ymj5jnm2d52rh76dv6whl88r9dts4qayakaf",
+   "ada": 2736904,
+   "cls": "spo",
+   "why": "carries the ticker of pool OCTAS (OctasPool) in its own name"
+  },
+  {
+   "name": "Cash",
+   "drep_id": "drep1ygeyfh8nm03dnl5a2hxdtv09pu7uhep9l0cpg0zpr60jqys05cku2",
+   "ada": 2667184,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Michele_Harmonic",
+   "drep_id": "drep1y28jk3gffhcecfhwaf73nfef833q8twqnhw8h7n60kelxus4xlej4",
+   "ada": 2610151,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "HenriqC",
+   "drep_id": "drep1y2f5m5mn48q65xkw65q2kfd2tkakz3lh8553ugmcsq0ahnsl2nfcj",
+   "ada": 2535921,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "No stress",
+   "drep_id": "drep1y2t3t35yx7j8nnh3wkqn2zzhgwqksksn85zv62pjrwzjawczwgyv7",
+   "ada": 2489202,
+   "cls": "spo",
+   "why": "names pool EPOCH (EPOCH Stake Pool) in its own DRep metadata"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ygw6c6ljek5re3dq4vmtpneqqlvccvcgwc8l7gjljqdfa0g0sduqg",
+   "ada": 2422476,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "ANGEL",
+   "drep_id": "drep1y2nfn97daaffqdpc2snj5k0fdamf7wgffn8xlscl2nxnxjcala80u",
+   "ada": 2405131,
+   "cls": "spo",
+   "why": "carries the ticker of pool ANGEL (ANGEL stake pool) in its own name"
+  },
+  {
+   "name": "Bamboo_Drep",
+   "drep_id": "drep1ythej7tvvq0tgat3l7ge6q40uarj02qmml5puzzgr00sd0gqtdeld",
+   "ada": 2274894,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "This Corrosion",
+   "drep_id": "drep1ytkzpmmukjy6qn6xd5skqm0ypcj5juw9rxddr5mmlzgjvtcghwqjr",
+   "ada": 2274735,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Adapolis_Stakepool",
+   "drep_id": "drep1yt9rp59j57rxev92qzsjyxpnyul8gc94fny4af32hr35l0qh9ahj8",
+   "ada": 2254123,
+   "cls": "spo",
+   "why": "names pool ADP (Adapolis) in its own DRep metadata"
+  },
+  {
+   "name": "Dmitrii Gartung",
+   "drep_id": "drep1ytd8ewnp38xz5469g63yw34ev9q9cch2hcyp332t8cqpzzqh23ykc",
+   "ada": 2011764,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Will Norris",
+   "drep_id": "drep1ytuufvd6maykgfcp20fxgpx7g6a9z2suchqehfejwdsx8cgpx80yg",
+   "ada": 2009987,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "HyperlinkPool_SPO",
+   "drep_id": "drep1y22gmm9yrmm4apv65ku433v05q5ywqxknjszyq0klf3mcxsfpnxh8",
+   "ada": 1956015,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "BKIND",
+   "drep_id": "drep1ytc6867ae0xmkekvmex79r9akyy28eu8nu03jf3xu9fle6c82l4eq",
+   "ada": 1827689,
+   "cls": "spo",
+   "why": "declares pool BKIND as its own (CIP-0208)"
+  },
+  {
+   "name": "matticus_kiwi",
+   "drep_id": "drep1ytjmkvp7rlsjww20nv3eyx3hj9c5pwezz5z5aq8pejg7v3qexfc28",
+   "ada": 1803541,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Dan",
+   "drep_id": "drep1yfsgx4dqfcxxs0ms533twzs7w0cvw8vq8qwzmjyrp280jfsl8gusv",
+   "ada": 1774826,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "AQUA_Vote",
+   "drep_id": "drep1ygzp8678j5q8s8syhk4a7a4tr54sp3su8fxzzdjhuxcn4tc6r2qcn",
+   "ada": 1650456,
+   "cls": "spo",
+   "why": "carries the ticker of pool AQUA (AquaPoolADA) in its own name"
+  },
+  {
+   "name": "Alex BKV",
+   "drep_id": "drep1yf2yd8jgdvmtm7jqmvvl0rmw7yprv5723y8h6tjnwfmcejq476nsl",
+   "ada": 1648643,
+   "cls": "spo",
+   "why": "carries the ticker of pool BKV (bkvpool.com | Single SPO) in its own name"
+  },
+  {
+   "name": "Nimuë Lady of the Lake Pool",
+   "drep_id": "drep1ygj02llvuusnhphvhlxf7d2cxhs53twjnwwl5at3zwht4xc6xdgl4",
+   "ada": 1605191,
+   "cls": "spo",
+   "why": "has the same name as pool NIMUE (Nimuë Lady of the Lake Pool)"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ytkz2ha7m9nvsr9qnyfyw2c37fkfkm897q0scm3tz2npl3smpwxsy",
+   "ada": 1602620,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "geeky.d",
+   "drep_id": "drep1ytjh9snv4pwe6t6gsghhns2ksmwpyr2sv2hnka34fc5mhgc4kn8zx",
+   "ada": 1430164,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "P",
+   "drep_id": "drep1yftc8zs7gjcj4a9nxzplz4wg6cwweya0kxp8adnw59vsyrqvrysud",
+   "ada": 1391300,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "TriangleForces",
+   "drep_id": "drep1y2y3euudfnw48xeulsfupsttlx8c4xphhaw90d66dvcrazgjdm5uc",
+   "ada": 1364677,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yt05vsgtruppuej5jzmswd7tj86ujanydq27qxc2nksrt8szgtg0g",
+   "ada": 1355677,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "DanShipps_HarborStakePool",
+   "drep_id": "drep1ygxu629f9zzm0r6fm8m2rtn3qglgtstvfxvt7nj68hxmdpcrwphte",
+   "ada": 1345277,
+   "cls": "spo",
+   "why": "names pool BOATS (Harbor Stake Pool) in its own DRep metadata"
+  },
+  {
+   "name": "Elite",
+   "drep_id": "drep1ytgutursutn574aqvumh77egx5wxastcv777p6dq3elfzqqwd5yc6",
+   "ada": 1262433,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Kevin_ALBERT",
+   "drep_id": "drep1y2gh7lj3jt89vs63rtr4vj5g4ulxhmp7t0dkh6hcel90mlsujgqlu",
+   "ada": 1235867,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Wolfoden",
+   "drep_id": "drep1y293f6495fvld5zqv0uqsjpjt25zzdkjglys7ykc678jtkghet05n",
+   "ada": 1196007,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "anonDREP",
+   "drep_id": "drep1yf8jsy2n55rvym9yl9s00qkx3v6m05jk9a2f098gfjfs0acqv9aav",
+   "ada": 1150528,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "AdaLovelace777",
+   "drep_id": "drep1ygehgu65kchqm929zp69xhl06hqkpcjv0rzy44sx40qhufqgh3xv2",
+   "ada": 1147863,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Tony Boersma",
+   "drep_id": "drep1yf7rhr6k8gfecdn8z5r38uqyaafcfr785lsgzsvc7ye3m9g3z20kj",
+   "ada": 1144330,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y26dxtv63ax74jqs20h9xw5m7559q4e53tkh2xqwknmw2nstuepzv",
+   "ada": 1144289,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "God BLESS You",
+   "drep_id": "drep1y2u2848fer43ghnyhyadhaqd2ek4q9x09h2y0sxev5gklcgnx3qyp",
+   "ada": 1142672,
+   "cls": "spo",
+   "why": "has the same name as pool BLESS (God BlESS You)"
+  },
+  {
+   "name": "Christopher Erckert | Dotare",
+   "drep_id": "drep1yg8aktnf09gdd0jpyhuz3fy22mfjrqrg2ru52907zeeeeqcra6xhe",
+   "ada": 1094787,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "ACL-CardanoLand",
+   "drep_id": "drep1y2r5pajz7vvw8v0kvf4968gjwua077n25k75mv3ne7vd6cc7rw8p5",
+   "ada": 1057821,
+   "cls": "spo",
+   "why": "carries the ticker of pool ACL (A CardanoLand pool ACL) in its own name"
+  },
+  {
+   "name": "Lauris_StakePool247",
+   "drep_id": "drep1yfpx6k5h4ms4gvmnz4s065p8z78kj0fzv8py6lzjzglevjck6wyf8",
+   "ada": 1025075,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "8Ball",
+   "drep_id": "drep1y296zyw2r8rcsy7slkd7l687hh88xc0m6ac2y3h2r3mvsdgc9q6yy",
+   "ada": 1024677,
+   "cls": "spo",
+   "why": "has the same name as pool 8BALL (8BALL)"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y269n33u9yvxleqg86ttu7al8eq08h664k37sqsr4z0uw7s98ckjg",
+   "ada": 993422,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yglw6cfkmr9lcn977jjstwy0swwuyjhnx64pnq4wh5rc8rsydhhcp",
+   "ada": 980014,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "RobertJTokay",
+   "drep_id": "drep1y2m0putteu5wcdf3dtww7p9tvfupqut5tplscdkd9q65uqcrx4p8e",
+   "ada": 960234,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "ADAR_Chris",
+   "drep_id": "drep1y26nj0u86z00s2c6yteecduedrzxxrxrn39th5mau0h0r5gszp025",
+   "ada": 953553,
+   "cls": "spo",
+   "why": "carries the ticker of pool ADAR (ADA Rewards) in its own name"
+  },
+  {
+   "name": "Erasmus",
+   "drep_id": "drep1y23tfs3c25kfmyqzy5d3364g4smp59esdmzxynqd5ndjjgq5dx7c7",
+   "ada": 949123,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "TOPO",
+   "drep_id": "drep1yt5qwxtmcsns42cjtn7w97ws4vxvxs28hr85rfkn7gd7gmgypa5d7",
+   "ada": 941904,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "HUAT 發 Singapore",
+   "drep_id": "drep1yghteujj0rxnxx89j4tslkjxewwn5th447jn963fmf8hdxg2k3qdm",
+   "ada": 938211,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "BRIAN",
+   "drep_id": "drep1yg7svuv02gh9j2q574jv06l4xnzwyp63effljze28qe993caj8ras",
+   "ada": 937008,
+   "cls": "spo",
+   "why": "carries the ticker of pool BRIAN (BRIAN Pool) in its own name"
+  },
+  {
+   "name": "Mayhem",
+   "drep_id": "drep1ygy4xcnfwuxcw48vrffavcmd6rtctkk7s8mvqejzwwzfpfq9z5583",
+   "ada": 927943,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Yosh",
+   "drep_id": "drep1ytd7s3he5rgxhkx0t2vnun25wy3t263877czxw8nelcld8ce66v4c",
+   "ada": 927464,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Next Epoch",
+   "drep_id": "drep1y27a56gx9vm6yhjm9wsvvp847mt0dv4cyx93vz2r5rjytnsew90d6",
+   "ada": 914979,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "drep.collective",
+   "drep_id": "drep1ydwtnlvdd8atlj5c5ylgw4kg5e640vyt8resattrjmwufyg4qclf7",
+   "ada": 912959,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Todd",
+   "drep_id": "drep1y2edf5yw90jcpt55pm4336y40gty468gk56un56z8pu2wfcklamyv",
+   "ada": 880833,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Pavol Korvas",
+   "drep_id": "drep1yfyx4tzq6hfu5w20n42ry0uc8tskaen57e2eytzwhzy7vkgqhawwu",
+   "ada": 875224,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Shawn McMurdo - SQUID",
+   "drep_id": "drep1yt99uyp9c8qura9spfgqe8uf7g2avmqc683x28zcugh0sycjd6wp0",
+   "ada": 854387,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "heo.keo",
+   "drep_id": "drep1ytwltt6ywdu4gtuxagz0s0wudwtm35kknp25z8cpmwwnlpc0xage6",
+   "ada": 853038,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Latam Cardano",
+   "drep_id": "drep1ytgsdkfznvjnwdxrzvf8x6tn4ctfukqqphsammzkfwatgsqgnpf2w",
+   "ada": 846870,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "phillerino",
+   "drep_id": "drep1ytu64qt7send5dw7wcd0z5geh4ka6qstgvtgval097hed7qqnqh2n",
+   "ada": 817489,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Scientific-Analytical-Tools",
+   "drep_id": "drep1yfmqpuaq077xuwnxuw29zg9emtttplmz49t0a762l2ksajsfarye5",
+   "ada": 769062,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "CardanoLeo",
+   "drep_id": "drep1y28xhrjxe496rnle8ln3slpggnp8leu3mn244ujrhwet0cc2vmte4",
+   "ada": 763979,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "AYOMI",
+   "drep_id": "drep1ygnmw0mfp7g43capnsxaa55pn2s7z3cvxd6enl8anm33vrcw95wgl",
+   "ada": 664929,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "BreadAndRoses",
+   "drep_id": "drep1yff7cs985wzeu2jjx48sld002rleqsrz8qtt3hp8whk9vnc5vq23n",
+   "ada": 631331,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y20fpc0f6qjl4edtl9cxzrvqzd8jkzr6ja7p0p2n7cxragqkurae3",
+   "ada": 626995,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "FAIR Pool #01",
+   "drep_id": "drep1ytamqncvuz2r0atkwxwgcn5zmgxm09j0g2lgcrp7ddqfsfcsgnr8s",
+   "ada": 626745,
+   "cls": "spo",
+   "why": "has the same name as pool FAIR (Fair Pool #01)"
+  },
+  {
+   "name": "jonahkoch",
+   "drep_id": "drep1yt8trnz8e5cnylmyygt0pyzrfw92rt9s42kg8t4rhm6t0dstyvmdn",
+   "ada": 614085,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Logical Mechanism dRep",
+   "drep_id": "drep1y04c5l848c6f47tcaqwxfnh0e6n9ngz4txurcwzvlyuwpjsktpah6",
+   "ada": 608901,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Crypto Eats Legacy",
+   "drep_id": "drep1ytd2mf58tfqv78z7e99fy0gnmfep0kscclnwpvx7qvwpc5srxwg5g",
+   "ada": 587930,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "MREDGARCROSS",
+   "drep_id": "drep1y269ehxj30k4vfzfc2z84v0xykd3amuy2xn0kv9zf8rhcec2fg2jr",
+   "ada": 579568,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "AustinAnthony",
+   "drep_id": "drep1yg5v33dh3pvf9xelauyd5l9qsa3yd6lezf4u7kccp3xqwjspcz3py",
+   "ada": 571897,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "KysenPool_KYSN_KYSN2",
+   "drep_id": "drep1yfnynxy48rhzs9684w2ulytx7uvsmdr98wvkg4erpsdw0hgk2r9u6",
+   "ada": 571274,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Crypto_Oaj",
+   "drep_id": "drep1ytwlmrm6ksc8sa5fdhm63prqve6hjzvghdc3053zwz6hyeg0ayhg2",
+   "ada": 570609,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "HeptaSean",
+   "drep_id": "drep1yf8p623g9s0yxnlnjzealgajyxl57k7n6saeavc7azg0crcahnul9",
+   "ada": 545265,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Maureen",
+   "drep_id": "drep1y22hlaj8wuyygpnjy5cf96tg9tgvjrz39kxvqgv898uj9scfc55t7",
+   "ada": 541117,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "SPIRE",
+   "drep_id": "drep1ytglhmgslx7rjqf4tatt02dk2jfnfj3tgjr34ne7p597dxgm98wcg",
+   "ada": 529543,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "@gersongomes",
+   "drep_id": "drep1yfqg3v85wl8hpz082yh55hppys5z6803mquqgvdfw78qg9qwr3a4h",
+   "ada": 529457,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "CryptoDossier",
+   "drep_id": "drep1y2t0lg9sf53c0qx2dwwjxsmp9qs0uvtcu70nj2n3r4c94pgvaw2z2",
+   "ada": 518205,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "CAPO",
+   "drep_id": "drep1yfpf7hqxl4sfrz4xcfamdc36pyp39fce3nrt53vh8jfffuc9rs23q",
+   "ada": 499785,
+   "cls": "spo",
+   "why": "carries the ticker of pool CAPO (CardaPool.com - 0% Fees - ¡Midnight Token!) in its own name"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfd9slgg7pc94xudyfsrzqnc73u9l4qa2vj5tamh23gyengkw39cu",
+   "ada": 435944,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "THOR",
+   "drep_id": "drep1ytuf3fjch3lu5rkutgfz0wc3ngjszqluthj67pdeyvp49uszfkcp7",
+   "ada": 413022,
+   "cls": "spo",
+   "why": "carries the ticker of pool THOR (THOR - The Viking Pool) in its own name"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ytrg2ruc44lutzd5tqw5m49rk9lxmrpjs85k8l2qsntvgls0mez9v",
+   "ada": 400192,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "ADAAT",
+   "drep_id": "drep1y25req7clwkrxnjvx9075he2l80t3wksgeu9eqru09uvt3ctz60gx",
+   "ada": 395367,
+   "cls": "spo",
+   "why": "carries the ticker of pool ADAAT (adapool.at) in its own name"
+  },
+  {
+   "name": "Holland",
+   "drep_id": "drep1y2kf6kl9kd7uexdq54phxa4llcl8gx6zdh77xn95hjwp84sq8l4j4",
+   "ada": 394209,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Krypto Labs",
+   "drep_id": "drep1yfeqm8wfd2h9pf2c9y934qskuw3z04selrpr7esf4gdsl2c5zvpgf",
+   "ada": 373749,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Themeda",
+   "drep_id": "drep1yt8l5vn8at2kmu5s2qsvw0k73s5v4tuhews827matmsrn8qggczuu",
+   "ada": 367991,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ytjyvm958ywjkp57f8wm3havj72lc653tp7ajttxxt6ftgcmcmdk2",
+   "ada": 362767,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "LallyMcClay",
+   "drep_id": "drep1y2dptycrks2ggae95leeh66m0l0svet98c44hl4rmaec7as6hgpp3",
+   "ada": 358845,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "William Doyle",
+   "drep_id": "drep1yfpgzfymq6tt9c684e7vzata8r5pl4w84fmrjqeztdqw0sgpzw3nt",
+   "ada": 351763,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yf0hzjwkhz78sy6clt5y5qsdnmlwc8djaqwey83spw7m3tskzaxe5",
+   "ada": 349003,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "GNP1_DRep",
+   "drep_id": "drep1y26p5lfmwtk2zlrg3jgnhsvh2yatczwa8dwfy3azg8u4t9qq5cyc2",
+   "ada": 342995,
+   "cls": "spo",
+   "why": "carries the ticker of pool GNP1 (GrahamsNumberPlus1) in its own name"
+  },
+  {
+   "name": "Cardanolotus",
+   "drep_id": "drep1yt7hfdllz0l707unkh9g2fs9e35dl6d94tvjynnh4t5gw6gcmn4jn",
+   "ada": 341274,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "No Treasury Withdrawals until ADA > $3",
+   "drep_id": "drep1ytpkv5fdc3cutccr5mp2leqrv2q5gt0uhka3gnrggcgrynsr4hxfp",
+   "ada": 338284,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Adastra",
+   "drep_id": "drep1yt5u3kgdjqxh0g2ujmk0g8djq2hlyve9gj0hpmasnjzy0zsqjv5eu",
+   "ada": 331925,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Marin_Cardano_Maven",
+   "drep_id": "drep1ytxtrka4tmvm692nkgkdh4uezns35wdqerqugacdvttlzdga03rnz",
+   "ada": 329626,
+   "cls": "spo",
+   "why": "names pool CLUB (Cardano Club) in its own DRep metadata"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfey454nle88k5zd2xzgycdqu4qgreyjr9x59nm2aupd9yqr4szjq",
+   "ada": 323973,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Zacros",
+   "drep_id": "drep1y2tp9q9vckglgkgkgcdc33jtahrstfzfj3c8ez926ysszjqp5r4ts",
+   "ada": 322286,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "spannercode",
+   "drep_id": "drep1yg0d4qr3qwtgkh59njhdgjpwde6c8vmqax08x3y8klupxvq6u3dyk",
+   "ada": 321713,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Dodue",
+   "drep_id": "drep1ygdqxmgpy8tec74adul5jy5ucxvhywrakpru5yl9wz0eyectvkfns",
+   "ada": 307311,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Apex Pool",
+   "drep_id": "drep1yfrmyrf4twcxa0z3w63842ktmufdu06c3vdaz8rpkgzu8gclnyuh9",
+   "ada": 292842,
+   "cls": "spo",
+   "why": "names pool APEX (Apex Stake Pool) in its own DRep metadata"
+  },
+  {
+   "name": "BAT Community",
+   "drep_id": "drep1y2hwk9gqua527ghfdysfjuzeuh4zcad7nveqzupm84h5adqjv22cu",
+   "ada": 286022,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "$Khale",
+   "drep_id": "drep1y2ltat8kjqrmnff3lkkpxy0j5tn66d3m0gy64dc92asft5g6dl9ws",
+   "ada": 275316,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "SVRN | Sleeping Natives",
+   "drep_id": "drep1yfrpcln42j0f6p6zzt5863xn8pz4kkgfkvswlp88klyy4acjdju2k",
+   "ada": 273579,
+   "cls": "spo",
+   "why": "carries the ticker of pool SVRN (Commercial Sovereignty Restoration) in its own name"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y26802waddn2h3sfrd924xrnuktx4emgz29qsrvf4g3qh4gexfsk8",
+   "ada": 259368,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "TAVN",
+   "drep_id": "drep1ygxy3yn7x7ryfu52c23x2nkwnnl7uyd56u29vptfy98759gaaltuz",
+   "ada": 249649,
+   "cls": "spo",
+   "why": "carries the ticker of pool TAVN (TAVN Viet Nam Stake Pool) in its own name"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yf73mm7wah0w736gq2qpp6jngs0xf39v3nz0w3ewel2g93s42nk2r",
+   "ada": 234244,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "CZBE1",
+   "drep_id": "drep1ytc030h6jr0u47z57l5g8e9gx7pelwk0u7z8d3989una3xql3vfvy",
+   "ada": 226727,
+   "cls": "spo",
+   "why": "carries the ticker of pool CZBE1 (ADACZECH) in its own name"
+  },
+  {
+   "name": "Talos",
+   "drep_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
+   "ada": 222118,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Jonathan Adjei",
+   "drep_id": "drep1ygg9eg90gjm5fj40pncn56jntvskk72v3f3rzrs36q5lswsusmste",
+   "ada": 204217,
+   "cls": "spo",
+   "why": "names pool FLUID (FLUID pool) in its own DRep metadata"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfju2f0hy2q0z9x8lahy7v3v4rqm2z8kmv07juercm5zqhqmnunqa",
+   "ada": 202860,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yg5myctyh4amewxt4585npfynpk98erc9e76d9tyhc2hhfcrvfggd",
+   "ada": 201668,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Manuel SNAKE",
+   "drep_id": "drep1yt56tpzpzu58zy7pz4zwfp32rq95tj3xfxmdrg8k3qhxjlccp47cn",
+   "ada": 198278,
+   "cls": "spo",
+   "why": "carries the ticker of pool SNAKE (SN₳KE Cardano Staking) in its own name"
+  },
+  {
+   "name": "AdaSouls",
+   "drep_id": "drep1y2yemxvjptae0j7qws0emn4lv5eh73fkp43f4p3gla3msackq60pj",
+   "ada": 194203,
+   "cls": "spo",
+   "why": "has the same name as pool SOULS (AdaSouls)"
+  },
+  {
+   "name": "Long Hồ",
+   "drep_id": "drep1yttfrpngasw7yrdryydsg66gzv8znkj0stjngm5a8hs353stdeml6",
+   "ada": 185755,
+   "cls": "spo",
+   "why": "names pool SDG13 (Blue Ocean Stake Pool) in its own DRep metadata"
+  },
+  {
+   "name": "MyCNFT DRep",
+   "drep_id": "drep1y2wwa9cqns95zzztmz9vw3jm7n8lpd3x8wfvg6wnvvt29ngdm0mlh",
+   "ada": 184754,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "The Victor",
+   "drep_id": "drep1yfv824m4rjeglnwessh59v4hz8u3glz5pgexxff5md7wytsccjj68",
+   "ada": 181855,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "RCorreia",
+   "drep_id": "drep1yf7nwlcvdql5kqvaqvmzyj5azqcc5s4y4wm2sm0ng3nzkkgpavmcg",
+   "ada": 181398,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "ArcadianComputers",
+   "drep_id": "drep1yg7xcypymvedd0nn2gcn3zhwhv2d25nfteuxs9re5a7j97c3v4dxw",
+   "ada": 166632,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Farid_CZ",
+   "drep_id": "drep1yfzzwr8jznn02mzepvs6y9n4329eskzpgygjdh4ew28szpcd5hr4f",
+   "ada": 165302,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Pallamus",
+   "drep_id": "drep1ytsj5tchu9qh32zml24ctuvam90tygx8p286uw3n78nlypc2fqmyr",
+   "ada": 150677,
+   "cls": "spo",
+   "why": "has the same name as pool PAL (Pallamus)"
+  },
+  {
+   "name": "Victor.Villagomez",
+   "drep_id": "drep1y2utmer3m25qvcfrmglld88yueq9se3d8hqjnj20wk4q0cgz92za6",
+   "ada": 150132,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "TNT",
+   "drep_id": "drep1ygc0skj7ceaszyvpte75h4xrw0m6wcenj0kd2uj7lkq5vmcjryeec",
+   "ada": 146280,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "ThisCrazyDrep",
+   "drep_id": "drep1y274avwwze4wy8qx6d7qxxkq89ksn7z90n0n2dvetee039gkurc6v",
+   "ada": 146098,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Styg",
+   "drep_id": "drep1yfaq8dsam7nusdccey2x2p684f6ulhr42pv24tslv0terqs3nq50q",
+   "ada": 142664,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Seidu Ziblim",
+   "drep_id": "drep1ygrnrg598f38xxg83cg6hudq209w0t578lq9ceh9np99d8cgn67wp",
+   "ada": 139589,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Rod G.",
+   "drep_id": "drep1ygwscks2yt0na4fqpcdyqn0fare5v48y0mjgn2g478lnx8gue393e",
+   "ada": 125176,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Adalion",
+   "drep_id": "drep1y23n4kvdnvx6qsmfgquxtht8ucfmhn0vx495nrs74xhspmqqrqflk",
+   "ada": 123376,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Javi M.",
+   "drep_id": "drep1ytckh5852vysgdg0j5y63ga7k0q4udwfjuprgx4pjwwt8dsjehfza",
+   "ada": 120457,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "DMOON Stake Pool",
+   "drep_id": "drep1yfcxq9rm3nkk6chq7nedd788agzxl3f4hmqv9nr3h67ntkq62jagy",
+   "ada": 115558,
+   "cls": "spo",
+   "why": "carries the ticker of pool DMOON (Dented Moon) in its own name"
+  },
+  {
+   "name": "ADAtainment",
+   "drep_id": "drep1ygnw2fxf00pqwd3dmnluhf3vd06lrmmvxpmx8chjup4x3pcafs46n",
+   "ada": 109495,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ytghtnjnet6dyhfgsucu9fyqhdxmph2z3e967ufduh9ypwq94cxus",
+   "ada": 108270,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Seomon",
+   "drep_id": "drep1yf8hkwqtf8s8yd99446uctdvqj546zuf4fnmx93zxptm0xggrsur4",
+   "ada": 105520,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Agora | Cardano (by Rodrigo Pacini)",
+   "drep_id": "drep1yt9dq806jcm56wzhnv2yrf6gcyq7h4gap8gxewfykk0dtfs7vf843",
+   "ada": 102134,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Breizh DRep [BZH]",
+   "drep_id": "drep1yf64m233qq6nutjpkh4uc7jncr2gxwtlsq7n68v38ka2l9qez8h3h",
+   "ada": 102096,
+   "cls": "spo",
+   "why": "carries the ticker of pool BZH (BreizhStakePool) in its own name"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ygp2552yp5vujfyhcfeg9jwqlf2cx48dv6xahhrnq3vq72cx3r5qc",
+   "ada": 101036,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "HD5000",
+   "drep_id": "drep1ygfw05xk3skujuym7v8w0t4se3a3n9smcfxufd5y0scl63saskmly",
+   "ada": 95819,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "CBROS Pool",
+   "drep_id": "drep1ygj2shrjluwfkcyp2d85p09dagaqqmcue8sztq925z7jacg02nr4x",
+   "ada": 92363,
+   "cls": "spo",
+   "why": "carries the ticker of pool CBROS (Coudre Bros) in its own name"
+  },
+  {
+   "name": "iFly",
+   "drep_id": "drep1yg228a8u4jc5qnqmerhs4e29jyyjac3g39z399kt8gr8vfc0ylw7s",
+   "ada": 85881,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "AtlasFD",
+   "drep_id": "drep1ytzgysymlhglw5w0ecug6wg8pxdzrqzwk89rh3mmh0r5v0gz56urx",
+   "ada": 81822,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y20s4gh7n9j88uvu4sn3djjrfq9h7jw3xk2wltvf46ctgwcdj7s6u",
+   "ada": 70202,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yguj8zu48n99pv70yl6ckzt9hdgjy8yjnlqs2uyzcpafnjgu4vkul",
+   "ada": 63605,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "World Peace",
+   "drep_id": "drep1yfgssww5qn4w5w9g2pmtj94rg0l2jtcz87w9d4m459dpqhqm9g4pu",
+   "ada": 63299,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ytjh8c0dlah3zu2c0hnhy3r0vttdh633zpd6ezgq3r8q8ls86a9dq",
+   "ada": 59867,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "damiondutch",
+   "drep_id": "drep1yg5gkkyxwwr7d6qflf2qqp6drkp9432h6cvtmun0dqthusqlkz8hj",
+   "ada": 57858,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yf6xkrz2w4fdkwjw9u98u3pmzk7c7a0amq95hakcj649dns2r4upl",
+   "ada": 57259,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Lourde",
+   "drep_id": "drep1ygtvnwgsucstvesms2hv9vc8hw3tye5zhzldmszrxqd2rxsje5c6m",
+   "ada": 55351,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "virtuallykeith",
+   "drep_id": "drep1yfhnj6jxmets33rnggtz3m9mur3e350d8dsnlnrt43z0uvsgwj7xz",
+   "ada": 54323,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Ferdz",
+   "drep_id": "drep1y2tf4f0ls404aenhhjqmyh4zvklzy8azqmpxseqea2sd4esfc2d5z",
+   "ada": 53754,
+   "cls": "spo",
+   "why": "names pool FRUIT (Far Reaching Use of Information Technology) in its own DRep metadata"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfk37h2cduf47fwh9s3hs9yul3sm0kkh8k3ntjvayqqs4zsmfaa7s",
+   "ada": 50209,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Cryptotexty",
+   "drep_id": "drep1ygsrvdukj9unnxue5ffmrkjr9ve7yxz3wvccdstapmw696q8g2w9u",
+   "ada": 45540,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfx2476p8smc8dyuvgz0lkgwgzdyuuaw9293ncnswy8cfac4xu0z3",
+   "ada": 37162,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y2q96n4hf0d8jnf6cf7h84z0tr0fn35wh7uv0q4w4hpzckqr8a70c",
+   "ada": 31887,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Kevin G Mohr",
+   "drep_id": "drep1ytwn2u7qpy4ur7k3xqd7eehft3g2yjpxf46rugwzmndkyesd0m5nt",
+   "ada": 27007,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "JohnM",
+   "drep_id": "drep1y2hky8fgx58luuuz5at5dr4xw0jzlre87wwyw3agra9f8js5eu9hp",
+   "ada": 25890,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Marco Gonvil",
+   "drep_id": "drep1yfvhr5u4jkg7acukzt7k09xjzw67fgcgzvhaf3wf34hq9asl8ajkn",
+   "ada": 19819,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ytqg2923vdcfeygyne3edg67klaslx0axzph62hd0lc68zckglfuc",
+   "ada": 18007,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y2cnrwkyg6wtsw9jm3tx7hj39nmnhwnmffup6v2sunjqvus4tlua9",
+   "ada": 16014,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "8Ball",
+   "drep_id": "drep1y296z8tm7y7elwsmsewn4q2tdr5gu0fqztq97yttlpv7zycvsl554",
+   "ada": 14322,
+   "cls": "spo",
+   "why": "has the same name as pool 8BALL (8BALL)"
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ytj6hav29ur96ghu5mux7qsusr7jaff2gkfyvk0fur6f8xqyqh6dt",
+   "ada": 12063,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y29ve34972rw3a8yzlrqpw2240h5rzahr603s062wnd72eg399ugk",
+   "ada": 9025,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y0z7zndlpg3pduzg0cuhgcvjnsemas2d36qj6js2x9sgqlqzzjwpw",
+   "ada": 8551,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Anonymous",
+   "drep_id": "drep1ytm2zedqf54prqf5kfvzq56dgr7s3p4h53w8z428z6l2c8cj8e33y",
+   "ada": 7988,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ygy7uepgqyvhzpuhl34958lhan4cr5sq87nt404a2pna69syx0cg9",
+   "ada": 4700,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "忠実",
+   "drep_id": "drep1ytrqcqg4qh35nwed29nzatke8jemsyelyhdencdc4hx5y0qh3adwe",
+   "ada": 3660,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "GOMA-DRep",
+   "drep_id": "drep1y2cm9w2egseygejydtgdddnsw9zdpc6ayyf8xh5ascfq4tqkpj06v",
+   "ada": 3453,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfa3rl2g4t5tv6xys4huqz3ljghcn56w2zpgspveftwc3tczprscj",
+   "ada": 3122,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "eoniam/Chad the New Mexico DRep",
+   "drep_id": "drep1yfltkppxdvpxjzv3meraz9wch4fzlmy8qxr6ey57gh0khqgug8qln",
+   "ada": 2008,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Luc₳s @ 45B.io (Direct Voter)",
+   "drep_id": "drep1ygltkznfvhpf722s50kan2pnsskpxz3vccdtvmcmx5mw4lssz7w7t",
+   "ada": 1991,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yghae89rq5dvfv78acr0d4fxw5gx47l3fafdzt5kt6mtplggwjq2c",
+   "ada": 1172,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfqhnwr8vpxmms0vqh9a4fe9ten7m5swpz62qsjrd2g9gjs8qad0s",
+   "ada": 895,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Dagoth Ur",
+   "drep_id": "drep1yga3pxt8qw94e2hfm5qt7nre0qp99u980fu82vkss9dw7jgmpz0qs",
+   "ada": 547,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ytw54nkcnq9l4h0j75amgqc0t5hvl37rd2rnx8adtky2zzqwp0r5k",
+   "ada": 412,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Cardano Civic AI",
+   "drep_id": "drep1ytxfwtqgelzxa2janenawxazvh6402267023js3pu027drq2qp308",
+   "ada": 65,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1ytx8q4jrw05uk2fexgd5gppkvu4rqtdqktlgt83vw2ydfkslvrv4z",
+   "ada": 11,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Meria",
+   "drep_id": "drep1yf5swlr6jwjpx9m8cunjr5v8khfcd642wrvmgq3dedmle8g8lrfgp",
+   "ada": 5,
+   "cls": "spo",
+   "why": "has the same name as pool MERIA (Meria)"
+  },
+  {
+   "name": "Musa Ridwan Itopa",
+   "drep_id": "drep1yggumgdxdpa2dgr85etak35s4v00k07vdhvn5y3xxw33yac77c9hp",
+   "ada": 4,
+   "cls": "drep",
+   "why": ""
+  }
+ ],
+ "block": 5,
+ "carry": 18,
+ "flows": {
+  "from_epoch": 658,
+  "to_epoch": 668,
+  "pool_bands_net_ada": [
+   -5515967,
+   15949424,
+   -21374490,
+   4092296
+  ],
+  "carry_group": 18,
+  "carry_group_net_ada": 77878344,
+  "carry_group_share_of_moved": 0.74,
+  "abstain_net_ada": -49417447
+ },
+ "lookup": {
+  "credentials": 1883302,
+  "shards": 256
+ }
+}
