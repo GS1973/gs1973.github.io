@@ -24,8 +24,6 @@
     const CLS = { spo: 'Also runs a stake pool', cc: 'Also on the Constitutional Committee', drep: 'DRep only' };
     const cap = t => t ? t.charAt(0).toUpperCase() + t.slice(1) : t;
     const low = t => t.charAt(0).toLowerCase() + t.slice(1);
-    const BAND = ['Above saturation at k = 1000', '10M ADA to saturation', '1 to 10M ADA', 'Under 1M ADA'];   // short labels; the full ones in the tooltip
-    const VOTE = ['Active DReps', 'No Confidence', 'Inactive DReps', 'Always Abstain', 'No DRep'];
     let lastFocused = null;
     let data = null;
     let index = null;
@@ -128,30 +126,12 @@
 
     const share = x => (x === null || x === undefined) ? '' : Math.round(100 * x) + '%';
 
-    // ---------- the bars ----------
-    function bar(target, parts, total, colors, short) {
-        const wrap = el('div', 'dash-bar');
-        const legend = el('div', 'dash-legend');
-        parts.forEach((p, i) => {
-            const s = pct(p.ada, total);
-            const seg = el('div', 'dash-seg ' + colors[i]);
-            const item = el('span', 'dash-key');
-            seg.style.flexGrow = String(Math.max(p.ada, 0));
-            seg.title = cap(p.label) + ': ' + ada(p.ada) + ' ADA (' + pctText(s) + ')';
-            item.title = seg.title;
-            wrap.append(seg);
-            item.append(el('span', 'dash-swatch ' + colors[i]), document.createTextNode((short ? short[i] : p.label) + ' ' + pctText(s)));
-            legend.append(item);
-        });
-        target.replaceChildren(wrap, legend);
-    }
-
     // ---------- one chart, used by both views ----------
     // items: [{value, cls, lines: [title, line, reason], url}] largest first.
     // marks: [[count, text]]. A column has an invisible hit area over its full
     // height, so a small one is as easy to point at as a large one.
     function chart(box, items, marks, opts) {
-        const W = 860, H = 215, L = 68, R = 8, T = 8, B = 26;
+        const W = 860, H = opts.height || 215, L = 68, R = 8, T = 8, B = 26;
         const n = items.length;
         const vmax = Math.max(...items.map(x => x.value));
         const step = opts.step || 100e6;
@@ -177,7 +157,7 @@
         s.append(xt);
         const bars = items.map((x, i) => {
             const h = Math.max((H - T - B) * x.value / top, 0.8);
-            const r = svg('rect', { x: L + i * bw, y: y(0) - h, width: Math.max(bw - 0.6, 0.8), height: h, class: 'dash-c-' + x.cls, 'data-b': i });
+            const r = svg('rect', { x: L + i * bw, y: y(0) - h, width: bw > 2 ? bw - 0.6 : bw, height: h, class: 'dash-c-' + x.cls, 'data-b': i });
             s.append(r);
             return r;
         });
@@ -242,14 +222,6 @@
         box.replaceChildren(h, list);
     }
 
-    const sign = n => (n > 0 ? '+ ' : n < 0 ? '- ' : '') + ada(Math.abs(n)) + ' ADA';
-    function tile(label, n, title) {
-        const t = el('div', 'dash-flow');
-        t.title = title || '';
-        t.append(el('div', 'dash-flowlabel', label), el('div', 'dash-flownum ' + (n < 0 ? 'dash-neg' : 'dash-pos'), sign(n)));
-        return t;
-    }
-
     // ---------- the DReps ----------
     function drepView(d) {
         const k = d.key;
@@ -265,19 +237,10 @@
             url: 'https://cardanoscan.io/dRep/' + encodeURIComponent(x.drep_id),
         }));
         chart($('dashChart-dreps'), items, [[d.block, d.block + ' DReps can block'], [d.carry, d.carry + ' DReps carry']],
-            { label: 'Voting power of all ' + items.length + ' active DReps, largest first', ticks: [1, 10, 50, 100, 150, 200, 250], xTitle: 'Rank by voting power', step: 100e6 });
-        largest($('dashLargest-dreps'), 'The ' + d.carry + ' largest', 'Together they carry a treasury withdrawal. The first ' + d.block + ' can block one.',
+            { label: 'Voting power of all ' + items.length + ' active DReps, largest first', ticks: [1, 10, 50, 100, 150, 200, 250], xTitle: 'Rank by voting power', step: 100e6, height: 300 });
+        largest($('dashLargest-dreps'), 'The ' + d.carry + ' who carry', 'Together they carry a treasury withdrawal. The first ' + d.block + ' can block one.',
             d.dreps.slice(0, d.carry).map(x => ({ name: x.name || x.drep_id.slice(0, 14) + '…', cls: x.cls,
                 extra: x.pools >= 2 ? x.pools + ' pools, ' + ada(x.pools_ada) : '', title: reason(x) })));
-        bar($('dashVote'), d.vote_bar, d.circulating_ada, ['dash-v-active', 'dash-v-nc', 'dash-v-inactive', 'dash-v-abstain', 'dash-v-none'], VOTE);
-        const f = d.flows;
-        if (!f) { $('dashFlows-dreps').replaceChildren(el('p', 'pools-meta', 'Not measured yet for this epoch.')); return; }
-        const tiles = el('div', 'dash-flows');
-        tiles.append(
-            tile('The ' + f.carry_group + ' largest DReps, votes', f.carry_group_net_ada,
-                f.carry_group_share_of_moved === null ? '' : Math.round(100 * f.carry_group_share_of_moved) + '% of all vote delegation that moved went to them'),
-            tile('Always Abstain, votes', f.abstain_net_ada, ''));
-        $('dashFlows-dreps').replaceChildren(tiles, el('p', 'dash-hint', 'From epoch ' + f.from_epoch + ' to epoch ' + f.to_epoch + ': Vote delegation that moved to another DRep, in minus out.'));
     }
 
     // ---------- the stake pools ----------
@@ -290,33 +253,34 @@
             card(fmt(k.producing || 0), 'pools made a block', 'in the past year', ''));
         if (!o) {
             $('dashChart-pools').replaceChildren(el('p', 'pools-meta', 'The owners could not be grouped today.'));
-        } else {
-            const items = o.top.map((x, i) => {
-                const cls = x.dreps.length ? 'spo' : (x.pools >= 2 ? 'multi' : 'drep');
-                const lines = [(i + 1) + '. ' + x.name, ada(x.ada) + ' ADA, ' + pctText(pct(x.ada, o.total_ada)) + ' of all stake, in ' + x.pools + (x.pools === 1 ? ' pool' : ' pools'),
-                    (x.tickers.length ? 'Tickers ' + x.tickers.join(', ') + (x.pools > x.tickers.length ? ' and more' : '') + '. ' : '')
-                    + (x.dreps.length ? 'Also has a DRep: ' + x.dreps.map(r => r.name + ' (number ' + r.rank + ', ' + ada(r.ada) + ' ADA of voting power)').join(', ') + '.'
-                        : 'No DRep linked to these pools.')];
-                return { value: x.ada, cls, lines, url: '' };
-            });
-            const vmax = items[0] ? items[0].value : 0;
-            chart($('dashChart-pools'), items, [[o.third, o.third + ' owners: a third'], [o.half, o.half + ' owners: half']],
-                { label: 'Stake of the ' + items.length + ' largest pool owners, largest first', ticks: [1, 10, 50, 100, 150, 200], xTitle: 'Rank by stake',
-                  step: vmax > 2e9 ? 500e6 : 100e6 });
-            $('dashRest').textContent = 'The other ' + fmt(o.count - o.top.length) + ' owners hold ' + pctText(pct(o.rest_ada, o.total_ada)) + ' of all stake together.';
-            largest($('dashLargest-pools'), 'The ' + Math.min(18, o.top.length) + ' largest owners', 'Owners as in the Decentralization Monitor: pools of one owner key, reward account or organization count together.',
-                o.top.slice(0, 18).map(x => ({ name: x.name, cls: x.dreps.length ? 'spo' : (x.pools >= 2 ? 'multi' : 'drep'),
-                    extra: x.pools + (x.pools === 1 ? ' pool, ' : ' pools, ') + ada(x.ada),
-                    title: x.dreps.length ? 'Also has a DRep: ' + x.dreps.map(r => r.name).join(', ') : '' })));
+            $('dashLargest-pools').replaceChildren();
+            $('dashRest').textContent = '';
+            return;
         }
-        const parts = d.stake_bands.map(b => ({ label: b.label + ' (' + fmt(b.pools) + ' pools)', ada: b.ada }));
-        bar($('dashStake'), parts, d.stake_total_ada, ['dash-g4', 'dash-g3', 'dash-g2', 'dash-g1'], BAND);
-        const f = d.flows;
-        if (!f) { $('dashFlows-pools').replaceChildren(el('p', 'pools-meta', 'Not measured yet for this epoch.')); return; }
-        const tiles = el('div', 'dash-flows');
-        f.pool_bands_net_ada.forEach((n, i) => tiles.append(
-            tile(['Pools above saturation', 'Pools 10M to saturation', 'Pools 1 to 10M', 'Pools under 1M'][i] + ', stake', n, 'Pools ' + d.stake_bands[i].label)));
-        $('dashFlows-pools').replaceChildren(tiles, el('p', 'dash-hint', 'From epoch ' + f.from_epoch + ' to epoch ' + f.to_epoch + ': Stake that moved to another pool, in minus out.'));
+        const has = x => x.dreps && x.dreps.length;      // the DReps the monitor links to this owner
+        const cls = x => has(x) ? 'spo' : (x.pools >= 2 ? 'multi' : 'drep');
+        const brief = n => ada(n).replace(' million', 'M').replace(' billion', 'bn');
+        const items = o.top.map((x, i) => ({
+            value: x.ada, cls: cls(x), url: '',
+            lines: [(i + 1) + '. ' + x.name, ada(x.ada) + ' ADA, ' + pctText(pct(x.ada, o.total_ada)) + ' of all stake, in ' + x.pools + (x.pools === 1 ? ' pool' : ' pools'),
+                (x.tickers && x.tickers.length ? 'Tickers ' + x.tickers.join(', ') + (x.pools > x.tickers.length ? ' and more' : '') + '. ' : '')
+                + (has(x) ? 'Also has a DRep: ' + x.dreps.map(r => r.name + ' (number ' + r.rank + ', ' + ada(r.ada) + ' ADA of voting power)').join(', ') + '.'
+                    : 'No DRep linked to ' + (x.pools === 1 ? 'this pool.' : 'these pools.'))],
+        }));
+        const n = items.length, vmax = n ? items[0].value : 0;
+        const every = n > 600 ? 200 : n > 250 ? 100 : 50;
+        const ticks = [1];
+        for (let r = every; r <= n; r += every) ticks.push(r);
+        chart($('dashChart-pools'), items, [[o.third, o.third + ' owners: a third'], [o.half, o.half + ' owners: half']],
+            { label: 'Stake of the ' + fmt(n) + ' pool owners with an active pool, largest first', ticks, xTitle: 'Rank by stake',
+              step: vmax > 2e9 ? 500e6 : 100e6, height: 300 });
+        $('dashRest').textContent = (o.producing ? 'One bar for each of the ' + fmt(n) + ' owners with a pool that made a block in the past year. '
+            : 'One bar for each of the ' + fmt(n) + ' largest owners. ')
+            + 'The other ' + fmt(o.count - n) + ' owners hold ' + pctText(pct(o.rest_ada, o.total_ada)) + ' of all stake together.';
+        largest($('dashLargest-pools'), 'The ' + o.half + ' who hold half', 'Owners as in the Decentralization Monitor: Pools of one owner key, reward account or organization count together. The first ' + o.third + ' hold more than a third.',
+            o.top.slice(0, o.half).map(x => ({ name: x.name, cls: cls(x),
+                extra: (x.pools === 1 ? '' : x.pools + ' pools, ') + brief(x.ada),
+                title: has(x) ? 'Also has a DRep: ' + x.dreps.map(r => r.name).join(', ') : '' })));
     }
 
 
@@ -415,12 +379,12 @@
             const nm = p ? (p[1] || p[0].slice(0, 14) + '…') + (p[2] ? ' (' + p[2] + ')' : '') : 'a pool';
             const stake = p ? p[4] : 0;
             let note = stake ? '' : 'This pool has no stake this epoch.';
-            // the owner of the pool, when it is among the largest owners in the chart
-            const oi = p && d.owners ? d.owners.top.findIndex(x => x.pool_ids.includes(p[0])) : -1;
+            // the owner of the pool, when it is among the owners in the chart
+            const oi = p && d.owners && Number.isInteger(p[5]) && d.owners.top[p[5]] ? p[5] : -1;
             if (oi >= 0) {
                 const o = d.owners.top[oi];
-                note = 'Its owner is number ' + (oi + 1) + ' of ' + fmt(d.owners.count) + ', with ' + o.pools + (o.pools === 1 ? ' pool' : ' pools') + ' and ' + ada(o.ada) + ' ADA.'
-                    + (o.dreps.length ? ' This owner also has a DRep: ' + o.dreps.map(r => r.name).join(', ') + '.' : '');
+                note = 'Its owner is number ' + (oi + 1) + ' of the ' + fmt(d.owners.top.length) + ' owners in the chart, with ' + o.pools + (o.pools === 1 ? ' pool' : ' pools') + ' and ' + ada(o.ada) + ' ADA.'
+                    + (o.dreps && o.dreps.length ? ' This owner also has a DRep: ' + o.dreps.map(r => r.name).join(', ') + '.' : '');
                 const r = document.querySelector('#dashChart-pools rect[data-b="' + oi + '"]');
                 if (r) r.classList.add('dash-mine');
             }

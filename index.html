@@ -231,14 +231,6 @@
                         </section>
                         <section class="dash-panel" id="dashLargest-dreps"></section>
                     </div>
-                    <section class="dash-panel">
-                        <h3>What all ADA does with its vote</h3>
-                        <div id="dashVote"></div>
-                    </section>
-                    <section class="dash-panel">
-                        <h3>Where delegation moved in the last 10 epochs</h3>
-                        <div id="dashFlows-dreps"></div>
-                    </section>
                 </div>
 
                 <div id="dashView-pools" class="dash-view" role="tabpanel" aria-labelledby="dashTab-pools" hidden>
@@ -246,7 +238,7 @@
                     <div class="dash-row dash-row-chart">
                         <section class="dash-panel">
                             <div class="dash-paneltitle">
-                                <h3>The 200 largest pool owners, by stake</h3>
+                                <h3>Every owner with an active pool, by stake</h3>
                                 <div class="dash-legend">
                                 <span class="dash-key"><span class="dash-swatch dash-sw-spo"></span>Also has a DRep</span>
                                 <span class="dash-key"><span class="dash-swatch dash-sw-multi"></span>Several pools</span>
@@ -258,14 +250,6 @@
                         </section>
                         <section class="dash-panel" id="dashLargest-pools"></section>
                     </div>
-                    <section class="dash-panel">
-                        <h3>Stake by size of the pool</h3>
-                        <div id="dashStake"></div>
-                    </section>
-                    <section class="dash-panel">
-                        <h3>Where delegation moved in the last 10 epochs</h3>
-                        <div id="dashFlows-pools"></div>
-                    </section>
                 </div>
 
                 <section class="dash-panel dash-lookupbox">
@@ -289,9 +273,8 @@
                     <li>A DRep <em>can block</em> together with others when their voting power, with Always No Confidence on the same side, is more than a third of the ADA that votes. They <em>carry</em> a treasury withdrawal when they reach the threshold of 67% on their own.</li>
                     <li>A DRep is marked as also running a stake pool when our Decentralization Monitor links it to a pool, by point 5 of its method. That link starts from the chain: a key of the pool delegates its vote to the DRep, confirmed by the chain or by what the DRep and the pool publish. All pools of the same owner count, with their stake together, as in the monitor. So this site counts one set of such DReps everywhere. A DRep is marked for the Constitutional Committee when it says in its own metadata that it is a member of a body with a seat on the committee, or by Intersect's own anchor on the chain. When both apply, the colour is that of the committee and both reasons are shown. Point at a bar to see the reason.</li>
                     <li>Every other DRep is shown as DRep only. That means no other role was found in what it declares, not that there is none. A DRep that calls itself a stake pool operator but is not linked to a pool stays DRep only, and the reason says so.</li>
-                    <li><em>Where it moved</em> compares the stake of every stake address ten epochs ago with the stake now, and counts what went to another pool or another DRep, in and out.</li>
                     <li>The lookup shows the latest delegation on the chain. A change counts from the snapshot of the next epoch.</li>
-                <li>In the stake pools view an owner is orange when our Decentralization Monitor links one of its pools to a DRep, dark grey when it has several pools and light grey when it has one. The chart shows the 200 largest owners. The line under it says what the others hold together.</li>
+                <li>In the stake pools view an owner is orange when our Decentralization Monitor links one of its pools to a DRep, dark grey when it has several pools and light grey when it has one. The chart shows every owner with a pool that made a block in the past year, the same count as in the monitor. An owner is named as in the monitor: The organization when it is an exchange or a founding entity, otherwise the ticker of its largest pool. The line under the chart says what the other owners hold together.</li>
                     </ul>
                     <p>The dashboard is made by Smit Blockchain Operations, operator of pool BKIND and a DRep, which is in these figures on the same terms as everyone else.</p>
                 </details>

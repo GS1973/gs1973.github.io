@@ -595,3 +595,29 @@
         padding: 14px 26px 6px;
     }
 }
+
+/* the complete lists beside the charts: the owners who hold half in two columns */
+#dashView-pools .dash-row-chart {
+    grid-template-columns: 5fr 3fr;
+}
+
+#dashLargest-pools .dash-largest {
+    columns: 2;
+    column-gap: 30px;
+}
+
+#dashLargest-pools .dash-largest li {
+    break-inside: avoid;
+}
+
+@media (max-width: 900px) {
+    #dashView-pools .dash-row-chart {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    #dashLargest-pools .dash-largest {
+        columns: 2 130px;
+    }
+}
