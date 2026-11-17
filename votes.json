@@ -1,6 +1,15 @@
 [
   {
     "role": "DRep",
+    "title": "Cardano Global Events 2027 (Cardano Foundation)",
+    "action": "Treasury Withdrawal",
+    "vote": "No",
+    "epoch": 668,
+    "govActionId": "3815fd9e916c8fdeb0dfde556860f4600bdd981f11a76b0bfb6b30edf9a5e947#0",
+    "rationale": "governance/vote-global-events-2027-3815fd9e.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "State of the Cardano Developer Ecosystem 2026 Survey",
     "action": "Info Action",
     "vote": "No",

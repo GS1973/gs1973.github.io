@@ -1,0 +1,133 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "179f7fcb76adfd21200c26b549a661f815f3fed43ed7577ee8008176d1f72b3f",
+        "signature": "16c3e41cb71a7ecf9047216ddb5dd5a56967da57518918c564c952a83fd338b7cf5dfa84a80b21b1141d003882124a0709aab3d3d8365221b2def0344b5a5d0d"
+      }
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes No. This action withdraws 24,995,775 ada in one step, before any event, to a single key, at an assumed rate above the market. It is more than half of what remains under the Net Change Limit. I would support staged withdrawals that can be verified on chain.",
+    "rationaleStatement": "Action: treasury withdrawal 3815fd9e916c8fdeb0dfde556860f4600bdd981f11a76b0bfb6b30edf9a5e947#0, 24,995,775 ada to the reward account stake1uyyqmz5ae7ct4f26p4t87y2xrrgu7f3e0cpap66zgcnxu0gl7gy6y under the current constitution's guardrails script, fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64. I verified on chain that the action withdraws exactly this amount to that credential, that the credential is a public key and not a script, that the action was published on chain on 16 November 2026 in epoch 668, and that the proposal document hashes to the on-chain anchor, d8c29ffecfacabac757d78405af85043a52509217c7e229857374fed6fb05126.\n\nWhat I support. A shared Cardano presence at industry events has value, and I understand why it is planned a year ahead. The proposal reports that the 2025 to 2026 program met or exceeded its targets. The budget in this proposal is itemized by event and its sums are correct. The Foundation charges no staff time and states that it \"will make no profit from this proposal\". My No is not to events. It is to the size of this withdrawal at this price and to the way the money is released and held.\n\nThe whole amount, before any event. The first event is in February 2027 and the last in December 2027. The action pays all 24,995,775 ada when it is enacted. The proposal calls this \"upfront funding of one year's events\". The budget behind it is not fixed: \"Costs shown are estimates\", and an event may be replaced by another. The checks the proposal offers all come after the full amount has left the treasury: five milestone reports between January 2027 and March 2028, a dashboard updated after every event, and the return of unspent funds \"within six months of the final activation\". The audit of this withdrawal is not yet final: \"Subject to final agreement on the engagement terms, Grant Thornton will conduct a financial audit of the Treasury Withdrawal and provide an on-chain attestation.\"\n\nA single key. The receiving reward account is the same public key credential that action 163 names. The proposal states: \"While the key credential is single-signature on-chain, there are cryptographic processes in place to implement multi-signature controls operationally within the Foundation.\" Controls inside an organization cannot be read from the chain. At the protocol level one key controls the full amount.\n\nA rate above the market. The request converts a budget of 4,999,155 dollars at an assumed rate of 0.20 dollars per ada. On 17 November 2026 ada traded near 0.153 dollars on Kraken, and at that rate the withdrawal is worth about 3.8 million dollars. The proposal answers a lower price with fewer events: \"If the ada price falls significantly, the Foundation will scale back later activations so that spending stays within the amount withdrawn\". The treasury would then pay the full 24,995,775 ada for a smaller program. The proposal does not say when the ada is converted into the currencies the events are paid in. It states that the dollar value of the withdrawn ada is reviewed every quarter, so ada may be held through the year.\n\nThe cost in ada. The treasury holds ada, not dollars. The 2025 to 2026 events program was funded with 6,000,000 ada. This action asks more than four times that amount in ada for 12 events, where the earlier program funded 14 booths and sponsorships.\n\nThe Net Change Limit. The proposal places itself within the 500,000,000 ada Net Change Limit for epochs 613 to 713. By my count on chain, the treasury withdrawals enacted from epoch 613 up to and including epoch 668 total 457,395,629 ada, which leaves 42,604,371 ada under that limit until epoch 713. This action alone takes more than half of what remains.\n\nOne organization. In 2025 to 2026 three partners delivered the program. In this proposal the Foundation is the one accountable party and holds all funds, and it states that it has put itself forward as a potential steward of the budget domain these events would fall under. One counterparty is easier to hold to account. It also places custody, delivery and reporting with the same organization.\n\nA founding entity. The Cardano Foundation is one of the three founding entities of Cardano. The five stake pools registered under its name, CF1 to CF5, hold 249,969,212 ada of stake in epoch 668, which makes it number 10 of 2,244 pool owners in the grouping of my Decentralization Monitor. The DRep registered under its name holds 150,512,643 ada of voting power in epoch 668, number 9 of 263 active DReps. That DRep voted Yes on action 163, which pays to the same key as this action. It had not voted on this action when I measured on 17 November 2026. When an entity that holds this much stake and vote asks the treasury for funds, I look for controls that lie outside that entity. This is not the ground for my No. It is why custody on a single key of the requester weighs heavily here. I stand for dispersed stake and governance power, as a pool operator since 2019 and as a DRep.",
+    "precedentDiscussion": "The earlier event withdrawals were paid through the treasury contract administered by Intersect, not to a key of the vendor. For the 2025 to 2026 program, action 8ad3d454f3496a35cb0d07b0fd32f687f66338b7d60e787fc0a22939e5d8833e#25, the chain shows 6,000,000 ada placed in the vendor contract for this project on 2 September 2025, 5,099,175.67 ada released to the vendor address on the same day and the remaining 900,824.33 ada on 2 February 2026, after an interim report was recorded on chain in October 2025. For TOKEN2049 Singapore 2026, action 3f0ff0d848cab1036621f92732fef5ea1cb6466305889777ee95496933dfd1e4#0, 2,886,773 ada was released on 14 September 2026 and 320,762 ada was still in the contract when I measured on 17 November 2026. Most of the money was released early in both cases, but each release is a transaction anyone can read, and a last part waited for a later milestone. This action has no such step.\n\nMy No on action 163 raised the same point about the same receiving credential: a custody plan described as multi-signature while the account on chain is a single public key. My No votes on actions 158 and 161 held treasury withdrawals to evidence rather than promises. My DRep registration commits me to hold proposals \"to evidence rather than promises\" and to vote to \"keep power dispersed\". This vote follows that line.",
+    "counterargumentDiscussion": "Events must be booked months ahead. The proposal states: \"Events of this size typically need at least six months of preparation\". That supports a first withdrawal now for the events of the first half of 2027. It does not require the funds for events in November and December 2027 to leave the treasury a year earlier.\n\nThe Foundation is a not-for-profit with published financials, and unspent funds and price gains return to the treasury. I take those commitments as stated. They are checked after the money has left the treasury, by reports from the party that holds it, and the audit engagement is not final.\n\nThe contract route added little last time, since most of the money was released at the start. That is a reason for better milestones, not for none.\n\nThe request is priced in dollars, and its dollar total stays within the 5 million dollar budget shared with the community earlier. The treasury pays in ada, and this action takes more than four times the ada of the 2025 to 2026 program.\n\nWhat would change my vote: withdrawals in stages, each sized for the events of the coming period and at the price of that moment, a receiving credential whose controls can be read on chain, such as a script or the treasury contract with milestones, a stated policy for when the ada is converted, and a signed audit engagement.",
+    "conclusion": "BKIND votes No: 24,995,775 ada paid in one step to a single key, a year of events ahead, at an assumed rate above the market and for more than half of what remains under the Net Change Limit, with verification only afterward, does not meet the standard of evidence I hold treasury withdrawals to (govActionId 3815fd9e916c8fdeb0dfde556860f4600bdd981f11a76b0bfb6b30edf9a5e947#0).",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Governance action 165, proposal document (IPFS)",
+        "uri": "https://ipfs.blockfrost.dev/ipfs/QmetgjDsDK7JkkQxvBPgLJFsTCCzGKp1rg7ZV2JhAALfzi"
+      },
+      {
+        "@type": "Other",
+        "label": "On-chain anchor metadata (IPFS)",
+        "uri": "ipfs://QmetgjDsDK7JkkQxvBPgLJFsTCCzGKp1rg7ZV2JhAALfzi"
+      },
+      {
+        "@type": "Other",
+        "label": "Cardano Global Events 2027: The Catch-up (Cardano Forum)",
+        "uri": "https://forum.cardano.org/t/cardano-global-events-2027-the-catch-up/156671"
+      },
+      {
+        "@type": "Other",
+        "label": "2025 to 2026 events program, milestone tracking",
+        "uri": "https://treasury.sundae.fi/budgets/9e65e4ed7d6fd86fc4827d2b45da6d2c601fb920e8bfd794b8ecc619/project/EMI-0003-25"
+      },
+      {
+        "@type": "Other",
+        "label": "TOKEN2049 Singapore 2026, milestone tracking",
+        "uri": "https://treasury.sundae.fi/budgets/51486a2f1496d4d3a688a9b111971aa9b731ed045d900b601345ca4e/project/CTW-26-0007"
+      },
+      {
+        "@type": "Other",
+        "label": "Kraken, ADA/USD market",
+        "uri": "https://www.kraken.com/prices/cardano"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 163 rationale (No, same receiving credential)",
+        "uri": "https://smitblockchainops.nl/governance/vote-pfms-72491608.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 161 rationale (No, treasury withdrawal on promises)",
+        "uri": "https://smitblockchainops.nl/governance/vote-copper-reserve-6eddf4f1.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 158 rationale (No, promises in place of specification)",
+        "uri": "https://smitblockchainops.nl/governance/vote-openzeppelin-stack-418df598.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND dashboard, pool owners and DReps",
+        "uri": "https://smitblockchainops.nl/#stake"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND DRep registration (CIP-119)",
+        "uri": "https://smitblockchainops.nl/governance/drep.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-136, DRep vote rationale",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0136"
+      }
+    ]
+  }
+}
