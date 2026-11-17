@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T10:55:15Z",
+"generated": "2026-11-17T11:05:52Z",
 "epoch": 668,
 "k": 1000,
 "saturation_ada": 38999661,
@@ -11,12 +11,12 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2665,
-"alive_named": 1054,
+"alive_named": 1047,
 "pledge_not_met": 499,
-"above_saturation": 130,
+"above_saturation": 127,
 "excluded_exchanges": 48,
 "excluded_founders": 8,
-"excluded_several": 247,
+"excluded_several": 245,
 "excluded": [
 {
 "ticker": "BNP",
@@ -1021,12 +1021,6 @@
 "reason": "several pools"
 },
 {
-"ticker": "SECUR",
-"name": "FIVE SecureStaking.io",
-"pool_id": "pool14n77mmxh6a2d9k05jamzdwsws2ayvkyje8uc7led958p63at3aj",
-"reason": "several pools"
-},
-{
 "ticker": "FGMTB",
 "name": "Figment 11",
 "pool_id": "pool1g59d82m8c84f2ds6l50mng863h9cxfm88khxyhna2l9rzgv6030",
@@ -1684,12 +1678,6 @@
 "ticker": "SUNNY",
 "name": "Sunshine Stake Pool #2",
 "pool_id": "pool1p8fhygz7ga9hghhwmkr64p3ftn77lxu9nyddvsqszattcdyajc0",
-"reason": "several pools"
-},
-{
-"ticker": "SECUR",
-"name": "THREE SecureStaking.io",
-"pool_id": "pool1xjhzgchsl2ccvc5pj3aqytv9hh0jnaz63wtfnw4th07tjypm46x",
 "reason": "several pools"
 },
 {
@@ -5645,17 +5633,6 @@
 "roles": []
 },
 {
-"ticker": "BIO",
-"name": "Bio Pool",
-"pool_id": "pool1vqm5n5d503uumuc89s5y4wuczrwe3tlgylt2u2uj7y276avr5pl",
-"stake_ada": 1369966,
-"blocks_2026": 118,
-"blocks_last_10_epochs": 17,
-"retiring_epoch": null,
-"document": "valid",
-"roles": []
-},
-{
 "ticker": "SAGAN",
 "name": "Sagan Stake Pool",
 "pool_id": "pool18p7p752cjnf9z8g70ygkre5cstwmgfatzuqm0tm3n2xf739j8k8",
@@ -7460,17 +7437,6 @@
 "roles": []
 },
 {
-"ticker": "KRSNA",
-"name": "✨Krishna Stake Pool by Kaizen Crypto",
-"pool_id": "pool1zc7vxe3ymyej76h8wu8gm79chtt7w9c3adkza4uhrjvagr9w4zp",
-"stake_ada": 6095386,
-"blocks_2026": 371,
-"blocks_last_10_epochs": 54,
-"retiring_epoch": null,
-"document": "valid",
-"roles": []
-},
-{
 "ticker": "SOCIO",
 "name": "Socious StakePool",
 "pool_id": "pool1g2y0j7rsv7dpu8p6jt2dva3rxfqjl2zu0ag9dd0cfm8guzg0lh0",
@@ -7673,8 +7639,8 @@
 "name": "Nielsen-Nielsen",
 "pool_id": "pool1rcd7qslz3xnpnk9u6tcwegy5r2574uf8suqu24ptg637jha3sr5",
 "stake_ada": 8084363,
-"blocks_2026": 499,
-"blocks_last_10_epochs": 74,
+"blocks_2026": 500,
+"blocks_last_10_epochs": 75,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7717,8 +7683,8 @@
 "name": "Kaze-Wa-Minamikara",
 "pool_id": "pool1c3kxs76qj58284f923cx7ed8vw25en3nfghyurv0z9m2g3x9c4j",
 "stake_ada": 8455718,
-"blocks_2026": 505,
-"blocks_last_10_epochs": 76,
+"blocks_2026": 506,
+"blocks_last_10_epochs": 77,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8124,8 +8090,8 @@
 "name": "PSILOBLOX",
 "pool_id": "pool17taqml487n9t4r9a6ppvf9qv0qlw2lu4zcrzwfdsfcv6xp7uqym",
 "stake_ada": 14245638,
-"blocks_2026": 1037,
-"blocks_last_10_epochs": 133,
+"blocks_2026": 1038,
+"blocks_last_10_epochs": 134,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8531,8 +8497,8 @@
 "name": "Berry",
 "pool_id": "pool19f6guwy97mmnxg9dz65rxyj8hq07qxud886hamyu4fgfz7dj9gl",
 "stake_ada": 28654983,
-"blocks_2026": 1969,
-"blocks_last_10_epochs": 236,
+"blocks_2026": 1970,
+"blocks_last_10_epochs": 237,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
