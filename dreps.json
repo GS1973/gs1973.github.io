@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T10:44:22Z",
+"generated": "2026-11-17T10:55:15Z",
 "epoch": 668,
 "figures": {
 "circulating_ada": 37567607735,
@@ -546,7 +546,7 @@
 "script": false,
 "voting_power_ada": 228659851,
 "share": 4.794,
-"delegators": 10058,
+"delegators": 10059,
 "eligible": 68,
 "voted": 54,
 "rationale": 53,

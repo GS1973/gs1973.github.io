@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T10:44:22Z",
+ "generated": "2026-11-17T10:55:15Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -2158,7 +2158,7 @@
     ]
    },
    {
-    "name": "FGMT8",
+    "name": "Figment",
     "pools": 26,
     "ada": 723165908,
     "tickers": [
@@ -2181,7 +2181,7 @@
     ]
    },
    {
-    "name": "EVE7",
+    "name": "Everstake",
     "pools": 15,
     "ada": 675356151,
     "tickers": [
@@ -2219,7 +2219,7 @@
     ]
    },
    {
-    "name": "KILN4",
+    "name": "Kiln",
     "pools": 9,
     "ada": 446794449,
     "tickers": [
@@ -2242,7 +2242,7 @@
     ]
    },
    {
-    "name": "NUFID",
+    "name": "Nu.Fi & AdaLite",
     "pools": 18,
     "ada": 301454975,
     "tickers": [
@@ -2257,7 +2257,7 @@
     ]
    },
    {
-    "name": "NORTH",
+    "name": "Nordic Pool",
     "pools": 5,
     "ada": 298083757,
     "tickers": [
@@ -2285,7 +2285,7 @@
     ]
    },
    {
-    "name": "1PCT2",
+    "name": "1 Percent Pool",
     "pools": 28,
     "ada": 235133023,
     "tickers": [
@@ -2300,7 +2300,7 @@
     ]
    },
    {
-    "name": "ADV",
+    "name": "ADAvault",
     "pools": 4,
     "ada": 200146484,
     "tickers": [
@@ -2311,7 +2311,7 @@
     ]
    },
    {
-    "name": "P2P",
+    "name": "P2P Validator",
     "pools": 4,
     "ada": 199208869,
     "tickers": [
@@ -2330,7 +2330,7 @@
     ]
    },
    {
-    "name": "SBP1",
+    "name": "StakeBowlPool",
     "pools": 3,
     "ada": 199120196,
     "tickers": [
@@ -2340,7 +2340,7 @@
     ]
    },
    {
-    "name": "SECUR",
+    "name": "ONE SecureStaking.io",
     "pools": 5,
     "ada": 198913120,
     "tickers": [
@@ -2377,7 +2377,7 @@
     ]
    },
    {
-    "name": "CRDNS",
+    "name": "CARDANIANS.io",
     "pools": 5,
     "ada": 171978456,
     "tickers": [
@@ -2397,7 +2397,7 @@
     ]
    },
    {
-    "name": "EDEN",
+    "name": "Garden Pool",
     "pools": 5,
     "ada": 165932713,
     "tickers": [
@@ -2414,7 +2414,7 @@
     ]
    },
    {
-    "name": "BLOOM",
+    "name": "Bloom",
     "pools": 6,
     "ada": 151990050,
     "tickers": [
@@ -2422,7 +2422,7 @@
     ]
    },
    {
-    "name": "OCEA3",
+    "name": "ADA Ocean",
     "pools": 8,
     "ada": 151636415,
     "tickers": [
@@ -2448,7 +2448,7 @@
     ]
    },
    {
-    "name": "DIGI",
+    "name": "Digital Fortress",
     "pools": 6,
     "ada": 149278443,
     "tickers": [
@@ -2461,7 +2461,7 @@
     ]
    },
    {
-    "name": "BLC",
+    "name": "BigLazyCat",
     "pools": 3,
     "ada": 148308229,
     "tickers": [
@@ -2471,7 +2471,7 @@
     ]
    },
    {
-    "name": "PPTG1",
+    "name": "P2P & Tangem",
     "pools": 2,
     "ada": 143804996,
     "tickers": [
@@ -2480,7 +2480,7 @@
     ]
    },
    {
-    "name": "MS6",
+    "name": "Moonstake",
     "pools": 4,
     "ada": 132841484,
     "tickers": [
@@ -2499,7 +2499,7 @@
     ]
    },
    {
-    "name": "ATADA",
+    "name": "ATADA Stakepool in Austria",
     "pools": 2,
     "ada": 129985843,
     "tickers": [
@@ -2516,7 +2516,7 @@
     ]
    },
    {
-    "name": "TITAN",
+    "name": "TITANstaking",
     "pools": 2,
     "ada": 123700183,
     "tickers": [
@@ -2524,7 +2524,7 @@
     ]
    },
    {
-    "name": "SIPO",
+    "name": "SITION POOL",
     "pools": 3,
     "ada": 114190611,
     "tickers": [
@@ -2542,7 +2542,7 @@
     ]
    },
    {
-    "name": "TW001",
+    "name": "Trust Nodes",
     "pools": 2,
     "ada": 113049233,
     "tickers": [
@@ -2551,7 +2551,7 @@
     ]
    },
    {
-    "name": "CCV1",
+    "name": "(Crypto Capital Venture) #Pool",
     "pools": 4,
     "ada": 112579269,
     "tickers": [
@@ -2582,7 +2582,7 @@
     ]
    },
    {
-    "name": "NEDS1",
+    "name": "NEDSCAVE.IO",
     "pools": 4,
     "ada": 106574932,
     "tickers": [
@@ -2601,7 +2601,7 @@
     ]
    },
    {
-    "name": "SASA",
+    "name": "SASA Stake Pool",
     "pools": 2,
     "ada": 95935719,
     "tickers": [
@@ -2618,7 +2618,7 @@
     ]
    },
    {
-    "name": "CAFE",
+    "name": "CardanoCafe",
     "pools": 3,
     "ada": 94713831,
     "tickers": [
@@ -2628,7 +2628,7 @@
     ]
    },
    {
-    "name": "SPIRE",
+    "name": "Spire Staking",
     "pools": 2,
     "ada": 92927342,
     "tickers": [
@@ -2645,7 +2645,7 @@
     ]
    },
    {
-    "name": "PILOT",
+    "name": "Pilot Pool",
     "pools": 2,
     "ada": 88219203,
     "tickers": [
@@ -2677,7 +2677,7 @@
     ]
    },
    {
-    "name": "PAUL1",
+    "name": "Cardano With Paul ☘️",
     "pools": 2,
     "ada": 84193235,
     "tickers": [
@@ -2701,7 +2701,7 @@
     "ada": 78175506
    },
    {
-    "name": "ACL",
+    "name": "A CardanoLand pool ACL",
     "pools": 4,
     "ada": 78000441,
     "tickers": [
@@ -2840,7 +2840,7 @@
     "ada": 75816443
    },
    {
-    "name": "LBF4",
+    "name": "Ledger by Figment",
     "pools": 3,
     "ada": 75479035,
     "tickers": [
@@ -2860,7 +2860,7 @@
     "ada": 75036278
    },
    {
-    "name": "AZUR",
+    "name": "AzureADA",
     "pools": 3,
     "ada": 74995414,
     "tickers": [
@@ -2926,7 +2926,7 @@
     "ada": 72724642
    },
    {
-    "name": "SPS2",
+    "name": "StakePool Service No.2",
     "pools": 5,
     "ada": 71676119,
     "tickers": [
@@ -2938,7 +2938,7 @@
     ]
    },
    {
-    "name": "AUTO",
+    "name": "AutoStake",
     "pools": 4,
     "ada": 70808690,
     "tickers": [
@@ -2956,7 +2956,7 @@
     "ada": 70531818
    },
    {
-    "name": "VIPER",
+    "name": "🐍Viper Stake Pool",
     "pools": 2,
     "ada": 70312456,
     "tickers": [
@@ -2969,7 +2969,7 @@
     "ada": 68899705
    },
    {
-    "name": "BCSH0",
+    "name": "Blue Cheese Stakehouse",
     "pools": 7,
     "ada": 68554958,
     "tickers": [
@@ -2988,7 +2988,7 @@
     "ada": 67785465
    },
    {
-    "name": "JP2",
+    "name": "JAPAN",
     "pools": 5,
     "ada": 67443513,
     "tickers": [
@@ -3000,7 +3000,7 @@
     ]
    },
    {
-    "name": "ITC",
+    "name": "Into the Cryptoverse",
     "pools": 3,
     "ada": 66910592,
     "tickers": [
@@ -3015,7 +3015,7 @@
     "ada": 66428923
    },
    {
-    "name": "COOL2",
+    "name": "COOL",
     "pools": 5,
     "ada": 64687640,
     "tickers": [
@@ -3032,7 +3032,7 @@
     "ada": 64387951
    },
    {
-    "name": "ONYX",
+    "name": "ONYX Stake Pool",
     "pools": 4,
     "ada": 64367713,
     "tickers": [
@@ -3096,7 +3096,7 @@
     ]
    },
    {
-    "name": "XSP2",
+    "name": "X-StakePool",
     "pools": 2,
     "ada": 58524945,
     "tickers": [
@@ -3185,7 +3185,7 @@
     ]
    },
    {
-    "name": "CNODE",
+    "name": "Cardanode: 0.00% Fee & 100% Rewards Guaranteed",
     "pools": 4,
     "ada": 53418023,
     "tickers": [
@@ -3239,7 +3239,7 @@
     "ada": 48833908
    },
    {
-    "name": "BRAVO",
+    "name": "Bravo pool",
     "pools": 2,
     "ada": 48392710,
     "tickers": [
@@ -3260,7 +3260,7 @@
     ]
    },
    {
-    "name": "STSH1",
+    "name": "Stake Shark",
     "pools": 3,
     "ada": 48057695,
     "tickers": [
@@ -3301,7 +3301,7 @@
     "ada": 45676690
    },
    {
-    "name": "STI",
+    "name": "stakit.io Pool by TOBG",
     "pools": 2,
     "ada": 45631452,
     "tickers": [
@@ -3340,7 +3340,7 @@
     ]
    },
    {
-    "name": "TERA3",
+    "name": "⭐ TERA3 ⭐",
     "pools": 3,
     "ada": 44763996,
     "tickers": [
@@ -3376,7 +3376,7 @@
     "ada": 43616015
    },
    {
-    "name": "ATLAS",
+    "name": "AtlasStakePool",
     "pools": 2,
     "ada": 43605365,
     "tickers": [
@@ -3397,7 +3397,7 @@
     "ada": 43469572
    },
    {
-    "name": "BD0",
+    "name": "Blockdaemon 🧱😈 Stake Pool",
     "pools": 4,
     "ada": 43176473,
     "tickers": [
@@ -3459,7 +3459,7 @@
     "ada": 38929681
    },
    {
-    "name": "HODLR",
+    "name": "Midnight ▫ 0% fee",
     "pools": 2,
     "ada": 38597921,
     "tickers": [
@@ -3477,7 +3477,7 @@
     "ada": 38071882
    },
    {
-    "name": "ECO",
+    "name": "ECO Pool",
     "pools": 2,
     "ada": 36721709,
     "tickers": [
@@ -3506,7 +3506,7 @@
     "ada": 35886028
    },
    {
-    "name": "MUEN2",
+    "name": "MUEN2 CharityPrivatePool",
     "pools": 3,
     "ada": 35306947,
     "tickers": [
@@ -3524,7 +3524,7 @@
     ]
    },
    {
-    "name": "WA2",
+    "name": "Watashitachi",
     "pools": 2,
     "ada": 35194675,
     "tickers": [
@@ -3543,7 +3543,7 @@
     "ada": 33988292
    },
    {
-    "name": "NAP",
+    "name": "NAP-Nekota ADA Pool",
     "pools": 2,
     "ada": 33567134,
     "tickers": [
@@ -3552,7 +3552,7 @@
     ]
    },
    {
-    "name": "ZETE",
+    "name": "Zetetic",
     "pools": 2,
     "ada": 33372576,
     "tickers": [
@@ -3571,7 +3571,7 @@
     "ada": 32677795
    },
    {
-    "name": "KIWI",
+    "name": "KIWI by 🥝Kiwipool Staking",
     "pools": 2,
     "ada": 32393242,
     "tickers": [
@@ -3587,7 +3587,7 @@
     ]
    },
    {
-    "name": "SUNNY",
+    "name": "Sunshine Stake Pool",
     "pools": 2,
     "ada": 32366391,
     "tickers": [
@@ -3605,7 +3605,7 @@
     "ada": 31781503
    },
    {
-    "name": "DNEWS",
+    "name": "DigitalAssetNews",
     "pools": 2,
     "ada": 31649413,
     "tickers": [
@@ -3654,7 +3654,7 @@
     ]
    },
    {
-    "name": "DAPP",
+    "name": "Dapp Central Stake Pool",
     "pools": 2,
     "ada": 29036777,
     "tickers": [
@@ -3713,7 +3713,7 @@
     "ada": 27640872
    },
    {
-    "name": "ELITE",
+    "name": "01 ▫ Elite Stake Pool",
     "pools": 2,
     "ada": 27456660,
     "tickers": [
@@ -3826,7 +3826,7 @@
     ]
    },
    {
-    "name": "ANGEL",
+    "name": "ANGEL stake pool",
     "pools": 2,
     "ada": 23814356,
     "tickers": [
@@ -3853,7 +3853,7 @@
     "ada": 23414226
    },
    {
-    "name": "LQWD",
+    "name": "Liqwid",
     "pools": 2,
     "ada": 23070570,
     "tickers": [
@@ -3899,7 +3899,7 @@
     "ada": 21586534
    },
    {
-    "name": "STAKE",
+    "name": "🌍 PLANETSTAKE",
     "pools": 2,
     "ada": 21392168,
     "tickers": [
@@ -3927,7 +3927,7 @@
     "ada": 19788956
    },
    {
-    "name": "KTOP",
+    "name": "KTOP_ADA SPO and WMT ENO",
     "pools": 2,
     "ada": 19308515,
     "tickers": [
@@ -3954,7 +3954,7 @@
     "ada": 18696064
    },
    {
-    "name": "CTEC",
+    "name": "CTEC Stake Pool",
     "pools": 2,
     "ada": 18679218,
     "tickers": [
@@ -3991,7 +3991,7 @@
     "ada": 18158935
    },
    {
-    "name": "CSN1",
+    "name": "Cardanoscan Pool",
     "pools": 2,
     "ada": 17737524,
     "tickers": [
@@ -4156,7 +4156,7 @@
     ]
    },
    {
-    "name": "SWIM",
+    "name": "The Swimming Pool",
     "pools": 2,
     "ada": 13221340,
     "tickers": [
@@ -4290,7 +4290,7 @@
     "ada": 10529655
    },
    {
-    "name": "GG63",
+    "name": "無双63 ADA POOL",
     "pools": 2,
     "ada": 10458048,
     "tickers": [
@@ -4304,7 +4304,7 @@
     "ada": 10318534
    },
    {
-    "name": "FROG2",
+    "name": "ADAfrog 2 🐸",
     "pools": 2,
     "ada": 10217869,
     "tickers": [
@@ -4382,7 +4382,7 @@
     "ada": 9257929
    },
    {
-    "name": "NERD",
+    "name": "Nerd Stake Pool",
     "pools": 2,
     "ada": 9211347,
     "tickers": [
@@ -4461,7 +4461,7 @@
     "ada": 8151258
    },
    {
-    "name": "BEAST",
+    "name": "BEAST Pool",
     "pools": 2,
     "ada": 8087339,
     "tickers": [
@@ -4474,7 +4474,7 @@
     "ada": 8084363
    },
    {
-    "name": "SCAR",
+    "name": "SCARdano",
     "pools": 2,
     "ada": 7844817,
     "tickers": [
@@ -4604,7 +4604,7 @@
     "ada": 6198599
    },
    {
-    "name": "MASTR",
+    "name": "Masterstake",
     "pools": 2,
     "ada": 6170334,
     "tickers": [
@@ -4715,7 +4715,7 @@
     "ada": 5576988
    },
    {
-    "name": "IAGL1",
+    "name": "Iagon liquidity stake pool",
     "pools": 2,
     "ada": 5542446,
     "tickers": [
@@ -4734,7 +4734,7 @@
     "ada": 5296505
    },
    {
-    "name": "KYSN",
+    "name": "KysenPool Thunder",
     "pools": 2,
     "ada": 5263141,
     "tickers": [
@@ -4796,7 +4796,7 @@
     "ada": 4865335
    },
    {
-    "name": "RDB",
+    "name": "ADA Labo",
     "pools": 2,
     "ada": 4811596,
     "tickers": [
@@ -4843,7 +4843,7 @@
     "ada": 4607635
    },
    {
-    "name": "DAN",
+    "name": "Cardano Dan's Stake Pool",
     "pools": 2,
     "ada": 4590808,
     "tickers": [
@@ -4950,7 +4950,7 @@
     "ada": 4069434
    },
    {
-    "name": "CHEAP",
+    "name": "CheapStaking",
     "pools": 2,
     "ada": 4068340,
     "tickers": [
@@ -5067,7 +5067,7 @@
     "ada": 3671299
    },
    {
-    "name": "BSSP",
+    "name": "Black Star Stake Pool",
     "pools": 2,
     "ada": 3670903,
     "tickers": [
@@ -5086,7 +5086,7 @@
     "ada": 3609808
    },
    {
-    "name": "CSWP1",
+    "name": "99% CSWAP DEX ISPO Pool [CSWP1]",
     "pools": 2,
     "ada": 3564349,
     "tickers": [
@@ -6235,7 +6235,7 @@
     "ada": 941676
    },
    {
-    "name": "NETA1",
+    "name": "anetaBTC - Pool",
     "pools": 2,
     "ada": 938669,
     "tickers": [
@@ -6733,7 +6733,7 @@
     ]
    },
    {
-    "name": "FLAIR",
+    "name": "FlairStaking",
     "pools": 2,
     "ada": 561807,
     "tickers": [
@@ -6981,7 +6981,7 @@
     "ada": 406588
    },
    {
-    "name": "AFCH1",
+    "name": "African Charity Pool",
     "pools": 2,
     "ada": 404629,
     "tickers": [
@@ -7191,7 +7191,7 @@
     ]
    },
    {
-    "name": "RAID3",
+    "name": "Raid Pools",
     "pools": 7,
     "ada": 321230,
     "tickers": [
@@ -8399,7 +8399,7 @@
   "abstain_net_ada": -49417447
  },
  "lookup": {
-  "credentials": 1883401,
+  "credentials": 1883402,
   "shards": 256
  },
  "links": {
