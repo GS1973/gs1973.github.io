@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "179f7fcb76adfd21200c26b549a661f815f3fed43ed7577ee8008176d1f72b3f",
+        "signature": "03c31afd0afc3aa6b38ca1adbfc8629af90bd715baba7428426bd2a2a3b86a41da4c559aeb9758454c33c404852df62db34e149d912ff511317f111d73097d0b"
+      }
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes Yes. This action pays 600,000 ada for the 2026 maintenance of an open source toolkit. Most of that work is delivered and can be checked in public. The funds go to a 3 of 4 script that I verified on chain. Payment after delivery is how I want the treasury to fund work.",
+    "rationaleStatement": "Action: treasury withdrawal 6b40978780eb15f44786329b39c947f5ff37162464ec4947dcffb55d9139adc7#0, 600,000 ada to the reward account stake17ym8y7cgsz50wccyv37wrvsu2tzn5yg5ye5ccpj2hnpv4pse6q7jk under the current constitution's guardrails script, fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64. I verified on chain that the action withdraws exactly this amount to that credential, that the credential is a script and not a public key, that the action was published on chain on 16 November 2026 in epoch 668, and that the proposal document hashes to the on-chain anchor, db91fd556808db2b8b8ec51511d2161d9a0a0d0e91004cb692d0bd0b903e4f27.\n\nPayment after delivery. The proposal asks payment for work that was done first: \"we did the work, without dedicated funding, and measured what a year of Mesh maintenance really takes\". I am strongly in favor of this order. When the treasury pays afterward, ada holders judge what was delivered and what it added, not what is promised. The risk of the work sat with the team, not with the treasury. The proposal states: \"Contributors are paid for their 2026 work once we receive the funds from the Treasury.\"\n\nWork that can be checked. I measured the figures the proposal gives on 17 November 2026. The npm registry reports 314,034 downloads of the main package from 1 January to 7 November 2026 and 127,746 for the same dates in 2025. The proposal gives 311,234 and 127,746. GitHub shows 58 pull requests merged from 1 January to 14 October 2026, 41 in the Mesh repository and 17 in the providers repository, by 14 authors, as the proposal states. GitHub lists 893 repositories that depend on Mesh, where the proposal gives 889. The code is public under the Apache 2.0 license.\n\nCustody that can be read on chain. The receiving credential is a native script that requires 3 of 4 key signatures, as the proposal describes. The reward account is registered, has no stake pool delegation and is delegated to the always abstain DRep. My DRep registration says that I verify \"against the chain myself rather than take claims on faith\". Here that was possible: the controls are in the script.\n\nA fixed and small amount. The request is 50,000 ada a month for 12 months, fixed in ada: \"the budget stays the same in ada, whatever happens to the price\". The proposal adds: \"There is no contingency line\". By my count on chain 42,604,371 ada remained under the Net Change Limit for epochs 613 to 713 on 17 November 2026, and the proposal gives the same figure rounded. This action takes 600,000 ada of that.\n\nA public good by an independent team. Mesh is a toolkit other builders depend on, maintained by a small team that is not a founding entity. Builders need tools like this to keep working through every protocol change. My DRep registration asks for \"value-adding solutions\" for Cardano's stakeholders, and this is one that others build on.\n\nNo earlier treasury funding, and no double claim. The proposal states: \"Mesh has never received Treasury funding through on-chain governance\". I found no earlier treasury withdrawal to this credential on chain and no payment to Mesh in the metadata of the treasury contract administered by Intersect. A wallet toolkit the team built in 2026 was paid by Project Catalyst. The proposal keeps it out of this request: \"it was funded separately by Project Catalyst\". The proposal lists eleven Catalyst proposals as completed. On 17 November 2026 the Project Catalyst site showed all eleven with the status Complete.\n\nWhat I note. The anchor names no author and carries no signature. The budget gives an amount per person and no hours, so the price is judged against the output and not against time spent. The year 2026 is not complete: November and December are still ahead, and the pool for community contributors is still to be assigned. The pull requests I counted run to 14 October 2026 and the downloads to 7 November 2026. None of these points outweighs work that is largely delivered and public.",
+    "precedentDiscussion": "My Yes on the Blockfrost transformation funded infrastructure that Cardano builders run on. This action is of the same kind. My No votes on actions 158, 161, 163 and 165 held treasury withdrawals to evidence rather than promises. In action 165 the full amount would leave the treasury a year before the last event. Here the order is the reverse: the work came first and the request follows. My DRep registration commits me to hold proposals \"to evidence rather than promises\". This action brings the evidence with it.\n\nThe proposal also presents a model: from 2027 one maintenance proposal a year, paid by quarter after a public report. My Yes is to this action. Each later proposal is a governance action of its own and I will judge it on what it shows.",
+    "counterargumentDiscussion": "The treasury did not order this work. That is true, and it is the reason the payment can be judged on results. A request made afterward can be refused without loss to the treasury. A team that works first carries that risk itself.\n\nPaying afterward invites anyone to do work and send a bill. Each request still needs a governance action, a deposit and the approval of DReps, and it is judged on work that can be inspected. That is a higher bar than a promise, not a lower one.\n\nAccording to the proposal, four of the five people who are paid are the four signers of the script. The script prevents one person from moving funds alone. It does not make the signers independent of the payees. For 600,000 ada paid out once, 550,000 ada to five named people and 50,000 ada to a pool for community contributors, I accept that. The payments from the script can be followed on chain.\n\nThe proposal states that Mesh is a registered DRep, and adds: \"The Mesh DRep will abstain on this governance action.\"",
+    "conclusion": "BKIND votes Yes: 600,000 ada, fixed in ada, for a year of open source maintenance that is largely delivered and checkable in public, paid to a 3 of 4 script that can be read on chain, meets the standard of evidence I hold treasury withdrawals to (govActionId 6b40978780eb15f44786329b39c947f5ff37162464ec4947dcffb55d9139adc7#0).",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Governance action 166, proposal document (IPFS)",
+        "uri": "https://ipfs.blockfrost.dev/ipfs/bafkreifxhjes4rjkumpz3jj3mtc37jzuqr4fmdkvci6i3qy6bakp6w45jy"
+      },
+      {
+        "@type": "Other",
+        "label": "On-chain anchor metadata (IPFS)",
+        "uri": "ipfs://bafkreifxhjes4rjkumpz3jj3mtc37jzuqr4fmdkvci6i3qy6bakp6w45jy"
+      },
+      {
+        "@type": "Other",
+        "label": "Mesh SDK repository",
+        "uri": "https://github.com/MeshJS/mesh"
+      },
+      {
+        "@type": "Other",
+        "label": "Mesh providers repository",
+        "uri": "https://github.com/MeshJS/providers"
+      },
+      {
+        "@type": "Other",
+        "label": "Projects using Mesh (GitHub dependents)",
+        "uri": "https://github.com/MeshJS/mesh/network/dependents"
+      },
+      {
+        "@type": "Other",
+        "label": "npm downloads of the main package, 2026",
+        "uri": "https://api.npmjs.org/downloads/point/2026-01-01:2026-11-07/@meshsdk/core"
+      },
+      {
+        "@type": "Other",
+        "label": "npm downloads of the main package, 2025",
+        "uri": "https://api.npmjs.org/downloads/point/2025-01-01:2025-11-07/@meshsdk/core"
+      },
+      {
+        "@type": "Other",
+        "label": "Project Catalyst, proposals of Mesh",
+        "uri": "https://projectcatalyst.io/proposers/meshsdk"
+      },
+      {
+        "@type": "Other",
+        "label": "Mesh governance dashboard",
+        "uri": "https://gov.meshjs.dev/projects/mesh-sdk"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 165 rationale (No, payment before delivery)",
+        "uri": "https://smitblockchainops.nl/governance/vote-global-events-2027-3815fd9e.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "My Blockfrost rationale (Yes, infrastructure builders run on)",
+        "uri": "https://smitblockchainops.nl/governance/vote-blockfrost-nonprofit-5439b614.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND DRep registration (CIP-119)",
+        "uri": "https://smitblockchainops.nl/governance/drep.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-136, DRep vote rationale",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0136"
+      }
+    ]
+  }
+}

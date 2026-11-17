@@ -1,6 +1,15 @@
 [
   {
     "role": "DRep",
+    "title": "Mesh SDK Maintenance 2026",
+    "action": "Treasury Withdrawal",
+    "vote": "Yes",
+    "epoch": 668,
+    "govActionId": "6b40978780eb15f44786329b39c947f5ff37162464ec4947dcffb55d9139adc7#0",
+    "rationale": "governance/vote-mesh-maintenance-2026-6b409787.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "Cardano Global Events 2027 (Cardano Foundation)",
     "action": "Treasury Withdrawal",
     "vote": "No",
