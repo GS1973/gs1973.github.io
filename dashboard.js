@@ -271,7 +271,7 @@
         const cls = x => has(x) ? 'spo' : (x.pools >= 2 ? 'multi' : 'drep');
         const brief = n => ada(n).replace(' million', 'M').replace(' billion', 'bn');
         const items = o.top.map((x, i) => ({
-            value: x.ada, cls: cls(x), url: '',
+            value: x.ada, cls: cls(x), url: x.pool ? 'https://cardanoscan.io/pool/' + encodeURIComponent(x.pool) : '',
             lines: [(i + 1) + '. ' + x.name, ada(x.ada) + ' ADA, ' + pctText(pct(x.ada, o.total_ada)) + ' of all stake, in ' + x.pools + (x.pools === 1 ? ' pool' : ' pools'),
                 (x.tickers && x.tickers.length ? 'Tickers ' + x.tickers.join(', ') + (x.pools > x.tickers.length ? ' and more' : '') + '. ' : '')
                 + (has(x) ? 'Also has a DRep: ' + x.dreps.map(r => r.name + ' (number ' + r.rank + ', ' + ada(r.ada) + ' ADA of voting power)').join(', ') + '.'
@@ -286,7 +286,8 @@
               step: vmax > 2e9 ? 500e6 : 100e6, height: 300 });
         $('dashRest').textContent = (o.producing ? 'One bar for each of the ' + fmt(n) + ' owners with a pool that made a block in the past year. '
             : 'One bar for each of the ' + fmt(n) + ' largest owners. ')
-            + 'The other ' + fmt(o.count - n) + ' owners hold ' + pctText(pct(o.rest_ada, o.total_ada)) + ' of all stake together.';
+            + 'The other ' + fmt(o.count - n) + ' owners hold ' + pctText(pct(o.rest_ada, o.total_ada)) + ' of all stake together.'
+            + ' Click a bar, or tap it again, to open the largest pool of that owner on Cardanoscan.';
         largest($('dashLargest-pools'), 'The ' + o.half + ' who hold half', 'Owners as in the Decentralization Monitor: Pools of one owner key, reward account or organization count together. The first ' + o.third + ' hold more than a third.',
             o.top.slice(0, o.half).map(x => ({ name: x.name, cls: cls(x),
                 extra: (x.pools === 1 ? '' : x.pools + ' pools, ') + brief(x.ada),
