@@ -747,7 +747,7 @@
 19817a6bae - -
 1984000440 3w -
 199479a993 1h -
-19990783fb i2 -
+19990783fb en A
 19c57c02d2 2p -
 19c95ca37c e9 -
 19d0eba1f4 4y -
@@ -5087,6 +5087,7 @@ aceeabb60e 4b -
 ad09a15155 1a -
 ad0c2de7dc f -
 ad1f8e1eb2 kw 4
+ad2536b192 5n A
 ad293a839e - -
 ad2d2969e5 vp A
 ad36a4b5ea 1s A
@@ -7467,7 +7468,7 @@ ff013d5395 - -
 ff07e9bf64 2f -
 ff0cb6908f - -
 ff193d9d1d sq -
-ff2107067e sc A
+ff2107067e 8k A
 ff3261bb13 4c -
 ff346b97a8 5i -
 ff354abbae 30 -
