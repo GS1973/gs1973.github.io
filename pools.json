@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T11:13:25Z",
+"generated": "2026-11-17T11:31:12Z",
 "epoch": 668,
 "k": 1000,
 "saturation_ada": 38999661,
@@ -11,12 +11,12 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2665,
-"alive_named": 1045,
+"alive_named": 1054,
 "pledge_not_met": 499,
-"above_saturation": 127,
+"above_saturation": 130,
 "excluded_exchanges": 48,
 "excluded_founders": 8,
-"excluded_several": 245,
+"excluded_several": 247,
 "excluded": [
 {
 "ticker": "BNP",
@@ -1021,6 +1021,12 @@
 "reason": "several pools"
 },
 {
+"ticker": "SECUR",
+"name": "FIVE SecureStaking.io",
+"pool_id": "pool14n77mmxh6a2d9k05jamzdwsws2ayvkyje8uc7led958p63at3aj",
+"reason": "several pools"
+},
+{
 "ticker": "FGMTB",
 "name": "Figment 11",
 "pool_id": "pool1g59d82m8c84f2ds6l50mng863h9cxfm88khxyhna2l9rzgv6030",
@@ -1678,6 +1684,12 @@
 "ticker": "SUNNY",
 "name": "Sunshine Stake Pool #2",
 "pool_id": "pool1p8fhygz7ga9hghhwmkr64p3ftn77lxu9nyddvsqszattcdyajc0",
+"reason": "several pools"
+},
+{
+"ticker": "SECUR",
+"name": "THREE SecureStaking.io",
+"pool_id": "pool1xjhzgchsl2ccvc5pj3aqytv9hh0jnaz63wtfnw4th07tjypm46x",
 "reason": "several pools"
 },
 {
@@ -2702,6 +2714,17 @@
 "stake_ada": 82536,
 "blocks_2026": 0,
 "blocks_last_10_epochs": 0,
+"retiring_epoch": null,
+"document": "valid",
+"roles": []
+},
+{
+"ticker": "1GURU",
+"name": "Stakepool Guru",
+"pool_id": "pool1892ry20mvu6tvrmuua5gdmk7unw30w7tf8scpllpyq8w2sdwvc7",
+"stake_ada": 83543,
+"blocks_2026": 11,
+"blocks_last_10_epochs": 3,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -4346,6 +4369,17 @@
 "roles": []
 },
 {
+"ticker": "DRMZ",
+"name": "Dream Cardano",
+"pool_id": "pool16utp8esfwwpwf4fzlvtulugtdj9mapt42gdwza962pk8q2f45yt",
+"stake_ada": 504483,
+"blocks_2026": 31,
+"blocks_last_10_epochs": 4,
+"retiring_epoch": null,
+"document": "valid",
+"roles": []
+},
+{
 "ticker": "FREE1",
 "name": "Cardano FREE stake pool",
 "pool_id": "pool12f2r9xf4wvht030xwjhpjvy5yptr275qr2qcydnx57jkxyfzz2w",
@@ -5065,8 +5099,8 @@
 "name": "ADA Made in France",
 "pool_id": "pool1yd67lvc04eztwrpnefqh3g4dsydmezwgrg6ce4km728v6sg8zwf",
 "stake_ada": 919310,
-"blocks_2026": 95,
-"blocks_last_10_epochs": 9,
+"blocks_2026": 96,
+"blocks_last_10_epochs": 10,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6546,6 +6580,17 @@
 "roles": []
 },
 {
+"ticker": "HOT",
+"name": "House Of Titans",
+"pool_id": "pool167qekemyleju9g7eugaguqxh5telvmmmrs3a7sp897f6za308hg",
+"stake_ada": 2784871,
+"blocks_2026": 187,
+"blocks_last_10_epochs": 28,
+"retiring_epoch": null,
+"document": "valid",
+"roles": []
+},
+{
 "ticker": "SAND",
 "name": "Sandstone",
 "pool_id": "pool1gqvrgg7zycvf65ydkjeph72t0yx0f5ykzd9f477zh4f3smwk997",
@@ -7415,6 +7460,17 @@
 "roles": []
 },
 {
+"ticker": "KRSNA",
+"name": "✨Krishna Stake Pool by Kaizen Crypto",
+"pool_id": "pool1zc7vxe3ymyej76h8wu8gm79chtt7w9c3adkza4uhrjvagr9w4zp",
+"stake_ada": 6095386,
+"blocks_2026": 371,
+"blocks_last_10_epochs": 54,
+"retiring_epoch": null,
+"document": "valid",
+"roles": []
+},
+{
 "ticker": "SOCIO",
 "name": "Socious StakePool",
 "pool_id": "pool1g2y0j7rsv7dpu8p6jt2dva3rxfqjl2zu0ag9dd0cfm8guzg0lh0",
@@ -7639,8 +7695,8 @@
 "name": "Sagittarius Pool",
 "pool_id": "pool1les50pm26wpf8gym7cda470xgfswukzhyykvhyfsfl4dcu2ezj4",
 "stake_ada": 8195766,
-"blocks_2026": 463,
-"blocks_last_10_epochs": 79,
+"blocks_2026": 464,
+"blocks_last_10_epochs": 80,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7815,8 +7871,8 @@
 "name": "KOPI 咖啡 Singapore",
 "pool_id": "pool1ld9hkah2dkzh73pvh9tf6xr0x28us34msv3zcv2sase5vhvq962",
 "stake_ada": 9932182,
-"blocks_2026": 813,
-"blocks_last_10_epochs": 84,
+"blocks_2026": 814,
+"blocks_last_10_epochs": 85,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8310,8 +8366,8 @@
 "name": "BASHO",
 "pool_id": "pool1asfgkqtmjuusclgx72xpzvpw336gkulchtstsx9lsj9uqzjckv0",
 "stake_ada": 23414226,
-"blocks_2026": 1546,
-"blocks_last_10_epochs": 226,
+"blocks_2026": 1547,
+"blocks_last_10_epochs": 227,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8343,8 +8399,8 @@
 "name": "world economic pool",
 "pool_id": "pool189vq6ay0gku9tkqc2t3nfjk3n88mm23grmfas852jruw6fjlkaf",
 "stake_ada": 24227440,
-"blocks_2026": 1358,
-"blocks_last_10_epochs": 210,
+"blocks_2026": 1359,
+"blocks_last_10_epochs": 211,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
