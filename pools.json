@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-17T11:05:52Z",
+"generated": "2026-11-17T11:13:25Z",
 "epoch": 668,
 "k": 1000,
 "saturation_ada": 38999661,
@@ -11,7 +11,7 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2665,
-"alive_named": 1047,
+"alive_named": 1045,
 "pledge_not_met": 499,
 "above_saturation": 127,
 "excluded_exchanges": 48,
@@ -2707,17 +2707,6 @@
 "roles": []
 },
 {
-"ticker": "1GURU",
-"name": "Stakepool Guru",
-"pool_id": "pool1892ry20mvu6tvrmuua5gdmk7unw30w7tf8scpllpyq8w2sdwvc7",
-"stake_ada": 83543,
-"blocks_2026": 11,
-"blocks_last_10_epochs": 3,
-"retiring_epoch": null,
-"document": "valid",
-"roles": []
-},
-{
 "ticker": "KAYA",
 "name": "0 % fees. Cardano Singapore Pool",
 "pool_id": "pool1vfayajkdc0gw876lax5va6ygpfpsd8kz73k4y977emm3clnxlm5",
@@ -4357,17 +4346,6 @@
 "roles": []
 },
 {
-"ticker": "DRMZ",
-"name": "Dream Cardano",
-"pool_id": "pool16utp8esfwwpwf4fzlvtulugtdj9mapt42gdwza962pk8q2f45yt",
-"stake_ada": 504483,
-"blocks_2026": 31,
-"blocks_last_10_epochs": 4,
-"retiring_epoch": null,
-"document": "valid",
-"roles": []
-},
-{
 "ticker": "FREE1",
 "name": "Cardano FREE stake pool",
 "pool_id": "pool12f2r9xf4wvht030xwjhpjvy5yptr275qr2qcydnx57jkxyfzz2w",
@@ -5633,6 +5611,17 @@
 "roles": []
 },
 {
+"ticker": "BIO",
+"name": "Bio Pool",
+"pool_id": "pool1vqm5n5d503uumuc89s5y4wuczrwe3tlgylt2u2uj7y276avr5pl",
+"stake_ada": 1369966,
+"blocks_2026": 118,
+"blocks_last_10_epochs": 17,
+"retiring_epoch": null,
+"document": "valid",
+"roles": []
+},
+{
 "ticker": "SAGAN",
 "name": "Sagan Stake Pool",
 "pool_id": "pool18p7p752cjnf9z8g70ygkre5cstwmgfatzuqm0tm3n2xf739j8k8",
@@ -6557,17 +6546,6 @@
 "roles": []
 },
 {
-"ticker": "HOT",
-"name": "House Of Titans",
-"pool_id": "pool167qekemyleju9g7eugaguqxh5telvmmmrs3a7sp897f6za308hg",
-"stake_ada": 2784871,
-"blocks_2026": 187,
-"blocks_last_10_epochs": 28,
-"retiring_epoch": null,
-"document": "valid",
-"roles": []
-},
-{
 "ticker": "SAND",
 "name": "Sandstone",
 "pool_id": "pool1gqvrgg7zycvf65ydkjeph72t0yx0f5ykzd9f477zh4f3smwk997",
@@ -6627,8 +6605,8 @@
 "name": "EPOCH Stake Pool",
 "pool_id": "pool1q0jmr57udknpq8k5qtgt5vgdjq9pzrzevf68966wxn8zgz7qy3w",
 "stake_ada": 3101510,
-"blocks_2026": 199,
-"blocks_last_10_epochs": 29,
+"blocks_2026": 200,
+"blocks_last_10_epochs": 30,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6869,8 +6847,8 @@
 "name": "HOSKY",
 "pool_id": "pool19m98gdj84d4kxem5h6ch8fvj92pvauhg0y4ktmzr3mln6c45yly",
 "stake_ada": 3735082,
-"blocks_2026": 108,
-"blocks_last_10_epochs": 42,
+"blocks_2026": 109,
+"blocks_last_10_epochs": 43,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8618,8 +8596,8 @@
 "name": "SN₳KE Cardano Staking",
 "pool_id": "pool1xs34q2z06a46nk7hl48d27dj5gzc6hh9trugw2ehs9ajsevqffx",
 "stake_ada": 33988292,
-"blocks_2026": 3625,
-"blocks_last_10_epochs": 355,
+"blocks_2026": 3626,
+"blocks_last_10_epochs": 356,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []

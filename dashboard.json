@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T10:55:15Z",
+ "generated": "2026-11-17T11:13:26Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -16,7 +16,8 @@
   "large_dreps": 13,
   "large_share": 0.4013,
   "producing": 1352,
-  "no_vote_share": 0.8522
+  "no_vote_share": 0.8522,
+  "dreps_registered": 1050
  },
  "stake_total_ada": 21493202937,
  "stake_bands": [
