@@ -222,6 +222,14 @@
         box.replaceChildren(h, list);
     }
 
+    // how many there are, how many are not in the chart, how many are
+    function counts(box, title, rows) {
+        const t = el('div', 'dash-counts');
+        t.append(el('div', 'dash-countstitle', title));
+        rows.forEach(([n, what]) => { t.append(el('span', 'dash-countn', fmt(n)), el('span', '', what)); });
+        box.append(t);
+    }
+
     // ---------- the DReps ----------
     function drepView(d) {
         const k = d.key;
@@ -241,6 +249,8 @@
         largest($('dashLargest-dreps'), 'The ' + d.carry + ' who carry', 'Together they carry a treasury withdrawal. The first ' + d.block + ' can block one.',
             d.dreps.slice(0, d.carry).map(x => ({ name: x.name || x.drep_id.slice(0, 14) + '…', cls: x.cls,
                 extra: x.pools >= 2 ? x.pools + ' pools, ' + ada(x.pools_ada) : '', title: reason(x) })));
+        if (k.dreps_registered) counts($('dashLargest-dreps'), 'DReps', [[k.dreps_registered, 'registered'],
+            [k.dreps_registered - items.length, 'not active'], [items.length, 'active, in the chart']]);
     }
 
     // ---------- the stake pools ----------
@@ -281,6 +291,8 @@
             o.top.slice(0, o.half).map(x => ({ name: x.name, cls: cls(x),
                 extra: (x.pools === 1 ? '' : x.pools + ' pools, ') + brief(x.ada),
                 title: has(x) ? 'Also has a DRep: ' + x.dreps.map(r => r.name).join(', ') : '' })));
+        if (o.producing) counts($('dashLargest-pools'), 'Pool owners', [[o.count, 'with stake in their pools'],
+            [o.count - n, 'no block in the past year'], [n, 'a block in the past year, in the chart']]);
     }
 
 
