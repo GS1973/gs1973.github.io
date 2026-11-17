@@ -667,3 +667,21 @@
         line-height: 1.15;
     }
 }
+
+/* both views take the height of the taller one, so the window does not change
+   size when the view is switched; the view that is off stays in place, unseen */
+@media (min-width: 901px) {
+    .dash-views {
+        display: grid;
+    }
+
+    .dash-views > .dash-view {
+        grid-area: 1 / 1;
+        min-width: 0;
+    }
+
+    .dash-views > .dash-view[hidden] {
+        display: block;
+        visibility: hidden;
+    }
+}

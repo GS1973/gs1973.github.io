@@ -285,7 +285,7 @@
         for (let r = every; r <= n; r += every) ticks.push(r);
         chart($('dashChart-pools'), items, [[o.third, o.third + ' owners: a third'], [o.half, o.half + ' owners: half']],
             { label: 'Stake of the ' + fmt(n) + ' pool owners with an active pool, largest first', ticks, xTitle: 'Rank by stake',
-              step: vmax > 2e9 ? 500e6 : 100e6, height: 300 });
+              step: vmax > 2e9 ? 500e6 : 100e6, height: 390 });   // this chart is narrower: the same height on the page as the DReps chart
         $('dashRest').textContent = (o.producing ? 'One bar for each of the ' + fmt(n) + ' owners with a pool that made a block in the past year. '
             : 'One bar for each of the ' + fmt(n) + ' largest owners. ')
             + 'The other ' + fmt(o.count - n) + ' owners hold ' + pctText(pct(o.rest_ada, o.total_ada)) + ' of all stake together.'
