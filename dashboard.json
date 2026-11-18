@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T11:31:13Z",
+ "generated": "2026-11-18T05:35:27Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -17,7 +17,7 @@
   "large_share": 0.4013,
   "producing": 1352,
   "no_vote_share": 0.8522,
-  "dreps_registered": 1050
+  "dreps_registered": 1051
  },
  "stake_total_ada": 21493202937,
  "stake_bands": [
@@ -6753,7 +6753,7 @@
     "pool": "pool19m547w9wkcqm5hcstz67fly4ucz0zsp3dqv4n956xyusy4dlpue"
    },
    {
-    "name": "AZTEC",
+    "name": "pool1yyv7vx5zh",
     "pools": 1,
     "ada": 1018539,
     "pool": "pool1yyv7vx5zhhsd60jp4tl72vpznwvpvjp35m4z7jr42ugkxmndyv5"
@@ -6795,7 +6795,7 @@
     "pool": "pool1x7j89z3n7y7g8syk06nahcrwkdphhw6dymt8r3gf8ulyksrzh5t"
    },
    {
-    "name": "🐈NNSP",
+    "name": "pool1qaxrj6n50",
     "pools": 1,
     "ada": 977255,
     "pool": "pool1qaxrj6n50naglqmzj5puq5sd0awgy9wnqmykpwmcah4vzhndpve"
@@ -7791,7 +7791,7 @@
     "pool": "pool1qsxhnvr03tg6jj7cl0y74jd63n85fgejm8tlqq7ct7fexfygkye"
    },
    {
-    "name": "pool1h40xjqda9",
+    "name": "CCASH",
     "pools": 1,
     "ada": 382675,
     "pool": "pool1h40xjqda9wmw9cff5jss3ww9npujkhlvg6xjy9l5ujsu5rqlw28"
@@ -9383,7 +9383,7 @@
   "abstain_net_ada": -49417447
  },
  "lookup": {
-  "credentials": 1883405,
+  "credentials": 1883503,
   "shards": 256
  },
  "links": {

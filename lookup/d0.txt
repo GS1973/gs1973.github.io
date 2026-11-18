@@ -833,7 +833,7 @@
 1cee35480e 6h -
 1cfa5498bd 2k -
 1d0bb6b1de 4 -
-1d0feae7ec 3i 4
+1d0feae7ec - -
 1d13be7fd3 6x A
 1d1e067a73 3j -
 1d209b7362 r -
@@ -3062,7 +3062,7 @@
 6b1815666c mo -
 6b1b259f5f - -
 6b20348a90 - -
-6b2f3420d8 7f -
+6b2f3420d8 41 A
 6b37b09e1f lw A
 6b3f4af694 - -
 6b48a79c2c 1p -

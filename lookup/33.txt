@@ -845,7 +845,7 @@
 1d4cd9b83f 1i -
 1d521427fb 70 -
 1d772e3d2b - -
-1d78ab9e21 7d -
+1d78ab9e21 41 A
 1d80f118a6 d -
 1d87cbf599 6p -
 1d8af72e45 - -
@@ -2173,7 +2173,7 @@
 4b0ace5146 4y -
 4b16bac038 9a 0
 4b195aa64e - -
-4b234cafce vn -
+4b234cafce - -
 4b29908962 1a A
 4b2a9ed90c bz -
 4b2ef617fa 40 -
