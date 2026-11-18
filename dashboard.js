@@ -448,6 +448,13 @@
         }
     }
 
+    // What the wallet itself reported, as plain text. CIP-30 errors carry `info`
+    // and a numeric `code`, other errors a `message`.
+    function walletSaid(e) {
+        const t = e && (e.info || e.message || (e.code !== undefined ? 'code ' + e.code : ''));
+        return t ? ' The wallet said: ' + String(t).slice(0, 200) : '';
+    }
+
     function walletList() {
         const c = window.cardano || {};
         return Object.keys(WALLETS).filter(k => c[k] && typeof c[k].enable === 'function');
@@ -468,9 +475,21 @@
             b.type = 'button';
             b.addEventListener('click', () => run(async () => {
                 let api;
-                try { api = await window.cardano[k].enable(); } catch (e) { throw new Error('The wallet did not give access.'); }
-                if (Number(await api.getNetworkId()) !== 1) throw new Error('network');
-                const rewards = (await api.getRewardAddresses()) || [];
+                // A wallet that asks for permission in a window of its own keeps
+                // enable() pending until the visitor answers. Say so, because that
+                // window can open behind the browser.
+                const waiting = setTimeout(() => {
+                    $('dashResult').replaceChildren(el('p', 'pools-meta', 'Waiting for ' + WALLETS[k] + '. Look for a wallet window that asks for permission. It can open behind this window.'));
+                }, 6000);
+                try { api = await window.cardano[k].enable(); }
+                catch (e) { throw new Error('The wallet did not give access.' + walletSaid(e)); }
+                finally { clearTimeout(waiting); }
+                let net, rewards;
+                try {
+                    net = Number(await api.getNetworkId());
+                    rewards = (await api.getRewardAddresses()) || [];
+                } catch (e) { throw new Error('The wallet did not give its stake address.' + walletSaid(e)); }
+                if (net !== 1) throw new Error('network');
                 if (!rewards.length) throw new Error('This wallet has no stake address.');
                 const b2 = rewards[0].match(/../g).map(h => parseInt(h, 16));
                 return credOf(b2);
