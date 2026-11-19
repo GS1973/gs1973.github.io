@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T05:35:27Z",
+ "generated": "2026-11-19T05:35:42Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -7183,7 +7183,7 @@
     "pool": "pool1a44zldps27avv82mamm2lj33mrrkqdzt39nyrgn5dkk3jtm0wrp"
    },
    {
-    "name": "pool17mr554wv6",
+    "name": "MEME",
     "pools": 1,
     "ada": 679137,
     "pool": "pool17mr554wv653z4ttr3rydt5dsxg6r28ysu5mlz9cc5ax32gsleh9"
@@ -9383,7 +9383,7 @@
   "abstain_net_ada": -49417447
  },
  "lookup": {
-  "credentials": 1883503,
+  "credentials": 1883621,
   "shards": 256
  },
  "links": {

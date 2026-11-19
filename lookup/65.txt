@@ -1882,7 +1882,7 @@
 432a26150b - -
 4331c57efd - -
 4332c885cf - -
-43364dd1b2 f A
+43364dd1b2 1s A
 4347f9c433 k -
 434b417bb7 - -
 43505c6bb5 - -
@@ -5599,7 +5599,7 @@ c6651bc3e5 1z A
 c6699ab0c2 - -
 c673edba58 1w -
 c6855e2526 4v -
-c6abccd6ed cq -
+c6abccd6ed jo A
 c6c132f174 8k A
 c6d3bc902d bs -
 c6d5f2fc5f 65 A
