@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T05:35:42Z",
+ "generated": "2026-11-20T05:35:46Z",
  "epoch": 668,
  "key": {
   "owners_third": 12,
@@ -12,7 +12,7 @@
   "carry_prev": 20,
   "prev_epoch": 662,
   "linked_dreps": 110,
-  "linked_share": 0.7812,
+  "linked_share": 0.7811,
   "large_dreps": 13,
   "large_share": 0.4013,
   "producing": 1352,
@@ -47,7 +47,7 @@
  "vote_bar": [
   {
    "label": "active DReps",
-   "ada": 4637984127
+   "ada": 4638395775
   },
   {
    "label": "Always No Confidence",
@@ -55,7 +55,7 @@
   },
   {
    "label": "inactive DReps",
-   "ada": 783082666
+   "ada": 782671018
   },
   {
    "label": "Always Abstain",
@@ -1420,6 +1420,13 @@
    "pools_ada": 13223693
   },
   {
+   "name": "Kurdopia",
+   "drep_id": "drep1ygxtldfpas0gh9u20zvpwladxwvj8hdd5wxkkgt8ylxanacfy7wke",
+   "ada": 411647,
+   "cls": "drep",
+   "why": "calls itself a stake pool operator in its own DRep metadata, but is not linked to a pool"
+  },
+  {
    "name": "",
    "drep_id": "drep1ytrg2ruc44lutzd5tqw5m49rk9lxmrpjs85k8l2qsntvgls0mez9v",
    "ada": 400192,
@@ -2338,7 +2345,7 @@
      {
       "name": "drep1ytjh8c0dl",
       "ada": 59867,
-      "rank": 230,
+      "rank": 231,
       "cls": "spo"
      }
     ]
@@ -3378,7 +3385,7 @@
      {
       "name": "Long Hồ",
       "ada": 185755,
-      "rank": 201,
+      "rank": 202,
       "cls": "spo"
      }
     ]
@@ -4316,7 +4323,7 @@
      {
       "name": "Apex Pool",
       "ada": 292842,
-      "rank": 187,
+      "rank": 188,
       "cls": "spo"
      }
     ]
@@ -5921,7 +5928,7 @@
      {
       "name": "drep1ytrg2ruc4",
       "ada": 400192,
-      "rank": 169,
+      "rank": 170,
       "cls": "spo"
      }
     ]
@@ -5935,7 +5942,7 @@
      {
       "name": "Meria",
       "ada": 5,
-      "rank": 263,
+      "rank": 264,
       "cls": "spo"
      }
     ]
@@ -6337,7 +6344,7 @@
      {
       "name": "8Ball",
       "ada": 14322,
-      "rank": 245,
+      "rank": 246,
       "cls": "spo"
      }
     ]
@@ -6555,7 +6562,7 @@
      {
       "name": "GNP1_DRep",
       "ada": 342995,
-      "rank": 178,
+      "rank": 179,
       "cls": "spo"
      }
     ]
@@ -6599,7 +6606,7 @@
      {
       "name": "TAVN",
       "ada": 249649,
-      "rank": 192,
+      "rank": 193,
       "cls": "spo"
      }
     ]
@@ -6961,7 +6968,7 @@
      {
       "name": "ADAAT",
       "ada": 395367,
-      "rank": 170,
+      "rank": 171,
       "cls": "spo"
      }
     ]
@@ -7029,7 +7036,7 @@
      {
       "name": "SVRN | Sleeping Natives",
       "ada": 273579,
-      "rank": 190,
+      "rank": 191,
       "cls": "spo"
      }
     ]
@@ -7409,7 +7416,7 @@
      {
       "name": "CZBE1",
       "ada": 226727,
-      "rank": 194,
+      "rank": 195,
       "cls": "spo"
      }
     ]
@@ -7623,7 +7630,7 @@
      {
       "name": "Jonathan Adjei",
       "ada": 204217,
-      "rank": 196,
+      "rank": 197,
       "cls": "spo"
      }
     ]
@@ -8204,7 +8211,7 @@
      {
       "name": "AdaSouls",
       "ada": 194203,
-      "rank": 200,
+      "rank": 201,
       "cls": "spo"
      }
     ]
@@ -8272,7 +8279,7 @@
      {
       "name": "Adalion",
       "ada": 123376,
-      "rank": 214,
+      "rank": 215,
       "cls": "spo"
      }
     ]
@@ -8358,7 +8365,7 @@
      {
       "name": "Breizh DRep [BZH]",
       "ada": 102096,
-      "rank": 221,
+      "rank": 222,
       "cls": "spo"
      }
     ]
@@ -8654,7 +8661,7 @@
      {
       "name": "iFly",
       "ada": 85881,
-      "rank": 225,
+      "rank": 226,
       "cls": "spo"
      }
     ]
@@ -8716,7 +8723,7 @@
      {
       "name": "CBROS Pool",
       "ada": 92363,
-      "rank": 224,
+      "rank": 225,
       "cls": "spo"
      }
     ]
@@ -9046,7 +9053,7 @@
      {
       "name": "Talos",
       "ada": 222118,
-      "rank": 195,
+      "rank": 196,
       "cls": "spo"
      }
     ]
@@ -9383,7 +9390,7 @@
   "abstain_net_ada": -49417447
  },
  "lookup": {
-  "credentials": 1883621,
+  "credentials": 1883712,
   "shards": 256
  },
  "links": {
