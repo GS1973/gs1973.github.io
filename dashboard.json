@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T08:35:24Z",
+ "generated": "2026-11-21T09:02:59Z",
  "epoch": 669,
  "key": {
   "owners_third": 12,
@@ -11,11 +11,11 @@
   "carry": 18,
   "carry_prev": 20,
   "prev_epoch": 663,
-  "linked_dreps": 109,
-  "linked_share": 0.7789,
+  "linked_dreps": 112,
+  "linked_share": 0.7804,
   "large_dreps": 13,
-  "large_share": 0.4013,
-  "producing": 1352,
+  "large_share": 0.3977,
+  "producing": 1350,
   "no_vote_share": 0.8524,
   "dreps_registered": 1051
  },
@@ -72,27 +72,27 @@
    "drep_id": "drep1y2200we9c904un36tzaearntzzl63snffuul9qsk0te4utqfkke0w",
    "ada": 482475745,
    "cls": "cc",
-   "why": "says in its own DRep metadata that it is a member of Eastern Cardano Council, which holds a seat on the Constitutional Committee until epoch 726. It is also linked by our Decentralization Monitor to pools ZZZ, ZZZ2, ZZZ3, ZZZ5, ZZZ4, because the pool names the DRep in its metadata. Its owner runs 5 pools with 109.8 million ADA together",
+   "why": "says in its own DRep metadata that it is a member of Eastern Cardano Council, which holds a seat on the Constitutional Committee until epoch 726. It is also linked by our Decentralization Monitor to pools ZZZ, ZZZ2, ZZZ3, ZZZ5, ZZZ4, because the pool names the DRep in its metadata. Its owner runs 5 pools with 110.4 million ADA together",
    "pools": 5,
-   "pools_ada": 109804677
+   "pools_ada": 110374773
   },
   {
    "name": "Yoroi W₳llet",
    "drep_id": "drep1ygr9tuapcanc3kpeyy4dc3vmrz9cfe5q7v9wj3x9j0ap3tswtre9j",
    "ada": 387088268,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7, EMGHW, because both are of one organization on our list of exchanges and founding entities. Its owner runs 8 pools with 181.4 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7, EMGHW, because both are of one organization on our list of exchanges and founding entities. Its owner runs 8 pools with 181.2 million ADA together",
    "pools": 8,
-   "pools_ada": 181392102
+   "pools_ada": 181233744
   },
   {
    "name": "CryptoCrow",
    "drep_id": "drep1ytfwpmt2fvdnyvlswyjyggpf8alwkpm7ha6cua9nsak525ssmvm57",
    "ada": 299032885,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool CROW, because the DRep carries the pool's name or ticker. Its pool has 60.6 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool CROW, because the DRep carries the pool's name or ticker. Its pool has 61.4 million ADA",
    "pools": 1,
-   "pools_ada": 60630586
+   "pools_ada": 61428779
   },
   {
    "name": "Phil UPLC",
@@ -113,27 +113,27 @@
    "drep_id": "drep1yt8p080ajks6zdnxd9z6a6q60p9sm9j5rl7tc63mfna8r6cnp4wr3",
    "ada": 215607542,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools EVE7, EVE8, EVE6, EVERS, RSTK, EVRST, EVE1, EVE2, EVE4, EVE, VRSTK, ESTK, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 15 pools with 673.4 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools EVE7, EVE8, EVE6, EVERS, RSTK, EVRST, EVE1, EVE2, EVE4, EVE, VRSTK, ESTK, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 15 pools with 675.4 million ADA together",
    "pools": 15,
-   "pools_ada": 673439193
+   "pools_ada": 675356151
   },
   {
    "name": "EMURGO",
    "drep_id": "drep1ytvlwvyjmzfyn56n0zz4f6lj94wxhmsl5zky6knnzrf4jygpyahug",
    "ada": 210569110,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7, EMGHW, because both are of one organization on our list of exchanges and founding entities. Its owner runs 8 pools with 181.4 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7, EMGHW, because both are of one organization on our list of exchanges and founding entities. Its owner runs 8 pools with 181.2 million ADA together",
    "pools": 8,
-   "pools_ada": 181392102
+   "pools_ada": 181233744
   },
   {
    "name": "Sebastien Guillemot セバ",
    "drep_id": "drep1y2csyxt7u2hl4674pl9cef5lknafaw5nraxvyx033kmd0es3awuv0",
    "ada": 170179982,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool SEBA, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 816,404 ADA",
+   "why": "is linked by our Decentralization Monitor to pool SEBA, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 767,635 ADA",
    "pools": 1,
-   "pools_ada": 816404
+   "pools_ada": 767635
   },
   {
    "name": "Cardano Foundation",
@@ -142,25 +142,25 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools CF1, CF2, CF3, CF4, CF5, because the DRep carries the pool's name or ticker, both are of one organization on our list of exchanges and founding entities and the pool names the DRep in its metadata. Its owner runs 5 pools with 250.0 million ADA together",
    "pools": 5,
-   "pools_ada": 249969178
+   "pools_ada": 249969212
   },
   {
    "name": "SASA_nagamaru_ながまる",
    "drep_id": "drep1ytuddrgqca0xd4aams6pl9zndpcmxg0rs7z3mggjelm6kscp4arg5",
    "ada": 130719685,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools SASA, SASA2, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 96.3 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools SASA, SASA2, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 95.9 million ADA together",
    "pools": 2,
-   "pools_ada": 96257059
+   "pools_ada": 95935719
   },
   {
    "name": "SIPO",
    "drep_id": "drep1yffld2866p00cyg3ejjdewtvazgah7jjgk0s9m7m5ytmmdq33v3zh",
    "ada": 120022515,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools SIPO, SIPO2, SIPO3, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 3 pools with 114.4 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools SIPO, SIPO2, SIPO3, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 3 pools with 114.2 million ADA together",
    "pools": 3,
-   "pools_ada": 114377387
+   "pools_ada": 114190611
   },
   {
    "name": "ranket",
@@ -169,16 +169,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool RANKT, because the pool names the DRep in its metadata. Its pool has 29.5 million ADA",
    "pools": 1,
-   "pools_ada": 29454449
+   "pools_ada": 29459713
   },
   {
    "name": "JAZZ",
    "drep_id": "drep1yt77crnmjuqkj9gcwjjsurez7s07jhwhyt4suxs3xeqftcsfrspun",
    "ada": 98558837,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools JAZZ, JAZZ3, JAZZ2, JAZZ4, because the DRep's name is the pool's name without its number. Its owner runs 4 pools with 85.1 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools JAZZ, JAZZ3, JAZZ2, JAZZ4, because the DRep's name is the pool's name without its number. Its owner runs 4 pools with 85.2 million ADA together",
    "pools": 4,
-   "pools_ada": 85058745
+   "pools_ada": 85156579
   },
   {
    "name": "CardanoYoda (MANDA Pool)",
@@ -187,16 +187,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool MANDA, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 2.4 million ADA",
    "pools": 1,
-   "pools_ada": 2386453
+   "pools_ada": 2400435
   },
   {
    "name": "Army of Spies",
    "drep_id": "drep1ygqgayvx8yzsaj9hprja3l6jy3v4px9z3u8uvecuvm3f92ce7mckx",
    "ada": 83093931,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool AOS, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 46.9 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool AOS, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 46.8 million ADA",
    "pools": 1,
-   "pools_ada": 46926120
+   "pools_ada": 46808458
   },
   {
    "name": "Dumpling🥟",
@@ -210,9 +210,9 @@
    "drep_id": "drep1ygsgfhcydhlfglamhzkjn97rz3edef8a4z99fwl2frcwnrcmgurt3",
    "ada": 78858626,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool DAVE, because the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 40.0 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool DAVE, because the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 39.9 million ADA",
    "pools": 1,
-   "pools_ada": 40047417
+   "pools_ada": 39947143
   },
   {
    "name": "Dori",
@@ -226,45 +226,45 @@
    "drep_id": "drep1ytwmwvtd0a8lr45ssner2tjxzv5y8q03w3606yeald9mdmgmwecja",
    "ada": 73283629,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools ATADA, ATAD2, because the DRep names the pool in its metadata. Its owner runs 2 pools with 130.2 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools ATADA, ATAD2, because the DRep names the pool in its metadata. Its owner runs 2 pools with 130.0 million ADA together",
    "pools": 2,
-   "pools_ada": 130185426
+   "pools_ada": 129985843
   },
   {
    "name": "Hermes Stakepool Germany (HRMS)",
    "drep_id": "drep1ygs5hngva3hymv7j4v0aewxpsjqskj9dnmy7j3jz5ven5zqvulq2t",
    "ada": 65747326,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool HRMS, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 28.5 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool HRMS, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 28.3 million ADA",
    "pools": 1,
-   "pools_ada": 28452582
+   "pools_ada": 28314173
   },
   {
    "name": "hix_coffeepool☕️",
    "drep_id": "drep1ygnh2uf4wkc8ldgfxwz7rzuga3m8jtqew9xh5g3n587mg6g3ge0sj",
    "ada": 62513368,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool COFFE, because the DRep carries the pool's name or ticker. Its pool has 30.4 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool COFFE, because the DRep carries the pool's name or ticker. Its pool has 30.5 million ADA",
    "pools": 1,
-   "pools_ada": 30403192
+   "pools_ada": 30456658
   },
   {
    "name": "FIMI",
    "drep_id": "drep1ygeqtuysjy9s3mw3ej7essghq9rk3cnl08fehntu4jw3rtqfw96dg",
    "ada": 61761030,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool FIMI, because the DRep's name is the pool's name without its number. Its pool has 45.2 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool FIMI, because the DRep's name is the pool's name without its number. Its pool has 45.8 million ADA",
    "pools": 1,
-   "pools_ada": 45241961
+   "pools_ada": 45832892
   },
   {
    "name": "AdaStat",
    "drep_id": "drep1yfe9en4hsgc3r6nhtmwjeljh06hgnvt9yzzkwqcftvdj34cdxdg7u",
    "ada": 48896723,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool STAT, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 44.0 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool STAT, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 43.9 million ADA",
    "pools": 1,
-   "pools_ada": 44026433
+   "pools_ada": 43930030
   },
   {
    "name": "MUEN",
@@ -273,7 +273,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools MUEN2, MUEN, MUEN3, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 3 pools with 35.3 million ADA together",
    "pools": 3,
-   "pools_ada": 35303925
+   "pools_ada": 35306947
   },
   {
    "name": "HISAI",
@@ -282,7 +282,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool HISAI, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 25.3 million ADA",
    "pools": 1,
-   "pools_ada": 25294978
+   "pools_ada": 25301180
   },
   {
    "name": "PoolTool",
@@ -291,7 +291,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool LOVE, because the DRep names the pool in its metadata and the pool names the DRep in its metadata. Its pool has 28.7 million ADA",
    "pools": 1,
-   "pools_ada": 28655419
+   "pools_ada": 28710820
   },
   {
    "name": "Patrick_Tobler",
@@ -300,16 +300,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool NMKR, because the DRep names the pool in its metadata. Its pool has 2.2 million ADA",
    "pools": 1,
-   "pools_ada": 2177380
+   "pools_ada": 2177381
   },
   {
    "name": "Rodrigo-[CHIL]",
    "drep_id": "drep1y2j2q9pcl855969ea9csrhdta6slnamctgzuvuqnnkl6fusqyjy36",
    "ada": 36698571,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool CHIL, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 11.9 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool CHIL, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 12.0 million ADA",
    "pools": 1,
-   "pools_ada": 11853502
+   "pools_ada": 12042098
   },
   {
    "name": "HOSKY",
@@ -318,34 +318,34 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools HOSKY, QCPOL, SALT, A3C, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 4 pools with 11.1 million ADA together",
    "pools": 4,
-   "pools_ada": 11120335
+   "pools_ada": 11140299
   },
   {
    "name": "Moonstake",
    "drep_id": "drep1yfp4qmp849250svle8gw2m5jwjra86e76q8vz97wp998feg9mx9c5",
    "ada": 34178382,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools MS6, MS4, MS5, MS9, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 4 pools with 133.6 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools MS6, MS4, MS5, MS9, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 4 pools with 132.8 million ADA together",
    "pools": 4,
-   "pools_ada": 133567183
+   "pools_ada": 132841484
   },
   {
    "name": "Aichi/Tokai_DRep",
    "drep_id": "drep1y2xacakh0g8q4exfgmvywy62an74cj7ejcpcrgq6vh4dckqhtsyh5",
    "ada": 32004390,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools AICHI, TOKAI, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 117.2 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools AICHI, TOKAI, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 117.3 million ADA together",
    "pools": 2,
-   "pools_ada": 117195880
+   "pools_ada": 117319276
   },
   {
    "name": "NEDSCAVE.IO",
    "drep_id": "drep1ygxeadaklzz93n2tn9vnqz0fxapyv7ltel4d9808aeftl7gnxkszd",
    "ada": 30780128,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools NEDS1, NEDS4, NEDS2, NEDS3, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its owner runs 4 pools with 106.4 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools NEDS1, NEDS4, NEDS2, NEDS3, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its owner runs 4 pools with 106.6 million ADA together",
    "pools": 4,
-   "pools_ada": 106370550
+   "pools_ada": 106574932
   },
   {
    "name": "Cerkoryn",
@@ -359,9 +359,9 @@
    "drep_id": "drep1ygtxcscvznhs2nqap9u8gtxa0dx0l6q5zhsqqlw46enwh8cttd07h",
    "ada": 29292975,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools TERA3, TERA, TERA2, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its owner runs 3 pools with 44.9 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools TERA3, TERA, TERA2, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its owner runs 3 pools with 44.8 million ADA together",
    "pools": 3,
-   "pools_ada": 44904736
+   "pools_ada": 44763996
   },
   {
    "name": "Goofycrisp",
@@ -377,7 +377,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools SOCIO, THANK, because the DRep carries the pool's name or ticker and the pool names the DRep in its metadata. Its owner runs 2 pools with 8.8 million ADA together",
    "pools": 2,
-   "pools_ada": 8830705
+   "pools_ada": 8832964
   },
   {
    "name": "Drep One",
@@ -414,16 +414,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools CRDNS, CRDN2, CRDN1, CRDN3, CRDN, because the DRep carries the pool's name or ticker and the pool names the DRep in its metadata. Its owner runs 5 pools with 172.0 million ADA together",
    "pools": 5,
-   "pools_ada": 172044773
+   "pools_ada": 171978456
   },
   {
    "name": "Liqwid DAO",
    "drep_id": "drep1ygctwczmpjxef8w3ljugkdth2d4upz2f2yfv9mvyxe0papswz26s6",
    "ada": 24283426,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools LQWD, LQWD, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 22.6 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools LQWD, LQWD, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 23.1 million ADA together",
    "pools": 2,
-   "pools_ada": 22606144
+   "pools_ada": 23070570
   },
   {
    "name": "Cash",
@@ -437,27 +437,27 @@
    "drep_id": "drep1y2zu74gt8sxtrxcngqsmrnupkzrtmlqshmvmm5qtuhxx6xqt7yhaw",
    "ada": 21517250,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool HEPHY, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's transactions were paid from the pool's wallet. Its pool has 864,214 ADA",
+   "why": "is linked by our Decentralization Monitor to pool HEPHY, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's transactions were paid from the pool's wallet. Its pool has 885,489 ADA",
    "pools": 1,
-   "pools_ada": 864214
+   "pools_ada": 885489
   },
   {
    "name": "DINO",
    "drep_id": "drep1ytfnmf4uftt4fe0h63xhadl0v402gr6nnhtcgrq2sas26kgaf3n5y",
    "ada": 21505758,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool DINO, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 26.9 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool DINO, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 27.2 million ADA",
    "pools": 1,
-   "pools_ada": 26897844
+   "pools_ada": 27229667
   },
   {
    "name": "Chris [STR8] - Straightpool",
    "drep_id": "drep1y27qjjnz9a7q6zmvpajzqpqylnka6lpkvcm9sgjrdheqt0qq6pchw",
    "ada": 21129724,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool STR8, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 56.6 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool STR8, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 56.9 million ADA",
    "pools": 1,
-   "pools_ada": 56560151
+   "pools_ada": 56939059
   },
   {
    "name": "CTEC-Stake-Pool",
@@ -466,7 +466,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools CTEC, CTEC2, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 2 pools with 18.7 million ADA together",
    "pools": 2,
-   "pools_ada": 18671075
+   "pools_ada": 18679218
   },
   {
    "name": "DraculaDAO",
@@ -480,9 +480,9 @@
    "drep_id": "drep1ytf9f78k7rkwk4cu6l2nvna22keu9yus4kqzc0hqspd36uszu0xc2",
    "ada": 16190267,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool TERM, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 75.1 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool TERM, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 73.8 million ADA",
    "pools": 1,
-   "pools_ada": 75129973
+   "pools_ada": 73833179
   },
   {
    "name": "Angry Crypto Show",
@@ -505,7 +505,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools HOPE, HOPE2, JOY2, JOY, because the DRep names the pool in its metadata. Its owner runs 4 pools with 28.0 million ADA together",
    "pools": 4,
-   "pools_ada": 27955479
+   "pools_ada": 27976714
   },
   {
    "name": "OREKA_Vote",
@@ -528,7 +528,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool RCADA, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 1.1 million ADA",
    "pools": 1,
-   "pools_ada": 1135321
+   "pools_ada": 1135918
   },
   {
    "name": "Dr. Navjit Dhaliwal",
@@ -563,9 +563,9 @@
    "drep_id": "drep1yfpazkd0aqex0kd3vrhk47sjy0jqgq3xu6h2zv9wevfequcxyynwv",
    "ada": 7772766,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool PRIDE, because the DRep's name is the pool's name without its number. Its pool has 24.9 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool PRIDE, because the DRep's name is the pool's name without its number. Its pool has 24.1 million ADA",
    "pools": 1,
-   "pools_ada": 24878102
+   "pools_ada": 24071260
   },
   {
    "name": "",
@@ -579,9 +579,9 @@
    "drep_id": "drep1y2fhyudw8ju53e296c3yugvul6h3fpurhnx45lfa9e5meqgtky0gg",
    "ada": 7213282,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools KTOP, KTO, because the DRep's transactions were paid from the pool's wallet. Its owner runs 2 pools with 20.3 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools KTOP, KTO, because the DRep's transactions were paid from the pool's wallet. Its owner runs 2 pools with 19.3 million ADA together",
    "pools": 2,
-   "pools_ada": 20312795
+   "pools_ada": 19308515
   },
   {
    "name": "Holger",
@@ -611,16 +611,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools STI, STI2, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 45.6 million ADA together",
    "pools": 2,
-   "pools_ada": 45607912
+   "pools_ada": 45631452
   },
   {
    "name": "ATLAS_Wolfgang",
    "drep_id": "drep1ytq64jdk5fequ0228znae33d3ncs50ujl7qev0uqlx37l8cpjhc2k",
    "ada": 6077639,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools ATLAS, ATLAS, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 43.2 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools ATLAS, ATLAS, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 43.6 million ADA together",
    "pools": 2,
-   "pools_ada": 43156262
+   "pools_ada": 43605365
   },
   {
    "name": "InputEndorsers",
@@ -636,7 +636,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool ECP, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 2.5 million ADA",
    "pools": 1,
-   "pools_ada": 2513842
+   "pools_ada": 2514688
   },
   {
    "name": "AtlasHub",
@@ -652,7 +652,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool YOADA, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 1.3 million ADA",
    "pools": 1,
-   "pools_ada": 1326508
+   "pools_ada": 1326702
   },
   {
    "name": "WMOPS",
@@ -661,7 +661,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool WMOPS, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 4.0 million ADA",
    "pools": 1,
-   "pools_ada": 3968550
+   "pools_ada": 3969593
   },
   {
    "name": "Peter Horsfall",
@@ -674,8 +674,10 @@
    "name": "Kyle Solomon",
    "drep_id": "drep1ytzshxuma6cwrnlv2ucyclfqw3k4nu4nuudmh2z87j9hncsk9dhy4",
    "ada": 5116353,
-   "cls": "drep",
-   "why": ""
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pools FROG2, FROG, because the DRep names the pool in its metadata. Its owner runs 2 pools with 10.2 million ADA together",
+   "pools": 2,
+   "pools_ada": 10217869
   },
   {
    "name": "Viet_Cardano_Community",
@@ -703,9 +705,9 @@
    "drep_id": "drep1yt4vlxgkllldxtwrmzj2ymwnc5qw0cmzvkn4nxpxkpgt4fgwj36md",
    "ada": 4334521,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool MOKSH, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 39.8 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool MOKSH, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 39.9 million ADA",
    "pools": 1,
-   "pools_ada": 39788565
+   "pools_ada": 39915790
   },
   {
    "name": "",
@@ -719,9 +721,9 @@
    "drep_id": "drep1ywuk39acvmkzda9e8kfmy7fwf946jd5uaa4l696atlas66s68f0fl",
    "ada": 3878935,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools CARDs, PORTO, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 12.9 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools CARDs, PORTO, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 13.0 million ADA together",
    "pools": 2,
-   "pools_ada": 12925839
+   "pools_ada": 12957539
   },
   {
    "name": "Daehan_kor",
@@ -730,7 +732,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool KOR, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 2.3 million ADA",
    "pools": 1,
-   "pools_ada": 2311965
+   "pools_ada": 2313375
   },
   {
    "name": "Mat - ECO Pool",
@@ -739,7 +741,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools ECO, ECO, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 36.7 million ADA together",
    "pools": 2,
-   "pools_ada": 36731161
+   "pools_ada": 36721709
   },
   {
    "name": "Mike Rogero (羅邁凱）",
@@ -755,16 +757,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool LEAD, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the pool names the DRep in its metadata. Its pool has 7.3 million ADA",
    "pools": 1,
-   "pools_ada": 7269295
+   "pools_ada": 7276765
   },
   {
    "name": "Giovanni Gargiulo",
    "drep_id": "drep1ytn29gxylzlrhzmkt4c75w7qmesxqc248r9089f0pvuysdqeva6ht",
    "ada": 3523361,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool EASY1, because the DRep names the pool in its metadata. Its pool has 52.0 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool EASY1, because the DRep names the pool in its metadata. Its pool has 53.8 million ADA",
    "pools": 1,
-   "pools_ada": 51999699
+   "pools_ada": 53797456
   },
   {
    "name": "CoinCeylon",
@@ -778,9 +780,9 @@
    "drep_id": "drep1ytxr0lhg5j72wysva9ac2gsn4lck4gyen8ywxkqfchsqg3qs8uy44",
    "ada": 3422368,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool GAIA, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 578,135 ADA",
+   "why": "is linked by our Decentralization Monitor to pool GAIA, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 578,136 ADA",
    "pools": 1,
-   "pools_ada": 578135
+   "pools_ada": 578136
   },
   {
    "name": "Captain Crypto",
@@ -812,25 +814,25 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool MDS, because the DRep names the pool in its metadata, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 1.3 million ADA",
    "pools": 1,
-   "pools_ada": 1284503
+   "pools_ada": 1285148
   },
   {
    "name": "SAGAN Stake Pool",
    "drep_id": "drep1y290s8rwsezxkct6urmqne8tc92wqtltal8dfxfk45xj6eqn2mgfx",
    "ada": 2870952,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool SAGAN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 1.3 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool SAGAN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 1.4 million ADA",
    "pools": 1,
-   "pools_ada": 1294144
+   "pools_ada": 1377625
   },
   {
    "name": "CryptoRich (CRICH)",
    "drep_id": "drep1yfkn463gfmajw3v0nva9cds6cvzghsvv6pdgn2ywmqv684q9u7ph4",
    "ada": 2850730,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool CRICH, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 5.9 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool CRICH, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 6.5 million ADA",
    "pools": 1,
-   "pools_ada": 5861561
+   "pools_ada": 6541003
   },
   {
    "name": "ADA_Labo",
@@ -839,16 +841,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools RDB, ALAB, LABO, because the DRep carries the pool's name or ticker. Its owner runs 3 pools with 5.6 million ADA together",
    "pools": 3,
-   "pools_ada": 5591676
+   "pools_ada": 5591428
   },
   {
    "name": "ADALO",
    "drep_id": "drep1y22eh8rzfmnjw8m82hlcgxfm8tcmwqmdqy2mjupdduztq0s5s5dkk",
    "ada": 2785023,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool ADALO, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 76.4 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool ADALO, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 76.1 million ADA",
    "pools": 1,
-   "pools_ada": 76424283
+   "pools_ada": 76091634
   },
   {
    "name": "OCTAS DRep",
@@ -857,7 +859,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool OCTAS, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 54.3 million ADA",
    "pools": 1,
-   "pools_ada": 54295388
+   "pools_ada": 54340412
   },
   {
    "name": "Michele_Harmonic",
@@ -880,7 +882,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool EPOCH, because the DRep names the pool in its metadata. Its pool has 3.1 million ADA",
    "pools": 1,
-   "pools_ada": 3092660
+   "pools_ada": 3101510
   },
   {
    "name": "",
@@ -896,16 +898,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools ANGEL, SION, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its owner runs 2 pools with 23.8 million ADA together",
    "pools": 2,
-   "pools_ada": 23792635
+   "pools_ada": 23814356
   },
   {
    "name": "Bamboo_Drep",
    "drep_id": "drep1ythej7tvvq0tgat3l7ge6q40uarj02qmml5puzzgr00sd0gqtdeld",
    "ada": 2358281,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool BBO, because the DRep names the pool in its metadata. Its pool has 582,349 ADA",
+   "why": "is linked by our Decentralization Monitor to pool BBO, because the DRep names the pool in its metadata. Its pool has 559,563 ADA",
    "pools": 1,
-   "pools_ada": 582349
+   "pools_ada": 559563
   },
   {
    "name": "This Corrosion",
@@ -921,7 +923,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool ADP, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 4.1 million ADA",
    "pools": 1,
-   "pools_ada": 4114161
+   "pools_ada": 4118677
   },
   {
    "name": "Will Norris",
@@ -935,9 +937,9 @@
    "drep_id": "drep1ytjmkvp7rlsjww20nv3eyx3hj9c5pwezz5z5aq8pejg7v3qexfc28",
    "ada": 1889660,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools KIWI, KIWI, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 32.6 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools KIWI, KIWI, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 32.4 million ADA together",
    "pools": 2,
-   "pools_ada": 32576106
+   "pools_ada": 32393242
   },
   {
    "name": "BKIND",
@@ -946,7 +948,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool BKIND, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 2.3 million ADA",
    "pools": 1,
-   "pools_ada": 2299821
+   "pools_ada": 2300409
   },
   {
    "name": "Dmitrii Gartung",
@@ -974,9 +976,9 @@
    "drep_id": "drep1yf2yd8jgdvmtm7jqmvvl0rmw7yprv5723y8h6tjnwfmcejq476nsl",
    "ada": 1648202,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool BKV, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 503,582 ADA",
+   "why": "is linked by our Decentralization Monitor to pool BKV, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 505,735 ADA",
    "pools": 1,
-   "pools_ada": 503582
+   "pools_ada": 505735
   },
   {
    "name": "Nimuë Lady of the Lake Pool",
@@ -985,7 +987,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool NIMUE, because the DRep carries the pool's name or ticker, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 3.8 million ADA",
    "pools": 1,
-   "pools_ada": 3822548
+   "pools_ada": 3799847
   },
   {
    "name": "",
@@ -1013,9 +1015,9 @@
    "drep_id": "drep1ygxu629f9zzm0r6fm8m2rtn3qglgtstvfxvt7nj68hxmdpcrwphte",
    "ada": 1334694,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool BOATS, because the DRep names the pool in its metadata. Its pool has 1.4 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool BOATS, because the DRep names the pool in its metadata. Its pool has 1.2 million ADA",
    "pools": 1,
-   "pools_ada": 1410839
+   "pools_ada": 1160450
   },
   {
    "name": "TriangleForces",
@@ -1038,14 +1040,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools ELITE, ELITE, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 2 pools with 27.5 million ADA together",
    "pools": 2,
-   "pools_ada": 27466101
+   "pools_ada": 27456660
   },
   {
    "name": "Wolfoden",
    "drep_id": "drep1y293f6495fvld5zqv0uqsjpjt25zzdkjglys7ykc678jtkghet05n",
    "ada": 1198271,
-   "cls": "drep",
-   "why": ""
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool 300, because the DRep names the pool in its metadata. Its pool has 71,007 ADA",
+   "pools": 1,
+   "pools_ada": 71007
   },
   {
    "name": "anonDREP",
@@ -1089,27 +1093,27 @@
    "drep_id": "drep1y296zyw2r8rcsy7slkd7l687hh88xc0m6ac2y3h2r3mvsdgc9q6yy",
    "ada": 1094684,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool 8BALL, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 1.6 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool 8BALL, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 1.4 million ADA",
    "pools": 1,
-   "pools_ada": 1614410
+   "pools_ada": 1441574
   },
   {
    "name": "Christopher Erckert | Dotare",
    "drep_id": "drep1yg8aktnf09gdd0jpyhuz3fy22mfjrqrg2ru52907zeeeeqcra6xhe",
    "ada": 1094117,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool DOTAR, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 303,866 ADA",
+   "why": "is linked by our Decentralization Monitor to pool DOTAR, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 303,861 ADA",
    "pools": 1,
-   "pools_ada": 303866
+   "pools_ada": 303861
   },
   {
    "name": "ACL-CardanoLand",
    "drep_id": "drep1y2r5pajz7vvw8v0kvf4968gjwua077n25k75mv3ne7vd6cc7rw8p5",
    "ada": 1059744,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools ACL, ACL, ACL, ACL, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 4 pools with 77.9 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools ACL, ACL, ACL, ACL, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 4 pools with 78.0 million ADA together",
    "pools": 4,
-   "pools_ada": 77861460
+   "pools_ada": 78000441
   },
   {
    "name": "Lauris_StakePool247",
@@ -1155,16 +1159,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools WHITE, TOPO⚡, because the DRep carries the pool's name or ticker and the pool names the DRep in its metadata. Its owner runs 2 pools with 3.4 million ADA together",
    "pools": 2,
-   "pools_ada": 3353251
+   "pools_ada": 3361794
   },
   {
    "name": "Erasmus",
    "drep_id": "drep1y23tfs3c25kfmyqzy5d3364g4smp59esdmzxynqd5ndjjgq5dx7c7",
    "ada": 947891,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool ZUND, because the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 893,555 ADA",
+   "why": "is linked by our Decentralization Monitor to pool ZUND, because the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 901,559 ADA",
    "pools": 1,
-   "pools_ada": 893555
+   "pools_ada": 901559
   },
   {
    "name": "HUAT 發 Singapore",
@@ -1173,16 +1177,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool ?, because the DRep's transactions were paid from the pool's wallet. Its pool has 1.0 million ADA",
    "pools": 1,
-   "pools_ada": 1038730
+   "pools_ada": 1039011
   },
   {
    "name": "BRIAN",
    "drep_id": "drep1yg7svuv02gh9j2q574jv06l4xnzwyp63effljze28qe993caj8ras",
    "ada": 937659,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool BRIAN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 322,813 ADA",
+   "why": "is linked by our Decentralization Monitor to pool BRIAN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 323,146 ADA",
    "pools": 1,
-   "pools_ada": 322813
+   "pools_ada": 323146
   },
   {
    "name": "Mayhem",
@@ -1233,7 +1237,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool QUEEN, because the DRep names the pool in its metadata. Its pool has 58.5 million ADA",
    "pools": 1,
-   "pools_ada": 58542849
+   "pools_ada": 58547141
   },
   {
    "name": "Latam Cardano",
@@ -1289,9 +1293,9 @@
    "drep_id": "drep1ytamqncvuz2r0atkwxwgcn5zmgxm09j0g2lgcrp7ddqfsfcsgnr8s",
    "ada": 627382,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool FAIR, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's transactions were paid from the pool's wallet. Its pool has 53.2 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool FAIR, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's transactions were paid from the pool's wallet. Its pool has 53.0 million ADA",
    "pools": 1,
-   "pools_ada": 53211057
+   "pools_ada": 53048287
   },
   {
    "name": "jonahkoch",
@@ -1305,9 +1309,9 @@
    "drep_id": "drep1y04c5l848c6f47tcaqwxfnh0e6n9ngz4txurcwzvlyuwpjsktpah6",
    "ada": 608987,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool LOGIC, because the DRep carries the pool's name or ticker. Its pool has 271,656 ADA",
+   "why": "is linked by our Decentralization Monitor to pool LOGIC, because the DRep carries the pool's name or ticker. Its pool has 268,805 ADA",
    "pools": 1,
-   "pools_ada": 271656
+   "pools_ada": 268805
   },
   {
    "name": "Crypto Eats Legacy",
@@ -1351,7 +1355,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools KYSN, KYSN2, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 5.3 million ADA together",
    "pools": 2,
-   "pools_ada": 5321705
+   "pools_ada": 5263141
   },
   {
    "name": "Maureen",
@@ -1365,9 +1369,9 @@
    "drep_id": "drep1ytglhmgslx7rjqf4tatt02dk2jfnfj3tgjr34ne7p597dxgm98wcg",
    "ada": 531036,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools SPIRE, SPIR2, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 2 pools with 92.8 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools SPIRE, SPIR2, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 2 pools with 92.9 million ADA together",
    "pools": 2,
-   "pools_ada": 92809606
+   "pools_ada": 92927342
   },
   {
    "name": "@gersongomes",
@@ -1383,16 +1387,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool CAPO, because the DRep's name is the pool's name without its number. Its pool has 1.9 million ADA",
    "pools": 1,
-   "pools_ada": 1944165
+   "pools_ada": 1944503
   },
   {
    "name": "",
    "drep_id": "drep1yfd9slgg7pc94xudyfsrzqnc73u9l4qa2vj5tamh23gyengkw39cu",
    "ada": 435944,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool DOLCA, because the DRep's transactions were paid from the pool's wallet. Its pool has 695,906 ADA",
+   "why": "is linked by our Decentralization Monitor to pool DOLCA, because the DRep's transactions were paid from the pool's wallet. Its pool has 685,911 ADA",
    "pools": 1,
-   "pools_ada": 695906
+   "pools_ada": 685911
   },
   {
    "name": "THOR",
@@ -1401,14 +1405,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool THOR, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 13.2 million ADA",
    "pools": 1,
-   "pools_ada": 13223693
+   "pools_ada": 13227066
   },
   {
    "name": "Kurdopia",
    "drep_id": "drep1ygxtldfpas0gh9u20zvpwladxwvj8hdd5wxkkgt8ylxanacfy7wke",
    "ada": 403065,
-   "cls": "drep",
-   "why": "calls itself a stake pool operator in its own DRep metadata, but is not linked to a pool"
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool KURD, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 771,463 ADA",
+   "pools": 1,
+   "pools_ada": 771463
   },
   {
    "name": "",
@@ -1417,16 +1423,16 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool CAKE, because the DRep's transactions were paid from the pool's wallet. Its pool has 2.2 million ADA",
    "pools": 1,
-   "pools_ada": 2151935
+   "pools_ada": 2158085
   },
   {
    "name": "ADAAT",
    "drep_id": "drep1y25req7clwkrxnjvx9075he2l80t3wksgeu9eqru09uvt3ctz60gx",
    "ada": 399189,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool ADAAT, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 827,496 ADA",
+   "why": "is linked by our Decentralization Monitor to pool ADAAT, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 840,222 ADA",
    "pools": 1,
-   "pools_ada": 827496
+   "pools_ada": 840222
   },
   {
    "name": "Holland",
@@ -1456,7 +1462,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool GNP1, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 1.2 million ADA",
    "pools": 1,
-   "pools_ada": 1209825
+   "pools_ada": 1228370
   },
   {
    "name": "",
@@ -1547,9 +1553,9 @@
    "drep_id": "drep1yfrmyrf4twcxa0z3w63842ktmufdu06c3vdaz8rpkgzu8gclnyuh9",
    "ada": 293154,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool APEX, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 14.8 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool APEX, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 14.9 million ADA",
    "pools": 1,
-   "pools_ada": 14777857
+   "pools_ada": 14889049
   },
   {
    "name": "BAT Community",
@@ -1565,9 +1571,9 @@
    "drep_id": "drep1yfrpcln42j0f6p6zzt5863xn8pz4kkgfkvswlp88klyy4acjdju2k",
    "ada": 273583,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool SVRN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 766,445 ADA",
+   "why": "is linked by our Decentralization Monitor to pool SVRN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 770,407 ADA",
    "pools": 1,
-   "pools_ada": 766445
+   "pools_ada": 770407
   },
   {
    "name": "",
@@ -1581,18 +1587,18 @@
    "drep_id": "drep1ygxy3yn7x7ryfu52c23x2nkwnnl7uyd56u29vptfy98759gaaltuz",
    "ada": 249679,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool TAVN, because the DRep's name is the pool's name without its number. Its pool has 1.1 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool TAVN, because the DRep's name is the pool's name without its number. Its pool has 1.2 million ADA",
    "pools": 1,
-   "pools_ada": 1072781
+   "pools_ada": 1216646
   },
   {
    "name": "Talos",
    "drep_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
    "ada": 237795,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool TALOS, because the DRep's name is the pool's name without its number. Its pool has 54,266 ADA",
+   "why": "is linked by our Decentralization Monitor to pool TALOS, because the DRep's name is the pool's name without its number. Its pool has 54,161 ADA",
    "pools": 1,
-   "pools_ada": 54266
+   "pools_ada": 54161
   },
   {
    "name": "",
@@ -1613,9 +1619,9 @@
    "drep_id": "drep1ygg9eg90gjm5fj40pncn56jntvskk72v3f3rzrs36q5lswsusmste",
    "ada": 204218,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool FLUID, because the DRep names the pool in its metadata and the payment address of the DRep belongs to a key of the pool. Its pool has 451,825 ADA",
+   "why": "is linked by our Decentralization Monitor to pool FLUID, because the DRep names the pool in its metadata and the payment address of the DRep belongs to a key of the pool. Its pool has 453,006 ADA",
    "pools": 1,
-   "pools_ada": 451825
+   "pools_ada": 453006
   },
   {
    "name": "araCdon",
@@ -1643,18 +1649,18 @@
    "drep_id": "drep1y2yemxvjptae0j7qws0emn4lv5eh73fkp43f4p3gla3msackq60pj",
    "ada": 194207,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool SOULS, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 251,475 ADA",
+   "why": "is linked by our Decentralization Monitor to pool SOULS, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 251,237 ADA",
    "pools": 1,
-   "pools_ada": 251475
+   "pools_ada": 251237
   },
   {
    "name": "Long Hồ",
    "drep_id": "drep1yttfrpngasw7yrdryydsg66gzv8znkj0stjngm5a8hs353stdeml6",
    "ada": 187277,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool SDG13, because the DRep names the pool in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 48.0 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool SDG13, because the DRep names the pool in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 48.1 million ADA",
    "pools": 1,
-   "pools_ada": 48007095
+   "pools_ada": 48081408
   },
   {
    "name": "MyCNFT DRep",
@@ -1777,9 +1783,9 @@
    "drep_id": "drep1yf64m233qq6nutjpkh4uc7jncr2gxwtlsq7n68v38ka2l9qez8h3h",
    "ada": 102096,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool BZH, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 201,593 ADA",
+   "why": "is linked by our Decentralization Monitor to pool BZH, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 207,940 ADA",
    "pools": 1,
-   "pools_ada": 201593
+   "pools_ada": 207940
   },
   {
    "name": "Agora | Cardano (by Rodrigo Pacini)",
@@ -1807,9 +1813,9 @@
    "drep_id": "drep1ygj2shrjluwfkcyp2d85p09dagaqqmcue8sztq925z7jacg02nr4x",
    "ada": 92363,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool CBROS, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 116,790 ADA",
+   "why": "is linked by our Decentralization Monitor to pool CBROS, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 118,595 ADA",
    "pools": 1,
-   "pools_ada": 116790
+   "pools_ada": 118595
   },
   {
    "name": "iFly",
@@ -1832,9 +1838,9 @@
    "drep_id": "drep1ytjh8c0dlah3zu2c0hnhy3r0vttdh633zpd6ezgq3r8q8ls86a9dq",
    "ada": 75809,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools P2P, P2P2, P2P3, P2P4, because the DRep's transactions were paid from the pool's wallet. Its owner runs 4 pools with 197.2 million ADA together",
+   "why": "is linked by our Decentralization Monitor to pools P2P, P2P2, P2P3, P2P4, because the DRep's transactions were paid from the pool's wallet. Its owner runs 4 pools with 199.2 million ADA together",
    "pools": 4,
-   "pools_ada": 197150663
+   "pools_ada": 199208869
   },
   {
    "name": "",
@@ -1957,9 +1963,9 @@
    "drep_id": "drep1y296z8tm7y7elwsmsewn4q2tdr5gu0fqztq97yttlpv7zycvsl554",
    "ada": 14288,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool 8BALL, because the DRep's name is the pool's name without its number. Its pool has 1.6 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool 8BALL, because the DRep's name is the pool's name without its number. Its pool has 1.4 million ADA",
    "pools": 1,
-   "pools_ada": 1614410
+   "pools_ada": 1441574
   },
   {
    "name": "",
@@ -2096,7 +2102,7 @@
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool MERIA, because the DRep's name is the pool's name without its number. Its pool has 2.1 million ADA",
    "pools": 1,
-   "pools_ada": 2111803
+   "pools_ada": 2112085
   },
   {
    "name": "Musa Ridwan Itopa",
@@ -2124,12 +2130,12 @@
   "abstain_net_ada": -44207153
  },
  "lookup": {
-  "credentials": 1883819,
+  "credentials": 1883820,
   "shards": 256
  },
  "links": {
-  "epoch": 668,
+  "epoch": 669,
   "source": "dbsync_onehand.tsv",
-  "dreps": 110
+  "dreps": 112
  }
 }
