@@ -1331,7 +1331,7 @@
 2d27a03e22 1h -
 2d33a4bb66 1w -
 2d35486d31 1w -
-2d37807d8d e9 -
+2d37807d8d e9 A
 2d38e4ce58 g -
 2d394ea35f - -
 2d39ac23d0 aa A
@@ -7360,7 +7360,7 @@ ff2921ef97 c0 -
 ff2e394576 2f -
 ff2f850ad9 5x A
 ff468bf54a 35 -
-ff4ff87ecf 1o -
+ff4ff87ecf 1o y
 ff5047aa04 7h -
 ff57ad9ba3 1s -
 ff5d308374 - -

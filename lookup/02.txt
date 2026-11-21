@@ -4293,7 +4293,7 @@
 9a15c1177d 4o -
 9a1a4a7c8b a1 -
 9a1ce22036 2p -
-9a20d50777 1t -
+9a20d50777 jo A
 9a42999af9 eb -
 9a5157c6a5 - -
 9a5bff9e87 o -
@@ -6372,7 +6372,7 @@ e566c8d229 kr -
 e56ac9d0e5 yi -
 e5876dcbb5 - -
 e58a87ede5 3i -
-e59563ec16 o A
+e59563ec16 - -
 e5b7a39381 8j 41
 e5bf36c523 ab -
 e5d8a02638 2m -
