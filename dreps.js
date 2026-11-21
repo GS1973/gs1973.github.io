@@ -197,7 +197,15 @@
             fill(doc.figures);
             metaEl.textContent =
                 `${fmt(dreps.length)} active DReps, updated ${doc.generated.slice(0, 10)} (epoch ${doc.epoch}).` +
-                (doc.excluded && doc.excluded.length ? ` Left out: ${fmt(doc.excluded.length)} DReps of the founding entities.` : '');
+                (() => {
+                    const ex = doc.excluded || [];
+                    const founders = ex.filter(x => x.reason !== 'fair_share').length;
+                    const above = ex.filter(x => x.reason === 'fair_share').length;
+                    const parts = [];
+                    if (founders) parts.push(`${fmt(founders)} DReps of the founding entities`);
+                    if (above) parts.push(`${fmt(above)} DReps above the fair share of ${fmt(doc.figures.fair_share_ada)} ADA`);
+                    return parts.length ? ` Left out: ${parts.join(' and ')}.` : '';
+                })();
             render();
         } catch (error) {
             metaEl.textContent = 'Could not load the list. Please try again later.';
