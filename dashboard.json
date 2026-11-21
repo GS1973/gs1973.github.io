@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T09:02:59Z",
+ "generated": "2026-11-21T09:26:48Z",
  "epoch": 669,
  "key": {
   "owners_third": 12,
@@ -2114,7 +2114,7241 @@
  ],
  "block": 5,
  "carry": 18,
- "owners": null,
+ "owners": {
+  "count": 2245,
+  "third": 12,
+  "half": 37,
+  "top": [
+   {
+    "name": "Coinbase",
+    "pools": 48,
+    "ada": 2609056176,
+    "pool": "pool1fl20ddkpvnstlx63fal6e3ku46r76nk2s4mqtk5jnyxn2vt7hg6",
+    "tickers": [
+     "ARH",
+     "COIN",
+     "CVM",
+     "EGH",
+     "FBA",
+     "FCS",
+     "FMD",
+     "FVG"
+    ]
+   },
+   {
+    "name": "Figment",
+    "pools": 26,
+    "ada": 723165908,
+    "pool": "pool1v96277f457qtwhuq3ma9yjlacq4mjw9h4j3jfy5rjgjru5lyxea",
+    "tickers": [
+     "FGMT4",
+     "FGMT5",
+     "FGMT6",
+     "FGMT7",
+     "FGMT8",
+     "FGMT9",
+     "FGMTA",
+     "FGMTB"
+    ]
+   },
+   {
+    "name": "Upbit",
+    "pools": 20,
+    "ada": 676903411,
+    "pool": "pool1sjnh0ymk9fhhnusm7uksux5yhpfyhjfmseq5nuupsj6ezskc0pj",
+    "tickers": [
+     "UPBIT"
+    ]
+   },
+   {
+    "name": "Everstake",
+    "pools": 15,
+    "ada": 675356151,
+    "pool": "pool1n0uxgs5qfk5n9xl7qvq9jt8zuu02cntrsjnjayjlqtejyffnemj",
+    "tickers": [
+     "ESTK",
+     "EVE",
+     "EVE1",
+     "EVE2",
+     "EVE3",
+     "EVE4",
+     "EVE5",
+     "EVE6"
+    ],
+    "dreps": [
+     {
+      "name": "Everstake",
+      "ada": 215607542,
+      "rank": 6,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "eToro",
+    "pools": 16,
+    "ada": 510387980,
+    "pool": "pool19066qvd5dv6vq7fh5a5l7muzk6nc5fw8zq3w4tclyrhvjvlyeuc",
+    "tickers": [
+     "ETO1",
+     "ETO10",
+     "ETO11",
+     "ETO12",
+     "ETO13",
+     "ETO14",
+     "ETO19",
+     "ETO2"
+    ]
+   },
+   {
+    "name": "Kiln",
+    "pools": 9,
+    "ada": 446794449,
+    "pool": "pool10d6mmw3mn9ku3r7uqqye672dz3sv76lh5kvh5rdpr9l5ug5yknr",
+    "tickers": [
+     "KILN0",
+     "KILN1",
+     "KILN2",
+     "KILN3",
+     "KILN4",
+     "KILN6",
+     "KILN7",
+     "KILN8"
+    ]
+   },
+   {
+    "name": "Binance",
+    "pools": 37,
+    "ada": 421600259,
+    "pool": "pool1l7xwy6sswcpxcepf9m43sez4kwgrgxuw5ekhkavj3k2lv6njvec",
+    "tickers": [
+     "BNP"
+    ]
+   },
+   {
+    "name": "Nu.Fi & AdaLite",
+    "pools": 18,
+    "ada": 301454975,
+    "pool": "pool15d62znf04qymt6ve536tt5y9ky979ly4um5zmgz9m850vu7wuv7",
+    "tickers": [
+     "ELLIP",
+     "NUFI",
+     "NUFI0",
+     "NUFI1",
+     "NUFI2",
+     "NUFI3",
+     "NUFI4",
+     "NUFI5"
+    ]
+   },
+   {
+    "name": "Nordic Pool",
+    "pools": 5,
+    "ada": 298083757,
+    "pool": "pool1k633phcvz2hjhj45evwwau4w576jpq83acg5h84w23jauqu56cw",
+    "tickers": [
+     "NORTH"
+    ]
+   },
+   {
+    "name": "Cardano Foundation",
+    "pools": 5,
+    "ada": 249969212,
+    "pool": "pool18rjrygm3knlt67n3r3prlhnzcjxun7wa8d3l8w9nmlpasquv4au",
+    "tickers": [
+     "CF1",
+     "CF2",
+     "CF3",
+     "CF4",
+     "CF5"
+    ],
+    "dreps": [
+     {
+      "name": "Cardano Foundation",
+      "ada": 149250523,
+      "rank": 9,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "1 Percent Pool",
+    "pools": 28,
+    "ada": 235133023,
+    "pool": "pool1z7n2ruhmxmv77f6cqhd3wsy6774h2wuay77agxuf2y9mj8q55vw",
+    "tickers": [
+     "1PCT",
+     "1PCT0",
+     "1PCT1",
+     "1PCT2",
+     "1PCT3",
+     "1PCT4",
+     "1PCT5",
+     "1PCT6"
+    ]
+   },
+   {
+    "name": "ADAvault",
+    "pools": 4,
+    "ada": 200146484,
+    "pool": "pool1xytvsd9qnvqxpthh9p8k85e823trvn3npxeur8kr9zhkqz5uls9",
+    "tickers": [
+     "ADV",
+     "ADV2",
+     "ADV3",
+     "ADV4"
+    ]
+   },
+   {
+    "name": "P2P Validator",
+    "pools": 4,
+    "ada": 199208869,
+    "pool": "pool1c2wf97p3j9gfvfjshj99ufxerpy3aznm8tzr2fd0ua465s26th4",
+    "tickers": [
+     "P2P",
+     "P2P2",
+     "P2P3",
+     "P2P4"
+    ],
+    "dreps": [
+     {
+      "name": "drep1ytjh8c0dl",
+      "ada": 75809,
+      "rank": 223,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "StakeBowlPool",
+    "pools": 3,
+    "ada": 199120196,
+    "pool": "pool18gk8kvd9qf829nldqus92q9y640e6u0jdyfz04mmktwxvglgt06",
+    "tickers": [
+     "SBP1",
+     "SBP2",
+     "SBP3"
+    ]
+   },
+   {
+    "name": "ONE SecureStaking.io",
+    "pools": 5,
+    "ada": 198913120,
+    "pool": "pool15yyxtkhz64p7a8cnax9l7u82s9t9hdhyxsa3tdm977qhgpnsuhq",
+    "tickers": [
+     "SECUR"
+    ]
+   },
+   {
+    "name": "EMURGO",
+    "pools": 8,
+    "ada": 181233744,
+    "pool": "pool1m0drnjxsvnlesq0rwmur2rh6lenuql57jfzd6cf6aegj2cv7ugy",
+    "tickers": [
+     "EMGHW",
+     "MURA1",
+     "MURA2",
+     "MURA3",
+     "MURA4",
+     "MURA5",
+     "MURA6",
+     "MURA7"
+    ],
+    "dreps": [
+     {
+      "name": "Yoroi W₳llet",
+      "ada": 387088268,
+      "rank": 2,
+      "cls": "spo"
+     },
+     {
+      "name": "EMURGO",
+      "ada": 210569110,
+      "rank": 7,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "CARDANIANS.io",
+    "pools": 5,
+    "ada": 171978456,
+    "pool": "pool1vx9tzlkgafernd9vpjpxkenutx2gncj4yn88fpq69823qlwcqrt",
+    "tickers": [
+     "CRDN",
+     "CRDN1",
+     "CRDN2",
+     "CRDN3",
+     "CRDNS"
+    ],
+    "dreps": [
+     {
+      "name": "Cardanians",
+      "ada": 24384868,
+      "rank": 41,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Garden Pool",
+    "pools": 5,
+    "ada": 165932713,
+    "pool": "pool103455uc7a3477q8pdmzvny884qtlv9vhm2csxvqx2cadwuk36sq",
+    "tickers": [
+     "EDEN"
+    ]
+   },
+   {
+    "name": "GMO Coin",
+    "pools": 3,
+    "ada": 156774720,
+    "pool": "pool14mhf0xtx45a8979mcnad8upas8apwal4nfqd95arv4wlsuk6m9q",
+    "tickers": [
+     "GMO2",
+     "GMO3"
+    ]
+   },
+   {
+    "name": "Bloom",
+    "pools": 6,
+    "ada": 151990050,
+    "pool": "pool1hntu7agmt8u5j9c20ejen7dvq0jfkvkpnul3mrdd8tppqvwfvt2",
+    "tickers": [
+     "BLOOM"
+    ]
+   },
+   {
+    "name": "ADA Ocean",
+    "pools": 8,
+    "ada": 151636415,
+    "pool": "pool1vc8jp7uagxgh8trzx7r260ndcydz89ges8sws05cyv7jj8q8gqs",
+    "tickers": [
+     "OCEA1",
+     "OCEA2",
+     "OCEA3",
+     "OCEA4",
+     "OCEA5",
+     "OCEA6",
+     "OCEA7",
+     "OCEAN"
+    ]
+   },
+   {
+    "name": "Bitvavo",
+    "pools": 4,
+    "ada": 149464093,
+    "pool": "pool13z5t8wlhtf7ccc0hud8pnvpjeekjdsyn7sq69fcxf3k6kpnlm74",
+    "tickers": [
+     "BTV1",
+     "BTV2",
+     "BTV3",
+     "BTV4"
+    ]
+   },
+   {
+    "name": "Digital Fortress",
+    "pools": 6,
+    "ada": 149278443,
+    "pool": "pool1rvng7n968748udkc5rxy4h9zp9hms4s3jsfwuues76ft28uc056",
+    "tickers": [
+     "DIGI",
+     "DIGI2",
+     "DIGI3",
+     "DIGI4",
+     "DIGI5",
+     "DIGI6"
+    ]
+   },
+   {
+    "name": "BigLazyCat",
+    "pools": 3,
+    "ada": 148308229,
+    "pool": "pool13k6tphjfsgqdq7h27p4x86ruchcdg2x073luw8pndh3ajxvwvja",
+    "tickers": [
+     "BLC",
+     "BLC2",
+     "BLC3"
+    ]
+   },
+   {
+    "name": "P2P & Tangem",
+    "pools": 2,
+    "ada": 143804996,
+    "pool": "pool1lu2luhmkyayq9njh848kfknn6evwzmn3gzsxar7z3sttg7grxcm",
+    "tickers": [
+     "PPTG1",
+     "PPTG2"
+    ]
+   },
+   {
+    "name": "Moonstake",
+    "pools": 4,
+    "ada": 132841484,
+    "pool": "pool1fpu5xurq3jx5rn626ejcx0dzzzk5lmtvdl2qkj9l4kw2sjp50dz",
+    "tickers": [
+     "MS4",
+     "MS5",
+     "MS6",
+     "MS9"
+    ],
+    "dreps": [
+     {
+      "name": "Moonstake",
+      "ada": 34178382,
+      "rank": 30,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ATADA Stakepool in Austria",
+    "pools": 2,
+    "ada": 129985843,
+    "pool": "pool1qqqqqdk4zhsjuxxd8jyvwncf5eucfskz0xjjj64fdmlgj735lr9",
+    "tickers": [
+     "ATAD2",
+     "ATADA"
+    ],
+    "dreps": [
+     {
+      "name": "Martin Lang",
+      "ada": 73283629,
+      "rank": 19,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "TITANstaking",
+    "pools": 2,
+    "ada": 123700183,
+    "pool": "pool19pyfv4xnln8x4l7auw0n0skk3hd97shun707hrw5d4s553ys74x",
+    "tickers": [
+     "TITAN"
+    ]
+   },
+   {
+    "name": "SITION POOL",
+    "pools": 3,
+    "ada": 114190611,
+    "pool": "pool1w6l6rvhxtym5psec3mvgrjlg28d6hrv8g9jjexadzmxfgndfg2f",
+    "tickers": [
+     "SIPO",
+     "SIPO2",
+     "SIPO3"
+    ],
+    "dreps": [
+     {
+      "name": "SIPO",
+      "ada": 120022515,
+      "rank": 11,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Trust Nodes",
+    "pools": 2,
+    "ada": 113049233,
+    "pool": "pool1gaztx97t53k47fr7282d70tje8323vvzx8pshgts30t9krw62tm",
+    "tickers": [
+     "TW001",
+     "TW002"
+    ]
+   },
+   {
+    "name": "(Crypto Capital Venture) #Pool",
+    "pools": 4,
+    "ada": 112579269,
+    "pool": "pool1urgvu6zk422j4xwtxa45lzpd6dm25msfthpkezr042secrtuwzc",
+    "tickers": [
+     "CCV1",
+     "CCV2",
+     "CCV3",
+     "CCV4"
+    ]
+   },
+   {
+    "name": "ZZZ",
+    "pools": 5,
+    "ada": 110374773,
+    "pool": "pool1vxz0deezj5c2950e7arpzfqxzq8zd9kawsullrzjw5rsq0yhxgr",
+    "tickers": [
+     "ZZZ",
+     "ZZZ2",
+     "ZZZ3",
+     "ZZZ4",
+     "ZZZ5"
+    ],
+    "dreps": [
+     {
+      "name": "YUTA",
+      "ada": 482475745,
+      "rank": 1,
+      "cls": "cc"
+     }
+    ]
+   },
+   {
+    "name": "NEDSCAVE.IO",
+    "pools": 4,
+    "ada": 106574932,
+    "pool": "pool1qfxukshs4fkcrflzdnxa2fdza5lfvew3y6echg8ckaa4q8m5hyf",
+    "tickers": [
+     "NEDS1",
+     "NEDS2",
+     "NEDS3",
+     "NEDS4"
+    ],
+    "dreps": [
+     {
+      "name": "NEDSCAVE.IO",
+      "ada": 30780128,
+      "rank": 32,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "SASA Stake Pool",
+    "pools": 2,
+    "ada": 95935719,
+    "pool": "pool1rmpv0h0pecysach8tj06vxx9wku2pdm74mk9cunx759v58q0hu2",
+    "tickers": [
+     "SASA",
+     "SASA2"
+    ],
+    "dreps": [
+     {
+      "name": "SASA_nagamaru_ながまる",
+      "ada": 130719685,
+      "rank": 10,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "CardanoCafe",
+    "pools": 3,
+    "ada": 94713831,
+    "pool": "pool1tdsrw0n33gmy0mzh7cgtn9p0jy5xwjxaa2s26gn2ewf8kg4nrzx",
+    "tickers": [
+     "CAFE",
+     "CAFE2",
+     "CAFE3"
+    ]
+   },
+   {
+    "name": "Spire Staking",
+    "pools": 2,
+    "ada": 92927342,
+    "pool": "pool16agnvfan65ypnswgg6rml52lqtcqe5guxltexkn82sqgj2crqtx",
+    "tickers": [
+     "SPIR2",
+     "SPIRE"
+    ],
+    "dreps": [
+     {
+      "name": "SPIRE",
+      "ada": 531036,
+      "rank": 162,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Pilot Pool",
+    "pools": 2,
+    "ada": 88219203,
+    "pool": "pool1eqa7kxx4xg35cu4rqj4exkvzhenscgh8wxez0gl7hsagygp79kr",
+    "tickers": [
+     "PILOT"
+    ]
+   },
+   {
+    "name": "pool146s6wt66d",
+    "pools": 1,
+    "ada": 86688225,
+    "pool": "pool146s6wt66d069uqfvjh39qn0racde6pytzju7y4mykf88zc0dscz"
+   },
+   {
+    "name": "JAZZ",
+    "pools": 4,
+    "ada": 85156579,
+    "pool": "pool1h0524mtazrjnzqh5e4u060jsfk8lpsqqjfpa5gygjwuhqu34wvt",
+    "tickers": [
+     "JAZZ",
+     "JAZZ2",
+     "JAZZ3",
+     "JAZZ4"
+    ],
+    "dreps": [
+     {
+      "name": "JAZZ",
+      "ada": 98558837,
+      "rank": 13,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Cardano With Paul ☘️",
+    "pools": 2,
+    "ada": 84193235,
+    "pool": "pool1s6se64qce5rjjjhh6ufcdnc54p8qg78mlhjm38lymx99sqysvzx",
+    "tickers": [
+     "PAUL",
+     "PAUL1"
+    ]
+   },
+   {
+    "name": "pool1f2wfjqkf2",
+    "pools": 1,
+    "ada": 82325072,
+    "pool": "pool1f2wfjqkf2wx6jq93pdck6hgmy9zgw32lmvrq9zejl7scqxjqfze"
+   },
+   {
+    "name": "BALNC",
+    "pools": 1,
+    "ada": 78749254,
+    "pool": "pool15s7w4spg5ee7n7rprhs0dq78plw2mhjkpu5v97uvl27gz2way7z"
+   },
+   {
+    "name": "CH1",
+    "pools": 1,
+    "ada": 78175506,
+    "pool": "pool14cq4fchmmqjygwjw4zexmqqd6a7caxptjnvseyu6wanjuppv4vk"
+   },
+   {
+    "name": "A CardanoLand pool ACL",
+    "pools": 4,
+    "ada": 78000441,
+    "pool": "pool1pshqcksxywy68lt04lw6uf35f4yssekh5dx2mxqmyrukke2z5y3",
+    "tickers": [
+     "ACL"
+    ],
+    "dreps": [
+     {
+      "name": "ACL-CardanoLand",
+      "ada": 1059744,
+      "rank": 128,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1r9fpxs4kc",
+    "pools": 1,
+    "ada": 77714840,
+    "pool": "pool1r9fpxs4kcn80kylsjxs8tg3p50nk2s66qerfqtw4x70n5740nj9"
+   },
+   {
+    "name": "pool1kmmahq4up",
+    "pools": 1,
+    "ada": 77689685,
+    "pool": "pool1kmmahq4upmm5j8fkh3xa9vd7gdffkp8pd4axucfh4w4dw549yqe"
+   },
+   {
+    "name": "pool155p7g23vd",
+    "pools": 1,
+    "ada": 77374066,
+    "pool": "pool155p7g23vdme50kp5lfqylfx5h7ndldyz2mletvr8fqucqzyrk44"
+   },
+   {
+    "name": "pool1ljqjqskd4",
+    "pools": 1,
+    "ada": 76870881,
+    "pool": "pool1ljqjqskd4f4zekzddw204u5xtzhyz2cllq5v5dmn27zdwf9c70f"
+   },
+   {
+    "name": "pool1fkjfa9yuu",
+    "pools": 1,
+    "ada": 76833852,
+    "pool": "pool1fkjfa9yuu844hyg7yagvjr9u7texse7dcdhe75c6lta0xqpgqgk"
+   },
+   {
+    "name": "pool1m42um4nhc",
+    "pools": 1,
+    "ada": 76831668,
+    "pool": "pool1m42um4nhc654jyjasdk6mu4q38yf3qcswqcr4q2ysc6sjhyve9n"
+   },
+   {
+    "name": "pool19tz0rwsnz",
+    "pools": 1,
+    "ada": 76830212,
+    "pool": "pool19tz0rwsnzmsw602rauwhzrsgk4qx55qzhkmxfqe04s6vuu37ptw"
+   },
+   {
+    "name": "pool1vevcjr87c",
+    "pools": 1,
+    "ada": 76828028,
+    "pool": "pool1vevcjr87ce94hny28ra8yj5jjgalcqdhqs5xd44ru6k0qr3dsq9"
+   },
+   {
+    "name": "pool16pfjyderm",
+    "pools": 1,
+    "ada": 76828028,
+    "pool": "pool16pfjyderm8gvzfpcrlk9xunhjetcp4w20g73gzzrvsgncte60e4"
+   },
+   {
+    "name": "pool1nc4tjhmg9",
+    "pools": 1,
+    "ada": 76827664,
+    "pool": "pool1nc4tjhmg9m2rmhq5thyvn9nvayy28dt0z7h5erhlfw6pzj9usfn"
+   },
+   {
+    "name": "pool1c3f370yr0",
+    "pools": 1,
+    "ada": 76827303,
+    "pool": "pool1c3f370yr063cpzpdapsdyqye8dutrztqjfhrug8dr3uj7d50375"
+   },
+   {
+    "name": "pool1alseugmsr",
+    "pools": 1,
+    "ada": 76826936,
+    "pool": "pool1alseugmsr68dn8mlen92jqgdc6nm4f3dvqyc8m55fgl967ytyua"
+   },
+   {
+    "name": "pool1v6p29tne9",
+    "pools": 1,
+    "ada": 76826936,
+    "pool": "pool1v6p29tne9m7773lw2da65qn3e58r64np0k5fj8sxns82g85j03g"
+   },
+   {
+    "name": "pool1qcvvyev6g",
+    "pools": 1,
+    "ada": 76825844,
+    "pool": "pool1qcvvyev6gdhdnggvypta045l0vtruawayq6gap29a99c755k8nm"
+   },
+   {
+    "name": "pool1m6awcstjz",
+    "pools": 1,
+    "ada": 76825116,
+    "pool": "pool1m6awcstjzafepr5dwan54gemvh4y8dlvmqjtpwxsa7uqurcuq0l"
+   },
+   {
+    "name": "pool1zm5qw9r7f",
+    "pools": 1,
+    "ada": 76823296,
+    "pool": "pool1zm5qw9r7fz25t2epjgvzynsj3gp5puxcwy7363zy3265ujndfaw"
+   },
+   {
+    "name": "pool1mfyzxyggr",
+    "pools": 1,
+    "ada": 76599403,
+    "pool": "pool1mfyzxyggryp0jhgghvzas7qjdyz2rcfnm5rfq8s9uefvukrlps5"
+   },
+   {
+    "name": "pool1l0m820vyq",
+    "pools": 1,
+    "ada": 76495809,
+    "pool": "pool1l0m820vyqh5pp2yzpw973qzz23neqqd977u0uczh9fs9zqvg0je"
+   },
+   {
+    "name": "POLY",
+    "pools": 1,
+    "ada": 76464532,
+    "pool": "pool1k0ucs0fau2vhr3p7qh7mnpfgrllwwda7petxjz2gzzaxkyp8f88"
+   },
+   {
+    "name": "CAG",
+    "pools": 1,
+    "ada": 76393631,
+    "pool": "pool1nqheyct9a0mxn80cwp9pd5guncfu3rzwqtmru0l94accz7gjcgl"
+   },
+   {
+    "name": "ADALO",
+    "pools": 1,
+    "ada": 76091634,
+    "pool": "pool1ekcsyzwexl7p2kwxxh34hy28l6772vrmff7jwmuxsa6u6fzty9z",
+    "dreps": [
+     {
+      "name": "ADALO",
+      "ada": 2785023,
+      "rank": 95,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1w4cetqsly",
+    "pools": 1,
+    "ada": 76040850,
+    "pool": "pool1w4cetqsly2cz9fq2te95tnk2r56mh6ew6dmpyfctv2ldv8xuj9g"
+   },
+   {
+    "name": "pool15v22rpfg6",
+    "pools": 1,
+    "ada": 75816443,
+    "pool": "pool15v22rpfg6qx9l0gx0m955gfv7tes0jpa9sy0gjs3a04lv6x9jdr"
+   },
+   {
+    "name": "Ledger by Figment",
+    "pools": 3,
+    "ada": 75479035,
+    "pool": "pool1ra2su7cvnmr83pu9nvvz4a9carsgc9egc3e5fuk7h9pycyp5ela",
+    "tickers": [
+     "LBF4",
+     "LBF5",
+     "LBF6"
+    ]
+   },
+   {
+    "name": "pool1cunvnkjkz",
+    "pools": 1,
+    "ada": 75261731,
+    "pool": "pool1cunvnkjkzh2lna593sjmkylcr3r5rmxdpr8r9u6pfuer72p24x4"
+   },
+   {
+    "name": "pool1xsj9s3mfp",
+    "pools": 1,
+    "ada": 75036278,
+    "pool": "pool1xsj9s3mfpztls97x7jjql0msmeh5v3wa5vyqhmmmsx8jzsqxrsv"
+   },
+   {
+    "name": "AzureADA",
+    "pools": 3,
+    "ada": 74995414,
+    "pool": "pool108zdflss3ayqlm5c7vr6mtqj2uwl99vk28ur8dv4zswdzt6yauc",
+    "tickers": [
+     "AZUR",
+     "AZUR2",
+     "AZUR3"
+    ]
+   },
+   {
+    "name": "ADAFR",
+    "pools": 1,
+    "ada": 74836020,
+    "pool": "pool1gtphgrdj8sluxm9e7ca2spcwcq2p0dxj9zf5v0yv3gsagzq704n"
+   },
+   {
+    "name": "pool106sjgd9m4",
+    "pools": 1,
+    "ada": 74683716,
+    "pool": "pool106sjgd9m4shsvtc9ruk7femgndknefmct6eedskww37pzv8hz9n"
+   },
+   {
+    "name": "pool1zgjk3dzwc",
+    "pools": 1,
+    "ada": 73887314,
+    "pool": "pool1zgjk3dzwcwd02juqntuzknr368hvxjxy8l8uzkxvgu4252d7ekf"
+   },
+   {
+    "name": "AICHI",
+    "pools": 1,
+    "ada": 73849703,
+    "pool": "pool1ju8f57hyvaa32tp85r468kuedvmjmcy56f8u9968drea57p50l5",
+    "dreps": [
+     {
+      "name": "Aichi/Tokai_DRep",
+      "ada": 32004390,
+      "rank": 31,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "TERM",
+    "pools": 1,
+    "ada": 73833179,
+    "pool": "pool1prc9hna2mgamtspchrygc66s9n4tlkvh39e3t9zccef4kzc3ns2",
+    "dreps": [
+     {
+      "name": "Terminada",
+      "ada": 16190267,
+      "rank": 49,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "MARAC",
+    "pools": 1,
+    "ada": 73320191,
+    "pool": "pool16f95up5u5lyqne5mnxmlhe0rgdgmya27mph288r6gw0ukegjffa"
+   },
+   {
+    "name": "HAPPY",
+    "pools": 1,
+    "ada": 73181513,
+    "pool": "pool1a8n7f97dmgtgrnl53exccknjdchqxrr9508hlxlgqp6xvjmzhej"
+   },
+   {
+    "name": "TECH",
+    "pools": 1,
+    "ada": 72724642,
+    "pool": "pool15cy4p3axu0m6sfrmxsp46z5cevx3ruksfwjl48730cgx24j4ydz"
+   },
+   {
+    "name": "StakePool Service No.2",
+    "pools": 5,
+    "ada": 71676119,
+    "pool": "pool10quq4wlghwrvmhdzc7geq22pyhzegccwj56ax2g8hx0cjfahufs",
+    "tickers": [
+     "SPS",
+     "SPS2",
+     "SPS3",
+     "SPS4",
+     "SPS5"
+    ]
+   },
+   {
+    "name": "AutoStake",
+    "pools": 4,
+    "ada": 70808690,
+    "pool": "pool1zz7x8ergn02chznayj9fjds2gk5q6prmpdr49faspd65kzqsrjs",
+    "tickers": [
+     "AUTO"
+    ]
+   },
+   {
+    "name": "DARK",
+    "pools": 1,
+    "ada": 70744807,
+    "pool": "pool13c9mnvfx4nvwvkszxcprwlv60fh3tteef50hhhv9yxptsua2v70"
+   },
+   {
+    "name": "ADAOZ",
+    "pools": 1,
+    "ada": 70531818,
+    "pool": "pool1vev8z03vh7jwx3mfrgzrt9fltt97nupaxv8ffj4r5r8mgwts5ze"
+   },
+   {
+    "name": "🐍Viper Stake Pool",
+    "pools": 2,
+    "ada": 70312456,
+    "pool": "pool166dkk9kx5y6ug9tnvh0dnvxhwt2yca3g5pd5jaqa8t39cgyqqlr",
+    "tickers": [
+     "VIPER"
+    ]
+   },
+   {
+    "name": "OGAM",
+    "pools": 1,
+    "ada": 68899705,
+    "pool": "pool18ufrgfgmslekdxnk9v9345qvhrr7vfgzkvneqtwm7unnwaht6ww"
+   },
+   {
+    "name": "Blue Cheese Stakehouse",
+    "pools": 7,
+    "ada": 68554958,
+    "pool": "pool1qzlwlpcsgflr9z3f24fg836tyq45p0kf5cnrp20s8v0psp6tdkx",
+    "tickers": [
+     "BCSH",
+     "BCSH0",
+     "BCSH1",
+     "BCSH2",
+     "BCSH4",
+     "BCSH5",
+     "BCSH6"
+    ]
+   },
+   {
+    "name": "1COMM",
+    "pools": 1,
+    "ada": 67785465,
+    "pool": "pool1whmm0hkxunyhxsr6dfjpx2tpvd05qhev820lx9vcmvqa5wjc6nh"
+   },
+   {
+    "name": "JAPAN",
+    "pools": 5,
+    "ada": 67443513,
+    "pool": "pool1k0xrqp03mn9u3q3sadndd6vu9udl5v38xpzyw0shm8sskuxw2av",
+    "tickers": [
+     "JAPAN",
+     "JP2",
+     "JP3",
+     "JP4",
+     "JP5"
+    ]
+   },
+   {
+    "name": "Into the Cryptoverse",
+    "pools": 3,
+    "ada": 66910592,
+    "pool": "pool138m7hevnvp664cmtralju857t5k7e4frpnaevtgpuykggr50kne",
+    "tickers": [
+     "ITC",
+     "ITC2",
+     "ITC3"
+    ]
+   },
+   {
+    "name": "pool1dl4695wfl",
+    "pools": 1,
+    "ada": 66428923,
+    "pool": "pool1dl4695wfl79k7gtzt87gsf8gsqeq97yzuvaq0d4zxhz6c0nlf4g"
+   },
+   {
+    "name": "COOL",
+    "pools": 5,
+    "ada": 64687640,
+    "pool": "pool1myvgx4ef424e6nw2strqq7dxcepav52plyyhxrk0avaw7y098l2",
+    "tickers": [
+     "COOL",
+     "COOL2",
+     "COOL3",
+     "COOL4",
+     "COOL5"
+    ]
+   },
+   {
+    "name": "THNDR",
+    "pools": 1,
+    "ada": 64387951,
+    "pool": "pool1jakl9kqhx87ywc7fcxweaxvna9khxhzyh6v8j70u6zpaxa45ghh"
+   },
+   {
+    "name": "ONYX Stake Pool",
+    "pools": 4,
+    "ada": 64367713,
+    "pool": "pool1tdvqgy6mq7lx7d345e276xmgmhh3s4zj8dzu6xzq5m7rx4tzkg2",
+    "tickers": [
+     "ONYX"
+    ]
+   },
+   {
+    "name": "FIKA",
+    "pools": 1,
+    "ada": 64102483,
+    "pool": "pool17s3mr9c4ejjfq20dz0ls9ggskc770kt267s9xmw93payzdswwgg"
+   },
+   {
+    "name": "pool1up53z2kad",
+    "pools": 1,
+    "ada": 63107402,
+    "pool": "pool1up53z2kadt6l5xs359ckx477rpyvyg3favh25qrhqt2ujclpq3h"
+   },
+   {
+    "name": "ANP",
+    "pools": 1,
+    "ada": 62558796,
+    "pool": "pool1qqq0c53vaf5ju0n3fvujmyxwca0yhp65930evw9lngmr5705csz"
+   },
+   {
+    "name": "pool1kkqc725ff",
+    "pools": 1,
+    "ada": 61927324,
+    "pool": "pool1kkqc725ffjcarn2ycawan340fkf476276c5yxy9nw3u5x3xluyg"
+   },
+   {
+    "name": "CROW",
+    "pools": 1,
+    "ada": 61428779,
+    "pool": "pool1pp7tn2w6ken4rpfcjwcdup3g4m5gcdhc9lgvrm3mnxz5stmrhq2",
+    "dreps": [
+     {
+      "name": "CryptoCrow",
+      "ada": 299032885,
+      "rank": 3,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "FLOWR",
+    "pools": 1,
+    "ada": 60973892,
+    "pool": "pool1tpr44v3pxth9j0ff246dvsryxpanxwx52f024ws3ecvn72sgv55"
+   },
+   {
+    "name": "LEAF",
+    "pools": 1,
+    "ada": 59677641,
+    "pool": "pool1krznhwu3h5pu2stuslr53z5rme50t6384macsmylcnljwc7yjky"
+   },
+   {
+    "name": "QUEEN",
+    "pools": 1,
+    "ada": 58547141,
+    "pool": "pool1ksrg8a964464las0ymw88slrwxkychjz9lh09lqltu5m7nw3pq0",
+    "dreps": [
+     {
+      "name": "phillerino",
+      "ada": 855109,
+      "rank": 144,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "X-StakePool",
+    "pools": 2,
+    "ada": 58524945,
+    "pool": "pool14fjmlppz76667ws3jl5luejf2wgztuhpsftulvh3ucc65anqgve",
+    "tickers": [
+     "XSP",
+     "XSP2"
+    ]
+   },
+   {
+    "name": "pool1nhhsh9yhl",
+    "pools": 5,
+    "ada": 57787053,
+    "pool": "pool1nhhsh9yhlrvj9e3nce0zpx0xm2xlt6tx7gqakhr6hjc8wy84sat",
+    "tickers": []
+   },
+   {
+    "name": "STR8",
+    "pools": 1,
+    "ada": 56939059,
+    "pool": "pool1qqqqdktl6pq46td0mwut0qn30g7nlue0sete9wxl0hwsq37wrw8",
+    "dreps": [
+     {
+      "name": "Chris [STR8] - Straightpool",
+      "ada": 21129724,
+      "rank": 46,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ST3AK",
+    "pools": 1,
+    "ada": 56785423,
+    "pool": "pool17ahr5ygy48vpdfnatqn2z4wfu2te4quapk2yx3k50ce6kd7feg0"
+   },
+   {
+    "name": "ROCKY",
+    "pools": 1,
+    "ada": 56706402,
+    "pool": "pool173mzegwuu0pjcrt60ekelzj5haqr8r5e4e0n45qh9jdz7xm5kh8"
+   },
+   {
+    "name": "LCP",
+    "pools": 1,
+    "ada": 55944340,
+    "pool": "pool1hnp560z9e5acwux8tjguxq36j9r255zuf02u7z2d46dvcf5zhns"
+   },
+   {
+    "name": "CLOVR",
+    "pools": 1,
+    "ada": 55478142,
+    "pool": "pool1zkdc6ve9nndk7vxnjlalhqt4hr5h8auz5qzjk7lrjrqtv23yuy5"
+   },
+   {
+    "name": "OCTAS",
+    "pools": 1,
+    "ada": 54340412,
+    "pool": "pool1z5uqdk7dzdxaae5633fqfcu2eqzy3a3rgtuvy087fdld7yws0xt",
+    "dreps": [
+     {
+      "name": "OCTAS DRep",
+      "ada": 2735350,
+      "rank": 96,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1xn4kqt45x",
+    "pools": 1,
+    "ada": 53955956,
+    "pool": "pool1xn4kqt45xh3udf87kmtkdfz8xh9qn6trlqsf39eusk23ufmxhgr"
+   },
+   {
+    "name": "pool1cyq3v3v43",
+    "pools": 1,
+    "ada": 53945171,
+    "pool": "pool1cyq3v3v43hu7spwlfxdm6vq9djpsjjueerhlu5qr2rvd57vqk84"
+   },
+   {
+    "name": "1LOVE",
+    "pools": 1,
+    "ada": 53859977,
+    "pool": "pool1ft4xjlz9uw0r0ewcgtkgeakqrfc5azxmxwsm5pt94dv67mw4rgd"
+   },
+   {
+    "name": "EASY1",
+    "pools": 1,
+    "ada": 53797456,
+    "pool": "pool1yr0cv3dtmhcfgqa6yetvmf769ngk89e6tepecmjrmjl2jzcw2lm",
+    "dreps": [
+     {
+      "name": "Giovanni Gargiulo",
+      "ada": 3523361,
+      "rank": 85,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Cardanode: 0.00% Fee & 100% Rewards Guaranteed",
+    "pools": 4,
+    "ada": 53418023,
+    "pool": "pool1qa6lqyu67ghpa0evxfu9nzqkj3h82qpfku82ec79zdwru4pd25m",
+    "tickers": [
+     "CNODE",
+     "FUND",
+     "FUND2",
+     "FUND3"
+    ]
+   },
+   {
+    "name": "pool1axzm26vdu",
+    "pools": 1,
+    "ada": 53182875,
+    "pool": "pool1axzm26vduyuxgw0x9ddh4vkvn7q5hyd558l0t9c08p556lf2zaj"
+   },
+   {
+    "name": "FAIR",
+    "pools": 1,
+    "ada": 53048287,
+    "pool": "pool1ddg6t2h9kj6lqlec4ncjs945lzj43m3ggrgdhf5sgzhtygpkznz",
+    "dreps": [
+     {
+      "name": "FAIR Pool #01",
+      "ada": 627382,
+      "rank": 152,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ABLE",
+    "pools": 1,
+    "ada": 52877103,
+    "pool": "pool1mt8sdg37f2h3rypyuc77k7vxrjshtvjw04zdjlae9vdzyt9uu34"
+   },
+   {
+    "name": "ALND",
+    "pools": 1,
+    "ada": 50453619,
+    "pool": "pool1du3r4a7xq60hg2x0wcz7lw5ya3qs74rk258c8kanp93rsqdqu45"
+   },
+   {
+    "name": "pool1cd6mgg8y9",
+    "pools": 1,
+    "ada": 49116337,
+    "pool": "pool1cd6mgg8y98sq4cc7668xwwg0g6ln4z7r0gx0r5pfvjg9w8u0rc8"
+   },
+   {
+    "name": "CLIO1",
+    "pools": 1,
+    "ada": 48914011,
+    "pool": "pool1c89d4drtwn0048mekkdkzllz559ahnntxelyw2mppxnmc36hjlx"
+   },
+   {
+    "name": "ALFA",
+    "pools": 1,
+    "ada": 48833908,
+    "pool": "pool18qddv82sx8p22uxzdrf0qx9lkewxadlr9ef45kpcf7dzz3n56qv"
+   },
+   {
+    "name": "Bravo pool",
+    "pools": 2,
+    "ada": 48392710,
+    "pool": "pool12z39rkzfylvn9wfe8j6x9ucq6g2l4mw4azj70y0gd8ejczznyj3",
+    "tickers": [
+     "BRAVO"
+    ]
+   },
+   {
+    "name": "SDG13",
+    "pools": 1,
+    "ada": 48081408,
+    "pool": "pool16pv24th2tzy8k70vk4ms35tff0fjxfm2dd2psk7cvs27wnjvlgh",
+    "dreps": [
+     {
+      "name": "Long Hồ",
+      "ada": 187277,
+      "rank": 199,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Stake Shark",
+    "pools": 3,
+    "ada": 48057695,
+    "pool": "pool15wkxegrfflzcyhurrjxsm9ljqtz09xr5rtnqsarnp7hmsz5um3t",
+    "tickers": [
+     "STSH1",
+     "STSH2",
+     "STSH3"
+    ]
+   },
+   {
+    "name": "AOS",
+    "pools": 1,
+    "ada": 46808458,
+    "pool": "pool1a23gmvalpdams9d42t7fur8vmknzjv7wd3nsvuvrc7dv66lnau0",
+    "dreps": [
+     {
+      "name": "Army of Spies",
+      "ada": 83093931,
+      "rank": 15,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "FIMI",
+    "pools": 1,
+    "ada": 45832892,
+    "pool": "pool1rct5guwnp6nk9f4ldn5tr3s42j0nm5rxeayv56lxua5ck47ex39",
+    "dreps": [
+     {
+      "name": "FIMI",
+      "ada": 61761030,
+      "rank": 22,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "PNR39",
+    "pools": 1,
+    "ada": 45676690,
+    "pool": "pool136q98jnwt093qle4ph86vdpuwplg7gyvt20h2nq4m6ksv8xjcuj"
+   },
+   {
+    "name": "stakit.io Pool by TOBG",
+    "pools": 2,
+    "ada": 45631452,
+    "pool": "pool1nudasuv0lljpe0tswcverqvlh0v4226vgnpsuxn0e9nkvnvcvne",
+    "tickers": [
+     "STI",
+     "STI2"
+    ],
+    "dreps": [
+     {
+      "name": "stakit (sti) by TOBG",
+      "ada": 6331934,
+      "rank": 66,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "KTN3",
+    "pools": 3,
+    "ada": 45389838,
+    "pool": "pool1pvu2zdexh8wr4ggmuz90jvqrua6an43qj9m9urs785p8kwjzqwl",
+    "tickers": [
+     "KTN2",
+     "KTN3",
+     "KTN4"
+    ]
+   },
+   {
+    "name": "CCJ2",
+    "pools": 5,
+    "ada": 45385266,
+    "pool": "pool13pclvkwxee4znt7qc55k8ny89zvdkvfrt04dtd99zjm5vs2tws5",
+    "tickers": [
+     "CCJ",
+     "CCJ2",
+     "CCJ3",
+     "CCJ4",
+     "CCJ5"
+    ]
+   },
+   {
+    "name": "⭐ TERA3 ⭐",
+    "pools": 3,
+    "ada": 44763996,
+    "pool": "pool149d5lzg7m6susau4f4yfdztgkty34qrcdpvd3ygsetmljgxxf8g",
+    "tickers": [
+     "TERA",
+     "TERA2",
+     "TERA3"
+    ],
+    "dreps": [
+     {
+      "name": "TERA DRep",
+      "ada": 29292975,
+      "rank": 34,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "STAT",
+    "pools": 1,
+    "ada": 43930030,
+    "pool": "pool1w7c2j0px43jmudhf48ezp7dy8j7904c9l3wc7809lhh2z026hch",
+    "dreps": [
+     {
+      "name": "AdaStat",
+      "ada": 48896723,
+      "rank": 23,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "qzsbu",
+    "pools": 1,
+    "ada": 43616015,
+    "pool": "pool13h08lf24fjmxxg0mmuattjv8dvy0r6fc4hrqg4qmj38xsweexrv"
+   },
+   {
+    "name": "AtlasStakePool",
+    "pools": 2,
+    "ada": 43605365,
+    "pool": "pool1u6kpt8hgqcm596kukj97ghefmxn8ks2cgwg8qqe0gtgscnufk5p",
+    "tickers": [
+     "ATLAS"
+    ],
+    "dreps": [
+     {
+      "name": "ATLAS_Wolfgang",
+      "ada": 6077639,
+      "rank": 67,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "TOKAI",
+    "pools": 1,
+    "ada": 43469572,
+    "pool": "pool1cf7mqj0xd8z4jqhr7nf565mxuvepk8euv5t6ehmuwe49kfz9llr"
+   },
+   {
+    "name": "Blockdaemon 🧱😈 Stake Pool",
+    "pools": 4,
+    "ada": 43176473,
+    "pool": "pool1t6ek99u2dzj8sr606uqm3uz0tt4ejr4cpvwtqfwen6p2z57rrst",
+    "tickers": [
+     "BD0",
+     "BD1",
+     "BD3",
+     "BD4"
+    ]
+   },
+   {
+    "name": "Pool",
+    "pools": 1,
+    "ada": 42433457,
+    "pool": "pool1y6z9q5hgneup3j5s40jauhd6wq6qux7gkcfwnzfaynnsu0edy2g"
+   },
+   {
+    "name": "LGNS1",
+    "pools": 1,
+    "ada": 42079655,
+    "pool": "pool1qvudfuw9ar47up5fugs53s2g84q3c4v86z4es6uwsfzzs89rwha"
+   },
+   {
+    "name": "DAVE",
+    "pools": 1,
+    "ada": 39947143,
+    "pool": "pool1t6n7rysk6wzm9wqxda6zxpzmm3j6256fs3mp06dc26n6503hhj4",
+    "dreps": [
+     {
+      "name": "Dave",
+      "ada": 78858626,
+      "rank": 17,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "MOKSH",
+    "pools": 1,
+    "ada": 39915790,
+    "pool": "pool1v5u6wzakuc25q3zpx04t8gjz3rgu60wuxkv2mh5nga23xjkc86s",
+    "dreps": [
+     {
+      "name": "MOKSH",
+      "ada": 4334521,
+      "rank": 78,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "CCV",
+    "pools": 1,
+    "ada": 39735607,
+    "pool": "pool1sjwdmeme5zs042jzwmdvxshhv27kepxke0mr02f2yzacsyd4wtu"
+   },
+   {
+    "name": "pool1k8dm3fwaj",
+    "pools": 1,
+    "ada": 39529177,
+    "pool": "pool1k8dm3fwajc6c8s32accfwqw8dqawl6k243z43cf74uxu7457z6l"
+   },
+   {
+    "name": "pool16ajaae2n5",
+    "pools": 1,
+    "ada": 38929681,
+    "pool": "pool16ajaae2n5lsyr4f9k9uz5y8tpf0996tw640dzu7chwp2wdrnz6a"
+   },
+   {
+    "name": "Midnight ▫ 0% fee",
+    "pools": 2,
+    "ada": 38597921,
+    "pool": "pool1eaeynp2hs06v4x8q65jfm2xqcd3dc80rv220gmxvwg8m5sd6e7a",
+    "tickers": [
+     "HODLR"
+    ]
+   },
+   {
+    "name": "APOP",
+    "pools": 1,
+    "ada": 38290754,
+    "pool": "pool1dxwgzj66pual956mnv9delkelg873yvgr2dd8s279m0hxqvr475"
+   },
+   {
+    "name": "ADAST",
+    "pools": 1,
+    "ada": 38071882,
+    "pool": "pool1uthdnav2zc2hxpg2hyeyy545lnxtl8lqdcdqxjm0j8t5srmyvzj"
+   },
+   {
+    "name": "ECO Pool",
+    "pools": 2,
+    "ada": 36721709,
+    "pool": "pool1wt0pf4u2xktp0f7apveu242w6nkm4ltk3m8g039lvuhwq4zdtf3",
+    "tickers": [
+     "ECO"
+    ]
+   },
+   {
+    "name": "pool1f9934hk9a",
+    "pools": 1,
+    "ada": 36568289,
+    "pool": "pool1f9934hk9awd25mmxl0dd2haqvda9nlquwnh5pv64hs42znl07zj"
+   },
+   {
+    "name": "POP2",
+    "pools": 4,
+    "ada": 36302076,
+    "pool": "pool1etfar35l4tf6vam3gvqf5dnaq7levz32vgw4p00jzk7q7twg2te",
+    "tickers": [
+     "POP",
+     "POP2",
+     "POP3",
+     "POP4"
+    ]
+   },
+   {
+    "name": "BTCS",
+    "pools": 1,
+    "ada": 35886028,
+    "pool": "pool1m06dl8dfcy6d0475fanf0mtnnp2tzhw8rarums042q3jux23q0j"
+   },
+   {
+    "name": "MUEN2 CharityPrivatePool",
+    "pools": 3,
+    "ada": 35306947,
+    "pool": "pool1l6vtae673eltsx86sk4xxr3fnn9tk8e99jkrdvcmjqlc6cca4nk",
+    "tickers": [
+     "MUEN",
+     "MUEN2",
+     "MUEN3"
+    ],
+    "dreps": [
+     {
+      "name": "MUEN",
+      "ada": 44787740,
+      "rank": 24,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Watashitachi",
+    "pools": 2,
+    "ada": 35194675,
+    "pool": "pool1p9sjhjx0v3k76wvgdqu7jcks2ra48wqlhc6g0mkewd25k3zcymy",
+    "tickers": [
+     "WA1",
+     "WA2"
+    ]
+   },
+   {
+    "name": "KKS",
+    "pools": 1,
+    "ada": 35023272,
+    "pool": "pool1lnr8t7pxvq3vfg8c5lc7yjcq39haws4ntu28xpxzx4zyya9ntny"
+   },
+   {
+    "name": "SNAKE",
+    "pools": 1,
+    "ada": 33988292,
+    "pool": "pool1xs34q2z06a46nk7hl48d27dj5gzc6hh9trugw2ehs9ajsevqffx"
+   },
+   {
+    "name": "NAP-Nekota ADA Pool",
+    "pools": 2,
+    "ada": 33567134,
+    "pool": "pool126mkma8nv5axltmz7mmg8qz9e70nmhnf58hwx5772fhwgkhk6ag",
+    "tickers": [
+     "NAP",
+     "NAP2"
+    ]
+   },
+   {
+    "name": "Zetetic",
+    "pools": 2,
+    "ada": 33372576,
+    "pool": "pool15zrkyr0f80hxlt4scv72tej8l8zwrcphmrega9wutqchjekceal",
+    "tickers": [
+     "ZETE",
+     "ZETE2"
+    ]
+   },
+   {
+    "name": "MOMO",
+    "pools": 1,
+    "ada": 33169706,
+    "pool": "pool1cmdq8atcy8x7lfhh09vdumveuh0ywsx0269ur774nvzkyhma37d"
+   },
+   {
+    "name": "0AAAA",
+    "pools": 1,
+    "ada": 32677795,
+    "pool": "pool193uec04jldvah7r52q86wl033g4v42x0aste8jfg9999qepaxfp"
+   },
+   {
+    "name": "KIWI by 🥝Kiwipool Staking",
+    "pools": 2,
+    "ada": 32393242,
+    "pool": "pool1vquhv3kh6xkklckaenl8alyuhfsld57ef5573aqauueyqacx4ak",
+    "tickers": [
+     "KIWI"
+    ],
+    "dreps": [
+     {
+      "name": "matticus_kiwi",
+      "ada": 1889660,
+      "rank": 106,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Sunshine Stake Pool",
+    "pools": 2,
+    "ada": 32366391,
+    "pool": "pool195gdnmj6smzuakm4etxsxw3fgh8asqc4awtcskpyfnkpcvh2v8t",
+    "tickers": [
+     "SUNNY"
+    ]
+   },
+   {
+    "name": "A4G",
+    "pools": 1,
+    "ada": 32094475,
+    "pool": "pool1ewrm7y47s9hv6hxku9n5gfnsuspymp0qqpwgvgm9rvm37cek2h6"
+   },
+   {
+    "name": "MIN",
+    "pools": 1,
+    "ada": 31781503,
+    "pool": "pool1ases3nklh6gyjf74r7dqm89exjfd520z9cefqru959wcccmrdlk"
+   },
+   {
+    "name": "DigitalAssetNews",
+    "pools": 2,
+    "ada": 31649413,
+    "pool": "pool1nwt6mxqus3tpzrshky5h5kykz9rjpxmacrvw0z6yak9uk5p5045",
+    "tickers": [
+     "DNEWS"
+    ]
+   },
+   {
+    "name": "SMAUG",
+    "pools": 1,
+    "ada": 30738902,
+    "pool": "pool14wk2m2af7y4gk5uzlsmsunn7d9ppldvcxxa5an9r5ywek8330fg"
+   },
+   {
+    "name": "COFFE",
+    "pools": 1,
+    "ada": 30456658,
+    "pool": "pool1r55hyfrd3tw6nzpkvf4rfceh2f04yph92fc462phnd0akp2s5r6",
+    "dreps": [
+     {
+      "name": "hix_coffeepool☕️",
+      "ada": 62513368,
+      "rank": 21,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1mzcwrurfd",
+    "pools": 1,
+    "ada": 30296536,
+    "pool": "pool1mzcwrurfd3afzp0xz84423q8xxdxj0ju5h4sse73hx4msvqra9t"
+   },
+   {
+    "name": "dtDn",
+    "pools": 1,
+    "ada": 29811483,
+    "pool": "pool13hxlxd6qa68fmfhrvvmasa0mjg30tj9p5v2lmgmgsmrp2rgzkfp"
+   },
+   {
+    "name": "RANKT",
+    "pools": 1,
+    "ada": 29459713,
+    "pool": "pool1zdtqtsu3l3ytatzyvrq48d4mpnll9c5evwfq6taxkmn9vvdz839",
+    "dreps": [
+     {
+      "name": "ranket",
+      "ada": 110622630,
+      "rank": 12,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Dapp Central Stake Pool",
+    "pools": 2,
+    "ada": 29036777,
+    "pool": "pool1qakys0fxx5p2fxcnsc2tyjpqa88q7qgtdh5t3a32hplv6fg25r9",
+    "tickers": [
+     "DAPP"
+    ]
+   },
+   {
+    "name": "pool19hrn8me38",
+    "pools": 1,
+    "ada": 28983372,
+    "pool": "pool19hrn8me383w9atvmjwukjxqsdvr8udpmyxau956hdc53x669j8p"
+   },
+   {
+    "name": "ASPEN",
+    "pools": 1,
+    "ada": 28774158,
+    "pool": "pool1qku2yhky7sv4dfjfv42uyvauhehuqevk25aw952d7ulzqzx3jcu"
+   },
+   {
+    "name": "LOVE",
+    "pools": 1,
+    "ada": 28710820,
+    "pool": "pool1jhzf2mm6zdlhl6w89uhgx8nq8p6ykcc86qq58vjy0ejyxrrksfj",
+    "dreps": [
+     {
+      "name": "PoolTool",
+      "ada": 41996691,
+      "rank": 26,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "BERRY",
+    "pools": 1,
+    "ada": 28654983,
+    "pool": "pool19f6guwy97mmnxg9dz65rxyj8hq07qxud886hamyu4fgfz7dj9gl"
+   },
+   {
+    "name": "HRMS",
+    "pools": 1,
+    "ada": 28314173,
+    "pool": "pool16fyda57p3c8gp5r6gmcq5tvqsp6mnzwvkxswgznkuh8wztrp6vv",
+    "dreps": [
+     {
+      "name": "Hermes Stakepool Germany (HRMS)",
+      "ada": 65747326,
+      "rank": 20,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "PLUSH",
+    "pools": 1,
+    "ada": 28182844,
+    "pool": "pool1zn9hjcmfddhcp2aj9xxuvz7z40rasyatkgavr8ryyz72qdfwtrj"
+   },
+   {
+    "name": "pool19asxjgd6a",
+    "pools": 1,
+    "ada": 27640872,
+    "pool": "pool19asxjgd6ah9ddzauwede4wpt9vsp6s4ax5nz297wt47evc9sn7z"
+   },
+   {
+    "name": "01 ▫ Elite Stake Pool",
+    "pools": 2,
+    "ada": 27456660,
+    "pool": "pool1qwa8x4u4a2pff0xdv0haxpgk3tyrvl5adl2lpf3ztcftqruhea0",
+    "tickers": [
+     "ELITE"
+    ],
+    "dreps": [
+     {
+      "name": "Elite",
+      "ada": 1219401,
+      "rank": 119,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "DINO",
+    "pools": 1,
+    "ada": 27229667,
+    "pool": "pool1rvjj8cp3urh7de07pm0ceqha2x4lxws69lhd4429dm6djfjsy4l",
+    "dreps": [
+     {
+      "name": "DINO",
+      "ada": 21505758,
+      "rank": 45,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "SAKE",
+    "pools": 1,
+    "ada": 26516711,
+    "pool": "pool1xlfty06hg6q23qvcaxwv3p9ke7ff9n34qpr8tpxt2zflyq20ceh"
+   },
+   {
+    "name": "CTAX",
+    "pools": 1,
+    "ada": 26513066,
+    "pool": "pool1xlra52x2es7dmsvpmcp2922h89h346awe7yuu664e50yvrzaaqe"
+   },
+   {
+    "name": "FORTE",
+    "pools": 1,
+    "ada": 26374436,
+    "pool": "pool1gqgyta9sku3crjzfl9kj7kxsgfkt98y98yeu09kx22zscrezuj7"
+   },
+   {
+    "name": "COSMC",
+    "pools": 1,
+    "ada": 25816027,
+    "pool": "pool1c3ecg6h4m73a2mftmdm9mz3gxklxmnzuwzl9e38lzd4y26qcm8a"
+   },
+   {
+    "name": "WORLD",
+    "pools": 1,
+    "ada": 25381395,
+    "pool": "pool107rsdzswa5s3y8wk5z62tgh5lhm790dsyqjp4lq66fht7qnaq9d"
+   },
+   {
+    "name": "HISAI",
+    "pools": 1,
+    "ada": 25301180,
+    "pool": "pool1lfnlxfxxwvjadesxzm4c7grgs3elj70vfdnpjwjmg0ufsqnq52t",
+    "dreps": [
+     {
+      "name": "HISAI",
+      "ada": 43480068,
+      "rank": 25,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "BIRD",
+    "pools": 1,
+    "ada": 24803133,
+    "pool": "pool1fs2m5rmlx66crcwwrrsf2pcxjhvk7kzdurcqusd3v5gm65cufnj"
+   },
+   {
+    "name": "NKR",
+    "pools": 1,
+    "ada": 24449975,
+    "pool": "pool10ya6hxrssmyhl560gqyalhqxudkgfjdlc0e4krww6wweyaeajs8"
+   },
+   {
+    "name": "CRFA",
+    "pools": 1,
+    "ada": 24237355,
+    "pool": "pool1d3gckjrphwytzw2uavgkxskwe08msumzsfj4lxnpcnpks3zjml3"
+   },
+   {
+    "name": "WEP",
+    "pools": 1,
+    "ada": 24227440,
+    "pool": "pool189vq6ay0gku9tkqc2t3nfjk3n88mm23grmfas852jruw6fjlkaf"
+   },
+   {
+    "name": "PRIDE",
+    "pools": 1,
+    "ada": 24071260,
+    "pool": "pool1j099ctc7kcc9fa78dz5qwsy2g0n96lrgletwxvxmyzh4zd7ck0j",
+    "dreps": [
+     {
+      "name": "PRIDE",
+      "ada": 7772766,
+      "rank": 60,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "HYPER",
+    "pools": 1,
+    "ada": 23926137,
+    "pool": "pool1yc6f3cqsc7jfh07hcns64v5cp8720mve870pgxf2wkr3u8l7tse"
+   },
+   {
+    "name": "ANGEL stake pool",
+    "pools": 2,
+    "ada": 23814356,
+    "pool": "pool1qqqyv9pn9typyqwcxqk5ewpxy5p27g5j2ms58hpp2c2kuzs5z77",
+    "tickers": [
+     "ANGEL",
+     "SION"
+    ],
+    "dreps": [
+     {
+      "name": "ANGEL",
+      "ada": 2405914,
+      "rank": 101,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "RIZIN",
+    "pools": 1,
+    "ada": 23661479,
+    "pool": "pool1pjmqlsyny06w0x60rfd3seul5xc9pluh3t08y55ylhks28jeh7c"
+   },
+   {
+    "name": "BASHO",
+    "pools": 1,
+    "ada": 23414226,
+    "pool": "pool1asfgkqtmjuusclgx72xpzvpw336gkulchtstsx9lsj9uqzjckv0"
+   },
+   {
+    "name": "Liqwid",
+    "pools": 2,
+    "ada": 23070570,
+    "pool": "pool1gecx8vya3f8lyre2gn9w53547p0rhkmq0x78zrw956lkcvn8uyp",
+    "tickers": [
+     "LQWD"
+    ],
+    "dreps": [
+     {
+      "name": "Liqwid DAO",
+      "ada": 24283426,
+      "rank": 42,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "RSNG",
+    "pools": 1,
+    "ada": 22721377,
+    "pool": "pool1mkjtce8r8yeku0mmc9vpwl0scuwuwc8lz89ckpj3k0kwgvlunv5"
+   },
+   {
+    "name": "OYSTR",
+    "pools": 1,
+    "ada": 22387563,
+    "pool": "pool1l6aeyn35nkqkn9lqqlwqnpraakdzuukjrqprcrj3sctk6hhe32k"
+   },
+   {
+    "name": "4ADA",
+    "pools": 1,
+    "ada": 21885843,
+    "pool": "pool15ccmgcc4k9t8auxw9v4dfjmrl2kqnuevawn8z6n7xv09utw9hh3"
+   },
+   {
+    "name": "QQQ",
+    "pools": 1,
+    "ada": 21721156,
+    "pool": "pool12udshcl3ycj4qpxes28n0ugsye23h89rj8z2a5ast4482m08xe7"
+   },
+   {
+    "name": "BLISS",
+    "pools": 1,
+    "ada": 21720282,
+    "pool": "pool1vtpn0drn5t39frknedmqq2jkhsfstwketsnvdm7cjzz674s30v2"
+   },
+   {
+    "name": "KAIZN",
+    "pools": 1,
+    "ada": 21586534,
+    "pool": "pool1jeu74g86ys4fekhykqcww99kdsq3nlym8a6kfw8s8ff3vskad70"
+   },
+   {
+    "name": "🌍 PLANETSTAKE",
+    "pools": 2,
+    "ada": 21392168,
+    "pool": "pool1qqvukkkfr3ux4qylfkrky23f6trl2l6xjluv36z90ax7gfa8yxt",
+    "tickers": [
+     "STAKE"
+    ]
+   },
+   {
+    "name": "WBFL",
+    "pools": 1,
+    "ada": 20863791,
+    "pool": "pool1lu0gwsvugl2cgx6gzk9zqdjwutd5szp293wpvwj4fvq4jleg8ww"
+   },
+   {
+    "name": "BSP",
+    "pools": 1,
+    "ada": 20514355,
+    "pool": "pool13846y7q7tng3endxhet9qdcz5w0fjs09ytcye4dm5g54wmyqeqr"
+   },
+   {
+    "name": "RED",
+    "pools": 1,
+    "ada": 19931916,
+    "pool": "pool1mn6relcs7dn2fqzfq5yjlwxa49d900p5sdpw62jlx45k2djgwe4"
+   },
+   {
+    "name": "NVET",
+    "pools": 1,
+    "ada": 19788956,
+    "pool": "pool1xjqjwe0t7uw7wfdygvt99e5wjcuz6ex6rcx2p067aqxp6tsgwgm"
+   },
+   {
+    "name": "KTOP_ADA SPO and WMT ENO",
+    "pools": 2,
+    "ada": 19308515,
+    "pool": "pool135h773klt7djljmyawkh88e8qc457wxqfhc6j9h6y9n4y3sgh7t",
+    "tickers": [
+     "KTO",
+     "KTOP"
+    ],
+    "dreps": [
+     {
+      "name": "drep1y2fhyudw8",
+      "ada": 7213282,
+      "rank": 62,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "MIMIC",
+    "pools": 1,
+    "ada": 18904970,
+    "pool": "pool1w4g7j8u97pvu2q7gsdaupnng0a2vmyllygfewhc29m2j5cehysn"
+   },
+   {
+    "name": "pool1a4qtpgce7",
+    "pools": 1,
+    "ada": 18696064,
+    "pool": "pool1a4qtpgce7cu6wzc79fx7qrc3938hkl2gf8c2h5jugvm2gnu86l7"
+   },
+   {
+    "name": "CTEC Stake Pool",
+    "pools": 2,
+    "ada": 18679218,
+    "pool": "pool154hq0j6u6ydz62mtlu7xaj78mhreyp0zsv2kq7f0qmne2fu4t7y",
+    "tickers": [
+     "CTEC",
+     "CTEC2"
+    ],
+    "dreps": [
+     {
+      "name": "CTEC-Stake-Pool",
+      "ada": 20249587,
+      "rank": 47,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1cmk4xnegv",
+    "pools": 1,
+    "ada": 18678263,
+    "pool": "pool1cmk4xnegvtm7svgw5u0neg93640ytmssyr0tqngncwnf6c0kn4u"
+   },
+   {
+    "name": "MORH",
+    "pools": 1,
+    "ada": 18293722,
+    "pool": "pool1slwxj0t3575lx0rfw2x3z7dqf26jpls566pdwydvlk0jgw96lre"
+   },
+   {
+    "name": "RANMA",
+    "pools": 1,
+    "ada": 18237384,
+    "pool": "pool1qvkdjemewy8phhrkdhscjcnh3947f5ae42rdfjkv6gkgkjtlfsg"
+   },
+   {
+    "name": "BURN",
+    "pools": 1,
+    "ada": 18158935,
+    "pool": "pool1r0sxz0hygfc0266lhdclve6j3cwcwlth6dya6uey65yxjnwm7qc"
+   },
+   {
+    "name": "Cardanoscan Pool",
+    "pools": 2,
+    "ada": 17737524,
+    "pool": "pool10hex9l4wjgqarvhr94xgyh9frv5lhtajhrj4dah0kl65jtws30k",
+    "tickers": [
+     "CSN1",
+     "CSN2"
+    ]
+   },
+   {
+    "name": "TOIRO",
+    "pools": 1,
+    "ada": 17619889,
+    "pool": "pool130c3kgpkjctag540j7sxqfrlhsmpc6d8u0n7j6crm9ayy75mkpt"
+   },
+   {
+    "name": "U0001",
+    "pools": 1,
+    "ada": 16746040,
+    "pool": "pool1flkcdxj7cq6sfgl4fujx50p20ylqgj02kgwvfj4g5w24s6th8vz"
+   },
+   {
+    "name": "pool1xru6f3ffl",
+    "pools": 1,
+    "ada": 16679347,
+    "pool": "pool1xru6f3fflzwkptgm68pncrsncg9ngllv0jk8jnz40m7wusfhazk"
+   },
+   {
+    "name": "SARGA",
+    "pools": 1,
+    "ada": 16501460,
+    "pool": "pool1aqg6fvhcaulvss2ruvpx6ur9vj7pejvdcxv6xp0qlwuwx94evf0"
+   },
+   {
+    "name": "BREAK",
+    "pools": 1,
+    "ada": 16054992,
+    "pool": "pool1crts5gmqr34gsrn6wvrhfs9yqp0ynu8t2t4r350xp80s6pc56ue"
+   },
+   {
+    "name": "pool1jcetszf3s",
+    "pools": 1,
+    "ada": 16008585,
+    "pool": "pool1jcetszf3sh39hc8nezj5pzj3ukg4fhfjwdqkmwg8ern8u3c4y7v"
+   },
+   {
+    "name": "VAMP",
+    "pools": 1,
+    "ada": 15889646,
+    "pool": "pool1vs689gkmqtrljtmcwd2690nzqm2yyq23wk2zzx5g0v0gs5ug64a"
+   },
+   {
+    "name": "CERO",
+    "pools": 1,
+    "ada": 15854217,
+    "pool": "pool1lskcfz80qg2kr2p6776kl9emjn8ulkqsqse7um7skz4y2lwa0cu"
+   },
+   {
+    "name": "pool1rjxdqghfj",
+    "pools": 1,
+    "ada": 15795282,
+    "pool": "pool1rjxdqghfjw5rv6lxg8qhedkechvfgnsqhl8rrzwck9g45n43yql"
+   },
+   {
+    "name": "HOPE",
+    "pools": 2,
+    "ada": 15727475,
+    "pool": "pool1vh4y864hcq2r66ak37w4dsnkhnsfxaaacs0p5s4vj5676m6txwm",
+    "tickers": [
+     "HOPE",
+     "HOPE2"
+    ],
+    "dreps": [
+     {
+      "name": "Paul Ko",
+      "ada": 11916658,
+      "rank": 52,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ADI",
+    "pools": 1,
+    "ada": 15310292,
+    "pool": "pool1pfprlfz0ywcnewjegazz05ghgcfkvu40v6edsz6yn8w362sdjr8"
+   },
+   {
+    "name": "MANA",
+    "pools": 1,
+    "ada": 15154145,
+    "pool": "pool1tpy5yawzpetcverves0h6xdycxgrstehfvrkygydt9jcqxwpw3j"
+   },
+   {
+    "name": "MAVAN",
+    "pools": 2,
+    "ada": 14994239,
+    "pool": "pool1m4njkh73pdj90xxkgaz9dnh7gffweeupft8nfurlntg6cgqfmy8",
+    "tickers": [
+     "MAVAN"
+    ]
+   },
+   {
+    "name": "APEX",
+    "pools": 1,
+    "ada": 14889049,
+    "pool": "pool12wpfng6cu7dz38yduaul3ngfm44xhv5xmech68m5fwe4wu77udd",
+    "dreps": [
+     {
+      "name": "Apex Pool",
+      "ada": 293154,
+      "rank": 186,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1m62sl6rau",
+    "pools": 1,
+    "ada": 14618532,
+    "pool": "pool1m62sl6rauje9cknrkhwl39tc4hujudkd7gp478dpz7tagmjr8wm"
+   },
+   {
+    "name": "AMZ1",
+    "pools": 1,
+    "ada": 14558533,
+    "pool": "pool1mvl09pgsejrudghjhq79qurugrvqy3pceznp7f9vz63n7ku7jqx"
+   },
+   {
+    "name": "CASP",
+    "pools": 1,
+    "ada": 14482231,
+    "pool": "pool10tqeu6d03p6rnalqlvdshmpsljxaq2c0ww6draq6xm8lgyl2a3p"
+   },
+   {
+    "name": "PSB",
+    "pools": 1,
+    "ada": 14245638,
+    "pool": "pool17taqml487n9t4r9a6ppvf9qv0qlw2lu4zcrzwfdsfcv6xp7uqym"
+   },
+   {
+    "name": "POWER",
+    "pools": 1,
+    "ada": 14240258,
+    "pool": "pool1uk2f28awascuhrhuwrp7x6y87x8ch33vwx8jtmrysp7l5ngq78j"
+   },
+   {
+    "name": "BITA",
+    "pools": 1,
+    "ada": 14034816,
+    "pool": "pool1850xvydng5mkjzkwqw6566y7e6hsrgakc3y87jrnqrkrwdjua2p"
+   },
+   {
+    "name": "COSD",
+    "pools": 1,
+    "ada": 14009219,
+    "pool": "pool1e98xlcgj80c3rdmm27v5hnvrdtut52e65uk0ema7ctfag596vr2"
+   },
+   {
+    "name": "PUDIM",
+    "pools": 1,
+    "ada": 13969069,
+    "pool": "pool1ujcu3myfg9wwvdyh2ks653954lamtufy3lefjs73jrr327q53j4"
+   },
+   {
+    "name": "CEX",
+    "pools": 1,
+    "ada": 13713413,
+    "pool": "pool18jqumjfevywycjj54m62g74ghds4mmuyqynpwfkaem0xktazlqw"
+   },
+   {
+    "name": "YYG",
+    "pools": 1,
+    "ada": 13345856,
+    "pool": "pool1lp9wmr8dkcceta5we999nvlfh9um06cd6sggtt5523eawf7mtg4"
+   },
+   {
+    "name": "THOR",
+    "pools": 1,
+    "ada": 13227066,
+    "pool": "pool1grgycym8cf0xmgjjr7gx7udmkpu93hqaygysy5myx6ghx8dvl5r",
+    "dreps": [
+     {
+      "name": "THOR",
+      "ada": 412695,
+      "rank": 166,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "The Swimming Pool",
+    "pools": 2,
+    "ada": 13221340,
+    "pool": "pool1xxhs2zw5xa4g54d5p62j46nlqzwp8jklqvuv2agjlapwjx9qkg9",
+    "tickers": [
+     "SWIM",
+     "SWIM2"
+    ]
+   },
+   {
+    "name": "IBEX",
+    "pools": 1,
+    "ada": 12834442,
+    "pool": "pool16v0jqnz2zuqsdrf6z94ec5rx9ds0xeghsvmddauzt6j5w2u7lsm"
+   },
+   {
+    "name": "BANDA",
+    "pools": 1,
+    "ada": 12706859,
+    "pool": "pool1fm57fshvdlrgs5pnpk78tnxha0me28equyy96vj0xm85gy5chv0"
+   },
+   {
+    "name": "F4ADA",
+    "pools": 1,
+    "ada": 12653867,
+    "pool": "pool10efuydxjnasr0309lqklmj9xahupdnzqd59r5dqjeh4twz06tr0"
+   },
+   {
+    "name": "MYUJK",
+    "pools": 1,
+    "ada": 12366599,
+    "pool": "pool1c60f68y8406zjmacluvcu8c0krgngp6h2qkkqhdz4mtl62ns0dq"
+   },
+   {
+    "name": "ADAGE",
+    "pools": 1,
+    "ada": 12304866,
+    "pool": "pool1swe9nsv8lzugakjkfv04dn38scmq48wzynmn0lxasupuzmqcgjm"
+   },
+   {
+    "name": "ARM1",
+    "pools": 1,
+    "ada": 12257047,
+    "pool": "pool15txd36fltfgc63qq0yxtpqt88eu76s0yhugn9a6q7f4zspq6k5f"
+   },
+   {
+    "name": "JOY2",
+    "pools": 2,
+    "ada": 12249238,
+    "pool": "pool1udkx9rmgzf08z7zz4p7ykpdqsdv5nf0w8uf38wrsdn5dzk9nq4g",
+    "tickers": [
+     "JOY",
+     "JOY2"
+    ]
+   },
+   {
+    "name": "pool1f776th42g",
+    "pools": 1,
+    "ada": 12148975,
+    "pool": "pool1f776th42gqa5ammpj738evvnlga5jk4ll0gr4uupkrqnqpjsfyt"
+   },
+   {
+    "name": "CHIL",
+    "pools": 1,
+    "ada": 12042098,
+    "pool": "pool10eltx2wej46e62ulmwzm35xfu0azu47yvpjper7gwhncqe74vg6",
+    "dreps": [
+     {
+      "name": "Rodrigo-[CHIL]",
+      "ada": 36698571,
+      "rank": 28,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "AHL",
+    "pools": 1,
+    "ada": 11834764,
+    "pool": "pool1qqq6qqa0hpzvumv5p87ynczfmdj557xuwlc3289ke42g72z7f74"
+   },
+   {
+    "name": "CARDs",
+    "pools": 1,
+    "ada": 11674028,
+    "pool": "pool1jt7d6ak3m8gnjyxtuxfswe258xzwda80ndl0a57vv5m2zv8h6at",
+    "dreps": [
+     {
+      "name": "Porto Cripto DRep 🇧🇷 🇵🇹 (Atico & Bosco, from Cardanistas Stake Pool - CARDs)",
+      "ada": 3878935,
+      "rank": 80,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "STP",
+    "pools": 1,
+    "ada": 11340344,
+    "pool": "pool1ue4ngerz28nkpstsr5p53qvl5ulq3jtmllj4my0d0n28yyrn4l4"
+   },
+   {
+    "name": "ALPS",
+    "pools": 1,
+    "ada": 11233331,
+    "pool": "pool1zmfpd5r5vfwjmwm4cgy53exe58h7plnecny3t4948yw7zumzp4c"
+   },
+   {
+    "name": "AOTA",
+    "pools": 1,
+    "ada": 11127914,
+    "pool": "pool1hmmt5a9vyjtkz0tk6ywyyuhumt57hts5m89m9avgyyupveaejfr"
+   },
+   {
+    "name": "CAMP",
+    "pools": 1,
+    "ada": 11012920,
+    "pool": "pool1qmsck80ldwm23t4t5elxc857r82ph3urkt7tpyq65ntn2dv2ust"
+   },
+   {
+    "name": "ISP",
+    "pools": 1,
+    "ada": 10936550,
+    "pool": "pool1hkpgddlnya3pgktj3sxdraa8x8400vhaphcudvym9ye22esak43"
+   },
+   {
+    "name": "CARAT",
+    "pools": 1,
+    "ada": 10750608,
+    "pool": "pool1qetkrhjs9fll3nthuxk6zp0ssanf3rszg5wh8x79mg67gsg7vjv"
+   },
+   {
+    "name": "TREFI",
+    "pools": 1,
+    "ada": 10728130,
+    "pool": "pool1k7zrx5rw6cvef9m5qtp9sy4e53u93kwqx73ykz7md9gmwgf56yk"
+   },
+   {
+    "name": "FISH",
+    "pools": 1,
+    "ada": 10582549,
+    "pool": "pool1xlphlhnjvfeh40vcqf9fdewztsj6kyxq6604kaccpv00umjfu0d"
+   },
+   {
+    "name": "AURA",
+    "pools": 1,
+    "ada": 10575114,
+    "pool": "pool138s0uwydwtrhkaqj4uwkh37yqw098v9v6nf5q08k9nugumlf8mw"
+   },
+   {
+    "name": "GROW",
+    "pools": 1,
+    "ada": 10529655,
+    "pool": "pool1jk25l2pejpdzq8vdjlxrr05th49v9tgd78fqrtxvuw3rumpfc6t"
+   },
+   {
+    "name": "無双63 ADA POOL",
+    "pools": 2,
+    "ada": 10458048,
+    "pool": "pool1hjpax8lf2hmct63xxrspe9zzmmywcrzw89yg3nacu0axzy0latu",
+    "tickers": [
+     "GG63",
+     "SS63"
+    ]
+   },
+   {
+    "name": "MIMSA",
+    "pools": 1,
+    "ada": 10318534,
+    "pool": "pool1pj5jnehwjtt4esfl0325hr338n98v3kcww3sggce59ugyf2f883"
+   },
+   {
+    "name": "ADAfrog 2 🐸",
+    "pools": 2,
+    "ada": 10217869,
+    "pool": "pool1qqqqrwzy7njvjq9wph7usj5gghm3py9c97688ek8pgc7uem9cfz",
+    "tickers": [
+     "FROG",
+     "FROG2"
+    ],
+    "dreps": [
+     {
+      "name": "Kyle Solomon",
+      "ada": 5116353,
+      "rank": 74,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "RGDL",
+    "pools": 1,
+    "ada": 10069440,
+    "pool": "pool1rw29y8c5md2rm4ynkrqhpm9saatd0a0xzyyc6xudelgkww5junh"
+   },
+   {
+    "name": "KOPI",
+    "pools": 1,
+    "ada": 9932182,
+    "pool": "pool1ld9hkah2dkzh73pvh9tf6xr0x28us34msv3zcv2sase5vhvq962"
+   },
+   {
+    "name": "pool12hszgt63r",
+    "pools": 1,
+    "ada": 9906175,
+    "pool": "pool12hszgt63rau649xhfuy4mjmdukzpy0atyskd7hujl7zdxjv7e8c"
+   },
+   {
+    "name": "STACK",
+    "pools": 1,
+    "ada": 9880454,
+    "pool": "pool1jjry6f6q0swaq457ft9eclaxaskvrxnpj0v3w8edsyfryml3vj6"
+   },
+   {
+    "name": "BEAVR",
+    "pools": 1,
+    "ada": 9794194,
+    "pool": "pool1ty7lh3nvtwxlcpqg2x30fkr3j9ys6nprztr9m4zp3aajxyjk2vz"
+   },
+   {
+    "name": "PPCX1",
+    "pools": 1,
+    "ada": 9734341,
+    "pool": "pool1x0qm7xsyh2za3ltprxsgael544je4hg8tc3q3v5gv232z8jt4wp"
+   },
+   {
+    "name": "IOG",
+    "pools": 9,
+    "ada": 9733598,
+    "pool": "pool1mxqjlrfskhd5kql9kak06fpdh8xjwc76gec76p3taqy2qmfzs5z",
+    "tickers": [
+     "IOG1",
+     "IOGP"
+    ]
+   },
+   {
+    "name": "TIGER",
+    "pools": 1,
+    "ada": 9518987,
+    "pool": "pool1q9kwa675j2z53jecrs6pn3fqsc9ypxrsypu5dgu6hammqkagy22"
+   },
+   {
+    "name": "pool1g5gmej3cj",
+    "pools": 1,
+    "ada": 9438116,
+    "pool": "pool1g5gmej3cj67td4pmvmacnls8nuq0gjld2pwfeg3jwpxujdx6lmu"
+   },
+   {
+    "name": "CHEEK",
+    "pools": 1,
+    "ada": 9407526,
+    "pool": "pool1zj4h7kc6v53q9r8x3fwzfuayf2frwme8u5k86gu0uzeeuvqxgul"
+   },
+   {
+    "name": "DCONE",
+    "pools": 1,
+    "ada": 9369992,
+    "pool": "pool1xvaagsvl9prlr20hvg2qv434yss5c88r2ml6n43wcpepxmw85lj"
+   },
+   {
+    "name": "AACC",
+    "pools": 1,
+    "ada": 9318034,
+    "pool": "pool1mwp8ewtzmun0426v9z0h9um2amswgfzn78rckfl2fc3t5sy0m5g"
+   },
+   {
+    "name": "OTG",
+    "pools": 1,
+    "ada": 9257929,
+    "pool": "pool1eqj3dzpkcklc2r0v8pt8adrhrshq8m4zsev072ga7a52uj5wv5c"
+   },
+   {
+    "name": "Nerd Stake Pool",
+    "pools": 2,
+    "ada": 9211347,
+    "pool": "pool1u0mc9ywfxl529atxyajuz3pgqnwgnk6w7lejjmjg22ucvn7z9vh",
+    "tickers": [
+     "NERD",
+     "NERD2"
+    ]
+   },
+   {
+    "name": "pool164xvrnwxg",
+    "pools": 1,
+    "ada": 9206897,
+    "pool": "pool164xvrnwxg0xwhkcm0fsnlzmtj3ptp5s7hne32k4dyv60x4utfje"
+   },
+   {
+    "name": "CHOCO",
+    "pools": 1,
+    "ada": 9113404,
+    "pool": "pool125kh7e0y9lwya4sz5etmsk7hvga9jtfpuhw00vz9zvk6sh8xh5r"
+   },
+   {
+    "name": "OSAKA",
+    "pools": 1,
+    "ada": 9089719,
+    "pool": "pool1lhvpgr8lhsf6h03v9zqxm74pa63rdxx4yuvkqfw4tv9fua8t37a"
+   },
+   {
+    "name": "BBHMM",
+    "pools": 1,
+    "ada": 9014355,
+    "pool": "pool10p6wd9k0fwk2zqkqnqr8efyr7gms627ujk9dxgk6majskhawr6r"
+   },
+   {
+    "name": "SNEK",
+    "pools": 1,
+    "ada": 9002459,
+    "pool": "pool1q9049mstrv5czwyylpf3xen08pmvsfsgtru4wf3zvc9uxat2sm0"
+   },
+   {
+    "name": "000",
+    "pools": 1,
+    "ada": 8853578,
+    "pool": "pool1q80jjs53w0fx836n8g38gtdwr8ck5zre3da90peuxn84sj3cu0r"
+   },
+   {
+    "name": "SODM",
+    "pools": 1,
+    "ada": 8827110,
+    "pool": "pool18vj02k4taarxxsdr36jxftcc5x270vsysp078j0n3v0njh0dt9x"
+   },
+   {
+    "name": "YOON",
+    "pools": 1,
+    "ada": 8812220,
+    "pool": "pool1lxqewhueg4hzyad766zhdwsjet5348ww8mzejf6fprxaw8wfq5s"
+   },
+   {
+    "name": "CDNTH",
+    "pools": 1,
+    "ada": 8672578,
+    "pool": "pool10scv5quxduhrcc26wpurhk743dngspe8dc3zpkkam0svyx6ejx3"
+   },
+   {
+    "name": "NAHA",
+    "pools": 1,
+    "ada": 8455718,
+    "pool": "pool1c3kxs76qj58284f923cx7ed8vw25en3nfghyurv0z9m2g3x9c4j"
+   },
+   {
+    "name": "pool1yt868wrp9",
+    "pools": 1,
+    "ada": 8289043,
+    "pool": "pool1yt868wrp9s2x5pehe96del9m3nwasme62yw02vww3kg6zwzspcz"
+   },
+   {
+    "name": "FARM",
+    "pools": 1,
+    "ada": 8257909,
+    "pool": "pool1dpu6kslgxlg3ccrwxldl8e6r7ylnq0yalafmucp0yc7k6qegtt0"
+   },
+   {
+    "name": "SGTRS",
+    "pools": 1,
+    "ada": 8195766,
+    "pool": "pool1les50pm26wpf8gym7cda470xgfswukzhyykvhyfsfl4dcu2ezj4"
+   },
+   {
+    "name": "4KOMA",
+    "pools": 1,
+    "ada": 8151258,
+    "pool": "pool16rahfu936wdfq34wf6t8rqxvdjxayra5f7y80xq0udnqglrqel9"
+   },
+   {
+    "name": "BEAST Pool",
+    "pools": 2,
+    "ada": 8087339,
+    "pool": "pool1cq25dmlt5974x8tqg3e4dlzvrxefcce2atpnwlfp7ad5ugec9fp",
+    "tickers": [
+     "BEAST"
+    ]
+   },
+   {
+    "name": "NINI",
+    "pools": 1,
+    "ada": 8084363,
+    "pool": "pool1rcd7qslz3xnpnk9u6tcwegy5r2574uf8suqu24ptg637jha3sr5"
+   },
+   {
+    "name": "SCARdano",
+    "pools": 2,
+    "ada": 7844817,
+    "pool": "pool1u4sxd6x0qsy7evljt24vtnyhpxd098n609sfcmly6c096mr3jgq",
+    "tickers": [
+     "SCAR",
+     "SCAR2"
+    ]
+   },
+   {
+    "name": "21ADA",
+    "pools": 1,
+    "ada": 7814678,
+    "pool": "pool170hmssk80z2ameg7jhj5m8psnkjejcc77vfpd0875yggxhhntd0"
+   },
+   {
+    "name": "TAPSY",
+    "pools": 1,
+    "ada": 7664453,
+    "pool": "pool16tcjctesjnks0p8sfrlf8f3d3vrp2fdn2msy80sgg3cdjtayu3z"
+   },
+   {
+    "name": "CFLOW",
+    "pools": 1,
+    "ada": 7566615,
+    "pool": "pool1u7mqtde27swkarngjsn5mmw3sy20zavlafgqkmg8qv2n2nwga0l"
+   },
+   {
+    "name": "pool1kjhpg98jh",
+    "pools": 1,
+    "ada": 7532039,
+    "pool": "pool1kjhpg98jhm08usqg4sh5x9esa595apyw75qczyjp3z24g0cdate"
+   },
+   {
+    "name": "QXT",
+    "pools": 1,
+    "ada": 7475061,
+    "pool": "pool1x5dfpgp987e4jhxvgczr3wv50nv2pwd873tlx3uthvcasm422q6"
+   },
+   {
+    "name": "ZEIT",
+    "pools": 1,
+    "ada": 7414035,
+    "pool": "pool1ev8fwfccn8gr0zcz3uyps0t0mcrefc6s95wjc6aed3ngc86y5rk"
+   },
+   {
+    "name": "SQQQ",
+    "pools": 1,
+    "ada": 7305776,
+    "pool": "pool1jvknf3dwtnqln5hcjrh5m7s979revuj5dlxr0337nwmm6p7250q"
+   },
+   {
+    "name": "LEAD",
+    "pools": 1,
+    "ada": 7276765,
+    "pool": "pool1a3kdettzvvlqvkl9m9hwe63ggeq5fgvz0twqew5c62dzx99vsed",
+    "dreps": [
+     {
+      "name": "LEADStakePool",
+      "ada": 3525828,
+      "rank": 84,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "SA8",
+    "pools": 1,
+    "ada": 7246049,
+    "pool": "pool1a3ekt9me035qgju0en2w39vjns9ggtewnc9fugsmpgczvgtl6u9"
+   },
+   {
+    "name": "NOSP",
+    "pools": 1,
+    "ada": 7067229,
+    "pool": "pool1axngzl8clfn6pnjaf4w5r0q4tgcwktv0zcuxnn32hl995pthddr"
+   },
+   {
+    "name": "mtma",
+    "pools": 1,
+    "ada": 6977830,
+    "pool": "pool1tp7fzx8w3lrwwuwff9x7nlqr4r5n0awpq0krwnahvj387n7y22h"
+   },
+   {
+    "name": "NUTS",
+    "pools": 1,
+    "ada": 6958567,
+    "pool": "pool1pu5jlj4q9w9jlxeu370a3c9myx47md5j5m2str0naunn2q3lkdy"
+   },
+   {
+    "name": "ADACH",
+    "pools": 1,
+    "ada": 6895568,
+    "pool": "pool1efacpnedlfrhe9sa6s4jzq839s5q4qdrl70em0za57xg6t38d3s"
+   },
+   {
+    "name": "ASAHI",
+    "pools": 1,
+    "ada": 6829838,
+    "pool": "pool12qtv7kyrx8g0d5890alk6dkc6n6nyfx80synspvqafjrqd3ergz"
+   },
+   {
+    "name": "CRICH",
+    "pools": 1,
+    "ada": 6541003,
+    "pool": "pool1ezmnjmu9fw36ftprczhwhvqd60syaclpp74keu0yj7rty7r3dna",
+    "dreps": [
+     {
+      "name": "CryptoRich (CRICH)",
+      "ada": 2850730,
+      "rank": 93,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "BLOCK",
+    "pools": 1,
+    "ada": 6470641,
+    "pool": "pool1cc76kmtcpf6vht32ya5ke9er74dnpy4jh5qpy4klqwp87ygdsu6"
+   },
+   {
+    "name": "PEGA",
+    "pools": 1,
+    "ada": 6342542,
+    "pool": "pool1hwlghkwnjsjk8370qt3dvp23d7urwm36f95fmxcz3np2kghknj9"
+   },
+   {
+    "name": "ASC",
+    "pools": 1,
+    "ada": 6295701,
+    "pool": "pool1zmhvvzlqp0xrhhqjhxyvfuct83wk4w85jckfkypz4fskcjzze2x"
+   },
+   {
+    "name": "BAIDU",
+    "pools": 1,
+    "ada": 6230340,
+    "pool": "pool1c86ul4pnqvu7jzag8fjdy6dgrn6pt4ad4vmyq038hyg0wl2kaed"
+   },
+   {
+    "name": "BNTY1",
+    "pools": 1,
+    "ada": 6221888,
+    "pool": "pool1dmqzwuql5mylffvn7ln3pr9j7kh4gdsssrmma5wgx56f6rtyf42"
+   },
+   {
+    "name": "CAN1",
+    "pools": 1,
+    "ada": 6198599,
+    "pool": "pool12eht6dqxpzqj87xuextrpufz2gxmt4reuesuw26r2utzw0kw906"
+   },
+   {
+    "name": "Masterstake",
+    "pools": 2,
+    "ada": 6170334,
+    "pool": "pool1qqqq4md2rfdt75qvh3x9cgmkrgkl74ctcj3fnxpu3ylcudl22ex",
+    "tickers": [
+     "MASTR"
+    ]
+   },
+   {
+    "name": "UNDR",
+    "pools": 1,
+    "ada": 6140317,
+    "pool": "pool140x77a7cz2j689lmxf836qpjtc3y83rka28v6gpswxdw2mag62e"
+   },
+   {
+    "name": "SOCIO",
+    "pools": 1,
+    "ada": 6101495,
+    "pool": "pool1g2y0j7rsv7dpu8p6jt2dva3rxfqjl2zu0ag9dd0cfm8guzg0lh0",
+    "dreps": [
+     {
+      "name": "Socious",
+      "ada": 28129930,
+      "rank": 36,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "KRSNA",
+    "pools": 1,
+    "ada": 6095386,
+    "pool": "pool1zc7vxe3ymyej76h8wu8gm79chtt7w9c3adkza4uhrjvagr9w4zp"
+   },
+   {
+    "name": "PONTA",
+    "pools": 1,
+    "ada": 6052756,
+    "pool": "pool1hkr5zcthjvcn3ffncc4jqk5ctxxfrk37h7uddqnvxd4cu872nrt"
+   },
+   {
+    "name": "WRFGS",
+    "pools": 1,
+    "ada": 6042470,
+    "pool": "pool1dmnyhw9uthknzcq4q6pwdc4vtfxz5zzrvd9eg432u60lzl959tw"
+   },
+   {
+    "name": "NGS",
+    "pools": 1,
+    "ada": 6034908,
+    "pool": "pool16jefdagcsgzyek9jytzfezx5ajvfkytjgghaps64hzz6uzkpc0e"
+   },
+   {
+    "name": "EARN",
+    "pools": 1,
+    "ada": 6000917,
+    "pool": "pool10jn0wjlh9y3w2ygq84u2llvlnxfz3lc4g0ssqlmpp3w3y2d2lw5"
+   },
+   {
+    "name": "JSP",
+    "pools": 1,
+    "ada": 5982133,
+    "pool": "pool1dhf4dt395f0c0ujnscazvzvw73ynzgwvtf5k4y9c907hwjdyaq4"
+   },
+   {
+    "name": "SMILE",
+    "pools": 1,
+    "ada": 5951393,
+    "pool": "pool1ea34czsr90yc63fmv4gj4tetp7ds7c4jhpj6vqg4yw40wvygdl3"
+   },
+   {
+    "name": "pool1u99x2rr6t",
+    "pools": 1,
+    "ada": 5946477,
+    "pool": "pool1u99x2rr6trfznwakv0959llmxmtgc2nvanc067uugl3ejuvvnc8"
+   },
+   {
+    "name": "ADAAP",
+    "pools": 1,
+    "ada": 5918187,
+    "pool": "pool1djg8jsygtculv3q2qdrxtnpxfq003pdxcvlw2pvfupq7jm5xpgp"
+   },
+   {
+    "name": "VINCE",
+    "pools": 1,
+    "ada": 5914868,
+    "pool": "pool1lqpymyzg9glc88r7urptuv0d8t2tu9ty7xtshvxmgpu0j4lp8p3"
+   },
+   {
+    "name": "PSYA",
+    "pools": 1,
+    "ada": 5864719,
+    "pool": "pool1zytydvyy3qztrs8l2xyggvkfcjctp23m2hc3aj7sudnzgny79cg"
+   },
+   {
+    "name": "LUKE",
+    "pools": 1,
+    "ada": 5840744,
+    "pool": "pool1hqwxta8p0j8ffkyle5mf6yg80tucqzh8q9mszws60xe5ja06nwa"
+   },
+   {
+    "name": "RKD",
+    "pools": 1,
+    "ada": 5815313,
+    "pool": "pool1rxgxstg6t7azlsrk4vuuwp0jgl9e776dg86zqzaa0qt6vz43n9r"
+   },
+   {
+    "name": "KYBK",
+    "pools": 1,
+    "ada": 5761767,
+    "pool": "pool1etfxpqw7456eh337p7x5jsvxxa67fsduvnmucevrqweckex3nhl"
+   },
+   {
+    "name": "LONDN",
+    "pools": 1,
+    "ada": 5722019,
+    "pool": "pool18v9r8afalh50l4lstct2awdc3zspnvurcs7t45nv29uc2mnxc6c"
+   },
+   {
+    "name": "OUROS",
+    "pools": 1,
+    "ada": 5688404,
+    "pool": "pool10p3g22454ly7eaurlur5wc9d9ual2fnfwy7a6e7k09z3yf929k9"
+   },
+   {
+    "name": "pool1yraracv4n",
+    "pools": 1,
+    "ada": 5576988,
+    "pool": "pool1yraracv4ntq9azvjw2nkw8g4xluujalz8fpt2stz8rw6k0zueuv"
+   },
+   {
+    "name": "Iagon liquidity stake pool",
+    "pools": 2,
+    "ada": 5542446,
+    "pool": "pool1ztk6dcj2nc3plnujf3ek6jqngtx8hcryufz56lyumemlcy2xxn0",
+    "tickers": [
+     "IAGL1",
+     "IAGL2"
+    ]
+   },
+   {
+    "name": "TAM",
+    "pools": 1,
+    "ada": 5485470,
+    "pool": "pool18xjkr4xpscwxsatewj9lqc6z74vw90qycjd0wrypeqej673j5u8"
+   },
+   {
+    "name": "pool1ntfxj2jgv",
+    "pools": 1,
+    "ada": 5296505,
+    "pool": "pool1ntfxj2jgvhzen8e86ed679ctukar3vj538ywyyq8ryld66jj4sx"
+   },
+   {
+    "name": "KysenPool Thunder",
+    "pools": 2,
+    "ada": 5263141,
+    "pool": "pool1fyp482ntshhm9zfz4nv7pmsaeakscf5mnuzcxuvtqf6t56fc7l0",
+    "tickers": [
+     "KYSN",
+     "KYSN2"
+    ],
+    "dreps": [
+     {
+      "name": "KysenPool_KYSN_KYSN2",
+      "ada": 571794,
+      "rank": 160,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "WSKS",
+    "pools": 1,
+    "ada": 5254866,
+    "pool": "pool1py6q7y3f7jz60mt5jhsrdx6lqtuvc02chqgvwzjzayctqhgzzge"
+   },
+   {
+    "name": "STAR",
+    "pools": 1,
+    "ada": 5233120,
+    "pool": "pool1prnv2zg6hpf34hyqf9eqmkxxpxqr4phq7hs8cmehyhvxz2gsrpm"
+   },
+   {
+    "name": "ATRMN",
+    "pools": 1,
+    "ada": 5188256,
+    "pool": "pool1pgmuramw9waw9ckxsvpxmcn9p6fd4xl5jmavu8jje0x5vuc00l0"
+   },
+   {
+    "name": "RAMEN",
+    "pools": 1,
+    "ada": 5151125,
+    "pool": "pool1y53awxsm6cmksp8qht8qfq5f5c69t6mrgrdcresk5y0ecv2yj93"
+   },
+   {
+    "name": "BCW",
+    "pools": 1,
+    "ada": 5059175,
+    "pool": "pool1wun8t7nt4daw2zgv0vj7cmwru97vsw0fccucjzuvs7y0qlc8xyv"
+   },
+   {
+    "name": "FIDA",
+    "pools": 1,
+    "ada": 5013773,
+    "pool": "pool1jj2hvts3ryffy5txm7w0am3zt7s7sehdf8rrwfesjmr7shv0mgl"
+   },
+   {
+    "name": "PIVT",
+    "pools": 1,
+    "ada": 4989230,
+    "pool": "pool1l3wdq3cec23jadkt2cx384vtgd75ncau33smrptwj87n2wedc0d"
+   },
+   {
+    "name": "VEGAS",
+    "pools": 1,
+    "ada": 4918442,
+    "pool": "pool1df9rj4n0t3zlpak7xnh4ue6t3yh9zlw7a02w4l8askp77up25rt"
+   },
+   {
+    "name": "ASTRA",
+    "pools": 1,
+    "ada": 4865335,
+    "pool": "pool1qvhss6kxmtl27nr4ugvypayhvt4a4vzll8p9csdg2v8q7d22llu"
+   },
+   {
+    "name": "ADA Labo",
+    "pools": 2,
+    "ada": 4811596,
+    "pool": "pool10pd44d65586rldtdzuu88e7mn4sxjctvdksmt05nnqfzqu7g7hd",
+    "tickers": [
+     "ALAB",
+     "RDB"
+    ],
+    "dreps": [
+     {
+      "name": "ADA_Labo",
+      "ada": 2825948,
+      "rank": 94,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "OKNW",
+    "pools": 1,
+    "ada": 4809980,
+    "pool": "pool1vflcm2fde9qyzcr0lkkv4httte3xep6sycasrtaxw6rt2me3vwp"
+   },
+   {
+    "name": "PLNGT",
+    "pools": 1,
+    "ada": 4800691,
+    "pool": "pool16cerhwlk8nq7rpuerr4g08tpgeq7awnhgxzkyalc8n8xjwzxqm3"
+   },
+   {
+    "name": "AKYO",
+    "pools": 1,
+    "ada": 4781899,
+    "pool": "pool1jsxk3ymqv2gdc6mhqk52544g2aun4zhq5wgx6n32l5s3jlne70n"
+   },
+   {
+    "name": "LEGA",
+    "pools": 1,
+    "ada": 4750425,
+    "pool": "pool1ytszp582dm9u5un6mevt9czgcnuqhflwfr9ly4ukpeqcughryqh"
+   },
+   {
+    "name": "lSPF0",
+    "pools": 1,
+    "ada": 4677343,
+    "pool": "pool1072lq3k32sfxs96s9qhrx3s9la2t68vrqwfsp7h9qnwk56yr2mv"
+   },
+   {
+    "name": "PHRCK",
+    "pools": 1,
+    "ada": 4607635,
+    "pool": "pool1pnzwgsgzd6t4788sfr7dxjyusepyq9xaxnpyfcngewqf29t9ayd"
+   },
+   {
+    "name": "Cardano Dan's Stake Pool",
+    "pools": 2,
+    "ada": 4590808,
+    "pool": "pool1nhls8e9swnyshldgjknku4npreax075nw0ltrkmrarh4w3skxt9",
+    "tickers": [
+     "DAN",
+     "DAN2"
+    ]
+   },
+   {
+    "name": "HADA",
+    "pools": 1,
+    "ada": 4584218,
+    "pool": "pool1rqgf6qd0p3wyf9dxf2w7qcddvgg4vu56l35ez2xqemhqun2gn7y"
+   },
+   {
+    "name": "BRADA",
+    "pools": 1,
+    "ada": 4503963,
+    "pool": "pool1wz27a9pvd2jat98s375lxaaj7qxy405km4vzp83wn5vtwp59kvh"
+   },
+   {
+    "name": "GENE",
+    "pools": 1,
+    "ada": 4484479,
+    "pool": "pool19ae6xhzsscypyha0sszv90xwjsh20hxecxjpcqynshfawvwxqnn"
+   },
+   {
+    "name": "LBA",
+    "pools": 1,
+    "ada": 4445799,
+    "pool": "pool1h59405hmvnxz2kyjpll3f65lnqhm7we3u96cws9vzzxzzws9gjc"
+   },
+   {
+    "name": "GRANA",
+    "pools": 1,
+    "ada": 4430442,
+    "pool": "pool10fxpa6wkv0wc6wcmahcnz4wvvfx9m7547sevxrge3nfuv7yh8m0"
+   },
+   {
+    "name": "PXLZ",
+    "pools": 1,
+    "ada": 4415653,
+    "pool": "pool1enul577he3e0s500lv8z98m6k936uecz2rpckxxmmk8c7k0n2rd"
+   },
+   {
+    "name": "ARRA",
+    "pools": 1,
+    "ada": 4410232,
+    "pool": "pool1cew2q6pge250exctkq26lyl0w95923xxa54thd79nv8xy9j3xe6"
+   },
+   {
+    "name": "CONGE",
+    "pools": 1,
+    "ada": 4368172,
+    "pool": "pool1fxmancs3dmc9l0s7u7zrj8334m9nvzam5t5hnuuf4c7cjr6867m"
+   },
+   {
+    "name": "CBH",
+    "pools": 1,
+    "ada": 4361402,
+    "pool": "pool1cspe7naf0mtntwyysqxk6czah3jlh6v4cja8pdfju932yxsehnm"
+   },
+   {
+    "name": "DDOS",
+    "pools": 1,
+    "ada": 4334837,
+    "pool": "pool15k0zeppza4qzgf6z7wmwsgvl5rz9f6489zxhrxqa8dj6jzju6ct"
+   },
+   {
+    "name": "pool1gnnwyf9vw",
+    "pools": 1,
+    "ada": 4278657,
+    "pool": "pool1gnnwyf9vwcgtm3us0w0duuy43r9k7yhnchvyx0xqv9766ysw2a9"
+   },
+   {
+    "name": "SWEET",
+    "pools": 1,
+    "ada": 4257087,
+    "pool": "pool165zu45p489lpuypt4fsuc5g8l9g9ha4dddlls84jlsp3k4vsw9p"
+   },
+   {
+    "name": "CANUK",
+    "pools": 1,
+    "ada": 4217453,
+    "pool": "pool1fh4sh2telea0tfdy39h0drx6uq566yt9gf24edpz7335sclx39z"
+   },
+   {
+    "name": "AMOON",
+    "pools": 1,
+    "ada": 4154178,
+    "pool": "pool1qkd5y9azf2xx0gmrj68lrkcn59ldjmnpzd3y2rq3tvjp2vqljan"
+   },
+   {
+    "name": "SEAL",
+    "pools": 1,
+    "ada": 4144538,
+    "pool": "pool104v7kzpq86r0wnfsz8r7jeld2raap92qq84trjcqk62zyh9akqt"
+   },
+   {
+    "name": "CEMA1",
+    "pools": 1,
+    "ada": 4133861,
+    "pool": "pool1t9m69j5thv2ke9jt9hhsgxlag44z7erp2s2ukcpruwhwqarc9np"
+   },
+   {
+    "name": "ADP",
+    "pools": 1,
+    "ada": 4118677,
+    "pool": "pool1jpz5m45ff4r6tnq7n5tw63fkhpmw3cyv8sn569w24x8lj3kl68c",
+    "dreps": [
+     {
+      "name": "Adapolis_Stakepool",
+      "ada": 2256106,
+      "rank": 104,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "1STEP",
+    "pools": 1,
+    "ada": 4069434,
+    "pool": "pool1ar6nsa2uzng70uf8fdrttu5jhgxzgu2f4za8h845zr435nfcruw"
+   },
+   {
+    "name": "CheapStaking",
+    "pools": 2,
+    "ada": 4068340,
+    "pool": "pool1e556526sqwugxwnmeumt9lhj5jukklg8vv3ynk75xt9vs7adr5y",
+    "tickers": [
+     "CHEAP"
+    ]
+   },
+   {
+    "name": "PLTUS",
+    "pools": 1,
+    "ada": 4020445,
+    "pool": "pool1uq8l234306m76unyz8kuwnkvmtvazaks6vuvyx3a3khngavvcw0"
+   },
+   {
+    "name": "WMOPS",
+    "pools": 1,
+    "ada": 3969593,
+    "pool": "pool1k0xa8wlsntmjhtw2shj3tspqd4kjyquw9tuyx5s7zz5jsyw4y2p",
+    "dreps": [
+     {
+      "name": "WMOPS",
+      "ada": 5344149,
+      "rank": 72,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "LEAP",
+    "pools": 1,
+    "ada": 3962771,
+    "pool": "pool154xmvhp4jnz7phwcla09uvzqnn3ch54lh2yzrt2znxdgc4trp8x"
+   },
+   {
+    "name": "VOLT",
+    "pools": 1,
+    "ada": 3953197,
+    "pool": "pool106p2jjwuwagq2as7cdzx4y6cyc2pdj7a3h3vv5cvkvnskegff3w"
+   },
+   {
+    "name": "pool1xzu4pva0k",
+    "pools": 1,
+    "ada": 3928248,
+    "pool": "pool1xzu4pva0k4y6geukd9uvvl3t3s8q8alzwahf575y5fj6cnkd5y2"
+   },
+   {
+    "name": "CALM",
+    "pools": 1,
+    "ada": 3913633,
+    "pool": "pool1pmrgd8snhv0nnj97xcg70nqqhg0v9g3d0e93jl8vn23wxtsxz53"
+   },
+   {
+    "name": "HIT",
+    "pools": 1,
+    "ada": 3913038,
+    "pool": "pool1hezakp5r240dy4fcsm7mfd3qqahcvyrhj8hl770yxmxxzdwvcre"
+   },
+   {
+    "name": "RPSP",
+    "pools": 1,
+    "ada": 3896113,
+    "pool": "pool1tj3u8pz6732uy2ut3s90e0j880jyu9j0ve9vtu9zj5xzglhdlqy"
+   },
+   {
+    "name": "GRAB",
+    "pools": 1,
+    "ada": 3894226,
+    "pool": "pool1fmgus36uc0jf0wlspfvzwfn04mz34kwrensmqgfzkv7t58dejw4"
+   },
+   {
+    "name": "HEDGE",
+    "pools": 1,
+    "ada": 3891087,
+    "pool": "pool19q034g07ka2ltwc3wwjeu79w29nlafc0w2ppne5ppu5wud60rgq"
+   },
+   {
+    "name": "247",
+    "pools": 1,
+    "ada": 3830834,
+    "pool": "pool1fuzqy5r9x98826zv6wp40tr27uplemmstkd57cuw8jh5v5m90vn"
+   },
+   {
+    "name": "NIMUE",
+    "pools": 1,
+    "ada": 3799847,
+    "pool": "pool1drv9qkh2tgqqucc0jp8cwswpmmkfzdd898ja7ac0uwm9j5d44tq",
+    "dreps": [
+     {
+      "name": "Nimuë Lady of the Lake Pool",
+      "ada": 1605567,
+      "rank": 112,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "GURU",
+    "pools": 1,
+    "ada": 3769121,
+    "pool": "pool1j6zqawj6f58lp4p00t26eqe58gxx4pa3cudlzpkv23y92nlxjzd"
+   },
+   {
+    "name": "HOSKY",
+    "pools": 1,
+    "ada": 3735082,
+    "pool": "pool19m98gdj84d4kxem5h6ch8fvj92pvauhg0y4ktmzr3mln6c45yly",
+    "dreps": [
+     {
+      "name": "HOSKY",
+      "ada": 34831741,
+      "rank": 29,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "EUR",
+    "pools": 1,
+    "ada": 3709338,
+    "pool": "pool18gysxqfwz4j8rm3vlh6677vs9n23prvfr7gwe88mhn5uudgx9ng"
+   },
+   {
+    "name": "HAZEL",
+    "pools": 1,
+    "ada": 3676971,
+    "pool": "pool1h6q8jj55dn6727yydlypu0rz4sflf2enxhs0thqydmddgu3shl5"
+   },
+   {
+    "name": "CPS",
+    "pools": 1,
+    "ada": 3671299,
+    "pool": "pool1qqlf3epa7m8780p2jx5689u2ql06tw026l5377tptk2zswrc645"
+   },
+   {
+    "name": "Black Star Stake Pool",
+    "pools": 2,
+    "ada": 3670903,
+    "pool": "pool1druxd2syfrvqvepxh60fz0qhralcesruphh5atujuh0jktjy0ma",
+    "tickers": [
+     "BSSP",
+     "BSSP2"
+    ]
+   },
+   {
+    "name": "ASKP",
+    "pools": 1,
+    "ada": 3615605,
+    "pool": "pool15j6hdfel6c6zcr8gu39qgp5xkrs264yn9hm8ynhaydjtxvmznxq"
+   },
+   {
+    "name": "LSSP",
+    "pools": 1,
+    "ada": 3609808,
+    "pool": "pool1q8a7ym63gurl72wr32je0tv0lp4p2uh8vzzc6rn6un7ryslvqmu"
+   },
+   {
+    "name": "99% CSWAP DEX ISPO Pool [CSWP1]",
+    "pools": 2,
+    "ada": 3564349,
+    "pool": "pool165ljt7xrrpceutz5ppe96suuw0jcnrvhg0f5vu60df0r5mt0x0c",
+    "tickers": [
+     "CSWP1",
+     "CSWP2"
+    ]
+   },
+   {
+    "name": "DEW",
+    "pools": 1,
+    "ada": 3560467,
+    "pool": "pool1rpjjz68kmmetyxztmrstrwgz8lxf6v0d7vqgw98r5x8rc50jrdf"
+   },
+   {
+    "name": "AMSNL",
+    "pools": 1,
+    "ada": 3543451,
+    "pool": "pool1uy2z02pn4lczk7p2plvnkzrmltxmqs2t04d9ghx5t0vw6e4t0qn"
+   },
+   {
+    "name": "ADA",
+    "pools": 1,
+    "ada": 3527158,
+    "pool": "pool1heks0vmxkfka2amg9c8yn8qdsxvgmzelfx6jhpfkj8ht5mn0r2m"
+   },
+   {
+    "name": "ONLY",
+    "pools": 1,
+    "ada": 3517787,
+    "pool": "pool19v4jgpxxl72eaq8pefctatvts3gkhtyzd8nwvzskkm3mkdv2tpy"
+   },
+   {
+    "name": "SEBI",
+    "pools": 1,
+    "ada": 3493604,
+    "pool": "pool189lfh7azuvxu0hyskwahnp35rtez0mzhsmule3742p3jkza00cq"
+   },
+   {
+    "name": "NASEC",
+    "pools": 1,
+    "ada": 3470918,
+    "pool": "pool1429egqgv60r3nxlp6cvs08qcffv7duddjvyjd0pt6wzhj7akda8"
+   },
+   {
+    "name": "RIDGE",
+    "pools": 1,
+    "ada": 3470675,
+    "pool": "pool1apupv5qtfp2aa2xlrzzjzx0uj686g3n695a329nq8j5jvvzumz0"
+   },
+   {
+    "name": "4GOOD",
+    "pools": 1,
+    "ada": 3441543,
+    "pool": "pool19ht066hngsjfnv3mfsc8u9fgzl4w5qcrmh8l6zppwph6s2t7jn4"
+   },
+   {
+    "name": "1112",
+    "pools": 1,
+    "ada": 3436538,
+    "pool": "pool1522rtve5zlgnlh3zm5a4mcy3u7gpndg3kkac3xyzxmp6x6weca3"
+   },
+   {
+    "name": "QCPOL",
+    "pools": 1,
+    "ada": 3423443,
+    "pool": "pool1c2utlagkpht4zj0jetsf245c258geuxnjqp9kf4f2z9rutx9dz4"
+   },
+   {
+    "name": "RATS",
+    "pools": 1,
+    "ada": 3418877,
+    "pool": "pool1tcmk6at0dmkytxgq5j4u7fgsx9kytvfu7gz22lrs8hp9ztu7arw"
+   },
+   {
+    "name": "NVL",
+    "pools": 1,
+    "ada": 3396708,
+    "pool": "pool1uu65k00dp467qsszmqwl6udwnet3zszgx8n3kmn2aq84sae8ha9"
+   },
+   {
+    "name": "8964",
+    "pools": 1,
+    "ada": 3391248,
+    "pool": "pool1agwy5atgc4ptg3whplaxyz28g4dgvsna8auktszctkq8xmtl7dh"
+   },
+   {
+    "name": "ISPJ",
+    "pools": 1,
+    "ada": 3340276,
+    "pool": "pool1vce30junxx06g2ha8ww02cqgy644yj69ehhg2x95qe7323zfznp"
+   },
+   {
+    "name": "BANK",
+    "pools": 1,
+    "ada": 3314677,
+    "pool": "pool1m3h5p82m6v99nda37rmed8vrkqt43e2a8d89k76gw5ets0gdyag"
+   },
+   {
+    "name": "VINCI",
+    "pools": 1,
+    "ada": 3313590,
+    "pool": "pool1j8grqucdwwcr0cwzxrtw30vqcptg0jdlrmauq5w7ytvqx6nf5np"
+   },
+   {
+    "name": "OKYM",
+    "pools": 1,
+    "ada": 3192264,
+    "pool": "pool14hhs6ruwnuaf4fzsmx89mvmjl2qhyy5jnzyk2le03886kj6z9yp"
+   },
+   {
+    "name": "CETH",
+    "pools": 1,
+    "ada": 3172617,
+    "pool": "pool1j6490a90qefvsqxdurf99z9ld50rtthaz9ms6c8xh78s52veuq2"
+   },
+   {
+    "name": "ISPF",
+    "pools": 1,
+    "ada": 3172181,
+    "pool": "pool1ck8rqpxp7j8kyzutk856fnvgm8xsqmuh922wkeeg32ekjjrvtc0"
+   },
+   {
+    "name": "UKADA",
+    "pools": 1,
+    "ada": 3170488,
+    "pool": "pool1wwzctexlp70mj00vv65mlhwhwresn58s9x7jl4tswvkg77eu7n7"
+   },
+   {
+    "name": "SPP",
+    "pools": 1,
+    "ada": 3132131,
+    "pool": "pool1y9rdlv5tksudwrx47afjx47grd4tyh24zccffjtp32u0cfpegvk"
+   },
+   {
+    "name": "EPOCH",
+    "pools": 1,
+    "ada": 3101510,
+    "pool": "pool1q0jmr57udknpq8k5qtgt5vgdjq9pzrzevf68966wxn8zgz7qy3w",
+    "dreps": [
+     {
+      "name": "No stress",
+      "ada": 2491708,
+      "rank": 99,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "SAGE",
+    "pools": 1,
+    "ada": 3077072,
+    "pool": "pool1hjjj584gq0ynqf06g036a4a0stpm90asrdfskpasqjxf5948ygv"
+   },
+   {
+    "name": "ONE1",
+    "pools": 1,
+    "ada": 3007876,
+    "pool": "pool1n2yp66zk6m33sg8k20hsvmk9tw7xeeswzdcfxhnx9hm9jkxv5k4"
+   },
+   {
+    "name": "ANET",
+    "pools": 1,
+    "ada": 2991849,
+    "pool": "pool1xwqye6mlftwjg706acz5fjqz7gmf4qdye99zsjl03a4ru68ghee"
+   },
+   {
+    "name": "MYB",
+    "pools": 1,
+    "ada": 2967085,
+    "pool": "pool1mcwcfl96ew79rmj4zxehr33p55e4e62dt4whyr2vqesswp9mmvz"
+   },
+   {
+    "name": "LGC",
+    "pools": 1,
+    "ada": 2930240,
+    "pool": "pool13xzckaj3srgldr67dksx874jxe3c9xnc245xyr44p7cdxh07hft"
+   },
+   {
+    "name": "LOOT",
+    "pools": 1,
+    "ada": 2915422,
+    "pool": "pool1s6x6kltycpxq82hyqhlqllqj3q5l2m8w499gvtu4xrfv29c0q2q"
+   },
+   {
+    "name": "KIND",
+    "pools": 1,
+    "ada": 2904452,
+    "pool": "pool1j6dh3ynys827j38976q0q3s3c9hpzgx40kjcq4472h6m7d3t0hm"
+   },
+   {
+    "name": "SAND",
+    "pools": 1,
+    "ada": 2881708,
+    "pool": "pool1gqvrgg7zycvf65ydkjeph72t0yx0f5ykzd9f477zh4f3smwk997"
+   },
+   {
+    "name": "0PCT",
+    "pools": 1,
+    "ada": 2870095,
+    "pool": "pool17rns3wjyql9jg9xkzw9h88f0kstd693pm6urwxmvejqgsyjw7ta"
+   },
+   {
+    "name": "LUNA9",
+    "pools": 1,
+    "ada": 2807103,
+    "pool": "pool1gdgjzmp96kk0d0sj482655wqlq8jtc4t9xw8xzfwfx4tjyq73hw"
+   },
+   {
+    "name": "HOT",
+    "pools": 1,
+    "ada": 2784871,
+    "pool": "pool167qekemyleju9g7eugaguqxh5telvmmmrs3a7sp897f6za308hg"
+   },
+   {
+    "name": "FEEL",
+    "pools": 1,
+    "ada": 2783094,
+    "pool": "pool1g4th3pqfzh4zajzrhlh8y6wpuztrkzxwt5wd7q578894j06gwfc"
+   },
+   {
+    "name": "pool1vafsg5t78",
+    "pools": 1,
+    "ada": 2758495,
+    "pool": "pool1vafsg5t78rnx3qr3fv7ys9h50pnvxqhd4l8tj629l5zk7tc39ch"
+   },
+   {
+    "name": "RX78",
+    "pools": 1,
+    "ada": 2731779,
+    "pool": "pool18heqrjtge2emf2hes4mdxkr76y99zztkqk4qtjr9dul0vuur0yu"
+   },
+   {
+    "name": "THANK",
+    "pools": 1,
+    "ada": 2731468,
+    "pool": "pool1w3xys99a8xmwcwse4tqpqmyqqzykryfc4w7cvvjusej0vnxdlrf"
+   },
+   {
+    "name": "CRFN",
+    "pools": 1,
+    "ada": 2707816,
+    "pool": "pool1r2g9wv7jyt7haygrmrc2tst2m8m9ssrr3c690ffp49uhywhvmdl"
+   },
+   {
+    "name": "DDLT",
+    "pools": 1,
+    "ada": 2704052,
+    "pool": "pool136wr0g23dw9daekuyqtgk366vywms6meespgpm3hdguxqczaaug"
+   },
+   {
+    "name": "CAPEX",
+    "pools": 1,
+    "ada": 2669061,
+    "pool": "pool1gppqnqfguctp6gu0q8l5wjhye0ny28yzfx93hkr384cfsezru0f"
+   },
+   {
+    "name": "JORGE",
+    "pools": 1,
+    "ada": 2616628,
+    "pool": "pool10mf43thtl3keag50mrlvqa78xkwg7harmu4w5yzr3k7jvw0ap43"
+   },
+   {
+    "name": "OBS",
+    "pools": 1,
+    "ada": 2591301,
+    "pool": "pool1qu48wpwwarmkewhlwge9xs87sgt8gdnqq26nnre2v6c8up4fxwr"
+   },
+   {
+    "name": "pool1r3ax7pd3c",
+    "pools": 1,
+    "ada": 2588803,
+    "pool": "pool1r3ax7pd3cgad5kttench60ttr23kvfpx3vzvd6c3azppgw7q93t"
+   },
+   {
+    "name": "WAAUS",
+    "pools": 1,
+    "ada": 2572183,
+    "pool": "pool10qmnswfc22zm0fscg80gkwqz65ujwjkqmctv8g9l9l58wqtelgg"
+   },
+   {
+    "name": "AOAUS",
+    "pools": 1,
+    "ada": 2568218,
+    "pool": "pool1twd9vvegn3fqq0f4n08p3aml2ud8q87njs49900rycj4sr5hhcy"
+   },
+   {
+    "name": "KSP",
+    "pools": 1,
+    "ada": 2554742,
+    "pool": "pool1chfk2749hyrwqqpj9fapredjsgw3fdauyxw3hn82kavqva6nv3w"
+   },
+   {
+    "name": "ECP",
+    "pools": 1,
+    "ada": 2514688,
+    "pool": "pool16cdtqyk0fvxzfkhjg3esjcuty4tnlpds5lj0lkmqmwdjyzaj7p8",
+    "dreps": [
+     {
+      "name": "Earn Coin Pool",
+      "ada": 5804189,
+      "rank": 69,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "EARTH",
+    "pools": 1,
+    "ada": 2441011,
+    "pool": "pool1py2uxkvuj926h42s40wxl26dh0ggaq882v4m0hkd99m86vzmwnz"
+   },
+   {
+    "name": "LATIN",
+    "pools": 1,
+    "ada": 2404524,
+    "pool": "pool1arsqn9w87wpqlm0sre66gs79dcs0jmwulytgke3vut7u62lttu7"
+   },
+   {
+    "name": "MANDA",
+    "pools": 1,
+    "ada": 2400435,
+    "pool": "pool1c3fjkls7d2aujud8y5xy5e0azu0ueatwn34u7jy3ql85ze3xya8",
+    "dreps": [
+     {
+      "name": "CardanoYoda (MANDA Pool)",
+      "ada": 95444916,
+      "rank": 14,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "AZDFM",
+    "pools": 1,
+    "ada": 2399073,
+    "pool": "pool1hnnfvsq3xlln6vz7d2xmk6kqekd5z4ctmfpdad8g8kr0yk8kdfd"
+   },
+   {
+    "name": "ARTZ",
+    "pools": 1,
+    "ada": 2393630,
+    "pool": "pool127xwsah7jllutuhen8vl7sve5278h7hhxtnys3cl438dyhuwgjg"
+   },
+   {
+    "name": "BDRK",
+    "pools": 1,
+    "ada": 2380629,
+    "pool": "pool1kprt6l4quz03dhqx8jw22spdjvp5dkshdnn567vlexqkj35hd8a"
+   },
+   {
+    "name": "ADMON",
+    "pools": 1,
+    "ada": 2346375,
+    "pool": "pool1fkg3cr9en57ccsmnde20eevkaeu3elp0h4yyqk3udkkxzhl70ju"
+   },
+   {
+    "name": "RELAY",
+    "pools": 1,
+    "ada": 2344578,
+    "pool": "pool1dswpls43u0s6cpt0dh2d6npm0rnxh5qcjm9xax9y6fp3uq880xm"
+   },
+   {
+    "name": "KOR",
+    "pools": 1,
+    "ada": 2313375,
+    "pool": "pool1gntlh2yq89tpsd7kgaeuremj3s60rscqahyl52qzv0x87mt22rq",
+    "dreps": [
+     {
+      "name": "Daehan_kor",
+      "ada": 3847476,
+      "rank": 81,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "BKIND",
+    "pools": 1,
+    "ada": 2300409,
+    "pool": "pool1m83drqwlugdt9jn7jkz8hx3pne53acfkd539d9cj8yr92dr4k9y",
+    "dreps": [
+     {
+      "name": "BKIND",
+      "ada": 1828176,
+      "rank": 107,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "DGK",
+    "pools": 1,
+    "ada": 2222481,
+    "pool": "pool19rz6ve8nz6uvq97yspwh3fvt7w03dsjsnmft6du83hvtc324dus"
+   },
+   {
+    "name": "SALT",
+    "pools": 1,
+    "ada": 2204779,
+    "pool": "pool1a2gt2mvuf5zvtqlvw2xgks2efze3p4r985ft62q64lua7gx7lal"
+   },
+   {
+    "name": "YKSP",
+    "pools": 1,
+    "ada": 2186377,
+    "pool": "pool1n6z7rf722heq35v2dxvstfwezgdt8cv0mftpv4r9jay3wjk2kkt"
+   },
+   {
+    "name": "KRONO",
+    "pools": 1,
+    "ada": 2181124,
+    "pool": "pool1efxh54fk0dj5uu2e4eu08klxl5ys3saphv3kec33kw3xv8738sc"
+   },
+   {
+    "name": "NMKR",
+    "pools": 1,
+    "ada": 2177381,
+    "pool": "pool1aq2kqdp9xf9w47vttvmqnahwd4scz2qyddsr9l4mfru4qddg3kr",
+    "dreps": [
+     {
+      "name": "Patrick_Tobler",
+      "ada": 41709928,
+      "rank": 27,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "CAKE",
+    "pools": 1,
+    "ada": 2158085,
+    "pool": "pool1kvd03hq8kp0hnxq9lq598a5amrvauj9m386rwx7ydawvjdskwnh",
+    "dreps": [
+     {
+      "name": "drep1ytrg2ruc4",
+      "ada": 400191,
+      "rank": 168,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "MERIA",
+    "pools": 1,
+    "ada": 2112085,
+    "pool": "pool13nn6lk6dx5ww95h5qqeeazyp074j7en8e6qszq62rtj9wcx522z",
+    "dreps": [
+     {
+      "name": "Meria",
+      "ada": 5,
+      "rank": 259,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ULTRA",
+    "pools": 1,
+    "ada": 2069917,
+    "pool": "pool1m3gg43uhtetn4hmw79u8836dyq8qe4cex8qnn6mks5egza7n6tp"
+   },
+   {
+    "name": "YASP",
+    "pools": 1,
+    "ada": 2049186,
+    "pool": "pool16qr7dz5q4vwf3n87t4lmr0d2zlr5knexpdzkuk4trc8dwed7aw3"
+   },
+   {
+    "name": "AIR",
+    "pools": 1,
+    "ada": 2042961,
+    "pool": "pool1sr953s548fudyhmfm082xp0mensv2gxzt4qpe466ykw0z3jjzvv"
+   },
+   {
+    "name": "307",
+    "pools": 1,
+    "ada": 2025069,
+    "pool": "pool190a9js7lk9lvmrngre7w268z9tz9xs9yz77audvw8ag4jerfdhx"
+   },
+   {
+    "name": "DEAD",
+    "pools": 1,
+    "ada": 2019611,
+    "pool": "pool1t8gjk7jzvujfv9s8q992e6s7tp8na0q3j62g7s4ppzfmccus4jk"
+   },
+   {
+    "name": "TGEM",
+    "pools": 1,
+    "ada": 1998992,
+    "pool": "pool1tc6cy0cqknsm49cvsz0mksajfvlmh3vvcp8ngtmspycgx932w6g"
+   },
+   {
+    "name": "ALLEY",
+    "pools": 1,
+    "ada": 1970470,
+    "pool": "pool193rdch53x9c53rmftlqgzj22vmz6w8z8hhut2ckzd2zej45zpap"
+   },
+   {
+    "name": "ADAJP",
+    "pools": 1,
+    "ada": 1969837,
+    "pool": "pool1suvska2n58hqxqzzqwpw3558072vkmng0jezzgtlsj625yk7gt8"
+   },
+   {
+    "name": "CAPO",
+    "pools": 1,
+    "ada": 1944503,
+    "pool": "pool1t847w2hfv33qrra7q33nzq8epvcxv6ydshcq7w7j23c87xv2c2k",
+    "dreps": [
+     {
+      "name": "CAPO",
+      "ada": 507373,
+      "rank": 164,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "SGEN",
+    "pools": 1,
+    "ada": 1938624,
+    "pool": "pool1gztqypddgmycs0fjat62k5f2kt4zjck4l4f2ffrsmagj2w8zkq3"
+   },
+   {
+    "name": "ALDIA",
+    "pools": 1,
+    "ada": 1927424,
+    "pool": "pool185ev4czpm5hc9xud25xlcz5lhpnl2jztqas6mgxujqke7j5mdzc"
+   },
+   {
+    "name": "pool19ru9alj7n",
+    "pools": 1,
+    "ada": 1916827,
+    "pool": "pool19ru9alj7n5anmzs0f9gpzlj8kaq44yhcp45mldjvldxck8f6yg6"
+   },
+   {
+    "name": "SHARE",
+    "pools": 1,
+    "ada": 1913487,
+    "pool": "pool1af7dmzgcyp9kc5lyrtrtpsce58l6j5cjvc8wavkwmzlr53ym50v"
+   },
+   {
+    "name": "WOOF",
+    "pools": 1,
+    "ada": 1899965,
+    "pool": "pool1cg559cdc25fkvs73umj6w5nxlwy3mpmj02xt7p4v69eqs5ncz9k"
+   },
+   {
+    "name": "RADAR",
+    "pools": 1,
+    "ada": 1894201,
+    "pool": "pool1l54qvzlg2jfalkcram9kxsa8vcmgy0fz845q5gptjq8k20kzg2r"
+   },
+   {
+    "name": "WHITE",
+    "pools": 1,
+    "ada": 1886833,
+    "pool": "pool137j9xuzycq4jxfpsmjnc75w2wnpz68khlwvsh69kt5negg6ldhg",
+    "dreps": [
+     {
+      "name": "TOPO",
+      "ada": 949142,
+      "rank": 134,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool12dcwy586p",
+    "pools": 1,
+    "ada": 1878405,
+    "pool": "pool12dcwy586prq83qggtfvaxwdpys9dw4sl2yahrdjyjxsqzcq84rk"
+   },
+   {
+    "name": "IFS1",
+    "pools": 1,
+    "ada": 1861413,
+    "pool": "pool1vkc0dvuf8rxrch87umfayacgglrh8f88ef0f64xrdue5u2xjwfm"
+   },
+   {
+    "name": "ASTCH",
+    "pools": 1,
+    "ada": 1854659,
+    "pool": "pool1q2fh3cl6rx0wv5gry4qx5l4h65qpjf7x99xmq66nqj2fj5g6u9z"
+   },
+   {
+    "name": "KURIS",
+    "pools": 1,
+    "ada": 1848595,
+    "pool": "pool10q2fhzwe4f5k2llny65z5z2fuhrpk3x56fdc0782djdq58p9uee"
+   },
+   {
+    "name": "ZW3RK",
+    "pools": 1,
+    "ada": 1822814,
+    "pool": "pool1utqhj9g53a5cwg7tyd8neky7jvjlgzuf470adc0e69cp5uuquzx"
+   },
+   {
+    "name": "ELDEN",
+    "pools": 1,
+    "ada": 1806242,
+    "pool": "pool1ygsyw93csvam58nf63gttknj9dvj3zxh54h4eh0kals7kdf0nx6"
+   },
+   {
+    "name": "TAX",
+    "pools": 1,
+    "ada": 1795635,
+    "pool": "pool1jayej3rwf5ynfmmu7583x3w2j73dcedtflgnazdezfn3kl6062x"
+   },
+   {
+    "name": "OMNI",
+    "pools": 1,
+    "ada": 1795317,
+    "pool": "pool1fl0gdfcmzg4jf3hw839epdteuazm23nff44vddap00r0sm5gvvk"
+   },
+   {
+    "name": "TCSP1",
+    "pools": 1,
+    "ada": 1791189,
+    "pool": "pool1j3kzujz0m07detlksr26sx7smft8xn280695zgu60zjhge9566f"
+   },
+   {
+    "name": "SAPIO",
+    "pools": 1,
+    "ada": 1784619,
+    "pool": "pool1c0xj2fa97zuz4phld87atg6yphz3hju409fm5xgnwuuvqww25qj"
+   },
+   {
+    "name": "A3C",
+    "pools": 1,
+    "ada": 1776992,
+    "pool": "pool1zkdaju2rjefa52uh6yh6etsxla0x6aqs6p6wm245y5szk7k3msd"
+   },
+   {
+    "name": "AIADA",
+    "pools": 1,
+    "ada": 1772703,
+    "pool": "pool1uvzzcc9vh9fs2e3j0dg20cumxxqxfjtdqc6cvzszrqexq6a3uuj"
+   },
+   {
+    "name": "PUMP",
+    "pools": 1,
+    "ada": 1769887,
+    "pool": "pool1k99yncea8tq9pfeks3yymyj6fwjf4apx0s490j09m4y66vtyufr"
+   },
+   {
+    "name": "BONE",
+    "pools": 1,
+    "ada": 1761187,
+    "pool": "pool1j742gcsul7u8c05rsqmkgpkvj5qadj0pew69nctu6crqy9wjjn4"
+   },
+   {
+    "name": "CST",
+    "pools": 1,
+    "ada": 1732555,
+    "pool": "pool14ajz2t680q2c7tekek3eqazhnapfl3l4w3cep9tnh9ym6jhph8m"
+   },
+   {
+    "name": "VENUS",
+    "pools": 1,
+    "ada": 1710149,
+    "pool": "pool1r8938r4ts8f4t8nsp9xl9dktzapt7f67jgpsp4wrju39xrdnaye"
+   },
+   {
+    "name": "BIMI1",
+    "pools": 1,
+    "ada": 1683615,
+    "pool": "pool1ncg357pkgx29g6jrwunk94pwxe409ktxyrw8s0k66vwkc4qdgnu"
+   },
+   {
+    "name": "SOLCY",
+    "pools": 1,
+    "ada": 1683058,
+    "pool": "pool13r4e7tttcxp4qfs4gqtv0hz5k48qdhhxrskz8pjrj6fqy5qmee0"
+   },
+   {
+    "name": "APE",
+    "pools": 1,
+    "ada": 1665428,
+    "pool": "pool18j287g2sccele52hhxc0csk2ghfghwndqm9yahdqnhjks840wtq"
+   },
+   {
+    "name": "WEED",
+    "pools": 1,
+    "ada": 1646384,
+    "pool": "pool1jv4yvr5edp7qp690hk3qfudwmw28n2wygjxyhaecqkzeqh0wlem"
+   },
+   {
+    "name": "AUSST",
+    "pools": 1,
+    "ada": 1621418,
+    "pool": "pool1egunxfppwtglyu3t864uq76y0zu05s7pjda3e9g95nwlwc5ye2h"
+   },
+   {
+    "name": "MONKY",
+    "pools": 1,
+    "ada": 1610612,
+    "pool": "pool150hft90uw7tzr9uvj7tqkjp4u98a9hl20llj3n9ew76kkfm768r"
+   },
+   {
+    "name": "ASSET",
+    "pools": 1,
+    "ada": 1606021,
+    "pool": "pool1js570lkcs6t3pwsj3eda0zz43mc5gm922ae5rdxcfn84gu5uyrg"
+   },
+   {
+    "name": "MANGO",
+    "pools": 1,
+    "ada": 1599521,
+    "pool": "pool1ntwurms3f0j4kqe5wfpg9chlasylp0lmuw72m4fn66vnuyrvs8v"
+   },
+   {
+    "name": "LTES",
+    "pools": 1,
+    "ada": 1593871,
+    "pool": "pool1sm2kmdn4f9rat3kl67y9drqcnnqc34zg4f4ufmnrfaj45gcv89d"
+   },
+   {
+    "name": "CAR",
+    "pools": 1,
+    "ada": 1593124,
+    "pool": "pool1zwqrrwpr5zx7c3f4ukpu4r4fz5c2hkwx9vwqka5068urgqvpjzr"
+   },
+   {
+    "name": "ALTZ",
+    "pools": 1,
+    "ada": 1591550,
+    "pool": "pool1gm4mcrf8mytfetsj6ykulrmv4j70y7fhceawgdg2h09t5rtt7cf"
+   },
+   {
+    "name": "AID1",
+    "pools": 1,
+    "ada": 1581043,
+    "pool": "pool1peayemzlkmcwn64c455mx8sxdaztq0xuv9hdxlp0kcsxz57up3z"
+   },
+   {
+    "name": "PSPJ",
+    "pools": 1,
+    "ada": 1577457,
+    "pool": "pool1568zhphxsnj5mfszwgta5zlvulu67g8f4jn6d3xs2tvas8ffu76"
+   },
+   {
+    "name": "APP",
+    "pools": 1,
+    "ada": 1561756,
+    "pool": "pool1rj6apcqxcvavaxp22f75zs9upphena7ntsnut2efvq98g4404up"
+   },
+   {
+    "name": "LACE",
+    "pools": 1,
+    "ada": 1546301,
+    "pool": "pool1cpr59c88ps8499gtgegr3muhclr7dln35g9a3rqmv4dkxg9n3h8"
+   },
+   {
+    "name": "WEQNT",
+    "pools": 1,
+    "ada": 1539419,
+    "pool": "pool15f9qklmaajysmwx9n3rkgc5s2g3rfffz4x8spnedtzdgq43tpe2"
+   },
+   {
+    "name": "GOOF",
+    "pools": 1,
+    "ada": 1529029,
+    "pool": "pool1gslrt6mmljsqkzft6nd0q7w7g2fyhxpxx6sj4ff68x22kwx6unm"
+   },
+   {
+    "name": "LILIE",
+    "pools": 1,
+    "ada": 1520141,
+    "pool": "pool1qeqylk3pnenvt3j4mah2dafcnd3h8uc3fqhvfzrxlxf3xuvdvvp"
+   },
+   {
+    "name": "BROCK",
+    "pools": 1,
+    "ada": 1518225,
+    "pool": "pool1phc0dedrry2jp2s2tqngcw87vzx3mychvm7qqe3470etzsf3ph7"
+   },
+   {
+    "name": "FMS",
+    "pools": 1,
+    "ada": 1488844,
+    "pool": "pool1upa4pa4qmcgaps4uactx9eas44rfwk9h0rxgua3l4xnf6wevfkt"
+   },
+   {
+    "name": "FIALA",
+    "pools": 1,
+    "ada": 1487832,
+    "pool": "pool1sdvrd0sxh2mprqc3m9zmvrfccavzpz9r2uancg866hpec7nnt0s"
+   },
+   {
+    "name": "CCDO",
+    "pools": 1,
+    "ada": 1481337,
+    "pool": "pool1p693mkpyjphqedgje9sx5k8dzaqsusmw99vh26gd8aszjzkajt4"
+   },
+   {
+    "name": "PEPE",
+    "pools": 1,
+    "ada": 1480459,
+    "pool": "pool1n4fq4gw6snzqjep3pylj8dc6aaa4xgn78gl58k360dqdw6a58g8"
+   },
+   {
+    "name": "TOPO⚡",
+    "pools": 1,
+    "ada": 1474961,
+    "pool": "pool1nhd907krga9dh69kf0jg4tl0764rravepy337gptvsknxyyx94k"
+   },
+   {
+    "name": "MBCG",
+    "pools": 1,
+    "ada": 1465083,
+    "pool": "pool19rjjay24ez2ezgqkyqvna6uwc5ur9lt489gwvrv7ve5exlcld3x"
+   },
+   {
+    "name": "TYGAR",
+    "pools": 1,
+    "ada": 1453052,
+    "pool": "pool1lrnyqdlrj97d0ju5j6d9xa8prw0xeyumfd53rz5wk3gf7czqzjz"
+   },
+   {
+    "name": "CSP",
+    "pools": 1,
+    "ada": 1451675,
+    "pool": "pool1dy7tz7eyf2qal2jcns4qwm4xqn34gc4rj9dz34kfs6zuju477k7"
+   },
+   {
+    "name": "CASH",
+    "pools": 1,
+    "ada": 1448262,
+    "pool": "pool1659knc82juzdqycvvwz0uzjsj5scxwewguhuzae93ed36xanxmz"
+   },
+   {
+    "name": "CHRTY",
+    "pools": 1,
+    "ada": 1445940,
+    "pool": "pool1qqenhz258k5k9nyjull6gkzg7s4f3ae8v7qxwpegeef9v0nsy3e"
+   },
+   {
+    "name": "8BALL",
+    "pools": 1,
+    "ada": 1441574,
+    "pool": "pool13ws3wf9skw0ngg3aze482tdxqsnfmvf4vgy46cux599mxm8n27g",
+    "dreps": [
+     {
+      "name": "8Ball",
+      "ada": 1094684,
+      "rank": 126,
+      "cls": "spo"
+     },
+     {
+      "name": "8Ball",
+      "ada": 14288,
+      "rank": 240,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "SUNNE",
+    "pools": 1,
+    "ada": 1419142,
+    "pool": "pool18jrsaddmrwtrdycydmk3zv0fxawnv0q8xh7f6fyp2r247zz9tc5"
+   },
+   {
+    "name": "DIVY",
+    "pools": 1,
+    "ada": 1399980,
+    "pool": "pool1v4xevkf7fx08pzy7atsk59dds6p0sdyl6xmhwf4mh79x6l5p6kx"
+   },
+   {
+    "name": "pool1fd0q9h897",
+    "pools": 1,
+    "ada": 1389392,
+    "pool": "pool1fd0q9h8974y6psejmzczlywy8fgxxy07rn2ynrwu734aqwq540p"
+   },
+   {
+    "name": "KOALA",
+    "pools": 1,
+    "ada": 1388984,
+    "pool": "pool1jyutduy73e5u9877uns3k9rm0tf4r24j8lrn4xtkjpl3q5sn5mw"
+   },
+   {
+    "name": "BTCAO",
+    "pools": 1,
+    "ada": 1386091,
+    "pool": "pool128r8qqgl9zgy3ff4759a2qslyauu5takaec3nxx4a6mvj3ys8da"
+   },
+   {
+    "name": "GENS1",
+    "pools": 1,
+    "ada": 1385663,
+    "pool": "pool1cjz6kg9a8ug9uk0nc59q60a67c2628ms58rd98gq587jwa2x5qt"
+   },
+   {
+    "name": "POOLS",
+    "pools": 1,
+    "ada": 1382018,
+    "pool": "pool1cduc7ut6grhqyavrmm3gzcdf4qfdsjk7vdwcxy9c0r5fyaxh2sq"
+   },
+   {
+    "name": "HIVE",
+    "pools": 1,
+    "ada": 1379155,
+    "pool": "pool1mcvq2z34f9cfdmkd97famsh20ekqtndw246ny5e8ug3mxfdf4zq"
+   },
+   {
+    "name": "SAGAN",
+    "pools": 1,
+    "ada": 1377625,
+    "pool": "pool18p7p752cjnf9z8g70ygkre5cstwmgfatzuqm0tm3n2xf739j8k8",
+    "dreps": [
+     {
+      "name": "SAGAN Stake Pool",
+      "ada": 2870952,
+      "rank": 92,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "FNX",
+    "pools": 1,
+    "ada": 1372676,
+    "pool": "pool1wnpac2c9am0h3yx2luh9tlsdhcpz2tmfyqjm8g8f67afk7fa6mh"
+   },
+   {
+    "name": "BIO",
+    "pools": 1,
+    "ada": 1369966,
+    "pool": "pool1vqm5n5d503uumuc89s5y4wuczrwe3tlgylt2u2uj7y276avr5pl"
+   },
+   {
+    "name": "CURRY",
+    "pools": 1,
+    "ada": 1350669,
+    "pool": "pool1jezf7dcx26edfpxmpuh05yen64a9cj44xm2ggsapcxrtqewfek2"
+   },
+   {
+    "name": "THREE",
+    "pools": 1,
+    "ada": 1345214,
+    "pool": "pool1hw3cgyx7tvxh2fpd46k9sqgruu5pfnzt4nxuyv2w7nlmusutda2"
+   },
+   {
+    "name": "POA",
+    "pools": 1,
+    "ada": 1344174,
+    "pool": "pool1dqlgn7smehsnj5ztz8almy2036lfhrdjv79nmg9tmje0zzt620h"
+   },
+   {
+    "name": "ADEN",
+    "pools": 1,
+    "ada": 1330457,
+    "pool": "pool1u2lghnv4ae3zy73ysjlgvxwj7tuqpmyfavk74j48g0gnqnyc692"
+   },
+   {
+    "name": "pool1helzgcd9s",
+    "pools": 1,
+    "ada": 1330224,
+    "pool": "pool1helzgcd9sjm9xtyh9mw2wy06gekh6r52s6mx987q0p8lvklwura"
+   },
+   {
+    "name": "YOADA",
+    "pools": 1,
+    "ada": 1326702,
+    "pool": "pool1je2n5smmnyn3lh92xrp8nepjyfp596ypga6pmdecwtcrcj9uvec",
+    "dreps": [
+     {
+      "name": "YOADA",
+      "ada": 5500901,
+      "rank": 71,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ROS",
+    "pools": 1,
+    "ada": 1326349,
+    "pool": "pool1lakxjm7v0q03xddynffn6m2wfm27pms3z9enztwvu7k0297tcr7"
+   },
+   {
+    "name": "AAATO",
+    "pools": 1,
+    "ada": 1310527,
+    "pool": "pool1jmx55w5ydjkn4xd58gmr9xgt5t46ngs48aek779t92e7zcqfw97"
+   },
+   {
+    "name": "ROMER",
+    "pools": 1,
+    "ada": 1291395,
+    "pool": "pool1030vz0wxheg0dvarr8hmeavelpszmp52qucs68c7wc9uga6n6e4"
+   },
+   {
+    "name": "MDS",
+    "pools": 1,
+    "ada": 1285148,
+    "pool": "pool1vc8jhqtwjrjwsfk6a0enx47hd2ufg98c34ta6lvl0zv0uhpech9",
+    "dreps": [
+     {
+      "name": "Medusa DRep",
+      "ada": 3055001,
+      "rank": 91,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "PORTO",
+    "pools": 1,
+    "ada": 1283510,
+    "pool": "pool1q8fqknvzyj9p4ezhxqdghlc7rnmwvwuku9eevgvl25cpjy385gg"
+   },
+   {
+    "name": "ADOPT",
+    "pools": 1,
+    "ada": 1261172,
+    "pool": "pool1l5kwfudnqrhw3k4lwzcppu36nun9puvvr7xnanuz8a2zx4jaek5"
+   },
+   {
+    "name": "CBUS",
+    "pools": 1,
+    "ada": 1259477,
+    "pool": "pool1khwvcz8jz9auk53k698ywgr6ams27hrz20vnwqx2d4xggscp93f"
+   },
+   {
+    "name": "CRD",
+    "pools": 1,
+    "ada": 1259101,
+    "pool": "pool1s2rj8t2a5tfv0rpsfak77g03h96uv3rqxp62t6jm3dh45g2e2pj"
+   },
+   {
+    "name": "SPEC",
+    "pools": 1,
+    "ada": 1248840,
+    "pool": "pool1q7wrwstqkzhrffdzpw8ftfd4epmxywdjnp8384atjcnezchv242"
+   },
+   {
+    "name": "SIAM",
+    "pools": 1,
+    "ada": 1248590,
+    "pool": "pool1ddywudgudfaphp8txj9qf7alj3uk6wzyd22u7cd2myhyv3lyxxx"
+   },
+   {
+    "name": "VICE",
+    "pools": 1,
+    "ada": 1236127,
+    "pool": "pool1pzqdfptvl5f8vh28az37jag2wkfmqz9x8d6eufl8y0z9q34hlr7"
+   },
+   {
+    "name": "MANT",
+    "pools": 1,
+    "ada": 1235673,
+    "pool": "pool12n6lycv28kjtkzecfz2a3uujyxy6ewuwjcmjq84my67psqmgagv"
+   },
+   {
+    "name": "IAMX",
+    "pools": 1,
+    "ada": 1230740,
+    "pool": "pool1p3chxyfv5cfk95hwq5zqjuljrpyk3uk5ua5alpn8rjgkkvvy8ne"
+   },
+   {
+    "name": "GNP1",
+    "pools": 1,
+    "ada": 1228370,
+    "pool": "pool1fv9f8phzn7hp623ypw6ctf73a98hd7nrh8wm7glpcuhf64856g2",
+    "dreps": [
+     {
+      "name": "GNP1_DRep",
+      "ada": 362381,
+      "rank": 173,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ANEJO",
+    "pools": 1,
+    "ada": 1226533,
+    "pool": "pool1es67mveksd22l9alfh5cht6w2krc7lcrq3zvxcpaj5hwxgmhg3m"
+   },
+   {
+    "name": "ASN",
+    "pools": 1,
+    "ada": 1226182,
+    "pool": "pool17ynruzy9lvq0x55ks22vtf4lrrdrw2ucydh4tfzhg9kkyeaw8nf"
+   },
+   {
+    "name": "WOLF",
+    "pools": 1,
+    "ada": 1221539,
+    "pool": "pool1qqqqx69ztfvd83rtafs3mk4lwanehrglmp2vwkjpaguecs2t4c2"
+   },
+   {
+    "name": "4TUN8",
+    "pools": 1,
+    "ada": 1220994,
+    "pool": "pool10wcmpvjmmv7ph7cz2263f52yckvnnwu5kdppwqgu74s2qhe7l7m"
+   },
+   {
+    "name": "NIZI🌈",
+    "pools": 1,
+    "ada": 1218549,
+    "pool": "pool1e7mwu80pmsjqdf8lu7rsfdj5sldashslll0hpj7rhx3w6xpwkq7"
+   },
+   {
+    "name": "TAVN",
+    "pools": 1,
+    "ada": 1216646,
+    "pool": "pool1pf6yhzdr9vpct5rc3dtwersl4lyuglp80l4jc67kf2qj29xjg2u",
+    "dreps": [
+     {
+      "name": "TAVN",
+      "ada": 249679,
+      "rank": 190,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "FUNON",
+    "pools": 1,
+    "ada": 1213759,
+    "pool": "pool1n940lfxkd7z73qzj5y554yrletrmgg5x2eya9tpglh3uwcqfnud"
+   },
+   {
+    "name": "STPZ1",
+    "pools": 1,
+    "ada": 1206666,
+    "pool": "pool17gvd032slmxg267lp8rwcykkfa52txm8ylefhmdsdkytzugrtaw"
+   },
+   {
+    "name": "888",
+    "pools": 1,
+    "ada": 1198445,
+    "pool": "pool1030as3pp5684ghgf4kzcpv4p2jnmkmme7j363t95690zwxp7wa0"
+   },
+   {
+    "name": "HYPE",
+    "pools": 1,
+    "ada": 1196105,
+    "pool": "pool1980svf2cxnfy66s5jgjv7y22xud75z9kfe6n0c3y54s62w56435"
+   },
+   {
+    "name": "TREK",
+    "pools": 1,
+    "ada": 1192034,
+    "pool": "pool1cmqpzlsrrjup8zg6qaperz868u64dlt7uvvdszsr658mvzz9qq0"
+   },
+   {
+    "name": "BUDDA",
+    "pools": 1,
+    "ada": 1185540,
+    "pool": "pool1p8yn95k4wgznc38ezckler84ufc6kxemmsvptv74r3g4zkxj24q"
+   },
+   {
+    "name": "BOATS",
+    "pools": 1,
+    "ada": 1160450,
+    "pool": "pool14f0uj8vghxzs09p3rzvhlur0dnfwylxc67whaz087srtjjrcjgd",
+    "dreps": [
+     {
+      "name": "DanShipps_HarborStakePool",
+      "ada": 1334694,
+      "rank": 116,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "CDMS",
+    "pools": 1,
+    "ada": 1157318,
+    "pool": "pool1n75mtv5qwzquyq2cprnu7yqpnyg4ppagpzvcw6gk2un5vadg48a"
+   },
+   {
+    "name": "TTS17",
+    "pools": 1,
+    "ada": 1155543,
+    "pool": "pool127gdv243hfcrapslaqq0nnh64u2gts72gtrt4888g6g2z0zsu64"
+   },
+   {
+    "name": "ADALY",
+    "pools": 1,
+    "ada": 1150927,
+    "pool": "pool1hmtm4mukp5gs7fgrp0k997lveh4psq9qpeqa6ldugq9nsfcdxmp"
+   },
+   {
+    "name": "AQUA",
+    "pools": 1,
+    "ada": 1140654,
+    "pool": "pool170028ak8q37qf4e5lf7z8eyuscgcrqgzn9lh58a4g9ngzd83a0h"
+   },
+   {
+    "name": "RCADA",
+    "pools": 1,
+    "ada": 1135918,
+    "pool": "pool1p82vmqednsalje23mpnz9u3qt9ruj79xu83mr6p8t93fw5fcu3y",
+    "dreps": [
+     {
+      "name": "RCADA",
+      "ada": 10732040,
+      "rank": 55,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "NOVA",
+    "pools": 1,
+    "ada": 1102566,
+    "pool": "pool1sf784g6eje8vzq9f5wu583eurhfq2ee9hzyhl46yezkuqqtmw07"
+   },
+   {
+    "name": "AMINT",
+    "pools": 1,
+    "ada": 1092757,
+    "pool": "pool1hfn7yuwfyhmmqe4qpaxfewuly7cnemc6kqkv5npytj9vcrskh6j"
+   },
+   {
+    "name": "LAB44",
+    "pools": 1,
+    "ada": 1087397,
+    "pool": "pool156wg3relgtlhwu55z3wpqurtaprguefe9tzrakhuqyyc60553au"
+   },
+   {
+    "name": "DOG",
+    "pools": 1,
+    "ada": 1064567,
+    "pool": "pool1r5srulgd6gpav0sympqrkt9f4ykl06lh9sgk0p20r54v7759kws"
+   },
+   {
+    "name": "SPACE",
+    "pools": 1,
+    "ada": 1064338,
+    "pool": "pool1dxkf7k3qwnpgpxqfye8y9jvk7lver3fk8dq7c4dpzezyyx8cf5c"
+   },
+   {
+    "name": "TIA",
+    "pools": 1,
+    "ada": 1049016,
+    "pool": "pool145ak0czqxe97ef38zjupk0pz5yk7pahcyrdfee2lrnsnwawj6dc"
+   },
+   {
+    "name": "pool1szy2tdjj8",
+    "pools": 1,
+    "ada": 1043049,
+    "pool": "pool1szy2tdjj8a4av365wk3q2fqg9srllmt0383e6v9p664ng076x9e"
+   },
+   {
+    "name": "pool1csrtagrya",
+    "pools": 1,
+    "ada": 1039011,
+    "pool": "pool1csrtagrya4hc5pectc20s8s7am3e6vpdjj6antqzvn2lgmm5afs"
+   },
+   {
+    "name": "CSPHD",
+    "pools": 1,
+    "ada": 1027112,
+    "pool": "pool1fcgm2ae0j3rmvghwa2064rfxcvugwa2qt89cc4jwtj0ecgh8na8"
+   },
+   {
+    "name": "WRM01",
+    "pools": 1,
+    "ada": 1020146,
+    "pool": "pool19m547w9wkcqm5hcstz67fly4ucz0zsp3dqv4n956xyusy4dlpue"
+   },
+   {
+    "name": "pool1yyv7vx5zh",
+    "pools": 1,
+    "ada": 1018539,
+    "pool": "pool1yyv7vx5zhhsd60jp4tl72vpznwvpvjp35m4z7jr42ugkxmndyv5"
+   },
+   {
+    "name": "DOXA",
+    "pools": 1,
+    "ada": 1016135,
+    "pool": "pool15mfkj8sl7estcmmd5a07afrx5f4hlz3pcr6p6ay5pfmrjfl2hlf"
+   },
+   {
+    "name": "pool1jslaut45p",
+    "pools": 1,
+    "ada": 999013,
+    "pool": "pool1jslaut45plz6ek7grjyzxz6kzgerr7p5204h9sprh3msw6d8yht"
+   },
+   {
+    "name": "GERO",
+    "pools": 1,
+    "ada": 994218,
+    "pool": "pool12yscr8j3zs34ewxrwlk0p2w5uvgcnrzywpp78ddjsj8kxd530f9"
+   },
+   {
+    "name": "CARE4",
+    "pools": 1,
+    "ada": 992878,
+    "pool": "pool1zfhww5y28t303z6uyq3w47pkhfmxww9dsn89vrxteplg2zjkekl"
+   },
+   {
+    "name": "WIRA",
+    "pools": 1,
+    "ada": 990514,
+    "pool": "pool1lnk67xp7jsc2e3yyun3fpaqvkx0f3c8q0ml29ge85udeghn2gvn"
+   },
+   {
+    "name": "ALLIN",
+    "pools": 1,
+    "ada": 980010,
+    "pool": "pool1x7j89z3n7y7g8syk06nahcrwkdphhw6dymt8r3gf8ulyksrzh5t"
+   },
+   {
+    "name": "pool1qaxrj6n50",
+    "pools": 1,
+    "ada": 977255,
+    "pool": "pool1qaxrj6n50naglqmzj5puq5sd0awgy9wnqmykpwmcah4vzhndpve"
+   },
+   {
+    "name": "DYNO",
+    "pools": 1,
+    "ada": 975932,
+    "pool": "pool1f6lnuxzw90mmd399nxqjvzyyxgmf4h3cp7j6pp5s7xmps86arct"
+   },
+   {
+    "name": "NIGHT",
+    "pools": 1,
+    "ada": 975877,
+    "pool": "pool1lx7hdfz430vmrwhkrdgxu8c0xclffltavmkejpqzzz4ax0lnfvd"
+   },
+   {
+    "name": "DEV",
+    "pools": 1,
+    "ada": 971791,
+    "pool": "pool1e2tl2w0x4puw0f7c04mznq4qz6kxjkwhvuvusgf2fgu7q4d6ghv"
+   },
+   {
+    "name": "VILAI",
+    "pools": 1,
+    "ada": 965624,
+    "pool": "pool1u7zrgexnxsysctnnwljjjymr70he829fr5n3vefnv80guxr42dv"
+   },
+   {
+    "name": "WISE",
+    "pools": 1,
+    "ada": 941676,
+    "pool": "pool1p42f6kw9lkgw5tn77kqyrc22zrs4uq298p468gacwzw6gq0ckq2"
+   },
+   {
+    "name": "anetaBTC - Pool",
+    "pools": 2,
+    "ada": 938669,
+    "pool": "pool17h6slydr6rd9vquqa38p5cf9xqnpc24w6a99rhllcjzljgugx6x",
+    "tickers": [
+     "NETA1",
+     "NETA2"
+    ]
+   },
+   {
+    "name": "VFS",
+    "pools": 1,
+    "ada": 931163,
+    "pool": "pool1vqjyjsp6dawkj8tzmfpu39hvgnkph99qzarw4dll6yq76gpaa4d"
+   },
+   {
+    "name": "JUNO",
+    "pools": 1,
+    "ada": 929788,
+    "pool": "pool1we0xjccr3vc4ypnmhzsgwp7sxpsytu8dtv0syeqmtrllvcex68q"
+   },
+   {
+    "name": "FRADA",
+    "pools": 1,
+    "ada": 919310,
+    "pool": "pool1yd67lvc04eztwrpnefqh3g4dsydmezwgrg6ce4km728v6sg8zwf"
+   },
+   {
+    "name": "BRAVE",
+    "pools": 1,
+    "ada": 915574,
+    "pool": "pool1fpqae6awxx6sfewv8sjnkpm9mjvldkvykrfg6vr9httv64u3r6q"
+   },
+   {
+    "name": "LAPO",
+    "pools": 1,
+    "ada": 908849,
+    "pool": "pool13daql23lkcwwj0gsz0dnu9tu20pugpswfped3kp05ekxkgmcumt"
+   },
+   {
+    "name": "ZUND",
+    "pools": 1,
+    "ada": 901559,
+    "pool": "pool1a2ffl2d20yransp2p4hqys5vy6hys8kmtchdvlfqale7ywxssjh",
+    "dreps": [
+     {
+      "name": "Erasmus",
+      "ada": 947891,
+      "rank": 135,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "VRIJ",
+    "pools": 1,
+    "ada": 900650,
+    "pool": "pool14dswwngc8j92uek927jced2lfc7c4pa4ss9gry9nu9rhkc7a055"
+   },
+   {
+    "name": "EVOC",
+    "pools": 1,
+    "ada": 895113,
+    "pool": "pool17gfj5t240hqaqr7vtrlrlhmyazw3lcyqvfd06v4kpxv7qxpdzau"
+   },
+   {
+    "name": "HEPHY",
+    "pools": 1,
+    "ada": 885489,
+    "pool": "pool17n47upcpnzsdks0yd409nf79sg6hqy73twg87eddwh24uj745rt",
+    "dreps": [
+     {
+      "name": "Hephaestus Stake Pool [HEPHY]",
+      "ada": 21517250,
+      "rank": 44,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "AY1",
+    "pools": 1,
+    "ada": 879773,
+    "pool": "pool1mdyuct0kgd0hcjjnea999me5dxqpepr4y8du4smegfm3vlr37w5"
+   },
+   {
+    "name": "GRC1",
+    "pools": 1,
+    "ada": 876231,
+    "pool": "pool1kv53mzjwqjp4aw48rczj8vm6hejwfnfwa634czyx5tw5qq3tata"
+   },
+   {
+    "name": "COINZ",
+    "pools": 1,
+    "ada": 874607,
+    "pool": "pool1jxv3my3c70e8pfr0cgm6esatehey2ml3v0qk8x236aw32eu0fcy"
+   },
+   {
+    "name": "MOON1",
+    "pools": 1,
+    "ada": 863049,
+    "pool": "pool1sffl322qgsrsmkcedzzwk05396dkmj56pcepqvj6px3n2re3qu4"
+   },
+   {
+    "name": "ODIN",
+    "pools": 1,
+    "ada": 848912,
+    "pool": "pool1calq8kjzrvp83l80rtvgmulausl99q4tjfkz2lp227vkymd5wgg"
+   },
+   {
+    "name": "pool1en2f7un7v",
+    "pools": 1,
+    "ada": 847848,
+    "pool": "pool1en2f7un7v3rjyhqkeg87d27nvsk5arnnva5tzx38t0lpv7hercz"
+   },
+   {
+    "name": "VASIL",
+    "pools": 1,
+    "ada": 846951,
+    "pool": "pool1nsaul82z7ytu73q96w2wgj8wrardmrzjkuzaankzn0xuqkj70qm"
+   },
+   {
+    "name": "ADAAT",
+    "pools": 1,
+    "ada": 840222,
+    "pool": "pool1kxtzkv3ylyc48hgjqkwe93q2vkx67vgzag9tvqfalhwsjs43w9u",
+    "dreps": [
+     {
+      "name": "ADAAT",
+      "ada": 399189,
+      "rank": 169,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1ksh2u6kkt",
+    "pools": 1,
+    "ada": 835170,
+    "pool": "pool1ksh2u6kktx74ugv8jadrdqttwyjz9074ke82xt6j0qgfvdn43a5"
+   },
+   {
+    "name": "KAP",
+    "pools": 1,
+    "ada": 832653,
+    "pool": "pool12pwp8hln0cjsxv0h2a0463qsakkhwetfhyqw7vzmpwd2jdj86n6"
+   },
+   {
+    "name": "pool1h7eevnu53",
+    "pools": 1,
+    "ada": 811091,
+    "pool": "pool1h7eevnu53zdfujqfzldw4jgdjh475u0glvtruwrnmdmycn6jdzs"
+   },
+   {
+    "name": "CANDY",
+    "pools": 1,
+    "ada": 803658,
+    "pool": "pool1nchr83fc0hrykvhlnh64n3wlt5vkdu727xjep59znrwzs589jdd"
+   },
+   {
+    "name": "pool16k6ztd3t6",
+    "pools": 1,
+    "ada": 802527,
+    "pool": "pool16k6ztd3t657dc88qc3gkpmntwyjvkaz04d335fwpl5jcj5hxyjg"
+   },
+   {
+    "name": "FRCA🍁",
+    "pools": 1,
+    "ada": 785150,
+    "pool": "pool1ft6jvmft8tg3lwzg6wfsprlex3ncuq5cnckwycavqk5q63jhrhv"
+   },
+   {
+    "name": "NAPPY",
+    "pools": 1,
+    "ada": 778382,
+    "pool": "pool1w9hdxd0ydy7qrtxe2lceg80mpsyamwnaqyvu2v0yngj4cfkfu2t"
+   },
+   {
+    "name": "DEEZY",
+    "pools": 1,
+    "ada": 774658,
+    "pool": "pool1jldq2rf7y2ukm2t8ds8d9upzgdgv07jhkckl0mvedwhxx5nkugt"
+   },
+   {
+    "name": "KURD",
+    "pools": 1,
+    "ada": 771463,
+    "pool": "pool1l8myd66tqjk75kh7uk9k8nyl20sd4qs33s4tzzn927ujyl7ahyk",
+    "dreps": [
+     {
+      "name": "Kurdopia",
+      "ada": 403065,
+      "rank": 167,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "SVRN",
+    "pools": 1,
+    "ada": 770407,
+    "pool": "pool12pvaxxcv3sgad5jqgfnggn337y76kp02uauptkufjjjes7nxwfm",
+    "dreps": [
+     {
+      "name": "SVRN | Sleeping Natives",
+      "ada": 273583,
+      "rank": 188,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "JITSU",
+    "pools": 1,
+    "ada": 769495,
+    "pool": "pool1jkxwcqkaaacvd77rf9lrj3qsgvtktqh7cglu3awsy34h5eava4d"
+   },
+   {
+    "name": "PALMA",
+    "pools": 1,
+    "ada": 768794,
+    "pool": "pool1khyv2zj3asyhz76a4r2ky42sdxn3gqu3lcyw3sj74trmwhlc5ud"
+   },
+   {
+    "name": "SEBA",
+    "pools": 1,
+    "ada": 767635,
+    "pool": "pool1h4gwh638485yd0xcw0pkrm935nvm4aecqsxjx2yzzz0u6dfj73q",
+    "dreps": [
+     {
+      "name": "Sebastien Guillemot セバ",
+      "ada": 170179982,
+      "rank": 8,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "5FOLD",
+    "pools": 1,
+    "ada": 765394,
+    "pool": "pool18hpttrmc7v6nhjcywhdpymwzxv3y9kujzc5ne53jjdlf6hxa7cv"
+   },
+   {
+    "name": "BOBA",
+    "pools": 1,
+    "ada": 762435,
+    "pool": "pool1dv7s5fn4m9dee8ncvx5hktfmsnx6agydhn798rfdqjazuwr84gc"
+   },
+   {
+    "name": "SUI",
+    "pools": 1,
+    "ada": 761413,
+    "pool": "pool1w9yeaaadjz9563tf2h7katrlujvxnywda8el8z66h02ckccx95x"
+   },
+   {
+    "name": "XAT1",
+    "pools": 1,
+    "ada": 746308,
+    "pool": "pool1azwytj96wpa7hqmj5adks6tpw7rhnwdqpf9hkgyy0mwdxxzxz9w"
+   },
+   {
+    "name": "CHIEN",
+    "pools": 1,
+    "ada": 736925,
+    "pool": "pool180fejev4xgwe2y53ky0pxvgxr3wcvkweu6feq5mdljfzcsmtg6u"
+   },
+   {
+    "name": "LvLUp",
+    "pools": 1,
+    "ada": 734932,
+    "pool": "pool1j8355yxxpfuhqyda4lrj8c9cdghaang3wvwge8jq8nlxurvfqv7"
+   },
+   {
+    "name": "EU01",
+    "pools": 1,
+    "ada": 728363,
+    "pool": "pool1wm5quxelvgk8q50jyfznf9asvelp9zf0tk2wu4jazlw9yj4uctw"
+   },
+   {
+    "name": "LAMB",
+    "pools": 1,
+    "ada": 727137,
+    "pool": "pool16knnvtezwzmgpnu8v03wht6y4u7mwfc7qz6y2yk62w4as4qymat"
+   },
+   {
+    "name": "pool1h40kkf28n",
+    "pools": 1,
+    "ada": 726749,
+    "pool": "pool1h40kkf28nr3amhs6nsmqn75aderg6cutmygr47czu2dw2dxzvgm"
+   },
+   {
+    "name": "JACKS",
+    "pools": 1,
+    "ada": 725405,
+    "pool": "pool14z3hap9tf6gt4gk8u84kcwm3s0etcgha26sn8t8wmvcruk0kvgj"
+   },
+   {
+    "name": "PREEB",
+    "pools": 1,
+    "ada": 717766,
+    "pool": "pool19peeq2czwunkwe3s70yuvwpsrqcyndlqnxvt67usz98px57z7fk"
+   },
+   {
+    "name": "GRADA",
+    "pools": 1,
+    "ada": 713666,
+    "pool": "pool1gf8a46j6hvhad8e48hez4084x34snpua8k7t3kzy9w42q6w60z8"
+   },
+   {
+    "name": "VICIS",
+    "pools": 1,
+    "ada": 710427,
+    "pool": "pool13zq5jktx7xmngfer82nkrs8aqjklmydntxdqzttas328yuttgx6"
+   },
+   {
+    "name": "AARD",
+    "pools": 1,
+    "ada": 710054,
+    "pool": "pool1nwcu3al5vfm7t3dtvyuu4hlmlvezd05c5v386q90hlptks4mqw3"
+   },
+   {
+    "name": "PET♥",
+    "pools": 1,
+    "ada": 698538,
+    "pool": "pool1mrxg6svcug7mc459ce5zum4qd6p0hkfc08jzpphxfnxzz8yf7ll"
+   },
+   {
+    "name": "ZPCT",
+    "pools": 1,
+    "ada": 693444,
+    "pool": "pool16p8y0pzx8yx7vz6eqksw9xjhh3tzeymvxcstrgtk8ncw75356yw"
+   },
+   {
+    "name": "COAST",
+    "pools": 1,
+    "ada": 691178,
+    "pool": "pool1qqqq58jy30weq2an3px3maljdmawcwh6ml4hr8m9euq9z2n7wyz"
+   },
+   {
+    "name": "DOLCA",
+    "pools": 1,
+    "ada": 685911,
+    "pool": "pool12584mjtgz3fhgpx823qht56gycnfnezg6aqqthazv4qdxkd5c46",
+    "dreps": [
+     {
+      "name": "drep1yfd9slgg7",
+      "ada": 435944,
+      "rank": 165,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ADD",
+    "pools": 1,
+    "ada": 684538,
+    "pool": "pool1a44zldps27avv82mamm2lj33mrrkqdzt39nyrgn5dkk3jtm0wrp"
+   },
+   {
+    "name": "MEME",
+    "pools": 1,
+    "ada": 679137,
+    "pool": "pool17mr554wv653z4ttr3rydt5dsxg6r28ysu5mlz9cc5ax32gsleh9"
+   },
+   {
+    "name": "pool1gha260s6h",
+    "pools": 1,
+    "ada": 677853,
+    "pool": "pool1gha260s6hx855p49fc735w78p0kcp4hyxl8glymp5k5muk9jkgm"
+   },
+   {
+    "name": "YKSB",
+    "pools": 1,
+    "ada": 675880,
+    "pool": "pool1pn36hexudnjg6uwvxc5tld3ay2g6ty99ardzhn7crhkhzshjpte"
+   },
+   {
+    "name": "BEADA",
+    "pools": 1,
+    "ada": 675717,
+    "pool": "pool14qpadfdjzw6jkwxy67uhey6tjpyppsmwgz5awfsxwrtpsecslpc"
+   },
+   {
+    "name": "EGGS",
+    "pools": 1,
+    "ada": 671043,
+    "pool": "pool1g0hsnjnt0du3kp33gjua3npncngr3yg4ak2zfdhd4zvmy6r8hyd"
+   },
+   {
+    "name": "TMS",
+    "pools": 1,
+    "ada": 665148,
+    "pool": "pool18qahj5ggudguk69g9aaztf5dvapmazql4hdvd7v0947j7gy4wqf"
+   },
+   {
+    "name": "JANUS",
+    "pools": 1,
+    "ada": 663795,
+    "pool": "pool1h8fnr4vlfcv9l4jlv9epalghy3zgjpye4wv85c4rafpvvfztsk7"
+   },
+   {
+    "name": "PIZZA",
+    "pools": 1,
+    "ada": 661301,
+    "pool": "pool1hx7rpmjen9gx9w3awzp34zw5wr54mdyf2ft03llqz2wdszavuk8"
+   },
+   {
+    "name": "DRED📡",
+    "pools": 1,
+    "ada": 656234,
+    "pool": "pool1ht35ft8az9k9u7gnc2yut7usj96he5mqngthunyf2kmnsl2kmed"
+   },
+   {
+    "name": "pool1fu567g42m",
+    "pools": 1,
+    "ada": 654063,
+    "pool": "pool1fu567g42mlv9f7enek7zeh94c0aht98w44du7s29t0elzd9yazz"
+   },
+   {
+    "name": "STKGR",
+    "pools": 1,
+    "ada": 653410,
+    "pool": "pool1rtnv5vj0glxu9w2mkl9ptev72enx75gjzdkc8urfhavr5reah0c"
+   },
+   {
+    "name": "5CH",
+    "pools": 1,
+    "ada": 650845,
+    "pool": "pool18q7axjzcrs7pd2vpmcgh33p0r5cng2q0v6ldw5vtwuhl6ctgmeg"
+   },
+   {
+    "name": "CHEF",
+    "pools": 1,
+    "ada": 648069,
+    "pool": "pool1dqhaw0h2f4ehpdhh57quszcj22qhkglhg6yvaf39w3clxdl2kpy"
+   },
+   {
+    "name": "TRUE",
+    "pools": 1,
+    "ada": 648009,
+    "pool": "pool1dkww2vlysa8lsnuf5rca979zdsyr3zvt59hu7e420yxfunkka2z"
+   },
+   {
+    "name": "pool15ju4ktqmt",
+    "pools": 1,
+    "ada": 640527,
+    "pool": "pool15ju4ktqmtha9vry4mf44hr2psf807n4achj76z8uhawgw9462kx"
+   },
+   {
+    "name": "AKANE",
+    "pools": 1,
+    "ada": 629819,
+    "pool": "pool1zsyqzr04g5pr3nv7vfk8ldc3uf0xljc8yftdsqpxxqpychpxj65"
+   },
+   {
+    "name": "ENVY",
+    "pools": 1,
+    "ada": 628420,
+    "pool": "pool1zn4wnk52kmfjy9mw4z85p6wn9kzrn94l9h5gys8r2k2w57mdnhh"
+   },
+   {
+    "name": "IGUD",
+    "pools": 1,
+    "ada": 619914,
+    "pool": "pool188ah5thmetn7vx5g5ugsq3xr0mwy672twqawn36qnzqmjrdftfp"
+   },
+   {
+    "name": "LOVE2",
+    "pools": 1,
+    "ada": 614842,
+    "pool": "pool1vkngxunyagwen690yn36pa2v6jecyxgeavl9nva9dwzhu22fzt7"
+   },
+   {
+    "name": "LIVIN",
+    "pools": 1,
+    "ada": 611941,
+    "pool": "pool1z4f2vmmwckcm6c4fmhn3vmymhsg8gjukx5905g54hlhqs9kaht9"
+   },
+   {
+    "name": "VIVID",
+    "pools": 1,
+    "ada": 610336,
+    "pool": "pool1nw42xqnaplxsx3fq4ytl4x4qqvhs7g5uymnm906pfvx5636fglw"
+   },
+   {
+    "name": "ALPEN",
+    "pools": 1,
+    "ada": 608694,
+    "pool": "pool1xnaxushl47aeha3mr3uwnxcfkvzj0um6c4zxdr064d3y68z646c"
+   },
+   {
+    "name": "MIHOP",
+    "pools": 1,
+    "ada": 604372,
+    "pool": "pool13mjxg33urh0xquvw33kjn85yw7j42uwqw0pvh8s6c67rszr7ssz"
+   },
+   {
+    "name": "MEOW",
+    "pools": 1,
+    "ada": 602097,
+    "pool": "pool1ptzt9j6y4jefzkq4vj3z7wa4h492ktlkecggseqvc8f060xuved"
+   },
+   {
+    "name": "DIING",
+    "pools": 1,
+    "ada": 598541,
+    "pool": "pool1vhzjtcrcyzy5ld05mj8edy5at37x4g7du8uvvss037h26h8s8z5"
+   },
+   {
+    "name": "KIBA",
+    "pools": 1,
+    "ada": 596119,
+    "pool": "pool1w2alpqttaulpukcrz0j902kk8wmq68q9qm50c6npaypk7yypy5a"
+   },
+   {
+    "name": "4FREE",
+    "pools": 1,
+    "ada": 595452,
+    "pool": "pool1xcslzgl6t2pcdr0u8ef2zkjhdyxy8xmgvzp0mcdgrw4k5gtg94s"
+   },
+   {
+    "name": "BLNC",
+    "pools": 1,
+    "ada": 590388,
+    "pool": "pool18l6lvx95vl5p88zfh7xjkx073s9gufpz4sa5q43fu7auqunjhg3"
+   },
+   {
+    "name": "pool1x9q4jf3zw",
+    "pools": 1,
+    "ada": 589002,
+    "pool": "pool1x9q4jf3zwftwygeeulku8xtlywmtmzwxjk2g3fz3j5mlwjqnr3p"
+   },
+   {
+    "name": "JOEY",
+    "pools": 1,
+    "ada": 583132,
+    "pool": "pool1q0memmdw4ktr88fkma53tqgkaqeq3wfc476le59rped4cu8tn4h"
+   },
+   {
+    "name": "GENKI",
+    "pools": 1,
+    "ada": 582497,
+    "pool": "pool1ulx9ennungrtcucslrpz93cze5fddlg96h0wwj83p6fpsrvgz2v"
+   },
+   {
+    "name": "MOBC",
+    "pools": 1,
+    "ada": 582149,
+    "pool": "pool1chzrvd7wzmw8ufsehctn8fmf7ca27xf7d6f5tpreat7kxx6hwf9"
+   },
+   {
+    "name": "GAIA",
+    "pools": 1,
+    "ada": 578136,
+    "pool": "pool17e4rdh59t4fmn4g3p02xvs853katrjzge830tsmd3sfdc645yvt",
+    "dreps": [
+     {
+      "name": "GAIA",
+      "ada": 3422368,
+      "rank": 87,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1yy7vaszhq",
+    "pools": 1,
+    "ada": 565350,
+    "pool": "pool1yy7vaszhqx7h02rp8ey0p84yy5zv2r2awzddzceeaurrs8klzxt"
+   },
+   {
+    "name": "CZBE1",
+    "pools": 1,
+    "ada": 562863,
+    "pool": "pool1ytyw34lckr8k9dhn59h287wqry5lk6waqtfhxe6v94v4gsaa7vx",
+    "dreps": [
+     {
+      "name": "CZBE1",
+      "ada": 50326,
+      "rank": 232,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "FlairStaking",
+    "pools": 2,
+    "ada": 561807,
+    "pool": "pool1lyvg6ukqpumsr6wz0jvh7xutcgdtcyyde4wkvptzyl8rql4n3c6",
+    "tickers": [
+     "FLAIR",
+     "FLR2"
+    ]
+   },
+   {
+    "name": "INDIA",
+    "pools": 1,
+    "ada": 561010,
+    "pool": "pool15wppycnx4mgq5nmwg4eyzj4pg5wazhyml48wsy0jskunsqq69gh"
+   },
+   {
+    "name": "BBO",
+    "pools": 1,
+    "ada": 559563,
+    "pool": "pool1y89sy2e927hvvt66wnukx5xnnrarzxrt55eypttaw3n06u0uam4",
+    "dreps": [
+     {
+      "name": "Bamboo_Drep",
+      "ada": 2358281,
+      "rank": 102,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "CLUB",
+    "pools": 1,
+    "ada": 545575,
+    "pool": "pool144m894gswuy3se407ma5870nkaw5ylykrak73gf4kpepj50ulfa"
+   },
+   {
+    "name": "SAMON",
+    "pools": 1,
+    "ada": 544888,
+    "pool": "pool12ndf7w5f4fdn746s5zlay4aexvcsjncnnmjwfp8falascjqav3y"
+   },
+   {
+    "name": "SUGAR",
+    "pools": 1,
+    "ada": 540565,
+    "pool": "pool1tjr4zpndkvwkw3du3fvt59f5men6jhuevt7rpx6xw0wcct5kl04"
+   },
+   {
+    "name": "XPPX",
+    "pools": 1,
+    "ada": 538590,
+    "pool": "pool126f65lklaqw39jgx9wl8klqtx99evewxk0x5yc2jzzp5wfs8fde"
+   },
+   {
+    "name": "LIX",
+    "pools": 1,
+    "ada": 538407,
+    "pool": "pool1jqw9cv37w0eewvdr36w2kacd2w9wh5uwm2y3vmc0fmdfc0ax26l"
+   },
+   {
+    "name": "lido",
+    "pools": 1,
+    "ada": 537971,
+    "pool": "pool1kks6sgxvx7p6fe3hhnne68xzwa9jg8qgy50yt3w3lrelvns7390"
+   },
+   {
+    "name": "CHAIN",
+    "pools": 1,
+    "ada": 528344,
+    "pool": "pool1aawkmkg7vg0x0vxaqh4gr0lwp4fekwsqrjduylx0et3tuz9hfn4"
+   },
+   {
+    "name": "OYAJI",
+    "pools": 1,
+    "ada": 520845,
+    "pool": "pool1ralkckmup253k79hap4chku450qyshezh4sasjqh0ltxu2gytlq"
+   },
+   {
+    "name": "JUST",
+    "pools": 1,
+    "ada": 513328,
+    "pool": "pool1dcjycc5mvj9svh9ys482078mnqutu48k3zj7uqzswj7m54a7hzr"
+   },
+   {
+    "name": "LUNA",
+    "pools": 1,
+    "ada": 512676,
+    "pool": "pool1kffetqjt06qvk4995tz3e3q9h3c8cdq9eedrz8qr3ynnc63qckz"
+   },
+   {
+    "name": "BKV",
+    "pools": 1,
+    "ada": 505735,
+    "pool": "pool19zhl50qqzpfvvhdytqg6qx0cthummjyunfyvkfqx9uxrsp7k8ek",
+    "dreps": [
+     {
+      "name": "Alex BKV",
+      "ada": 1648202,
+      "rank": 111,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "FREE1",
+    "pools": 1,
+    "ada": 505230,
+    "pool": "pool12f2r9xf4wvht030xwjhpjvy5yptr275qr2qcydnx57jkxyfzz2w"
+   },
+   {
+    "name": "DRMZ",
+    "pools": 1,
+    "ada": 504483,
+    "pool": "pool16utp8esfwwpwf4fzlvtulugtdj9mapt42gdwza962pk8q2f45yt"
+   },
+   {
+    "name": "MONEY",
+    "pools": 1,
+    "ada": 502645,
+    "pool": "pool1t50sl2erwfaey5du4e7gnp52fylplh5q4j24zkkxk9t5vsxfcvm"
+   },
+   {
+    "name": "MNKY",
+    "pools": 1,
+    "ada": 497981,
+    "pool": "pool18872nzahx0h2f7j58pxrn5rjektn8na8p4amv08x2xj8qkht30g"
+   },
+   {
+    "name": "AND",
+    "pools": 1,
+    "ada": 497967,
+    "pool": "pool143nv3macakarny2hvg67gg00q5j2kdg6yfvcmefqmea3vnj0nex"
+   },
+   {
+    "name": "YOOU",
+    "pools": 1,
+    "ada": 489514,
+    "pool": "pool1gyrvar6gwyad7u2rsryeg49dgqtsp99k4903knwj5eq9qmu5jlj"
+   },
+   {
+    "name": "WWW",
+    "pools": 1,
+    "ada": 486256,
+    "pool": "pool1zc5l0d0j9d0969z7ssphjdq7rfexhnhrfdp2e88sv05ujlaxfk3"
+   },
+   {
+    "name": "HUNNY",
+    "pools": 1,
+    "ada": 483058,
+    "pool": "pool1la0t0gsskwejyfca5lchw5aqd5g8hknxdu6tuyqp0ttjxl6zt35"
+   },
+   {
+    "name": "SOLPI",
+    "pools": 1,
+    "ada": 481893,
+    "pool": "pool1sfuspqv9gyqn65vwu6e27dp6ju7gmqmgsnasqp6zxp6qqlzlpfe"
+   },
+   {
+    "name": "MUGGY",
+    "pools": 1,
+    "ada": 478383,
+    "pool": "pool1gpz25s2aasmqnh9tg8a2rxmyxuvmj5s779htxk295e9ajnzjflc"
+   },
+   {
+    "name": "YUMMI",
+    "pools": 1,
+    "ada": 477485,
+    "pool": "pool1gsrcrjm6ctkquef6m8jsyvplv0j357hupn92uklqdcm7729ytv6"
+   },
+   {
+    "name": "CRCI",
+    "pools": 1,
+    "ada": 476243,
+    "pool": "pool1lzupr43772kfux007sdt02vlx7uzmfcplrwmxntdztxmwv9myrj"
+   },
+   {
+    "name": "TEXAN",
+    "pools": 1,
+    "ada": 470948,
+    "pool": "pool1n500map6vvxwkxnrw5m9vgmjqrmtaxuuxkgqvzz7699c7qc550v"
+   },
+   {
+    "name": "AION",
+    "pools": 1,
+    "ada": 468248,
+    "pool": "pool157e2zadjusu6esf9mmx37nf63ep2gazdeln5mh04ylpcvz59g5c"
+   },
+   {
+    "name": "TOOL",
+    "pools": 1,
+    "ada": 465137,
+    "pool": "pool13l9hxj5dke9yd8xrxtfdkxgppj4wdyy52k99jded9f4kv5ce7al"
+   },
+   {
+    "name": "4WARD",
+    "pools": 1,
+    "ada": 453851,
+    "pool": "pool1kcrr7re05pwesye0zh00a4xxnsrw5c29rd82fn4qecdcqu5rue3"
+   },
+   {
+    "name": "FLUID",
+    "pools": 1,
+    "ada": 453006,
+    "pool": "pool18rpw5dwfywfrzjuy7uzn2cetrw9v85aan8a80p3fdvtqcxykkqu",
+    "dreps": [
+     {
+      "name": "Jonathan Adjei",
+      "ada": 204218,
+      "rank": 194,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "COR",
+    "pools": 1,
+    "ada": 450513,
+    "pool": "pool1l8pvaam6f2wj2ank46uywp32wwapqga8e8utve3mgzzuxksc3tq"
+   },
+   {
+    "name": "DSIO",
+    "pools": 1,
+    "ada": 450211,
+    "pool": "pool1dts0h87pntgmsffp6mjtnahfht2dz5zjjeeujhzmtn6wgctcuzd"
+   },
+   {
+    "name": "VOLCY",
+    "pools": 1,
+    "ada": 448645,
+    "pool": "pool1u0u2s080a5plun4acn6s70xa3q98ct7skt88l7w6nnwwyl9ecym"
+   },
+   {
+    "name": "MEDIA",
+    "pools": 1,
+    "ada": 434985,
+    "pool": "pool17pv7m8h5dxsyt55upay8n8ake2cgcz4mcr737um2tl8d2wthzqr"
+   },
+   {
+    "name": "HOSK",
+    "pools": 1,
+    "ada": 434640,
+    "pool": "pool1u8yequt4vq3jhajeegc02r3msnne6krayxuzrypaz8jkq5v5pux"
+   },
+   {
+    "name": "XORN",
+    "pools": 1,
+    "ada": 432482,
+    "pool": "pool1dgmuwu0txducah4pes4e2avlcv98wedml33kdz7ujtrrxk8xv9y"
+   },
+   {
+    "name": "COFFR",
+    "pools": 1,
+    "ada": 431003,
+    "pool": "pool1v5g4rmkk0394q6swgfusgzjjzrv9ajy8qntgpuumegka5xhpgam"
+   },
+   {
+    "name": "STEAK",
+    "pools": 1,
+    "ada": 426490,
+    "pool": "pool1sks9qwpygf9vmgeuh4n4a3s36k35c3qnz7pd4qqvw5825x62y3y"
+   },
+   {
+    "name": "SHUA",
+    "pools": 1,
+    "ada": 413933,
+    "pool": "pool1zga7fc8swn5l4rha04ddq07m2rc8rh9vxqmc56j4k2l2xy4lw22"
+   },
+   {
+    "name": "CPU",
+    "pools": 1,
+    "ada": 413162,
+    "pool": "pool1k3wpsc8q8za2qeptx5kv73r76hs5gvp59gga6ad6u5hnj3scy3q"
+   },
+   {
+    "name": "SNIPE",
+    "pools": 1,
+    "ada": 412750,
+    "pool": "pool1hc8y5s28zah72qsnnky93zxqcqcrvav7hz2l3sdj5gk5znztcty"
+   },
+   {
+    "name": "K9K",
+    "pools": 1,
+    "ada": 408629,
+    "pool": "pool1dj4l8qma9zzqqzhsawdkvxrs7qyqyv70kn56ywdqqazscvcqvva"
+   },
+   {
+    "name": "KYOTO",
+    "pools": 1,
+    "ada": 406588,
+    "pool": "pool1z39sker5renxhep9m7z8aae2yh56940gwykptfcf053473mwy8t"
+   },
+   {
+    "name": "African Charity Pool",
+    "pools": 2,
+    "ada": 404629,
+    "pool": "pool16fa03u6u85ek2q8lryqprngpahglssj5qqh66pfaxf34vgu5rhl",
+    "tickers": [
+     "AFCH1",
+     "AFCH2"
+    ]
+   },
+   {
+    "name": "ADAR",
+    "pools": 1,
+    "ada": 402957,
+    "pool": "pool17r3u34ywld6sehe9dd5t40ygq7rmc6yfw2k0h0hpllznwlmwsnn",
+    "dreps": [
+     {
+      "name": "ADAR_Chris",
+      "ada": 953776,
+      "rank": 133,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ELIK",
+    "pools": 1,
+    "ada": 402675,
+    "pool": "pool1dkt4rqtjs6j6d8snna60s2g002ddcj5h62nee59mvsznk20q300"
+   },
+   {
+    "name": "BIRTH",
+    "pools": 1,
+    "ada": 400095,
+    "pool": "pool10c9l3k0z50ytt4krkfet7w3gwpv9d9nq47kk9ecy2c5f2uyvkgk"
+   },
+   {
+    "name": "JOKER",
+    "pools": 1,
+    "ada": 394366,
+    "pool": "pool1fr8ug253hlv0pt4sxu3w20r03pnpkh2wpedegp55t8nsx28rkma"
+   },
+   {
+    "name": "MAYZ",
+    "pools": 1,
+    "ada": 391923,
+    "pool": "pool1r8lmsrdure385hz647kl2qjhyyxkdle4au5krjcsqed4x8227k3"
+   },
+   {
+    "name": "LBP",
+    "pools": 1,
+    "ada": 391002,
+    "pool": "pool1hlu9mdmcf0m9mqkq7apxsyalhd2nr07rqyhh8mgra3wzkva2d3p"
+   },
+   {
+    "name": "MONAD",
+    "pools": 1,
+    "ada": 390607,
+    "pool": "pool1xcn2yddehm5ncjx0p24vkguth4rta7zv3getcztflxs3kh9rexd"
+   },
+   {
+    "name": "DOS",
+    "pools": 1,
+    "ada": 388620,
+    "pool": "pool10jd7mphm0mmrnfvyytzs3tfrmjmtkvalfx8nql7tae06v0rkjk3"
+   },
+   {
+    "name": "LUM",
+    "pools": 1,
+    "ada": 387723,
+    "pool": "pool1kkmk9dnzrrjtnsejttydecmq63x4dpkln70yfledaednj7mf7rk"
+   },
+   {
+    "name": "ANVIL",
+    "pools": 1,
+    "ada": 384293,
+    "pool": "pool1n3sjq3qvu5vvcd6aud6ndcwq7r3ghmkafcg60gznlwfrk2ucxku"
+   },
+   {
+    "name": "BRNS",
+    "pools": 1,
+    "ada": 383403,
+    "pool": "pool1qsxhnvr03tg6jj7cl0y74jd63n85fgejm8tlqq7ct7fexfygkye"
+   },
+   {
+    "name": "CCASH",
+    "pools": 1,
+    "ada": 382675,
+    "pool": "pool1h40xjqda9wmw9cff5jss3ww9npujkhlvg6xjy9l5ujsu5rqlw28"
+   },
+   {
+    "name": "WOLV",
+    "pools": 1,
+    "ada": 379280,
+    "pool": "pool1p2ldp00jsl5l9xpg9m77zavhqmw7amtg5nlf0jwudlu2zaq389s"
+   },
+   {
+    "name": "TEN",
+    "pools": 1,
+    "ada": 377872,
+    "pool": "pool1upx7l0yrsxt4l94t5xfckahj6m7pt5dpmnx6u60sjxmn5p5mezs"
+   },
+   {
+    "name": "RELY",
+    "pools": 1,
+    "ada": 377749,
+    "pool": "pool1e8vr85ank99g6fx2r7tjel2mh2jyfppnqy6nmp8vr0arys65n05"
+   },
+   {
+    "name": "NOOPS",
+    "pools": 1,
+    "ada": 370823,
+    "pool": "pool12u28yewx8ycf6dj77lzpj6vvhjwp6veh6kxpc63h8fqnqqtlwmu"
+   },
+   {
+    "name": "BLOKY",
+    "pools": 1,
+    "ada": 365862,
+    "pool": "pool1u84yq2lvnay4p9kh4vx7nqfe6efzfehe5mvkw3hf4a89uhmpqgt"
+   },
+   {
+    "name": "DOW",
+    "pools": 1,
+    "ada": 355461,
+    "pool": "pool1kdfznpenxa9wwcz8tweump45k5h78h8hl4slv78fdypsug9ypc6"
+   },
+   {
+    "name": "CHUB",
+    "pools": 1,
+    "ada": 354206,
+    "pool": "pool1stvux7an3kp2p55na0p7eec2e7l66gqcpuc7yu9cx5242g4j2eh"
+   },
+   {
+    "name": "NLD",
+    "pools": 1,
+    "ada": 352121,
+    "pool": "pool15mv5w2vvfv2kplkrt40ylylyvdudv5axq5nyw6ln3v0gkd2auew"
+   },
+   {
+    "name": "NICE",
+    "pools": 1,
+    "ada": 351317,
+    "pool": "pool1zeya2r53sxmqh2ux3ssfsrqerergnw2hjxmp63r83ntwverpqwm"
+   },
+   {
+    "name": "SRP",
+    "pools": 1,
+    "ada": 350512,
+    "pool": "pool107qfdeg9wlpt9yntg7650kzval6ahl696jr2ca20763ukzr0tzw"
+   },
+   {
+    "name": "MATE",
+    "pools": 1,
+    "ada": 345748,
+    "pool": "pool10xmmn972gyza7nj8q4cyy0vrpn6kqzmdz2ut7ynnc8d0ycxlvw3"
+   },
+   {
+    "name": "pool13qe6ycacq",
+    "pools": 1,
+    "ada": 345534,
+    "pool": "pool13qe6ycacqjg3gpvjewg8734d6hs6rhduuenjtnnkwh327hmtyz5"
+   },
+   {
+    "name": "GYS",
+    "pools": 1,
+    "ada": 344492,
+    "pool": "pool1t8dkgz58qcqlak6nn5l5j4qqwvewwmjx85fxtsykk6w9j2e0ng2"
+   },
+   {
+    "name": "BFADA",
+    "pools": 1,
+    "ada": 341492,
+    "pool": "pool1fu69ry8k9qxfque9hng3lxcq7g30pykg38mtahah8x4mzpgls3k"
+   },
+   {
+    "name": "WOW",
+    "pools": 1,
+    "ada": 340701,
+    "pool": "pool1crprz3rdcwvfxmc0s4gxquh3qeqmscww2qfvpl93q52yyn7agsc"
+   },
+   {
+    "name": "TOSHZ",
+    "pools": 1,
+    "ada": 340365,
+    "pool": "pool1huyzkfxwnttj7r4530hv7gc5v6mzk75vuzysc75aemu85mae9vd"
+   },
+   {
+    "name": "BANC",
+    "pools": 1,
+    "ada": 336083,
+    "pool": "pool1umflj8hjq873fs9r6aq2zvgs88zrs5xjswn2znkdaehlz2eqy59"
+   },
+   {
+    "name": "0BoB",
+    "pools": 1,
+    "ada": 335902,
+    "pool": "pool13wtywenpwvg5snncx5zvxevvry85cp3c9nq0xlxlck9l7qh2spx"
+   },
+   {
+    "name": "ADACT",
+    "pools": 1,
+    "ada": 335795,
+    "pool": "pool1y24nj4qdkg35nvvnfawukauggsxrxuy74876cplmxsee29w5axc"
+   },
+   {
+    "name": "DUBAI",
+    "pools": 1,
+    "ada": 335642,
+    "pool": "pool1xxvcz8dem4xufzn74v2y7fs709mfw3tpq963thzg5en5jrkv67a"
+   },
+   {
+    "name": "HAMDA",
+    "pools": 1,
+    "ada": 334861,
+    "pool": "pool1hvevy8qu5lwg7ul66xmzvwv8zwdgdradsg9ncvrflm7dvy407e0"
+   },
+   {
+    "name": "PEACE",
+    "pools": 1,
+    "ada": 326959,
+    "pool": "pool1h5jtxde8j86qrnqzj32ugn480u7gw5xw8wqy5d227rl3vfg58qz"
+   },
+   {
+    "name": "MOST",
+    "pools": 1,
+    "ada": 326418,
+    "pool": "pool1fd8qnudvhz2hanlccdsfrwdxmmwwfryalrmy6a6y62cgqfx3ujz"
+   },
+   {
+    "name": "PANL",
+    "pools": 1,
+    "ada": 324613,
+    "pool": "pool1qhs3cf9ymc2nvmrd2j8cs36cj9jdqgnqk6s9ngyvy2lz5s8rak8"
+   },
+   {
+    "name": "BRIAN",
+    "pools": 1,
+    "ada": 323146,
+    "pool": "pool1qn77pnnf6cf22qjjfd2kadudmdc77rw0uxked3m2arnn2ea2f9v",
+    "dreps": [
+     {
+      "name": "BRIAN",
+      "ada": 937659,
+      "rank": 137,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "Raid Pools",
+    "pools": 7,
+    "ada": 321230,
+    "pool": "pool1h0jfkyfqt729vxhq8ndxffcqn2afjhzzlwqecrvsufgu5sag0sj",
+    "tickers": [
+     "RAID",
+     "RAID1",
+     "RAID2",
+     "RAID3",
+     "RAID4",
+     "RAID5",
+     "RAID6"
+    ]
+   },
+   {
+    "name": "BANAN",
+    "pools": 1,
+    "ada": 310635,
+    "pool": "pool16wt6mzvytu9key68efv7cx6zfkqn0d9kzlnt746cyuv0zj3nxh8"
+   },
+   {
+    "name": "ADNT",
+    "pools": 1,
+    "ada": 308591,
+    "pool": "pool17y0uw9jraxxtqk4mhgkhkye2v6jqzn84u8hl68l9xwq3cvm2vqw"
+   },
+   {
+    "name": "PLANT",
+    "pools": 1,
+    "ada": 308015,
+    "pool": "pool1d0vm9y545l3y2g9pamx45k4e498nllhd8wy4289vw8mt70am2r8"
+   },
+   {
+    "name": "BPE",
+    "pools": 1,
+    "ada": 307084,
+    "pool": "pool1085up093vl7qgwnqsuset7kdt3yflscdp6h8eeakuhyzwlhmq68"
+   },
+   {
+    "name": "pool1zm5nqvrdw",
+    "pools": 1,
+    "ada": 304995,
+    "pool": "pool1zm5nqvrdwmslk682d9qemd9fn8htg2rxlprxjuh0ae5l6sqzz3h"
+   },
+   {
+    "name": "DOTAR",
+    "pools": 1,
+    "ada": 303861,
+    "pool": "pool10n23qyec2zcetv0e3x7fdjydscsrlet5sph2hgtfc7x5ze56jqn",
+    "dreps": [
+     {
+      "name": "Christopher Erckert | Dotare",
+      "ada": 1094117,
+      "rank": 127,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "NES",
+    "pools": 1,
+    "ada": 303822,
+    "pool": "pool1n353xqapcq8wtyskm8cj4g04t8rv03lteyl30c42zug7kzv8vqz"
+   },
+   {
+    "name": "GMBL",
+    "pools": 1,
+    "ada": 302720,
+    "pool": "pool1mhww3q6d7qssj5j2add05r7cyr7znyswe2g6vd23anpx5sh6z8d"
+   },
+   {
+    "name": "FLUX",
+    "pools": 1,
+    "ada": 302263,
+    "pool": "pool1sghwg652uwe7ksmk5laxxft58j6km6prahvnddk3s6zgxek5qen"
+   },
+   {
+    "name": "PASTA",
+    "pools": 1,
+    "ada": 300057,
+    "pool": "pool1442wwr8zzdpcu8uwnglackzr3u5ggrmfxsjja0s7aef66hk2fuc"
+   },
+   {
+    "name": "SRN",
+    "pools": 1,
+    "ada": 299044,
+    "pool": "pool1esd3cqme3zzvvdnsx3p6ywudn6p86mqyz7fpvqpegxv2qzmtes0"
+   },
+   {
+    "name": "BIKES",
+    "pools": 1,
+    "ada": 296698,
+    "pool": "pool1xdgzul0qespnz56zzrckwf4hcryyql9ypc4tya2dlu9a22h43ag"
+   },
+   {
+    "name": "OHANA",
+    "pools": 1,
+    "ada": 295167,
+    "pool": "pool1smfwu5w54mnxea6dg7gwmkk6df8jauuf4h2x0cqew3dk2lgln2t"
+   },
+   {
+    "name": "HASH",
+    "pools": 1,
+    "ada": 295121,
+    "pool": "pool1kjd9ff9u5ytq4atavv2dfsg3pvxqw8d50642pzmpn386zel0ka8"
+   },
+   {
+    "name": "OLEUM",
+    "pools": 1,
+    "ada": 293495,
+    "pool": "pool1gqf605yxhmyfasdjhf8yxcesztgzuek9gfuvy2dnyj5cyp8zga3"
+   },
+   {
+    "name": "MIDFI",
+    "pools": 1,
+    "ada": 292670,
+    "pool": "pool1yuq5ck8d6fssa3ju004wn9nap3ll06hd60a6tau4ptj8sqhtgsn"
+   },
+   {
+    "name": "ANFRA",
+    "pools": 1,
+    "ada": 291210,
+    "pool": "pool1qpuzf5kcxrmuf6qg2nnu9cs7hj2d6ke3fwz58l7rlefcy50caaa"
+   },
+   {
+    "name": "pool1k2cj852um",
+    "pools": 1,
+    "ada": 291164,
+    "pool": "pool1k2cj852umvq5f527x9u7p58mnletdzx29gr4e4npv4nc6m3hch9"
+   },
+   {
+    "name": "ARRK",
+    "pools": 1,
+    "ada": 288460,
+    "pool": "pool18mgmqghey8az6duffc6e9tpzwxsquf00wpkl0jr8gvqxumkg4m0"
+   },
+   {
+    "name": "NIANO",
+    "pools": 1,
+    "ada": 287392,
+    "pool": "pool1ywwtv7clgpjs88ysgpcntc6gemlrsy4037eulquswmtlv55cuzx"
+   },
+   {
+    "name": "XSEC",
+    "pools": 1,
+    "ada": 285160,
+    "pool": "pool143x8nhnr3j9mpzvhayuaen0y8l350guj6yd8mhmhhuupvuah3hh"
+   },
+   {
+    "name": "EUSKL",
+    "pools": 1,
+    "ada": 280802,
+    "pool": "pool1ksfzungz56vxa9sy6hr54v5hf6qx8rmcu6734gqm3qlxucveed6"
+   },
+   {
+    "name": "CTL",
+    "pools": 1,
+    "ada": 274572,
+    "pool": "pool13s6u5zjngelr5uddhqygqqf5tcup0g3ajenma6amy9zuu7e97gm"
+   },
+   {
+    "name": "RENEW",
+    "pools": 1,
+    "ada": 274159,
+    "pool": "pool12kdg7dmdfh0t9hmy43pvl38ftu5dvppyn86wgkc4jq8557xkyz7"
+   },
+   {
+    "name": "ALPHA",
+    "pools": 1,
+    "ada": 273459,
+    "pool": "pool158ag8p06qm4apd750ekep6een9cdldqsq434ll2mp0ykgunmguy"
+   },
+   {
+    "name": "SIGN",
+    "pools": 1,
+    "ada": 272692,
+    "pool": "pool1h0prd5vcdv6uk7hglztdcqfp5czjqxdydxkxkdhg8rrk22mr4ym"
+   },
+   {
+    "name": "KAPY",
+    "pools": 1,
+    "ada": 270601,
+    "pool": "pool18t0u9vf408ftjf9xdpj47gdwkeq3jz3jqyshumm7fvtfkcq7ul7"
+   },
+   {
+    "name": "TOBA",
+    "pools": 1,
+    "ada": 269557,
+    "pool": "pool1ut39vczq4h03vpzfcn7ssxa04qzkyj8nxu4nq4rfv0nsxz39c5y"
+   },
+   {
+    "name": "LOGIC",
+    "pools": 1,
+    "ada": 268805,
+    "pool": "pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp",
+    "dreps": [
+     {
+      "name": "Logical Mechanism dRep",
+      "ada": 608987,
+      "rank": 154,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1lllmq2jgc",
+    "pools": 1,
+    "ada": 266433,
+    "pool": "pool1lllmq2jgcqrag5c77lpc5m34fsqn63leadyx9tzx842n66ly3ql"
+   },
+   {
+    "name": "SLR",
+    "pools": 1,
+    "ada": 264404,
+    "pool": "pool19n5ml38q5uedy8kgwwwtlsa3p9tmfcef0lfjp42k7j9d5mpgs2m"
+   },
+   {
+    "name": "UPSTR",
+    "pools": 1,
+    "ada": 263027,
+    "pool": "pool1keasvddt9vndl8jyhg204s6kqusv5zgzg3kk3l3g949ew402ahe"
+   },
+   {
+    "name": "CHAOS",
+    "pools": 1,
+    "ada": 258787,
+    "pool": "pool1vpa84enqxhh5hnyypeqfshsgqhnjfzyddgq7z4tfmavh68c9s9p"
+   },
+   {
+    "name": "KAWAN",
+    "pools": 1,
+    "ada": 255229,
+    "pool": "pool1grz62pdyyakffeymsjxpkz4x9382y3zhfa8zu28tk2fpqxm6p5l"
+   },
+   {
+    "name": "PDT1",
+    "pools": 1,
+    "ada": 252164,
+    "pool": "pool137cuaqqktk0rhh3a9zj4rchr75qm07pgzgekprle5qyq2xk2nzq"
+   },
+   {
+    "name": "SOULS",
+    "pools": 1,
+    "ada": 251237,
+    "pool": "pool12r08n33avu33ncstukwxyr440mgaazmuclay38v0yt34xytu2dq",
+    "dreps": [
+     {
+      "name": "AdaSouls",
+      "ada": 194207,
+      "rank": 198,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "KNGHT",
+    "pools": 1,
+    "ada": 246215,
+    "pool": "pool1g8w64u3sx9mrvhwrdfvysw4g4wnffkjfp5zds3ur6svwzdhwhx9"
+   },
+   {
+    "name": "DMOON",
+    "pools": 1,
+    "ada": 244039,
+    "pool": "pool1wxpzjtfr79pdfs6m6vg6xmcqjh79ff9d6sgzfdpvs2q26swahew"
+   },
+   {
+    "name": "LAGO",
+    "pools": 1,
+    "ada": 243785,
+    "pool": "pool1a9xyvnnfjnujzy0n2mpf4rztdwrssraw5p5f06mqlgn4s06z0nw"
+   },
+   {
+    "name": "FGPX",
+    "pools": 1,
+    "ada": 243469,
+    "pool": "pool1quj6cp7w4tarq7hrcdsjxlgcmnunm2xvnpvmj20l9nplue6rjxx"
+   },
+   {
+    "name": "pool1n5kljtvdh",
+    "pools": 1,
+    "ada": 238727,
+    "pool": "pool1n5kljtvdhg29vrhr6uefqk76dpepzfwuvsw8zd0z5yqfuqj7x8a"
+   },
+   {
+    "name": "RISE",
+    "pools": 1,
+    "ada": 238149,
+    "pool": "pool1re8cmjt895tpx8dx2veg0cew5yqtxnt82sll03e433a4ugnh9w7"
+   },
+   {
+    "name": "ANZ",
+    "pools": 1,
+    "ada": 237631,
+    "pool": "pool154sjkrwdu80wp6mnjvkwk55aj53l4v37z4zwulfak74vcxg60x0"
+   },
+   {
+    "name": "TSUNA",
+    "pools": 1,
+    "ada": 233568,
+    "pool": "pool1hnmcevsa69k88nh4d6ud5qyykwmgzrg6crju79zsv2uu65mkgr8"
+   },
+   {
+    "name": "KIBI",
+    "pools": 1,
+    "ada": 230565,
+    "pool": "pool1wdzyy2lwc8rd5y9vxwkyxpv62dsa270jepjgy9fa3zpqgeuszun"
+   },
+   {
+    "name": "SIMBA",
+    "pools": 1,
+    "ada": 229041,
+    "pool": "pool1pdqcefsvu9mqxfalj5dywcfyymtpqpjqhlnxl99ds62pxv5ungm",
+    "dreps": [
+     {
+      "name": "Adalion",
+      "ada": 123379,
+      "rank": 211,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "HIST",
+    "pools": 1,
+    "ada": 228883,
+    "pool": "pool1gqk5pzqmrc9c6030m5sj2s3560ymm5ymq3hqjmz6vfdmx4mw5gs"
+   },
+   {
+    "name": "ORPH",
+    "pools": 1,
+    "ada": 228613,
+    "pool": "pool1lxhlu48gq0606mj6k20mh56zz804zf7narxvmty4pd3mgee65e5"
+   },
+   {
+    "name": "BOOST",
+    "pools": 1,
+    "ada": 227841,
+    "pool": "pool1ddghnthymd3duklvx5pfunymqg29xe4vlmy89u2efyjdktn33kz"
+   },
+   {
+    "name": "FIXA",
+    "pools": 1,
+    "ada": 227101,
+    "pool": "pool1nt65pu06tlggjeaer8862fdju98ddrrxa9wnw3k4lhfvgrrgt85"
+   },
+   {
+    "name": "WINTR",
+    "pools": 1,
+    "ada": 222326,
+    "pool": "pool1njs7jzx60aht6ws459434lsx37gfmqahwr0uu4y00dd3wwnggym"
+   },
+   {
+    "name": "MOCHI",
+    "pools": 1,
+    "ada": 220814,
+    "pool": "pool1ferfwtmcjm9rxc00ugtdwrm9m042jf4xjvse6a8u5smxqt0pwnx"
+   },
+   {
+    "name": "BLOX",
+    "pools": 1,
+    "ada": 219058,
+    "pool": "pool13q9w8c2namcec725euu7pfjnzz2fj9h5k2wjtafysnwnqdcrwg7"
+   },
+   {
+    "name": "0FEES",
+    "pools": 1,
+    "ada": 218574,
+    "pool": "pool16x5fslqfvgmsyra4vmpvuzq7p5fzeln240envdwfm2jps0j3rw2"
+   },
+   {
+    "name": "HAWAK",
+    "pools": 1,
+    "ada": 217907,
+    "pool": "pool15fxktqvd92sq8plh3rjdrksumt9p8rzsayfk4akv2hng5r8ukha"
+   },
+   {
+    "name": "BREAD",
+    "pools": 1,
+    "ada": 214953,
+    "pool": "pool10ldeq0mccp8t4gfmvfkwmfcvh2pvz44hj2hmewfpk9udjxug58y"
+   },
+   {
+    "name": "AA2",
+    "pools": 1,
+    "ada": 213622,
+    "pool": "pool1yemdr25t4g3ev038yn433dt58d8p52nee7kmcykjlhye6hshu9m"
+   },
+   {
+    "name": "KROM",
+    "pools": 1,
+    "ada": 213428,
+    "pool": "pool14hsxa2zfwzvy9ncdjwnx0xkcltjmdydeayxfju7suuuewv0dnke"
+   },
+   {
+    "name": "BZH",
+    "pools": 1,
+    "ada": 207940,
+    "pool": "pool1nwddjgvjrke3e2gu6m0a7y04alhgcx4egec6dd9gahr5sz0p5u9",
+    "dreps": [
+     {
+      "name": "Breizh DRep [BZH]",
+      "ada": 102096,
+      "rank": 216,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1f297l6rl9",
+    "pools": 1,
+    "ada": 201899,
+    "pool": "pool1f297l6rl99h5v56x48j4pgza70ya3lm37yzu0njpcnsljqdd4dl"
+   },
+   {
+    "name": "VLHLA",
+    "pools": 1,
+    "ada": 201531,
+    "pool": "pool19xyfanyp28j6j07dxgwdjp0wur6seqmyyu64qgzstzl7s47pvpj"
+   },
+   {
+    "name": "pool1wll3vr4v6",
+    "pools": 1,
+    "ada": 200713,
+    "pool": "pool1wll3vr4v605eap9hpjfpda5cjegqfkjt8hrz3kkxpnffqejhav3"
+   },
+   {
+    "name": "ADAIM",
+    "pools": 1,
+    "ada": 198647,
+    "pool": "pool1q6lzp5x6tqg04chsxakupgq6x829nsx2dk5w8h043fnajm8d3uj"
+   },
+   {
+    "name": "AVOC",
+    "pools": 1,
+    "ada": 194509,
+    "pool": "pool1th6xh9uks6rywerld5aya0gc3yswwrx3yus9zvehyqaky5c6utd"
+   },
+   {
+    "name": "ELEMT",
+    "pools": 1,
+    "ada": 194026,
+    "pool": "pool19ut4284xy9p82dd0cglzxweddfqw73yennkjk6mmp650chnr6lz"
+   },
+   {
+    "name": "STAYK",
+    "pools": 1,
+    "ada": 191218,
+    "pool": "pool1l4synes9s3swlf5r5rsfpede3582r4km2wd94xctceyaudv9zx3"
+   },
+   {
+    "name": "ACP",
+    "pools": 1,
+    "ada": 189436,
+    "pool": "pool1wdrg5vtv3nrh0mqmfua5qmj5p3zchzay2cz80jwfxxwrx7gp402"
+   },
+   {
+    "name": "pool1d42r0zln3",
+    "pools": 1,
+    "ada": 189307,
+    "pool": "pool1d42r0zln3kvvc54w4945735gnrm635as8hj8zy38tjprw2l49rd"
+   },
+   {
+    "name": "USA",
+    "pools": 1,
+    "ada": 185232,
+    "pool": "pool1wyu23ahrnql8hc0y5jx00y2evnmw05d2rxnyqlgqq4lxs93q7ue"
+   },
+   {
+    "name": "SPRO",
+    "pools": 1,
+    "ada": 183999,
+    "pool": "pool155x3l57d4xu52t93f9r55cqaysej4pc2dl3jkc9d6w5ckyu6u7n"
+   },
+   {
+    "name": "H3ART",
+    "pools": 1,
+    "ada": 182871,
+    "pool": "pool12d3th585ga2w593eu5zqnkahsnlczjpqxemjc0qhku7awnhvn8a"
+   },
+   {
+    "name": "CCP",
+    "pools": 1,
+    "ada": 182674,
+    "pool": "pool1vwquf4wt465lhketcy2j7jwpz5l6l0ce6a79ga3y4wg7gc8egp0"
+   },
+   {
+    "name": "MAXC",
+    "pools": 1,
+    "ada": 181975,
+    "pool": "pool1k5a5e3ylva34qpmwdywv7fn75wt3gzv423e9uw2vmw5rqjc2q7t"
+   },
+   {
+    "name": "_Q_",
+    "pools": 1,
+    "ada": 181272,
+    "pool": "pool1n5ytegzw3enscfw4t8wsjytrz228agvm9c3xaarce7pgjzftdtx"
+   },
+   {
+    "name": "HNB1",
+    "pools": 1,
+    "ada": 177271,
+    "pool": "pool1nyh6jcznks8wvlek7r7rlvg9hfchfqqyvup39ugkmr6kghrl0as"
+   },
+   {
+    "name": "777",
+    "pools": 1,
+    "ada": 176420,
+    "pool": "pool1777xvdg0vydjp78cdcfrmpuqj28w3nuasf7h9a2f6cd4z990777"
+   },
+   {
+    "name": "MRBEE",
+    "pools": 1,
+    "ada": 172796,
+    "pool": "pool1zdl39pvapcaj5um8nyduaq2vmn64dqwz4qlhnzurnca8zetk74s"
+   },
+   {
+    "name": "ALPCH",
+    "pools": 1,
+    "ada": 171399,
+    "pool": "pool18r2y72aue5nmv489xtnfxl36vzusq95qst6urd87yd5hgzms04c"
+   },
+   {
+    "name": "NARU",
+    "pools": 1,
+    "ada": 164612,
+    "pool": "pool1jm8s3r3xq4kpawavy096rqle964exle3lxwnpvx62wjnwadwd5l"
+   },
+   {
+    "name": "PMW",
+    "pools": 1,
+    "ada": 163215,
+    "pool": "pool1p627hhec2ha6wu6ql377c3hv4mjd26w7ll0xyw2ezgnu6nyl0a4"
+   },
+   {
+    "name": "CORVA",
+    "pools": 1,
+    "ada": 160985,
+    "pool": "pool1g3q2evtv2u3g2efazg43aw905r8re6906us60rj28kn97d9y6wq"
+   },
+   {
+    "name": "RKDN",
+    "pools": 1,
+    "ada": 160955,
+    "pool": "pool16l9ph0cm42qk4h8wqlka3fw7ws7rvnj5n59xzy8ky4l8gnudugk"
+   },
+   {
+    "name": "TTP",
+    "pools": 1,
+    "ada": 160234,
+    "pool": "pool1r76pjed6q8k9y8lngcedqhv52zqzc2gczwzqc93x6kwq73xprtr"
+   },
+   {
+    "name": "TPOOL",
+    "pools": 1,
+    "ada": 158075,
+    "pool": "pool1wrjg8fts9cus0eq8jyf5wqsfe64e8tvrquxgff3tyze4qal4hwq"
+   },
+   {
+    "name": "SCP",
+    "pools": 1,
+    "ada": 157574,
+    "pool": "pool1mzry5s8pkfy42ul2xevaq7dk6qae8247hqd8serm3ms06glvny0"
+   },
+   {
+    "name": "WISH",
+    "pools": 1,
+    "ada": 156643,
+    "pool": "pool1fk7lk6x7j6jkxuvl0het8nmunra4g7370mw29f286dv9ylegutq"
+   },
+   {
+    "name": "0AKN0",
+    "pools": 1,
+    "ada": 156171,
+    "pool": "pool12pk63q22re4up2dg86tyjwthuauqu0ryq3jlxs9v29zk68cpugl"
+   },
+   {
+    "name": "UK1",
+    "pools": 1,
+    "ada": 155701,
+    "pool": "pool1sx4e8rvx2xdxgkww2fpjtmvrnaftfrtfge29xcn72hh7kch5snf"
+   },
+   {
+    "name": "pool16erldmmx5",
+    "pools": 1,
+    "ada": 155177,
+    "pool": "pool16erldmmx5nvrwncujtp6lxs9tmvgxcpthd600pe6axm5z3p6522"
+   },
+   {
+    "name": "pool1nss40t2xh",
+    "pools": 1,
+    "ada": 154714,
+    "pool": "pool1nss40t2xhh7ntgp8ca73u2xd8kzyn3dgtf9jfh0y57kxul9zt82"
+   },
+   {
+    "name": "ZOE",
+    "pools": 1,
+    "ada": 152243,
+    "pool": "pool1n5shd9xdt4s2gm27fxcnuejaqhhmpepn6chw2c82kqnuzdtpsem"
+   },
+   {
+    "name": "BOLT",
+    "pools": 1,
+    "ada": 150700,
+    "pool": "pool1jpezycd8q3l6a255dv8wt7vpt4aay8llqakdn7vkum5swes4hu3"
+   },
+   {
+    "name": "NIXE",
+    "pools": 1,
+    "ada": 148767,
+    "pool": "pool16cy45uggzv3ah3s5m960v9vuxlx47sfnezpszuhcwl99z7nq8kq"
+   },
+   {
+    "name": "pool162343gl83",
+    "pools": 1,
+    "ada": 148107,
+    "pool": "pool162343gl83jtrskacz2cex7szf4yd5t77f5nd0e65fg78ztppuj9"
+   },
+   {
+    "name": "DAI",
+    "pools": 1,
+    "ada": 146860,
+    "pool": "pool1r6dzsz6ju52hgelstefrrel4y8fsyt8ck9qgfvvmamgns4vh7w4"
+   },
+   {
+    "name": "pool1263z8symv",
+    "pools": 1,
+    "ada": 144730,
+    "pool": "pool1263z8symvqmmsg876y2lzluv29am2v9fpzka9sf3nrhz7uwlzap"
+   },
+   {
+    "name": "TRUST",
+    "pools": 1,
+    "ada": 143746,
+    "pool": "pool1ksh2zpeeqe0rpcug63up5l66g3kr5vf58jraeun82rur6m4g6xz"
+   },
+   {
+    "name": "SAFE",
+    "pools": 1,
+    "ada": 143584,
+    "pool": "pool1wjsshqjpl3n6zlscnfvyy9gxklkav2dvfyprfye6l0kewyvv6yj"
+   },
+   {
+    "name": "LGBTQ",
+    "pools": 1,
+    "ada": 140745,
+    "pool": "pool1ls80gx9sen3qc7s6c7u2ajw6hk8faqanljugcg5tfukp6qscetv"
+   },
+   {
+    "name": "YORK",
+    "pools": 1,
+    "ada": 140696,
+    "pool": "pool1n2j7zmw69gf3weqp3wae234p3lykjks49c84mleqgmnmg4jht3y"
+   },
+   {
+    "name": "SWARM",
+    "pools": 1,
+    "ada": 140534,
+    "pool": "pool1us8dkk3y8j00qq5kscxxklyzwt74jgav226s2rtgaqxek7h8vc8"
+   },
+   {
+    "name": "STKPL",
+    "pools": 1,
+    "ada": 140371,
+    "pool": "pool1t93hrmha847r5gqazttyg29c9fxfv778w3kc5vf4q7vu5g4ec0r"
+   },
+   {
+    "name": "DOD",
+    "pools": 1,
+    "ada": 139952,
+    "pool": "pool1pv4hhvy8dkvllr706q0lpyu9py6lcf6zddl4wlynwx3cglxajmg"
+   },
+   {
+    "name": "YUZUP",
+    "pools": 1,
+    "ada": 136708,
+    "pool": "pool1wccveh5l4gvns7egngqdd4qk27w0kxqc68jjrnnkgjxz6zwt7ws"
+   },
+   {
+    "name": "CDNC",
+    "pools": 1,
+    "ada": 132145,
+    "pool": "pool1yff3j4xqhmunrccjsdh0u9qxrws7xdqhagjx5lqktklwj67u5s3"
+   },
+   {
+    "name": "FPOOL",
+    "pools": 1,
+    "ada": 128223,
+    "pool": "pool13zdrhek6m4n947grhrm0772zt09lrm2vzkffsla25e7yq6xqjkg"
+   },
+   {
+    "name": "SWADA",
+    "pools": 1,
+    "ada": 126403,
+    "pool": "pool1t9ckjy949dk97prfs6any8xdjyq9du6prnplx06n4fcn5jgukhc",
+    "dreps": [
+     {
+      "name": "iFly",
+      "ada": 85881,
+      "rank": 221,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "ERA",
+    "pools": 1,
+    "ada": 126376,
+    "pool": "pool1zvm45jj5wz6kgfr2xfg75rx0auzxaedu4ulddhnrzk4uwuyuvpn"
+   },
+   {
+    "name": "DARK",
+    "pools": 1,
+    "ada": 125572,
+    "pool": "pool1fn8mfqp4jt6097ygqrze5rjzg3y5s8fktxszqgs9mg22jvr42dx"
+   },
+   {
+    "name": "SABAI",
+    "pools": 1,
+    "ada": 125385,
+    "pool": "pool1s0kkragd8r2xyyms680l9eed443v3eufmarykpjfh2r6cpksm2j"
+   },
+   {
+    "name": "ADAES",
+    "pools": 1,
+    "ada": 122715,
+    "pool": "pool1yz3fnqnsqhqpkc2tjqn4dkws8nnr8a5kcs50g780nh0wk8tgnp2"
+   },
+   {
+    "name": "PSP",
+    "pools": 1,
+    "ada": 121947,
+    "pool": "pool1w2duw0lk7lxjpfqjguxvtp0znhaqf8l2yvzcfd72l8fuk0h77gy"
+   },
+   {
+    "name": "ARTMS",
+    "pools": 1,
+    "ada": 120681,
+    "pool": "pool194lhpd5e6a8n8n0zce5hg9f5279pqecd86yl0ytf8nztk2x9unv"
+   },
+   {
+    "name": "ART",
+    "pools": 1,
+    "ada": 119955,
+    "pool": "pool1rhq7qyw4y2s80gstyevm6rhz2lsdsrcstawunxx5eld8csvuvlu"
+   },
+   {
+    "name": "MZS",
+    "pools": 1,
+    "ada": 119192,
+    "pool": "pool1glll6eskvg5f4jcep5trqcgqa8zpekfv8d8a6jrprvcwum6u5jn"
+   },
+   {
+    "name": "CBROS",
+    "pools": 1,
+    "ada": 118595,
+    "pool": "pool1wntxmftndrsj7y4aqles8knl3nfuyj22l83jun02yyx9s962gm3",
+    "dreps": [
+     {
+      "name": "CBROS Pool",
+      "ada": 92363,
+      "rank": 220,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "HRBR",
+    "pools": 1,
+    "ada": 114959,
+    "pool": "pool1twu4rn366744tqq9g66ruy3rete6842z7nnm4vy0q5jaqd48867"
+   },
+   {
+    "name": "MAKE",
+    "pools": 1,
+    "ada": 114693,
+    "pool": "pool14n6nrj7rdrcxhwlzx5kytt60pqwnzjm97nuczrpa0ucwzyx2ule"
+   },
+   {
+    "name": "SNSKY",
+    "pools": 1,
+    "ada": 113915,
+    "pool": "pool1qa2h3hha0m5he0429ym7tqvsn89nsddvn7wgkx3v8g6hsstdzc0"
+   },
+   {
+    "name": "GOLGI",
+    "pools": 1,
+    "ada": 111860,
+    "pool": "pool1al783um2muyhrpcj779y46z0qtnd0nteu0y5jt7252nl26dt0h0"
+   },
+   {
+    "name": "ZAM",
+    "pools": 1,
+    "ada": 111813,
+    "pool": "pool1ch3k0e07dhqwum847sa02cyecrp000a6egdx89fz5rza230jhlp"
+   },
+   {
+    "name": "SPIDR",
+    "pools": 1,
+    "ada": 111659,
+    "pool": "pool1tnl3yxmj8848vq6meduhz9n5520a7dwsh05r5gfyvlatj87k3jl"
+   },
+   {
+    "name": "BLESS",
+    "pools": 1,
+    "ada": 110774,
+    "pool": "pool1hv3yae6keeeu2y7eusejx4swd2myfkurldt7lasn2qu4xk20j8m",
+    "dreps": [
+     {
+      "name": "God BLESS You",
+      "ada": 1143008,
+      "rank": 125,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "pool1psr42v6rv",
+    "pools": 1,
+    "ada": 107662,
+    "pool": "pool1psr42v6rvv3raeqsg9ru2zy5dp4cchlde8hw9xthrpstx5wz7wk"
+   },
+   {
+    "name": "POND",
+    "pools": 1,
+    "ada": 106446,
+    "pool": "pool1t0jheek3yftf0a9dgzgr2hc2wttwrcjyd5whdrek4ggcc5famre"
+   },
+   {
+    "name": "ICP1",
+    "pools": 1,
+    "ada": 105445,
+    "pool": "pool1jv9pf6w2fmjqpaekyt74tjkmjxhma8wsqs8ur3dte45tqdxe3t0"
+   },
+   {
+    "name": "ANCO",
+    "pools": 1,
+    "ada": 105368,
+    "pool": "pool13p725l7vqedxvkrstaq7myguewcktjglapwls3re7wakxdv90fw"
+   },
+   {
+    "name": "ZORBA",
+    "pools": 1,
+    "ada": 103226,
+    "pool": "pool1udt98825znk9uslz4v05gh5cd3s5e4g0cd9c4gzhcfpd2j2xm2u"
+   },
+   {
+    "name": "PARAD",
+    "pools": 1,
+    "ada": 102108,
+    "pool": "pool1yfacynd0va3rw27tjldfz05f6hfjhfv36wwdhn3dy2hfqq00w8y",
+    "dreps": [
+     {
+      "name": "Captain Crypto",
+      "ada": 3225906,
+      "rank": 88,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "DEEP",
+    "pools": 1,
+    "ada": 101741,
+    "pool": "pool136903m0kag2amlga2ypcz8wnf7d552qgy5t6vz2pqlzuq2kyshy"
+   },
+   {
+    "name": "CRYL",
+    "pools": 1,
+    "ada": 101365,
+    "pool": "pool1mkw6psku0jvaw60uqleul9jxlmyt2xet3urjrgu6735ryxtga60"
+   },
+   {
+    "name": "DRRS",
+    "pools": 1,
+    "ada": 100713,
+    "pool": "pool1epqdygzumryx7w9kk5l76gfjsvzuesmeh3u3tfjmmdsw65ja7k3"
+   },
+   {
+    "name": "pool1y4yyg9zq2",
+    "pools": 1,
+    "ada": 100080,
+    "pool": "pool1y4yyg9zq2000akup68w68r0m42td2h2h5cz282ua4u985nzszkv"
+   },
+   {
+    "name": "TRADE",
+    "pools": 1,
+    "ada": 98869,
+    "pool": "pool1hxdcr4u22lytge79hr5hds39e90jsdmhafphdgnn4hlqvl4qlt7"
+   },
+   {
+    "name": "one",
+    "pools": 1,
+    "ada": 98304,
+    "pool": "pool18qzks8vdf0yu0u5ccf8aaj35q6zfutdcfgrssuvdjmgtyykr922"
+   },
+   {
+    "name": "EUTXO",
+    "pools": 1,
+    "ada": 97512,
+    "pool": "pool1azwa3mcez0mr7520jznl0kamr3wdun5ygzscwtjulhdy5s58vvu"
+   },
+   {
+    "name": "UK007",
+    "pools": 1,
+    "ada": 97340,
+    "pool": "pool1s79cqtwk5s24lcske704ckx7k2pagn8hc95rxvy3xfda6r62pg9"
+   },
+   {
+    "name": "ADPL",
+    "pools": 1,
+    "ada": 93649,
+    "pool": "pool1456lrrp0a3gsgkmyx0rm8wkdmdku75tfdlu9xvpffvxmqmjkwee"
+   },
+   {
+    "name": "CELL",
+    "pools": 1,
+    "ada": 93026,
+    "pool": "pool1d63tmq02tgtk7yd6g62p9h44w4xqdgz9y8jkmcrztfmmqga540m"
+   },
+   {
+    "name": "LIBE",
+    "pools": 1,
+    "ada": 92917,
+    "pool": "pool1w0s8vf9qse980vulgszvusw3800d6dlc7wkusr0aqvzlz75qgqg"
+   },
+   {
+    "name": "E7D",
+    "pools": 1,
+    "ada": 91418,
+    "pool": "pool1sj3gnahsms73uxxu43rgwczdw596en7dtsfcqf6297vzgcedquv"
+   },
+   {
+    "name": "CET",
+    "pools": 1,
+    "ada": 88731,
+    "pool": "pool13fpvzhz7p0f4c960k44erfykflr7qdp86t6jnxlfamhqcmfha42"
+   },
+   {
+    "name": "ATM",
+    "pools": 1,
+    "ada": 88692,
+    "pool": "pool1qq76dtlr0m9g6xlvngzq550j86cgtslphyjffz3pgpn7wazatdc"
+   },
+   {
+    "name": "HYGGE",
+    "pools": 1,
+    "ada": 88476,
+    "pool": "pool1lr9vvcf5r5jgkgv5ly7z2lh068ymzg4xmqk5f8pu2k23vt25x7a"
+   },
+   {
+    "name": "SPG01",
+    "pools": 1,
+    "ada": 88319,
+    "pool": "pool1arx4x8ecnxu46xrpfj88hwm25j9gcy8080szvf62a0avke556v5"
+   },
+   {
+    "name": "BPP",
+    "pools": 1,
+    "ada": 86096,
+    "pool": "pool1k2yfr7tapqzfgdn7vq2u44225rtqxctelr6dp0xjqggrwnx9hnw"
+   },
+   {
+    "name": "KAYA",
+    "pools": 1,
+    "ada": 84377,
+    "pool": "pool1vfayajkdc0gw876lax5va6ygpfpsd8kz73k4y977emm3clnxlm5"
+   },
+   {
+    "name": "pool1e6rjpsl42",
+    "pools": 1,
+    "ada": 83855,
+    "pool": "pool1e6rjpsl42hsc52zc9s2awhv2df50yzw43xtc7d0vranpc9ej8uj"
+   },
+   {
+    "name": "1GURU",
+    "pools": 1,
+    "ada": 83543,
+    "pool": "pool1892ry20mvu6tvrmuua5gdmk7unw30w7tf8scpllpyq8w2sdwvc7"
+   },
+   {
+    "name": "YYC",
+    "pools": 1,
+    "ada": 81651,
+    "pool": "pool1z724xxqgzf9a30eejsa4edznmv8hgy27ssxqfcpqz42sc6lfqwu"
+   },
+   {
+    "name": "TQWS",
+    "pools": 1,
+    "ada": 79144,
+    "pool": "pool18xykgvvvxej2e5ap04ks72d8fdke4qsqeh30satznyrtj88634d"
+   },
+   {
+    "name": "SHOP",
+    "pools": 1,
+    "ada": 78107,
+    "pool": "pool1wm89xjqp96t3mlun3pa5suxa3t4s5lluq239en0nxl7pcm5tprc"
+   },
+   {
+    "name": "SJG",
+    "pools": 1,
+    "ada": 78012,
+    "pool": "pool1sqpksswmxpgk6yxllyq9ad4qhtnt5qyz2pv5xmz6kkt5ujrgqwf"
+   },
+   {
+    "name": "NOCAR",
+    "pools": 1,
+    "ada": 74855,
+    "pool": "pool1rk28hp58ptwapha9nc944ast32gln8a7hx6eue0gzuj7sndzrhk"
+   },
+   {
+    "name": "KOBE",
+    "pools": 1,
+    "ada": 73745,
+    "pool": "pool14w9tn4w30dwd2lfv4cwjg2a2e3ukfd0nqrydx37fjzf7z5f5jnk"
+   },
+   {
+    "name": "300",
+    "pools": 1,
+    "ada": 71007,
+    "pool": "pool1v8gvy6tjp8x8wg5h4jw20p9up04lxgw0l0lgery9mz4h7h9x25n",
+    "dreps": [
+     {
+      "name": "Wolfoden",
+      "ada": 1198271,
+      "rank": 120,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "PERK1",
+    "pools": 1,
+    "ada": 69393,
+    "pool": "pool1xvfzclnwf0jyc9ekqmamshha9dmw8mpzd9ykgxjjpxnuwdv6mzk"
+   },
+   {
+    "name": "MCA",
+    "pools": 1,
+    "ada": 68739,
+    "pool": "pool15wk0wjrau5pv6rp6w34g3mjxqejkfj3yak0xa9m63upcxx63myh"
+   },
+   {
+    "name": "ROAM",
+    "pools": 1,
+    "ada": 65008,
+    "pool": "pool1qlpjsz5j5vqs59cnu09j90agycj2xvrp45sv0v6euujj60up6dw"
+   },
+   {
+    "name": "MRPHM",
+    "pools": 1,
+    "ada": 62673,
+    "pool": "pool1meljzszklf23y97ka5sjqwasnel50xe5ar68gz70slm0jmt2wxs"
+   },
+   {
+    "name": "GEN",
+    "pools": 1,
+    "ada": 61942,
+    "pool": "pool1gvnkmpfu26vncrmhj6hr792kwu32hw553upadcphjwu4qewj7jz"
+   },
+   {
+    "name": "SALUD",
+    "pools": 1,
+    "ada": 60781,
+    "pool": "pool1qqqqvmpm9v2l0tkwx4dpzth3g85lapxjug2j6sucnphyqlt4fuu"
+   },
+   {
+    "name": "CRPL",
+    "pools": 1,
+    "ada": 59976,
+    "pool": "pool1e3y7u0rtq2zskc7ansvtrd4p3vtv9hglyztzcvsvlk22w9t40v0"
+   },
+   {
+    "name": "FAT",
+    "pools": 1,
+    "ada": 59345,
+    "pool": "pool1yzd344e32exxzjnjet4l466zcfnte5rnzveywvztxdxug2yu7m4"
+   },
+   {
+    "name": "XRX",
+    "pools": 1,
+    "ada": 56328,
+    "pool": "pool1v3rzrj25ak30dhuyrupkxeddttetxzh4cz9ccpjlfxuh6d85d58"
+   },
+   {
+    "name": "MLMA",
+    "pools": 1,
+    "ada": 55317,
+    "pool": "pool1vy9qerf9fenp893mqrdm58uj45w3etutv4n0vdh8669uvqenkqr"
+   },
+   {
+    "name": "TALOS",
+    "pools": 1,
+    "ada": 54161,
+    "pool": "pool1p00qq8zftf8m2ll0r9d24fx6tq7yzxzy5teltpswl7zew5m7nqp",
+    "dreps": [
+     {
+      "name": "Talos",
+      "ada": 237795,
+      "rank": 191,
+      "cls": "spo"
+     }
+    ]
+   },
+   {
+    "name": "TAPC",
+    "pools": 1,
+    "ada": 50262,
+    "pool": "pool1j4nkshfytq8tww99ttfwvrmv8n7yq2tvuw0xlphelzzw6vfghwq"
+   },
+   {
+    "name": "MONTY",
+    "pools": 1,
+    "ada": 49888,
+    "pool": "pool1533ly347ggl6je42ta7l7dv262hg07n8p4y8v32npgvajl6rxqz"
+   },
+   {
+    "name": "pool1w0jjajfvu",
+    "pools": 1,
+    "ada": 48171,
+    "pool": "pool1w0jjajfvur53nxrlc4nnm73087lm39qfumeq8r449jwvz3wdx05"
+   },
+   {
+    "name": "KCCP",
+    "pools": 1,
+    "ada": 43936,
+    "pool": "pool1v8q93vtkf4vqqqus6ts772w8dr9h5tz99lnylfj40x3p7cutxx4"
+   },
+   {
+    "name": "MGATE",
+    "pools": 1,
+    "ada": 42033,
+    "pool": "pool1xznpgmkfkf4f5wzks85z778v2s94vhmjxc60m8tphvypj6jp2w2"
+   },
+   {
+    "name": "ITRG",
+    "pools": 1,
+    "ada": 41856,
+    "pool": "pool1xzsckz6hd64pnle2c88e3gccccyfs7w6eauxuffpcc5sx2mtekx"
+   },
+   {
+    "name": "RDC",
+    "pools": 1,
+    "ada": 41002,
+    "pool": "pool14hk8kx2c8ukxcq7z3tqdedly9599f9sfhy5lfd3mp98txkdeevk"
+   },
+   {
+    "name": "SPKL",
+    "pools": 1,
+    "ada": 38230,
+    "pool": "pool10q33p4hx4wqum6thmglw7z5l2vaay4w6m5cdq8fnurw7vjdppcf"
+   },
+   {
+    "name": "WADE",
+    "pools": 1,
+    "ada": 37530,
+    "pool": "pool1ct4ag0j73mxzy4325zwwxhgswemlgmepdnqxj6f7edz4zmlfeve"
+   },
+   {
+    "name": "nmk",
+    "pools": 1,
+    "ada": 35266,
+    "pool": "pool1lr02c9krwmtzr29e9h2w5e7crr9elss7qfflkr42j0ke6de4vh7"
+   },
+   {
+    "name": "BOOM",
+    "pools": 1,
+    "ada": 34805,
+    "pool": "pool1vz9txqmdhxwegpy7uzrsap84z309veehqv3uh4s60qwxk0u7h06"
+   },
+   {
+    "name": "FHLN1",
+    "pools": 1,
+    "ada": 33252,
+    "pool": "pool1z2afpmku5v8yapjf29s3w6m0yk6gc49ytpngscum5nmjz2d8aah"
+   },
+   {
+    "name": "TRASI",
+    "pools": 1,
+    "ada": 31119,
+    "pool": "pool1lakvp73yzpuueyrhzr3sfyy0796gm53g95kapgnmsvv4k6apr5r"
+   },
+   {
+    "name": "DXB",
+    "pools": 1,
+    "ada": 30758,
+    "pool": "pool1jf32ru0d9mcre5pp7yundjdfcz8qlhmw4f5cftgh8vkqy8scj09"
+   },
+   {
+    "name": "ZENY",
+    "pools": 1,
+    "ada": 28668,
+    "pool": "pool1qqqq02jxq3q9j93devp9pts90ctm8w3r0rgek97ngujpjgpw46j"
+   },
+   {
+    "name": "BEEHI",
+    "pools": 1,
+    "ada": 25493,
+    "pool": "pool1wp7vqk4mkx0w0wxzpy8avhft4qwcg60xldwem2uh9n4pw777fhz"
+   },
+   {
+    "name": "HUDO",
+    "pools": 1,
+    "ada": 25349,
+    "pool": "pool1kccqxg032r6dcqqpvmv87azttcug5ug6cur9pa7qkuwc5ze4pxa"
+   },
+   {
+    "name": "MYR",
+    "pools": 1,
+    "ada": 25239,
+    "pool": "pool1zyjvzvvkppsepsv4d75t2lmxt5p3cpn73pw7jk9gstxh78aa9ah"
+   },
+   {
+    "name": "ZENA",
+    "pools": 1,
+    "ada": 25230,
+    "pool": "pool1yvwry5gmqta5tug7gjmfr33c2whdjf88tfykqckaxsdcgcd482q"
+   },
+   {
+    "name": "pool1g7axcymry",
+    "pools": 1,
+    "ada": 24925,
+    "pool": "pool1g7axcymry0dz86usn9np76gm2tankhh478k2x3uc7v0pugcv2xp"
+   },
+   {
+    "name": "RXR",
+    "pools": 1,
+    "ada": 24345,
+    "pool": "pool1luyjjta9jja0nvh4wzqt4jvtesrlt893dj4c7x533dvfq9zshvp"
+   },
+   {
+    "name": "pool1c38rf777l",
+    "pools": 1,
+    "ada": 24314,
+    "pool": "pool1c38rf777lz0lweuz856xtetz2p2tfq04xfles089839tclt4dp3"
+   },
+   {
+    "name": "PMAN",
+    "pools": 1,
+    "ada": 22465,
+    "pool": "pool1hkumvckq9l79akgge54ugnxa4n86s63j6jvhmvx5g7cgz7nc6cs"
+   },
+   {
+    "name": "SKILL",
+    "pools": 1,
+    "ada": 20200,
+    "pool": "pool1gplusrfxc087ep94rata3m02qpyqa6a6g4wezxf4fwwnczzyg3l"
+   },
+   {
+    "name": "WILDR",
+    "pools": 1,
+    "ada": 18772,
+    "pool": "pool127jufnlxk4n6he84qjf8ppzmxs9sjnqlhulnuzsk0uc0whtl9sn"
+   },
+   {
+    "name": "pool1tnymyv08d",
+    "pools": 1,
+    "ada": 18610,
+    "pool": "pool1tnymyv08dl3k9wyfz040vq626542ztm60wwyu7szwl5l6x9h3vl"
+   },
+   {
+    "name": "CCIO",
+    "pools": 1,
+    "ada": 16350,
+    "pool": "pool10jqlkjfn2rtlc6hp95p8k4h04h3dfmdcgnga6umwp2rpukpg20l"
+   },
+   {
+    "name": "LUMP",
+    "pools": 1,
+    "ada": 14781,
+    "pool": "pool1ddhftaa3pv225npllmevq9remkeaf0fhsayx78zhannjv0tm0ds"
+   },
+   {
+    "name": "pool1plgh3y74v",
+    "pools": 1,
+    "ada": 13608,
+    "pool": "pool1plgh3y74vhkj7l0wpxtnwtp22czfq004a69y40fptfg4kntvypm"
+   },
+   {
+    "name": "CAHLI",
+    "pools": 1,
+    "ada": 12642,
+    "pool": "pool18mnua97ndq302yw2c6aaw6msx5rgf79mfnk4xe5y92tvjl45etl"
+   },
+   {
+    "name": "pool1phgu0sftp",
+    "pools": 1,
+    "ada": 11835,
+    "pool": "pool1phgu0sftpeantu8smmve8w2pa0n4jhhxekrls8h8mnyuvm8m5t8"
+   },
+   {
+    "name": "NRVN",
+    "pools": 1,
+    "ada": 11121,
+    "pool": "pool1xmtmp6cmmmaatkn3jd9dlht8xjyf7xnqmrurs59kj2ygxuz2jkd"
+   },
+   {
+    "name": "WOMEN",
+    "pools": 1,
+    "ada": 9737,
+    "pool": "pool1kfu02878dsz2l2pml9r42fvh32l4zn3msjvgfx077q3yx2xgul8"
+   },
+   {
+    "name": "MINES",
+    "pools": 1,
+    "ada": 9076,
+    "pool": "pool18e0uhtm4pspfrnktwguypytjfgwz6dw6zzn3gulpdjfx7qd0439"
+   },
+   {
+    "name": "XC0DE",
+    "pools": 1,
+    "ada": 8169,
+    "pool": "pool1ux4es4p8kfq3u4nax564ukcte2vzepsz68dkgg24k7l7xh5786v"
+   },
+   {
+    "name": "ADASC",
+    "pools": 1,
+    "ada": 7388,
+    "pool": "pool104hlwrk98e6h07e05ywee3thn379ddmmfveje8d6cuvp54zcah6"
+   },
+   {
+    "name": "SILVA",
+    "pools": 1,
+    "ada": 6976,
+    "pool": "pool1ah9fqr5pwdtjtw82nkkcskak4vtc2xjz70mkyselzvalgzd3jlt"
+   },
+   {
+    "name": "SSX",
+    "pools": 1,
+    "ada": 6005,
+    "pool": "pool1h92eaq3wksa7j3ecd8llyxva9kuyuz5ucm7a8hpwz8vhzj0wtsf"
+   },
+   {
+    "name": "GUAVA",
+    "pools": 1,
+    "ada": 5578,
+    "pool": "pool15jh849vks9mctm28xe6kgz682vnlu0pzawvftl7ltjtvwpwp59s"
+   },
+   {
+    "name": "YAM",
+    "pools": 1,
+    "ada": 5227,
+    "pool": "pool12hhrd4azpps5jxppcqs2pgtylatg7xkhaqmnetgv2988k3t4drf"
+   },
+   {
+    "name": "CSK",
+    "pools": 1,
+    "ada": 4410,
+    "pool": "pool175gxtzacpcm90adjpvlhjmfpj4ft2a3zuqsgm558hf3q7ra2vf9"
+   },
+   {
+    "name": "RUNIR",
+    "pools": 1,
+    "ada": 3710,
+    "pool": "pool1h9jr0f9evk3raxlljq6mt4gj7ej4v82afvnlc2wh28rwy2d8lsy"
+   },
+   {
+    "name": "MAPLE",
+    "pools": 1,
+    "ada": 3152,
+    "pool": "pool1xpfe5q3v3axrjdc8h38taaa93frq3m9pfewxk46x4r6jgy2yj5n"
+   },
+   {
+    "name": "pool1k8s63hvxl",
+    "pools": 1,
+    "ada": 2573,
+    "pool": "pool1k8s63hvxl5un403f0lwqm87f7svwn2j7vpeflgupvkhqkjpknut"
+   },
+   {
+    "name": "LAKCV",
+    "pools": 1,
+    "ada": 2374,
+    "pool": "pool1w728ekz4fs2f33qmqf7047hvwsmarjrv5l575ncnh7hkc0zdhgz"
+   },
+   {
+    "name": "MTSK",
+    "pools": 1,
+    "ada": 1829,
+    "pool": "pool1f6ltd3rd3e69klr32r0xw7h59lc76lhc9l705d380lj76d926du"
+   },
+   {
+    "name": "PANDA",
+    "pools": 1,
+    "ada": 1510,
+    "pool": "pool12p0qtp89dfzr6spqq4xl6ha2s9m8lqydnvfafyd0h38fy0hfv3f"
+   },
+   {
+    "name": "pool1elvz3kppg",
+    "pools": 1,
+    "ada": 1329,
+    "pool": "pool1elvz3kppg3peep0dcclju3gwf9m37vzyxetuf03we37sqlnsjxr"
+   },
+   {
+    "name": "HYVEN",
+    "pools": 1,
+    "ada": 913,
+    "pool": "pool1a6wdglfp93m2z4nhptx9xhjazgyqusjpu387gdrp899cj98yuqq"
+   },
+   {
+    "name": "SILEM",
+    "pools": 1,
+    "ada": 805,
+    "pool": "pool1yze2j2m286u2evnsphkaz3uyx805wxrg9qqn9ftns43kypl45kq"
+   },
+   {
+    "name": "STKCH",
+    "pools": 1,
+    "ada": 597,
+    "pool": "pool10gtnlhevam52ynwuzua7dqgv7vje4q87q25dzzfrjgw3wwjk2xw"
+   }
+  ],
+  "producing": true,
+  "rest_ada": 43628867,
+  "total_ada": 21495937909,
+  "epoch": 669
+ },
  "flows": {
   "from_epoch": 659,
   "to_epoch": 669,
@@ -2130,7 +9364,7 @@
   "abstain_net_ada": -44207153
  },
  "lookup": {
-  "credentials": 1883820,
+  "credentials": 1883821,
   "shards": 256
  },
  "links": {

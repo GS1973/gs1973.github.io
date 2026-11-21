@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-21T09:02:58Z",
+"generated": "2026-11-21T09:26:43Z",
 "epoch": 669,
 "k": 1000,
 "saturation_ada": 39009423,
@@ -11,12 +11,12 @@
 "max_tx_size": 16384
 },
 "pools_with_stake": 2662,
-"alive_named": 1048,
+"alive_named": 1045,
 "pledge_not_met": 503,
-"above_saturation": 125,
+"above_saturation": 123,
 "excluded_exchanges": 48,
 "excluded_founders": 8,
-"excluded_several": 244,
+"excluded_several": 241,
 "excluded": [
 {
 "ticker": "BNP",
@@ -997,12 +997,6 @@
 "reason": "several pools"
 },
 {
-"ticker": "SECUR",
-"name": "FIVE SecureStaking.io",
-"pool_id": "pool14n77mmxh6a2d9k05jamzdwsws2ayvkyje8uc7led958p63at3aj",
-"reason": "several pools"
-},
-{
 "ticker": "FGMTB",
 "name": "Figment 11",
 "pool_id": "pool1g59d82m8c84f2ds6l50mng863h9cxfm88khxyhna2l9rzgv6030",
@@ -1660,18 +1654,6 @@
 "ticker": "SUNNY",
 "name": "Sunshine Stake Pool #2",
 "pool_id": "pool1p8fhygz7ga9hghhwmkr64p3ftn77lxu9nyddvsqszattcdyajc0",
-"reason": "several pools"
-},
-{
-"ticker": "SECUR",
-"name": "THREE SecureStaking.io",
-"pool_id": "pool1xjhzgchsl2ccvc5pj3aqytv9hh0jnaz63wtfnw4th07tjypm46x",
-"reason": "several pools"
-},
-{
-"ticker": "SECUR",
-"name": "TWO SecureStaking.io",
-"pool_id": "pool1lhz4gsk5ezdl5s4mv2kxgrkhzzhad6me2v0xmwuyt845vensdlc",
 "reason": "several pools"
 },
 {
@@ -2565,6 +2547,17 @@
 "blocks_2026": 6,
 "blocks_last_10_epochs": 0,
 "retiring_epoch": null,
+"document": "valid",
+"roles": []
+},
+{
+"ticker": "TDSP",
+"name": "The Dutch Stake Pool",
+"pool_id": "pool1zfd0gl76h3f0ammgp4gu0qvt99qcqkn5a895wv0q779d6p9dz5u",
+"stake_ada": 61112,
+"blocks_2026": 0,
+"blocks_last_10_epochs": 0,
+"retiring_epoch": 670,
 "document": "valid",
 "roles": []
 },
@@ -5862,8 +5855,8 @@
 "name": "Goofinator Pool",
 "pool_id": "pool1gslrt6mmljsqkzft6nd0q7w7g2fyhxpxx6sj4ff68x22kwx6unm",
 "stake_ada": 1532490,
-"blocks_2026": 77,
-"blocks_last_10_epochs": 10,
+"blocks_2026": 78,
+"blocks_last_10_epochs": 11,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -6423,8 +6416,19 @@
 "name": "ARTZ Pool",
 "pool_id": "pool127xwsah7jllutuhen8vl7sve5278h7hhxtnys3cl438dyhuwgjg",
 "stake_ada": 2393630,
-"blocks_2026": 157,
-"blocks_last_10_epochs": 20,
+"blocks_2026": 158,
+"blocks_last_10_epochs": 21,
+"retiring_epoch": null,
+"document": "valid",
+"roles": []
+},
+{
+"ticker": "AZDFM",
+"name": "AZDFM stake pool",
+"pool_id": "pool1hnnfvsq3xlln6vz7d2xmk6kqekd5z4ctmfpdad8g8kr0yk8kdfd",
+"stake_ada": 2399639,
+"blocks_2026": 272,
+"blocks_last_10_epochs": 21,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -7732,8 +7736,8 @@
 "name": "Apex Stake Pool",
 "pool_id": "pool12wpfng6cu7dz38yduaul3ngfm44xhv5xmech68m5fwe4wu77udd",
 "stake_ada": 8741614,
-"blocks_2026": 376,
-"blocks_last_10_epochs": 127,
+"blocks_2026": 377,
+"blocks_last_10_epochs": 128,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8282,8 +8286,8 @@
 "name": "NVE Tech StakePool",
 "pool_id": "pool1xjqjwe0t7uw7wfdygvt99e5wjcuz6ex6rcx2p067aqxp6tsgwgm",
 "stake_ada": 19772372,
-"blocks_2026": 1349,
-"blocks_last_10_epochs": 197,
+"blocks_2026": 1350,
+"blocks_last_10_epochs": 198,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8315,8 +8319,8 @@
 "name": "Kaizen Crypto Stake Pool",
 "pool_id": "pool1jeu74g86ys4fekhykqcww99kdsq3nlym8a6kfw8s8ff3vskad70",
 "stake_ada": 21576495,
-"blocks_2026": 1500,
-"blocks_last_10_epochs": 210,
+"blocks_2026": 1501,
+"blocks_last_10_epochs": 211,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8403,8 +8407,8 @@
 "name": "Cardano Fans",
 "pool_id": "pool1d3gckjrphwytzw2uavgkxskwe08msumzsfj4lxnpcnpks3zjml3",
 "stake_ada": 24319928,
-"blocks_2026": 1602,
-"blocks_last_10_epochs": 254,
+"blocks_2026": 1603,
+"blocks_last_10_epochs": 255,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8513,8 +8517,8 @@
 "name": "Plush Pool",
 "pool_id": "pool1zn9hjcmfddhcp2aj9xxuvz7z40rasyatkgavr8ryyz72qdfwtrj",
 "stake_ada": 28188158,
-"blocks_2026": 1475,
-"blocks_last_10_epochs": 269,
+"blocks_2026": 1476,
+"blocks_last_10_epochs": 270,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []
@@ -8568,8 +8572,8 @@
 "name": "CoffeePool☕️",
 "pool_id": "pool1r55hyfrd3tw6nzpkvf4rfceh2f04yph92fc462phnd0akp2s5r6",
 "stake_ada": 30350624,
-"blocks_2026": 1961,
-"blocks_last_10_epochs": 257,
+"blocks_2026": 1962,
+"blocks_last_10_epochs": 258,
 "retiring_epoch": null,
 "document": "valid",
 "roles": []

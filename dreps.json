@@ -1,5 +1,5 @@
 {
-"generated": "2026-11-21T09:02:59Z",
+"generated": "2026-11-21T09:26:48Z",
 "epoch": 669,
 "figures": {
 "circulating_ada": 37573667636,
@@ -17,7 +17,7 @@
 "carry_treasury": 18,
 "window_epochs": 36,
 "drep_activity_epochs": 20,
-"votes": 7756,
+"votes": 7757,
 "votes_with_rationale": 3160,
 "dreps_never_rationale": 113,
 "dreps_never_rationale_ada": 808852159,
