@@ -133,7 +133,7 @@
                 [d.share.toFixed(2) + '%', 'Share'],
                 [fmt(d.delegators), 'Delegators'],
                 [d.eligible ? d.voted + ' of ' + d.eligible : '–', 'Voted'],
-                [d.eligible ? d.rationale + ' of ' + d.eligible : '–', 'Explained'],
+                [d.voted ? d.rationale + ' of ' + d.voted : '–', 'Explained'],
                 [d.last_vote || '–', 'Last vote']]) {
                 const cell = document.createElement('td');
                 cell.textContent = v;
@@ -189,6 +189,7 @@
             dreps = doc.dreps.map(d => Object.assign({}, d, {
                 label: d.name || d.drep_id,
                 voted_ratio: d.eligible ? d.voted / d.eligible : -1,
+                explained_ratio: d.voted ? d.rationale / d.voted : -1,
                 last_vote: d.last_vote || '',
             }));
             sameName = new Map();
