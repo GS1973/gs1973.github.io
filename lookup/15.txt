@@ -1508,7 +1508,7 @@
 36b36a74e0 1n -
 36b3b5b7c4 8e A
 36b3fbcebf u5 -
-36b421fdc6 14g 56
+36b421fdc6 nu 56
 36b67144da 2k -
 36cd2097c8 2y -
 36d786aef9 1z -
@@ -4563,6 +4563,7 @@ a1842a4aee - -
 a1848e0406 26 -
 a198c22058 2u -
 a19facf7db 1a -
+a1a190a84a jo A
 a1a7141aa9 - -
 a1af6d90d1 - -
 a1b3e203ee 24 -

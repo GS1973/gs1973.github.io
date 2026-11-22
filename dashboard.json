@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T09:26:48Z",
+ "generated": "2026-11-22T05:37:42Z",
  "epoch": 669,
  "key": {
   "owners_third": 12,
@@ -17,7 +17,7 @@
   "large_share": 0.3977,
   "producing": 1350,
   "no_vote_share": 0.8524,
-  "dreps_registered": 1051
+  "dreps_registered": 1050
  },
  "stake_total_ada": 21520851839,
  "stake_bands": [
@@ -47,7 +47,7 @@
  "vote_bar": [
   {
    "label": "active DReps",
-   "ada": 4674161062
+   "ada": 4674139697
   },
   {
    "label": "Always No Confidence",
@@ -55,7 +55,7 @@
   },
   {
    "label": "inactive DReps",
-   "ada": 742455825
+   "ada": 742419326
   },
   {
    "label": "Always Abstain",
@@ -1864,13 +1864,6 @@
    "why": ""
   },
   {
-   "name": "damiondutch",
-   "drep_id": "drep1yg5gkkyxwwr7d6qflf2qqp6drkp9432h6cvtmun0dqthusqlkz8hj",
-   "ada": 57864,
-   "cls": "drep",
-   "why": ""
-  },
-  {
    "name": "",
    "drep_id": "drep1yf6xkrz2w4fdkwjw9u98u3pmzk7c7a0amq95hakcj649dns2r4upl",
    "ada": 57271,
@@ -1920,6 +1913,13 @@
    "name": "Cryptotexty",
    "drep_id": "drep1ygsrvdukj9unnxue5ffmrkjr9ve7yxz3wvccdstapmw696q8g2w9u",
    "ada": 45550,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "DeepStatecraft",
+   "drep_id": "drep1yfr0cur4guksjd6whxe5mltcaksqqhzd85dnq6lfk8ex7qs5mlcye",
+   "ada": 36499,
    "cls": "drep",
    "why": ""
   },
@@ -7069,7 +7069,7 @@
     "pool": "pool1azwytj96wpa7hqmj5adks6tpw7rhnwdqpf9hkgyy0mwdxxzxz9w"
    },
    {
-    "name": "CHIEN",
+    "name": "TOOLS",
     "pools": 1,
     "ada": 736925,
     "pool": "pool180fejev4xgwe2y53ky0pxvgxr3wcvkweu6feq5mdljfzcsmtg6u"
@@ -7387,7 +7387,7 @@
      {
       "name": "CZBE1",
       "ada": 50326,
-      "rank": 232,
+      "rank": 231,
       "cls": "spo"
      }
     ]
@@ -9364,7 +9364,7 @@
   "abstain_net_ada": -44207153
  },
  "lookup": {
-  "credentials": 1883821,
+  "credentials": 1883924,
   "shards": 256
  },
  "links": {

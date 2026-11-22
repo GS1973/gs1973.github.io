@@ -329,7 +329,7 @@
 0bfb2303da 2t -
 0c03c55cf2 3w -
 0c08d0564a 62 -
-0c18081a0c 53 2r
+0c18081a0c 53 A
 0c1c1de430 2k A
 0c1f6ec883 tg 7
 0c261e0def - -
@@ -1318,7 +1318,7 @@
 2edc1dd4c6 3e -
 2edd1145a2 2k -
 2eefc4e5de - -
-2ef09cbff1 bc -
+2ef09cbff1 - -
 2ef756c5ca gv -
 2ef8214b88 19 -
 2f4c840e80 9 -
