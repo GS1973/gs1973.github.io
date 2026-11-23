@@ -4028,7 +4028,7 @@
 86fc6ea1b0 b7 A
 86fcfb2fb3 1s A
 86fd784769 1w -
-8702db065c fq A
+8702db065c lw A
 8704c07977 p -
 871fc973df - -
 872949477a kl -
@@ -5858,7 +5858,7 @@ c69b401b10 k -
 c6c75acf01 1a -
 c6c8e2779a 8x -
 c6e8b5cc84 - -
-c6eaa57cfa da -
+c6eaa57cfa - -
 c6f7dbad8f 2k -
 c6f8bb53cc a 7
 c6f921d058 k -

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T05:37:42Z",
+ "generated": "2026-11-23T05:35:54Z",
  "epoch": 669,
  "key": {
   "owners_third": 12,
@@ -17,7 +17,7 @@
   "large_share": 0.3977,
   "producing": 1350,
   "no_vote_share": 0.8524,
-  "dreps_registered": 1050
+  "dreps_registered": 1051
  },
  "stake_total_ada": 21520851839,
  "stake_bands": [
@@ -9364,7 +9364,7 @@
   "abstain_net_ada": -44207153
  },
  "lookup": {
-  "credentials": 1883924,
+  "credentials": 1884044,
   "shards": 256
  },
  "links": {

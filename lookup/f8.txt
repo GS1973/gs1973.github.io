@@ -979,7 +979,7 @@
 2279ce53de e5 3s
 229022e7c8 - -
 2298b5658b 2p -
-22993328c0 2o -
+22993328c0 - -
 229f0cffc0 7g -
 22afa0c34a - -
 22be3a00d1 3c -
@@ -6756,7 +6756,7 @@ ee603bbd95 10v -
 ee62088eda 1f A
 ee69375329 1o -
 ee735ff7c2 nv -
-ee7cb49bac n2 4
+ee7cb49bac - -
 ee816cdaa7 - -
 ee8a4cbb35 bs -
 ee8b9246fe wf -

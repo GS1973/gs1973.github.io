@@ -857,7 +857,7 @@
 1d378c2f3c o -
 1d3ad830e8 5 -
 1d5d841a5e 4 -
-1d6c7cb48b 1s A
+1d6c7cb48b - -
 1d7e06656a kt -
 1d8022710b 22 -
 1d83f97a48 2p -

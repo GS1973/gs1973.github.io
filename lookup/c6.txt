@@ -818,7 +818,7 @@
 1d0c77c350 97 -
 1d10a1577e 4b -
 1d15a9beb8 ig A
-1d2828950a a 1o
+1d2828950a a 9
 1d3599a277 - -
 1d35db0c0d 2k -
 1d3b30f14f 0 -
@@ -4984,7 +4984,7 @@ aef2068b04 g 19
 af0664271e 4g -
 af0ae3ec1d 1p -
 af0f10653b 1s -
-af1594b4de ap A
+af1594b4de - -
 af1ad6971f - -
 af4ff2b086 dw -
 af614b123b 1s -
@@ -5395,7 +5395,7 @@ bd456c531f 1p -
 bd5333fae9 sm -
 bd5711bbf1 p -
 bd63bee66f 65 -
-bd6799dc8a 30 A
+bd6799dc8a - -
 bd7f36cf32 - -
 bd8b1f8869 1p -
 bd8de57e18 - -

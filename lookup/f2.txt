@@ -1409,7 +1409,7 @@
 303a0d6590 2p -
 303ebed1f6 - -
 30431f7bf5 2f A
-30456dd690 2y -
+30456dd690 2y A
 30466a4d2c 6e A
 30585a3e24 zi -
 3079a5742c d -
@@ -6779,7 +6779,7 @@ ec1786c137 84 A
 ec1c9e2b5a 1n A
 ec27747431 - -
 ec3552c637 1w A
-ec396ee270 cq -
+ec396ee270 jo A
 ec3d966b22 pi 3
 ec4a6236c5 1rm -
 ec56eccafe c0 -

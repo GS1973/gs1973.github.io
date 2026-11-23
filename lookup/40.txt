@@ -767,7 +767,7 @@
 1cb4c5b843 2f -
 1cbf2e0ee6 2l -
 1cc1774ad4 - -
-1cd2f9d39c 4d A
+1cd2f9d39c n2 A
 1cd75d293c 1u -
 1cdc231866 zi -
 1cdf6c88b2 1p -
@@ -1406,7 +1406,7 @@
 329c9c1c9b - -
 32a7d07afb 3v -
 32bd1e7e7b k -
-32be844b34 2y -
+32be844b34 2y A
 32c59e4509 11 -
 32cd56f220 2k -
 32d89dbe81 o -
