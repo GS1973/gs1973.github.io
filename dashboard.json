@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T05:35:54Z",
+ "generated": "2026-11-24T05:35:54Z",
  "epoch": 669,
  "key": {
   "owners_third": 12,
@@ -12,12 +12,12 @@
   "carry_prev": 20,
   "prev_epoch": 663,
   "linked_dreps": 112,
-  "linked_share": 0.7804,
+  "linked_share": 0.7805,
   "large_dreps": 13,
   "large_share": 0.3977,
   "producing": 1350,
   "no_vote_share": 0.8524,
-  "dreps_registered": 1051
+  "dreps_registered": 1052
  },
  "stake_total_ada": 21520851839,
  "stake_bands": [
@@ -47,7 +47,7 @@
  "vote_bar": [
   {
    "label": "active DReps",
-   "ada": 4674139697
+   "ada": 4673452638
   },
   {
    "label": "Always No Confidence",
@@ -55,7 +55,7 @@
   },
   {
    "label": "inactive DReps",
-   "ada": 742419326
+   "ada": 742337797
   },
   {
    "label": "Always Abstain",
@@ -1261,13 +1261,6 @@
    "why": ""
   },
   {
-   "name": "heo.keo",
-   "drep_id": "drep1ytwltt6ywdu4gtuxagz0s0wudwtm35kknp25z8cpmwwnlpc0xage6",
-   "ada": 768586,
-   "cls": "drep",
-   "why": ""
-  },
-  {
    "name": "CryptoDossier",
    "drep_id": "drep1y2t0lg9sf53c0qx2dwwjxsmp9qs0uvtcu70nj2n3r4c94pgvaw2z2",
    "ada": 677464,
@@ -1707,7 +1700,7 @@
    "pools_ada": 218
   },
   {
-   "name": "TNT",
+   "name": "TNT (Adrián Montero)",
    "drep_id": "drep1ygc0skj7ceaszyvpte75h4xrw0m6wcenj0kd2uj7lkq5vmcjryeec",
    "ada": 145573,
    "cls": "drep",
@@ -1830,6 +1823,13 @@
    "name": "AtlasFD",
    "drep_id": "drep1ytzgysymlhglw5w0ecug6wg8pxdzrqzwk89rh3mmh0r5v0gz56urx",
    "ada": 81853,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfwa4sqfmw8mnuhwfltr2t3yacj96efu65re2f9xdwqurnsw45vlt",
+   "ada": 81528,
    "cls": "drep",
    "why": ""
   },
@@ -2652,7 +2652,7 @@
      {
       "name": "SPIRE",
       "ada": 531036,
-      "rank": 162,
+      "rank": 161,
       "cls": "spo"
      }
     ]
@@ -3301,7 +3301,7 @@
      {
       "name": "FAIR Pool #01",
       "ada": 627382,
-      "rank": 152,
+      "rank": 151,
       "cls": "spo"
      }
     ]
@@ -3354,7 +3354,7 @@
      {
       "name": "Long Hồ",
       "ada": 187277,
-      "rank": 199,
+      "rank": 198,
       "cls": "spo"
      }
     ]
@@ -4284,7 +4284,7 @@
      {
       "name": "Apex Pool",
       "ada": 293154,
-      "rank": 186,
+      "rank": 185,
       "cls": "spo"
      }
     ]
@@ -4358,7 +4358,7 @@
      {
       "name": "THOR",
       "ada": 412695,
-      "rank": 166,
+      "rank": 165,
       "cls": "spo"
      }
     ]
@@ -5062,7 +5062,7 @@
      {
       "name": "KysenPool_KYSN_KYSN2",
       "ada": 571794,
-      "rank": 160,
+      "rank": 159,
       "cls": "spo"
      }
     ]
@@ -5897,7 +5897,7 @@
      {
       "name": "drep1ytrg2ruc4",
       "ada": 400191,
-      "rank": 168,
+      "rank": 167,
       "cls": "spo"
      }
     ]
@@ -5973,7 +5973,7 @@
      {
       "name": "CAPO",
       "ada": 507373,
-      "rank": 164,
+      "rank": 163,
       "cls": "spo"
      }
     ]
@@ -6531,7 +6531,7 @@
      {
       "name": "GNP1_DRep",
       "ada": 362381,
-      "rank": 173,
+      "rank": 172,
       "cls": "spo"
      }
     ]
@@ -6575,7 +6575,7 @@
      {
       "name": "TAVN",
       "ada": 249679,
-      "rank": 190,
+      "rank": 189,
       "cls": "spo"
      }
     ]
@@ -6937,7 +6937,7 @@
      {
       "name": "ADAAT",
       "ada": 399189,
-      "rank": 169,
+      "rank": 168,
       "cls": "spo"
      }
     ]
@@ -6999,7 +6999,7 @@
      {
       "name": "Kurdopia",
       "ada": 403065,
-      "rank": 167,
+      "rank": 166,
       "cls": "spo"
      }
     ]
@@ -7013,7 +7013,7 @@
      {
       "name": "SVRN | Sleeping Natives",
       "ada": 273583,
-      "rank": 188,
+      "rank": 187,
       "cls": "spo"
      }
     ]
@@ -7155,7 +7155,7 @@
      {
       "name": "drep1yfd9slgg7",
       "ada": 435944,
-      "rank": 165,
+      "rank": 164,
       "cls": "spo"
      }
     ]
@@ -7601,7 +7601,7 @@
      {
       "name": "Jonathan Adjei",
       "ada": 204218,
-      "rank": 194,
+      "rank": 193,
       "cls": "spo"
      }
     ]
@@ -8132,7 +8132,7 @@
      {
       "name": "Logical Mechanism dRep",
       "ada": 608987,
-      "rank": 154,
+      "rank": 153,
       "cls": "spo"
      }
     ]
@@ -8182,7 +8182,7 @@
      {
       "name": "AdaSouls",
       "ada": 194207,
-      "rank": 198,
+      "rank": 197,
       "cls": "spo"
      }
     ]
@@ -8250,7 +8250,7 @@
      {
       "name": "Adalion",
       "ada": 123379,
-      "rank": 211,
+      "rank": 210,
       "cls": "spo"
      }
     ]
@@ -8336,7 +8336,7 @@
      {
       "name": "Breizh DRep [BZH]",
       "ada": 102096,
-      "rank": 216,
+      "rank": 215,
       "cls": "spo"
      }
     ]
@@ -8632,7 +8632,7 @@
      {
       "name": "iFly",
       "ada": 85881,
-      "rank": 221,
+      "rank": 220,
       "cls": "spo"
      }
     ]
@@ -8694,7 +8694,7 @@
      {
       "name": "CBROS Pool",
       "ada": 92363,
-      "rank": 220,
+      "rank": 219,
       "cls": "spo"
      }
     ]
@@ -9032,7 +9032,7 @@
      {
       "name": "Talos",
       "ada": 237795,
-      "rank": 191,
+      "rank": 190,
       "cls": "spo"
      }
     ]
@@ -9364,7 +9364,7 @@
   "abstain_net_ada": -44207153
  },
  "lookup": {
-  "credentials": 1884044,
+  "credentials": 1884168,
   "shards": 256
  },
  "links": {
