@@ -2074,7 +2074,7 @@
 48693a56a7 k9 -
 486d6e1549 4a A
 486da46ec8 41 -
-48786f6449 9a 0
+48786f6449 - -
 4886c23a3d - -
 488bb86e7f 6u h
 488dbb1ab5 20 -
@@ -2346,7 +2346,7 @@
 51dec99417 - -
 51e7efdb63 1x -
 51ee2809f0 dr -
-51f1f087cf 7p -
+51f1f087cf - -
 51f40605ca 6u -
 51f95a07e2 4g -
 52080ddc8d 1s A
@@ -7424,7 +7424,7 @@ ff0e29adbe 1p -
 ff188a29ac 0 -
 ff20a8a03f - -
 ff20eb2a38 - -
-ff260d89bc 6x -
+ff260d89bc 6x A
 ff4617b5df 4r 1h
 ff4ad2132d - -
 ff567fdafc o -

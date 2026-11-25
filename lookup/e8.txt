@@ -2485,7 +2485,7 @@
 52201c4c09 - -
 522243639c 1s A
 5239755f6d - -
-52436cb136 cr -
+52436cb136 - -
 524381861d 2k -
 524efb5cc1 b -
 5251413a36 2f -
@@ -6917,7 +6917,7 @@ eef6f8c7e9 ku -
 eefb620cae gk -
 eefc9ccce2 34 -
 ef0125a66a 73 -
-ef041a26e0 c0 -
+ef041a26e0 c0 A
 ef08c6ef6c ia -
 ef120f4f65 38 A
 ef1bffa05a - -

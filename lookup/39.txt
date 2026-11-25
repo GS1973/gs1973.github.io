@@ -5477,7 +5477,7 @@ c1894fa2e6 k -
 c1898f3e14 53 A
 c195436153 - -
 c196653535 79 -
-c196c2e191 ky -
+c196c2e191 ky 1y
 c19fb26780 1k -
 c1a2fd9ed7 2p -
 c1a4021a8d 5w -
@@ -6605,7 +6605,7 @@ e897e1109f 1a -
 e898779395 h -
 e8af73fb3c 1a -
 e8b13aff94 6d -
-e8b74523ec ek 1s
+e8b74523ec ek A
 e8ce9f8746 2o -
 e8d1cd13fd 17 -
 e8e0cf6f88 1a -

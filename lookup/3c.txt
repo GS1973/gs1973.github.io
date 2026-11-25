@@ -51,7 +51,7 @@
 0149ae29a8 8z A
 014b4b92bd 3 0
 0151350497 1w A
-0158edbbc5 1s A
+0158edbbc5 - -
 015b72e9da h -
 015f22a7ec dd 1
 016ae65c3b dr -
@@ -180,7 +180,7 @@
 0563bfc5ee 35 -
 0566494425 fz -
 0575723233 - -
-05777819ea ky -
+05777819ea ky 1y
 057a3e3c0f - -
 057aaace47 1k -
 05884914d7 d -
@@ -1298,6 +1298,7 @@
 2ab3b9c918 5b A
 2ab73dd3df - -
 2ab9d8b495 - -
+2acace101c 2f -
 2ad4ce667a g -
 2ad4d18d92 70 -
 2aeaef9701 2p -
