@@ -142,7 +142,7 @@
 04b1172649 2y -
 04c869d6e8 9e -
 04ce50574c o A
-04e97ccffc 9e -
+04e97ccffc 9e 25
 04ea032326 8a -
 04f0dfc1e6 - -
 04fbf11724 64 -
@@ -603,7 +603,7 @@
 148afad245 4 -
 14923c06b4 2b 0
 149d3198da - -
-14bb04c27a 2t -
+14bb04c27a 2f -
 14cbf8878d m -
 14da03f1c4 2f N
 14e28fea7f h -

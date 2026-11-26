@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-25T05:35:53Z",
- "epoch": 669,
+ "generated": "2026-11-26T05:35:48Z",
+ "epoch": 670,
  "key": {
   "owners_third": 12,
   "owners_third_prev": 12,
@@ -9,68 +9,68 @@
   "block": 5,
   "block_prev": 5,
   "carry": 18,
-  "carry_prev": 20,
-  "prev_epoch": 663,
-  "linked_dreps": 112,
-  "linked_share": 0.7805,
+  "carry_prev": 19,
+  "prev_epoch": 664,
+  "linked_dreps": 109,
+  "linked_share": 0.7797,
   "large_dreps": 13,
   "large_share": 0.3977,
   "producing": 1350,
-  "no_vote_share": 0.8524,
+  "no_vote_share": 0.8519,
   "dreps_registered": 1052
  },
- "stake_total_ada": 21520851839,
+ "stake_total_ada": 21541708516,
  "stake_bands": [
   {
    "label": "above the saturation point at k = 1000",
    "pools": 211,
-   "ada": 13274984897
+   "ada": 13296645513
   },
   {
    "label": "10 million ADA to the saturation point",
-   "pools": 285,
-   "ada": 6507060128
+   "pools": 286,
+   "ada": 6522662403
   },
   {
    "label": "1 to 10 million ADA",
-   "pools": 417,
-   "ada": 1563787998
+   "pools": 415,
+   "ada": 1545904605
   },
   {
    "label": "under 1 million ADA",
-   "pools": 1749,
-   "ada": 175018814
+   "pools": 1750,
+   "ada": 176495995
   }
  ],
- "saturation_ada": 39009423,
- "circulating_ada": 37573667636,
+ "saturation_ada": 39018973,
+ "circulating_ada": 37579900847,
  "vote_bar": [
   {
    "label": "active DReps",
-   "ada": 4673452638
+   "ada": 4681588214
   },
   {
    "label": "Always No Confidence",
-   "ada": 131032384
+   "ada": 129978187
   },
   {
    "label": "inactive DReps",
-   "ada": 742337797
+   "ada": 753993293
   },
   {
    "label": "Always Abstain",
-   "ada": 10367074648
+   "ada": 10385664578
   },
   {
    "label": "no DRep",
-   "ada": 21658943715
+   "ada": 21628676573
   }
  ],
  "dreps": [
   {
    "name": "YUTA",
    "drep_id": "drep1y2200we9c904un36tzaearntzzl63snffuul9qsk0te4utqfkke0w",
-   "ada": 482475745,
+   "ada": 482507149,
    "cls": "cc",
    "why": "says in its own DRep metadata that it is a member of Eastern Cardano Council, which holds a seat on the Constitutional Committee until epoch 726. It is also linked by our Decentralization Monitor to pools ZZZ, ZZZ2, ZZZ3, ZZZ5, ZZZ4, because the pool names the DRep in its metadata. Its owner runs 5 pools with 110.4 million ADA together",
    "pools": 5,
@@ -79,7 +79,7 @@
   {
    "name": "Yoroi W₳llet",
    "drep_id": "drep1ygr9tuapcanc3kpeyy4dc3vmrz9cfe5q7v9wj3x9j0ap3tswtre9j",
-   "ada": 387088268,
+   "ada": 386229558,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7, EMGHW, because both are of one organization on our list of exchanges and founding entities. Its owner runs 8 pools with 181.2 million ADA together",
    "pools": 8,
@@ -88,30 +88,30 @@
   {
    "name": "CryptoCrow",
    "drep_id": "drep1ytfwpmt2fvdnyvlswyjyggpf8alwkpm7ha6cua9nsak525ssmvm57",
-   "ada": 299032885,
+   "ada": 299609160,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool CROW, because the DRep carries the pool's name or ticker. Its pool has 61.4 million ADA",
    "pools": 1,
    "pools_ada": 61428779
   },
   {
-   "name": "Phil UPLC",
-   "drep_id": "drep1yg343cyuckglj48a6gpcey7fkfcy5x5f9g65wme3ne9q2mgaedmkm",
-   "ada": 229956870,
-   "cls": "cc",
-   "why": "member of the Constitutional Committee (cold credential 13493790...) until epoch 799 (Intersect's committee anchor on the chain)"
-  },
-  {
    "name": "Eternl DRep Committee",
    "drep_id": "drep1y29h2q6cst2pvkl2sqqvf5ljcy36uv7pmy482xnczddzgqshus24w",
-   "ada": 221035081,
+   "ada": 230381552,
    "cls": "drep",
    "why": ""
   },
   {
+   "name": "Phil UPLC",
+   "drep_id": "drep1yg343cyuckglj48a6gpcey7fkfcy5x5f9g65wme3ne9q2mgaedmkm",
+   "ada": 229490463,
+   "cls": "cc",
+   "why": "member of the Constitutional Committee (cold credential 13493790...) until epoch 799 (Intersect's committee anchor on the chain)"
+  },
+  {
    "name": "Everstake",
    "drep_id": "drep1yt8p080ajks6zdnxd9z6a6q60p9sm9j5rl7tc63mfna8r6cnp4wr3",
-   "ada": 215607542,
+   "ada": 216952077,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools EVE7, EVE8, EVE6, EVERS, RSTK, EVRST, EVE1, EVE2, EVE4, EVE, VRSTK, ESTK, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 15 pools with 675.4 million ADA together",
    "pools": 15,
@@ -120,7 +120,7 @@
   {
    "name": "EMURGO",
    "drep_id": "drep1ytvlwvyjmzfyn56n0zz4f6lj94wxhmsl5zky6knnzrf4jygpyahug",
-   "ada": 210569110,
+   "ada": 209634242,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools MURA1, MURA2, MURA3, MURA4, MURA5, MURA6, MURA7, EMGHW, because both are of one organization on our list of exchanges and founding entities. Its owner runs 8 pools with 181.2 million ADA together",
    "pools": 8,
@@ -129,7 +129,7 @@
   {
    "name": "Sebastien Guillemot セバ",
    "drep_id": "drep1y2csyxt7u2hl4674pl9cef5lknafaw5nraxvyx033kmd0es3awuv0",
-   "ada": 170179982,
+   "ada": 169748140,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool SEBA, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 767,635 ADA",
    "pools": 1,
@@ -138,7 +138,7 @@
   {
    "name": "Cardano Foundation",
    "drep_id": "drep1ydpfkyjxzeqvalf6fgvj7lznrk8kcmfnvy9hyl6gr6ez6wgsjaelx",
-   "ada": 149250523,
+   "ada": 150522195,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools CF1, CF2, CF3, CF4, CF5, because the DRep carries the pool's name or ticker, both are of one organization on our list of exchanges and founding entities and the pool names the DRep in its metadata. Its owner runs 5 pools with 250.0 million ADA together",
    "pools": 5,
@@ -147,7 +147,7 @@
   {
    "name": "SASA_nagamaru_ながまる",
    "drep_id": "drep1ytuddrgqca0xd4aams6pl9zndpcmxg0rs7z3mggjelm6kscp4arg5",
-   "ada": 130719685,
+   "ada": 130780958,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools SASA, SASA2, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 95.9 million ADA together",
    "pools": 2,
@@ -156,7 +156,7 @@
   {
    "name": "SIPO",
    "drep_id": "drep1yffld2866p00cyg3ejjdewtvazgah7jjgk0s9m7m5ytmmdq33v3zh",
-   "ada": 120022515,
+   "ada": 118818345,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools SIPO, SIPO2, SIPO3, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 3 pools with 114.2 million ADA together",
    "pools": 3,
@@ -165,7 +165,7 @@
   {
    "name": "ranket",
    "drep_id": "drep1ygj6hupsan57ujlv6l0vw9naxzt5753uhpe79nluymqzlcq7fe4vs",
-   "ada": 110622630,
+   "ada": 110684874,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool RANKT, because the pool names the DRep in its metadata. Its pool has 29.5 million ADA",
    "pools": 1,
@@ -174,7 +174,7 @@
   {
    "name": "JAZZ",
    "drep_id": "drep1yt77crnmjuqkj9gcwjjsurez7s07jhwhyt4suxs3xeqftcsfrspun",
-   "ada": 98558837,
+   "ada": 98569186,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools JAZZ, JAZZ3, JAZZ2, JAZZ4, because the DRep's name is the pool's name without its number. Its owner runs 4 pools with 85.2 million ADA together",
    "pools": 4,
@@ -183,7 +183,7 @@
   {
    "name": "CardanoYoda (MANDA Pool)",
    "drep_id": "drep1y2m0g4r66pyaw3p7u454wc0p4f0ygm8ueaev0mgd3tvwm7sskqwqp",
-   "ada": 95444916,
+   "ada": 95481880,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool MANDA, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 2.4 million ADA",
    "pools": 1,
@@ -192,7 +192,7 @@
   {
    "name": "Army of Spies",
    "drep_id": "drep1ygqgayvx8yzsaj9hprja3l6jy3v4px9z3u8uvecuvm3f92ce7mckx",
-   "ada": 83093931,
+   "ada": 82972410,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool AOS, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 46.8 million ADA",
    "pools": 1,
@@ -201,14 +201,14 @@
   {
    "name": "Dumpling🥟",
    "drep_id": "drep1y2rtf58m0lv9spcqx5mads20gpfulf6l97w57ecdy00vjdq0klh4l",
-   "ada": 82908446,
+   "ada": 82763194,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Dave",
    "drep_id": "drep1ygsgfhcydhlfglamhzkjn97rz3edef8a4z99fwl2frcwnrcmgurt3",
-   "ada": 78858626,
+   "ada": 79132177,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool DAVE, because the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 39.9 million ADA",
    "pools": 1,
@@ -217,14 +217,14 @@
   {
    "name": "Dori",
    "drep_id": "drep1yteh8udkttzy7frwl6yj5wzyqc04kx65pwwrqefx9j52ymgr6kuak",
-   "ada": 73402562,
+   "ada": 73494180,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Martin Lang",
    "drep_id": "drep1ytwmwvtd0a8lr45ssner2tjxzv5y8q03w3606yeald9mdmgmwecja",
-   "ada": 73283629,
+   "ada": 73019444,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools ATADA, ATAD2, because the DRep names the pool in its metadata. Its owner runs 2 pools with 130.0 million ADA together",
    "pools": 2,
@@ -233,34 +233,34 @@
   {
    "name": "Hermes Stakepool Germany (HRMS)",
    "drep_id": "drep1ygs5hngva3hymv7j4v0aewxpsjqskj9dnmy7j3jz5ven5zqvulq2t",
-   "ada": 65747326,
+   "ada": 65769966,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool HRMS, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 28.3 million ADA",
    "pools": 1,
    "pools_ada": 28314173
   },
   {
-   "name": "hix_coffeepool☕️",
-   "drep_id": "drep1ygnh2uf4wkc8ldgfxwz7rzuga3m8jtqew9xh5g3n587mg6g3ge0sj",
-   "ada": 62513368,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool COFFE, because the DRep carries the pool's name or ticker. Its pool has 30.5 million ADA",
-   "pools": 1,
-   "pools_ada": 30456658
-  },
-  {
    "name": "FIMI",
    "drep_id": "drep1ygeqtuysjy9s3mw3ej7essghq9rk3cnl08fehntu4jw3rtqfw96dg",
-   "ada": 61761030,
+   "ada": 64801146,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool FIMI, because the DRep's name is the pool's name without its number. Its pool has 45.8 million ADA",
    "pools": 1,
    "pools_ada": 45832892
   },
   {
+   "name": "hix_coffeepool☕️",
+   "drep_id": "drep1ygnh2uf4wkc8ldgfxwz7rzuga3m8jtqew9xh5g3n587mg6g3ge0sj",
+   "ada": 63945576,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool COFFE, because the DRep carries the pool's name or ticker. Its pool has 30.5 million ADA",
+   "pools": 1,
+   "pools_ada": 30456658
+  },
+  {
    "name": "AdaStat",
    "drep_id": "drep1yfe9en4hsgc3r6nhtmwjeljh06hgnvt9yzzkwqcftvdj34cdxdg7u",
-   "ada": 48896723,
+   "ada": 48846760,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool STAT, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 43.9 million ADA",
    "pools": 1,
@@ -269,7 +269,7 @@
   {
    "name": "MUEN",
    "drep_id": "drep1yt6lgdpqjey286qwt287mnk7sdqh95avfmde42vq3mltjys75kg5k",
-   "ada": 44787740,
+   "ada": 44797726,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools MUEN2, MUEN, MUEN3, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 3 pools with 35.3 million ADA together",
    "pools": 3,
@@ -278,7 +278,7 @@
   {
    "name": "HISAI",
    "drep_id": "drep1ytjz60rgwhkzfhrv5hkvn9dxcerpwadq2khqvhp5fqws3kqmemccf",
-   "ada": 43480068,
+   "ada": 43493018,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool HISAI, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 25.3 million ADA",
    "pools": 1,
@@ -287,7 +287,7 @@
   {
    "name": "PoolTool",
    "drep_id": "drep1yfemdmjmxr59kecgqnzd8d0ankkue4rdnn35c8qfsuljt9cjree5m",
-   "ada": 41996691,
+   "ada": 42004248,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool LOVE, because the DRep names the pool in its metadata and the pool names the DRep in its metadata. Its pool has 28.7 million ADA",
    "pools": 1,
@@ -296,7 +296,7 @@
   {
    "name": "Patrick_Tobler",
    "drep_id": "drep1ygm9wxzrrdqpt0hek5kj7ys6tmsc8dycp7tkjwqxqrhjr6csq3s3t",
-   "ada": 41709928,
+   "ada": 41769223,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool NMKR, because the DRep names the pool in its metadata. Its pool has 2.2 million ADA",
    "pools": 1,
@@ -305,7 +305,7 @@
   {
    "name": "Rodrigo-[CHIL]",
    "drep_id": "drep1y2j2q9pcl855969ea9csrhdta6slnamctgzuvuqnnkl6fusqyjy36",
-   "ada": 36698571,
+   "ada": 36775193,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool CHIL, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 12.0 million ADA",
    "pools": 1,
@@ -314,7 +314,7 @@
   {
    "name": "HOSKY",
    "drep_id": "drep1yf2jzhuc4f7eu2yay9d9ta3dykxxcwn34wz8kak7nhd7vcgrxn7ns",
-   "ada": 34831741,
+   "ada": 34968944,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools HOSKY, QCPOL, SALT, A3C, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 4 pools with 11.1 million ADA together",
    "pools": 4,
@@ -323,7 +323,7 @@
   {
    "name": "Moonstake",
    "drep_id": "drep1yfp4qmp849250svle8gw2m5jwjra86e76q8vz97wp998feg9mx9c5",
-   "ada": 34178382,
+   "ada": 34188372,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools MS6, MS4, MS5, MS9, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 4 pools with 132.8 million ADA together",
    "pools": 4,
@@ -332,7 +332,7 @@
   {
    "name": "Aichi/Tokai_DRep",
    "drep_id": "drep1y2xacakh0g8q4exfgmvywy62an74cj7ejcpcrgq6vh4dckqhtsyh5",
-   "ada": 32004390,
+   "ada": 32150648,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools AICHI, TOKAI, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 117.3 million ADA together",
    "pools": 2,
@@ -341,39 +341,39 @@
   {
    "name": "NEDSCAVE.IO",
    "drep_id": "drep1ygxeadaklzz93n2tn9vnqz0fxapyv7ltel4d9808aeftl7gnxkszd",
-   "ada": 30780128,
+   "ada": 30791566,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools NEDS1, NEDS4, NEDS2, NEDS3, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its owner runs 4 pools with 106.6 million ADA together",
    "pools": 4,
    "pools_ada": 106574932
   },
   {
-   "name": "Cerkoryn",
-   "drep_id": "drep1yglrf4el8gghum239fggvfrau25k2576y4dvcz65r2ukj8sqpsc2k",
-   "ada": 29367479,
-   "cls": "drep",
-   "why": ""
-  },
-  {
    "name": "TERA DRep",
    "drep_id": "drep1ygtxcscvznhs2nqap9u8gtxa0dx0l6q5zhsqqlw46enwh8cttd07h",
-   "ada": 29292975,
+   "ada": 29660172,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools TERA3, TERA, TERA2, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its owner runs 3 pools with 44.8 million ADA together",
    "pools": 3,
    "pools_ada": 44763996
   },
   {
+   "name": "Cerkoryn",
+   "drep_id": "drep1yglrf4el8gghum239fggvfrau25k2576y4dvcz65r2ukj8sqpsc2k",
+   "ada": 29352640,
+   "cls": "drep",
+   "why": ""
+  },
+  {
    "name": "Goofycrisp",
    "drep_id": "drep1ygxasnzmrevqra9vscpsy4xf4rqthzkp6rr6zzft2lc7nscahj9r9",
-   "ada": 28993549,
+   "ada": 28979154,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Socious",
    "drep_id": "drep1ytcv4ax77s0enqef56qjflf4d8zjgxulukme9uf5p8cfaagysjppn",
-   "ada": 28129930,
+   "ada": 28010971,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools SOCIO, THANK, because the DRep carries the pool's name or ticker and the pool names the DRep in its metadata. Its owner runs 2 pools with 8.8 million ADA together",
    "pools": 2,
@@ -382,44 +382,44 @@
   {
    "name": "Drep One",
    "drep_id": "drep1yfaaaaa270yjt6tu5skndugekprf5ykv5jshanl0c6gqx5qpstskf",
-   "ada": 26509279,
+   "ada": 26524750,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Florian Volery",
    "drep_id": "drep1yguh6dsgx0g58v8pqmxgfrkq0x8vfv6tcp92uzzjrykwy8cjmelsy",
-   "ada": 25501100,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "Blockjock (James Meidinger)",
-   "drep_id": "drep1ygnypzfv2v8fmfelthahvn0rqyh54sf6z2aa5m7f3fkjgqqt8l2qq",
-   "ada": 24590860,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "wolf31o2 (Chris Gianelloni)",
-   "drep_id": "drep1yfa8r8r36x7x05htftce7qhafrn5nzzr6vazy95pzy6y5dqac0ss7",
-   "ada": 24387900,
+   "ada": 24831489,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Cardanians",
    "drep_id": "drep1yt4lyf0fwlrz8k6j5evd3rxw0sqp67qkh36su98a97q3qsc0h03y4",
-   "ada": 24384868,
+   "ada": 24629279,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools CRDNS, CRDN2, CRDN1, CRDN3, CRDN, because the DRep carries the pool's name or ticker and the pool names the DRep in its metadata. Its owner runs 5 pools with 172.0 million ADA together",
    "pools": 5,
    "pools_ada": 171978456
   },
   {
+   "name": "Blockjock (James Meidinger)",
+   "drep_id": "drep1ygnypzfv2v8fmfelthahvn0rqyh54sf6z2aa5m7f3fkjgqqt8l2qq",
+   "ada": 24627967,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "wolf31o2 (Chris Gianelloni)",
+   "drep_id": "drep1yfa8r8r36x7x05htftce7qhafrn5nzzr6vazy95pzy6y5dqac0ss7",
+   "ada": 24394174,
+   "cls": "drep",
+   "why": ""
+  },
+  {
    "name": "Liqwid DAO",
    "drep_id": "drep1ygctwczmpjxef8w3ljugkdth2d4upz2f2yfv9mvyxe0papswz26s6",
-   "ada": 24283426,
+   "ada": 23718513,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools LQWD, LQWD, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 23.1 million ADA together",
    "pools": 2,
@@ -428,14 +428,14 @@
   {
    "name": "Cash",
    "drep_id": "drep1ygeyfh8nm03dnl5a2hxdtv09pu7uhep9l0cpg0zpr60jqys05cku2",
-   "ada": 22906532,
+   "ada": 23056584,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Hephaestus Stake Pool [HEPHY]",
    "drep_id": "drep1y2zu74gt8sxtrxcngqsmrnupkzrtmlqshmvmm5qtuhxx6xqt7yhaw",
-   "ada": 21517250,
+   "ada": 21519149,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool HEPHY, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's transactions were paid from the pool's wallet. Its pool has 885,489 ADA",
    "pools": 1,
@@ -444,7 +444,7 @@
   {
    "name": "DINO",
    "drep_id": "drep1ytfnmf4uftt4fe0h63xhadl0v402gr6nnhtcgrq2sas26kgaf3n5y",
-   "ada": 21505758,
+   "ada": 21421591,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool DINO, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 27.2 million ADA",
    "pools": 1,
@@ -453,7 +453,7 @@
   {
    "name": "Chris [STR8] - Straightpool",
    "drep_id": "drep1y27qjjnz9a7q6zmvpajzqpqylnka6lpkvcm9sgjrdheqt0qq6pchw",
-   "ada": 21129724,
+   "ada": 21140789,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool STR8, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 56.9 million ADA",
    "pools": 1,
@@ -462,7 +462,7 @@
   {
    "name": "CTEC-Stake-Pool",
    "drep_id": "drep1y24xr6m4mkgl7e7886sk3wee7h73mcreysyvhrwzksy5ajqrv0rrv",
-   "ada": 20249587,
+   "ada": 20255661,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools CTEC, CTEC2, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 2 pools with 18.7 million ADA together",
    "pools": 2,
@@ -471,14 +471,14 @@
   {
    "name": "DraculaDAO",
    "drep_id": "drep1ygs99wsy49h9vydggncfeck2xwmngyeltp66pvgzl6jz63s6qmu3p",
-   "ada": 16408392,
+   "ada": 16413899,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Terminada",
    "drep_id": "drep1ytf9f78k7rkwk4cu6l2nvna22keu9yus4kqzc0hqspd36uszu0xc2",
-   "ada": 16190267,
+   "ada": 16195457,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool TERM, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 73.8 million ADA",
    "pools": 1,
@@ -487,44 +487,44 @@
   {
    "name": "Angry Crypto Show",
    "drep_id": "drep1y22m0k0d5mhv6anulnnh4m6m2cwp8evd3zw2qtjae64aw9chd7gag",
-   "ada": 15350022,
+   "ada": 15300909,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Wada DRep",
    "drep_id": "drep1y2jnqfamg4tq5aepxhggzhqg7pq5gunph4wypkyh9q3qt2cru5m2j",
-   "ada": 12531832,
+   "ada": 12515326,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Paul Ko",
    "drep_id": "drep1yt5cc878w5c8umxrfudnmzw425epxnvvttw7hhrhwfhp0zqf400ze",
-   "ada": 11916658,
+   "ada": 11922036,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools HOPE, HOPE2, JOY2, JOY, because the DRep names the pool in its metadata. Its owner runs 4 pools with 28.0 million ADA together",
    "pools": 4,
    "pools_ada": 27976714
   },
   {
-   "name": "OREKA_Vote",
-   "drep_id": "drep1ygt7jr22s8fc36hnamgfzqtecuz2ppsj6jr5k0e8gp2pv7qw8ehel",
-   "ada": 11566738,
+   "name": "Cheeky Crypto (CHEEK)",
+   "drep_id": "drep1y2zu2ls2hqw9dycxl8s8z3d9nmw7s794xh3xn3jytkh30esalzwdv",
+   "ada": 11723856,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "Cheeky Crypto (CHEEK)",
-   "drep_id": "drep1y2zu2ls2hqw9dycxl8s8z3d9nmw7s794xh3xn3jytkh30esalzwdv",
-   "ada": 11409573,
+   "name": "OREKA_Vote",
+   "drep_id": "drep1ygt7jr22s8fc36hnamgfzqtecuz2ppsj6jr5k0e8gp2pv7qw8ehel",
+   "ada": 11569026,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "RCADA",
    "drep_id": "drep1yf7kjx5rlyuyzxkr4dzyccdfs8tesh29amrtcpyplu3asnqjgmdz3",
-   "ada": 10732040,
+   "ada": 10748823,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool RCADA, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 1.1 million ADA",
    "pools": 1,
@@ -533,35 +533,42 @@
   {
    "name": "Dr. Navjit Dhaliwal",
    "drep_id": "drep1yfya5pwcm2zw0e60c3pkqscq6spge7m0k6jtxkfsymv68gs2z56e5",
-   "ada": 10223758,
+   "ada": 9863400,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Chris Cata",
    "drep_id": "drep1yfdfs28uwafjgmrkatdektlzrvha2cmvqjhuz700e04mawq23rmrg",
-   "ada": 9622057,
+   "ada": 9646737,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Cardano Cypherpunks",
    "drep_id": "drep1y23wk4w6f2aumc92vl9m3x74xzm6jh4ha9wdq09yfq2sl6q8zlv4l",
-   "ada": 8472263,
+   "ada": 8545495,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Varavas",
    "drep_id": "drep1yte3chru8m7d3gzgpwvmgan0gjfxru9r9cyvrkkcerc0wcg6qfvtc",
-   "ada": 8423288,
+   "ada": 8478938,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yt37s3z3ddzmzug9mujxy5c0patgetmjv6fhf3he4nmnv2ga3nad2",
+   "ada": 7763693,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "PRIDE",
    "drep_id": "drep1yfpazkd0aqex0kd3vrhk47sjy0jqgq3xu6h2zv9wevfequcxyynwv",
-   "ada": 7772766,
+   "ada": 7763014,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool PRIDE, because the DRep's name is the pool's name without its number. Its pool has 24.1 million ADA",
    "pools": 1,
@@ -569,15 +576,8 @@
   },
   {
    "name": "",
-   "drep_id": "drep1yt37s3z3ddzmzug9mujxy5c0patgetmjv6fhf3he4nmnv2ga3nad2",
-   "ada": 7764397,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "",
    "drep_id": "drep1y2fhyudw8ju53e296c3yugvul6h3fpurhnx45lfa9e5meqgtky0gg",
-   "ada": 7213282,
+   "ada": 7178928,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools KTOP, KTO, because the DRep's transactions were paid from the pool's wallet. Its owner runs 2 pools with 19.3 million ADA together",
    "pools": 2,
@@ -586,37 +586,46 @@
   {
    "name": "Holger",
    "drep_id": "drep1y2k8uedxj5xzymxxzf07plg0t5xd4mmckwg9lwkwhdlwyesy0eyf8",
-   "ada": 6755159,
+   "ada": 6733052,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "concon",
    "drep_id": "drep1y2v2ncht76apatlnxgtz8h8zy943avf7padqkkvycmzmcpcre7fek",
-   "ada": 6498037,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "",
-   "drep_id": "drep1yfpj9e6k9q2et7nsutu0e7ymqt0v00aj57chnltjvn0lu0s28xakv",
-   "ada": 6443217,
+   "ada": 6502505,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "stakit (sti) by TOBG",
    "drep_id": "drep1ytae7wj5s8pu8qry9vfcnqy97w68z96lffzwzrc4verpkfqsl8e8m",
-   "ada": 6331934,
+   "ada": 6339821,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools STI, STI2, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 45.6 million ADA together",
    "pools": 2,
    "pools_ada": 45631452
   },
   {
+   "name": "",
+   "drep_id": "drep1yfpj9e6k9q2et7nsutu0e7ymqt0v00aj57chnltjvn0lu0s28xakv",
+   "ada": 6277956,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "YOADA",
+   "drep_id": "drep1y26sfka2km0p4xw073ujdq406wxxczhdyfh9vw7yxpfselchzkdjn",
+   "ada": 6103892,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool YOADA, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 1.3 million ADA",
+   "pools": 1,
+   "pools_ada": 1326702
+  },
+  {
    "name": "ATLAS_Wolfgang",
    "drep_id": "drep1ytq64jdk5fequ0228znae33d3ncs50ujl7qev0uqlx37l8cpjhc2k",
-   "ada": 6077639,
+   "ada": 6079958,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools ATLAS, ATLAS, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 43.6 million ADA together",
    "pools": 2,
@@ -625,14 +634,14 @@
   {
    "name": "InputEndorsers",
    "drep_id": "drep1y2hlgh9600zjlt39dh54z7z8d65kahneck8yhh7ugmzc9as0xrzqd",
-   "ada": 6030549,
+   "ada": 6042330,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Earn Coin Pool",
    "drep_id": "drep1yg8vjs7ute7z7vyd8yez5tgjey6043djjfh8d3n7sjev35g064xxc",
-   "ada": 5804189,
+   "ada": 5802006,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool ECP, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 2.5 million ADA",
    "pools": 1,
@@ -641,23 +650,14 @@
   {
    "name": "AtlasHub",
    "drep_id": "drep1y2dnsj0taktxwmzwf4a7sp0mg3rvm3jsetag0h0m83khs3c7d3l6x",
-   "ada": 5764175,
+   "ada": 5716403,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "YOADA",
-   "drep_id": "drep1y26sfka2km0p4xw073ujdq406wxxczhdyfh9vw7yxpfselchzkdjn",
-   "ada": 5500901,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool YOADA, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 1.3 million ADA",
-   "pools": 1,
-   "pools_ada": 1326702
-  },
-  {
    "name": "WMOPS",
    "drep_id": "drep1y2urcg66ytnvt5tv7kv4saemu83hnuk9rydhh0tmem96mac3ltuaf",
-   "ada": 5344149,
+   "ada": 5346404,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool WMOPS, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 4.0 million ADA",
    "pools": 1,
@@ -666,14 +666,14 @@
   {
    "name": "Peter Horsfall",
    "drep_id": "drep1ytfas4axhm8yzrqqh4ru2uuqesu87zeq6fwg5pq8azqf7ecu4nu8s",
-   "ada": 5171811,
+   "ada": 5172206,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Kyle Solomon",
    "drep_id": "drep1ytzshxuma6cwrnlv2ucyclfqw3k4nu4nuudmh2z87j9hncsk9dhy4",
-   "ada": 5116353,
+   "ada": 5117937,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools FROG2, FROG, because the DRep names the pool in its metadata. Its owner runs 2 pools with 10.2 million ADA together",
    "pools": 2,
@@ -682,103 +682,96 @@
   {
    "name": "Viet_Cardano_Community",
    "drep_id": "drep1ygpzpm4q38rfueu2use5te4ylykn4smvs7cxj2ggvktcjkqpxhvf4",
-   "ada": 5041632,
+   "ada": 5031893,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "erikdrep",
    "drep_id": "drep1ytrf7kdyhk6ft3fqzqqqaszam6gt2fljpsvwkvngamyrvks6faung",
-   "ada": 4654090,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "$Khale",
-   "drep_id": "drep1y2ltat8kjqrmnff3lkkpxy0j5tn66d3m0gy64dc92asft5g6dl9ws",
-   "ada": 4351484,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "MOKSH",
-   "drep_id": "drep1yt4vlxgkllldxtwrmzj2ymwnc5qw0cmzvkn4nxpxkpgt4fgwj36md",
-   "ada": 4334521,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool MOKSH, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 39.9 million ADA",
-   "pools": 1,
-   "pools_ada": 39915790
-  },
-  {
-   "name": "",
-   "drep_id": "drep1y2r5kww2gj4j6l2h7065fk5jtfhzxwf37ryygkdx4qhmpvqlah2jj",
-   "ada": 4079739,
+   "ada": 4678734,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Porto Cripto DRep 🇧🇷 🇵🇹 (Atico & Bosco, from Cardanistas Stake Pool - CARDs)",
    "drep_id": "drep1ywuk39acvmkzda9e8kfmy7fwf946jd5uaa4l696atlas66s68f0fl",
-   "ada": 3878935,
+   "ada": 4405400,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools CARDs, PORTO, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 13.0 million ADA together",
    "pools": 2,
    "pools_ada": 12957539
   },
   {
+   "name": "$Khale",
+   "drep_id": "drep1y2ltat8kjqrmnff3lkkpxy0j5tn66d3m0gy64dc92asft5g6dl9ws",
+   "ada": 4352708,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "MOKSH",
+   "drep_id": "drep1yt4vlxgkllldxtwrmzj2ymwnc5qw0cmzvkn4nxpxkpgt4fgwj36md",
+   "ada": 4335993,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool MOKSH, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 39.9 million ADA",
+   "pools": 1,
+   "pools_ada": 39915790
+  },
+  {
    "name": "Daehan_kor",
    "drep_id": "drep1y28uwdrz2acyp4jka5fqp2fa3hp0klpme8wug3f5p2y45zsc0e8qw",
-   "ada": 3847476,
+   "ada": 3688515,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool KOR, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 2.3 million ADA",
    "pools": 1,
    "pools_ada": 2313375
   },
   {
+   "name": "Mike Rogero (羅邁凱）",
+   "drep_id": "drep1y2lhe7wn2sr6vme8gnca4jrkhv47uh3tklsykmrqvwzdq4g5s8wju",
+   "ada": 3636134,
+   "cls": "drep",
+   "why": ""
+  },
+  {
    "name": "Mat - ECO Pool",
    "drep_id": "drep1y2s4qj2j05s8h0a532ncv4q77rwglr5cwf4c728yfutauqqgjszwx",
-   "ada": 3794562,
+   "ada": 3562603,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools ECO, ECO, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 36.7 million ADA together",
    "pools": 2,
    "pools_ada": 36721709
   },
   {
-   "name": "Mike Rogero (羅邁凱）",
-   "drep_id": "drep1y2lhe7wn2sr6vme8gnca4jrkhv47uh3tklsykmrqvwzdq4g5s8wju",
-   "ada": 3660514,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "LEADStakePool",
-   "drep_id": "drep1ytnvazqpsj98pu7w6vtmeddcy9pnn6y6nl0psr5ajzge52s82zz8t",
-   "ada": 3525828,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool LEAD, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the pool names the DRep in its metadata. Its pool has 7.3 million ADA",
-   "pools": 1,
-   "pools_ada": 7276765
-  },
-  {
    "name": "Giovanni Gargiulo",
    "drep_id": "drep1ytn29gxylzlrhzmkt4c75w7qmesxqc248r9089f0pvuysdqeva6ht",
-   "ada": 3523361,
+   "ada": 3526933,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool EASY1, because the DRep names the pool in its metadata. Its pool has 53.8 million ADA",
    "pools": 1,
    "pools_ada": 53797456
   },
   {
+   "name": "LEADStakePool",
+   "drep_id": "drep1ytnvazqpsj98pu7w6vtmeddcy9pnn6y6nl0psr5ajzge52s82zz8t",
+   "ada": 3526105,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool LEAD, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the pool names the DRep in its metadata. Its pool has 7.3 million ADA",
+   "pools": 1,
+   "pools_ada": 7276765
+  },
+  {
    "name": "CoinCeylon",
    "drep_id": "drep1yfg2u28p4xuh5u5lv839vcfd6k2knptfw0avtefpyw4x3dsu5pu25",
-   "ada": 3489416,
+   "ada": 3490409,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "GAIA",
    "drep_id": "drep1ytxr0lhg5j72wysva9ac2gsn4lck4gyen8ywxkqfchsqg3qs8uy44",
-   "ada": 3422368,
+   "ada": 3423222,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool GAIA, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 578,136 ADA",
    "pools": 1,
@@ -787,7 +780,7 @@
   {
    "name": "Captain Crypto",
    "drep_id": "drep1y2x0d3jgae3xs7kdagq2w74kmzlgktw3l5th2lusrgn7m6gg52x78",
-   "ada": 3225906,
+   "ada": 3226699,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool PARAD, because the DRep names the pool in its metadata. Its pool has 102,108 ADA",
    "pools": 1,
@@ -796,66 +789,57 @@
   {
    "name": "42",
    "drep_id": "drep1y26ppxzudkhtak4y7kc2rag9ezq7szje78aetxge3pg5w7qwthkqv",
-   "ada": 3115286,
+   "ada": 3116076,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "BWtake(長崎)Japan",
    "drep_id": "drep1ytcw6qzpqqclx2yd0zy64ztvlkkhnf6yrzza8whgnq4vz5gh89626",
-   "ada": 3093401,
+   "ada": 3094044,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Medusa DRep",
    "drep_id": "drep1yg5pzxhp0lu0m7757ww2hke8qhcuqgqt3c2ezphngwytz4gjr6yge",
-   "ada": 3055001,
+   "ada": 3057100,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool MDS, because the DRep names the pool in its metadata, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 1.3 million ADA",
    "pools": 1,
    "pools_ada": 1285148
   },
   {
-   "name": "SAGAN Stake Pool",
-   "drep_id": "drep1y290s8rwsezxkct6urmqne8tc92wqtltal8dfxfk45xj6eqn2mgfx",
-   "ada": 2870952,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool SAGAN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 1.4 million ADA",
-   "pools": 1,
-   "pools_ada": 1377625
-  },
-  {
    "name": "CryptoRich (CRICH)",
    "drep_id": "drep1yfkn463gfmajw3v0nva9cds6cvzghsvv6pdgn2ywmqv684q9u7ph4",
-   "ada": 2850730,
+   "ada": 2916550,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool CRICH, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 6.5 million ADA",
    "pools": 1,
    "pools_ada": 6541003
   },
   {
+   "name": "SAGAN Stake Pool",
+   "drep_id": "drep1y290s8rwsezxkct6urmqne8tc92wqtltal8dfxfk45xj6eqn2mgfx",
+   "ada": 2871099,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool SAGAN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 1.4 million ADA",
+   "pools": 1,
+   "pools_ada": 1377625
+  },
+  {
    "name": "ADA_Labo",
    "drep_id": "drep1ytrfnk7mslmfrwgqed6l5fyupkx22z59cx4qlwmrvdyjsmgrjejvq",
-   "ada": 2825948,
+   "ada": 2826539,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools RDB, ALAB, LABO, because the DRep carries the pool's name or ticker. Its owner runs 3 pools with 5.6 million ADA together",
    "pools": 3,
    "pools_ada": 5591428
   },
   {
-   "name": "ADALO",
-   "drep_id": "drep1y22eh8rzfmnjw8m82hlcgxfm8tcmwqmdqy2mjupdduztq0s5s5dkk",
-   "ada": 2785023,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool ADALO, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 76.1 million ADA",
-   "pools": 1,
-   "pools_ada": 76091634
-  },
-  {
    "name": "OCTAS DRep",
    "drep_id": "drep1y2t4hsu6zk98407q4ymj5jnm2d52rh76dv6whl88r9dts4qayakaf",
-   "ada": 2735350,
+   "ada": 2670183,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool OCTAS, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 54.3 million ADA",
    "pools": 1,
@@ -864,37 +848,46 @@
   {
    "name": "Michele_Harmonic",
    "drep_id": "drep1y28jk3gffhcecfhwaf73nfef833q8twqnhw8h7n60kelxus4xlej4",
-   "ada": 2555231,
+   "ada": 2557122,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "HenriqC",
    "drep_id": "drep1y2f5m5mn48q65xkw65q2kfd2tkakz3lh8553ugmcsq0ahnsl2nfcj",
-   "ada": 2536301,
+   "ada": 2537196,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "No stress",
    "drep_id": "drep1y2t3t35yx7j8nnh3wkqn2zzhgwqksksn85zv62pjrwzjawczwgyv7",
-   "ada": 2491708,
+   "ada": 2492132,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool EPOCH, because the DRep names the pool in its metadata. Its pool has 3.1 million ADA",
    "pools": 1,
    "pools_ada": 3101510
   },
   {
+   "name": "ADALO",
+   "drep_id": "drep1y22eh8rzfmnjw8m82hlcgxfm8tcmwqmdqy2mjupdduztq0s5s5dkk",
+   "ada": 2437980,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool ADALO, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 76.1 million ADA",
+   "pools": 1,
+   "pools_ada": 76091634
+  },
+  {
    "name": "",
    "drep_id": "drep1ygw6c6ljek5re3dq4vmtpneqqlvccvcgwc8l7gjljqdfa0g0sduqg",
-   "ada": 2422984,
+   "ada": 2423412,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "ANGEL",
    "drep_id": "drep1y2nfn97daaffqdpc2snj5k0fdamf7wgffn8xlscl2nxnxjcala80u",
-   "ada": 2405914,
+   "ada": 2407237,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools ANGEL, SION, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its owner runs 2 pools with 23.8 million ADA together",
    "pools": 2,
@@ -903,7 +896,7 @@
   {
    "name": "Bamboo_Drep",
    "drep_id": "drep1ythej7tvvq0tgat3l7ge6q40uarj02qmml5puzzgr00sd0gqtdeld",
-   "ada": 2358281,
+   "ada": 2369839,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool BBO, because the DRep names the pool in its metadata. Its pool has 559,563 ADA",
    "pools": 1,
@@ -912,14 +905,14 @@
   {
    "name": "This Corrosion",
    "drep_id": "drep1ytkzpmmukjy6qn6xd5skqm0ypcj5juw9rxddr5mmlzgjvtcghwqjr",
-   "ada": 2291570,
+   "ada": 2299109,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Adapolis_Stakepool",
    "drep_id": "drep1yt9rp59j57rxev92qzsjyxpnyul8gc94fny4af32hr35l0qh9ahj8",
-   "ada": 2256106,
+   "ada": 2264905,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool ADP, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 4.1 million ADA",
    "pools": 1,
@@ -928,115 +921,113 @@
   {
    "name": "Will Norris",
    "drep_id": "drep1ytuufvd6maykgfcp20fxgpx7g6a9z2suchqehfejwdsx8cgpx80yg",
-   "ada": 2000497,
+   "ada": 2003006,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "matticus_kiwi",
    "drep_id": "drep1ytjmkvp7rlsjww20nv3eyx3hj9c5pwezz5z5aq8pejg7v3qexfc28",
-   "ada": 1889660,
+   "ada": 1875609,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools KIWI, KIWI, because the DRep carries the pool's name or ticker. Its owner runs 2 pools with 32.4 million ADA together",
    "pools": 2,
    "pools_ada": 32393242
   },
   {
+   "name": "Dmitrii Gartung",
+   "drep_id": "drep1ytd8ewnp38xz5469g63yw34ev9q9cch2hcyp332t8cqpzzqh23ykc",
+   "ada": 1874310,
+   "cls": "drep",
+   "why": ""
+  },
+  {
    "name": "BKIND",
    "drep_id": "drep1ytc6867ae0xmkekvmex79r9akyy28eu8nu03jf3xu9fle6c82l4eq",
-   "ada": 1828176,
+   "ada": 1828437,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool BKIND, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 2.3 million ADA",
    "pools": 1,
    "pools_ada": 2300409
   },
   {
-   "name": "Dmitrii Gartung",
-   "drep_id": "drep1ytd8ewnp38xz5469g63yw34ev9q9cch2hcyp332t8cqpzzqh23ykc",
-   "ada": 1781070,
+   "name": "CryptoDossier",
+   "drep_id": "drep1y2t0lg9sf53c0qx2dwwjxsmp9qs0uvtcu70nj2n3r4c94pgvaw2z2",
+   "ada": 1819117,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Dan",
    "drep_id": "drep1yfsgx4dqfcxxs0ms533twzs7w0cvw8vq8qwzmjyrp280jfsl8gusv",
-   "ada": 1775269,
+   "ada": 1767591,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "AQUA_Vote",
    "drep_id": "drep1ygzp8678j5q8s8syhk4a7a4tr54sp3su8fxzzdjhuxcn4tc6r2qcn",
-   "ada": 1667471,
+   "ada": 1667822,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Alex BKV",
    "drep_id": "drep1yf2yd8jgdvmtm7jqmvvl0rmw7yprv5723y8h6tjnwfmcejq476nsl",
-   "ada": 1648202,
+   "ada": 1648006,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool BKV, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 505,735 ADA",
    "pools": 1,
    "pools_ada": 505735
   },
   {
-   "name": "Nimuë Lady of the Lake Pool",
-   "drep_id": "drep1ygj02llvuusnhphvhlxf7d2cxhs53twjnwwl5at3zwht4xc6xdgl4",
-   "ada": 1605567,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool NIMUE, because the DRep carries the pool's name or ticker, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 3.8 million ADA",
-   "pools": 1,
-   "pools_ada": 3799847
-  },
-  {
    "name": "",
    "drep_id": "drep1ytkz2ha7m9nvsr9qnyfyw2c37fkfkm897q0scm3tz2npl3smpwxsy",
-   "ada": 1603601,
+   "ada": 1607385,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "geeky.d",
    "drep_id": "drep1ytjh9snv4pwe6t6gsghhns2ksmwpyr2sv2hnka34fc5mhgc4kn8zx",
-   "ada": 1430647,
+   "ada": 1431142,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "",
    "drep_id": "drep1yt05vsgtruppuej5jzmswd7tj86ujanydq27qxc2nksrt8szgtg0g",
-   "ada": 1357959,
+   "ada": 1358376,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "DanShipps_HarborStakePool",
-   "drep_id": "drep1ygxu629f9zzm0r6fm8m2rtn3qglgtstvfxvt7nj68hxmdpcrwphte",
-   "ada": 1334694,
+   "name": "Nimuë Lady of the Lake Pool",
+   "drep_id": "drep1ygj02llvuusnhphvhlxf7d2cxhs53twjnwwl5at3zwht4xc6xdgl4",
+   "ada": 1351828,
    "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool BOATS, because the DRep names the pool in its metadata. Its pool has 1.2 million ADA",
+   "why": "is linked by our Decentralization Monitor to pool NIMUE, because the DRep carries the pool's name or ticker, the DRep's name is the pool's name without its number and the DRep's transactions were paid from the pool's wallet. Its pool has 3.8 million ADA",
    "pools": 1,
-   "pools_ada": 1160450
+   "pools_ada": 3799847
   },
   {
    "name": "TriangleForces",
    "drep_id": "drep1y2y3euudfnw48xeulsfupsttlx8c4xphhaw90d66dvcrazgjdm5uc",
-   "ada": 1245517,
+   "ada": 1245832,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Kevin_ALBERT",
    "drep_id": "drep1y2gh7lj3jt89vs63rtr4vj5g4ulxhmp7t0dkh6hcel90mlsujgqlu",
-   "ada": 1236212,
+   "ada": 1236543,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Elite",
    "drep_id": "drep1ytgutursutn574aqvumh77egx5wxastcv777p6dq3elfzqqwd5yc6",
-   "ada": 1219401,
+   "ada": 1215078,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools ELITE, ELITE, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 2 pools with 27.5 million ADA together",
    "pools": 2,
@@ -1045,62 +1036,53 @@
   {
    "name": "Wolfoden",
    "drep_id": "drep1y293f6495fvld5zqv0uqsjpjt25zzdkjglys7ykc678jtkghet05n",
-   "ada": 1198271,
+   "ada": 1198364,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool 300, because the DRep names the pool in its metadata. Its pool has 71,007 ADA",
    "pools": 1,
    "pools_ada": 71007
   },
   {
-   "name": "anonDREP",
-   "drep_id": "drep1yf8jsy2n55rvym9yl9s00qkx3v6m05jk9a2f098gfjfs0acqv9aav",
-   "ada": 1150912,
-   "cls": "drep",
-   "why": ""
-  },
-  {
    "name": "AdaLovelace777",
    "drep_id": "drep1ygehgu65kchqm929zp69xhl06hqkpcjv0rzy44sx40qhufqgh3xv2",
-   "ada": 1148647,
+   "ada": 1155273,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "",
-   "drep_id": "drep1y26dxtv63ax74jqs20h9xw5m7559q4e53tkh2xqwknmw2nstuepzv",
-   "ada": 1144694,
+   "name": "anonDREP",
+   "drep_id": "drep1yf8jsy2n55rvym9yl9s00qkx3v6m05jk9a2f098gfjfs0acqv9aav",
+   "ada": 1151234,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Tony Boersma",
    "drep_id": "drep1yf7rhr6k8gfecdn8z5r38uqyaafcfr785lsgzsvc7ye3m9g3z20kj",
-   "ada": 1144679,
+   "ada": 1145015,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y26dxtv63ax74jqs20h9xw5m7559q4e53tkh2xqwknmw2nstuepzv",
+   "ada": 1144890,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "God BLESS You",
    "drep_id": "drep1y2u2848fer43ghnyhyadhaqd2ek4q9x09h2y0sxev5gklcgnx3qyp",
-   "ada": 1143008,
+   "ada": 1143044,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool BLESS, because the DRep's name is the pool's name without its number. Its pool has 110,774 ADA",
    "pools": 1,
    "pools_ada": 110774
   },
   {
-   "name": "8Ball",
-   "drep_id": "drep1y296zyw2r8rcsy7slkd7l687hh88xc0m6ac2y3h2r3mvsdgc9q6yy",
-   "ada": 1094684,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool 8BALL, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 1.4 million ADA",
-   "pools": 1,
-   "pools_ada": 1441574
-  },
-  {
    "name": "Christopher Erckert | Dotare",
    "drep_id": "drep1yg8aktnf09gdd0jpyhuz3fy22mfjrqrg2ru52907zeeeeqcra6xhe",
-   "ada": 1094117,
+   "ada": 1094448,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool DOTAR, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 303,861 ADA",
    "pools": 1,
@@ -1109,44 +1091,62 @@
   {
    "name": "ACL-CardanoLand",
    "drep_id": "drep1y2r5pajz7vvw8v0kvf4968gjwua077n25k75mv3ne7vd6cc7rw8p5",
-   "ada": 1059744,
+   "ada": 1063697,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools ACL, ACL, ACL, ACL, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 4 pools with 78.0 million ADA together",
    "pools": 4,
    "pools_ada": 78000441
   },
   {
+   "name": "8Ball",
+   "drep_id": "drep1y296zyw2r8rcsy7slkd7l687hh88xc0m6ac2y3h2r3mvsdgc9q6yy",
+   "ada": 1054945,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool 8BALL, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 1.4 million ADA",
+   "pools": 1,
+   "pools_ada": 1441574
+  },
+  {
    "name": "Lauris_StakePool247",
    "drep_id": "drep1yfpx6k5h4ms4gvmnz4s065p8z78kj0fzv8py6lzjzglevjck6wyf8",
-   "ada": 1026252,
+   "ada": 1027126,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "",
-   "drep_id": "drep1y269n33u9yvxleqg86ttu7al8eq08h664k37sqsr4z0uw7s98ckjg",
-   "ada": 993694,
-   "cls": "drep",
-   "why": ""
+   "name": "Erasmus",
+   "drep_id": "drep1y23tfs3c25kfmyqzy5d3364g4smp59esdmzxynqd5ndjjgq5dx7c7",
+   "ada": 999587,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool ZUND, because the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 901,559 ADA",
+   "pools": 1,
+   "pools_ada": 901559
   },
   {
    "name": "",
    "drep_id": "drep1yglw6cfkmr9lcn977jjstwy0swwuyjhnx64pnq4wh5rc8rsydhhcp",
-   "ada": 980014,
+   "ada": 980112,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "RobertJTokay",
    "drep_id": "drep1y2m0putteu5wcdf3dtww7p9tvfupqut5tplscdkd9q65uqcrx4p8e",
-   "ada": 964762,
+   "ada": 965018,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Tim Brueckmann",
+   "drep_id": "drep1ytfp45ce8cjxffyhpdk7l8ran5t905ur38tsp9yl2n40ltqp86tsu",
+   "ada": 954655,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "ADAR_Chris",
    "drep_id": "drep1y26nj0u86z00s2c6yteecduedrzxxrxrn39th5mau0h0r5gszp025",
-   "ada": 953776,
+   "ada": 953993,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool ADAR, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's transactions were paid from the pool's wallet. Its pool has 402,957 ADA",
    "pools": 1,
@@ -1155,25 +1155,16 @@
   {
    "name": "TOPO",
    "drep_id": "drep1yt5qwxtmcsns42cjtn7w97ws4vxvxs28hr85rfkn7gd7gmgypa5d7",
-   "ada": 949142,
+   "ada": 950101,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools WHITE, TOPO⚡, because the DRep carries the pool's name or ticker and the pool names the DRep in its metadata. Its owner runs 2 pools with 3.4 million ADA together",
    "pools": 2,
    "pools_ada": 3361794
   },
   {
-   "name": "Erasmus",
-   "drep_id": "drep1y23tfs3c25kfmyqzy5d3364g4smp59esdmzxynqd5ndjjgq5dx7c7",
-   "ada": 947891,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool ZUND, because the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 901,559 ADA",
-   "pools": 1,
-   "pools_ada": 901559
-  },
-  {
    "name": "HUAT 發 Singapore",
    "drep_id": "drep1yghteujj0rxnxx89j4tslkjxewwn5th447jn963fmf8hdxg2k3qdm",
-   "ada": 938213,
+   "ada": 938486,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool ?, because the DRep's transactions were paid from the pool's wallet. Its pool has 1.0 million ADA",
    "pools": 1,
@@ -1182,58 +1173,58 @@
   {
    "name": "BRIAN",
    "drep_id": "drep1yg7svuv02gh9j2q574jv06l4xnzwyp63effljze28qe993caj8ras",
-   "ada": 937659,
+   "ada": 938185,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool BRIAN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 323,146 ADA",
    "pools": 1,
    "pools_ada": 323146
   },
   {
-   "name": "Mayhem",
-   "drep_id": "drep1ygy4xcnfwuxcw48vrffavcmd6rtctkk7s8mvqejzwwzfpfq9z5583",
-   "ada": 928190,
-   "cls": "drep",
-   "why": ""
-  },
-  {
    "name": "Yosh",
    "drep_id": "drep1ytd7s3he5rgxhkx0t2vnun25wy3t263877czxw8nelcld8ce66v4c",
-   "ada": 927680,
+   "ada": 922928,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Next Epoch",
    "drep_id": "drep1y27a56gx9vm6yhjm9wsvvp847mt0dv4cyx93vz2r5rjytnsew90d6",
-   "ada": 915246,
+   "ada": 915313,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "drep.collective",
    "drep_id": "drep1ydwtnlvdd8atlj5c5ylgw4kg5e640vyt8resattrjmwufyg4qclf7",
-   "ada": 913336,
+   "ada": 913351,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Todd",
    "drep_id": "drep1y2edf5yw90jcpt55pm4336y40gty468gk56un56z8pu2wfcklamyv",
-   "ada": 881115,
+   "ada": 881377,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Pavol Korvas",
    "drep_id": "drep1yfyx4tzq6hfu5w20n42ry0uc8tskaen57e2eytzwhzy7vkgqhawwu",
-   "ada": 875450,
+   "ada": 875683,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "cardano-world.com",
+   "drep_id": "drep1y24tjwhn6e436jcsz839r48qslrmtyz6ahxthhr99h7jglq56vmey",
+   "ada": 872674,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "phillerino",
    "drep_id": "drep1ytu64qt7send5dw7wcd0z5geh4ka6qstgvtgval097hed7qqnqh2n",
-   "ada": 855109,
+   "ada": 849981,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool QUEEN, because the DRep names the pool in its metadata. Its pool has 58.5 million ADA",
    "pools": 1,
@@ -1242,109 +1233,102 @@
   {
    "name": "Latam Cardano",
    "drep_id": "drep1ytgsdkfznvjnwdxrzvf8x6tn4ctfukqqphsammzkfwatgsqgnpf2w",
-   "ada": 848624,
+   "ada": 848929,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "CardanoLeo",
    "drep_id": "drep1y28xhrjxe496rnle8ln3slpggnp8leu3mn244ujrhwet0cc2vmte4",
-   "ada": 771869,
+   "ada": 802475,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Scientific-Analytical-Tools",
    "drep_id": "drep1yfmqpuaq077xuwnxuw29zg9emtttplmz49t0a762l2ksajsfarye5",
-   "ada": 769265,
+   "ada": 769428,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "CryptoDossier",
-   "drep_id": "drep1y2t0lg9sf53c0qx2dwwjxsmp9qs0uvtcu70nj2n3r4c94pgvaw2z2",
-   "ada": 677464,
-   "cls": "drep",
-   "why": ""
+   "name": "SPIRE",
+   "drep_id": "drep1ytglhmgslx7rjqf4tatt02dk2jfnfj3tgjr34ne7p597dxgm98wcg",
+   "ada": 674171,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pools SPIRE, SPIR2, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 2 pools with 92.9 million ADA together",
+   "pools": 2,
+   "pools_ada": 92927342
   },
   {
    "name": "AYOMI",
    "drep_id": "drep1ygnmw0mfp7g43capnsxaa55pn2s7z3cvxd6enl8anm33vrcw95wgl",
-   "ada": 665069,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "BreadAndRoses",
-   "drep_id": "drep1yff7cs985wzeu2jjx48sld002rleqsrz8qtt3hp8whk9vnc5vq23n",
-   "ada": 631509,
+   "ada": 665193,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "FAIR Pool #01",
    "drep_id": "drep1ytamqncvuz2r0atkwxwgcn5zmgxm09j0g2lgcrp7ddqfsfcsgnr8s",
-   "ada": 627382,
+   "ada": 653858,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool FAIR, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's transactions were paid from the pool's wallet. Its pool has 53.0 million ADA",
    "pools": 1,
    "pools_ada": 53048287
   },
   {
-   "name": "jonahkoch",
-   "drep_id": "drep1yt8trnz8e5cnylmyygt0pyzrfw92rt9s42kg8t4rhm6t0dstyvmdn",
-   "ada": 613124,
+   "name": "BreadAndRoses",
+   "drep_id": "drep1yff7cs985wzeu2jjx48sld002rleqsrz8qtt3hp8whk9vnc5vq23n",
+   "ada": 631669,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "Logical Mechanism dRep",
-   "drep_id": "drep1y04c5l848c6f47tcaqwxfnh0e6n9ngz4txurcwzvlyuwpjsktpah6",
-   "ada": 608987,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool LOGIC, because the DRep carries the pool's name or ticker. Its pool has 268,805 ADA",
-   "pools": 1,
-   "pools_ada": 268805
+   "name": "jonahkoch",
+   "drep_id": "drep1yt8trnz8e5cnylmyygt0pyzrfw92rt9s42kg8t4rhm6t0dstyvmdn",
+   "ada": 613467,
+   "cls": "drep",
+   "why": ""
   },
   {
    "name": "Crypto Eats Legacy",
    "drep_id": "drep1ytd2mf58tfqv78z7e99fy0gnmfep0kscclnwpvx7qvwpc5srxwg5g",
-   "ada": 588064,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "Crypto_Oaj",
-   "drep_id": "drep1ytwlmrm6ksc8sa5fdhm63prqve6hjzvghdc3053zwz6hyeg0ayhg2",
-   "ada": 575726,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "MREDGARCROSS",
-   "drep_id": "drep1y269ehxj30k4vfzfc2z84v0xykd3amuy2xn0kv9zf8rhcec2fg2jr",
-   "ada": 575351,
+   "ada": 588192,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "HeptaSean",
    "drep_id": "drep1yf8p623g9s0yxnlnjzealgajyxl57k7n6saeavc7azg0crcahnul9",
-   "ada": 573928,
+   "ada": 579453,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Crypto_Oaj",
+   "drep_id": "drep1ytwlmrm6ksc8sa5fdhm63prqve6hjzvghdc3053zwz6hyeg0ayhg2",
+   "ada": 575772,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "MREDGARCROSS",
+   "drep_id": "drep1y269ehxj30k4vfzfc2z84v0xykd3amuy2xn0kv9zf8rhcec2fg2jr",
+   "ada": 575508,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "AustinAnthony",
    "drep_id": "drep1yg5v33dh3pvf9xelauyd5l9qsa3yd6lezf4u7kccp3xqwjspcz3py",
-   "ada": 572037,
+   "ada": 572187,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "KysenPool_KYSN_KYSN2",
    "drep_id": "drep1yfnynxy48rhzs9684w2ulytx7uvsmdr98wvkg4erpsdw0hgk2r9u6",
-   "ada": 571794,
+   "ada": 572168,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools KYSN, KYSN2, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its owner runs 2 pools with 5.3 million ADA together",
    "pools": 2,
@@ -1353,48 +1337,30 @@
   {
    "name": "Maureen",
    "drep_id": "drep1y22hlaj8wuyygpnjy5cf96tg9tgvjrz39kxvqgv898uj9scfc55t7",
-   "ada": 541229,
+   "ada": 553617,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "SPIRE",
-   "drep_id": "drep1ytglhmgslx7rjqf4tatt02dk2jfnfj3tgjr34ne7p597dxgm98wcg",
-   "ada": 531036,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pools SPIRE, SPIR2, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its owner runs 2 pools with 92.9 million ADA together",
-   "pools": 2,
-   "pools_ada": 92927342
-  },
-  {
    "name": "@gersongomes",
    "drep_id": "drep1yfqg3v85wl8hpz082yh55hppys5z6803mquqgvdfw78qg9qwr3a4h",
-   "ada": 529560,
+   "ada": 529701,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "CAPO",
    "drep_id": "drep1yfpf7hqxl4sfrz4xcfamdc36pyp39fce3nrt53vh8jfffuc9rs23q",
-   "ada": 507373,
+   "ada": 507493,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool CAPO, because the DRep's name is the pool's name without its number. Its pool has 1.9 million ADA",
    "pools": 1,
    "pools_ada": 1944503
   },
   {
-   "name": "",
-   "drep_id": "drep1yfd9slgg7pc94xudyfsrzqnc73u9l4qa2vj5tamh23gyengkw39cu",
-   "ada": 435944,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool DOLCA, because the DRep's transactions were paid from the pool's wallet. Its pool has 685,911 ADA",
-   "pools": 1,
-   "pools_ada": 685911
-  },
-  {
    "name": "THOR",
    "drep_id": "drep1ytuf3fjch3lu5rkutgfz0wc3ngjszqluthj67pdeyvp49uszfkcp7",
-   "ada": 412695,
+   "ada": 413156,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool THOR, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 13.2 million ADA",
    "pools": 1,
@@ -1403,7 +1369,7 @@
   {
    "name": "Kurdopia",
    "drep_id": "drep1ygxtldfpas0gh9u20zvpwladxwvj8hdd5wxkkgt8ylxanacfy7wke",
-   "ada": 403065,
+   "ada": 403094,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool KURD, because the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 771,463 ADA",
    "pools": 1,
@@ -1412,7 +1378,7 @@
   {
    "name": "",
    "drep_id": "drep1ytrg2ruc44lutzd5tqw5m49rk9lxmrpjs85k8l2qsntvgls0mez9v",
-   "ada": 400191,
+   "ada": 400227,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool CAKE, because the DRep's transactions were paid from the pool's wallet. Its pool has 2.2 million ADA",
    "pools": 1,
@@ -1421,7 +1387,7 @@
   {
    "name": "ADAAT",
    "drep_id": "drep1y25req7clwkrxnjvx9075he2l80t3wksgeu9eqru09uvt3ctz60gx",
-   "ada": 399189,
+   "ada": 399542,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool ADAAT, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker and the DRep's name is the pool's name without its number. Its pool has 840,222 ADA",
    "pools": 1,
@@ -1430,28 +1396,28 @@
   {
    "name": "Holland",
    "drep_id": "drep1y2kf6kl9kd7uexdq54phxa4llcl8gx6zdh77xn95hjwp84sq8l4j4",
-   "ada": 385225,
+   "ada": 385839,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Krypto Labs",
    "drep_id": "drep1yfeqm8wfd2h9pf2c9y934qskuw3z04selrpr7esf4gdsl2c5zvpgf",
-   "ada": 375037,
+   "ada": 375136,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Themeda",
    "drep_id": "drep1yt8l5vn8at2kmu5s2qsvw0k73s5v4tuhews827matmsrn8qggczuu",
-   "ada": 368094,
+   "ada": 368198,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "GNP1_DRep",
    "drep_id": "drep1y26p5lfmwtk2zlrg3jgnhsvh2yatczwa8dwfy3azg8u4t9qq5cyc2",
-   "ada": 362381,
+   "ada": 363023,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool GNP1, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 1.2 million ADA",
    "pools": 1,
@@ -1460,100 +1426,100 @@
   {
    "name": "",
    "drep_id": "drep1ytjyvm958ywjkp57f8wm3havj72lc653tp7ajttxxt6ftgcmcmdk2",
-   "ada": 360910,
+   "ada": 360114,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "LallyMcClay",
    "drep_id": "drep1y2dptycrks2ggae95leeh66m0l0svet98c44hl4rmaec7as6hgpp3",
-   "ada": 358915,
+   "ada": 358967,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "William Doyle",
    "drep_id": "drep1yfpgzfymq6tt9c684e7vzata8r5pl4w84fmrjqeztdqw0sgpzw3nt",
-   "ada": 353103,
+   "ada": 353184,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "",
    "drep_id": "drep1yf0hzjwkhz78sy6clt5y5qsdnmlwc8djaqwey83spw7m3tskzaxe5",
-   "ada": 349104,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "Cardanolotus",
-   "drep_id": "drep1yt7hfdllz0l707unkh9g2fs9e35dl6d94tvjynnh4t5gw6gcmn4jn",
-   "ada": 342048,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "No Treasury Withdrawals until ADA > $3",
-   "drep_id": "drep1ytpkv5fdc3cutccr5mp2leqrv2q5gt0uhka3gnrggcgrynsr4hxfp",
-   "ada": 337734,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "Adastra",
-   "drep_id": "drep1yt5u3kgdjqxh0g2ujmk0g8djq2hlyve9gj0hpmasnjzy0zsqjv5eu",
-   "ada": 332020,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "Marin_Cardano_Maven",
-   "drep_id": "drep1ytxtrka4tmvm692nkgkdh4uezns35wdqerqugacdvttlzdga03rnz",
-   "ada": 329666,
+   "ada": 349184,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "",
    "drep_id": "drep1yfey454nle88k5zd2xzgycdqu4qgreyjr9x59nm2aupd9yqr4szjq",
-   "ada": 324047,
+   "ada": 344100,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Cardanolotus",
+   "drep_id": "drep1yt7hfdllz0l707unkh9g2fs9e35dl6d94tvjynnh4t5gw6gcmn4jn",
+   "ada": 342754,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Adastra",
+   "drep_id": "drep1yt5u3kgdjqxh0g2ujmk0g8djq2hlyve9gj0hpmasnjzy0zsqjv5eu",
+   "ada": 332710,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Marin_Cardano_Maven",
+   "drep_id": "drep1ytxtrka4tmvm692nkgkdh4uezns35wdqerqugacdvttlzdga03rnz",
+   "ada": 329749,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Zacros",
    "drep_id": "drep1y2tp9q9vckglgkgkgcdc33jtahrstfzfj3c8ez926ysszjqp5r4ts",
-   "ada": 322226,
+   "ada": 322271,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "spannercode",
    "drep_id": "drep1yg0d4qr3qwtgkh59njhdgjpwde6c8vmqax08x3y8klupxvq6u3dyk",
-   "ada": 321773,
+   "ada": 321838,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Dodue",
    "drep_id": "drep1ygdqxmgpy8tec74adul5jy5ucxvhywrakpru5yl9wz0eyectvkfns",
-   "ada": 307381,
+   "ada": 307486,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Apex Pool",
    "drep_id": "drep1yfrmyrf4twcxa0z3w63842ktmufdu06c3vdaz8rpkgzu8gclnyuh9",
-   "ada": 293154,
+   "ada": 293564,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool APEX, because the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool, the pool names the DRep in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 14.9 million ADA",
    "pools": 1,
    "pools_ada": 14889049
   },
   {
+   "name": "No Treasury Withdrawals until ADA > $3",
+   "drep_id": "drep1ytpkv5fdc3cutccr5mp2leqrv2q5gt0uhka3gnrggcgrynsr4hxfp",
+   "ada": 287758,
+   "cls": "drep",
+   "why": ""
+  },
+  {
    "name": "BAT Community",
    "drep_id": "drep1y2hwk9gqua527ghfdysfjuzeuh4zcad7nveqzupm84h5adqjv22cu",
-   "ada": 286097,
+   "ada": 286187,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool BAT, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 10,121 ADA",
    "pools": 1,
@@ -1562,7 +1528,7 @@
   {
    "name": "SVRN | Sleeping Natives",
    "drep_id": "drep1yfrpcln42j0f6p6zzt5863xn8pz4kkgfkvswlp88klyy4acjdju2k",
-   "ada": 273583,
+   "ada": 283739,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool SVRN, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 770,407 ADA",
    "pools": 1,
@@ -1578,7 +1544,7 @@
   {
    "name": "TAVN",
    "drep_id": "drep1ygxy3yn7x7ryfu52c23x2nkwnnl7uyd56u29vptfy98759gaaltuz",
-   "ada": 249679,
+   "ada": 249709,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool TAVN, because the DRep's name is the pool's name without its number. Its pool has 1.2 million ADA",
    "pools": 1,
@@ -1587,7 +1553,7 @@
   {
    "name": "Talos",
    "drep_id": "drep1yfqt3wt0v2uvhawx9anzfqty4x7gwwu04wzr9ucga4yd7mct7dup8",
-   "ada": 237795,
+   "ada": 237789,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool TALOS, because the DRep's name is the pool's name without its number. Its pool has 54,161 ADA",
    "pools": 1,
@@ -1596,21 +1562,28 @@
   {
    "name": "",
    "drep_id": "drep1yf73mm7wah0w736gq2qpp6jngs0xf39v3nz0w3ewel2g93s42nk2r",
-   "ada": 234319,
+   "ada": 234371,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "",
+   "name": "ADAtainment",
+   "drep_id": "drep1ygnw2fxf00pqwd3dmnluhf3vd06lrmmvxpmx8chjup4x3pcafs46n",
+   "ada": 220135,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Cardano_G",
    "drep_id": "drep1yfju2f0hy2q0z9x8lahy7v3v4rqm2z8kmv07juercm5zqhqmnunqa",
-   "ada": 205023,
+   "ada": 206861,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Jonathan Adjei",
    "drep_id": "drep1ygg9eg90gjm5fj40pncn56jntvskk72v3f3rzrs36q5lswsusmste",
-   "ada": 204218,
+   "ada": 203937,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool FLUID, because the DRep names the pool in its metadata and the payment address of the DRep belongs to a key of the pool. Its pool has 453,006 ADA",
    "pools": 1,
@@ -1619,125 +1592,132 @@
   {
    "name": "araCdon",
    "drep_id": "drep1ytf5mv92z03gkn4rs9dffh9r39l269qz22rthydluyraedghdd3pd",
-   "ada": 202146,
+   "ada": 202205,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Manuel SNAKE",
    "drep_id": "drep1yt56tpzpzu58zy7pz4zwfp32rq95tj3xfxmdrg8k3qhxjlccp47cn",
-   "ada": 198330,
+   "ada": 198386,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Farid_CZ",
    "drep_id": "drep1yfzzwr8jznn02mzepvs6y9n4329eskzpgygjdh4ew28szpcd5hr4f",
-   "ada": 197701,
+   "ada": 197455,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "AdaSouls",
    "drep_id": "drep1y2yemxvjptae0j7qws0emn4lv5eh73fkp43f4p3gla3msackq60pj",
-   "ada": 194207,
+   "ada": 194210,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool SOULS, because the DRep names the pool in its metadata, the DRep carries the pool's name or ticker, the pool names the DRep in its metadata and the DRep's name is the pool's name without its number. Its pool has 251,237 ADA",
    "pools": 1,
    "pools_ada": 251237
   },
   {
-   "name": "Long Hồ",
-   "drep_id": "drep1yttfrpngasw7yrdryydsg66gzv8znkj0stjngm5a8hs353stdeml6",
-   "ada": 187277,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool SDG13, because the DRep names the pool in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 48.1 million ADA",
-   "pools": 1,
-   "pools_ada": 48081408
-  },
-  {
    "name": "MyCNFT DRep",
    "drep_id": "drep1y2wwa9cqns95zzztmz9vw3jm7n8lpd3x8wfvg6wnvvt29ngdm0mlh",
-   "ada": 184805,
+   "ada": 184854,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "RCorreia",
    "drep_id": "drep1yf7nwlcvdql5kqvaqvmzyj5azqcc5s4y4wm2sm0ng3nzkkgpavmcg",
-   "ada": 181457,
+   "ada": 181507,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "The Victor",
    "drep_id": "drep1yfv824m4rjeglnwessh59v4hz8u3glz5pgexxff5md7wytsccjj68",
-   "ada": 181246,
+   "ada": 181254,
    "cls": "drep",
    "why": ""
   },
   {
+   "name": "Long Hồ",
+   "drep_id": "drep1yttfrpngasw7yrdryydsg66gzv8znkj0stjngm5a8hs353stdeml6",
+   "ada": 180128,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool SDG13, because the DRep names the pool in its metadata and the DRep's transactions were paid from the pool's wallet. Its pool has 48.1 million ADA",
+   "pools": 1,
+   "pools_ada": 48081408
+  },
+  {
    "name": "ArcadianComputers",
    "drep_id": "drep1yg7xcypymvedd0nn2gcn3zhwhv2d25nfteuxs9re5a7j97c3v4dxw",
-   "ada": 166635,
+   "ada": 166636,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "DeepStatecraft",
+   "drep_id": "drep1yfr0cur4guksjd6whxe5mltcaksqqhzd85dnq6lfk8ex7qs5mlcye",
+   "ada": 159654,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Victor.Villagomez",
    "drep_id": "drep1y2utmer3m25qvcfrmglld88yueq9se3d8hqjnj20wk4q0cgz92za6",
-   "ada": 150170,
+   "ada": 148204,
    "cls": "drep",
    "why": ""
   },
   {
-   "name": "Pallamus",
-   "drep_id": "drep1ytsj5tchu9qh32zml24ctuvam90tygx8p286uw3n78nlypc2fqmyr",
-   "ada": 148108,
-   "cls": "spo",
-   "why": "is linked by our Decentralization Monitor to pool PAL, because the DRep's name is the pool's name without its number. Its pool has 218 ADA",
-   "pools": 1,
-   "pools_ada": 218
-  },
-  {
    "name": "TNT (Adrián Montero)",
    "drep_id": "drep1ygc0skj7ceaszyvpte75h4xrw0m6wcenj0kd2uj7lkq5vmcjryeec",
-   "ada": 145573,
+   "ada": 145613,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Styg",
    "drep_id": "drep1yfaq8dsam7nusdccey2x2p684f6ulhr42pv24tslv0terqs3nq50q",
-   "ada": 142665,
+   "ada": 142706,
    "cls": "drep",
    "why": ""
   },
   {
+   "name": "Pallamus",
+   "drep_id": "drep1ytsj5tchu9qh32zml24ctuvam90tygx8p286uw3n78nlypc2fqmyr",
+   "ada": 140171,
+   "cls": "spo",
+   "why": "is linked by our Decentralization Monitor to pool PAL, because the DRep's name is the pool's name without its number. Its pool has 218 ADA",
+   "pools": 1,
+   "pools_ada": 218
+  },
+  {
    "name": "Seidu Ziblim",
    "drep_id": "drep1ygrnrg598f38xxg83cg6hudq209w0t578lq9ceh9np99d8cgn67wp",
-   "ada": 139619,
+   "ada": 139665,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "ThisCrazyDrep",
    "drep_id": "drep1y274avwwze4wy8qx6d7qxxkq89ksn7z90n0n2dvetee039gkurc6v",
-   "ada": 138835,
+   "ada": 139350,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Rod G.",
    "drep_id": "drep1ygwscks2yt0na4fqpcdyqn0fare5v48y0mjgn2g478lnx8gue393e",
-   "ada": 125860,
+   "ada": 129052,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Adalion",
    "drep_id": "drep1y23n4kvdnvx6qsmfgquxtht8ucfmhn0vx495nrs74xhspmqqrqflk",
-   "ada": 123379,
+   "ada": 123382,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool SIMBA, because the payment address of the DRep belongs to a key of the pool and the DRep's transactions were paid from the pool's wallet. Its pool has 229,041 ADA",
    "pools": 1,
@@ -1746,7 +1726,7 @@
   {
    "name": "Javi M.",
    "drep_id": "drep1ytckh5852vysgdg0j5y63ga7k0q4udwfjuprgx4pjwwt8dsjehfza",
-   "ada": 120495,
+   "ada": 120530,
    "cls": "drep",
    "why": ""
   },
@@ -1758,16 +1738,9 @@
    "why": ""
   },
   {
-   "name": "ADAtainment",
-   "drep_id": "drep1ygnw2fxf00pqwd3dmnluhf3vd06lrmmvxpmx8chjup4x3pcafs46n",
-   "ada": 109523,
-   "cls": "drep",
-   "why": ""
-  },
-  {
    "name": "Seomon",
    "drep_id": "drep1yf8hkwqtf8s8yd99446uctdvqj546zuf4fnmx93zxptm0xggrsur4",
-   "ada": 105520,
+   "ada": 105710,
    "cls": "drep",
    "why": ""
   },
@@ -1781,34 +1754,34 @@
    "pools_ada": 207940
   },
   {
-   "name": "Agora | Cardano (by Rodrigo Pacini)",
-   "drep_id": "drep1yt9dq806jcm56wzhnv2yrf6gcyq7h4gap8gxewfykk0dtfs7vf843",
-   "ada": 101771,
-   "cls": "drep",
-   "why": ""
-  },
-  {
    "name": "",
    "drep_id": "drep1ygp2552yp5vujfyhcfeg9jwqlf2cx48dv6xahhrnq3vq72cx3r5qc",
-   "ada": 101059,
+   "ada": 101084,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "HD5000",
    "drep_id": "drep1ygfw05xk3skujuym7v8w0t4se3a3n9smcfxufd5y0scl63saskmly",
-   "ada": 95841,
+   "ada": 95869,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "CBROS Pool",
    "drep_id": "drep1ygj2shrjluwfkcyp2d85p09dagaqqmcue8sztq925z7jacg02nr4x",
-   "ada": 92363,
+   "ada": 93716,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool CBROS, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 118,595 ADA",
    "pools": 1,
    "pools_ada": 118595
+  },
+  {
+   "name": "Agora | Cardano (by Rodrigo Pacini)",
+   "drep_id": "drep1yt9dq806jcm56wzhnv2yrf6gcyq7h4gap8gxewfykk0dtfs7vf843",
+   "ada": 92573,
+   "cls": "drep",
+   "why": ""
   },
   {
    "name": "iFly",
@@ -1820,83 +1793,83 @@
    "pools_ada": 126403
   },
   {
-   "name": "AtlasFD",
-   "drep_id": "drep1ytzgysymlhglw5w0ecug6wg8pxdzrqzwk89rh3mmh0r5v0gz56urx",
-   "ada": 81853,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "",
-   "drep_id": "drep1yfwa4sqfmw8mnuhwfltr2t3yacj96efu65re2f9xdwqurnsw45vlt",
-   "ada": 81528,
-   "cls": "drep",
-   "why": ""
-  },
-  {
    "name": "",
    "drep_id": "drep1ytjh8c0dlah3zu2c0hnhy3r0vttdh633zpd6ezgq3r8q8ls86a9dq",
-   "ada": 75809,
+   "ada": 84594,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pools P2P, P2P2, P2P3, P2P4, because the DRep's transactions were paid from the pool's wallet. Its owner runs 4 pools with 199.2 million ADA together",
    "pools": 4,
    "pools_ada": 199208869
   },
   {
+   "name": "AtlasFD",
+   "drep_id": "drep1ytzgysymlhglw5w0ecug6wg8pxdzrqzwk89rh3mmh0r5v0gz56urx",
+   "ada": 81875,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfwa4sqfmw8mnuhwfltr2t3yacj96efu65re2f9xdwqurnsw45vlt",
+   "ada": 81549,
+   "cls": "drep",
+   "why": ""
+  },
+  {
    "name": "",
    "drep_id": "drep1y20s4gh7n9j88uvu4sn3djjrfq9h7jw3xk2wltvf46ctgwcdj7s6u",
-   "ada": 70220,
+   "ada": 77032,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "",
    "drep_id": "drep1yguj8zu48n99pv70yl6ckzt9hdgjy8yjnlqs2uyzcpafnjgu4vkul",
-   "ada": 63625,
+   "ada": 63640,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "World Peace",
    "drep_id": "drep1yfgssww5qn4w5w9g2pmtj94rg0l2jtcz87w9d4m459dpqhqm9g4pu",
-   "ada": 63307,
+   "ada": 63322,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "",
    "drep_id": "drep1yf6xkrz2w4fdkwjw9u98u3pmzk7c7a0amq95hakcj649dns2r4upl",
-   "ada": 57271,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "Lourde",
-   "drep_id": "drep1ygtvnwgsucstvesms2hv9vc8hw3tye5zhzldmszrxqd2rxsje5c6m",
-   "ada": 54964,
+   "ada": 57283,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "virtuallykeith",
    "drep_id": "drep1yfhnj6jxmets33rnggtz3m9mur3e350d8dsnlnrt43z0uvsgwj7xz",
-   "ada": 54341,
+   "ada": 54352,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Ferdz",
    "drep_id": "drep1y2tf4f0ls404aenhhjqmyh4zvklzy8azqmpxseqea2sd4esfc2d5z",
-   "ada": 53768,
+   "ada": 53783,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool FRUIT, because the DRep names the pool in its metadata. Its pool has 15,664 ADA",
    "pools": 1,
    "pools_ada": 15664
   },
   {
+   "name": "Blockiy",
+   "drep_id": "drep1ytq2j6g5g69kuafyy5zu6s0rm88fhkgayjgzzwq2wm038pqqgjjmt",
+   "ada": 50866,
+   "cls": "drep",
+   "why": ""
+  },
+  {
    "name": "CZBE1",
    "drep_id": "drep1ytc030h6jr0u47z57l5g8e9gx7pelwk0u7z8d3989una3xql3vfvy",
-   "ada": 50326,
+   "ada": 50609,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool CZBE1, because the DRep names the pool in its metadata and the DRep carries the pool's name or ticker. Its pool has 562,863 ADA",
    "pools": 1,
@@ -1905,63 +1878,63 @@
   {
    "name": "",
    "drep_id": "drep1yfk37h2cduf47fwh9s3hs9yul3sm0kkh8k3ntjvayqqs4zsmfaa7s",
-   "ada": 50225,
+   "ada": 50240,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "Lourde",
+   "drep_id": "drep1ygtvnwgsucstvesms2hv9vc8hw3tye5zhzldmszrxqd2rxsje5c6m",
+   "ada": 49488,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Cryptotexty",
    "drep_id": "drep1ygsrvdukj9unnxue5ffmrkjr9ve7yxz3wvccdstapmw696q8g2w9u",
-   "ada": 45550,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "DeepStatecraft",
-   "drep_id": "drep1yfr0cur4guksjd6whxe5mltcaksqqhzd85dnq6lfk8ex7qs5mlcye",
-   "ada": 36499,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "",
-   "drep_id": "drep1y2q96n4hf0d8jnf6cf7h84z0tr0fn35wh7uv0q4w4hpzckqr8a70c",
-   "ada": 31887,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "",
-   "drep_id": "drep1yfx2476p8smc8dyuvgz0lkgwgzdyuuaw9293ncnswy8cfac4xu0z3",
-   "ada": 30017,
+   "ada": 45537,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Kevin G Mohr",
    "drep_id": "drep1ytwn2u7qpy4ur7k3xqd7eehft3g2yjpxf46rugwzmndkyesd0m5nt",
-   "ada": 27008,
+   "ada": 32392,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1y2q96n4hf0d8jnf6cf7h84z0tr0fn35wh7uv0q4w4hpzckqr8a70c",
+   "ada": 31902,
+   "cls": "drep",
+   "why": ""
+  },
+  {
+   "name": "",
+   "drep_id": "drep1yfx2476p8smc8dyuvgz0lkgwgzdyuuaw9293ncnswy8cfac4xu0z3",
+   "ada": 29346,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "JohnM",
    "drep_id": "drep1y2hky8fgx58luuuz5at5dr4xw0jzlre87wwyw3agra9f8js5eu9hp",
-   "ada": 25897,
+   "ada": 26116,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "",
    "drep_id": "drep1ytqg2923vdcfeygyne3edg67klaslx0axzph62hd0lc68zckglfuc",
-   "ada": 18691,
+   "ada": 18696,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "8Ball",
    "drep_id": "drep1y296z8tm7y7elwsmsewn4q2tdr5gu0fqztq97yttlpv7zycvsl554",
-   "ada": 14288,
+   "ada": 14292,
    "cls": "spo",
    "why": "is linked by our Decentralization Monitor to pool 8BALL, because the DRep's name is the pool's name without its number. Its pool has 1.4 million ADA",
    "pools": 1,
@@ -1970,42 +1943,42 @@
   {
    "name": "",
    "drep_id": "drep1ytj6hav29ur96ghu5mux7qsusr7jaff2gkfyvk0fur6f8xqyqh6dt",
-   "ada": 12065,
+   "ada": 12069,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "",
    "drep_id": "drep1y29ve34972rw3a8yzlrqpw2240h5rzahr603s062wnd72eg399ugk",
-   "ada": 9027,
+   "ada": 9030,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "",
    "drep_id": "drep1y0z7zndlpg3pduzg0cuhgcvjnsemas2d36qj6js2x9sgqlqzzjwpw",
-   "ada": 8552,
+   "ada": 8553,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Anonymous",
    "drep_id": "drep1ytm2zedqf54prqf5kfvzq56dgr7s3p4h53w8z428z6l2c8cj8e33y",
-   "ada": 8119,
+   "ada": 8115,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "Cardano Civic AI",
    "drep_id": "drep1ytxfwtqgelzxa2janenawxazvh6402267023js3pu027drq2qp308",
-   "ada": 6000,
+   "ada": 6001,
    "cls": "drep",
    "why": ""
   },
   {
    "name": "",
    "drep_id": "drep1ygy7uepgqyvhzpuhl34958lhan4cr5sq87nt404a2pna69syx0cg9",
-   "ada": 4702,
+   "ada": 4703,
    "cls": "drep",
    "why": ""
   },
@@ -2026,7 +1999,7 @@
   {
    "name": "",
    "drep_id": "drep1y2cnrwkyg6wtsw9jm3tx7hj39nmnhwnmffup6v2sunjqvus4tlua9",
-   "ada": 3462,
+   "ada": 3469,
    "cls": "drep",
    "why": ""
   },
@@ -2049,7 +2022,7 @@
   {
    "name": "Luc₳s @ 45B.io (Direct Voter)",
    "drep_id": "drep1ygltkznfvhpf722s50kan2pnsskpxz3vccdtvmcmx5mw4lssz7w7t",
-   "ada": 1993,
+   "ada": 1992,
    "cls": "drep",
    "why": ""
   },
@@ -2063,7 +2036,7 @@
   {
    "name": "",
    "drep_id": "drep1yfqhnwr8vpxmms0vqh9a4fe9ten7m5swpz62qsjrd2g9gjs8qad0s",
-   "ada": 895,
+   "ada": 896,
    "cls": "drep",
    "why": ""
   },
@@ -2085,13 +2058,6 @@
    "name": "",
    "drep_id": "drep1ygpt657cq2674lw59epj4mg2u6cxnceefpl72vnxnxa203qarl0wf",
    "ada": 49,
-   "cls": "drep",
-   "why": ""
-  },
-  {
-   "name": "",
-   "drep_id": "drep1ytx8q4jrw05uk2fexgd5gppkvu4rqtdqktlgt83vw2ydfkslvrv4z",
-   "ada": 12,
    "cls": "drep",
    "why": ""
   },
@@ -2178,7 +2144,7 @@
     "dreps": [
      {
       "name": "Everstake",
-      "ada": 215607542,
+      "ada": 216952077,
       "rank": 6,
       "cls": "spo"
      }
@@ -2265,7 +2231,7 @@
     "dreps": [
      {
       "name": "Cardano Foundation",
-      "ada": 149250523,
+      "ada": 150522195,
       "rank": 9,
       "cls": "spo"
      }
@@ -2313,8 +2279,8 @@
     "dreps": [
      {
       "name": "drep1ytjh8c0dl",
-      "ada": 75809,
-      "rank": 223,
+      "ada": 84594,
+      "rank": 218,
       "cls": "spo"
      }
     ]
@@ -2357,13 +2323,13 @@
     "dreps": [
      {
       "name": "Yoroi W₳llet",
-      "ada": 387088268,
+      "ada": 386229558,
       "rank": 2,
       "cls": "spo"
      },
      {
       "name": "EMURGO",
-      "ada": 210569110,
+      "ada": 209634242,
       "rank": 7,
       "cls": "spo"
      }
@@ -2384,8 +2350,8 @@
     "dreps": [
      {
       "name": "Cardanians",
-      "ada": 24384868,
-      "rank": 41,
+      "ada": 24629279,
+      "rank": 39,
       "cls": "spo"
      }
     ]
@@ -2495,7 +2461,7 @@
     "dreps": [
      {
       "name": "Moonstake",
-      "ada": 34178382,
+      "ada": 34188372,
       "rank": 30,
       "cls": "spo"
      }
@@ -2513,7 +2479,7 @@
     "dreps": [
      {
       "name": "Martin Lang",
-      "ada": 73283629,
+      "ada": 73019444,
       "rank": 19,
       "cls": "spo"
      }
@@ -2541,7 +2507,7 @@
     "dreps": [
      {
       "name": "SIPO",
-      "ada": 120022515,
+      "ada": 118818345,
       "rank": 11,
       "cls": "spo"
      }
@@ -2584,7 +2550,7 @@
     "dreps": [
      {
       "name": "YUTA",
-      "ada": 482475745,
+      "ada": 482507149,
       "rank": 1,
       "cls": "cc"
      }
@@ -2604,7 +2570,7 @@
     "dreps": [
      {
       "name": "NEDSCAVE.IO",
-      "ada": 30780128,
+      "ada": 30791566,
       "rank": 32,
       "cls": "spo"
      }
@@ -2622,7 +2588,7 @@
     "dreps": [
      {
       "name": "SASA_nagamaru_ながまる",
-      "ada": 130719685,
+      "ada": 130780958,
       "rank": 10,
       "cls": "spo"
      }
@@ -2651,8 +2617,8 @@
     "dreps": [
      {
       "name": "SPIRE",
-      "ada": 531036,
-      "rank": 161,
+      "ada": 674171,
+      "rank": 147,
       "cls": "spo"
      }
     ]
@@ -2686,7 +2652,7 @@
     "dreps": [
      {
       "name": "JAZZ",
-      "ada": 98558837,
+      "ada": 98569186,
       "rank": 13,
       "cls": "spo"
      }
@@ -2731,8 +2697,8 @@
     "dreps": [
      {
       "name": "ACL-CardanoLand",
-      "ada": 1059744,
-      "rank": 128,
+      "ada": 1063697,
+      "rank": 126,
       "cls": "spo"
      }
     ]
@@ -2865,8 +2831,8 @@
     "dreps": [
      {
       "name": "ADALO",
-      "ada": 2785023,
-      "rank": 95,
+      "ada": 2437980,
+      "rank": 98,
       "cls": "spo"
      }
     ]
@@ -2943,7 +2909,7 @@
     "dreps": [
      {
       "name": "Aichi/Tokai_DRep",
-      "ada": 32004390,
+      "ada": 32150648,
       "rank": 31,
       "cls": "spo"
      }
@@ -2957,7 +2923,7 @@
     "dreps": [
      {
       "name": "Terminada",
-      "ada": 16190267,
+      "ada": 16195457,
       "rank": 49,
       "cls": "spo"
      }
@@ -3141,7 +3107,7 @@
     "dreps": [
      {
       "name": "CryptoCrow",
-      "ada": 299032885,
+      "ada": 299609160,
       "rank": 3,
       "cls": "spo"
      }
@@ -3167,8 +3133,8 @@
     "dreps": [
      {
       "name": "phillerino",
-      "ada": 855109,
-      "rank": 144,
+      "ada": 849981,
+      "rank": 143,
       "cls": "spo"
      }
     ]
@@ -3198,7 +3164,7 @@
     "dreps": [
      {
       "name": "Chris [STR8] - Straightpool",
-      "ada": 21129724,
+      "ada": 21140789,
       "rank": 46,
       "cls": "spo"
      }
@@ -3236,8 +3202,8 @@
     "dreps": [
      {
       "name": "OCTAS DRep",
-      "ada": 2735350,
-      "rank": 96,
+      "ada": 2670183,
+      "rank": 94,
       "cls": "spo"
      }
     ]
@@ -3268,8 +3234,8 @@
     "dreps": [
      {
       "name": "Giovanni Gargiulo",
-      "ada": 3523361,
-      "rank": 85,
+      "ada": 3526933,
+      "rank": 83,
       "cls": "spo"
      }
     ]
@@ -3300,8 +3266,8 @@
     "dreps": [
      {
       "name": "FAIR Pool #01",
-      "ada": 627382,
-      "rank": 151,
+      "ada": 653858,
+      "rank": 149,
       "cls": "spo"
      }
     ]
@@ -3353,7 +3319,7 @@
     "dreps": [
      {
       "name": "Long Hồ",
-      "ada": 187277,
+      "ada": 180128,
       "rank": 198,
       "cls": "spo"
      }
@@ -3378,7 +3344,7 @@
     "dreps": [
      {
       "name": "Army of Spies",
-      "ada": 83093931,
+      "ada": 82972410,
       "rank": 15,
       "cls": "spo"
      }
@@ -3392,8 +3358,8 @@
     "dreps": [
      {
       "name": "FIMI",
-      "ada": 61761030,
-      "rank": 22,
+      "ada": 64801146,
+      "rank": 21,
       "cls": "spo"
      }
     ]
@@ -3416,8 +3382,8 @@
     "dreps": [
      {
       "name": "stakit (sti) by TOBG",
-      "ada": 6331934,
-      "rank": 66,
+      "ada": 6339821,
+      "rank": 65,
       "cls": "spo"
      }
     ]
@@ -3459,8 +3425,8 @@
     "dreps": [
      {
       "name": "TERA DRep",
-      "ada": 29292975,
-      "rank": 34,
+      "ada": 29660172,
+      "rank": 33,
       "cls": "spo"
      }
     ]
@@ -3473,7 +3439,7 @@
     "dreps": [
      {
       "name": "AdaStat",
-      "ada": 48896723,
+      "ada": 48846760,
       "rank": 23,
       "cls": "spo"
      }
@@ -3496,8 +3462,8 @@
     "dreps": [
      {
       "name": "ATLAS_Wolfgang",
-      "ada": 6077639,
-      "rank": 67,
+      "ada": 6079958,
+      "rank": 68,
       "cls": "spo"
      }
     ]
@@ -3540,7 +3506,7 @@
     "dreps": [
      {
       "name": "Dave",
-      "ada": 78858626,
+      "ada": 79132177,
       "rank": 17,
       "cls": "spo"
      }
@@ -3554,8 +3520,8 @@
     "dreps": [
      {
       "name": "MOKSH",
-      "ada": 4334521,
-      "rank": 78,
+      "ada": 4335993,
+      "rank": 79,
       "cls": "spo"
      }
     ]
@@ -3645,7 +3611,7 @@
     "dreps": [
      {
       "name": "MUEN",
-      "ada": 44787740,
+      "ada": 44797726,
       "rank": 24,
       "cls": "spo"
      }
@@ -3716,8 +3682,8 @@
     "dreps": [
      {
       "name": "matticus_kiwi",
-      "ada": 1889660,
-      "rank": 106,
+      "ada": 1875609,
+      "rank": 105,
       "cls": "spo"
      }
     ]
@@ -3766,8 +3732,8 @@
     "dreps": [
      {
       "name": "hix_coffeepool☕️",
-      "ada": 62513368,
-      "rank": 21,
+      "ada": 63945576,
+      "rank": 22,
       "cls": "spo"
      }
     ]
@@ -3792,7 +3758,7 @@
     "dreps": [
      {
       "name": "ranket",
-      "ada": 110622630,
+      "ada": 110684874,
       "rank": 12,
       "cls": "spo"
      }
@@ -3827,7 +3793,7 @@
     "dreps": [
      {
       "name": "PoolTool",
-      "ada": 41996691,
+      "ada": 42004248,
       "rank": 26,
       "cls": "spo"
      }
@@ -3847,7 +3813,7 @@
     "dreps": [
      {
       "name": "Hermes Stakepool Germany (HRMS)",
-      "ada": 65747326,
+      "ada": 65769966,
       "rank": 20,
       "cls": "spo"
      }
@@ -3876,8 +3842,8 @@
     "dreps": [
      {
       "name": "Elite",
-      "ada": 1219401,
-      "rank": 119,
+      "ada": 1215078,
+      "rank": 118,
       "cls": "spo"
      }
     ]
@@ -3890,7 +3856,7 @@
     "dreps": [
      {
       "name": "DINO",
-      "ada": 21505758,
+      "ada": 21421591,
       "rank": 45,
       "cls": "spo"
      }
@@ -3934,7 +3900,7 @@
     "dreps": [
      {
       "name": "HISAI",
-      "ada": 43480068,
+      "ada": 43493018,
       "rank": 25,
       "cls": "spo"
      }
@@ -3972,8 +3938,8 @@
     "dreps": [
      {
       "name": "PRIDE",
-      "ada": 7772766,
-      "rank": 60,
+      "ada": 7763014,
+      "rank": 61,
       "cls": "spo"
      }
     ]
@@ -3996,8 +3962,8 @@
     "dreps": [
      {
       "name": "ANGEL",
-      "ada": 2405914,
-      "rank": 101,
+      "ada": 2407237,
+      "rank": 100,
       "cls": "spo"
      }
     ]
@@ -4025,7 +3991,7 @@
     "dreps": [
      {
       "name": "Liqwid DAO",
-      "ada": 24283426,
+      "ada": 23718513,
       "rank": 42,
       "cls": "spo"
      }
@@ -4112,7 +4078,7 @@
     "dreps": [
      {
       "name": "drep1y2fhyudw8",
-      "ada": 7213282,
+      "ada": 7178928,
       "rank": 62,
       "cls": "spo"
      }
@@ -4142,7 +4108,7 @@
     "dreps": [
      {
       "name": "CTEC-Stake-Pool",
-      "ada": 20249587,
+      "ada": 20255661,
       "rank": 47,
       "cls": "spo"
      }
@@ -4248,7 +4214,7 @@
     "dreps": [
      {
       "name": "Paul Ko",
-      "ada": 11916658,
+      "ada": 11922036,
       "rank": 52,
       "cls": "spo"
      }
@@ -4283,8 +4249,8 @@
     "dreps": [
      {
       "name": "Apex Pool",
-      "ada": 293154,
-      "rank": 185,
+      "ada": 293564,
+      "rank": 180,
       "cls": "spo"
      }
     ]
@@ -4357,8 +4323,8 @@
     "dreps": [
      {
       "name": "THOR",
-      "ada": 412695,
-      "rank": 165,
+      "ada": 413156,
+      "rank": 161,
       "cls": "spo"
      }
     ]
@@ -4433,7 +4399,7 @@
     "dreps": [
      {
       "name": "Rodrigo-[CHIL]",
-      "ada": 36698571,
+      "ada": 36775193,
       "rank": 28,
       "cls": "spo"
      }
@@ -4453,8 +4419,8 @@
     "dreps": [
      {
       "name": "Porto Cripto DRep 🇧🇷 🇵🇹 (Atico & Bosco, from Cardanistas Stake Pool - CARDs)",
-      "ada": 3878935,
-      "rank": 80,
+      "ada": 4405400,
+      "rank": 77,
       "cls": "spo"
      }
     ]
@@ -4547,7 +4513,7 @@
     "dreps": [
      {
       "name": "Kyle Solomon",
-      "ada": 5116353,
+      "ada": 5117937,
       "rank": 74,
       "cls": "spo"
      }
@@ -4804,7 +4770,7 @@
     "dreps": [
      {
       "name": "LEADStakePool",
-      "ada": 3525828,
+      "ada": 3526105,
       "rank": 84,
       "cls": "spo"
      }
@@ -4854,8 +4820,8 @@
     "dreps": [
      {
       "name": "CryptoRich (CRICH)",
-      "ada": 2850730,
-      "rank": 93,
+      "ada": 2916550,
+      "rank": 91,
       "cls": "spo"
      }
     ]
@@ -4919,7 +4885,7 @@
     "dreps": [
      {
       "name": "Socious",
-      "ada": 28129930,
+      "ada": 28010971,
       "rank": 36,
       "cls": "spo"
      }
@@ -5061,8 +5027,8 @@
     "dreps": [
      {
       "name": "KysenPool_KYSN_KYSN2",
-      "ada": 571794,
-      "rank": 159,
+      "ada": 572168,
+      "rank": 157,
       "cls": "spo"
      }
     ]
@@ -5133,8 +5099,8 @@
     "dreps": [
      {
       "name": "ADA_Labo",
-      "ada": 2825948,
-      "rank": 94,
+      "ada": 2826539,
+      "rank": 93,
       "cls": "spo"
      }
     ]
@@ -5289,8 +5255,8 @@
     "dreps": [
      {
       "name": "Adapolis_Stakepool",
-      "ada": 2256106,
-      "rank": 104,
+      "ada": 2264905,
+      "rank": 103,
       "cls": "spo"
      }
     ]
@@ -5324,7 +5290,7 @@
     "dreps": [
      {
       "name": "WMOPS",
-      "ada": 5344149,
+      "ada": 5346404,
       "rank": 72,
       "cls": "spo"
      }
@@ -5392,8 +5358,8 @@
     "dreps": [
      {
       "name": "Nimuë Lady of the Lake Pool",
-      "ada": 1605567,
-      "rank": 112,
+      "ada": 1351828,
+      "rank": 115,
       "cls": "spo"
      }
     ]
@@ -5412,7 +5378,7 @@
     "dreps": [
      {
       "name": "HOSKY",
-      "ada": 34831741,
+      "ada": 34968944,
       "rank": 29,
       "cls": "spo"
      }
@@ -5602,8 +5568,8 @@
     "dreps": [
      {
       "name": "No stress",
-      "ada": 2491708,
-      "rank": 99,
+      "ada": 2492132,
+      "rank": 97,
       "cls": "spo"
      }
     ]
@@ -5760,8 +5726,8 @@
     "dreps": [
      {
       "name": "Earn Coin Pool",
-      "ada": 5804189,
-      "rank": 69,
+      "ada": 5802006,
+      "rank": 70,
       "cls": "spo"
      }
     ]
@@ -5786,7 +5752,7 @@
     "dreps": [
      {
       "name": "CardanoYoda (MANDA Pool)",
-      "ada": 95444916,
+      "ada": 95481880,
       "rank": 14,
       "cls": "spo"
      }
@@ -5830,8 +5796,8 @@
     "dreps": [
      {
       "name": "Daehan_kor",
-      "ada": 3847476,
-      "rank": 81,
+      "ada": 3688515,
+      "rank": 80,
       "cls": "spo"
      }
     ]
@@ -5844,7 +5810,7 @@
     "dreps": [
      {
       "name": "BKIND",
-      "ada": 1828176,
+      "ada": 1828437,
       "rank": 107,
       "cls": "spo"
      }
@@ -5882,7 +5848,7 @@
     "dreps": [
      {
       "name": "Patrick_Tobler",
-      "ada": 41709928,
+      "ada": 41769223,
       "rank": 27,
       "cls": "spo"
      }
@@ -5896,8 +5862,8 @@
     "dreps": [
      {
       "name": "drep1ytrg2ruc4",
-      "ada": 400191,
-      "rank": 167,
+      "ada": 400227,
+      "rank": 163,
       "cls": "spo"
      }
     ]
@@ -5911,7 +5877,7 @@
      {
       "name": "Meria",
       "ada": 5,
-      "rank": 259,
+      "rank": 255,
       "cls": "spo"
      }
     ]
@@ -5972,8 +5938,8 @@
     "dreps": [
      {
       "name": "CAPO",
-      "ada": 507373,
-      "rank": 163,
+      "ada": 507493,
+      "rank": 160,
       "cls": "spo"
      }
     ]
@@ -6022,7 +5988,7 @@
     "dreps": [
      {
       "name": "TOPO",
-      "ada": 949142,
+      "ada": 950101,
       "rank": 134,
       "cls": "spo"
      }
@@ -6306,14 +6272,14 @@
     "dreps": [
      {
       "name": "8Ball",
-      "ada": 1094684,
-      "rank": 126,
+      "ada": 1054945,
+      "rank": 127,
       "cls": "spo"
      },
      {
       "name": "8Ball",
-      "ada": 14288,
-      "rank": 240,
+      "ada": 14292,
+      "rank": 237,
       "cls": "spo"
      }
     ]
@@ -6374,7 +6340,7 @@
     "dreps": [
      {
       "name": "SAGAN Stake Pool",
-      "ada": 2870952,
+      "ada": 2871099,
       "rank": 92,
       "cls": "spo"
      }
@@ -6430,8 +6396,8 @@
     "dreps": [
      {
       "name": "YOADA",
-      "ada": 5500901,
-      "rank": 71,
+      "ada": 6103892,
+      "rank": 67,
       "cls": "spo"
      }
     ]
@@ -6462,8 +6428,8 @@
     "dreps": [
      {
       "name": "Medusa DRep",
-      "ada": 3055001,
-      "rank": 91,
+      "ada": 3057100,
+      "rank": 90,
       "cls": "spo"
      }
     ]
@@ -6530,8 +6496,8 @@
     "dreps": [
      {
       "name": "GNP1_DRep",
-      "ada": 362381,
-      "rank": 172,
+      "ada": 363023,
+      "rank": 168,
       "cls": "spo"
      }
     ]
@@ -6574,8 +6540,8 @@
     "dreps": [
      {
       "name": "TAVN",
-      "ada": 249679,
-      "rank": 189,
+      "ada": 249709,
+      "rank": 185,
       "cls": "spo"
      }
     ]
@@ -6620,15 +6586,7 @@
     "name": "BOATS",
     "pools": 1,
     "ada": 1160450,
-    "pool": "pool14f0uj8vghxzs09p3rzvhlur0dnfwylxc67whaz087srtjjrcjgd",
-    "dreps": [
-     {
-      "name": "DanShipps_HarborStakePool",
-      "ada": 1334694,
-      "rank": 116,
-      "cls": "spo"
-     }
-    ]
+    "pool": "pool14f0uj8vghxzs09p3rzvhlur0dnfwylxc67whaz087srtjjrcjgd"
    },
    {
     "name": "CDMS",
@@ -6662,7 +6620,7 @@
     "dreps": [
      {
       "name": "RCADA",
-      "ada": 10732040,
+      "ada": 10748823,
       "rank": 55,
       "cls": "spo"
      }
@@ -6854,8 +6812,8 @@
     "dreps": [
      {
       "name": "Erasmus",
-      "ada": 947891,
-      "rank": 135,
+      "ada": 999587,
+      "rank": 129,
       "cls": "spo"
      }
     ]
@@ -6880,7 +6838,7 @@
     "dreps": [
      {
       "name": "Hephaestus Stake Pool [HEPHY]",
-      "ada": 21517250,
+      "ada": 21519149,
       "rank": 44,
       "cls": "spo"
      }
@@ -6936,8 +6894,8 @@
     "dreps": [
      {
       "name": "ADAAT",
-      "ada": 399189,
-      "rank": 168,
+      "ada": 399542,
+      "rank": 164,
       "cls": "spo"
      }
     ]
@@ -6998,8 +6956,8 @@
     "dreps": [
      {
       "name": "Kurdopia",
-      "ada": 403065,
-      "rank": 166,
+      "ada": 403094,
+      "rank": 162,
       "cls": "spo"
      }
     ]
@@ -7012,8 +6970,8 @@
     "dreps": [
      {
       "name": "SVRN | Sleeping Natives",
-      "ada": 273583,
-      "rank": 187,
+      "ada": 283739,
+      "rank": 183,
       "cls": "spo"
      }
     ]
@@ -7038,7 +6996,7 @@
     "dreps": [
      {
       "name": "Sebastien Guillemot セバ",
-      "ada": 170179982,
+      "ada": 169748140,
       "rank": 8,
       "cls": "spo"
      }
@@ -7150,15 +7108,7 @@
     "name": "DOLCA",
     "pools": 1,
     "ada": 685911,
-    "pool": "pool12584mjtgz3fhgpx823qht56gycnfnezg6aqqthazv4qdxkd5c46",
-    "dreps": [
-     {
-      "name": "drep1yfd9slgg7",
-      "ada": 435944,
-      "rank": 164,
-      "cls": "spo"
-     }
-    ]
+    "pool": "pool12584mjtgz3fhgpx823qht56gycnfnezg6aqqthazv4qdxkd5c46"
    },
    {
     "name": "ADD",
@@ -7366,8 +7316,8 @@
     "dreps": [
      {
       "name": "GAIA",
-      "ada": 3422368,
-      "rank": 87,
+      "ada": 3423222,
+      "rank": 86,
       "cls": "spo"
      }
     ]
@@ -7386,8 +7336,8 @@
     "dreps": [
      {
       "name": "CZBE1",
-      "ada": 50326,
-      "rank": 231,
+      "ada": 50609,
+      "rank": 228,
       "cls": "spo"
      }
     ]
@@ -7416,8 +7366,8 @@
     "dreps": [
      {
       "name": "Bamboo_Drep",
-      "ada": 2358281,
-      "rank": 102,
+      "ada": 2369839,
+      "rank": 101,
       "cls": "spo"
      }
     ]
@@ -7490,7 +7440,7 @@
     "dreps": [
      {
       "name": "Alex BKV",
-      "ada": 1648202,
+      "ada": 1648006,
       "rank": 111,
       "cls": "spo"
      }
@@ -7600,8 +7550,8 @@
     "dreps": [
      {
       "name": "Jonathan Adjei",
-      "ada": 204218,
-      "rank": 193,
+      "ada": 203937,
+      "rank": 190,
       "cls": "spo"
      }
     ]
@@ -7702,7 +7652,7 @@
     "dreps": [
      {
       "name": "ADAR_Chris",
-      "ada": 953776,
+      "ada": 953993,
       "rank": 133,
       "cls": "spo"
      }
@@ -7926,8 +7876,8 @@
     "dreps": [
      {
       "name": "BRIAN",
-      "ada": 937659,
-      "rank": 137,
+      "ada": 938185,
+      "rank": 136,
       "cls": "spo"
      }
     ]
@@ -7985,8 +7935,8 @@
     "dreps": [
      {
       "name": "Christopher Erckert | Dotare",
-      "ada": 1094117,
-      "rank": 127,
+      "ada": 1094448,
+      "rank": 125,
       "cls": "spo"
      }
     ]
@@ -8127,15 +8077,7 @@
     "name": "LOGIC",
     "pools": 1,
     "ada": 268805,
-    "pool": "pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp",
-    "dreps": [
-     {
-      "name": "Logical Mechanism dRep",
-      "ada": 608987,
-      "rank": 153,
-      "cls": "spo"
-     }
-    ]
+    "pool": "pool1q7k8mmnvsgthp94hpn8jrnacjewplvywq70eef90fv4nu7gedzp"
    },
    {
     "name": "pool1lllmq2jgc",
@@ -8181,8 +8123,8 @@
     "dreps": [
      {
       "name": "AdaSouls",
-      "ada": 194207,
-      "rank": 197,
+      "ada": 194210,
+      "rank": 194,
       "cls": "spo"
      }
     ]
@@ -8249,8 +8191,8 @@
     "dreps": [
      {
       "name": "Adalion",
-      "ada": 123379,
-      "rank": 210,
+      "ada": 123382,
+      "rank": 208,
       "cls": "spo"
      }
     ]
@@ -8336,7 +8278,7 @@
      {
       "name": "Breizh DRep [BZH]",
       "ada": 102096,
-      "rank": 215,
+      "rank": 212,
       "cls": "spo"
      }
     ]
@@ -8632,7 +8574,7 @@
      {
       "name": "iFly",
       "ada": 85881,
-      "rank": 220,
+      "rank": 217,
       "cls": "spo"
      }
     ]
@@ -8693,8 +8635,8 @@
     "dreps": [
      {
       "name": "CBROS Pool",
-      "ada": 92363,
-      "rank": 219,
+      "ada": 93716,
+      "rank": 215,
       "cls": "spo"
      }
     ]
@@ -8743,8 +8685,8 @@
     "dreps": [
      {
       "name": "God BLESS You",
-      "ada": 1143008,
-      "rank": 125,
+      "ada": 1143044,
+      "rank": 124,
       "cls": "spo"
      }
     ]
@@ -8787,8 +8729,8 @@
     "dreps": [
      {
       "name": "Captain Crypto",
-      "ada": 3225906,
-      "rank": 88,
+      "ada": 3226699,
+      "rank": 87,
       "cls": "spo"
      }
     ]
@@ -8957,8 +8899,8 @@
     "dreps": [
      {
       "name": "Wolfoden",
-      "ada": 1198271,
-      "rank": 120,
+      "ada": 1198364,
+      "rank": 119,
       "cls": "spo"
      }
     ]
@@ -9031,8 +8973,8 @@
     "dreps": [
      {
       "name": "Talos",
-      "ada": 237795,
-      "rank": 190,
+      "ada": 237789,
+      "rank": 186,
       "cls": "spo"
      }
     ]
@@ -9350,8 +9292,8 @@
   "epoch": 669
  },
  "flows": {
-  "from_epoch": 659,
-  "to_epoch": 669,
+  "from_epoch": 660,
+  "to_epoch": 670,
   "pool_bands_net_ada": [
    0,
    0,
@@ -9359,12 +9301,12 @@
    0
   ],
   "carry_group": 18,
-  "carry_group_net_ada": 77050092,
-  "carry_group_share_of_moved": 0.648,
-  "abstain_net_ada": -44207153
+  "carry_group_net_ada": 77264427,
+  "carry_group_share_of_moved": 0.642,
+  "abstain_net_ada": -40454068
  },
  "lookup": {
-  "credentials": 1884271,
+  "credentials": 1884372,
   "shards": 256
  },
  "links": {

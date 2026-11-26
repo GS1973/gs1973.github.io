@@ -3187,7 +3187,7 @@
 6f85022c08 - -
 6f9794367b 62 -
 6f99ac1aed o A
-6fa0051821 22 -
+6fa0051821 22 a
 6faea19e90 17 -
 6fb2d6ba41 n -
 6fbed4537a 62 A
@@ -4822,7 +4822,7 @@ a870d68037 - -
 a87bdd0fbd 4 -
 a88d60ff29 1s A
 a88fb0e945 2p -
-a8a280bd23 eb -
+a8a280bd23 k7 A
 a8a9b91178 1s -
 a8bb96b02f 1w -
 a8cceeee7d 8e -

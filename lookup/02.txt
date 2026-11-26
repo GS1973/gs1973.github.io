@@ -1620,6 +1620,7 @@
 3a8d333354 f5 -
 3a9ef3e4eb 80 -
 3ac6d7af30 - -
+3ac73f0cd0 ft A
 3ad4718aaa - -
 3ad5bc57ad 4 -
 3ad732a223 ta -
@@ -3100,7 +3101,7 @@
 6e1f40a00c e -
 6e204ff83f h -
 6e2591a394 o -
-6e2cf0d545 70 -
+6e2cf0d545 70 A
 6e30c8e8a1 bj -
 6e678ae41d 1s -
 6e6a8a4649 1s A
@@ -6129,7 +6130,7 @@ dcc3ff79d6 89 -
 dcc6e45013 - -
 dcd74bbf13 0 -
 dcd852ec2e k 3z
-dce0b53240 2y -
+dce0b53240 2y A
 dce56cd085 4a -
 dcecdc86dd 41 -
 dcef998fe4 o -
