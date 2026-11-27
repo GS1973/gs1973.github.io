@@ -116,7 +116,7 @@
 0412821e2e 1m -
 0418b6cf2f - -
 041b2d1257 - -
-041b66b518 3q -
+041b66b518 3q A
 0425972733 2w -
 042c925ef9 ie A
 0432c4ea88 0 -
@@ -5939,7 +5939,7 @@ ccad293591 3i -
 cccdf0d03d 6g -
 ccd1faf45b - -
 ccf9b84419 4w -
-cd002c7688 2q A
+cd002c7688 ft A
 cd01ed403f 1s A
 cd084d5d27 3m A
 cd0cce6a87 d -

@@ -3564,6 +3564,7 @@
 771caa7f14 4 -
 7720d73bc2 g -
 772e4379eb 2f -
+7733a21743 1s A
 773ce42e78 - -
 775a314d0e 24 -
 775f3bac5d dr -
@@ -6872,7 +6873,7 @@ ea64123329 me -
 ea6b66bbcc m A
 ea706187f6 - -
 ea7748c35e 1k -
-ea82a4a48c 2f -
+ea82a4a48c 2f A
 ea90c3c555 - -
 ea949b6a26 73 -
 ea97abb6b0 7 -
@@ -7169,7 +7170,7 @@ f4f1a500ec 3ah -
 f4f63e05e0 35 -
 f4f81f89a6 - -
 f4fec70378 1f -
-f509f8b25e 24 -
+f509f8b25e 24 1y
 f50b695bc5 h2 -
 f5183447c1 1a -
 f519897c53 1s -
