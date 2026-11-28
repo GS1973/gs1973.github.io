@@ -1,6 +1,15 @@
 [
   {
     "role": "DRep",
+    "title": "Republic Integration: Wallet and Token Management (Republic)",
+    "action": "Treasury Withdrawal",
+    "vote": "No",
+    "epoch": 670,
+    "govActionId": "b00571244ed277b36ca18a5b9bfffb87e098e803600d199ea7885cfc0d1f7f37#0",
+    "rationale": "governance/vote-republic-integration-b0057124.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "Mithril Protocol continuous development and maintenance, Q1 2027 (Teragone Factory)",
     "action": "Treasury Withdrawal",
     "vote": "No",

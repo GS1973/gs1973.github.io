@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "179f7fcb76adfd21200c26b549a661f815f3fed43ed7577ee8008176d1f72b3f",
+        "signature": "fb879132eb377d28d4d71b87b292c467af2c1561e27e1c666b47ffdc7807c09ccea1c6dc7aee76e86dbe57255e0f85485f7173886b849efb3cc76e64c2fd780b"
+      }
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes No. This action pays 3,120,000 ada to add Cardano to a private platform, 600,000 of it as a setup fee at the start. Delivery is shown by recorded demonstrations and nothing in the proposal commits anyone to use it. The anchor and the full proposal disagree on the return of surplus.",
+    "rationaleStatement": "Action: treasury withdrawal b00571244ed277b36ca18a5b9bfffb87e098e803600d199ea7885cfc0d1f7f37#0, 3,120,000 ada to the reward account stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v under the current constitution's guardrails script, fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64. I verified on chain that the action withdraws exactly this amount to that credential, that the credential is a script and not a public key, that the action was published on chain on 26 November 2026 in epoch 670, and that the anchor document hashes to the on-chain anchor, b7032015fd3b20e5e6cf48e8f6b48fbe19e409fa4cef0d18a07080a9dabb7054. I read the anchor and the full proposal it links to.\n\nWhat I support. A regulated route for tokenized assets is a real use case for Cardano. The funds go to the treasury contract administered by Intersect, with payment by milestone. The anchor states: \"Republic has not previously received funding from the Cardano Treasury, Catalyst, or related ecosystem programs\". Of the 110 other treasury withdrawals submitted on chain I could read the anchor of 109, and none of them names Republic. The three budget lines add up to the delivery subtotal of 3,030,000 ada. My No is not to the use case. It is to what the treasury pays for and what it gets in return.\n\nDelivery without use. The work adds Cardano to two products of the applicant, its wallet and its token management platform. The anchor says \"each milestone has acceptance criteria shown through recorded demonstrations\". The full proposal lists them: for the wallet \"A recorded demonstration showing\" a token held, sent and received, and for the platform a demonstration showing a \"Cardano-based asset onboarded into the Token Management Platform\". A demonstration shows that the software works. It does not show that an issuer or an investor uses it. The proposal names no issuer that has committed to issue on Cardano, and no target for issuers, assets or volume.\n\nThe metrics. The full proposal gives four measures of success. Two describe what the applicant already has before any work: \"Republic.com already operates as a registered funding portal\", and the licenses that Republic and Upside hold. The third counts wallets that are created automatically: \"every new Republic Wallet created for a user also provisions a corresponding Cardano wallet\". A wallet that is provisioned with every signup measures signups of the platform, not use of Cardano. The fourth is that new issuers can be onboarded through the existing process. None of the four sets a target that could be missed.\n\nThe acceptance criterion for native tokens. The first milestone is native token support. Its first criterion reads: \"Cardano Native Token (ie, ADA) held and displayed correctly in Republic Wallet\". On Cardano ada is the base currency and native tokens are the other assets. As written, a demonstration with ada alone can meet a criterion for native token support.\n\nA setup fee at the start. The budget has a line of 600,000 ada. The anchor describes it as \"Team setup and labor cost\" and gives its timing as \"Start of the engagement\". The full proposal describes it as \"One-time setup fee\". It is 19.8% of the delivery subtotal and it is tied to no deliverable.\n\nThree months of work, twelve months of engagement. The full proposal states: \"This proposal covers a minimum 12-month engagement, with support for the Cardano blockchain and Cardano native tokens expected within the first three months\". The two milestones take six to eight and eight to twelve weeks. For the months after that the proposal names \"monthly issuer matching sessions\" and access to a deal room. It does not say what these must produce.\n\nThe rate and the return. The request converts 312,000 dollars at a reference rate of 0.10 dollars per ada. On 28 November 2026 ada traded near 0.146 dollars on Kraken, and at that rate 312,000 dollars is about 2.14 million ada. The anchor says that if the rate at disbursement exceeds the reference rate, \"any resulting ADA surplus above the total USD-denominated budget valuation shall be returned to the Cardano Treasury\". The full proposal has the question \"Will any portion of the requested funds be returned to the Cardano Treasury?\" and answers No, and on the conditions for repayment it answers \"Not applicable\". The two documents of one proposal contradict each other on almost a third of the amount at the current price.\n\nNo return for the treasury. The applicant is a commercial platform. The proposal describes no revenue for the treasury and no share in what the platform earns from Cardano-based assets.\n\nWhat I note. The anchor says: \"The project deliverables and code will be open-sourced in accordance with Cardano ecosystem standards\". The full proposal does not mention open source. The anchor presents the fee of 90,000 ada as 3% next to a delivery subtotal of 3,030,000 ada. The full proposal explains it differently: \"The administration fee is calculated as 3% of a 3,000,000 ADA base\". The submission form asks for the transaction of a treasury donation of 1,000 ada as proof of wallet control and commitment. The full proposal answers: \"No donation is required based on Cardano Foundation team endorsement\". The anchor lists the Cardano Foundation among the six members of the oversight committee of the contract that releases the funds. An endorsement by a founding entity is not evidence of use, and I weigh it as such.\n\nThe Net Change Limit. By my count on chain, the treasury withdrawals enacted from epoch 613 up to and including epoch 670 total 457,395,629 ada, which leaves 42,604,371 ada under the limit of 500,000,000 ada until epoch 713. This action fits within that. It is not a ground for my vote.",
+    "precedentDiscussion": "I voted Yes on action 166, the Mesh SDK maintenance, because the work was delivered first and its use could be measured in public. I voted No on action 168, where the proposal gave no usage figures, No on action 161, a treasury withdrawal on promises, and No on action 158, where promises stood in place of a specification. My DRep registration commits me to hold proposals \"to evidence rather than promises\" and asks for \"value-adding solutions\" for Cardano's stakeholders. The value of this integration lies in its use, and the proposal commits to none.",
+    "counterargumentDiscussion": "A regulated platform with millions of accounts brings Cardano visibility and issuers. It may. The proposal gives the size of the platform and no commitment that any of it will use Cardano.\n\nThe applicant extends infrastructure that is live and licensed, so the money goes to integration and not to building a platform. That lowers the delivery risk. It also means the treasury pays for an addition to a product that stays with the applicant.\n\nPayment is by milestone and controlled by a contract with oversight. I count that in favor. The milestones are demonstrations, and the first payment of 600,000 ada has no milestone.\n\nThe surplus is returned when the price is above the reference rate. The anchor says so and the full proposal says No. I cannot vote on a return that one of the two documents denies.\n\nWhat would change my vote: payment after delivery, with a part released only when a first issuance through the platform is on chain on Cardano, no setup fee without a deliverable, an acceptance criterion that shows a native token other than ada on mainnet, stated targets for issuers and assets with reporting, one rule for the return of surplus in both documents, and the code published before the last payment.",
+    "conclusion": "BKIND votes No: 3,120,000 ada for adding Cardano to a private platform, with 600,000 ada paid at the start, delivery shown by demonstrations, no commitment on use and two documents that contradict each other on the return of surplus, does not meet the standard of evidence I hold treasury withdrawals to (govActionId b00571244ed277b36ca18a5b9bfffb87e098e803600d199ea7885cfc0d1f7f37#0).",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Governance action 167, on-chain anchor metadata (IPFS)",
+        "uri": "ipfs://bafkreidtly3rpwm2cyexy3uwks32nohpceohjtbaf4krxx4skmtgkms5ly"
+      },
+      {
+        "@type": "Other",
+        "label": "Governance action 167, anchor metadata through a gateway",
+        "uri": "https://ipfs.blockfrost.dev/ipfs/bafkreidtly3rpwm2cyexy3uwks32nohpceohjtbaf4krxx4skmtgkms5ly"
+      },
+      {
+        "@type": "Other",
+        "label": "Cardano and Republic budget proposal, full proposal (IPFS)",
+        "uri": "https://ipfs.blockfrost.dev/ipfs/bafybeic7hexhavstzqw7ch3uwrs55k7olfen3a2wk4lda45e4by3z3nb5m"
+      },
+      {
+        "@type": "Other",
+        "label": "Kraken, ADA/USD market",
+        "uri": "https://www.kraken.com/prices/cardano"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 168 rationale (No, claims without usage figures)",
+        "uri": "https://smitblockchainops.nl/governance/vote-mithril-q1-2027-0d9a0344.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 166 rationale (Yes, payment after delivery)",
+        "uri": "https://smitblockchainops.nl/governance/vote-mesh-maintenance-2026-6b409787.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 161 rationale (No, treasury withdrawal on promises)",
+        "uri": "https://smitblockchainops.nl/governance/vote-copper-reserve-6eddf4f1.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 158 rationale (No, promises in place of specification)",
+        "uri": "https://smitblockchainops.nl/governance/vote-openzeppelin-stack-418df598.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND DRep registration (CIP-119)",
+        "uri": "https://smitblockchainops.nl/governance/drep.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-136, DRep vote rationale",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0136"
+      }
+    ]
+  }
+}
