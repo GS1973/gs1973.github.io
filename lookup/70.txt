@@ -2089,6 +2089,7 @@
 4a39bc8fe5 - -
 4a4ab6fff1 24 -
 4a50d79307 7h -
+4a5a11fce2 1s A
 4a5b0a00dc h -
 4a5bf5de5c da -
 4a6ab22709 3n -
@@ -3545,7 +3546,7 @@
 7c183c44bf 1m -
 7c1cbec541 - -
 7c21e04cf7 r -
-7c268c1b57 - -
+7c268c1b57 8k A
 7c2d17095b 4 -
 7c30e5cb39 6d -
 7c3123b8bf - -
@@ -4940,7 +4941,7 @@ abb9b54d95 - -
 abc3103b6d 6k -
 abcd56223a 8k A
 abce5cc9dc 1p -
-abd586a01c 4o -
+abd586a01c 4o A
 abd6b2637d ak -
 abe2f1e38f 2b 0
 abe95dbb72 2k -
@@ -5848,7 +5849,7 @@ caefb9aa39 9e -
 caf5066023 17 -
 cafbd1bf6e s3 -
 cb0308273a 5k -
-cb0b015402 1n -
+cb0b015402 1yy -
 cb0b679f70 am -
 cb0e1cc1c9 8p -
 cb14517cb0 17 -
@@ -7334,7 +7335,7 @@ fdbdcb6ccd 8g -
 fde789a562 0 -
 fdf8fcea5e - -
 fe0ba01fe8 - -
-fe13b26c4a 1p A
+fe13b26c4a - -
 fe14d66f1e l -
 fe331856c4 f5 A
 fe3679e467 - -

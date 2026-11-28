@@ -1579,6 +1579,7 @@
 387ba89654 17 A
 387ebeab97 3v A
 3885a0d2cb d -
+3886c76503 jo A
 388bd1bb8e bx -
 389ed6efac 1z -
 38af37ee9d 1mt -
@@ -6460,7 +6461,7 @@ e2ff763632 - -
 e300b7859e 2l -
 e303600f67 - -
 e30522f467 5j -
-e30692dc09 da -
+e30692dc09 jo A
 e318bb8bb0 9x -
 e319026193 1p A
 e32962d2c4 a1 -
@@ -7126,7 +7127,7 @@ f9e778743f 1n A
 f9e7b49d36 - -
 f9f05bcb4a ir A
 f9f1b06296 - -
-f9f2d1544d f -
+f9f2d1544d f A
 f9f363921e p2 -
 fa0d89e3ff 4b -
 fa12f828a9 4d -
