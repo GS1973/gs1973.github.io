@@ -1,6 +1,15 @@
 [
   {
     "role": "DRep",
+    "title": "Mithril Protocol continuous development and maintenance, Q1 2027 (Teragone Factory)",
+    "action": "Treasury Withdrawal",
+    "vote": "No",
+    "epoch": 670,
+    "govActionId": "0d9a034453e6629bec902c7415452bdd65425d1fb33196dbda1d26b28bfa7955#0",
+    "rationale": "governance/vote-mithril-q1-2027-0d9a0344.jsonld"
+  },
+  {
+    "role": "DRep",
     "title": "Mesh SDK Maintenance 2026",
     "action": "Treasury Withdrawal",
     "vote": "Yes",

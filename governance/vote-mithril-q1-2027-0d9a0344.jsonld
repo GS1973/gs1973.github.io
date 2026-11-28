@@ -1,0 +1,153 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP136": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0136/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP136:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "summary": "CIP136:summary",
+        "rationaleStatement": "CIP136:rationaleStatement",
+        "precedentDiscussion": "CIP136:precedentDiscussion",
+        "counterargumentDiscussion": "CIP136:counterargumentDiscussion",
+        "conclusion": "CIP136:conclusion",
+        "internalVote": {
+          "@id": "CIP136:internalVote",
+          "@context": {
+            "constitutional": "CIP136:constitutional",
+            "unconstitutional": "CIP136:unconstitutional",
+            "abstain": "CIP136:abstain",
+            "didNotVote": "CIP136:didNotVote",
+            "againstVote": "CIP136:againstVote"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "authors": [
+    {
+      "name": "Smit Blockchain Operations (BKIND)",
+      "witness": {
+        "witnessAlgorithm": "ed25519",
+        "publicKey": "179f7fcb76adfd21200c26b549a661f815f3fed43ed7577ee8008176d1f72b3f",
+        "signature": "e3845453a99bbbd03fe2c751e9fe6330ce7c8721457903fe0922db5000fc00e6e86eba52ddf393b0db793566e00de200b8d58f7b6b35504eb4f0207844397e00"
+      }
+    }
+  ],
+  "body": {
+    "summary": "BKIND votes No. The proposal says Mithril needs no trust in a centralised provider. Today one aggregator serves signers with 17.9% of the stake, and this budget pays the applicant to host it. The proposal gives no usage figures, team size or rates. I would support a narrower action for operation.",
+    "rationaleStatement": "Action: treasury withdrawal 0d9a034453e6629bec902c7415452bdd65425d1fb33196dbda1d26b28bfa7955#0, 2,317,500 ada to the reward account stake1784sdxt6jjennmstphgdu7l7c2scf5d02a6cve2dgn5s2kq5u3j9v under the current constitution's guardrails script, fa24fb305126805cf2164c161d852a0e7330cf988f1fe558cf7d4a64. I verified on chain that the action withdraws exactly this amount to that credential, that the credential is a script and not a public key, that the reward account is registered and delegated to the always abstain DRep, that the action was published on chain on 27 November 2026 in epoch 670, and that the anchor document hashes to the on-chain anchor, dcde6d47d30036120a909e558c3c11d1ce65248a572cf12f5b3ee985c8b6619c.\n\nWhat I support. The Mithril code is public under the Apache 2.0 license. The request covers one quarter and the anchor says it does not commit the treasury beyond it. The six budget lines add up to 2,250,000 ada and the fee of 67,500 ada for Intersect is 3% of that. The funds go to the treasury contract administered by Intersect, with payment by milestone. The applicant discloses its earlier treasury funding. My No is not to Mithril as an idea. It is to what this proposal claims, to what it leaves out, and to the price.\n\nThe claim and the deployment. The anchor says Mithril lets nodes, wallets, exchanges and light clients verify Cardano state \"without trusting a centralised provider\", and that users \"trust only the stake securing the network\". The full proposal puts it as \"Bootstrap in minutes instead of hours and no centralized trust required\". The Mithril documentation says: \"The current Mithril network relies on a single aggregator\". Its threat model says: \"All Mithril signers and Mithril clients connect to a single aggregator using HTTP over TLS\", and that certificates are chained up to a genesis certificate \"which is signed by a genesis signing key\". The budget has a line of 416,667 ada for \"Hosting of the Mithril aggregators for the testing and production networks\", and the anchor says that without this funding these services \"would have no funded operator\". So under this budget the applicant hosts the one aggregator that every signer and every client connects to.\n\nThe stake behind a certificate. On 27 November 2026 the mainnet aggregator reported for epoch 670: 230 signers out of 2,666 pools, holding 3,849,056,755 ada of 21,495,937,909 ada. That is 17.9% of the stake. In the mithril-stm library the total stake of the signing lottery is the sum over the registered signers, not over all stake. The published parameters are k 1944, m 16948 and phi_f 0.2. By my calculation from these parameters, signers with about 55% of the registered stake reach the quorum on average, which is about 9.8% of all stake. That is not the stake securing the network.\n\nNo reason for a pool to sign. The proposal names no reward for signers, and I found none in the Mithril documentation. The threat model states that \"Mithril signers must have access to the KES key\". A pool operator is asked to run extra software with access to that key, next to the block producer, for no return. One of the three metrics in the full proposal is the setup time, \"Current: 30-60 min\", with a goal of about five minutes. A shorter setup does not give an operator a reason to sign.\n\nThe denominator. The aggregator counts 2,666 pools. My Decentralization Monitor for epoch 670 counts 2,665 pools with stake, 1,351 registered pools that made a block in the year before, 981 owners with such a pool, and 36 owners whose pools hold half the stake. Whether a certificate rests on dispersed stake depends on which of these owners sign. The proposal gives no figure for that.\n\nNo usage figures. Neither the anchor nor the full proposal states how many users Mithril has. The API of the aggregator has endpoints to which a client reports the restoration of a database, so the operator of the aggregator can count them. What I could measure in public on 27 November 2026: release 2642.0 of 16 October 2026 was downloaded 779 times in all its files, of which 526 times the Linux package of the Mithril binaries. The Mithril documentation presents the Daedalus wallet as a case study. The Daedalus maintenance proposal, action d8de068952df50c862fa1bce9b8180d3387976cbae0fb2c3d9ef84f0faaf64d6#0, states that \"Daedalus has approximately 4,000 monthly\" active users by opt-in telemetry and adds that the true count is higher. According to the case study the integration covers fresh installations. It gives the time as \"roughly 30 minutes to an hour\", where this proposal says \"minutes instead of hours\".\n\nNo team size and no rates. The milestones list 38 weeks of work in a quarter of 13 weeks. The proposal does not say how many people are paid from this budget or at what rate. The earlier action for Mithril, b3d452bff7769d7f557ec6b8974760ee6c5e496c276652b654032966621e0ccf#5, was 3,810,423 ada for six months. This action asks 21.6% more ada per quarter.\n\nThe rate and the return. The full proposal converts at \"$0,20 USD = 1 ADA\". On 27 November 2026 ada traded near 0.15 dollars on Kraken. Action 167, submitted one day earlier through the same administrator, converts at 0.10 dollars. On the return of funds the full proposal says that \"no fixed or contractual portion of the requested funds is planned to be returned to the Cardano Treasury\". What it offers instead is \"a fair portion of that surplus\" if the price rises, without a definition.\n\nThe Net Change Limit. By my count on chain, the treasury withdrawals enacted from epoch 613 up to and including epoch 670 total 457,395,629 ada, which leaves 42,604,371 ada under the limit of 500,000,000 ada until epoch 713. This action fits within that. It is not a ground for my vote.",
+    "precedentDiscussion": "I voted Yes on action 166, the Mesh SDK maintenance, because the work was delivered first, its use could be measured in public and I could check the figures the proposal gave. This action asks payment ahead for a quarter and gives no usage figures to check. I voted No on action 165 for payment ahead at an assumed rate above the market, and No on action 158 where promises stood in place of a specification. My DRep registration commits me to hold proposals \"to evidence rather than promises\" and to vote to \"keep power dispersed\". A service described as free of central trust that runs on one aggregator and less than a fifth of the stake does not meet the first, and I cannot see that it serves the second.",
+    "counterargumentDiscussion": "Without this funding the service stops and the team leaves. The anchor says the current funding ends on 31 December 2026 and the longer plan starts in April 2027. I take that seriously. Keeping the service running is the hosting line of 416,667 ada and the maintenance line of 303,333 ada. The other four lines, 1,530,000 ada together, are new development. A narrower action for operation and maintenance would close the gap.\n\nMithril reduces the dependence on centralised indexers. That is the goal I share. Today the deployment replaces one dependence with another: one aggregator, one genesis key, and signers with 17.9% of the stake.\n\nParticipation will grow once the setup is easier. Nothing in the proposal gives a pool a return for signing, and the number of owners that produce blocks fell from 1,073 to 981 in a year by my monitor. I do not see where the growth would come from.\n\nThe funds are held in a contract with milestones and oversight. I count that in favor. It controls how the money is released, not whether the claims in the proposal hold.\n\nWhat would change my vote: the restoration counts per month from the aggregator, the team size and rates, a stated target for the signing stake with a reason for pools to sign, who holds the genesis key and a date for a second aggregator run by another party, a description of the trust model that matches the deployment, and a defined rule for the return of surplus.",
+    "conclusion": "BKIND votes No: 2,317,500 ada for one quarter of a service that is presented as free of central trust while it runs on one aggregator, hosted by the applicant, and on signers with 17.9% of the stake, without usage figures, team size or rates, does not meet the standard of evidence I hold treasury withdrawals to (govActionId 0d9a034453e6629bec902c7415452bdd65425d1fb33196dbda1d26b28bfa7955#0).",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Governance action 168, on-chain anchor metadata (IPFS)",
+        "uri": "ipfs://bafkreidhwldtrb6pqtojod6qsuulxll6mhus3fvuourbdhkx2ojfqjzmz4"
+      },
+      {
+        "@type": "Other",
+        "label": "Governance action 168, anchor metadata through a gateway",
+        "uri": "https://ipfs.blockfrost.dev/ipfs/bafkreidhwldtrb6pqtojod6qsuulxll6mhus3fvuourbdhkx2ojfqjzmz4"
+      },
+      {
+        "@type": "Other",
+        "label": "Mithril Protocol, Q1 2027 full proposal (IPFS)",
+        "uri": "https://ipfs.blockfrost.dev/ipfs/bafkreicc67azx2mmtalfe3e2v3qc6cc3v56swbbd7nyg3olmksysntr5ai"
+      },
+      {
+        "@type": "Other",
+        "label": "Mithril mainnet aggregator, status",
+        "uri": "https://aggregator.release-mainnet.api.mithril.network/aggregator/status"
+      },
+      {
+        "@type": "Other",
+        "label": "Mithril documentation, network architecture",
+        "uri": "https://mithril.network/doc/mithril/advanced/mithril-network/architecture"
+      },
+      {
+        "@type": "Other",
+        "label": "Mithril documentation, threat model",
+        "uri": "https://mithril.network/doc/mithril/advanced/threat-model"
+      },
+      {
+        "@type": "Other",
+        "label": "Mithril documentation, case study Daedalus",
+        "uri": "https://mithril.network/doc/case-studies/daedalus"
+      },
+      {
+        "@type": "Other",
+        "label": "mithril-stm, key registration (commit 736297b)",
+        "uri": "https://github.com/IntersectMBO/mithril/blob/736297b8a9d7e1f492ff6a9902fced1e9ac1d1c8/mithril-stm/src/protocol/key_registration/register.rs"
+      },
+      {
+        "@type": "Other",
+        "label": "Mithril release 2642.0",
+        "uri": "https://github.com/IntersectMBO/mithril/releases/tag/2642.0"
+      },
+      {
+        "@type": "Other",
+        "label": "Kraken, ADA/USD market",
+        "uri": "https://www.kraken.com/prices/cardano"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 166 rationale (Yes, payment after delivery)",
+        "uri": "https://smitblockchainops.nl/governance/vote-mesh-maintenance-2026-6b409787.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 165 rationale (No, payment ahead at an assumed rate)",
+        "uri": "https://smitblockchainops.nl/governance/vote-global-events-2027-3815fd9e.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "My action 158 rationale (No, promises in place of specification)",
+        "uri": "https://smitblockchainops.nl/governance/vote-openzeppelin-stack-418df598.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND dashboard, pool owners and DReps",
+        "uri": "https://smitblockchainops.nl/#stake"
+      },
+      {
+        "@type": "Other",
+        "label": "BKIND DRep registration (CIP-119)",
+        "uri": "https://smitblockchainops.nl/governance/drep.jsonld"
+      },
+      {
+        "@type": "Other",
+        "label": "CIP-136, DRep vote rationale",
+        "uri": "https://github.com/cardano-foundation/CIPs/tree/master/CIP-0136"
+      }
+    ]
+  }
+}
